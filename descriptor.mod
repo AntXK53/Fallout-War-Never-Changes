@@ -1,0 +1,16 @@
+version="A 1.0"
+tags={
+	"Technologies"
+	"National Focuses"
+	"Gameplay"
+	"Map"
+	"Ideologies"
+	"Events"
+	"Alternative History"
+}
+replace_path="history/countries"
+replace_path="history/states"
+replace_path="common/bookmarks"
+replace_path="gfx/flags"
+name="War Never Changes: Redux"
+supported_version="1.16.4"

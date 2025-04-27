@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1019"
 	manpower = 3
 	
-	state_category = megalopolis
+	state_category = large_city
 
 	history = {
 
@@ -16,7 +16,7 @@ state = {
 		}
 
 		victory_points = {
-			6521 25 # Brussels
+			6521 25 # East Berlin
 		}
 		
 	}

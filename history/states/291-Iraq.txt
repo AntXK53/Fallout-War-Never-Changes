@@ -11,9 +11,9 @@ state = {
 
 	history = {
 
-		owner = IRQ
+		owner = SAU
+		add_core_of = SAU
 		add_core_of = IRQ
-		add_claim_by = KUR
 
 		victory_points = {
 			2097 10 # Baghdad

@@ -1,0 +1,3 @@
+EAF = "countries/EAF.txt"
+MAG = "countries/Maghreb.txt"
+NKR = "countries/North Korea.txt"

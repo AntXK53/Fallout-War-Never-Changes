@@ -11,7 +11,8 @@ state={
 	state_category = city
 
 	history={
-		owner = PER
+		owner = SAU
+		add_core_of = SAU
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

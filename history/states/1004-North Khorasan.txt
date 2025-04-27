@@ -6,7 +6,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = PER
+		owner = SAU
+		add_core_of = SAU
 		buildings = {
 			infrastructure = 2
 		}

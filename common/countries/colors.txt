@@ -12,6 +12,18 @@ SOV = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
 }
+EAF = {
+	color = rgb { 57 117 145 }
+	color_ui = rgb { 57 117 145 }
+}
+MAG = {
+	color = rgb { 145 101 57 }
+	color_ui = rgb { 145 101 57 }
+}
+NKR = {
+	color = rgb { 82 33 33 }
+	color_ui = rgb { 82 33 33 }
+}
 SWE = {
 	color = rgb { 36 132 247 }
 	color_ui = rgb { 47 172 255 }

@@ -1,0 +1,38 @@
+add_namespace = nf_eng
+
+ country_event = {
+	id = nf_eng.1
+	title = nf_eng_1_title
+	desc = nf_eng_1_desc
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_eng_1_a
+	}
+ }
+ country_event = {
+	id = nf_eng.2
+	title = nf_eng_2_title
+	desc = nf_eng_2_desc
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_eng_2_a
+	}
+ }
+ country_event = {
+	id = nf_eng.3
+	title = nf_eng_3_title
+	desc = nf_eng_3_desc
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_eng_3_a
+	}
+ }

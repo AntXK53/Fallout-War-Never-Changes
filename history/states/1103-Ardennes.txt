@@ -1,0 +1,23 @@
+state={
+	id=1103
+	name="STATE_1103"
+
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = EUC
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		3402 3447 9472 
+	}
+	manpower=140000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

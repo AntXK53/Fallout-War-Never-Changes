@@ -1,0 +1,23 @@
+state={
+	id=975
+	name="STATE_975"
+
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = EUC
+		add_core_of = GER
+
+	}
+
+	provinces={
+		11360 
+	}
+	manpower=130007
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

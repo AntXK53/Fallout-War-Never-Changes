@@ -1,0 +1,55 @@
+BUL_nuclear_power_plant_decision_category = {
+	BUL_build_nuclear_power_plant_decision = {
+		state_target = yes
+   		#target_root_trigger = {
+        # 	
+   	 	#}
+    	target_array = BUL.owned_states
+    	target_trigger = {
+       		FROM = {
+            	is_owned_by = ROOT
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = BUL_nuclear_power_plant_dm
+					}
+				}
+        	}
+		}
+		on_map_mode = map_and_decisions_view
+		icon = GFX_modifiers_BUL_nuclear_power_plant_dm
+		cost = 80
+		days_remove = 85
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = BUL_nuclear_power_plant_dm
+				}
+			}
+		}
+	}
+}
+BUL_democratic_rebelions_decision_category = {
+	
+}
+
+foreign_politics = {
+	BUL_democratic_romania_invasion_mission = {
+		available = {
+			NOT = { has_global_flag = romanian_democratic_now_gf }
+		}
+		activation = {
+			always = no
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		war_with_on_timeout = ROM
+		days_mission_timeout = 30
+		selectable_mission = no
+		timeout_effect = {
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+	}
+}

@@ -11,8 +11,7 @@ state={
 			12857 1
 		}
 
-		owner = MAG
-		add_core_of = MAG
+		owner = MOR
 		add_core_of = MOR
 		buildings = {
 			infrastructure = 1

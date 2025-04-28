@@ -1,0 +1,352 @@
+music = {
+	name = "AccentuateThePositive"
+	file = "AccentuateThePositive.ogg"
+}
+music = {
+	name = "AGoodManIsHardToFind"
+	file = "AGoodManIsHardToFind.ogg"
+}
+music = {
+	name = "AintThatAKickInTheHead"
+	file = "AintThatAKickInTheHead.ogg"
+}
+music = {
+	name = "AKissToBuildADreamOn"
+	file = "AKissToBuildADreamOn.ogg"
+}
+music = {
+	name = "AmericanSwing"
+	file = "AmericanSwing.ogg"
+}
+music = {
+	name = "AnythingGoes"
+	file = "AnythingGoes.ogg"
+}
+music = {
+	name = "AtomBombBaby"
+	file = "AtomBombBaby.ogg"
+}
+music = {
+	name = "AWonderfulGuy"
+	file = "AWonderfulGuy.ogg"
+}
+music = {
+	name = "BeginAgain"
+	file = "BeginAgain.ogg"
+}
+music = {
+	name = "BigIron"
+	file = "BigIron.ogg"
+}
+music = {
+	name = "BluesForYou"
+	file = "BluesForYou.ogg"
+}
+music = {
+	name = "BlueMoon"
+	file = "BlueMoon.ogg"
+}
+music = {
+	name = "BoogieMan"
+	file = "BoogieMan.ogg"
+}
+music = {
+	name = "ButcherPete"
+	file = "ButcherPete.ogg"
+}
+music = {
+	name = "Civilization"
+	file = "Civilization.ogg"
+}
+music = {
+	name = "CrawlOutThroughTheFallout"
+	file = "CrawlOutThroughTheFallout.ogg"
+}
+music = {
+	name = "CrazyHeCallsMe"
+	file = "CrazyHeCallsMe.ogg"
+}
+music = {
+	name = "DearHeartsAndGentlePeople"
+	file = "DearHeartsAndGentlePeople.ogg"
+}
+music = {
+	name = "EasyLiving"
+	file = "EasyLiving.ogg"
+}
+music = {
+	name = "FoxBoogie"
+	file = "FoxBoogie.ogg"
+}
+music = {
+	name = "GoinUnder"
+	file = "GoinUnder.ogg"
+}
+music = {
+	name = "GoodRockinTonight"
+	file = "GoodRockinTonight.ogg"
+}
+music = {
+	name = "GrandmaPlaysTheNumbers"
+	file = "GrandmaPlaysTheNumbers.ogg"
+}
+music = {
+	name = "HalloMisterX"
+	file = "HalloMisterX.ogg"
+}
+music = {
+	name = "HappyTimes"
+	file = "HappyTimes.ogg"
+}
+music = {
+	name = "HeartachesByTheNumber"
+	file = "HeartachesByTheNumber.ogg"
+}
+music = {
+	name = "HesADemonHesADevilHesADoll"
+	file = "HesADemonHesADevilHesADoll.ogg"
+}
+music = {
+	name = "IDontWantToSeeTomorrow"
+	file = "IDontWantToSeeTomorrow.ogg"
+}
+music = {
+	name = "IDontWantToSetTheWorldOnFire"
+	file = "IDontWantToSetTheWorldOnFire.ogg"
+}
+music = {
+	name = "ImMovingOut"
+	file = "ImMovingOut.ogg"
+}
+music = {
+	name = "ImSoBlue"
+	file = "ImSoBlue.ogg"
+}
+music = {
+	name = "ImTickledPink"
+	file = "ImTickledPink.ogg"
+}
+music = {
+	name = "InTheShadowOfTheValley"
+	file = "InTheShadowOfTheValley.ogg"
+}
+music = {
+	name = "IntoEachLifeSomeRainMustFall"
+	file = "IntoEachLifeSomeRainMustFall.ogg"
+}
+music = {
+	name = "ItsAllOverButTheCrying"
+	file = "ItsAllOverButTheCrying.ogg"
+}
+music = {
+	name = "ItsAMan"
+	file = "ItsAMan.ogg"
+}
+music = {
+	name = "ItsASin"
+	file = "ItsASin.ogg"
+}
+music = {
+	name = "ItsASinToTellALie"
+	file = "ItsASinToTellALie.ogg"
+}
+music = {
+	name = "JazzBlues"
+	file = "JazzBlues.ogg"
+}
+music = {
+	name = "JazzClubBlues"
+	file = "JazzClubBlues.ogg"
+}
+music = {
+	name = "JazzyInterlude"
+	file = "JazzyInterlude.ogg"
+}
+music = {
+	name = "JazzyInterlude2"
+	file = "JazzyInterlude2.ogg"
+}
+music = {
+	name = "JingleJangleJingle"
+	file = "JingleJangleJingle.ogg"
+}
+music = {
+	name = "JoeCool"
+	file = "JoeCool.ogg"
+}
+music = {
+	name = "JohnnyGuitar"
+	file = "JohnnyGuitar.ogg"
+}
+music = {
+	name = "JollyDays"
+	file = "JollyDays.ogg"
+}
+music = {
+	name = "KeepAKnockin"
+	file = "KeepAKnockin.ogg"
+}
+music = {
+	name = "LazyDayBlues"
+	file = "LazyDayBlues.ogg"
+}
+music = {
+	name = "LetsGoSunning"
+	file = "LetsGoSunning.ogg"
+}
+music = {
+	name = "LetsRideIntoTheSunsetTogether"
+	file = "LetsRideIntoTheSunsetTogether.ogg"
+}
+music = {
+	name = "LoneStar"
+	file = "LoneStar.ogg"
+}
+music = {
+	name = "LoveMeAsThoughThereWereNoTomorrow"
+	file = "LoveMeAsThoughThereWereNoTomorrow.ogg"
+}
+music = {
+	name = "MadAboutTheBoy"
+	file = "MadAboutTheBoy.ogg"
+}
+music = {
+	name = "Manhattan"
+	file = "Manhattan.ogg"
+}
+music = {
+	name = "Maybe"
+	file = "Maybe.ogg"
+}
+music = {
+	name = "MightyMightyMan"
+	file = "MightyMightyMan.ogg"
+}
+music = {
+	name = "MrSandman"
+	file = "MrSandman.ogg"
+}
+music = {
+	name = "OneMoreTomorrow"
+	file = "OneMoreTomorrow.ogg"
+}
+music = {
+	name = "OrangeColoredSky"
+	file = "OrangeColoredSky.ogg"
+}
+music = {
+	name = "Personality"
+	file = "Personality.ogg"
+}
+music = {
+	name = "PistolPackinMama"
+	file = "PistolPackinMama.ogg"
+}
+music = {
+	name = "RightBehindYouBaby"
+	file = "RightBehindYouBaby.ogg"
+}
+music = {
+	name = "RingOfFire"
+	file = "RingOfFire.ogg"
+}
+music = {
+	name = "Rocket69"
+	file = "Rocket69.ogg"
+}
+music = {
+	name = "RoundhouseRock"
+	file = "RoundhouseRock.ogg"
+}
+music = {
+	name = "RhythmForYou"
+	file = "RhythmForYou.ogg"
+}
+music = {
+	name = "SitAndDream"
+	file = "SitAndDream.ogg"
+}
+music = {
+	name = "SixteenTons"
+	file = "SixteenTons.ogg"
+}
+music = {
+	name = "SixtyMinuteMan"
+	file = "SixtyMinuteMan.ogg"
+}
+music = {
+	name = "SleepyTownBlues"
+	file = "SleepyTownBlues.ogg"
+}
+music = {
+	name = "SlowBounce"
+	file = "SlowBounce.ogg"
+}
+music = {
+	name = "SomethingsGottaGive"
+	file = "SomethingsGottaGive.ogg"
+}
+music = {
+	name = "StarsOfTheMidnightRange"
+	file = "StarsOfTheMidnightRange.ogg"
+}
+music = {
+	name = "StrahlendeTropete"
+	file = "StrahlendeTropete.ogg"
+}
+music = {
+	name = "SwingDoors"
+	file = "SwingDoors.ogg"
+}
+music = {
+	name = "TakeMeHomeCountryRoads"
+	file = "TakeMeHomeCountryRoads.ogg"
+}
+music = {
+	name = "TheEndOfTheWorld"
+	file = "TheEndOfTheWorld.ogg"
+}
+music = {
+	name = "TheWanderer"
+	file = "TheWanderer.ogg"
+}
+music = {
+	name = "Undecided"
+	file = "Undecided.ogg"
+}
+music = {
+	name = "UraniumFever"
+	file = "UraniumFever.ogg"
+}
+music = {
+	name = "UraniumRock"
+	file = "UraniumRock.ogg"
+}
+music = {
+	name = "VonSpanienNachSudamerika"
+	file = "VonSpanienNachSudamerika.ogg"
+}
+music = {
+	name = "WayBackHome"
+	file = "WayBackHome.ogg"
+}
+music = {
+	name = "WhereHaveYouBeenAllMyLife"
+	file = "WhereHaveYouBeenAllMyLife.ogg"
+}
+music = {
+	name = "WholeLottaShakinGoinOn"
+	file = "WholeLottaShakinGoinOn.ogg"
+}
+music = {
+	name = "WhyDontYouDoRight"
+	file = "WhyDontYouDoRight.ogg"
+}
+music = {
+	name = "WorryWorryWorry"
+	file = "WorryWorryWorry.ogg"
+}
+music = {
+	name = "WouldntItBeNice"
+	file = "WouldntItBeNice.ogg"
+}

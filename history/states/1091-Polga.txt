@@ -1,0 +1,23 @@
+state={
+	id=1091
+	name="STATE_1091"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+		add_core_of = KAR
+
+	}
+
+	provinces={
+		3078 6090 6159 9045 9055 11094 11212 13194 
+	}
+	manpower=20008
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

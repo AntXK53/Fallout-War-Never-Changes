@@ -1,0 +1,26 @@
+state={
+	id=995
+	name="STATE_995"
+	state_category = small_island
+	history = {
+		owner = ENG
+		add_core_of = ENG
+		
+		victory_points = {
+			13400 1
+		}
+		buildings = {
+			infrastructure = 2
+			13400 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13400 13432 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

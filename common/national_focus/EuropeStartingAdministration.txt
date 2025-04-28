@@ -1,0 +1,631 @@
+focus_tree = {
+	id = EUC_starting_tree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 999
+			tag = EUC
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 25 }
+	
+	focus = {
+		id = EUC_a_nation_in_crisis
+		icon = goal_generic_improve_relations
+		x = 13
+		y = 0
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		add_political_power = 50
+		country_event = euc.1
+		}
+	}
+	
+	focus = {
+		id = EUC_addresing_economic_issues
+		icon = goal_generic_improve_relations
+		x = -2
+		y = 1
+		
+		relative_position_id = EUC_a_nation_in_crisis
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_a_nation_in_crisis
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = EUC_aquire_fuel
+		icon = goal_generic_improve_relations
+		x = -1
+		y = 1
+		
+		relative_position_id = EUC_addresing_economic_issues
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_addresing_economic_issues
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_energy_crisis_1
+		add_idea = euc_energy_crisis_2
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_invest_in_alternatives
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_aquire_fuel
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_aquire_fuel
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_energy_crisis_2
+		add_idea = euc_energy_crisis_3
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_stimiulate_economy
+		icon = goal_generic_improve_relations
+		x = 1
+		y = 1
+		
+		relative_position_id = EUC_addresing_economic_issues
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_addresing_economic_issues
+		}
+		
+		prerequisite = {
+			focus = EUC_forget_what_happened_in_nordics
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_economic_recession_1
+		add_idea = euc_economic_recession_2
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_inflation_controls
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_stimiulate_economy
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_stimiulate_economy
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_economic_recession_2
+		add_idea = euc_economic_recession_3
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_economics_stabilized
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 3
+		
+		relative_position_id = EUC_addresing_economic_issues
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_inflation_controls
+		}
+		
+		prerequisite = {
+			focus = EUC_invest_in_alternatives
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = EUC_forget_what_happened_in_nordics
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_a_nation_in_crisis
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_a_nation_in_crisis
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_remembering_nordic_uprising_1
+		add_idea = euc_remembering_nordic_uprising_2
+		}
+		}
+	}
+	
+	focus = {
+		id = EUC_addressing_unrest_and_politics
+		icon = goal_generic_improve_relations
+		x = 2
+		y = 1
+		
+		relative_position_id = EUC_a_nation_in_crisis
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_a_nation_in_crisis
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = EUC_increase_police_budget
+		icon = goal_generic_improve_relations
+		x = -1
+		y = 1
+		
+		relative_position_id = EUC_addressing_unrest_and_politics
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_addressing_unrest_and_politics
+		}
+		
+		prerequisite = {
+			focus = EUC_forget_what_happened_in_nordics
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_rampant_unrest_1
+		add_idea = euc_rampant_unrest_2
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_entertain_the_populous
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_increase_police_budget
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_increase_police_budget
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_rampant_unrest_2
+		add_idea = euc_rampant_unrest_3
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_incentive_to_stay
+		icon = goal_generic_improve_relations
+		x = 1
+		y = 1
+		
+		relative_position_id = EUC_addressing_unrest_and_politics
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_addressing_unrest_and_politics
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_breaking_union_1
+		add_idea = euc_breaking_union_2
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_increase_collaberation
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_incentive_to_stay
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_incentive_to_stay
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		swap_ideas = {
+		remove_idea = euc_breaking_union_2
+		add_idea = euc_breaking_union_3
+		}
+		add_political_power = -50
+		}
+	}
+	
+	focus = {
+		id = EUC_stablized_populous_and_union
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 3
+		
+		relative_position_id = EUC_addressing_unrest_and_politics
+	
+		cost = 5
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_increase_collaberation
+		}
+		
+		prerequisite = {
+			focus = EUC_entertain_the_populous
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		add_stability = 0.05
+		add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = EUC_brussels_conference
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 5
+		
+		relative_position_id = EUC_a_nation_in_crisis
+	
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+			has_country_flag = EUC_nation_in_crisis
+			has_country_flag = EUC_failed_brussels_conference
+			}
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_stablized_populous_and_union
+		}
+		
+		prerequisite = {
+			focus = EUC_economics_stabilized
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		select_effect = {
+		set_country_flag = EUC_ongoing_brussels_conference
+		}
+	
+		completion_reward = {
+		clr_country_flag = EUC_ongoing_brussels_conference
+		custom_effect_tooltip = EUC_future_of_europe_tt
+		}
+	}
+	
+	focus = {
+		id = EUC_elections
+		icon = goal_generic_improve_relations
+		x = 0
+		y = 1
+		
+		relative_position_id = EUC_brussels_conference
+	
+		cost = 1
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+	
+		}
+		
+		prerequisite = {
+			focus = EUC_brussels_conference
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+		
+		}
+	}
+}

@@ -1,0 +1,56 @@
+characters = {
+	#### COUNTRY LEADERS 
+	ORO_Nikolai_Malashenko = {
+		name = "Nikolai Malashenko"
+		portraits = {
+			civilian = {
+				large = "GFX_ORO_Nikolai_Malashenko"
+				small = "GFX_ORO_Nikolai_Malashenko"
+			}
+			army = {
+				large = "GFX_ORO_Nikolai_Malashenko"
+				small = "GFX_ORO_Nikolai_Malashenko"
+			}
+		}
+		country_leader = {
+			ideology = Military_Dictatorship  
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			visible = { 
+				}
+		}
+	ORO_Valerie_Lebedjev = {
+		name = "Valerie Lebedjev"
+		portraits = {
+			civilian = {
+				large = "GFX_ORO_Valerie_Lebedjev"
+				small = "GFX_ORO_Valerie_Lebedjev"
+			}
+			army = {
+				large = "GFX_ORO_Valerie_Lebedjev"
+				small = "GFX_ORO_Valerie_Lebedjev"
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			visible = { 
+				}
+		}
+	}
+
+}

@@ -1,0 +1,22 @@
+state={
+	id=1057
+	name="STATE_1057"
+
+	history={
+		owner = COG
+		add_core_of = RCG
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		6008 
+	}
+	manpower=10015
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

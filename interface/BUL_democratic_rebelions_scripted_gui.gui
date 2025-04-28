@@ -1,0 +1,136 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BUL_drsg_button"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 } 
+ 
+		buttonType = { 
+			name = "BUL_drsg_gui_open"
+			spriteType = "GFX_BUL_drsg_gui_open"
+			position = { x = 190 y = 31 }
+			pdx_tooltip = ""
+			scale = 0.65
+		}
+ 
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x=189 y=-16 }
+		}
+	}
+	#Example Scripted GUI Window
+	containerWindowType = {
+		name = "BUL_democratic_rebelions_scripted_gui_window"
+		size = { width = 590 height = 500 }
+		Orientation = CENTER
+		position = { x = -229 y = -300 }
+		moveable = yes
+					
+		background = {
+			name = "Background"
+			spriteType = "GFX_BUL_democratic_rebelions_scripted_gui_window_bg"
+			#quadTextureSprite = "GFX_tiled_window2_1b_border"
+		}
+		iconType ={
+            name ="BUL_drsg_varna_region_sl"
+            position = { x= 41 y = -215 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		iconType ={
+            name ="BUL_drsg_vidin_region_sl"
+            position = { x= -263 y = -232 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		iconType ={
+            name ="BUL_drsg_silistra_region_sl"
+            position = { x= -52 y = -230 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		iconType ={
+            name ="BUL_drsg_sofia_region_sl"
+            position = { x= -266 y = -115 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		iconType ={
+            name ="BUL_drsg_plovdiv_region_sl"
+            position = { x= -147 y = -67 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		iconType ={
+            name ="BUL_drsg_burgas_region_sl"
+            position = { x= -39 y = -97 }
+            Orientation = "center"
+			alwaystransparent = yes
+        }
+		### GRID ###
+		iconType ={
+            name ="BUL_drsg_grid_sl"
+			spriteType = "BUL_drsg_grid_sl"
+            position = { x= 26 y = 15 }
+            Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+        }
+
+		### >:3 ###
+
+		instantTextBoxType = {
+			name = "BUL_drsg_sofia_region_sl_text"
+			position = { x = 32 y = 366 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_sofia_region_sl_text_loc]"
+		}
+		instantTextBoxType = {
+			name = "BUL_drsg_burgas_region_sl_text"
+			position = { x = 32 y = 386 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_burgas_region_sl_text_loc]"
+		}
+		instantTextBoxType = {
+			name = "BUL_drsg_silistra_region_sl_text"
+			position = { x = 32 y = 406 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_silistra_region_sl_text_loc]"
+		}
+		instantTextBoxType = {
+			name = "BUL_drsg_plovdiv_region_sl_text"
+			position = { x = 32 y = 426 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_plovdiv_region_sl_text_loc]"
+		}
+		instantTextBoxType = {
+			name = "BUL_drsg_varna_region_sl_text"
+			position = { x = 32 y = 446 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_varna_region_sl_text_loc]"
+		}
+		instantTextBoxType = {
+			name = "BUL_drsg_vidin_region_sl_text"
+			position = { x = 32 y = 466 }
+			maxWidth = 500
+			maxHeight = 20
+			format = center 
+			font = "pugfont"
+			text = "[BUL_drsg_vidin_region_sl_text_loc]"
+		}
+	}
+}

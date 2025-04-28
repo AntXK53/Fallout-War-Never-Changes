@@ -1,0 +1,55 @@
+characters = {
+
+	SYP_Xirsi = { 
+		name = "Xirsi"
+		portraits = {
+			civilian = {
+				large = "GFX_SYP_Xirsi"
+				small = "GFX_SYP_Xirsi"
+			}
+			
+		}
+		country_leader = {
+			ideology = Military_Dictatorship
+			traits = {  }
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	SYP_Buraale  = {
+		name = "Buraale"
+		portraits = {
+			civilian = {
+				large = "GFX_SYB_Buraale"
+				small = "GFX_SYB_Buraale"
+			}
+			army = {
+				large = "GFX_SYB_Buraale"
+				small = "GFX_SYB_Buraale"
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+	
+}

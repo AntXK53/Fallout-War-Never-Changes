@@ -1,0 +1,81 @@
+﻿########################
+### Bulgarian Events ###
+########################
+
+add_namespace = bulgaria
+
+country_event = {
+	id = bulgaria.1
+	title = bulgaria.1.t
+	desc = bulgaria.1.d
+	picture = GFX_report_event_BUL_starting
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = bulgaria.1.a
+		add_stability = 0.01
+	}
+}
+country_event = {
+	id = bulgaria.2
+	title = bulgaria.2.t
+	desc = bulgaria.2.d
+	picture = GFX_report_event_BUL_starting
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = bulgaria.2.a
+		swap_ideas = {
+			remove_idea = BUL_agricultural_crisis_1_idea
+			add_idea = BUL_agricultural_crisis_2_idea
+		}
+	}
+}
+country_event = {
+	id = bulgaria.3
+	title = bulgaria.3.t
+	desc = bulgaria.3.d
+	picture = GFX_report_event_BUL_starting
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = bulgaria.3.a
+		custom_effect_tooltip = bulgaria.3.a.tt
+	}
+}
+country_event = {
+	id = bulgaria.4
+	title = bulgaria.4.t
+	desc = bulgaria.4.d
+	picture = GFX_report_event_BUL_starting
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = bulgaria.4.a
+		custom_effect_tooltip = bulgaria.4.a.tt
+	}
+}

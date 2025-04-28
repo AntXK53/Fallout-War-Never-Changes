@@ -10,7 +10,7 @@ state=
 		victory_points = {
 			6727 1
 		}
-		add_core_of = SOV
+		add_core_of = MOL
 		add_core_of = UKR
 		owner = SOV
 		buildings = {
@@ -20,6 +20,7 @@ state=
 				naval_base = 3
 			}
 		}
+		add_core_of = ROM
 	}
 	provinces=
 	{

@@ -1,0 +1,169 @@
+focus_tree = {
+	id = SOV_initial_tree
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+	
+	initial_show_position = {
+		x = 4
+		y = 0
+	}
+
+	focus = {
+		id = SOV_estonian_uprising_focus
+		icon = GFX_goal_SOV_estonian_uprising_focus
+		x = 4
+		y = 0
+	
+		cost = 1
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EST_estonian_soviet_war_ended } }
+			has_war_with = EST
+			country_exists = EST
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			# Letsa gooo
+			custom_effect_tooltip = SOV_estonian_uprising_focus_tt
+		}
+	}
+	focus = {
+		id = SOV_gain_support_of_estonian_communists_focus
+		icon = GFX_goal_SOV_gain_support_of_estonian_communists_focus
+		x = -2
+		y = 1
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = SOV_estonian_uprising_focus
+		prerequisite = {
+			focus = SOV_estonian_uprising_focus
+		}
+	
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EST_estonian_soviet_war_ended } }
+			has_war_with = EST
+			country_exists = EST
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = SOV_remember_their_sins_focus
+		icon = GFX_goal_SOV_remember_their_sins_focus
+		x = 2
+		y = 1
+	
+		cost = 2
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = SOV_estonian_uprising_focus
+		prerequisite = {
+			focus = SOV_estonian_uprising_focus
+		}
+	
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EST_estonian_soviet_war_ended } }
+			has_war_with = EST
+			country_exists = EST
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_launch_full_scale_offensive_focus
+		icon = GFX_goal_SOV_launch_full_scale_offensive_focus
+		x = 0
+		y = 2
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = SOV_estonian_uprising_focus
+		prerequisite = {
+			focus = SOV_gain_support_of_estonian_communists_focus
+		}
+		prerequisite = {
+			focus = SOV_remember_their_sins_focus
+		}
+	
+		available = {
+			hidden_trigger = { NOT = { has_country_flag = EST_estonian_soviet_war_ended } }
+			has_war_with = EST
+			country_exists = EST
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SOV_estonian_ssr_again_focus
+		icon = GFX_goal_SOV_estonian_ssr_again_focus
+		x = 0
+		y = 3
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		relative_position_id = SOV_estonian_uprising_focus
+		prerequisite = {
+			focus = SOV_launch_full_scale_offensive_focus
+		}
+	
+		available = {
+			always = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_estonian_ssr_again_focus_tt
+		}
+	}
+}

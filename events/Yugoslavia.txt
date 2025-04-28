@@ -1,0 +1,97 @@
+add_namespace = yugoslav_news
+add_namespace = yugoslavianevents
+
+news_event = {
+	id = yugoslav_news.1
+	hidden = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = { YUG = { news_event = { id = yugoslav_news.2 } } }
+		}
+	}
+	
+	option = {
+		name = yugoslav_news.1.a
+	}
+}
+
+# agh
+news_event = {
+	id = yugoslav_news.2
+	title = yugoslav_news.2.t
+	desc = yugoslav_news.2.desc
+	picture = GFX_news_event_lucicrowejadeyugo
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = THE_YUGOSLAV_STARTER
+		YUG = {
+		country_event = { id = yugoslavianevents.1 days = 130 }
+		}
+	}
+	
+	option = {
+		name = yugoslav_news.2.a
+	}
+}
+
+country_event = {
+	id = yugoslavianevents.1
+	title = yugoslavianevents.1.t
+	hidden = yes
+	
+	fire_only_once = yes
+		
+	is_triggered_only = yes
+	
+	immediate = {
+		CRO = {
+			transfer_state = 103
+			transfer_state = 163
+			103 = { set_demilitarized_zone = no }	
+			163 = { set_demilitarized_zone = no }	
+		}
+		LBV = {
+			set_cosmetic_tag = fiume
+			transfer_state = 852
+		}
+		BOS = {
+			news_event = { id = yugoslav_news.3 days = 1 }
+			transfer_state = 104
+		}
+		HRZ = {
+			transfer_state = 804
+		}
+		KOS = {
+			transfer_state = 802
+			transfer_state = 1004
+		}
+		MAC = {
+			transfer_state = 106
+			transfer_state = 803
+		}
+	}
+}
+	
+news_event = {
+	id = yugoslav_news.3
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = yugoslav_news.3.a
+	}
+}

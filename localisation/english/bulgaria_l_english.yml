@@ -1,0 +1,102 @@
+﻿l_english:
+### FOCUSES ###
+# Starting tree
+BUL_the_great_rule_of_bulgaria_focus:0 "The Great Rule of §tPRB§!"
+BUL_the_great_rule_of_bulgaria_focus_desc:0 "The Great People's Republic of Bulgaria continues to defend the ideas of communism within the country!"
+BUL_carry_out_agricultural_reform_focus:0 "Carry out agricultural reform"
+BUL_carry_out_agricultural_reform_focus_desc:0 "Bulgaria's agricultural sector is experiencing stagnation due to a lack of modern technological integration. This absence significantly hinders productivity and efficiency gains. To overcome this challenge, comprehensive reforms are essential to reinvigorate the sector and promote the adoption of contemporary agricultural practices."
+BUL_recovery_from_agricultural_crisis_focus:0 "Recovery from the Agricultural Crisis"
+BUL_recovery_from_agricultural_crisis_focus_desc:0 "Our goal is to recover from the agricultural crisis."
+BUL_buy_equipment_from_ussr_focus:0 "Buy equipment from the USSR"
+BUL_buy_equipment_from_ussr_focus_desc:0 "Time to buy equipment and machinery from the Soviet Union to improve the efficiency of crop extraction."
+BUL_land_reform_focus:0 "Land reform"
+BUL_land_reform_focus_desc:0 "Land reform will allow us to solve the problems of the agricultural crisis."
+BUL_start_producing_your_own_agricultural_equipment_focus:0 "Start producing our own farming equipment"
+BUL_start_producing_your_own_agricultural_equipment_focus_desc:0 "We need to start producing our own farm equipment, which will help us avoid farming crises in the future."
+BUL_attract_more_people_to_work_focus:0 "Get more people to work"
+BUL_attract_more_people_to_work_focus_desc:0 "Bringing more people into the workplace will allow us to improve the performance of our economy."
+BUL_end_of_crisis_focus:0 "End of Crisis"
+BUL_end_of_crisis_focus_desc:0 "We have been able to recover from the crisis and now it is time for us to declare that the agricultural problem is solved."
+BUL_five_year_plan_focus:0 "Five-Year Plan"
+BUL_five_year_plan_focus_desc:0 "We need to start a five-year plan"
+BUL_modernize_sofia_varna_road_focus:0 "Modernize the Sofia-Varna road"
+BUL_modernize_sofia_varna_road_focus_desc:0 "The road from Sofia to Varna, the main railroad for our trade with the USSR."
+BUL_more_factories_focus:0 "More factories!"
+BUL_more_factories_focus_desc:0 "More factories! A plan to massively build factories in the region could boost our industry."
+BUL_build_new_nuclear_power_plant_focus:0 "Build a new NPP"
+BUL_build_new_nuclear_power_plant_focus_desc:0 "Nuclear power plants will allow us to produce more energy to replace oil."
+BUL_reduce_fuel_consumption_focus:0 "Reduce fuel consumption"
+BUL_reduce_fuel_consumption_focus_desc:0 "We spend too much oil on the needs of the people and the public purse. We need to reduce oil consumption in Bulgaria."
+BUL_great_economy_focus:0 "Great Economy"
+BUL_great_economy_focus_desc:0 "Our economy has improved many times over and now we can call ourselves a “Great Economy” even if it's not true!"
+BUL_diminishing_soviet_influence_focus:0 "Diminishing Soviet Influence"
+BUL_diminishing_soviet_influence_focus_desc:0 "Time to reduce the USSR's influence on us, although our government is only holding on to support from the USSR, we need to get back on our feet."
+BUL_true_communism_focus:0 "True Communism"
+BUL_true_communism_focus_desc:0 "Bulgaria is an example of true communism! The one that controls everything and everyone, the true form of communism. The imbeciles say it's cruel and immoral, well, let them whine until we get to them."
+BUL_true_terror_just_ahead_focus:0 "§tTrue Terror - Just ahead§!"
+BUL_true_terror_just_ahead_focus_desc:0 "The storms are thickening and Bolagria is building strength, a terror to the world and a joy to us. For what we will do or have done is truly terrible. \n\nFines temporum appropinquant!"
+BUL_keeping_eye_on_the_people_focus:0 "Keep an eye on the people!"
+BUL_keeping_eye_on_the_people_focus_desc:0 "If we keep a close eye on the people we can spot when they start to... think differently."
+BUL_dreams_of_bulgarian_communism_focus:0 "Dreams of Bulgarian Communism..."
+BUL_dreams_of_bulgarian_communism_focus_desc:0 "Our dreams of a true Bulgarian communism, so perfect and so close.... And so bloody"
+BUL_suppress_different_thinking_focus:0 "Suppress different thinking!"
+BUL_suppress_different_thinking_focus_desc:0 "To think differently is to think differently than the state or our leader desires! Wrong and wrong things should be burned, right?"
+BUL_traitors_everywhere_focus:0 "Traitors everywhere!"
+BUL_traitors_everywhere_focus_desc:0 "These creatures must be destroyed or we will fall.... the beautiful world will not begin."
+
+# Freedom path
+BUL_freebul_free_bulgaria_focus:0 "§4Free Bulgaria!§!"
+BUL_freebul_free_bulgaria_focus_desc:0 "Bulgaria is free at last! Free from tyranny and terror! \n\nDictaturam mors, libertas gloria!"
+
+### TRAITS ###
+BUL_butcher_trait:0 "§tButcher§!" 
+BUL_paranoid_trait:0 "§tParanoid§!"
+
+### SCRIPTED TEXT ###
+BUL_drsg_sofia_region_sl_text_loc:0 "Control level of the §6Sofia§! region: [?BUL_drsg_sofia_region_vv|+0]"
+BUL_drsg_plovdiv_region_sl_text_loc:0 "Control level of the §6Plovdiv§! region: [?BUL_drsg_plovdiv_region_vv|+0]"
+BUL_drsg_pleven_region_sl_text_loc:0 "Control level of the §6Pleven§! region: [?BUL_drsg_pleven_region_vv|+0]"
+BUL_drsg_varna_region_sl_text_loc:0 "Control level of the §6Varna§! region: [?BUL_drsg_varna_region_vv|+0]"
+BUL_drsg_burgas_region_sl_text_loc:0 "Control level of the §6Burgas§! region: [?BUL_drsg_burgas_region_vv|+0]"
+
+### DYNAMIC MODIFIERS ###
+BUL_nuclear_power_plant_dm:0 "Nuclear Power Plant"
+BUL_nuclear_power_plant_dm_desc:0 "Nuclear Power Plants will allow us to produce more energy to replace scarce oil."
+BUL_five_year_plan_idea_dm:0 "Five-Year Plan"
+BUL_five_year_plan_idea_dm_desc:0 "The Five-Year Plan is a creation of planned economy borrowed from the USSR. According to this plan, we should strengthen our economy by gradually building up our economic strength."
+
+### DECISIONS ###
+BUL_nuclear_power_plant_decision_category:0 "Nuclear Power Plant"
+BUL_nuclear_power_plant_decision_category_desc:0 "Expanding nuclear energy production is crucial for our future. Building additional nuclear power plants will not only boost our energy output but also strengthen our economy and enhance our influence in the energy sector. This investment in nuclear infrastructure will pave the way for sustainable growth and energy independence."
+BUL_build_nuclear_power_plant_decision:0 "Build a §4nuclear power plant§! in §6[FROM.GetName]§!"
+
+### TOOLTIPS ###
+BUL_traitors_everywhere_focus_tt:0 "§tThe whole Bulgaria is full of traitors, despicable creatures with no right to life and existence.... and therefore it is important to eradicate the contagion before it spreads to the whole of our homeland....§!"
+bulgaria.4.a.tt:0 "§tIt's time to cleanse Bulgaria, as our leader wishes us to do. And it is our duty to make their last minutes as painful as possible...§!"
+bulgaria.3.a.tt:0 "§4I dream that some day...§! §tthe world will be purified.§!"
+BUL_freebul_free_bulgaria_focus_tt:0 "§4Bulgaria is free!§!"
+BUL_true_communism_focus_tt:0 "§GEach region will receive 1 level of control.§!"
+
+### IDEAS ###
+BUL_BKP_idea:0 "§tBŭlgarska Komunisticheska Partiya§!"
+BUL_BKP_idea_desc:0 "The §tBŭlgarska Komunisticheska Partiya§! has held undisputed political power in Bulgaria for an extended period exceeding a century.  It has positioned itself as a protector against external threats, namely capitalist ideologies, bourgeois influences, and imperialism, ensuring the nation's stability. \n\nUnlike its counterparts in other Soviet republics, the §tBŭlgarska Komunisticheska Partiya§! exercises comprehensive control, extending beyond governmental institutions to encompass all facets of Bulgarian life. Its influence is pervasive yet subtle, remaining largely unnoticed by the populace who are unaware of the constant monitoring and surveillance they are subject to. The Party maintains a vigilant awareness of all activities and communications within the nation, viewing this comprehensive oversight as the foundation of societal strength."
+BUL_agricultural_crisis_1_idea:0 "Crisis in agriculture"
+BUL_agricultural_crisis_1_idea_desc:0 "Only 2 years ago the Bulgarian economy started to stagnate thanks to new radical reforms that shook the fragile body of PRB agriculture."
+BUL_agricultural_crisis_2_idea:0 "Crisis in agriculture"
+BUL_agricultural_crisis_2_idea_desc:0 "Only 2 years ago the Bulgarian economy started to stagnate thanks to new radical reforms that shook the fragile body of PRB agriculture."
+BUL_land_reform_idea:0 "Land reform"
+BUL_land_reform_idea_desc:0 "Unjust and excessive governmental control over land necessitates the implementation of land redistribution policies aimed at achieving equitable agricultural land allocation."
+BUL_mass_purges_idea:0 "Mass Purges"
+BUL_mass_purges_idea_desc:0 "Since the beginning of the new secretary's rule, the number and scope of repression against the population has gradually increased. At the beginning there were only a few, but nowadays hundreds of people are subjected to sweepings. No one even knows why, the traitors say. Although the truth is that they choose anyone. And the unlucky victim does not die immediately, it goes through long stages of interrogation and torture, if the victim of course will be suspected of atni-government views. But no one knows where, or how it all happens. Maybe it's a lie, but it's probably a rumor started by the government. For reasons unknown."
+
+### EVENTS ###
+bulgaria.1.t:0 "People's Republic of Bulgaria"
+bulgaria.1.d:0 "The People's Republic of Bulgaria, established in the previous century, has demonstrated remarkable resilience despite encountering numerous obstacles throughout its history. The nation successfully navigated periods of unrest and political dissent primarily due to the transformative governance model implemented by Nikul Vasilev upon his ascension to leadership in 2047. His administration ushered in a period of stability for Bulgaria. \n\nHowever, a new challenge has emerged: an agricultural crisis that originated in 2054 following radical economic reforms which destabilized the nation's agricultural sector. This upheaval has resulted in a significant decline in food production and disproportionately impacted rural communities. \n\nCompounding these internal difficulties is a diplomatic impasse with neighboring nations Yugoslavia and Greece. Nevertheless, Bulgaria enjoys the support of the USSR, placing it in a favorable position to safeguard its strategic interests within the Balkans and maintain regional influence for the foreseeable future. \n\nThe situation remains precarious."
+bulgaria.1.a:0 "Everything's going according to plan, almost everything"
+
+bulgaria.2.t:0 "Agricultural reform"
+bulgaria.2.d:0 "The socialist government of Bulgaria took decisive action to address the nation's agricultural crisis by distributing modern machinery and technology to farming regions across the country. While this initiative did not fully resolve the agricultural issues, it significantly alleviated the crisis and improved productivity. Today, a variety of popular products have begun to reappear on store shelves in the cities, while trucks are once again delivering goods to the rural areas. This marks a significant step towards revitalizing the agricultural sector and ensuring food security for all Bulgarians."
+bulgaria.2.a:0 "Eat while you can"
+
+bulgaria.3.t:0 "Bulgarian Dream"
+bulgaria.3.d:0 "Ferdinand, a young officer in the Bulgarian People's Army, stood before the office door of Nikul Vasilev, the leader of the Bulgarian People's Republic. One autumn day, Ferdinand was astonished to receive an appointment to a position of great significance, a role he felt ill-equipped to fill. As a simple officer, he questioned the rationale behind his selection. \n\nEntering the room, Ferdinand found Nikul seated at a leather desk, engrossed in writing. As Nikul looked up, a warm smile spread across his face. Their conversation proceeded as usual until Nikul posed a thought-provoking question: "Ferdinand, what do you believe is my ultimate goal? Of course, the establishment of a Great Bulgarian Communism is paramount, but I seek a more concrete answer... What is my dream? My aspiration?" \n\nFerdinand, uncertain of the correct response, remained silent. Nikul waited patiently, then, with a radiant smile, declared, "I yearn to leave an indelible mark on history. I want to be remembered even after the cataclysm of nuclear war, the end of the world. And the means by which I shall achieve this immortality, you will soon discover.""

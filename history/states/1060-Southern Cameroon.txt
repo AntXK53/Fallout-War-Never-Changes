@@ -1,0 +1,26 @@
+state={
+	id=1060
+	name="STATE_1060"
+
+	history={
+		owner = CHA
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 2
+			6039 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6039 7963 9137 11194 
+	}
+	manpower=1200782
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

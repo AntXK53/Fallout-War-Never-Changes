@@ -1,0 +1,29 @@
+focus_tree = {
+	id = BEG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BEG
+		}
+	}
+	
+### SHARED ###
+
+shared_focus = shared_eco_start	
+shared_focus = shared_mil_start
+shared_focus = shared_uni_start
+
+
+
+
+continuous_focus_position = { x = 50 y = 500 }
+	default = no
+}
+
+
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = { focus =  }
+		relative_position_id = 

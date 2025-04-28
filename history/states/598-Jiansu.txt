@@ -13,6 +13,10 @@ state={
 			infrastructure = 2
 
 		}
+
+		2900.10.25 = {
+			controller = JAP
+		}
 	}
 
 	provinces={

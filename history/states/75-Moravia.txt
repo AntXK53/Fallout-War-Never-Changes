@@ -24,6 +24,12 @@ state={
 
 		}
 		add_core_of = CZE
+		add_core_of = MRV
+
+		2900.3.14 = {
+			owner = GER
+			controller = GER
+		}
 	}
 
 	provinces={

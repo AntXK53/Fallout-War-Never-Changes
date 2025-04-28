@@ -1,0 +1,84 @@
+﻿l_english:
+    #BOOKMARK# 
+
+    #NATIONAL FOCUSES#
+    CAN_continue_the_dynasty:0 "Continuing the Dynasty"
+    CAN_continue_the_dynasty_desc:0 "There's been some rumors around Ottawa that there's some grand conspiracy to finally remove the Trudeau Dynasty, however falling for any of them will only serve to turn Walter paranoid. Surely, with how grand things are in Canada, no cracks will show, right?"
+    CAN_helping_family:0 "Helping Out Family"
+    CAN_helping_family_desc:0 "Walter's cousin has found himself owner of a fancy new Lumberyard in British Columbia, and has asked his dear cousin for a favor. Who is Walter if not a family man?"
+    CAN_close_friends:0 "Close Friends Matter Too"
+    CAN_close_friends_desc:0 "A family friend sent an email to Walter requesting some help with his Gun Control campaign, apparently there was some shooting in Ontario or something. Always good to keep the kiddies alive."
+    CAN_recycling_campaign:0 "Keep Our Surroundings Pretty"
+    CAN_recycling_campaign_desc:0 "Trash litters public parks, a horrific sight to see, and seeing as those are the same parks that Walter's kids walk through--and the fact he's in a coalition with the Green Party--it may do some good to encourage people to start picking up their garbage."
+    CAN_clean_and_safe_canada:0 "A Clean and Safe Canada"
+    CAN_clean_and_safe_canada_desc:0 "Things are looking nicer in Ontario now, less trash in the parks and more people walking around instead of driving. It's nice. Anyway, it's finally time to enstate a carbon tax on those few who aren't on electric cars or bicycles! "
+    CAN_bread:0 "Bread for the Poor"
+    CAN_bread_desc:0 "The alarming number of poor people is making the economy worse, especially with the constant influx of immigration. By providing a few funds to buy homeless people a salad or something we can keep them fit and capable of working menial labor, or joining the army."
+    CAN_circus:0 "Circuses for the Stupid"
+    CAN_circus_desc:0 "Canada is a home to many idiots, and those idiots can be used to bump up Trudeau's numbers in the polling by giving them a few subsidies to television shows or whatever people are watching these days. Maybe we can even get a few ones in color eventually."
+    CAN_guns:0 "Guns for the Army"
+    CAN_guns_desc:0 "It is extremely surprising how many guns were found in relative quality condition, and even more surprising how many military issued. While a few ex-service members might've had to grumble alone, we can use what we seized to continue arming the military, without all the expenses of producing guns."
+    CAN_trudeau_stability:0 "Canada for the Trudeaus"
+    CAN_trudeau_stability_desc:0 "It shouldn't come to any surprise that this so-called "plot" never came to fruition, for really, who could challenge a decades long dynasty over a few hiccups?"
+
+    #NATIONAL SPIRITS# 
+    CAN_trudeau_dynasty:0 "The Trudeau Dynasty"
+    CAN_trudeau_dynasty_desc:0 "Originating solely with good ol' P.E.T, the Dynasty arose with the fall of Quebecois nationalism, the Trudeaus establishing a near century of unquestioned control. People know that the Trudeaus have stayed in control through corruption, people know Canada is growing decadent, and people know that the Trudeaus are not helping, however few have managed to organize a decent enough resistance to this for it to have an effect, and fewer still are willing with how much senators gain from their "donations". That was, up until the sad death of Xavier Trudeau and the elevation of his incompetent son to control.\n\nRumors spread now. Rumors of a plot to finally throw out the Trudeaus, of growing discontent at their incompetence and the decline of Canada, on all sides of the great political divide. Men in backrooms shaking hands, once mortal enemies, now the best of associates. Of course, as Walter has pointed out, rumors are only rumors. There's no way there's some great conspiracy, not with how much Canada has grown--At least how much the Trudeaus claim Canada has grown--right?"
+    CAN_albertan_fields:0 "The Fields of Alberta"
+    CAN_albertan_fields_desc:0 "Alberta has many, many natural resources. And one of the most predominent is its Tar Sands, great deposits of oil which the world requires to run, well it did at least. While the economy has been hemhoraging a bit with the swap toward renewable energy, especially nuclear power, the other many resources and its constant influx of new workers out west means that it should only be growing. Provided the divide doesn't crack Canada apart of course."
+    CAN_east_west_split:0 "Divide Between East and West"
+    CAN_east_west_split_desc:0 "The rise of the Trudeaus may have seen the fall of Quebecois nationalism, however it also saw the rise in Western Nationalism, namely in Alberta. The more conservative regions of Canada almost always have looked down upon the government after Pierre Trudeau kicked it, his children only serving to further hamper their values. The divide has only strengthened with the introduction of federal laws regarding the regulation of oil, the western economic reliance on it seeing their steady decline as green energy overtook the population centers of the east, meaning that their only option was to either sell to the United States or go hungry. It has been this reliance on trade with the United States that has garnered the Western Canadas the nickname of the "14th Commonwealth", and should the status quo not be changed soon, they may decide to break it entirely."
+    CAN_the_avro_project:0 "Project: ARROW"
+    CAN_the_avro_project_desc:0 "The Avro Arrow was some old pet project cancelled before its time, and it arose from the dead in the last days of the Xavier Administration. One of the many "Canadian Nationalists", Xavier wished to use the project to cite Canadian exceptionalism, and has spent a large fortune on getting the project off the ground. And should it finally be completed, the Canadian Air Force would quite literally be the best in the world."
+    CAN_prime_minister_rip:0 "A Mournful Departure"
+    CAN_prime_minister_rip_desc:0 "Xavier Trudeau was a popular leader. Son of Justin, grandson of Pierre, he had actually managed to evoke the image of Pierre that much of the Old-New Left enjoyed, seeing a massive wave of support after his Father's departure. Yet it all came crashing down in moments after a diagnosis with Lung Cancer, a decade or so of smoking catching up to the man. Using his father's legacy, Walter has seen a temporary wave of support, however time will only tell if he can maintain his Father's path or fumble a century of political maneuvering."
+    CAN_wooden_toys:0 "Subsidized Wood Production"
+    CAN_wooden_toys_desc:0 ""
+    CAN_gun_seizure:0 "Enforcing Gun Control"
+    CAN_gun_seizure_desc:0 ""
+    CAN_reduce_reuse1:0 "Recycling Campaigns"
+    CAN_reduce_reuse1_desc:0 ""
+    CAN_reduce_reuse3:0 "Dominance of the Trudeaus"
+    CAN_reduce_reuse3_desc:0 ""
+
+    #EVENTS# 
+    nf_canada_1_title:0 "A Century Around"
+    nf_canada_1_desc:0 "The Trudeau Family have been in power for decades now, ever since Pierre before the turn of the Millennium laid a foundation for his son to take charge. And now, this long into it, his great-great-Grandson is fucking it up. Their rule has been assured for decades, however once Walter rose to the throne, they finally came under threat.\n\nA failed nationalization of the Oil industry, the fumbling of talks with America over the purchase of Greenland and and the economic recession gripping the Western Provinces as the globe fixates on moving away from Oil out of desperation, with the few big corporations that had actually invested into Oil either signing away their souls to the USA or going bankrupt as few others were purchasing it, or allowed to purchase it.\n\nWhile Walter isn't particularly incompetent, at least relative to the Trudeau standards, the horrific state of the world has left him to carry the bag only a few years into his term as Prime Minister, his father Xavier's unfortunate--and very early--demise meaning he's been trying to figure this all out alone, and it's a result of this that the open secret of the Trudeau Administration is that they have a great bias toward family members."
+    nf_canada_1_a:0 "For fuck sakes."
+    
+    nf_canada_2_title:0 "The Clean-Up Canada Plan"
+    nf_canada_2_desc:0 "Men and women of Canada now have an initiative to help each other to build a better tomorrow for all involved, and all they must do is pick up trash, report crimes and keep the nation clean, of everything. Of course, this requires constant government investment, and a constant oversight. Provided the Green Party retains some level of influence in the government we shall continue this forthright."
+    nf_canada_2_a:0 "Let's get this ready."
+    
+    nf_canada_3_title:0 "A Legal Coup"
+    nf_canada_3_desc:0 "The ground around Ottawa shook, the entirety of Canada thrown on its head in a matter of seconds as the status quo for the past century was finally moved with the combined pushes of three parties. Walter Trudeau, the incompetent son of Xavier, great Grandson of Pierre, had his power threatened. It was revealed to the public that the three largest opposition parties, those being the Conservative, People's and New Democratic, each of whom had finally grown resentful enough of the Trudeaus to work together and kick them the hell out.\n\nTheir means to kick them out was rather boring, a simple bureaucratic feature which the Trudeaus had been attempting to remove for years at this point: the Vote of No-Confidence. They'd motioned it, and the vote came and went, however this coalition was very secret. Very secret. So secret that some MPs didn't even know about it, and also didn't support it. There was a visible debate on practically every MPs face, everyone thinking intricately on their next moves. After what seemed like forever within the House of Commons the motion was voted upon, and the fate of Canada was decided."
+    nf_canada_3_a:0 "Trudeau is ousted!"
+    nf_canada_3_b:0 "Trudeau barely stays in charge."
+    
+    canadian_news_1_title:0 "The Trudeaus Falls From Grace!"
+    canadian_news_1_desc:0 "In a surprise Vote of No-Confidence for even the MPs involved, the House of Commons of Canada has voted out the Prime Minister, before even the height of  campaign season of the oncoming Election. The hodgepodge coalition of opposition parties have coalesced behind the compromise candidate in Hunter Guy, the three parties reportedly already bickering amongst themselves for what to do."
+    canadian_news_1_a:0 "Thus always to morons."
+
+    canadian_news_2_title:0 "Trudeau Power Shaken!"
+    canadian_news_2_desc:0 "A vote of No-Confidence shook Canada as the Federal Election was about to reach its peak, and in a rather surprising outcome, the coalition formed to throw out the Trudeaus made up of the three largest opposition parties has collapsed, leaving Trudeau's power uncontested, but still shaken, with the vote barely failing."
+    canadian_news_2_a:0 "Nothing ever happens."
+
+    #TOOLTIPS#
+    CAN_continue_the_dynasty_tt:0 "Gain Base Stability: §G+5.00%§!.\nPolitical Power: §G+50§!."
+    CAN_close_friends_tt:0 "Our two previous ideas will §Ymerge§! into one §Gstronger§! idea."
+    can_albertan_fields_tt:0 "Thanks to this, we gain §Y2 Offmap Civilian Factories§!, provided Alberta remains in our territory."
+    can_the_avro_project_tt:0 "Once this project is complete we will gain §Y1 Research Slot§!."
+    CAN_trudeau_stability_tt:0 "Gets event '§YCanada's Favorite Son§!'.\n\n§gWho knows how fate will play out?§!"
+    CAN_bread_circuses_guns_tt:0 "Change in popularity of Democracy: §G2.50%§!"
+    nf_canada_2_tt:0 "We will unlock decisions to help §GGreenify§! Canada."
+    nf_canada_3_a_tt:0 "§gCompromise candidate Keith Anderson will be elected, with ex-general Kimberly McGill replacing Trudeau as Liberal Candidate in the new opposition government.§!\n\n§YWe will load a new tree for compromise candidate Keith Anderson§!"
+    nf_canada_3_b_tt:0 "§gTrudeau will get a new look in this trying time.§!\n\n§YWe will load a new tree for securing the Trudeau's position again.§!"
+    
+    #COUNTRY FLAGS#
+    canada_trudeau_phakked:0 "§RWe've somehow lost power?!§!"
+    canada_trudeau_semi_phakked:0 "§gWe're barely holding on!?§!"
+    
+    #CHARACTERS# 
+    CAN_canadas_spoiled_brat:0 "Canada's Spoiled Brat"
+    CAN_canadas_spoiled_brat2:0 "Canada's Spoiled Brat"
+    CAN_reluctant_compromiser:0 "Reluctant Compromiser"

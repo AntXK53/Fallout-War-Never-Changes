@@ -6,8 +6,9 @@ state={
 
 	history={
 		owner = PRC
-		add_core_of = PRC
+		add_core_of = GXC
 		add_core_of = CHI
+		add_core_of = PRC
 		
 		victory_points = {
 			1070 1 
@@ -20,6 +21,17 @@ state={
 				naval_base = 2
 			}
 
+		}
+
+		2900.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			controller = JAP
 		}
 	}
 

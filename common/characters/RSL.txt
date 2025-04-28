@@ -1,0 +1,15 @@
+characters = {
+	RSL_teodor_kocis = {
+		name="Teodor Kočiš"
+		portraits={
+			civilian={
+				large="gfx/leaders/RSL/RSL_teodor_kocis.png"
+			}
+		}
+		country_leader={
+			ideology = Rev_Syndicalism
+			expire="2155.1.1.1"
+			id=-1
+		}
+	}
+}

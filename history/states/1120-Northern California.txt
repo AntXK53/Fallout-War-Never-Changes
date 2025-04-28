@@ -1,0 +1,41 @@
+state={
+	id=1120
+	name="STATE_1120"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			610 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = {
+			610 1 
+		}
+		victory_points = {
+			781 1 
+		}
+		victory_points = {
+			6745 5 
+		}
+		victory_points = {
+			9713 20 
+		}
+
+	}
+
+	provinces={
+		610 677 768 781 3644 6482 6681 6745 6757 6772 9697 9713 9730 11658 13466 13467 
+	}
+	manpower=1800240
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

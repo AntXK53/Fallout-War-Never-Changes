@@ -1,0 +1,10 @@
+SOV_democratic_romania_invasion_decision_category = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_global_flag = romanian_democratic_now_gf
+	}
+	icon = generic_crisis
+	priority = 5
+}

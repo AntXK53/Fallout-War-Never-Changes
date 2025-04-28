@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+	
+		prc_golden_era = { #this will never be lost only increased!!!
+			picture = prc_golden_era_image
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.07
+				industrial_capacity_factory = 0.05
+			}
+		}
+	}
+}

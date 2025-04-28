@@ -1,0 +1,26 @@
+state={
+	id=990
+	name="STATE_990"
+
+	history={
+		owner = EUC
+		victory_points = {
+			3560 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = EUC
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		3560 5291 
+	}
+	manpower=110400
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

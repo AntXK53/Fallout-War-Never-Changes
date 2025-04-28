@@ -6,8 +6,7 @@ state={
 	state_category=rural
 
 	history={
-		owner = EAF
-		add_core_of = EAF
+		owner = KEN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

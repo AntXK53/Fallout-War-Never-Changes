@@ -1,0 +1,32 @@
+characters = {
+
+	# MOHAMED YAYYO
+	SYM_Abdullahi_Hassan = { 
+		name = "Abdullahi Hassan"
+		portraits = {
+			civilian = {
+				large = "GFX_SMR_Abdullahi_Hassan"
+				small = "GFX_SMR_Abdullahi_Hassan"
+			}
+			
+		}
+		country_leader = {
+			ideology = Facade_Democracy
+			traits = { }
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+		}
+	}
+
+	
+}

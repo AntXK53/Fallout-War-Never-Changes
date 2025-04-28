@@ -1,38 +1,39 @@
-state = {
-	id = 200
-	name = "STATE_200" # Zaporozhe
-	manpower = 1294082
-	state_category = town
 
-	history = {
+state={
+	id=200
+	name="STATE_200"
 
+	history={
 		owner = SOV
+		set_state_flag = south_ukrainian_rebelions_sf
+		victory_points = {
+			11405 15 
+		}
+		victory_points = {
+			11700 5
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 3s
+
+		}
 		add_core_of = SOV
 		add_core_of = UKR
-
-		victory_points = {
-			11405 1 # Zaporozhe
-		}
-
-		buildings = {
-			infrastructure = 3 #was: 5
-			air_base = 3
-
-			# Dnieprostroi Hydroelectric Station
-			11405 = { dam = 1 }
-			
-		}
-		
-		1939.1.1 = {
+		2900.1.1 = {
 			buildings = {
 				industrial_complex = 1
+
 			}
+
 		}
+
 	}
 
-	provinces = {
+	provinces={
 		429 588 3399 3767 6596 9571 9729 11405 11700 
 	}
-
-	local_supplies = 0.0 
+	manpower=1294082
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

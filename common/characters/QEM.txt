@@ -1,0 +1,33 @@
+characters = {
+	#### COUNTRY LEADERS 
+	QEM_Bekele = {
+		name = "Bekele"
+		portraits = {
+			civilian = {
+				large = "GFX_QEM_Bekele"
+				small = "GFX_QEM_Bekele"
+			}
+			army = {
+				large = "GFX_QEM_Bekele"
+				small = "GFX_QEM_Bekele"
+			}
+		}
+		country_leader = {
+			ideology = Military_Dictatorship  
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+}

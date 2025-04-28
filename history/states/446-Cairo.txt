@@ -6,7 +6,8 @@ state = {
 
 	history = {
 
-		owner = EGY
+		owner = UAR
+		add_core_of = UAR
 		add_core_of = EGY
 
 		buildings = {

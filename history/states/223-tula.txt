@@ -18,7 +18,7 @@ state={
 			synthetic_refinery = 1 #NSB
 		}
 		add_core_of = SOV
-		1939.1.1 = {
+		2900.1.1 = {
 			buildings = {
 				arms_factory = 3
 			}

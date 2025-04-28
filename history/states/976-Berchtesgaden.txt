@@ -1,0 +1,26 @@
+state={
+	id=976
+	name="STATE_976"
+
+	history={
+		owner = EUC
+		victory_points = {
+			707 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = EUC
+		add_core_of = GER
+
+	}
+
+	provinces={
+		707 3688 
+	}
+	manpower=70003
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

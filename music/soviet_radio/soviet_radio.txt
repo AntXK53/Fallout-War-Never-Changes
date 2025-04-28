@@ -1,0 +1,21 @@
+music_station = "soviet_radio"
+music = {
+	song = "gruppa_krovi"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "my_love_on_the_fifth_floor"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5
+			has_war = no
+		}
+	}
+}

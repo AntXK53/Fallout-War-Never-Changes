@@ -1,0 +1,15 @@
+characters={
+	LAT_valtins_krauze={
+		name="Valtīns Krauze"
+		portraits={
+			civilian={
+				large="gfx/leaders/LAT/LAT_valtins_krauze.png"
+			}
+		}
+		country_leader={
+			ideology = National_Conservatism
+			expire="2088.1.1.1"
+			id=-1
+		}
+	}
+}

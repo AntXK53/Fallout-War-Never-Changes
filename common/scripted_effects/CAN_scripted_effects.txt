@@ -1,0 +1,58 @@
+#	Example:
+# 
+#	example_effect = {
+#		add_political_power = 66
+#		add_popularity = {
+#			ideology = fascism
+#			popularity = 0.33
+#		}
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+CAN_swap_governments = {
+	if = {
+		limit = {
+			has_country_flag = CAN_liberal_domination
+		}
+		clr_country_flag = CAN_liberal_domination
+		set_country_flag = CAN_conservative_domination
+		hidden_effect = {
+			set_party_name = {
+				ideology = democratic
+				long_name = CAN_neutrality_party_long
+				name = CAN_neutrality_party
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = CAN_democratic_party_long
+				name = CAN_democratic_party
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = CAN_conservative_domination
+		}
+		clr_country_flag = CAN_conservative_domination
+		set_country_flag = CAN_liberal_domination
+		hidden_effect = {
+			set_party_name = {
+				ideology = neutrality
+				long_name = CAN_neutrality_party_long
+				name = CAN_neutrality_party
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = CAN_democratic_party_long
+				name = CAN_democratic_party
+			}
+		}
+	}
+}

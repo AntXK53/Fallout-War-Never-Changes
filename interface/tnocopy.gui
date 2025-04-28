@@ -1,0 +1,50 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_Anarchy_Diplomacy_Container"
+		position = { x = 0 y = 0 }
+		size = { width = 540 height = -11 }
+		
+		icontype = {
+			name = "TNO_Anarchy_Relations_Block"
+			position = { x = 324 y = -45 }
+			spriteType = "GFX_Anarchy_Relations_Block"
+		}
+		
+		containerWindowType = {
+			name = "TNO_Anarchy_Diplomacy_Wallpaper_Container"
+			position = { x = 12 y = -5 }
+		
+			iconType = { #
+				name = "TNO_Anarchy_RAD"
+				spriteType = "GFX_Anarchy_RAE"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = TNO_Anarchy_ToolTip
+				pdx_tooltip_delayed = TNO_Anarchy_ToolTip_Delayed
+			}
+		}
+		containerWindowType = {
+			name = "TNO_Anarchy_Diplomacy_Animation_clip"
+			position = { x = 280 y = 380 }
+			size = { width = 250 height = -11 } 
+	 		verticalScrollbar = "right_vertical_slider"
+			#clipping = yes
+			
+			background = {
+	 			name = "TNO_Anarchy_Diplomacy_Animation_clip_bg"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+	 		}
+			iconType = {
+				name = "TNO_Anarchy_scrollbar_block"
+				position = { x = 235 y = 0 }
+				spriteType = "GFX_Anarchy_scrollbar_block"
+			}
+			iconType = {
+				name = "TNO_Anarchy_Diplomacy_Animation"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_Anarchy_diplo_animation"
+				pdx_tooltip = TNO_Anarchy_diplo_tt
+			}
+		}
+	}
+}
+

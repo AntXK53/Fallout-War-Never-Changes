@@ -1,0 +1,785 @@
+focus_tree = {
+	id = ENG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	 }
+
+	continuous_focus_position = { x = 50 y = 0 }
+	default = no
+
+    #The Setting Sun
+
+	focus = {
+		id = the_setting_sun
+		icon = GFX_goal_the_setting_sun
+		cost = 1
+		x = 9
+		y = 0
+		completion_reward = { 
+			country_event = nf_eng.1
+		}
+	}
+
+	#The Century of Sorrow
+
+	focus = {
+		id = the_century_of_sorrow
+		icon = GFX_goal_the_century_of_the_sorrow
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_setting_sun
+		}
+		completion_reward = { 
+			country_event = nf_eng.2
+		}
+	}
+
+	#The Queen and The Demon
+
+	focus = {
+		id = the_queen_and_the_demon
+		icon = GFX_goal_the_demon_and_the_queen
+		cost = 1
+		x = 0
+		y = 2
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_century_of_sorrow
+		}
+		completion_reward = { 
+			country_event = nf_eng.3
+		}
+	}
+
+	#Resource Crisis Tree
+
+	#The Resource Crisis
+
+	focus = {
+		id = the_resource_crisis
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 3
+		relative_position_id = the_setting_sun
+        available = {
+			has_completed_focus = the_queen_and_the_demon
+		}
+		completion_reward = { }
+	}
+
+	#The Last Oil Well
+
+	focus = {
+		id = the_last_oil_well
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_resource_crisis
+		}
+		completion_reward = { }
+	}
+
+	#Meeting With America
+
+	focus = {
+		id = meeting_with_america
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_last_oil_well
+		}
+		completion_reward = { }
+	}
+
+	#American Oil...
+
+	focus = {
+		id = american_oil
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = meeting_with_america
+		}
+		completion_reward = { }
+	}
+
+	#...British Atomics
+
+	focus = {
+		id = british_atomics
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 7
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = american_oil
+		}
+		completion_reward = { }
+	}
+
+	#Political Tree
+
+	#Reinstill National Pride
+
+	focus = {
+		id = reinstill_national_pride
+		icon = GFX_goal_reinstill_national_pride
+		cost = 2
+		x = 0
+		y = 3
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_queen_and_the_demon
+		}
+		completion_reward = { }
+	}
+
+	#Quell Red Syndrome
+
+	focus = {
+		id = quell_red_syndrome
+		icon = GFX_goal_quell_red_syndrome
+		cost = 3
+		x = -2
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = reinstill_national_pride
+		}
+		completion_reward = { }
+	}
+
+	#Weaken the Red Ministry
+
+	focus = {
+		id = weaken_the_red_ministry
+		icon = GFX_goal_weaken_the_red_ministry
+		cost = 3
+		x = -2
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = quell_red_syndrome
+		}
+		completion_reward = { }
+	}
+
+	#Punish Commie Bobbies
+
+	focus = {
+		id = punish_commie_bobbies
+		icon = GFX_goal_punish_commie_bobbies
+		cost = 3
+		x = -2
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = weaken_the_red_ministry
+		}
+		completion_reward = { }
+	}
+
+	#Instill More Peaceful Values
+
+	focus = {
+		id = instill_more_peaceful_values
+		icon = GFX_goal_instill_more_peaceful_values
+		cost = 2
+		x = 0
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = reinstill_national_pride
+		}
+		completion_reward = { }
+	}
+
+	#Domenice The Power of The Marshall
+
+	focus = {
+		id = domenice_the_power_of_the_marshall
+		icon = GFX_goal_dominance_the_power_of_the_marshall
+		cost = 2
+		x = 0
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = instill_more_peaceful_values
+		}
+		completion_reward = { }
+	}
+
+	#Royal Dominance
+
+	focus = {
+		id = royal_dominance
+		icon = GFX_goal_royal_dominance
+		cost = 2
+		x = 0
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = domenice_the_power_of_the_marshall
+		}
+		completion_reward = { }
+	}
+
+	#Royal Visit to Scotland
+
+	focus = {
+		id = royal_visit_to_scotland
+		icon = GFX_goal_royal_visit_to_scotland
+		cost = 3
+		x = 2
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = reinstill_national_pride
+		}
+		completion_reward = { }
+	}
+
+	#Listen to the Scots
+
+	focus = {
+		id = listen_to_the_scots
+		icon = GFX_goal_listen_to_the_scots
+		cost = 3
+		x = 2
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = royal_visit_to_scotland
+		}
+		completion_reward = { }
+	}
+
+	#Betterment of Scotland
+
+	focus = {
+		id = betterment_of_scotland
+		icon = GFX_goal_betterment_of_scotland
+		cost = 3
+		x = 2
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = listen_to_the_scots
+		}
+		completion_reward = { }
+	}
+
+	#An Temporary Solution
+
+	focus = {
+		id = an_temporary_solution
+		icon = GFX_goal_temporary_solution
+		cost = 4
+		x = 0
+		y = 7
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = punish_commie_bobbies
+		}
+		prerequisite = {
+			focus = royal_dominance
+		}
+		prerequisite = {
+			focus = betterment_of_scotland
+		}
+		completion_reward = { }
+	}
+
+	#The Final Result
+
+	focus = {
+		id = the_final_result
+		icon = GFX_goal_england
+		cost = 2
+		x = 0
+		y = 8
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = an_temporary_solution
+		}
+		completion_reward = { }
+	}
+
+	#Radiation Tree
+
+	#Deal With The Radiation
+
+	focus = {
+		id = deal_with_the_radiation
+		icon = GFX_goal_england
+		cost = 2
+		x = 8
+		y = 3
+		relative_position_id = the_setting_sun
+		available = {
+			has_completed_focus = the_queen_and_the_demon
+		}
+		completion_reward = { }
+	}
+
+	#Begin Cleanup
+
+	focus = {
+		id = begin_cleanup
+		icon = GFX_goal_england
+		cost = 2
+		x = 6.5
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = deal_with_the_radiation
+		}
+		completion_reward = { }
+	}
+
+	#Purification of the Themes
+
+	focus = {
+		id = purification_with_the_themes
+		icon = GFX_goal_england
+		cost = 2
+		x = 5.5
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = begin_cleanup
+		}
+		completion_reward = { }
+	}
+
+	#Remove Tainted Soil
+
+	focus = {
+		id = remove_tainted_soil
+		icon = GFX_goal_england
+		cost = 2
+		x = 5.5
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = purification_with_the_themes
+		}
+		completion_reward = { }
+	}
+
+	#National Food Trade
+
+	focus = {
+		id = national_food_trade
+		icon = GFX_goal_england
+		cost = 2
+		x = 7.5
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = begin_cleanup
+		}
+		completion_reward = { }
+	}
+
+	#Hunt Irradiated Animals
+
+	focus = {
+		id = hunt_irradiated_animals
+		icon = GFX_goal_england
+		cost = 2
+		x = 7.5
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = national_food_trade
+		}
+		completion_reward = { }
+	}
+
+	#London "Clean" Again
+
+	focus = {
+		id = london_clean_again
+		icon = GFX_goal_england
+		cost = 2
+		x = 6.5
+		y = 7
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = remove_tainted_soil
+		}
+		prerequisite = {
+			focus = hunt_irradiated_animals
+		}
+		completion_reward = { }
+	}
+
+	#Tunnel Cough
+
+	focus = {
+		id = tunnel_cough
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 4
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = deal_with_the_radiation
+		}
+		completion_reward = { }
+	}
+
+	#The Source..
+
+	focus = {
+		id = the_source
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 5
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = tunnel_cough
+		}
+		completion_reward = { }
+	}
+
+	#A New Crisis
+
+	focus = {
+		id = a_new_crisis
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 6
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = the_source
+		}
+		completion_reward = { }
+	}
+
+	#Shut Down the Tunnels
+
+	focus = {
+		id = shut_down_the_tunnels
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 7
+		relative_position_id = the_setting_sun
+		prerequisite = {
+			focus = a_new_crisis
+		}
+		completion_reward = { }
+	}
+
+	#Marshall Tree
+
+	#The Marshall
+
+	focus = {
+		id = the_marshall
+		icon = GFX_goal_england
+		cost = 2
+		x = -6
+		y = 1.5
+		relative_position_id = the_final_result
+		mutually_exclusive = {
+			focus = the_queen
+		}
+		available = {
+			has_completed_focus = the_final_result
+		}
+		completion_reward = { }
+	}
+
+	#Queen Tree
+
+	#The Queen
+
+	focus = {
+		id = the_queen
+		icon = GFX_goal_england
+		cost = 2
+		x = 6
+		y = 1.5
+		relative_position_id = the_final_result
+		mutually_exclusive = {
+			focus = the_marshall
+		}
+		available = {
+			has_completed_focus = the_final_result
+		}
+		completion_reward = { }
+	}
+
+	#Begin To Fix The Looming Problem
+
+	focus = {
+		id = begin_to_fix_the_looming_problem
+		icon = GFX_goal_england
+		cost = 2
+		x = 6
+		y = 2.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = the_queen
+		}
+		completion_reward = { }
+	}
+
+	#Deal With The Borthyist's
+
+	focus = {
+		id = deal_with_the_borthyists
+		icon = GFX_goal_england
+		cost = 2
+		x = 3
+		y = 3.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = begin_to_fix_the_looming_problem
+		}
+		completion_reward = { }
+	}
+
+	#Restructure Parliament
+
+	focus = {
+		id = restructure_parliament
+		icon = GFX_goal_england
+		cost = 2
+		x = 2
+		y = 4.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = deal_with_the_borthyists
+		}
+		completion_reward = { }
+	}
+
+	#Destroy Borthyism In The military
+
+	focus = {
+		id = destroy_borthyism_in_the_military
+		icon = GFX_goal_england
+		cost = 2
+		x = 4
+		y = 4.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = deal_with_the_borthyists
+		}
+		completion_reward = { }
+	}
+
+	#Absolution For The General...
+
+	focus = {
+		id = absolution_for_the_general
+		icon = GFX_goal_england
+		cost = 2
+		x = 3
+		y = 5.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = restructure_parliament
+		}
+		prerequisite = {
+			focus = destroy_borthyism_in_the_military
+		}
+		completion_reward = { }
+	}
+
+	#Plotting Against The Plotters
+
+	focus = {
+		id = plotting_against_the_plotters
+		icon = GFX_goal_england
+		cost = 2
+		x = 3
+		y = 6.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = absolution_for_the_general
+		}
+		completion_reward = { }
+	}
+
+	#Judgement Day For The Borthyist Party
+
+	focus = {
+		id = judgement_day_for_the_borthyist_party
+		icon = GFX_goal_england
+		cost = 2
+		x = 3
+		y = 7.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = plotting_against_the_plotters
+		}
+		completion_reward = { }
+	}
+
+	#Continue The Scottish Tanks
+
+	focus = {
+		id = continue_the_scottish_tanks
+		icon = GFX_goal_england
+		cost = 2
+		x = 9
+		y = 3.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = begin_to_fix_the_looming_problem
+		}
+		completion_reward = { }
+	}
+
+	#A Very Scottish Militia
+
+	focus = {
+		id = a_very_scottish_militia
+		icon = GFX_goal_england
+		cost = 2
+		x = 8
+		y = 4.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = continue_the_scottish_tanks
+		}
+		completion_reward = { }
+	}
+
+	#Stop The Chaos!
+
+	focus = {
+		id = stop_the_chaos
+		icon = GFX_goal_england
+		cost = 2
+		x = 8
+		y = 5.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = a_very_scottish_militia
+		}
+		completion_reward = { }
+	}
+
+	#Finish The Extremists
+
+	focus = {
+		id = finish_the_extremists
+		icon = GFX_goal_england
+		cost = 2
+		x = 8
+		y = 6.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = stop_the_chaos
+		}
+		completion_reward = { }
+	}
+
+	#Find Solutions to the Edinburgh Crisis
+
+	focus = {
+		id = find_solutions_to_the_edinburgh_crisis
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 4.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = continue_the_scottish_tanks
+		}
+		completion_reward = { }
+	}
+
+	#Found New Work Opportunities
+
+	focus = {
+		id = found_new_work_opportunities
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 5.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = find_solutions_to_the_edinburgh_crisis
+		}
+		completion_reward = { }
+	}
+
+	#The Scottish New Deal
+
+	focus = {
+		id = the_scottish_new_deal
+		icon = GFX_goal_england
+		cost = 2
+		x = 10
+		y = 6.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = found_new_work_opportunities
+		}
+		completion_reward = { }
+	}
+
+	#The Result For Scotland...
+
+	focus = {
+		id = the_result_for_scotland
+		icon = GFX_goal_england
+		cost = 2
+		x = 9
+		y = 7.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = the_scottish_new_deal
+		}
+		prerequisite = {
+			focus = finish_the_extremists
+		}
+		completion_reward = { }
+	}
+
+	#Handing Over The Reigns
+
+	focus = {
+		id = handing_over_the_reigns
+		icon = GFX_goal_england
+		cost = 2
+		x = 6
+		y = 8.5
+		relative_position_id = the_final_result
+		prerequisite = {
+			focus = judgement_day_for_the_borthyist_party
+		}
+		prerequisite = {
+			focus = the_result_for_scotland
+		}
+		completion_reward = { }
+	}
+
+}

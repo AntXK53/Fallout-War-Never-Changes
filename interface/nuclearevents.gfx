@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_nuclear_event_colonization"
+		textureFile = "/gfx/event_pictures/nuclear_event_colonization.dds"
+	}
+}

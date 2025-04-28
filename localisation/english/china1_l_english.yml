@@ -1,0 +1,33 @@
+﻿l_english: 
+
+# Focus Tree 
+PRC_allowbusinessestofail:0 "Allow Businesses to Fail"
+PRC_allowbusinessestofail_desc:0 "If we are going to reform, we can't keep spending money, May the best win."
+PRC_seeksovietbailouts:0 "Seek Soviet Bailouts"
+PRC_seeksovietbailouts_desc:0 "The Soviets remained isolationist for the last 50 years and exploited eastern for Europe for over 100 years and have a large stockpile of resources because of it. We should request some assistance from them to help temporarily to fix the issue."
+PRC_the_homeless_will_serve:0 "The Homeless will serve"
+PRC_the_homeless_will_serve_desc:0 "Those who cannot afford to live in houses either due to having not enough money or having to bad of a social score will be redeemed on the frontline and return to a house and a career in the factories."
+PRC_bandaidsforthecrisis:0 "Band-Aids for the Crisis"
+PRC_bandaidsforthecrisis_desc:0 "In the face of mounting internal strife and external threats, we must quickly implement emergency measures to stabilize the situation. These are nothing more than temporary fixes—band-aids for a nation on the brink of collapse. While they may provide short-term relief, they do little to address the underlying causes of the crisis. Our true strength will lie in the reforms that follow."
+PRC_conscripttheunemployed:0 "Conscript the Unemployed"
+PRC_conscripttheunemployed_desc:0 "We just can't make jobs at this time, if we begin conscripting those who are unemployed, we can atleast"
+PRC_allowsovietbusinesses:0 "Allow Soviet Businesses"
+PRC_allowsovietbusinesses_desc:0 "We let in soviets, we get factories."
+PRC_the_chairman_is_dead:0 "The Chairman Is Dead"
+PRC_the_chairman_is_dead_desc:0 "The Chairman is dead, Who will take control and guide our economy from here?"
+PRC_investinthewinners:0 "Invest in the winners"
+PRC_investinthewinners_desc:0 "Lets invest in the thriving Businesses"
+PRC_the_second_great_leap_forward:0 "The Second Great Leap Forward"
+PRC_the_second_great_leap_forward_desc:0 ""We excel at destroying the old world, and we excel at building a new one.’ - Chairman Cheng\n\n\n\nThe old system has been subverted by secret capitalists, fascists, and traitors. It is time to commit to a new economic model for industrialization and modernization, with a renewed focus on military production to solidify China’s status as a global superpower.""
+PRC_soldiersinfactories:0 "Soldiers in factories"
+PRC_soldiersinfactories_desc:0 "Soldiers not actively fighting will head to the factories and construction sites to build and make."
+PRC_controllastofvietnamsresources:0 "Control Last of Vietnam's Resources"
+PRC_controllastofvietnamsresources_desc:0 "We will harvest what is left of vietnams resources so that china can continue to run"
+PRC_invest_in_horses:0 "Invest in Horses"
+PRC_invest_in_horses_desc:0 "The Streets are empty as nobody can afford to keep a car. Its time we look back at what worked and mimic it for the time being."
+PRC_import_from_soviet_market:0 "Import from Soviet Market"
+PRC_import_from_soviet_market_desc:0 "As our economy is unable to produce all the materials we need, maybe we can come to some sort of agreement with the Soviets to help each other out."
+
+# ideas
+China1_resource_crisis_Base:0 "China's Resource Crisis"
+China1_resource_crisis_Base_desc:0 "Critical resources are dwindling, threatening to cripple our economy and military. Without urgent action to secure what’s left, our nation risks total collapse"

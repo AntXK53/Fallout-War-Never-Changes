@@ -1,0 +1,25 @@
+state={
+	id=1139
+	name="STATE_1139"
+
+	history={
+		owner = NIC
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NIC
+		victory_points = {
+			2075 1 
+		}
+
+	}
+
+	provinces={
+		1988 2075 10728 
+	}
+	manpower=221000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

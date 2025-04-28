@@ -1,0 +1,7 @@
+
+NDefines.NGraphics.MINIMUM_PROVINCE_SIZE_IN_PIXELS = 1
+NDefines.NDiplomacy.TENSION_STATE_VALUE = 1.4
+NDefines.NDiplomacy.TENSION_ANNEX_NO_CLAIM = 1.4
+NDefines.NDiplomacy.TENSION_ANNEX_CLAIM = 0.5
+NDefines.NDiplomacy.TENSION_PUPPET = 1.0
+NDefines.NDiplomacy.TENSION_FORCE_GOVERNMENT = 0.55

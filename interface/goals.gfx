@@ -1,0 +1,218 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_goal_unknown"
+		texturefile = "gfx/interface/goals/goal_unknown.dds"
+		legacy_lazy_load = no
+	}
+	### BULGARIA ###
+	spriteType = {
+		name = "GFX_goal_BUL_the_great_rule_of_bulgaria_focus"
+		textureFile = "gfx/interface/goals/BUL_the_great_rule_of_bulgaria_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_carry_out_agricultural_reform_focus"
+		textureFile = "gfx/interface/goals/BUL_carry_out_agricultural_reform_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_recovery_from_agricultural_crisis_focus"
+		textureFile = "gfx/interface/goals/BUL_recovery_from_agricultural_crisis_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_buy_equipment_from_ussr_focus"
+		textureFile = "gfx/interface/goals/BUL_buy_equipment_from_ussr_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_land_reform_focus"
+		textureFile = "gfx/interface/goals/BUL_land_reform_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_end_of_crisis_focus"
+		textureFile = "gfx/interface/goals/BUL_end_of_crisis_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_attract_more_people_to_work_focus"
+		textureFile = "gfx/interface/goals/BUL_attract_more_people_to_work_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_five_year_plan_focus"
+		textureFile = "gfx/interface/goals/BUL_five_year_plan_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_build_new_nuclear_power_plant_focus"
+		textureFile = "gfx/interface/goals/BUL_build_new_nuclear_power_plant_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_modernize_sofia_varna_road_focus"
+		textureFile = "gfx/interface/goals/BUL_modernize_sofia_varna_road_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_more_factories_focus"
+		textureFile = "gfx/interface/goals/BUL_more_factories_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_reduce_fuel_consumption_focus"
+		textureFile = "gfx/interface/goals/BUL_reduce_fuel_consumption_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_great_economy_focus"
+		textureFile = "gfx/interface/goals/BUL_great_economy_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_diminishing_soviet_influence_focus"
+		textureFile = "gfx/interface/goals/BUL_diminishing_soviet_influence_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_freebul_free_bulgaria_focus"
+		textureFile = "gfx/interface/goals/BUL_freebul_free_bulgaria_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_true_terror_just_ahead_focus"
+		textureFile = "gfx/interface/goals/BUL_true_terror_just_ahead_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_keeping_eye_on_the_people_focus"
+		textureFile = "gfx/interface/goals/BUL_keeping_eye_on_the_people_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_true_communism_focus"
+		textureFile = "gfx/interface/goals/BUL_true_communism_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_dreams_of_bulgarian_communism_focus"
+		textureFile = "gfx/interface/goals/BUL_dreams_of_bulgarian_communism_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_suppress_different_thinking_focus"
+		textureFile = "gfx/interface/goals/BUL_suppress_different_thinking_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_BUL_monarchy_again_focus"
+		textureFile = "gfx/interface/goals/BUL_monarchy_again_focus.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_BUL_united_and_strong_focus"
+		textureFile = "gfx/interface/goals/BUL_united_and_strong_focus.dds"
+	}
+	
+
+	###CANADA#####
+	
+	spriteType = {
+		name = "GFX_goal_CAN_canada_big"
+		texturefile = "gfx/interface/goals/CAN_canada_big.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_subsidize_axe"
+		texturefile = "gfx/interface/goals/CAN_subsidize_axe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_grabbing_rifle"
+		texturefile = "gfx/interface/goals/CAN_grabbing_rifle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_recycle"
+		texturefile = "gfx/interface/goals/CAN_recycle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_rose_bush"
+		texturefile = "gfx/interface/goals/CAN_rose_bush.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_cheap_bread"
+		texturefile = "gfx/interface/goals/CAN_cheap_bread.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_c7a2_gun"
+		texturefile = "gfx/interface/goals/CAN_c7a2_gun.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_circuses"
+		texturefile = "gfx/interface/goals/CAN_circuses.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CAN_leaf"
+		texturefile = "gfx/interface/goals/CAN_leaf.dds"
+	}
+	
+	###UNITED KINGDOM###
+	
+	spriteType = {
+		name = "GFX_goal_betterment_of_scotland"
+		texturefile = "gfx/interface/goals/ENG/betterment_of_scotland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_instill_more_peaceful_values"
+		texturefile = "gfx/interface/goals/ENG/instill_more_peaceful_values.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_listen_to_the_scots"
+		texturefile = "gfx/interface/goals/ENG/listen_to_the_scots.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_punish_commie_bobbies"
+		texturefile = "gfx/interface/goals/ENG/punish_commie_bobbies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_quell_red_syndrome"
+		texturefile = "gfx/interface/goals/ENG/quell_red_syndrome.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_reinstill_national_pride"
+		texturefile = "gfx/interface/goals/ENG/reinstill_national_pride.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_royal_visit_to_scotland"
+		texturefile = "gfx/interface/goals/ENG/royal_visit_to_scotland.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_the_century_of_the_sorrow"
+		texturefile = "gfx/interface/goals/ENG/the_century_of_the_sorrow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_the_demon_and_the_queen"
+		texturefile = "gfx/interface/goals/ENG/the_demon_and_the_queen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_the_setting_sun"
+		texturefile = "gfx/interface/goals/ENG/the_sun.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_weaken_the_red_ministry"
+		texturefile = "gfx/interface/goals/ENG/weaken_the_red_ministry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_royal_dominance"
+		textureFile = "gfx/interface/goals/ENG/royal_dominance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_dominance_the_power_of_the_marshall"
+		textureFile = "gfx/interface/goals/ENG/dominance_the_of_the_marshall.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_temporary_solution"
+		textureFile = "gfx/interface/goals/ENG/temporary_solution.dds"
+	}
+	
+}

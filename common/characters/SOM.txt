@@ -1,0 +1,33 @@
+characters = {
+	#### COUNTRY LEADERS 
+	SOM_Siad_Hussein = {
+		name = "Siad Hussein"
+		portraits = {
+			civilian = {
+				large = "GFX_SOM_Siad_Hussein"
+				small = "GFX_SOM_Siad_Hussein"
+			}
+			army = {
+				large = "GFX_SOM_Siad_Hussein"
+				small = "GFX_SOM_Siad_Hussein"
+			}
+		}
+		country_leader = {
+			ideology = Military_Dictatorship  
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+}

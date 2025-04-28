@@ -1,0 +1,24 @@
+
+state={
+	id=1176
+	name="STATE_1176"
+
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+		owner = WST
+		add_core_of = AST
+		add_core_of = WST
+
+	}
+
+	provinces={
+		5207 8247 10937 11016 13133 
+	}
+	manpower=54323
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

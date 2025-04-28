@@ -1,0 +1,27 @@
+state={
+	id=1097
+	name="STATE_1097"
+
+	history={
+		owner = SOV
+		victory_points = {
+			9289 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		216 294 342 3331 3378 6220 6292 6371 9241 9289 11322 
+	}
+	manpower=730063
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

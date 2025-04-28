@@ -1,0 +1,27 @@
+﻿l_english:
+    #BOOKMARK# 
+
+    #NATIONAL FOCUSES#
+    
+
+    #NATIONAL SPIRITS# 
+    
+
+    #EVENTS# 
+    euc_1_title:0 "Placeholder"
+    euc_1_desc:0 "Placeholder"
+    euc_1_a:0 "Placeholder"
+
+    #TOOLTIPS#
+    EUC_future_of_europe_tt:0 "§RThis will decide the fate of our union§!"
+    EUC_warning_1_tt:0 "§YThis decision is controversial§!"
+    EUC_warning_2_tt:0 "§8This decision is controversial§!"
+    EUC_warning_3_tt:0 "§RThis decision will have dire consquences§!"
+    
+    #COUNTRY FLAGS#
+    EUC_ongoing_brussels_conference:0 "Ongoing Brussels Conference"
+    EUC_failed_brussels_conference:0 "Brussels Conference Failed"
+    EUC_nation_in_crisis:0 "Nation in Crisis"
+    
+    #CHARACTERS# 
+    

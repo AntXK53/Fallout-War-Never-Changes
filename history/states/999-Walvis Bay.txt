@@ -1,0 +1,24 @@
+state={
+	id=999
+	name="STATE_999"
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+			13374 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = SAF
+		add_core_of = NMB
+	}
+
+	provinces={
+		13374 
+	}
+	manpower=54100
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	local_supplies=0.000
+}

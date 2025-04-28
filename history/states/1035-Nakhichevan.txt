@@ -1,0 +1,22 @@
+state={
+	id=1035
+	name="STATE_1035"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SOV
+		add_core_of = AZR
+
+	}
+
+	provinces={
+		6997 
+	}
+	manpower=81000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

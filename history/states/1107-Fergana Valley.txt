@@ -1,0 +1,23 @@
+state={
+	id=1107
+	name="STATE_1107"
+
+	history={
+		add_core_of = KYR
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1483 2058 4467 10408 10530 10660 12581 13464 
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

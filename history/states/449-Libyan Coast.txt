@@ -7,11 +7,17 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = MAG
-		add_core_of = MAG
+		owner = UAR
+		victory_points = {
+			4047 1
+		}
 		buildings = {
 			infrastructure = 2
+			4047 = {
+				naval_base = 1
+			}
 		}
+		add_core_of = UAR
 		add_core_of = LBA
 	}
 

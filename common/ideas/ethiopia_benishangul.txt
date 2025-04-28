@@ -1,0 +1,34 @@
+ideas = {
+	country = {
+
+		BEG_conflict = {
+			picture = 
+			allowed = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = ETH   
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.15
+			}
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

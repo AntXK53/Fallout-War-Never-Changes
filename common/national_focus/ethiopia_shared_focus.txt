@@ -1,0 +1,1642 @@
+
+#### SHARED ECONOMY ####
+
+	shared_focus = {
+		id = shared_eco_start
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			NOT = { has_idea = HAR_no_industry }
+			NOT = { has_idea = GBA_limited }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 21
+		y = 0
+		
+		completion_reward = {
+
+			
+		}
+	}
+	
+	shared_focus = {
+		id = shared_eco_civ
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = shared_eco_mil }
+		x = 4
+		y = 1
+		relative_position_id = shared_eco_start
+		prerequisite = {
+			focus = shared_eco_start
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_civ_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = shared_eco_civ
+		prerequisite = {
+			focus = shared_eco_civ
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_civ_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_civ_2
+		prerequisite = {
+			focus = shared_eco_civ_2
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_inf
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = shared_eco_civ
+		prerequisite = {
+			focus = shared_eco_civ
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_inf_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_inf
+		prerequisite = {
+			focus = shared_eco_inf
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_combine_civ
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		relative_position_id = shared_eco_inf_2
+		prerequisite = {
+			focus = shared_eco_inf_2
+			
+		}
+		prerequisite = {
+			focus = shared_eco_civ_3
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	
+	
+	shared_focus = {
+		id = shared_eco_res
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -4
+		y = 1
+		relative_position_id = shared_eco_start
+		prerequisite = {
+			focus = shared_eco_start
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_res_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_res
+		prerequisite = {
+			focus = shared_eco_res
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_res_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_res_2
+		prerequisite = {
+			focus = shared_eco_res_2
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_res_4
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_res_3
+		prerequisite = {
+			focus = shared_eco_res_3
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	
+	shared_focus = {
+		id = shared_eco_mil
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = shared_eco_civ }
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_start
+		prerequisite = {
+			focus = shared_eco_start
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_mil_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_mil
+		prerequisite = {
+			focus = shared_eco_mil
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_mil_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_mil_2
+		prerequisite = {
+			focus = shared_eco_mil_2
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_mil_4
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = shared_eco_mil_3
+		prerequisite = {
+			focus = shared_eco_mil_3
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_eco_stable
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = shared_eco_mil_4
+		prerequisite = {
+			focus = shared_eco_mil_4
+			focus = shared_eco_combine_civ
+			
+		}
+		prerequisite = {
+			focus = shared_eco_res_4
+			
+		}
+		completion_reward = {
+
+			
+		}
+	}
+	
+#### SHARED MILITARY ####
+
+
+	shared_focus = {
+		id = shared_mil_start
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_idea = GBA_peacekeepers }
+		}
+		x = 33
+		y = 0
+		
+		
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_inf
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = shared_mil_start
+			
+		}
+		relative_position_id = shared_mil_start
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_support
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = shared_mil_inf
+			
+		}
+		relative_position_id = shared_mil_inf
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_special
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_mil_support
+			
+		}
+		relative_position_id = shared_mil_support
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_inf_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = shared_mil_mech_2 }
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = shared_mil_inf
+			focus = shared_mil_mech
+			
+		}
+		relative_position_id = shared_mil_inf
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_mech
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_mil_start
+			
+		}
+		relative_position_id = shared_mil_start
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_mech_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = shared_mil_inf_2 }
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = shared_mil_mech
+			focus = shared_mil_inf
+			
+		}
+		relative_position_id = shared_mil_mech
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_doc
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = shared_mil_start
+			
+		}
+		relative_position_id = shared_mil_start
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_doc_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_mil_doc
+			
+		}
+		relative_position_id = shared_mil_doc
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_doc_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_mil_doc_2
+			
+		}
+		relative_position_id = shared_mil_doc_2
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_mil_final
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = shared_mil_doc_3
+			
+		}
+		prerequisite = {
+			focus = shared_mil_inf_2
+			focus = shared_mil_mech_2
+			
+		}
+		relative_position_id = shared_mil_doc_3
+		completion_reward = {
+
+			
+		}
+	}
+	
+### SHARED UNITY ###
+
+shared_focus = {
+		id = shared_uni_start
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			owns_state = 271
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 25
+		y = 8
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_pol
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = shared_uni_start
+			
+		}
+		relative_position_id = shared_uni_start
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_own
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_pol
+			
+		}
+		mutually_exclusive = { focus = shared_uni_dem }
+		mutually_exclusive = { focus = shared_uni_com }
+		relative_position_id = shared_uni_pol
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_remnants
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_own
+			
+		}
+		relative_position_id = shared_uni_own
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_stabilisation
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_remnants
+			
+		}
+		relative_position_id = shared_uni_remnants
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_solidify
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_stabilisation
+			
+		}
+		relative_position_id = shared_uni_stabilisation
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_ours
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_solidify
+			
+		}
+		relative_position_id = shared_uni_solidify
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_neutrality
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_ours
+			
+		}
+		mutually_exclusive = { focus = shared_uni_faction }
+		relative_position_id = shared_uni_ours
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_faction
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_ours
+			
+		}
+		mutually_exclusive = { focus = shared_uni_neutrality }
+		relative_position_id = shared_uni_ours
+		completion_reward = {
+
+		}
+	}
+	
+	
+	
+	
+	shared_focus = {
+		id = shared_uni_dem
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -5
+		y = 1
+		available = {
+			has_government = democratic
+		}
+		prerequisite = {
+			focus = shared_uni_pol
+		}
+		mutually_exclusive = { focus = shared_uni_own }
+		mutually_exclusive = { focus = shared_uni_com }
+		relative_position_id = shared_uni_pol
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_rad
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_dem
+		}
+		relative_position_id = shared_uni_dem
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_rad_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_rad
+		}
+		relative_position_id = shared_uni_rad
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_rad_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_rad_2
+		}
+		relative_position_id = shared_uni_rad_2
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_reform
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_dem
+		}
+		relative_position_id = shared_uni_dem
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_reform_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_reform
+		}
+		relative_position_id = shared_uni_reform
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_reform_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_reform_2
+		}
+		relative_position_id = shared_uni_reform_2
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_finish
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_rad_3
+		}
+		prerequisite = {
+			focus = shared_uni_reform_3
+		}
+		relative_position_id = shared_uni_rad_3
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_ec
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_finish
+		}
+		relative_position_id = shared_uni_finish
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_usa
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = shared_uni_finish
+		}
+		relative_position_id = shared_uni_finish
+		completion_reward = {
+
+		}
+	}
+	
+	
+	
+	shared_focus = {
+		id = shared_uni_com
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 5
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_pol
+			
+		}
+		mutually_exclusive = { focus = shared_uni_dem }
+		mutually_exclusive = { focus = shared_uni_own }
+		relative_position_id = shared_uni_pol
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_purge
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_com
+			
+		}
+		relative_position_id = shared_uni_com
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_politic
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_purge
+			
+		}
+		relative_position_id = shared_uni_purge
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_rehire
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_politic
+			
+		}
+		relative_position_id = shared_uni_politic
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_nationalise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_com
+			
+		}
+		relative_position_id = shared_uni_com
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_reorganise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_nationalise
+			
+		}
+		relative_position_id = shared_uni_nationalise
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_worker
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_reorganise
+			
+		}
+		relative_position_id = shared_uni_reorganise
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_finalise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		available = {
+			has_government = communism
+		}
+		
+		prerequisite = {
+			focus = shared_uni_worker
+		}
+		prerequisite = {
+			focus = shared_uni_rehire
+		}
+		relative_position_id = shared_uni_worker
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_soviet
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		available = {
+			has_government = communism
+			is_in_faction = no
+		}
+		
+		prerequisite = {
+			focus = shared_uni_finalise
+		}
+		relative_position_id = shared_uni_finalise
+		completion_reward = {
+
+		}
+	}
+	shared_focus = {
+		id = shared_uni_china
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		available = {
+			has_government = communism
+			is_in_faction = no
+		}
+		
+		prerequisite = {
+			focus = shared_uni_finalise
+		}
+		relative_position_id = shared_uni_finalise
+		completion_reward = {
+
+		}
+	}
+
+
+
+	shared_focus = {
+		id = shared_uni_stragglers
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 10
+		y = 1
+		prerequisite = {
+			focus = shared_uni_start
+			
+		}
+		relative_position_id = shared_uni_start
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_ind
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_stragglers
+			
+		}
+		relative_position_id = shared_uni_stragglers
+		completion_reward = {
+
+			
+		}
+	}
+	
+	shared_focus = {
+		id = shared_uni_mil
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = shared_uni_ind
+			
+		}
+		relative_position_id = shared_uni_ind
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_mil_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_mil
+			
+		}
+		relative_position_id = shared_uni_mil
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_mil_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_mil_2
+			
+		}
+		relative_position_id = shared_uni_mil_2
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_complex
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_mil_3
+			
+		}
+		relative_position_id = shared_uni_mil_3
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_civ
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_ind
+			
+		}
+		relative_position_id = shared_uni_ind
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_civ_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_civ
+			
+		}
+		relative_position_id = shared_uni_civ
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_civ_3
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_civ_2
+			
+		}
+		relative_position_id = shared_uni_civ_2
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_const
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_civ_3
+			
+		}
+		relative_position_id = shared_uni_civ_3
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_sea
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = shared_uni_ind
+			
+		}
+		relative_position_id = shared_uni_ind
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_doc
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_sea
+			
+		}
+		relative_position_id = shared_uni_sea
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_doc_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_doc
+			
+		}
+		relative_position_id = shared_uni_doc
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_trade
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = shared_uni_doc_2
+			
+		}
+		relative_position_id = shared_uni_doc_2
+		completion_reward = {
+
+			
+		}
+	}
+	shared_focus = {
+		id = shared_uni_prosperity
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = shared_uni_trade
+			
+		}
+		prerequisite = {
+			focus = shared_uni_const
+			
+		}
+		prerequisite = {
+			focus = shared_uni_complex
+			
+		}
+		relative_position_id = shared_uni_trade
+		completion_reward = {
+
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	mutually_exclusive = { focus =  }
+	relative_position_id = 
+		prerequisite = {
+			focus = 
+			
+		}

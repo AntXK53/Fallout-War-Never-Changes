@@ -1,28 +1,26 @@
-state = {
-	id = 863
-	name = "STATE_863"
-	manpower = 70000
-	state_category = pastoral
-	
-	history = {
-	
+
+state={
+	id=863
+	name="STATE_863"
+
+	history={
 		owner = CAN
 		add_core_of = CAN
 		add_core_of = QUE
-
 		victory_points = {
-			12223 1
+			1341 1
 		}
-
-		buildings = {
-			infrastructure = 2
+		victory_points = {
+			12223 1 
 		}
 
 	}
-	
-	provinces = {
-		1356 4419 4769 7893 12223 13160 
+
+	provinces={
+		983 1341 1356 4419 7435 10700 12223 13160 13474 13475 
 	}
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.000
+	manpower=566281
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

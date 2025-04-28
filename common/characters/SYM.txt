@@ -1,0 +1,32 @@
+characters = {
+
+	SYM_Abdullahi_Hassan = { 
+		name = "Abdullahi Hassan"
+		portraits = {
+			civilian = {
+				large = "GFX_SYM_Abdullahi_Hassan"
+				small = "GFX_SYM_Abdullahi_Hassan"
+			}
+			
+		}
+		country_leader = {
+			ideology = Facade_Democracy
+			traits = {  }
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	}
+
+	
+}

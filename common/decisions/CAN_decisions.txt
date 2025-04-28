@@ -1,0 +1,30 @@
+clean_up_canada = {
+
+	CAN_recycling_steel = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = CAN
+		}
+
+		available = {
+			CAN_trudeau = {
+				is_country_leader = yes
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		complete_effect = {
+			276 = {
+				add_resource = {
+					type = steel
+					amount = 9
+				}
+			}
+		}
+	}
+	
+}

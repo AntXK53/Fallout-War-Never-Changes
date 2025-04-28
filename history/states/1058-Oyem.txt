@@ -1,0 +1,22 @@
+state={
+	id=1058
+	name="STATE_1058"
+
+	history={
+		owner = GAB
+		add_core_of = GAB
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		13424 13429 
+	}
+	manpower=18000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,309 @@
+add_namespace = euc
+
+country_event = {
+	id = euc.1
+	title = euc_1_title
+	desc = euc_1_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	
+	}
+	
+	option = {
+		name = euc_1_a
+		EUC = {
+		add_stability = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = euc.2
+	title = euc_2_title
+	desc = euc_2_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	limit = {
+		has_country_flag = EUC_ongoing_brussels_conference
+	}
+	}
+	
+	mean_time_to_happen = {
+    days = 10
+	}
+	
+	option = {
+		name = euc_2_a
+		set_country_flag = EUC_extensive_conscription
+		EUC = {
+		country_event = euc.3
+		add_stability = -0.05
+		}
+		custom_effect_tooltip = EUC_warning_1_tt
+	}
+	
+	option = {
+		name = euc_2_b
+		set_country_flag = EUC_limited_conscription
+		EUC = {
+		country_event = euc.3
+		}
+	}
+	
+	option = {
+		name = euc_2_c
+		EUC = {
+		country_event = euc.3
+		add_stability = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = euc.3
+	title = euc_3_title
+	desc = euc_3_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	limit = {
+		has_country_flag = EUC_ongoing_brussels_conference
+	}
+	}
+	
+	mean_time_to_happen = {
+    days = 30
+	}
+	
+	option = {
+		name = euc_3_a
+		set_country_flag = EUC_partial_mob
+		EUC = {
+		country_event = euc.4
+		
+		if = {
+			limit = {
+				has_country_flag = EUC_extensive_conscription
+			}
+			add_stability = -0.15
+			add_war_support = -0.10
+		}
+		
+		else = {
+			add_stability = -0.05
+		}
+		
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = EUC_extensive_conscription
+			}
+			custom_effect_tooltip = EUC_warning_2_tt
+		}
+		
+		custom_effect_tooltip = EUC_warning_1_tt
+	}
+	
+	option = {
+		name = euc_3_b
+		set_country_flag = EUC_early_mob
+		EUC = {
+		country_event = euc.4
+		}
+	}
+	
+	option = {
+		name = euc_3_c
+		EUC = {
+		country_event = euc.4
+		add_political_power = 50
+		}
+	}
+}
+
+country_event = {
+	id = euc.4
+	title = euc_4_title
+	desc = euc_4_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	limit = {
+		has_country_flag = EUC_ongoing_brussels_conference
+	}
+	}
+	
+	mean_time_to_happen = {
+    days = 45
+	}
+	
+	option = {
+		name = euc_4_a
+		set_country_flag = restrict_civilian_fuel
+		EUC = {
+		
+		if = {
+		limit = {
+			has_country_flag = EUC_extensive_conscription
+				OR = {
+				has_country_flag = EUC_partial_mob
+				}
+			}
+			add_stability = -0.15
+			add_war_support = -0.10
+		}
+		
+		if = {
+			limit = {
+				has_country_flag = EUC_extensive_conscription
+				has_country_flag = EUC_partial_mob
+			}
+			clr_country_flag = EUC_ongoing_brussels_conference
+			set_country_flag = EUC_failed_brussels_conference
+			}
+		
+			else = {
+				add_stability = -0.05
+			}
+		
+		}
+		
+		custom_effect_tooltip = EUC_warning_1_tt
+		if = {
+		limit = {
+			has_country_flag = EUC_extensive_conscription
+			OR = {
+			has_country_flag = EUC_partial_mob
+			}
+		}
+			custom_effect_tooltip = EUC_warning_2_tt
+		}
+		
+		if = {
+		limit = {
+			has_country_flag = EUC_extensive_conscription
+			has_country_flag = EUC_partial_mob
+		}
+			custom_effect_tooltip = EUC_warning_3_tt
+		}
+		
+	}
+	
+	option = {
+		name = euc_4_b
+		EUC = {
+		add_political_power = 25
+		}
+	}
+	
+	option = {
+		name = euc_4_c
+		set_country_flag = expand_civilian_fuel
+		EUC = {
+		add_political_power = 50
+		}
+	}
+}
+
+country_event = {
+	id = euc.5
+	title = euc_5_title
+	desc = euc_5_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	
+	}
+	
+	option = {
+		name = euc_5_a
+		EUC = {
+			if = {
+			limit = {
+			has_country_flag = EUC_extensive_conscription
+			}
+			swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = extensive_conscription
+				}
+			}
+			
+			if = {
+			limit = {
+			has_country_flag = EUC_limited_conscription
+			}
+			swap_ideas = {
+			remove_idea = volunteer_only
+			add_idea = limited_conscription
+				}
+			}
+			
+			if = {
+			limit = {
+			has_country_flag = EUC_partial_mob
+			}
+			swap_ideas = {
+			remove_idea = civilian_economy
+			add_idea = partial_economic_mobilisation
+				}
+			}
+			
+			if = {
+			limit = {
+			has_country_flag = EUC_early_mob
+			}
+			swap_ideas = {
+			remove_idea = civilian_economy
+			add_idea = partial_economic_moilisation
+				}
+			}
+			
+			if = {
+			limit = {
+			has_country_flag = restrict_civilian_fuel
+			}
+			add_ideas = euc_restricted_civilian_fuel
+			}
+			
+			if = {
+			limit = {
+			has_country_flag = expand_civilian_fuel
+			}
+			add_ideas = euc_expanded_civilian_fuel
+			}
+		}
+	}
+}
+
+country_event = {
+	id = euc.6
+	title = euc_6_title
+	desc = euc_6_desc
+	picture = GFX_report_event_PRC_starting
+
+	fire_only_once = yes
+
+	trigger = {
+	
+	}
+	
+	option = {
+		name = euc_6_a
+		EUC = {
+		
+		}
+	}
+}

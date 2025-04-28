@@ -9,6 +9,7 @@ state={
 	state_category = pastoral
 	history={
 		owner = PRC
+		add_core_of = YUN
 		add_core_of = CHI
 		add_core_of = PRC
 		victory_points = {
@@ -17,7 +18,7 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		1938.10.25 = {
+		2900.10.25 = {
 			if = {
 				limit = {
 					NOT = {

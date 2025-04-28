@@ -1,0 +1,2727 @@
+focus_tree = {
+	id = GBA_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GBA
+		}
+	}
+### SHARED ###
+shared_focus = shared_eco_start
+shared_focus = shared_mil_start
+	
+#### POLITICAL ####
+	focus = {
+		id = GBA_legacy
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 8
+		y = 0
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = GBA_take_stock
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_legacy
+		prerequisite = {
+			focus = GBA_legacy
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+### STAY TRUE ###
+	focus = {
+		id = GBA_protect_locals
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -4
+		y = 1
+		relative_position_id = GBA_take_stock
+		prerequisite = {
+			focus = GBA_take_stock
+		}
+		mutually_exclusive = { focus = GBA_conscript_locals }
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+		
+		}
+	}
+	focus = {
+		id = GBA_crackdown
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = GBA_protect_locals
+		prerequisite = {
+			focus = GBA_protect_locals
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_aid
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_crackdown
+		prerequisite = {
+			focus = GBA_crackdown
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_locals
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_aid
+		prerequisite = {
+			focus = GBA_aid
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	
+	
+	
+	focus = {
+		id = GBA_fortify
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GBA_protect_locals
+		prerequisite = {
+			focus = GBA_protect_locals
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_fight
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_fortify
+		prerequisite = {
+			focus = GBA_fortify
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_reestablish
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_fight
+		prerequisite = {
+			focus = GBA_fight
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = GBA_old_face
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = GBA_reestablish
+		prerequisite = {
+			focus = GBA_reestablish
+		}
+		prerequisite = {
+			focus = GBA_locals
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	
+
+
+
+
+
+
+### WARLORDS ###
+	focus = {
+		id = GBA_conscript_locals
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 4
+		y = 1
+		relative_position_id = GBA_take_stock
+		prerequisite = {
+			focus = GBA_take_stock
+		}
+		mutually_exclusive = { focus = GBA_protect_locals }
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+		
+		}
+	}
+	focus = {
+		id = GBA_contact_warlords
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GBA_conscript_locals
+		prerequisite = {
+			focus = GBA_conscript_locals
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_black_market
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_contact_warlords
+		prerequisite = {
+			focus = GBA_contact_warlords
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_legalise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_black_market
+		prerequisite = {
+			focus = GBA_black_market
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_contact_druglords
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = GBA_conscript_locals
+		prerequisite = {
+			focus = GBA_conscript_locals
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_opium_farms
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_contact_druglords
+		prerequisite = {
+			focus = GBA_contact_druglords
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	focus = {
+		id = GBA_addiction
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_opium_farms
+		prerequisite = {
+			focus = GBA_opium_farms
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_new_face
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GBA_addiction
+		prerequisite = {
+			focus = GBA_addiction
+			
+		}
+		prerequisite = {
+			focus = GBA_legalise
+			
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+#### UNIFICATION ####
+focus = {
+		id = GBA_unification
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 271
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = shared_eco_stable
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+
+	focus = {
+		id = GBA_victory
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_unification
+		prerequisite = {
+			focus = GBA_unification
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_solidify
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_victory
+		prerequisite = {
+			focus = GBA_victory
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_hunt_down
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_solidify
+		prerequisite = {
+			focus = GBA_solidify
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_hire
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_hunt_down
+		prerequisite = {
+			focus = GBA_hunt_down
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_prepare_transition
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_hire
+		prerequisite = {
+			focus = GBA_hire
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_preparations
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_victory
+		prerequisite = {
+			focus = GBA_victory
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_gather
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_preparations
+		prerequisite = {
+			focus = GBA_preparations
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_demilitarise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_gather
+		prerequisite = {
+			focus = GBA_gather
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_medals
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_demilitarise
+		prerequisite = {
+			focus = GBA_demilitarise
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_east
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_victory
+		prerequisite = {
+			focus = GBA_victory
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_south
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_east
+		prerequisite = {
+			focus = GBA_east
+		}
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_north
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_south
+		prerequisite = {
+			focus = GBA_south
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_west
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_north
+		prerequisite = {
+			focus = GBA_north
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_journey_home
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_west
+		prerequisite = {
+			focus = GBA_west
+		}
+		prerequisite = {
+			focus = GBA_medals
+		}
+		prerequisite = {
+			focus = GBA_prepare_transition
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+### BAD GUYS ###
+	focus = {
+		id = GBA_warlords
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = GBA_conscript_locals
+		}
+
+		x = 9
+		y = 1
+		relative_position_id = GBA_journey_home
+		prerequisite = {
+			focus = GBA_journey_home
+		}
+		mutually_exclusive = { focus = GBA_federation }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_conflict
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_warlords
+		prerequisite = {
+			focus = GBA_warlords
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_warlord_1
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -4
+		y = 1
+		relative_position_id = GBA_conflict
+		prerequisite = {
+			focus = GBA_conflict
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_repurpose_industry
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = { 
+			has_completed_focus = shared_eco_stable
+		}
+		x = -2
+		y = 1
+		relative_position_id = GBA_warlord_1
+		prerequisite = {
+			focus = GBA_warlord_1
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_military_complex
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_repurpose_industry
+		prerequisite = {
+			focus = GBA_repurpose_industry
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_gun_production
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_military_complex
+		prerequisite = {
+			focus = GBA_military_complex
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_more_troops
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_warlord_1
+		prerequisite = {
+			focus = GBA_warlord_1
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_more_guns
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_more_troops
+		prerequisite = {
+			focus = GBA_more_troops
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_more_everything
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_more_guns
+		prerequisite = {
+			focus = GBA_more_guns
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_profits
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_warlord_1
+		prerequisite = {
+			focus = GBA_warlord_1
+			focus = GBA_council
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_expand_farms
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_profits
+		prerequisite = {
+			focus = GBA_profits
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_corner
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_expand_farms
+		prerequisite = {
+			focus = GBA_expand_farms
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_all_for_one
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_corner
+		prerequisite = {
+			focus = GBA_corner
+		}
+		prerequisite = {
+			focus = GBA_more_everything
+		}
+		prerequisite = {
+			focus = GBA_gun_production
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_council
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_conflict
+		prerequisite = {
+			focus = GBA_conflict
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_oligrachy
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_council
+		prerequisite = {
+			focus = GBA_council
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_corporations
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_oligrachy
+		prerequisite = {
+			focus = GBA_oligrachy
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_loyalty
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_corporations
+		prerequisite = {
+			focus = GBA_corporations
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_all_for_few
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_loyalty
+		prerequisite = {
+			focus = GBA_loyalty
+		}
+		prerequisite = {
+			focus = GBA_trained
+		}
+		prerequisite = {
+			focus = GBA_corner
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_UN_warlord
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 4
+		y = 1
+		relative_position_id = GBA_conflict
+		prerequisite = {
+			focus = GBA_conflict
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_how
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_UN_warlord
+		prerequisite = {
+			focus = GBA_UN_warlord
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_necessary
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_how
+		prerequisite = {
+			focus = GBA_how
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_slaughter
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_necessary
+		prerequisite = {
+			focus = GBA_necessary
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_learn
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_UN_warlord
+		prerequisite = {
+			focus = GBA_UN_warlord
+			focus = GBA_council
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_compromise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_learn
+		prerequisite = {
+			focus = GBA_learn
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_trained
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_compromise
+		prerequisite = {
+			focus = GBA_compromise
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_continue_industry
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+		x = 2
+		y = 1
+		relative_position_id = GBA_UN_warlord
+		prerequisite = {
+			focus = GBA_UN_warlord
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_spread
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_continue_industry
+		prerequisite = {
+			focus = GBA_continue_industry
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_public_relations
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_spread
+		prerequisite = {
+			focus = GBA_spread
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_restored_order
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_public_relations
+		prerequisite = {
+			focus = GBA_public_relations
+		}
+		prerequisite = {
+			focus = GBA_slaughter
+		}
+		prerequisite = {
+			focus = GBA_trained
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_new_state
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = GBA_all_for_few
+		prerequisite = {
+			focus = GBA_restored_order
+			focus = GBA_all_for_few
+			focus = GBA_all_for_one
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_expansion
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 6
+		y = 1
+		relative_position_id = GBA_new_state
+		prerequisite = {
+			focus = GBA_new_state
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_eritrea_invasion
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+
+		x = 1
+		y = 1
+		relative_position_id = GBA_expansion
+		prerequisite = {
+			focus = GBA_expansion
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_eritrea_integration
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_eritrea_invasion
+		prerequisite = {
+			focus = GBA_eritrea_invasion
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_somalia_invasion
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = GBA_expansion
+		prerequisite = {
+			focus = GBA_expansion
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_somalia_integration
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_somalia_invasion
+		prerequisite = {
+			focus = GBA_somalia_invasion
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_djibouti
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = GBA_somalia_integration
+		prerequisite = {
+			focus = GBA_somalia_integration
+		}
+		prerequisite = {
+			focus = GBA_eritrea_integration
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_djibouti_integration
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_djibouti
+		prerequisite = {
+			focus = GBA_djibouti
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = GBA_allies
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -6
+		y = 1
+		relative_position_id = GBA_new_state
+		prerequisite = {
+			focus = GBA_new_state
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_our_own
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -3
+		y = 1
+		relative_position_id = GBA_allies
+		prerequisite = {
+			focus = GBA_allies
+		}
+		mutually_exclusive = { focus = GBA_outwards }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_greatness
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_our_own
+		prerequisite = {
+			focus = GBA_our_own
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_outwards
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 3
+		y = 1
+		relative_position_id = GBA_allies
+		prerequisite = {
+			focus = GBA_allies
+		}
+		mutually_exclusive = { focus = GBA_our_own }
+
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_make_some
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_outwards
+		prerequisite = {
+			focus = GBA_outwards
+		}
+		mutually_exclusive = { focus = GBA_major }
+		mutually_exclusive = { focus = GBA_egypt }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_egypt
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_outwards
+		prerequisite = {
+			focus = GBA_outwards
+		}
+		mutually_exclusive = { focus = GBA_major }
+		mutually_exclusive = { focus = GBA_make_some }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_major
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_outwards
+		prerequisite = {
+			focus = GBA_outwards
+		}
+		mutually_exclusive = { focus = GBA_make_some }
+		mutually_exclusive = { focus = GBA_egypt }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_soviet
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 3
+		y = 2
+		relative_position_id = GBA_major
+		prerequisite = {
+			focus = GBA_major
+		}
+		mutually_exclusive = { focus = GBA_usa }
+		mutually_exclusive = { focus = GBA_china }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_china
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = GBA_major
+		prerequisite = {
+			focus = GBA_major
+		}
+		mutually_exclusive = { focus = GBA_soviet }
+		mutually_exclusive = { focus = GBA_usa }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_usa
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -3
+		y = 2
+		relative_position_id = GBA_major
+		prerequisite = {
+			focus = GBA_major
+		}
+		mutually_exclusive = { focus = GBA_soviet }
+		mutually_exclusive = { focus = GBA_china }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+### GOOD GUYS ###
+	focus = {
+		id = GBA_federation
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = GBA_protect_locals
+		}
+		mutually_exclusive = { focus = GBA_warlords }
+
+		x = -9
+		y = 1
+		relative_position_id = GBA_journey_home
+		prerequisite = {
+			focus = GBA_journey_home
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_elections
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_federation
+		prerequisite = {
+			focus = GBA_federation
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_continue_stabilisation
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_elections
+		prerequisite = {
+			focus = GBA_elections
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_candidate_1
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -6
+		y = 1
+		relative_position_id = GBA_continue_stabilisation
+		prerequisite = {
+			focus = GBA_continue_stabilisation
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_finish_industry
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		 has_completed_focus = shared_eco_stable
+		 }
+
+		x = 0
+		y = 2
+		relative_position_id = GBA_candidate_1
+		prerequisite = {
+			focus = GBA_candidate_1
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_economy
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_candidate_1
+		prerequisite = {
+			focus = GBA_candidate_1
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_poor
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_economy
+		prerequisite = {
+			focus = GBA_economy
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_welfare
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_poor
+		prerequisite = {
+			focus = GBA_poor
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_ethnic
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_candidate_1
+		prerequisite = {
+			focus = GBA_candidate_1
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_rights
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_ethnic
+		prerequisite = {
+			focus = GBA_ethnic
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_eritrea_offer
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_rights
+		prerequisite = {
+			focus = GBA_rights
+		}
+		
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+
+	focus = {
+		id = GBA_united
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_welfare
+		prerequisite = {
+			focus = GBA_welfare
+		}
+		prerequisite = {
+			focus = GBA_eritrea_offer
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_candidate_2
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 6
+		y = 1
+		relative_position_id = GBA_continue_stabilisation
+		prerequisite = {
+			focus = GBA_continue_stabilisation
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_new_industry
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		 has_completed_focus = shared_eco_stable
+		 }
+
+		x = 0
+		y = 2
+		relative_position_id = GBA_candidate_2
+		prerequisite = {
+			focus = GBA_candidate_2
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_market
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_candidate_2
+		prerequisite = {
+			focus = GBA_candidate_2
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_resources
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_market
+		prerequisite = {
+			focus = GBA_market
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_foreign_goods
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_resources
+		prerequisite = {
+			focus = GBA_resources
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = GBA_outreach
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_candidate_2
+		prerequisite = {
+			focus = GBA_candidate_2
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_embassies
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_outreach
+		prerequisite = {
+			focus = GBA_outreach
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_eritrea_deal
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_embassies
+		prerequisite = {
+			focus = GBA_embassies
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_new_world
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_eritrea_deal
+		prerequisite = {
+			focus = GBA_eritrea_deal
+		}
+		prerequisite = {
+			focus = GBA_foreign_goods
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	
+	
+focus = {
+		id = GBA_foreign
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 6
+		y = 1
+		relative_position_id = GBA_candidate_1
+		prerequisite = {
+			focus = GBA_candidate_1
+			focus = GBA_candidate_2
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_neighbours
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_foreign
+		prerequisite = {
+			focus = GBA_foreign
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_options
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_neighbours
+		prerequisite = {
+			focus = GBA_neighbours
+		}
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_own_faction
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = GBA_options
+		prerequisite = {
+			focus = GBA_options
+		}
+		mutually_exclusive = { focus = GBA_neutral_policy }
+		mutually_exclusive = { focus = GBA_usa_align }
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_usa_align
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = GBA_options
+		prerequisite = {
+			focus = GBA_options
+		}
+		mutually_exclusive = { focus = GBA_neutral_policy }
+		mutually_exclusive = { focus = GBA_own_faction }
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+	focus = {
+		id = GBA_neutral_policy
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = GBA_candidate_1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = GBA_options
+		prerequisite = {
+			focus = GBA_options
+		}
+		mutually_exclusive = { focus = GBA_usa_align }
+		mutually_exclusive = { focus = GBA_own_faction }
+		
+		
+		completion_reward = {
+			GBA = {
+				
+			}
+			
+		}
+	}
+
+
+
+
+
+
+	continuous_focus_position = { x = 50 y = 1000 }
+	default = no
+}
+
+
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = { focus =  }
+		relative_position_id = 

@@ -1,0 +1,324 @@
+ideas = {
+	country = {
+## South Australia Specific Ideas
+		ASU_Market_Anarchy_Idea = {
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+                add_stability = -0.01
+
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		AST_collapse_coming = {
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+                add_stability = -0.01
+
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		AST_Victor_Of_Collapse = {
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_Corporate_Oligarch_Rule_Idea = {
+			removal_cost = -1
+			picture = CorporateOligarchyRule
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+				political_power_gain = -0.01
+				industrial_capacity_factory = 0.01
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_Shadow_Ruled_Governor_Idea = {
+			removal_cost = -1
+			picture = ASU_Shadow_Ruled_Governor_Idea
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+				stability_weekly_factor = 0.001
+				add_stability = -0.05
+
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_AnCap_Alliance_Idea = {
+			removal_cost = -1
+			picture = ASU_AncapAlliance_Idea
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+				consumer_goods_factor = 0.01
+				political_power_gain = -0.01
+				add_stability = 0.001
+				production_speed_buildings_factor = 0.04
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_High_Pollution_Idea = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			industrial_capacity_factory = 0.01
+			production_speed_buildings_factor = 0.04			
+			add_stability = -0.01
+			recruitable_population_factor = -0.03
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_StrikesInPirie_Idea = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			industrial_capacity_factory = -0.01
+			production_speed_buildings_factor = -0.04			
+			add_stability = -0.01
+			recruitable_population_factor = -0.03
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_StrikesInPirie_Idea1 = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			industrial_capacity_factory = -0.05
+			production_speed_buildings_factor = -0.10			
+			add_stability = -0.05
+			recruitable_population_factor = -0.08
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ASU_IssuesInWhyallah_Idea = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+                industrial_capacity_factory = -0.10
+                production_speed_buildings_factor = -0.15
+                political_power_gain = -0.10
+                stability_factor = -0.05
+                recruitable_population_factor = -0.05
+                monthly_population = -0.10
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_IssuesInWhyallah_Idea1 = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+                industrial_capacity_factory = -0.10
+                production_speed_buildings_factor = -0.15
+                political_power_gain = -0.10
+                stability_factor = -0.02
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_IssuesInWhyallah_Idea2 = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+                political_power_gain = -0.10
+                stability_factor = -0.04
+                recruitable_population_factor = -0.05
+                monthly_population = -0.10
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_WhyallahRails_Idea = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			production_speed_infrastructure_factor = 0.05
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_Whyallah_Investment = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			consumer_goods_factor = 0.2
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_Whyallah_Investment1 = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			consumer_goods_factor = -0.1
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		ASU_Whyallah_Green = {
+			picture = ASU_HighPollution_Idea
+			removal_cost = -1
+
+			available = {
+			}
+		
+			allowed = {
+			}
+		
+			modifier = {
+			consumer_goods_factor = -0.25
+			production_speed_infrastructure_factor = 0.1
+			stability_factor = 0.05
+			monthly_population = 0.1
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

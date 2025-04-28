@@ -1,0 +1,647 @@
+﻿focus_tree = {
+	id = ASU
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ASU
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+	
+# Start of the Political Focus Tree
+	focus = {
+		id = ASU_Shareholder_Meeting
+		icon = GFX_goal_Shareholdermeeting
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+			ASU = {
+			country_event = ASU_events.1
+			add_political_power = 50
+			}
+		}
+	}
+
+	focus = {
+		id = ASU_No_Confidence_Vote
+		icon = GFX_goal_focus_removethegeneral
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Shareholders_No_Agreement }
+		prerequisite = {
+			focus = ASU_Shareholder_Meeting
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		x = 20
+		y = 2
+		completion_reward = {
+			country_event = ASU_events.2
+		}
+	}
+
+	focus = {
+		id = ASU_Shareholders_No_Agreement
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_No_Confidence_Vote }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Shareholder_Meeting
+		}
+		x = 45
+		y = 2
+		completion_reward = {
+
+		}
+	}
+# Start of the NAP Path
+	focus = {
+		id = ASU_Push_NAP
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Push_AP }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_No_Confidence_Vote
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			ASU = {
+			add_stability = 0.05
+			}
+
+		}
+	}
+# Twosteel NAP Path
+	focus = {
+		id = ASU_APhone
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Push_AP }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Push_NAP
+		}
+		x = 3
+		y = 4
+		completion_reward = {
+			ASU = {
+			country_event = ASU_events.3
+			add_political_power = 25
+			}
+		}
+	}
+	focus = {
+		id = ASU_Fair_Infrastructure
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_APhone
+		}
+		x = 2
+		y = 5
+		completion_reward = {
+	ASU = {
+		random_owned_controlled_state = {
+   			prioritize = { 519 } #optional
+			set_building_level = {
+    			type = infrastructure
+    			level = 5
+    			instant_build = yes
+							}
+						}
+		random_owned_controlled_state = {
+   			prioritize = { 1182 } #optional
+			set_building_level = {
+    			type = infrastructure
+    			level = 5
+    			instant_build = yes
+							}
+						}						
+					}
+				}
+	}
+
+	focus = {
+		id = ASU_Expansion_Of_The_Rail
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Fair_Infrastructure
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			ASU = {
+			add_ideas = {
+				ASU_WhyallahRails_Idea
+			}
+			random_owned_controlled_state = {
+    			add_extra_state_shared_building_slots = 2 
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ASU_Loans_To_TwoSteel
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_APhone
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_timed_idea = { idea = ASU_Whyallah_Investment days = 100 }
+		}
+	}
+	focus = {
+		id = ASU_Profit_From_Investments
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Loans_To_TwoSteel
+		}
+		available = {
+			NOT = {
+				has_idea = ASU_Whyallah_Investment
+			}
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			ASU = {
+				add_ideas = ASU_Whyallah_Investment1
+			}
+		}
+	}
+	focus = {
+		id = ASU_TwoSteel_Green_Again
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Profit_From_Investments
+		}
+		prerequisite = {
+			focus = ASU_Expansion_Of_The_Rail
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+	remove_ideas = {
+		ASU_Whyallah_Investment1
+		ASU_WhyallahRails_Idea
+	}
+	add_ideas = {
+		ASU_Whyallah_Green
+	}
+		}
+	}
+# last focus for Twosteel N.A.P
+	focus = {
+		id = ASU_Our_Future
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Expansion_Of_The_Rail
+			focus = ASU_Profit_From_Investments
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			custom_effect_tooltip = 1_ASU_tt
+		}
+	}
+# BlueStar worker crisis
+	focus = {
+		id = ASU_First_WorkerStrikes
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Push_NAP
+		}
+		available = {
+			
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			ASU = {
+				swap_ideas = {
+					remove_idea = ASU_StrikesInPirie_Idea
+					add_idea = ASU_StrikesInPirie_Idea1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ASU_Start_Negotiations
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_First_WorkerStrikes
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			ASU = {
+				add_stability = 0.1
+					}
+			custom_effect_tooltip = "2_ASU_tt"
+		}
+	}
+
+	focus = {
+		id = ASU_Give_No_Incentive
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Start_Negotiations
+		}
+		x = 7
+		y = 6
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ASU_Santos_Union_Busters
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Give_No_Incentive
+		}
+		x = 7
+		y = 7
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ASU_Submit_To_Mob
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Start_Negotiations
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = ASU_Improve_Conditions
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Submit_To_Mob
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+		}
+	}
+# End Of Worker Strikes
+	focus = {
+		id = ASU_Stability_At_Bluestar
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Santos_Union_Busters
+		}
+		prerequisite = {
+			focus = ASU_Improve_Conditions
+		}
+		x = 8
+		y = 8
+		completion_reward = {
+			
+		}
+	}
+# Start of the Single Monopoly Rule Paths
+	focus = {
+		id = ASU_Push_AP
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Push_NAP }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_No_Confidence_Vote
+		}
+		x = 30
+		y = 3
+		completion_reward = {
+		}
+	}
+# Start of the First N.A.P Crisis
+	focus = {
+		id = ASU_Roxby_Refuses
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Push_NAP
+		}
+		available = {
+			has_idea = my_idea
+		}
+		x = 15
+		y = 4
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ASU_Violent_Response
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Economic_Response }
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = ASU_Roxby_Refuses
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ASU_Economic_Response
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 16
+		y = 5
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Violent_Response }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Roxby_Refuses
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = ASU_Begin_Boycott
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 15
+		y = 6
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+				focus = ASU_Violent_Response
+				focus = ASU_Economic_Response
+		}
+		
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_SeizeAssets
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 14
+		y = 7
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Toll }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Begin_Boycott
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Toll
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 16
+		y = 7
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_SeizeAssets }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Begin_Boycott
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Bribes
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 12
+		y = 7
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Economic_Response
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Incite_Strikes
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 18
+		y = 7
+		available_if_capitulated = no
+		mutually_exclusive = { focus = ASU_Violent_Response }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Economic_Response
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Assassinate_CEO
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 17
+		y = 8
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Toll
+			}
+		prerequisite = {
+			focus = ASU_Incite_Strikes
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Win_Over_Shareholders
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 13
+		y = 8
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Bribes
+			}
+		prerequisite = {
+			focus = ASU_SeizeAssets
+			}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = ASU_Capitalism_Thrives
+		icon = ASU_Shareholders_No_Agreement
+		cost = 2
+		x = 10
+		y = 9
+		available_if_capitulated = no
+		mutually_exclusive = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = ASU_Assassinate_CEO
+			focus = ASU_Win_Over_Shareholders
+			}
+		prerequisite = {
+			focus = ASU_Stability_At_Bluestar
+			}
+		prerequisite = {
+			focus = ASU_Our_Future
+			}
+		completion_reward = {
+		}
+	}
+}

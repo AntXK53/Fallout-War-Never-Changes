@@ -1,0 +1,22 @@
+state={
+	id=1026
+	name="STATE_1026"
+
+	history={
+		owner = RAD
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		1544 10383 12316 
+	}
+	manpower=100110
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

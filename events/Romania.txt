@@ -1,0 +1,171 @@
+add_namespace = romania_revolt
+add_namespace = romania_news
+
+country_event = {
+	id = romania_revolt.1
+	title = romania_revolt.1.t
+	desc = romania_revolt.1.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = romania_revolt.2
+				days = 14
+			}
+		}	
+	}
+
+	option = {
+		name = romania_revolt.1.a
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.21
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = romania_revolt.2
+	title = romania_revolt.2.t
+	desc = romania_revolt.2.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			country_event = { 
+				id = romania_revolt.3
+				days = 21
+			}
+			kill_ideology_leader = communism
+			add_country_leader_role = {
+				character = ROM_military_command_of_afprr
+				promote_leader = yes
+				country_leader = {
+					ideology = Militant_Socialism
+					expire = "2111.1.1.1"
+				}
+			}
+			promote_character = ROM_military_command_of_afprr
+		}
+	}
+
+	option = {
+		name = romania_revolt.2.a
+		add_ideas = ROM_emergency_situation
+		remove_ideas = ROM_petrikovshchina_idea
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.16
+		}
+		news_event = {
+			id = romania_news.2
+			days = 1
+			hours = 6
+		}
+	}
+}
+country_event = {
+	id = romania_revolt.3
+	title = romania_revolt.3.t
+	desc = romania_revolt.3.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ROM = {
+				set_politics = {
+					ruling_party = democratic
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -1
+				}
+				set_global_flag = romanian_democratic_now_gf
+				leave_faction = yes
+				SOV = { end_puppet = ROM }
+			}
+		}
+	}
+
+	option = {
+		name = romania_revolt.3.a
+		remove_ideas = ROM_emergency_situation
+		news_event = {
+			id = romania_news.1
+			days = 1
+			hours = 6
+		}
+	}
+}
+# Event for USSR where they think about to kill Romania
+country_event = {
+	id = romania_revolt.4
+	title = romania_revolt.4.t
+	desc = romania_revolt.4.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			activate_mission = SOV_democratic_romania_invasion_mission
+			BUL	= {
+				activate_mission = BUL_democratic_romania_invasion_mission
+			}
+		}
+	}
+
+	option = {
+		name = romania_revolt.4.a
+	}
+}
+# Romania democratic now
+news_event = {
+	id = romania_news.1
+	title = romania_news.1.t
+	desc = romania_news.1.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		SOV = {
+			country_event = { 
+				id = romania_revolt.4
+				days = 4
+				hours = 7
+				random_hours = 21
+			}
+		}
+	}
+
+	option = {
+		name = romania_news.1.a
+	}
+}
+# CSR leader is assasinated
+news_event = {
+	id = romania_news.2
+	title = romania_news.2.t
+	desc = romania_news.2.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = romania_news.2.a
+	}
+}

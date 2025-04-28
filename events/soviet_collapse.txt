@@ -1,0 +1,343 @@
+add_namespace = soviet_collapse
+add_namespace = soviet_collapse_news
+add_namespace = soviet_collapse_script
+add_namespace = soviet_collapse_fashion
+add_namespace = soviet_collapse_play_as
+
+### EVENT ###
+# here we goooo
+country_event = {
+	id = soviet_collapse.1
+	title = soviet_collapse.1.t
+	desc = soviet_collapse.1.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			news_event = {
+				id = soviet_collapse_news.1
+				days = 6
+				hours = 2
+			}
+			country_event = {
+				id = soviet_collapse_script.1
+				days = 4
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.1.a
+		# we are doing all for collapsing
+		set_country_flag = SOV_fully_collapsing_cf
+		country_event = { 
+			id = soviet_collapse.2
+			days = 14
+		}
+	}
+
+	option = {
+		name = soviet_collapse.1.b
+		# trying to save union between countries
+		random_list = {
+			50 = { 
+				# nah uh 
+				country_event = { 
+					id = soviet_collapse.2
+					days = 14
+				}
+				set_country_flag = SOV_fully_collapsing_cf
+			}
+			50 = {
+				# save yoo
+				country_event = { 
+					id = soviet_collapse.3
+					days = 14
+				}
+				set_country_flag = SOV_not_full_collapsing_cf
+			}
+		}
+	}
+}
+# ukraine leaved USSR
+country_event = {
+	id = soviet_collapse.4
+	title = soviet_collapse.4.t
+	desc = soviet_collapse.4.desc
+	picture = x
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# UPA
+			every_state = {
+				limit = {
+					is_controlled_by = SOV
+					is_core_of = UPA
+					has_state_flag = south_ukrainian_rebelions_sf
+				}
+				set_demilitarized_zone = no
+				transfer_state_to = UPA
+			}
+			# RoU
+			every_state = {
+				limit = {
+					is_controlled_by = SOV
+					is_core_of = UKR
+					NOT = {
+						is_core_of = UPA
+					}
+				}
+				transfer_state_to = UKR
+			}
+			# MOL
+			MOL = {
+				transfer_state = 78
+			}
+			# next country
+			country_event = {
+				id = soviet_collapse.5
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.4.a
+		UKR = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.4.b
+		UPA = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.4.c
+		MOL = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.4.d
+	}
+}
+# latvia leaved USSR
+country_event = {
+	id = soviet_collapse.5
+	title = soviet_collapse.5.t
+	desc = soviet_collapse.5.desc
+	picture = x
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# Latvia going crraaaazyy
+			LAT = {
+				transfer_state = 810
+				transfer_state = 12
+				transfer_state = 808
+				transfer_state = 809
+				transfer_state = 190
+			}
+			# estonian stuff again
+			if = {
+				limit ={
+					OR = { 
+						has_global_flag = EST_estonian_soviet_war_ended
+						country_exists = EST
+					}
+				}
+				# do NOTHING
+				# skip estonia
+				country_event = {
+					id = soviet_collapse.7
+					days = 7
+				}
+				else = {
+					# not skipping
+					country_event = {
+						id = soviet_collapse.6
+						days = 7
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.5.a
+		LAT = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.5.d
+	}
+}
+# estonia leaved USSR
+country_event = {
+	id = soviet_collapse.6
+	title = soviet_collapse.6.t
+	desc = soviet_collapse.6.desc
+	picture = x
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# estonia effects 
+			EST = {
+				transfer_state = 1160
+				transfer_state = 812
+				transfer_state = 811
+				transfer_state = 13
+				transfer_state = 813
+				transfer_state = 191
+			}
+			# next
+			country_event = {
+				id = soviet_collapse.7
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.6.a
+		EST = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.6.d
+	}
+}
+# lithuania leaved USSR
+country_event = {
+	id = soviet_collapse.7
+	title = soviet_collapse.7.t
+	desc = soviet_collapse.7.desc
+	picture = x
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# lithuania effects 
+			LIT = {
+				transfer_state = 814
+				transfer_state = 188
+				transfer_state = 189
+				transfer_state = 11
+				transfer_state = 815
+				transfer_state = 784
+			}
+			# next
+			country_event = {
+				id = soviet_collapse.8
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.7.a
+		LIT = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.7.d
+	}
+}
+# BELARUSSIA leaved USSR
+country_event = {
+	id = soviet_collapse.8
+	title = soviet_collapse.8.t
+	desc = soviet_collapse.8.desc
+	picture = x
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			# potato effects 
+			BLR = {
+				transfer_state = 985
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 96
+				transfer_state = 206
+				transfer_state = 194
+				transfer_state = 204
+				transfer_state = 1097
+				transfer_state = 241
+				transfer_state = 207
+			}
+			# next
+			country_event = {
+				id = soviet_collapse.9
+				days = 7
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse.8.a
+		BLR = { change_tag_from = SOV }
+	}
+	option = {
+		name = soviet_collapse.8.d
+	}
+}
+### SCRIPT ###
+# ukrainian rebelion
+country_event = {
+	id = soviet_collapse_script.1
+	title = soviet_collapse_script.1.t
+	desc = soviet_collapse_script.1.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	immediate = {
+		every_state = {
+			limit = {
+				is_controlled_by = SOV
+				is_core_of = UKR
+				has_state_flag = south_ukrainian_rebelions_sf
+			}
+			set_demilitarized_zone = yes
+			add_core_of = UPA
+			remove_core_of = UKR
+		}
+		SOV = { country_event = { id = soviet_collapse_fashion.1 days = 1 } }
+	}
+}
+### FASHION ###
+country_event = {
+	id = soviet_collapse_fashion.1
+	title = soviet_collapse_fashion.1.t
+	desc = soviet_collapse_fashion.1.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = soviet_collapse_fashion.1.a
+	}
+}
+### NEWS ###
+news_event = {
+	id = soviet_collapse_news.1
+	title = soviet_collapse_news.1.t
+	desc = soviet_collapse_news.1.desc
+	picture = GFX_news_event_soviet_collapse_news_1
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			SOV = {
+				country_event = {
+					id = soviet_collapse.4
+					days = 28
+				}
+			}
+		}
+	}
+
+	option = {
+		name = soviet_collapse_news.1.a
+	}
+}

@@ -10,11 +10,24 @@ state={
 	history=
 	{
 		owner = PRC
-		add_core_of = PRC
+		add_core_of = SHX
 		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MEN
 		
 		buildings = {
 			infrastructure = 1
+		}
+
+		2900.10.25 = {
+			controller = JAP
+		}
+		
+		2900.1.1 = {
+			
+			owner = PRC
+			controller = MEN
+
 		}
 	}
 	manpower=500000

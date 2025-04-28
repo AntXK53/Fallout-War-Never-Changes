@@ -1,0 +1,21 @@
+SOV_democratic_romania_invasion_decision_category = {
+	SOV_democratic_romania_invasion_mission = {
+		available = {
+			NOT = { has_global_flag = romanian_democratic_now_gf }
+		}
+		activation = {
+			always = no
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		war_with_on_timeout = ROM
+		days_mission_timeout = 30
+		selectable_mission = no
+		timeout_effect = {
+			declare_war_on = {
+				target = ROM
+				type = annex_everything
+			}
+		}
+	}
+}

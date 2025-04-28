@@ -1,0 +1,104 @@
+ideas = {
+	country = {
+	
+		WSB_hundred_year_occupation = {
+			picture = WSB_hundred_year_occupation
+			removal_cost = -1
+	
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				civilian_factory_use = 1
+				consumer_goods_factor = -0.1-
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		DDR_century_humiliation = {
+			picture = DDR_century_humiliation
+			removal_cost = -1
+	
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory	= -0.25
+				supply_factor = -0.25
+				drift_defence_factor = -0.005
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		DDR_second_soviet_thaw = {
+			picture = DDR_second_soviet_thaw
+			removal_cost = -1
+	
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+				civilian_factory_use = 1
+				consumer_goods_factor = -0.03
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		DDR_foundationofgreatness = {
+			picture = DDR_foundationofgreatness
+			removal_cost = -1
+	
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.02
+				supply_factor = 0.10
+				drift_defence_factor = 0.005
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		DDR_protests1 = {
+			picture = DDR_protests1
+			removal_cost = -1
+	
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				democratic_drift = 0.05
+				local_factory_sabotage = 0.3
+				drift_defence_factor = -0.005
+				communism_drift = -0.05
+				political_power_gain = -0.03
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+	}
+}

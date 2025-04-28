@@ -4,15 +4,16 @@ state={
 	name="STATE_813"
 
 	history={
-		owner = SOV
+		owner = EST
+		controller = SOV
 		victory_points = {
-			4640 1 #Narva
+			4640 1 
 		}
 		victory_points = {
-			11127 1 #Rakvere
+			11127 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			4640 = {
 				naval_base = 1
 
@@ -20,13 +21,14 @@ state={
 
 		}
 		add_core_of = EST
-		add_core_of = SOV
+
 	}
 
 	provinces={
 		4640 6099 9079 11057 11127 11443 13127 
 	}
-	manpower=150560
+	manpower=140560
 	buildings_max_level_factor=1.000
 	state_category=rural
+	local_supplies=0.000
 }

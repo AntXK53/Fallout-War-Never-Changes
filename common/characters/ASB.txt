@@ -1,0 +1,56 @@
+characters = {
+
+	# MOHAMED YAYYO
+	ASB_Mahad_Horseed = { 
+		name = "Mahad Horseed"
+		portraits = {
+			civilian = {
+				large = "GFX_ASB_Mahad_Horseed"
+				small = "GFX_ASB_Mahad_Horseed"
+			}
+			
+		}
+		country_leader = {
+			ideology = Fundamentalism
+			traits = {  }
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { irregulars_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			}
+		}
+	ASB_Yusuf_Osman = {
+		name = "Yusuf Osman"
+		portraits = {
+			civilian = {
+				large = "GFX_ASB_Yusuf_Osman"
+				small = "GFX_ASB_Yusuf_Osman"
+			}
+			army = {
+				large = "GFX_ASB_Yusuf_Osman"
+				small = "GFX_ASB_Yusuf_Osman"
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = { 
+				}
+		}
+	}
+
+	
+}

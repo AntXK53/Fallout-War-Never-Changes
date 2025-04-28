@@ -1,0 +1,469 @@
+focus_tree = {
+	id = CAN_startingtree
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 999
+			tag = CAN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 25 }
+	
+	focus = {
+		id = CAN_continue_the_dynasty
+		icon = GFX_goal_CAN_leaf
+		x = 15
+		y = 1
+	
+		cost = 2
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			country_event = nf_canada.1
+			custom_effect_tooltip = CAN_continue_the_dynasty_tt
+			hidden_effect = {
+				add_stability = -0.05
+				add_political_power = -50
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_helping_family
+		icon = GFX_goal_CAN_subsidize_axe
+		x = -2
+		y = 1
+	
+		relative_position_id = CAN_continue_the_dynasty
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_continue_the_dynasty
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			471 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = -50
+			add_ideas = CAN_wooden_toys
+		}
+	}
+
+	focus = {
+		id = CAN_close_friends
+		icon = GFX_goal_CAN_grabbing_rifle
+		x = 2
+		y = 1
+	
+		relative_position_id = CAN_continue_the_dynasty
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_continue_the_dynasty
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			276 = {
+				damage_building = {
+					type = arms_factory
+					damage = 0.5
+				}
+			}
+			add_ideas = CAN_gun_seizure
+		}
+	}
+
+	focus = {
+		id = CAN_recycling_campaign
+		icon = GFX_goal_CAN_recycle
+		x = 2
+		y = 1
+	
+		relative_position_id = CAN_helping_family
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_helping_family
+		}
+	
+		prerequisite = {
+			focus = CAN_close_friends
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			custom_effect_tooltip = CAN_close_friends_tt
+			hidden_effect = {
+				remove_ideas = CAN_wooden_toys
+				remove_ideas = CAN_gun_seizure
+				add_ideas = CAN_reduce_reuse1
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_clean_and_safe_canada
+		icon = GFX_goal_CAN_rose_bush
+		x = 0
+		y = 1
+	
+		relative_position_id = CAN_recycling_campaign
+	
+		cost = 4
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_recycling_campaign
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			country_event = nf_canada.2
+			swap_ideas = {
+				remove_idea = CAN_reduce_reuse1
+				add_idea = CAN_reduce_reuse2
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_bread
+		icon = GFX_goal_CAN_cheap_bread
+		x = -3
+		y = 1
+	
+		relative_position_id = CAN_clean_and_safe_canada
+	
+		cost = 4
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_clean_and_safe_canada
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			add_political_power = -50
+			276 = {
+				add_manpower = 50000
+			}
+			custom_effect_tooltip = CAN_bread_circuses_guns_tt
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.025
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_circus
+		icon = GFX_goal_CAN_circuses
+		x = 0
+		y = 1
+	
+		relative_position_id = CAN_clean_and_safe_canada
+	
+		cost = 4
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_clean_and_safe_canada
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.05
+			custom_effect_tooltip = CAN_bread_circuses_guns_tt
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.025
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_guns
+		icon = GFX_goal_CAN_c7a2_gun
+		x = 3
+		y = 1
+	
+		relative_position_id = CAN_clean_and_safe_canada
+	
+		cost = 4
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_clean_and_safe_canada
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = CAN
+			}
+			custom_effect_tooltip = CAN_bread_circuses_guns_tt
+			hidden_effect = {
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.025
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CAN_trudeau_stability
+		icon = GFX_goal_CAN_canada_big
+		x = 0
+		y = 1
+	
+		relative_position_id = CAN_circus
+	
+		cost = 4
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			NOT = {
+				has_country_flag = canada_trudeau_phakked
+				has_country_flag = canada_trudeau_semi_phakked
+			}
+		}
+	
+		bypass = {
+	
+		}
+	
+		prerequisite = {
+			focus = CAN_bread
+		}
+	
+		prerequisite = {
+			focus = CAN_circus
+		}
+	
+		prerequisite = {
+			focus = CAN_guns
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+		
+		select_effect = {
+			country_event = {
+				id = nf_canada.3
+				days = 7
+			}
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				add_idea = CAN_reduce_reuse3
+				remove_idea = CAN_reduce_reuse2
+			}
+			custom_effect_tooltip = CAN_trudeau_stability_tt
+		}
+	}
+
+}

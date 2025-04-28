@@ -1,19 +1,17 @@
-state = {
-	id = 656
-	name = "STATE_656"
+state={
+	id=656
+	name="STATE_656"
 	manpower = 80000
 	
 	state_category = rural
 	
-	history = {
-		
-		owner = SAU
-		add_core_of = SAU
+	history={
+		owner = UAR
+		add_core_of = UAR
 		add_core_of = KUW
 		victory_points = {
-			8085 1 # Kuwait City
+			8085 1 
 		}
-
 		buildings = {
 			infrastructure = 2
 			8085 = {
@@ -22,9 +20,9 @@ state = {
 		}
 
 	}
-	provinces = {
-		8085 13366 13367
+	provinces={
+		8085
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

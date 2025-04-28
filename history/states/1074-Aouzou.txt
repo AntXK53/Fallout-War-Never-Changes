@@ -1,0 +1,24 @@
+state={
+	id=1074
+	name="STATE_1074"
+
+	impassable = yes
+
+	history={
+		owner = RAD
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = LBA
+
+	}
+
+	provinces={
+		13364 
+	}
+	manpower=1300
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

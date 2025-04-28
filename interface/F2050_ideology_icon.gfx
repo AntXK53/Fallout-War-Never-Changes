@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = GFX_ideology_neo_juche
+        texturefile = gfx/interface/ideologies/neo_juche.dds
+    }
+    spriteType = {
+        name = "GFX_ideology_totalitarianism"
+        texturefile = "gfx/interface/ideologies/totalitarianism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_ROM_reformist_communism"
+        texturefile = "gfx/interface/ideologies/ROM_communism_group.dds"
+    }
+}

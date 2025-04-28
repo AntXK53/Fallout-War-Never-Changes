@@ -1,0 +1,22 @@
+state={
+	id=1159
+	name="STATE_1159"
+	provinces={
+		4833 13501 13505 13512 
+	}
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			}
+
+		add_core_of = ALA
+
+	}	
+	
+	manpower=4214
+	buildings_max_level_factor=1.000
+	state_category=rural	
+	local_supplies=0.000
+}

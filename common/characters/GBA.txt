@@ -1,0 +1,54 @@
+characters = {
+	#### COUNTRY LEADERS 
+	GBA_Jackson_Willaims = {
+		name = "Jackson Willaims"
+		portraits = {
+			civilian = {
+				large = "GFX_GBA_Jackson_Willaims"
+				small = "GFX_GBA_Jackson_Willaims"
+			}
+			army = {
+				large = "GFX_GBA_Jackson_Willaims"
+				small = "GFX_GBA_Jackson_Willaims"
+			}
+		}
+		country_leader = {
+			ideology = Military_Dictatorship  
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = { 
+				}
+		}
+	GBA_Bill_Joseph = {
+		name = "Siad Hussein"
+		portraits = {
+			civilian = {
+				large = "GFX_GBA_Bill_Joseph"
+				small = "GFX_GBA_Bill_Joseph"
+			}
+			army = {
+				large = "GFX_GBA_Bill_Joseph"
+				small = "GFX_GBA_Bill_Joseph"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = { 
+				}
+		}
+
+}

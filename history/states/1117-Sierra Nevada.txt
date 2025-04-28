@@ -1,0 +1,26 @@
+state={
+	id=1117
+	name="STATE_1117"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+		add_core_of = CAL
+		victory_points = {
+			941 1 
+		}
+
+	}
+
+	provinces={
+		710 941 1432 1601 1651 4657 7667 10387 10483 11763 
+	}
+	manpower=620008
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,51 @@
+characters={
+	CAN_trudeau={
+		name="Walter L. Trudeau"
+		portraits={
+			civilian={
+				large=gfx/leaders/CAN/Portrait_Canada_walter_trudeau.png
+			}
+		}
+		country_leader={
+			ideology=Neo_Liberalism
+			expire="2099.1.1.1"
+			traits = { CAN_liberal_corporatist }
+			id=-1
+		}
+	}
+	
+	CAN_trudeau2={
+		name="Walter L. Trudeau"
+		portraits={
+			civilian={
+				large=gfx/leaders/CAN/Portrait_Canada_walter_trudeau2.png
+			}
+		}
+	}
+
+
+	CAN_mcgill={
+		name="Kimberly McGill"
+		portraits={
+			civilian={
+				large=gfx/leaders/CAN/Portrait_Canada_whitey_mc_whiterson.png
+			}
+		}
+	}
+
+	CAN_anderson={
+		name="Keith Anderson"
+		portraits={
+			civilian={
+				large=gfx/leaders/CAN/Portrait_Canada_kim_mcgill.png
+			}
+		}
+		country_leader={
+			ideology=interim_Govt
+			expire="2099.1.1.1"
+			traits = { CAN_liberal_corporatist }
+			id=-1
+		}
+	}
+
+}

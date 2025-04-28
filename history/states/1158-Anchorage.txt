@@ -1,0 +1,31 @@
+state={
+	id=1158
+	name="STATE_1158"
+	provinces={
+		13091 13503 13504 
+	}
+	
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13504 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = ALA
+		victory_points = {
+			13504 3 
+		}
+
+	}	
+	
+	manpower=45325
+	buildings_max_level_factor=1.000
+	state_category=rural	
+	local_supplies=0.000
+}

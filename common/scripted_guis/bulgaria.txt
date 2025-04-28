@@ -1,0 +1,73 @@
+scripted_gui = {
+	BUL_drsg_button = {
+		context_type = player_context
+		parent_window_token = politics_tab 
+		window_name = "BUL_drsg_button"
+ 
+		visible = { 
+			has_country_flag = BUL_democratic_rebelions_mechanics_cf
+		}
+ 
+		effects = {
+			BUL_drsg_gui_open_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = BUL_drsg_button_cf }
+					}
+					set_country_flag = BUL_drsg_button_cf
+				}
+				else_if = { 
+					limit = {
+						has_country_flag = BUL_drsg_button_cf
+					}
+					clr_country_flag = BUL_drsg_button_cf
+				}
+				clr_country_flag = gui_alert_visible
+			}
+		}
+ 
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = gui_alert_visible
+			} 
+		}
+	}
+	BUL_democratic_rebelions_scripted_gui = {
+	
+		context_type = player_context
+		
+		window_name = "BUL_democratic_rebelions_scripted_gui_window"
+
+		visible = {
+			original_tag = BUL
+			has_country_flag = BUL_drsg_button_cf
+		}
+
+		effects = {
+		}
+
+		triggers = {
+		}
+
+		properties = {
+			BUL_drsg_sofia_region_sl = {
+				image = "[BUL_drsg_sofia_region_sl]"
+			}
+			BUL_drsg_burgas_region_sl = {
+				image = "[BUL_drsg_burgas_region_sl]"
+			}
+			BUL_drsg_silistra_region_sl = {
+				image = "[BUL_drsg_silistra_region_sl]"
+			}
+			BUL_drsg_plovdiv_region_sl = {
+				image = "[BUL_drsg_plovdiv_region_sl]"
+			}
+			BUL_drsg_varna_region_sl = {
+				image = "[BUL_drsg_varna_region_sl]"
+			}
+			BUL_drsg_vidin_region_sl = {
+				image = "[BUL_drsg_vidin_region_sl]"
+			}
+		}
+	}
+}

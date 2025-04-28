@@ -4,8 +4,10 @@ state={
 
 	history={
 		owner = PRC
+		add_core_of = SIK
 		add_core_of = CHI
 		add_core_of = PRC
+		add_core_of = ETK
 		buildings = {
 			infrastructure = 1
 

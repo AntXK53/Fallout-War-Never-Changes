@@ -1,0 +1,49 @@
+
+BUL_add_1_level_of_control_to_every_state = {	
+	custom_effect_tooltip = BUL_true_communism_focus_tt
+	add_to_variable = {
+		var = BUL_drsg_burgas_region_vv
+		value = 1
+	}
+	clamp_variable = {
+		var = BUL_drsg_burgas_region_vv
+		min = -10
+		max = 10
+	}
+	add_to_variable = {
+		var = BUL_drsg_sofia_region_vv
+		value = 1
+	}
+	clamp_variable = {
+		var = BUL_drsg_sofia_region_vv
+		min = -10
+		max = 10
+	}
+	add_to_variable = {
+		var = BUL_drsg_plovdiv_region_vv
+		value = 1
+	}
+	clamp_variable = {
+		var = BUL_drsg_plovdiv_region_vv
+		min = -10
+		max = 10
+	}
+	add_to_variable = {
+		var = BUL_drsg_pleven_region_vv
+		value = 1
+	}
+	clamp_variable = {
+		var = BUL_drsg_pleven_region_vv
+		min = -10
+		max = 10
+	}
+	add_to_variable = {
+		var = BUL_drsg_varna_region_vv
+		value = 1
+	}
+	clamp_variable = {
+		var = BUL_drsg_varna_region_vv
+		min = -10
+		max = 10
+	}
+}

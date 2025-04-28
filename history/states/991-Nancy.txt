@@ -1,0 +1,26 @@
+state={
+	id=991
+	name="STATE_991"
+
+	history={
+		owner = EUC
+		victory_points = {
+			11516 5 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = EUC
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		521 11516 
+	}
+	manpower=400500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

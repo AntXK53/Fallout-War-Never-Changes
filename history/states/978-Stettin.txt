@@ -1,0 +1,31 @@
+state={
+	id=978
+	name="STATE_978"
+
+	history={
+		owner = POL
+		victory_points = {
+			6282 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			6282 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = KSH
+
+	}
+
+	provinces={
+		6282 
+	}
+	manpower=400017
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

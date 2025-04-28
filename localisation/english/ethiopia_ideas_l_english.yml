@@ -1,0 +1,60 @@
+﻿l_english: 
+### IDEAS UN PEACEKEEPERS ###
+GBA_peacekeepers:0 "The Final Death Throes of the UN"
+GBA_peacekeepers_desc:0 "Abandoned, forgotten, and the last of an already dead order. When we were sent to Ethiopia following it's complete collapse in 2052, we had no idea it would be the last mission ever issued by the UN. Whether it was by sheer bad luck or a bureaucratic mistake, not two weeks after we had arrived did we get the news that the UN had officially been disbanded, leaving us dead in the water. \n\nIt has been nearly four years since then and our situation has not gotten better, and we are almost completely isolated from the rest of the world. Despite this, the soldiers (those who didn't desert soon after hearing the news of the UN's disbandment) still maintain their mission of defending the inncoent people of Ethiopia. After so many years however, the Peacekeepers are in their final moments and it'll take a genius to bring them back from the brink."
+GBA_limited:0 "Limited Resources"
+GBA_limited_desc:0 "Unfortunately, despite our best efforts to ration it and several successful supply raids against the Revolutionary Army, our stockpiles which we had been given at the start of the mission have essentially dried up. Added on to the fact that our soldiers don't have experience in industry, not helped by our position in the mountains, and our prospects for industry are sorely lacking."
+
+### IDEAS ROYALIST FRONT ###
+SID_monarchy_fervour:0 "For the Emperor!"
+SID_monarchy_fervour_desc:0 "After decades of biding our time our chance to strike has finally arrived! We have already secured lands south of the capital through the help of our loyalist cells. While we may still be at a slight disadvantage our men are ready to die for their emperor, whether in victory or defeat."
+
+### IDEAS SOVIET EXPEDITION ###
+ORO_expedition:0 "Foreign Expedition"
+ORO_expedition_desc:0 "We are in a foreign land which very much does not want us here. Our presence is most certainly illegal and the only thing stopping the local populace from rising up in open revolt is our superior military. Of course, we are limited in our forces, and it is highly unlikely we will be getting reinforcements from Moscow anytime soon."
+ORO_oil:0 "The Oil Fields"
+ORO_oil_desc:0 "The whole reason for our expedition, the oil fields present in the Ogaden Basin. While not as large or well known as others in say the Americas or Middle East, with the dwindling oil supplies worldwide we need anything we can get."
+
+### IDEAS REVOLUTIONARIES ###
+ETH_aftermath:0 "Aftermath"
+ETH_aftermath_desc:0 "Our coup has failed quite dramatically. While we saw initial success in ousting the government from power and siezing the capital in the first year, our expectations of the rest of the country uniting behind us were very clearly misplaced and the entire country has fallen apart into breakaway states, leaving us with only the capital and surrounding area."
+ETH_shattered:0 "A Shattered Nation"
+ETH_shattered_desc:0 "The nation has been broken and conflict is abound. The strife all across the country which has run rampant for four years unfortunately means that we are unable to bring our full workforce to bear, and much of our industries are either destroyed or in the hands of our enemies."
+ETH_outrage:0 "Public Outrage"
+ETH_outrage_desc:0 "Contrary to our expectations, it seems the public were not craving a great return to revolutionary ideals, with riots in the streets now a common occurence and people openly protesting the new government."
+
+### IDEAS OGADEN ###
+HAR_surrounded:0 "Surrounded"
+HAR_surrounded_desc:0 "We are surrounded on all sides by nations who want to see us dead. Our chances are slim, but we will fight for our people and country nonetheless."
+HAR_no_industry:0 "No Industry"
+HAR_no_industry_desc:0 "To put it simply, in terms of industry we have somewhere between zero and nothing. Most of the equipment we have was stolen from abandoned border garrisons following the communist coup in the capital. Coupled with the fact that very little of our population even knows what a factory is and complete industrialisation is an impossibility."
+
+### IDEAS BENISHANGUL PR ###
+BEG_conflict:0 "Conflicting Visions"
+BEG_conflict_desc:0 "Our relationship with the central government is a confusing one. On one hand ideologically we share the same vision, however when put into practice we have very different methods. As such, with the complete collapse of Ethiopia in 2052 we broke away to form and maintain our own socialist state, free from the now dictatorial rule of the central government. Unfortunately, due to the aforementioned similarities in ideology our own military and militia are hesitant to fight the Revolutionary Army, with some even suggesting we just outright join them."
+
+### IDEAS AFAR LIBERATION FRONT ###
+AFA_brutal_devastation:0 "Brutal Devastation"
+AFA_brutal_devastation_desc:0 "Despite succesfully securing our independence four years ago military remnants of the central government still cause havoc across our country, raiding villages, slaughtering caravans, and hampering our industrial efforts. We must deal with them quickly before it spirals even more out of control."
+AFA_nationalist_fervour:0 "Nationalist Fervour"
+AFA_nationalist_fervour_desc:0 "A revival of nationalism has burgeoned within our new country following the collapse of order in Ethiopia. Our people are ready and willing to take up arms and fight for their freedom."
+
+### IDEAS AMHARA REPUBLIC ###
+QEM_nationalist_fervour:0 "Nationalist Fervour"
+QEM_nationalist_fervour_desc:0 "A revival of nationalism has burgeoned within our new country following the collapse of order in Ethiopia. Our people are ready and willing to take up arms and fight for their freedom."
+QEM_democratic_values:0 "Democratic Values"
+QEM_democratic_values_desc:0 "Despite the fact that Ethiopia has long been under communist control underground democratic movements have always been present. As a result, when we declared our intentions to unite the Amharan people and build a republic we attracted many democrats from across Ethiopia."
+
+### IDEAS TIGRAY PR ###
+TIG_the_real_ones:0 "The Liberation Front"
+TIG_the_real_ones_desc:0 "When the Revolutionary Army couped the government in 2051 much of the old government was killed for 'non-revolutionary activities'. Those that survived either went into hiding or fled the country entirely. When the complete collapse came in 2052 however, much of these government officials returned to Ethiopia, gathering in the Tigray region, united by one goal; destroy the Revolutionary Army and liberate Ethiopia."
+TIG_the_deal:0 "The Deal"
+TIG_the_deal_desc:0 "Due to our current predicament we have decided to make a deal of sorts with the newly independent Eritrea. In exchange for a promise to guarantee their independence once we have taken back Ethiopia as well as some raw resources they will send us humanitarian aid and promise not to push their claims on Tigray."
+
+### IDEAS ERITREA DPR ###
+ERI_the_sea:0 "Access to the Sea"
+ERI_the_sea_desc:0 "Eritrea as a part of Ethiopia has always had the intrinsic advantage of being one its main access points to the sea. While trade has slowed down significantly since the complete collapse of Ethiopia we still have the benefits of this near exclusive coastal access."
+ERI_the_deal:0 "The Deal"
+ERI_the_deal_desc:0 "We have succesfully secured promises from the remnants of the previous government based in Tigray. In exchange for some humanitarian aid amd a promise to not attack them they guarantee that when they unite Ethiopia we will maintain our independence as an equal ally."
+ERI_independence:0 "Independence"
+ERI_independence_desc:0 "Eritrea has had a very rocky history with Ethiopia. While we have been united several times in the past sometimes for very long periods, the gap between us was never properly bridged. Following the collapse of Ethiopia we broke away, finally forming our own independent state free from Ethiopian meddling. We may not have had it for very long, but we are ready to fight to the end to defend it."

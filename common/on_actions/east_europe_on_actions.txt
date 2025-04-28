@@ -1,0 +1,103 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ROM = {
+				country_event = { 
+					id = romania_revolt.1
+					days = 558
+				}
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { original_tag = RSL }
+					from = {
+						original_tag = SLO
+					}
+				}
+				SOV = {
+					add_to_faction = RSL
+					set_autonomy = {
+						target = RSL
+						autonomy_state = autonomy_puppet
+					}
+				}
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		effect = { 
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = EST
+						has_war_with = SOV
+					}
+					FROM = { original_tag = SOV }
+				}
+				every_state = {
+					limit = {
+						is_core_of = SOV
+					}
+					transfer_state_to = SOV
+				}
+				SOV ={
+					annex_country = {
+						target = EST
+					}
+					white_peace = EST
+				}	
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		effect = { 
+			if = {
+				limit = {
+					has_global_flag = romanian_democratic_now_gf
+					ROOT = {
+						original_tag = ROM
+						has_war_with = SOV
+					}
+					FROM = { 
+						OR = { 
+							original_tag = SOV
+							original_tag = BUL
+						}
+					}
+				}
+				HUN = {
+					transfer_state = 1019
+					transfer_state = 76
+				}
+				BUL = {
+					transfer_state = 83
+					transfer_state = 84
+					transfer_state = 82
+					transfer_state = 81
+					transfer_state = 46
+					transfer_state = 1017
+					transfer_state = 79
+					transfer_state = 1018
+
+					set_cosmetic_tag = BUL_balkan_ssr_ct
+
+					set_country_flag = BUL_formed_balkan_ssr_cf
+					load_focus_tree = BUL_balkan_union
+					complete_national_focus = BUL_united_and_strong_focus
+				}
+				every_country = {
+					limit = {
+						has_war_with = ROM
+						is_in_faction_with = SOV
+					}
+					white_peace = ROM
+				}
+				clr_global_flag = romanian_democratic_now_gf
+			}
+		}
+	}
+}

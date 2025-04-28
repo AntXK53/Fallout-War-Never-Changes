@@ -1,9 +1,11 @@
+
 state={
 	id=35
 	name="STATE_35"
 
 	history={
-		owner = HOL
+		owner = EUC
+		add_core_of = EUC
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 3
@@ -23,11 +25,10 @@ state={
 	}
 
 	provinces={
-		480 3262 6496 6500 9431 11456 11562 
+		480 3262 6496 6500 9431 11562 
 	}
 	manpower=1449000
 	buildings_max_level_factor=1.000
 	state_category=city
-
-	local_supplies=0.0 
+	local_supplies=0.000
 }

@@ -1,0 +1,30 @@
+state={
+	id=1029
+	name="STATE_1029"
+
+	history={
+		owner = UAR
+		add_core_of = UAR
+		add_core_of = BHR
+		victory_points = {
+			13313 2 
+		}
+		buildings = {
+			infrastructure = 1
+			13313 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		13313 
+	}
+	manpower=10200
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,24 @@
+state={
+	id=1130
+	name="STATE_1130"
+
+	history={
+		owner = SAF
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			4556 1
+		}
+		#add_core_of = LES
+
+	}
+	provinces={
+		4556 
+	}
+	manpower=50057
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

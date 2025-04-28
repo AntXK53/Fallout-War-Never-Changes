@@ -1,0 +1,81 @@
+characters = {
+
+	#######################
+	### COUNTRY LEADERS ###
+	#######################
+	BUL_nikul_vasilev = {
+		name = "Nikul Vasilev"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/BUL_nikul_vasilev.png"
+			}
+		}
+		country_leader = {
+			ideology = totalitarianism
+			traits = { BUL_butcher_trait BUL_paranoid_trait }
+			expire = "2099.1.1"
+			id = -1
+		}
+	}
+	BUL_rayko_svetkov = {
+		name = "Rayko Svetkov"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/BUL_rayko_svetkov.png"
+			}
+		}
+		country_leader = {
+			ideology = Neo_Liberalism
+			traits = { }
+			expire = "2099.1.1"
+			id = -1
+		}
+	}
+	BUL_boris_iv = {
+		name = "Boris IV"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUL/BUL_boris_iv.png"
+			}
+		}
+		country_leader = {
+			ideology = Neo_Monarchism
+			traits = { }
+			expire = "2099.1.1"
+			id = -1
+		}
+	}
+
+
+##     ## ##    ## #### ########    ##       ########    ###    ########  ######## ########   ######  
+##     ## ###   ##  ##     ##       ##       ##         ## ##   ##     ## ##       ##     ## ##    ## 
+##     ## ####  ##  ##     ##       ##       ##        ##   ##  ##     ## ##       ##     ## ##       
+##     ## ## ## ##  ##     ##       ##       ######   ##     ## ##     ## ######   ########   ######  
+##     ## ##  ####  ##     ##       ##       ##       ######### ##     ## ##       ##   ##         ## 
+##     ## ##   ###  ##     ##       ##       ##       ##     ## ##     ## ##       ##    ##  ##    ## 
+ #######  ##    ## ####    ##       ######## ######## ##     ## ########  ######## ##     ##  ######  
+
+
+    BUL_teodor_atanasov = {
+		name = "Teodor Atanasov"
+		portraits = {
+			army = {
+				large = "gfx/leaders/BUL/BUL_teodor_atanasov.png"
+				small = GFX_portrait_BUL_atanas_shalapatov_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer war_hero skilled_staffer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+}
+
+
+

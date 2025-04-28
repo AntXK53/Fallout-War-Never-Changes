@@ -7,6 +7,7 @@ state={
 	state_category = town
 
 	history={
+		set_state_flag = south_ukrainian_rebelions_sf
 		owner = SOV
 		victory_points = {
 			9461 1

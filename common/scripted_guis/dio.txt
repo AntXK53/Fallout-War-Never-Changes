@@ -1,0 +1,70 @@
+scripted_gui = {
+	TNO_Anarchy_Diplomacy = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TNO_Anarchy_Diplomacy_Container"
+		
+		visible = { tag = RAD }
+		
+		#triggers = {
+		#	TNO_Anarchy_Relations_Block_visible = {
+		#		TNO_is_anarchy_visible = yes
+		#	}
+		#}
+		
+		properties = {
+			TNO_Anarchy_RAD = {
+				image = "[GetAnarchyGUIImage]"
+			}
+		}
+	}
+	TNO_Anarchy_pol = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_Anarchy_pol_Container"
+		
+		visible = { tag = RAD }
+		
+		#triggers = {
+		#	TNO_Anarchy_Relations_Block_visible = {
+		#		TNO_is_anarchy_visible = yes
+		#	}
+		#}
+		
+		
+	}
+	TNO_Anarchy_Diplomacy = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TNO_Anarchy_Diplomacy_Container"
+		
+		visible = { tag = RAE }
+		
+		#triggers = {
+		#	TNO_Anarchy_Relations_Block_visible = {
+		#		TNO_is_anarchy_visible = yes
+		#	}
+		#}
+		
+		properties = {
+			TNO_Anarchy_RAD = {
+				image = "[GetAnarchyGUIImage]"
+			}
+		}
+	}
+	TNO_Anarchy_pol = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_Anarchy_pol_Container"
+		
+		visible = { tag = RAE }
+		
+		#triggers = {
+		#	TNO_Anarchy_Relations_Block_visible = {
+		#		TNO_is_anarchy_visible = yes
+		#	}
+		#}
+		
+		
+	}
+}

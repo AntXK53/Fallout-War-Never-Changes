@@ -7,8 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = SAU
-		add_core_of = SAU
+		owner = PER
 		victory_points = {
 			10782 1 
 		}
@@ -16,11 +15,10 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = PER 
-		add_core_of = BLC
 	}
 
 	provinces={
-		1889 2039 2070 4891 10782 13082 12895
+		1889 2039 2070 4891 10782 13082 
 	}
 
 	local_supplies=6.0 

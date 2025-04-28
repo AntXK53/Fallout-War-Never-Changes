@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+
+		TIG_the_real_ones = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				communism_drift = 0.1
+			}
+			targeted_modifier = {
+				tag = ETH   
+				attack_bonus_against = 0.1
+			}
+		}
+	}
+	country = {
+
+		TIG_the_deal = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				local_resources_factor = -0.05
+				stability_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = ERI   
+				attack_bonus_against = -0.25
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

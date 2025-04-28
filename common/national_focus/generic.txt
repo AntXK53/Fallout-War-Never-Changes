@@ -1,11 +1,945 @@
 ﻿focus_tree = {
-	id = generic_focus
-	
-	country = {
-		factor = 1
+    id = generic_focus
+    
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 1
+        }
+    }
+    
+    default = yes
+    focus = {
+        id = address_the_resource_shortage
+        icon = GFX_goal_unknown
+        x = 13
+        y = 3
+        cost = 10
+        available = {
+            date > 2052.4.1.1
+        }
+        completion_reward = {
+            local_resources_factor = 0.1
+            min_export = -0.2
+            production_lack_of_resource_factor = -0.15
+        }
+    }
+    focus = {
+        id = fuel_rationing
+        icon = GFX_goal_unknown
+        x = 13
+        y = 4
+        cost = 10
+        prerequisite = { focus = address_the_resource_shortage }
+        completion_reward = {
+            fuel_cost = 1
+        }
+    }
+    focus = {
+        id = prioritize_the_critical_industries
+        icon = GFX_goal_unknown
+        x = 13
+        y = 5
+        cost = 10
+        prerequisite = { focus = fuel_rationing }
+        completion_reward = {
+            consumer_goods_expected_value = -0.1
+            production_speed_synthetic_refinery_factor = 0.1
+            prodcution_speed_infrastructure_facture = 0.05
+        }
+    }
+    focus = {
+        id = alternative_fuel_sources
+        icon = GFX_goal_unknown
+        x = 14
+        y = 6
+        cost = 10
+        prerequisite = { focus = prioritize_the_critical_industries }
+		mutually_exclusive = {
+			focus = stick_to_fossil_fuels
+		}
+    }
+	focus = {
+		id = national_institute_of_fusion_research
+		icon = GFX_goal_unknown
+		x = 14 
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = alternative_fuel_sources
+		}
 	}
-	
-	default = yes
-	reset_on_civilwar = no
+	focus = {
+		id = the_fusion_future
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = national_institute_of_fusion_research
+		}
+	}
+	focus = {
+        id = stick_to_fossil_fuels
+        icon = GFX_goal_unknown
+        x = 11
+        y = 6
+        cost = 10
+        prerequisite = { focus = prioritize_the_critical_industries }
+		mutually_exclusive = {
+			focus = alternative_fuel_sources
+		}
+        completion_reward = {
+            fuel_gain_factor = 0.2
+            fuel_cost = 50
+            #someone please add synthetic refinery research bonuses cuz idk how to do that 
+        }
+    }
+    focus = {
+        id = cooperate_with_the_arabs
+        icon = GFX_goal_unknown
+        x = 10
+        y = 7
+        cost = 10
+        prerequisite = { focus = stick_to_fossil_fuels }
+		mutually_exclusive = {
+			focus = take_the_oil_from_them
+		}
+        completion_reward = {
+            
+        }
+    }
+    focus = {
+        id = take_the_oil_from_them
+        icon = GFX_goal_unknown
+        x = 12
+        y = 7
+        cost = 10
+        prerequisite = { focus = stick_to_fossil_fuels }
+		mutually_exclusive = {
+			focus = cooperate_with_the_arabs
+		}
+    }
+    focus = {
+        id = defend_the_arabs_from_europe
+        icon = GFX_goal_unknown
+        x = 10
+        y = 8
+        cost = 10
+        prerequisite = { focus = cooperate_with_the_arabs }
+    }
+    focus = {
+        id = support_the_european_cause
+        icon = GFX_goal_unknown
+        x = 12
+        y = 8
+        cost = 10
+        prerequisite = { focus = take_the_oil_from_them }
+    }
+    focus = {
+        id = our_place_in_the_world
+        icon = GFX_goal_unknown
+        x = 19
+        y = 3
+        cost = 10
+    }
+    focus = {
+        id = approachement_with_the_west
+        icon = GFX_goal_unknown
+        x = 17
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_place_in_the_world }
+		mutually_exclusive = {
+			focus = a_policy_of_neutrality
+			focus = embrace_communist_ideas
+		}
+    }
+    focus = {
+        id = a_policy_of_neutrality
+        icon = GFX_goal_unknown
+        x = 19
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_place_in_the_world }
+		mutually_exclusive = {
+			focus = embrace_communist_ideas
+		}
+		mutually_exclusive = {
+			focus = approachement_with_the_west
+		}
+    }
+    focus = {
+        id = the_russian_bear
+        icon = GFX_goal_unknown
+        x = 20
+        y = 5
+        cost = 10
+        prerequisite = { focus = embrace_communist_ideas }
+		mutually_exclusive = {
+			focus = approach_china
+		}
+    }
+    focus = {
+        id = meet_with_kozlov
+        icon = GFX_goal_unknown
+        x = 20
+        y = 6
+        cost = 10
+        prerequisite = { focus = the_russian_bear }
+    }
+	focus = {
+        id = integrate_ourselves_into_the_wider_union
+        icon = GFX_goal_unknown
+        x = 20
+        y = 7
+        cost = 10
+        prerequisite = { focus = meet_with_kozlov }
+    }
+	focus = {
+        id = submit_to_moscow
+        icon = GFX_goal_unknown
+        x = 20
+        y = 8
+        cost = 10
+        prerequisite = { focus = integrate_ourselves_into_the_wider_union }
+    }
+	focus = {
+        id = approach_china
+        icon = GFX_goal_unknown
+        x = 22
+        y = 5
+        cost = 10
+        prerequisite = { focus = embrace_communist_ideas }
+		mutually_exclusive = {
+			focus = the_russian_bear
+		}
+    }
+    focus = {
+        id = negociate_with_the_chairman
+        icon = GFX_goal_unknown
+        x = 22
+        y = 6
+        cost = 10
+        prerequisite = { focus = approach_china }
+    }
+	focus = {
+        id = fuel_for_protection
+        icon = GFX_goal_unknown
+        x = 22
+        y = 7
+        cost = 10
+        prerequisite = { focus = negociate_with_the_chairman}
+    }
+	focus = {
+        id = red_sun_in_the_sky
+        icon = GFX_goal_unknown
+        x = 22
+        y = 8
+        cost = 10
+        prerequisite = { focus = fuel_for_protection }
+    }
+    focus = {
+        id = embrace_communist_ideas
+        icon = GFX_goal_unknown
+        x = 21
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_place_in_the_world }
+		mutually_exclusive = {
+			focus = a_policy_of_neutrality 
+			focus = approachement_with_the_west
+		}
+    }
+    focus = {
+        id = the_fractured_commonwealth
+        icon = GFX_goal_unknown
+        x = 18
+        y = 5
+        cost = 10
+		prerequisite = {
+			focus = approachement_with_the_west
+		}
+		mutually_exclusive = {
+			focus = closer_ties_with_washington
+		}
+    }
+    focus = {
+        id = closer_ties_with_washington
+        icon = GFX_goal_unknown
+        x = 16
+        y = 5
+        cost = 10
+        prerequisite = { focus = approachement_with_the_west }
+		mutually_exclusive = {
+			focus = the_fractured_commonwealth
+		}
+    }
+    focus = {
+        id = a_meeting_in_the_white_house
+        icon = GFX_goal_unknown
+        x = 16
+        y = 6
+        cost = 10
+        prerequisite = { focus = closer_ties_with_washington }
+    }
+	focus = {
+        id = a_toast_to_freedom
+        icon = GFX_goal_unknown
+        x = 16
+        y = 7
+        cost = 10
+        prerequisite = { focus = a_meeting_in_the_white_house }
+    }
+	focus = {
+        id = join_nato 
+        icon = GFX_goal_unknown
+        x = 16
+        y = 8
+        cost = 10
+        prerequisite = { focus = a_toast_to_freedom }
+    }
+    focus = {
+        id = a_proposition_to_brussels
+        icon = GFX_goal_unknown
+        x = 18
+        y = 6
+        cost = 10
+        prerequisite = { focus = the_fractured_commonwealth }
+    }
+    focus = {
+        id = embrace_ec_ideals
+        icon = GFX_goal_unknown
+        x = 18
+        y = 7
+        cost = 10
+        prerequisite = { focus = a_proposition_to_brussels }
+    }
+    focus = {
+        id = adhere_to_the_commonwealth
+        icon = GFX_goal_unknown
+        x = 18
+        y = 8
+        cost = 10
+        prerequisite = { focus = embrace_ec_ideals }
+    }
+    focus = {
+        id = the_capabilities_of_our_armed_forces
+        icon = GFX_goal_unknown
+        x = 27
+        y = 4
+        cost = 10
+    }
+	focus = {
+        id = modernize_our_tank_fleet
+        icon = GFX_goal_unknown
+        x = 27
+        y = 5
+        cost = 10
+		prerequisite = {
+			focus = the_capabilities_of_our_armed_forces
+		}
+    }
+    focus = {
+        id = boots_on_the_ground
+        icon = GFX_goal_unknown
+        x = 24
+        y = 5
+        cost = 10
+        prerequisite = { focus = the_capabilities_of_our_armed_forces }
+    }
+    focus = {
+        id = a_new_rifle_for_the_army
+        icon = GFX_goal_unknown
+        x = 24
+        y = 6
+        cost = 10
+        prerequisite = { focus = boots_on_the_ground }
+    }
+    focus = {
+        id = army_branch_specialization
+        icon = GFX_goal_unknown
+        x = 24
+        y = 7
+        cost = 10
+        prerequisite = { focus = a_new_rifle_for_the_army }
+    }
+	focus = {
+        id = the_queen_of_the_battle
+        icon = GFX_goal_unknown
+        x = 30
+        y = 5
+        cost = 10
+        prerequisite = { focus = the_capabilities_of_our_armed_forces }
+    }
+    focus = {
+        id = increase_artillery_production
+        icon = GFX_goal_unknown
+        x = 30
+        y = 6
+        cost = 10
+        prerequisite = { focus = the_queen_of_the_battle }
+    }
+    focus = {
+        id = a_bigger_gun
+        icon = GFX_goal_unknown
+        x = 30
+        y = 7
+        cost = 10
+        prerequisite = { focus = increase_artillery_production }
+    }
+    focus = {
+        id = purchase_foreign_tanks
+        icon = GFX_goal_unknown
+        x = 26
+        y = 6
+        cost = 10
+        prerequisite = { focus = modernize_our_tank_fleet }
+    }
+	focus = {
+        id = build_our_own
+        icon = GFX_goal_unknown
+        x = 28
+        y = 6
+        cost = 10
+        prerequisite = { focus = modernize_our_tank_fleet }
+    }
+    focus = {
+        id = negotiate_with_the_foreign_powers
+        icon = GFX_goal_unknown
+        x = 26
+        y = 7
+        cost = 10
+        prerequisite = { focus = purchase_foreign_tanks }
+    }
+    focus = {
+        id = invest_in_the_design_bureaus
+        icon = GFX_goal_unknown
+        x = 28
+        y = 7
+        cost = 10
+        prerequisite = { focus = build_our_own }
+    }
+	focus = {
+		id = how_shall_we_fight
+		icon = GFX_goal_unknown
+		x = 27
+		y = 8
+		cost = 10
+		prerequisite = {
+			focus = invest_in_the_design_bureaus focus = negotiate_with_the_foreign_powers
+		}
+		prerequisite = {
+			focus = army_branch_specialization
+		}
+		prerequisite = {
+			focus = a_bigger_gun
+		}
+	}
+	focus = {
+        id = focus_on_speed
+        icon = GFX_goal_unknown
+        x = 24
+        y = 9
+        cost = 10
+        prerequisite = { focus = how_shall_we_fight }
+		mutually_exclusive = {
+			focus = focus_on_firepower
+			focus = focus_on_logistics
+			focus = quantity_over_quality
+		}
+    }
+	focus = {
+        id = focus_on_firepower
+        icon = GFX_goal_unknown
+        x = 26
+        y = 9
+        cost = 10
+        prerequisite = { focus = how_shall_we_fight }
+		mutually_exclusive = {
+			focus = focus_on_speed
+			focus = focus_on_logistics
+			focus = quantity_over_quality
+		}
+    }
+    focus = {
+        id = focus_on_logistics
+        icon = GFX_goal_unknown
+        x = 28
+        y = 9
+        cost = 10
+        prerequisite = { focus = how_shall_we_fight }
+		mutually_exclusive = {
+			focus = focus_on_speed
+			focus = focus_on_firepower
+			focus = quantity_over_quality
+		}
+    }
+    focus = {
+        id = quantity_over_quality
+        icon = GFX_goal_unknown
+        x = 30
+        y = 9
+        cost = 10
+        prerequisite = { focus = how_shall_we_fight }
+		mutually_exclusive = {
+			focus = focus_on_logistics
+			focus = focus_on_firepower
+			focus = focus_on_speed
+		}
+    }
+    focus = {
+        id = our_airforce
+        icon = GFX_goal_unknown
+        x = 37
+        y = 3
+        cost = 10
+    }
+    focus = {
+        id = catch_up_in_research
+        icon = GFX_goal_unknown
+        x = 39
+        y = 5
+        cost = 10
+        prerequisite = { focus = the_jet_age }
+    }
+    focus = {
+        id = fusion_technology
+        icon = GFX_goal_unknown
+        x = 39
+        y = 6
+        cost = 10
+        prerequisite = { focus = catch_up_in_research }
+    }
+    focus = {
+        id = purchase_foreign_aircraft
+        icon = GFX_goal_unknown
+        x = 35
+        y = 5
+        cost = 10
+        prerequisite = { focus = focus_on_attack_aircraft focus = focus_on_bombers focus = focus_on_fighters }
+        mutually_exclusive = {
+            focus = invest_in_domestic_designs
+        }
+    }
+    focus = {
+        id = invest_in_domestic_designs
+        icon = GFX_goal_unknown
+        x = 33
+        y = 5
+        cost = 10
+        prerequisite = { focus = focus_on_attack_aircraft focus = focus_on_bombers focus = focus_on_fighters }
+        mutually_exclusive = {
+            focus = purchase_foreign_aircraft
+        }
+    }
+    focus = {
+        id = the_jet_age
+        icon = GFX_goal_unknown
+        x = 39
+        y = 4
+        cost = 10
+        prerequisite = {
+            focus = our_airforce
+        }
+    }
+    focus = {
+        id = focus_on_fighters
+        icon = GFX_goal_unknown
+        x = 34
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_airforce }
+        mutually_exclusive = {
+            focus = focus_on_bombers
+            focus = focus_on_attack_aircraft
+        }
+    }
+    focus = {
+        id = focus_on_bombers
+        icon = GFX_goal_unknown
+        x = 32
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_airforce }
+        mutually_exclusive = {
+            focus = focus_on_fighters
+            focus = focus_on_attack_aircraft
+        }
+    }
+    focus = {
+        id = focus_on_attack_aircraft
+        icon = GFX_goal_unknown
+        x = 36
+        y = 4
+        cost = 10
+        prerequisite = { focus = our_airforce }
+        mutually_exclusive = {
+            focus = focus_on_fighters
+            focus = focus_on_bombers
+        }
+    }
+    focus = {
+        id = the_ultimate_plane
+        icon = GFX_goal_unknown
+        x = 34
+        y = 7
+        cost = 10
+        prerequisite = { focus = invest_in_domestic_designs focus = purchase_foreign_aircraft }
+    }
+    focus = {
+        id = the_ultimate_engine
+        icon = GFX_goal_unknown
+        x = 39
+        y = 7
+        cost = 10
+        prerequisite = { focus = fusion_technology }
+    }
 
+    focus = {
+        id = build_new_production_facilities
+        icon = GFX_goal_unknown
+        x = 37
+        y = 5
+        cost = 10
+        prerequisite = {
+            focus = our_airforce
+        }
+    }
+
+    focus = {
+        id = expand_the_industrial_complex
+        icon = GFX_goal_unknown
+        x = 37 
+        y = 6
+        cost = 10
+        prerequisite = {
+            focus = build_new_production_facilities
+        }
+    }
+
+    focus = {
+        id = the_airforce_of_the_future 
+        icon = GFX_goal_unknown
+        x= 36
+        y = 8
+        cost = 10
+        prerequisite = {
+            focus = the_ultimate_engine
+        }
+        prerequisite = {
+            focus = the_ultimate_plane
+        }
+    }
+
+    focus = {
+        id = the_state_of_the_economy
+        icon = GFX_goal_unknown
+        x = 16
+        y = 10
+        cost = 10
+    }
+
+    focus = {
+        id = invest_in_the_civilian_sector
+        icon = GFX_goal_unknown
+        x = 16
+        y = 11
+        cost = 10
+        prerequisite = {
+            focus = the_state_of_the_economy
+        }
+    }
+
+    focus = {
+        id = create_new_jobs_for_the_people
+        icon = GFX_goal_unknown
+        x = 16
+        y = 12
+        cost = 10
+        prerequisite = {
+            focus = invest_in_the_civilian_sector    
+        }
+    }
+
+    focus = {
+        id = attract_foreign_investors
+        icon = GFX_goal_unknown
+        x = 16
+        y = 13
+        cost = 10
+        prerequisite = {
+            focus = create_new_jobs_for_the_people
+        }
+    }
+
+    focus = {
+        id = a_truly_modern_economy
+        icon = GFX_goal_unknown
+        x = 16
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = attract_foreign_investors
+        }
+    }
+
+    focus = {
+        id = invest_in_the_defense_industry
+        icon = GFX_goal_unknown
+        x = 18
+        y = 12
+        cost = 10
+        prerequisite = {
+            focus = invest_in_the_civilian_sector
+        }
+    }
+
+    focus = {
+        id = expand_the_military_industrial_complex
+        icon = GFX_goal_unknown
+        x = 18
+        y = 13
+        cost = 10
+        prerequisite = {
+            focus = invest_in_the_defense_industry
+        }
+    }
+
+    focus = {
+        id = invest_in_automation
+        icon = GFX_goal_unknown
+        x = 18
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = expand_the_military_industrial_complex
+        }
+    }
+
+    focus = {
+        id = a_modern_industrial_complex_fit_for_a_modern_army
+        icon = GFX_goal_unknown
+        x = 18
+        y = 15
+        cost = 10
+        prerequisite = {
+            focus = invest_in_automation
+        }
+    }
+
+    focus = {
+        id = construct_new_roads
+        icon = GFX_goal_unknown
+        x = 14
+        y = 13
+        cost = 10
+        prerequisite = {
+            focus = create_new_jobs_for_the_people
+        }
+    }
+
+    focus = {
+        id = invest_in_nation_wide_infrastructure_projects
+        icon = GFX_goal_unknown
+        x = 14
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = construct_new_roads
+        }
+    }
+
+    focus = {
+        id = rule_the_seas
+        icon = GFX_goal_unknown
+        x = 25
+        y = 11
+        cost = 10
+        available = {
+			any_state = {
+				is_controlled_by = ROOT
+				is_coastal = yes
+		    }
+        }
+    }
+
+    focus = {
+        id = the_bread_and_butter_of_the_navy
+        icon = GFX_goal_unknown
+        x = 25
+        y = 12
+        cost = 10
+        prerequisite = {
+            focus = rule_the_seas
+        }
+    }
+
+    focus = {
+        id = universal_production_facilities
+        icon = GFX_goal_unknown
+        x = 25
+        y = 13
+        cost = 10
+        prerequisite = {
+            focus = the_bread_and_butter_of_the_navy
+        }
+    }
+
+    focus = {
+        id = modernize_the_destroyer_fleet
+        icon = GFX_goal_unknown
+        x = 25
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = universal_production_facilities
+        }
+    }
+
+    focus = {
+        id = modernize_cruiser_fleet
+        icon = GFX_goal_unknown
+        x = 25
+        y = 15
+        cost = 10
+        prerequisite = {
+            focus = modernize_the_destroyer_fleet
+        }
+    }
+
+    focus = {
+        id = new_weapons_systems
+        icon = GFX_goal_unknown
+        x = 25
+        y = 16
+        cost = 10
+        prerequisite = {
+            focus = modernize_cruiser_fleet
+        }
+    }
+
+    focus = {
+        id = the_silent_hunters
+        icon = GFX_goal_unknown
+        x = 23
+        y = 13
+        cost = 10
+        prerequisite = {
+            focus = rule_the_seas
+        }
+    }
+
+    focus = {
+        id = expand_submarine_production_facilities
+        icon = GFX_goal_unknown
+        x = 23
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = the_silent_hunters
+        }
+    }
+
+    focus = {
+        id = support_local_manufacturers
+        icon = GFX_goal_unknown
+        x = 23
+        y = 15
+        cost = 10
+        prerequisite = {
+            focus = expand_submarine_production_facilities
+        }
+    }
+
+    focus = {
+        id = the_perfect_submarine
+        icon = GFX_goal_unknown
+        x = 23
+        y = 16
+        cost = 10
+        prerequisite = {
+            focus = support_local_manufacturers
+        }
+    }
+
+    focus = {
+        id = the_queen_of_the_seas
+        icon = GFX_goal_unknown
+        x = 27
+        y = 14
+        cost = 10
+        prerequisite = {
+            focus = rule_the_seas
+        }
+    }
+
+    focus = {
+        id = escort_carriers
+        icon = GFX_goal_unknown
+        x = 27
+        y = 15
+        cost = 10
+        prerequisite = {
+            focus = the_queen_of_the_seas
+        }
+        mutually_exclusive = {
+            focus = super_carriers
+        }
+    }
+
+    focus = {
+        id = overwhelm_them_with_numbers
+        icon = GFX_goal_unknown
+        x = 27
+        y = 16
+        cost = 10
+        prerequisite = {
+            focus = escort_carriers
+        }
+    }
+
+    focus = {
+        id = super_carriers
+        icon = GFX_goal_unknown
+        x = 29
+        y = 15
+        cost = 10
+        prerequisite = {
+            focus = the_queen_of_the_seas
+        }
+        mutually_exclusive = {
+            focus = escort_carriers
+        }
+    }
+
+    focus = {
+        id = like_a_hornets_nest
+        icon = GFX_goal_unknown
+        x = 29
+        y = 16
+        cost = 10   
+        prerequisite = {
+            focus = super_carriers
+        }
+    }
+
+    focus = {
+        id = the_navy_of_the_future
+        icon = GFX_goal_unknown
+        x = 25
+        y = 17
+        cost = 10
+        prerequisite = {
+            focus = the_perfect_submarine
+        }
+        prerequisite = {
+            focus = new_weapons_systems
+        }
+        prerequisite = {
+            focus = overwhelm_them_with_numbers
+            focus = like_a_hornets_nest
+        }
+    }
 }

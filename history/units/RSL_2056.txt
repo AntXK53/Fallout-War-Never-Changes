@@ -1,0 +1,117 @@
+##### Division Templates #####
+division_template = {
+	name = "Červená Milícia"					# Infantry Division
+
+	division_names_group = RSL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Divízia červených tankov" 				# Mobile Group
+	division_names_group = RSL_CAV_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }   
+	}
+}
+
+
+units = {
+	##### RSLvenská Polná Armádna (CO: Catlos) #####
+	division = {
+		#name = "1. Červená Milícia 'Janosík'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13441
+		division_template = "Červená Milícia"
+		start_experience_factor = 0.2
+	}
+	division = {
+		#name = "2. Červená Milícia 'Skultéty'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13441
+		division_template = "Červená Milícia"
+		start_experience_factor = 0.2
+	}
+	division = {
+		#name = "2. Červená Milícia 'Skultéty'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 541
+		division_template = "Červená Milícia"
+		start_experience_factor = 0.2
+	}
+	division = {
+		#name = "2. Červená Milícia 'Skultéty'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3716
+		division_template = "Červená Milícia"
+		start_experience_factor = 0.2
+	}
+	### TANKS ###
+	division = {
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 541
+		division_template = "Divízia červených tankov" 
+		start_experience_factor = 0.2
+	}
+}
+
+### Starting Production ###	
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RSL"
+		}
+		requested_factories = 1
+		progress = 0.37
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "RSL"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "RSL" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+}

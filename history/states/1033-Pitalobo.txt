@@ -1,0 +1,22 @@
+state={
+	id=1033
+	name="STATE_1033"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = LAT
+		add_core_of = SOV
+	}
+
+	provinces={
+		13376 
+	}
+	manpower=10050
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

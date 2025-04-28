@@ -1,0 +1,833 @@
+focus_tree = {
+	id = ETH_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ETH
+		}
+	}
+	
+### SHARED ###
+shared_focus = shared_eco_start	
+shared_focus = shared_mil_start
+	
+#### POLITICAL ####
+
+### START ###
+	focus = {
+		id = ETH_reeling
+		icon = goal_generic_improve_relations
+		cost = 1
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 8
+		y = 0
+		
+		completion_reward = {
+
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_recovery
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_reeling
+		}
+		relative_position_id = ETH_reeling
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_stabilise
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_recovery
+		}
+		relative_position_id = ETH_recovery
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+### STABILISATION ###
+	focus = {
+		id = ETH_further_recovery
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ETH_stabilise
+		}
+		relative_position_id = ETH_stabilise
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_opinion
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ETH_further_recovery
+		}
+		relative_position_id = ETH_further_recovery
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_restaff
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_opinion
+		}
+		relative_position_id = ETH_opinion
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_soothe
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_restaff
+		}
+		relative_position_id = ETH_restaff
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+	focus = {
+		id = ETH_restart
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ETH_further_recovery
+		}
+		relative_position_id = ETH_further_recovery
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_workforce
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_restart
+		}
+		relative_position_id = ETH_restart
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_partial
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ETH_workforce
+		}
+		relative_position_id = ETH_workforce
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_almost
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ETH_partial
+		}
+		prerequisite = {
+			focus = ETH_soothe
+		}
+		relative_position_id = ETH_partial
+		completion_reward = {
+			add_political_power = 150
+
+		}
+	}
+	
+### EXPANSION SOUTH ###	
+	focus = {
+		id = ETH_southern
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = ETH_stabilise
+		}
+		relative_position_id = ETH_stabilise
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_royalists
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = ETH_southern
+		}
+		relative_position_id = ETH_southern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_soviet
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ETH_southern
+		}
+		relative_position_id = ETH_southern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_ogaden
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = ETH_southern
+		}
+		relative_position_id = ETH_southern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_peacekeepers
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ETH_soviet
+			focus = ETH_ogaden
+			focus = ETH_royalists
+					
+		}
+		relative_position_id = ETH_soviet
+		completion_reward = {
+
+			add_political_power = 150
+
+		}
+	}
+
+### EXPANSION NORTH ###
+	focus = {
+		id = ETH_northern
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -6
+		y = 2
+		prerequisite = {
+			focus = ETH_stabilise
+		}
+		relative_position_id = ETH_stabilise
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_people
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = ETH_northern
+		}
+		relative_position_id = ETH_northern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_republic
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 2
+		prerequisite = {
+			focus = ETH_northern
+		}
+		relative_position_id = ETH_northern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_afar
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ETH_northern
+		}
+		relative_position_id = ETH_northern
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_tigray
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = { 
+			focus = ETH_afar
+			focus = ETH_republic
+			focus = ETH_people
+		}
+		relative_position_id = ETH_afar
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+
+### FINAL ###
+
+focus = {
+		id = ETH_reborn
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ETH_tigray
+		}
+		prerequisite = {
+			focus = ETH_peacekeepers
+		}
+		prerequisite = {
+			focus = ETH_almost
+		}
+		relative_position_id = ETH_almost
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+
+#### UNIFY ####
+	focus = {
+		id = ETH_reunited
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 20
+		y = 12
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_not_over
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_reunited
+		prerequisite = {
+			focus = ETH_reunited
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_consolidate
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_not_over
+		prerequisite = {
+			focus = ETH_not_over
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_remnants
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_consolidate
+		prerequisite = {
+			focus = ETH_consolidate
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_continue_eco
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -7
+		y = 1
+		relative_position_id = ETH_remnants
+		prerequisite = {
+			focus = ETH_remnants
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_eco_finish
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 2
+		available = {
+			has_completed_focus = shared_eco_stable
+		}
+		relative_position_id = ETH_continue_eco
+		prerequisite = {
+			focus = ETH_continue_eco
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+	focus = {
+		id = ETH_new_industry
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = ETH_continue_eco
+		prerequisite = {
+			focus = ETH_continue_eco
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+	focus = {
+		id = ETH_rebuild_infra
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = ETH_continue_eco
+		prerequisite = {
+			focus = ETH_continue_eco
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_rebuild_civ
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_rebuild_infra
+		prerequisite = {
+			focus = ETH_rebuild_infra
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	focus = {
+		id = ETH_rebuild_almost
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_rebuild_civ
+		prerequisite = {
+			focus = ETH_rebuild_civ
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+	
+	focus = {
+		id = ETH_expansion
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = ETH_remnants
+		prerequisite = {
+			focus = ETH_remnants
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+	
+	focus = {
+		id = ETH_foreign
+		icon = goal_generic_improve_relations
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+
+		x = 7
+		y = 1
+		relative_position_id = ETH_remnants
+		prerequisite = {
+			focus = ETH_remnants
+		}
+		completion_reward = {
+			GBA = {
+				
+			}
+			add_political_power = 150
+
+		}
+	}
+
+
+continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+}
+
+
+
+
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = { focus =  }
+		relative_position_id = 

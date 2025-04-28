@@ -1,0 +1,26 @@
+state={
+	id=1128
+	name="STATE_1128"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+		victory_points = {
+			6742 1 
+		}
+
+	}
+
+	provinces={
+		1736 1854 4838 6742 7779 12676 
+	}
+	manpower=124000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

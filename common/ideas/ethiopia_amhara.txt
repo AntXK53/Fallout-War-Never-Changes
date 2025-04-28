@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+
+		QEM_nationalist_fervour = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+				conscription = 0.05
+			}
+		}
+	}
+	country = {
+
+		QEM_democratic_values = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				democratic_drift = 0.1
+				
+			}
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

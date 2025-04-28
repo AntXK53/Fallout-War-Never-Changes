@@ -1,0 +1,158 @@
+ideas = {
+	country = {
+	
+		incoming_crisis = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.60
+				conscription_factor = -0.5
+				join_faction_tension = 0.20
+			}
+		}
+		
+		usa_corrupt_democracy = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				democracy_drift = 0.4
+				fascism_drift = 0.2
+				neutrality_drift = 0.2
+				communism_drift = -0.4
+			}
+		}
+		
+		usa_inflation_1 = { #this will never be lost only lessened
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.35
+				industrial_capacity_factory = -0.15
+				local_resources_factor = -0.35
+			}
+		}
+		
+		usa_inflation_2 = { #this will never be lost only lessened
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		usa_inflation_3 = { #this will never be lost only lessened
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		industrial_union_strikes = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.5
+			}
+		}
+
+		effects_of_the_new_plague = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.02
+				monthly_population = -0.5
+			}
+		}
+
+		oil_shortages = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = -0.9 #just what the file says cant blame me
+			}
+		}
+
+		robot_factory_workers = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				military_industrial_organization_task_capacity = 5
+			}
+		}
+
+		fusion_technology_funding = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.02
+				consumer_goods_factor = 0.15
+			}
+		}
+	}
+}

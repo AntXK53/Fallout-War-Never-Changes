@@ -1,0 +1,23 @@
+state={
+	id=1185
+	name="STATE_1185"
+
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+		owner = TAR
+		add_core_of = AST
+		add_core_of = TAR
+
+	}
+
+	provinces={
+		5211 
+	}
+	manpower=12434
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

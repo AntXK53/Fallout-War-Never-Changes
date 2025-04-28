@@ -1,20 +1,13 @@
-state = {
-	id = 86
-	name = "STATE_86"
-	manpower = 2106500
-	
-	
-	state_category = city
-	history = {
 
+state={
+	id=86
+	name="STATE_86"
+
+	history={
 		owner = POL
-		add_core_of = POL
-		add_claim_by = PRE
-
 		victory_points = {
-			6558 10 # Poznan
+			6558 10 
 		}
-
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -31,16 +24,21 @@ state = {
 
 			}
 			air_base = 3
+
 		}
-		
-		1938.3.12 = {
+		add_core_of = POL
+		2900.3.12 = {
 			add_claim_by = GER
+
 		}
+
 	}
 
-	provinces = {
-		17 388 3381 3460 3532 6558 9532 11232 11558
+	provinces={
+		17 243 279 388 3381 3460 3532 6558 9532 11232 11558 
 	}
-
-	local_supplies = 0.0 
+	manpower=2106500
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

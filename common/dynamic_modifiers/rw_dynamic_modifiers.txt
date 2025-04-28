@@ -1,0 +1,25 @@
+### BULGARIA ###
+BUL_five_year_plan_idea_dm = {
+	enable = { always = yes }
+
+	icon = GFX_idea_BUL_five_year_plan_idea_dm
+	
+	production_factory_efficiency_gain_factor = var:BUL_pfegf_BUL_five_year_plan_idea_dm_vv	
+	production_factory_max_efficiency_factor = var:BUL_pfmef_BUL_five_year_plan_idea_dm_vv	
+	production_factory_start_efficiency_factor = var:BUL_pfsef_BUL_five_year_plan_idea_dm_vv	
+	production_speed_buildings_factor = var:BUL_psbf_BUL_five_year_plan_idea_dm
+	consumer_goods_factor = var:BUL_cgf_BUL_five_year_plan_idea_dm
+	industrial_capacity_factory = var:BUL_ic_BUL_five_year_plan_idea_dm_vv
+}
+BUL_nuclear_power_plant_dm = {
+	enable = {
+		always = yes
+	}
+
+	icon = GFX_modifiers_BUL_nuclear_power_plant_dm
+
+	local_building_slots = 1
+	local_resources = 0.05
+	state_production_speed_industrial_complex_factor = 0.1
+	state_production_speed_infrastructure_factor = 0.1
+}

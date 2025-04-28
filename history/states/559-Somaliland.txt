@@ -1,33 +1,34 @@
-state=
-{
-	id = 559
-	name = "STATE_559"
-	manpower = 771671# was 1028895
-	resources = {
-		steel = 1
+
+state={
+	id=559
+	name="STATE_559"
+	resources={
+		steel=1.000
 	}
-	
-	state_category = rural
-	
+
 	history={
-		owner = EAF
-		add_core_of = EAF
+		owner = SOM
 		add_core_of = SOM
 		victory_points = {
-			12991 3 
+			10928 3 
 		}
 		buildings = {
 			infrastructure = 2
 			air_base = 1
-			
-			12991 = {
+			10928 = {
 				naval_base = 2
+
 			}
+
 		}
-	}
-	provinces = {
-		1964 1966 2020 2063 4909 5065 8164 10818 10891 10928  12840  12991 	
+
 	}
 
-	local_supplies=0.0 
+	provinces={
+		13513 13514 10928 8164 13524 13520
+	}
+	manpower=6232568
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

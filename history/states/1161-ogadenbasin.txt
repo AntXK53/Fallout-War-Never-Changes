@@ -1,0 +1,29 @@
+state={
+	id=1161
+	name="STATE_1161"
+	provinces={
+		4995 10869 12733 12757 12812 12816 13253 13545 13532 13533 13534 13535 13536 13537 13538 13539 13540 13544 
+	}
+	resources = {
+		oil = 6
+	}
+	history={
+		owner = ORO
+		add_core_of = ORO
+		add_core_of = SOM
+		add_claim_by = ETH
+		victory_points = {
+			12812 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	manpower=2763500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

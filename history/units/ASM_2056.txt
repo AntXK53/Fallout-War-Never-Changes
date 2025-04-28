@@ -1,0 +1,48 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "The Legion of the Pure"					# Infantry Division
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	######## LAND OOB ########
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7798
+		division_template = "The Legion of the Pure"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ASM" } }
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7798
+		division_template = "The Legion of the Pure"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ASM" } }
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7798
+		division_template = "The Legion of the Pure"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ASM" } }
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.8
+	}
+}

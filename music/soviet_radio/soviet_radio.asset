@@ -1,0 +1,8 @@
+music = {
+	name = "gruppa_krovi"
+	file = "gruppa_krovi.ogg"
+}
+music = {
+	name = "my_love_on_the_fifth_floor"
+	file = "my_love_on_the_fifth_floor.ogg"
+}

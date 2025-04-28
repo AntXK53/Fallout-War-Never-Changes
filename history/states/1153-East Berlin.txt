@@ -1,0 +1,27 @@
+state={
+	id=1153
+	name="STATE_1153"
+
+	history={
+		owner = DDR
+		victory_points = {
+			13437 30
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = GER
+		add_core_of = DDR
+
+	}
+
+
+	provinces={
+		13437 
+	}
+	manpower=420000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

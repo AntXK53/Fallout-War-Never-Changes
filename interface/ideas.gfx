@@ -1,0 +1,159 @@
+spriteTypes = {	
+
+
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 18
+	}
+
+	### BULGARIA ###
+
+	spriteType = {
+		name = "GFX_idea_BUL_BKP_idea"
+		texturefile = "gfx/interface/ideas/BUL_BKP_idea.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_BUL_agricultural_crisis_1_idea"
+		texturefile = "gfx/interface/ideas/BUL_agricultural_crisis_idea.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_BUL_agricultural_crisis_2_idea"
+		texturefile = "gfx/interface/ideas/BUL_agricultural_crisis_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BUL_soviet_equipment_bonds_idea"
+		texturefile = "gfx/interface/ideas/BUL_soviet_equipment_bonds_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BUL_land_reform_idea"
+		texturefile = "gfx/interface/ideas/BUL_land_reform_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BUL_five_year_plan_idea_dm"
+		texturefile = "gfx/interface/ideas/BUL_five_year_plan_idea_dm.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BUL_mass_purges_idea"
+		texturefile = "gfx/interface/ideas/BUL_mass_purges_idea.dds"	
+	}
+
+	### ROMANIA ###
+	spriteType = {
+		name = "GFX_idea_ROM_petrikovshchina_idea"
+		texturefile = "gfx/interface/ideas/ROM_petrikovshchina_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_iron_guard_idea"
+		texturefile = "gfx/interface/ideas/ROM_iron_guard_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_generatia_egalitatii"
+		texturefile = "gfx/interface/ideas/ROM_generatia_egalitatii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ROM_emergency_situation"
+		texturefile = "gfx/interface/ideas/ROM_emergency_situation.dds"
+	}
+	### ESTONIA ###
+	spriteType = {
+		name = "GFX_idea_EST_defend_our_independence_idea"
+		texturefile = "gfx/interface/ideas/EST_defend_our_independence_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EST_proud_small_nation"
+		texturefile = "gfx/interface/ideas/EST_proud_small_nation.dds"
+	}
+	### CROATIA ###
+	spriteType = {
+		name = "GFX_idea_CRO_divided_government_idea"
+		texturefile = "gfx/interface/ideas/CRO_divided_government.dds"
+	}
+	###CANADA###
+	spriteType = {
+		name = "GFX_idea_CAN_albertan_oil"
+		texturefile = "gfx/interface/ideas/CAN_albertan_oil.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_avro_arrow"
+		texturefile = "gfx/interface/ideas/CAN_avro_arrow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_canadian_split"
+		texturefile = "gfx/interface/ideas/CAN_canadian_split.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_rip_minister"
+		texturefile = "gfx/interface/ideas/CAN_rip_minister.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_trudeau_identity"
+		texturefile = "gfx/interface/ideas/CAN_trudeau_identity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_wooden_toys"
+		texturefile = "gfx/interface/ideas/CAN_wooden_toys.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_steal_guns"
+		texturefile = "gfx/interface/ideas/CAN_steal_guns.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_CAN_recycling_bin"
+		texturefile = "gfx/interface/ideas/CAN_recycling_bin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_AST_climate_disaster"
+		texturefile = "gfx/interface/ideas/AST_climate_disaster.dds"
+	}
+	
+	## PRC ##
+	SpriteType = { 
+		name = "GFX_idea_China1_resource_crisis-771849"
+		texturefile = "gfx/interface/ideas/China1_resource_crisis-771849.dds"
+	}
+
+	## ASU ##
+	SpriteType = { 
+		name = "GFX_idea_CorporateOligarchyRule"
+		texturefile = "gfx/interface/ideas/Idea_CorporateOligarchyRule.dds"
+	}	
+
+	SpriteType = { 
+		name = "GFX_idea_ASU_Shadow_Ruled_Governor_Idea"
+		texturefile = "gfx/interface/ideas/ASU_Shadow_Ruled_Governor_Idea.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_idea_ASU_AncapAlliance_Idea"
+		texturefile = "gfx/interface/ideas/ASU_AncapAlliance_Idea.dds"
+	}	
+	SpriteType = { 
+		name = "GFX_idea_ASU_HighPollution_Idea"
+		texturefile = "gfx/interface/ideas/ASU_HighPollution_Idea.dds"
+	}
+
+	### MOLDOVA ###
+	spriteType = {
+		name = "GFX_idea_MOL_legacy_of_lenins_revolution"
+		texturefile = "gfx/interface/ideas/MOL_legacy_of_lenins_revolution.dds"
+	}
+
+	### LATVIA ###
+	spriteType = {
+		name = "GFX_idea_LAT_latvian_ss_ultranationalists_idea"
+		texturefile = "gfx/interface/ideas/LAT_latvian_ss_ultranationalists_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_us_military_equipment_idea"
+		texturefile = "gfx/interface/ideas/LAT_us_military_equipment_idea.dds"
+	}
+}

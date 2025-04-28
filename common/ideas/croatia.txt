@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		CRO_divided_government_idea = {
+			available = {
+				original_tag = CRO
+			}
+		
+			allowed = {
+				original_tag = CRO
+			}
+		
+			modifier = {
+				political_power_factor = -0.1
+				political_power_gain = -0.08
+				stability_factor = -0.15
+				war_support_factor = -0.1
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+unionism_decisions = {
+	ASU_Plead_With_Workers = {
+		icon = generic_political_discourse
+		available = {
+				has_completed_focus = ASU_Start_Negotiations
+		}
+		visible = {
+			has_completed_focus = ASU_Start_Negotiations
+		}
+		cost = 0
+		modifier = {
+			political_power_gain = -0.3
+			stability_weekly_factor = 0.001 
+		}
+		days_remove = 30
+		remove_effect = {
+			
+		}
+	}
+	ASU_Government_Parli_Debug = {
+		icon = generic_political_discourse
+		available = {
+				tag = AST
+		}
+		visible = {
+			tag = AST
+		}
+		cost = 0
+		complete_effect = {
+				set_temp_variable = { temp_member = 5 } # Party Number
+				set_temp_variable = { temp_seats = 3 } # Seats gained 
+				modify_parliament_seat = yes              
+		}
+		days_remove = 1 
+		remove_effect = {
+			
+		}
+	}
+	ASU_Government_Winner_Debug = {
+		icon = generic_political_discourse
+		available = {
+				check_temp_variable = { temp_seats > 100 }
+		}
+		visible = {
+			tag = AST
+		}
+		cost = 0
+		complete_effect = {
+				set_temp_variable = { temp_member = 5 } # Party Number
+				set_temp_variable = { temp_seats = 3 } # Seats gained 
+				modify_parliament_seat = yes              
+		}
+		days_remove = 1 
+		remove_effect = {
+			
+		}
+	}
+}
+federalist_collapse = {
+	ASU_Countdown_To_Collapse_mission = {
+    	selectable_mission = no
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 30
+	
+		activation = {
+    		tag = AST
+        	country_exists = ASM
+			NOT = {
+				AST = {
+				has_war = yes
+				}
+			}
+    }
+		available = {
+			always = no
+		}
+
+		timeout_effect = {
+			declare_war_on = {
+				target = ASM
+				type = annex_everything
+			}
+		}
+	}
+	ASU_Countdown_Queensland_Involvement_mission = {
+    	selectable_mission = no
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		days_mission_timeout = 50
+	
+		activation = {
+    		tag = AST
+        	country_exists = ASM
+			country_exists = QEN
+    }
+		available = {
+			always = no
+		}
+
+		timeout_effect = {
+		QEN = { 	
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+		}
+	 }
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=1044
+	name="STATE_1044"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KOR
+
+	}
+
+	provinces={
+		4004 9981 11958 
+	}
+	manpower=510000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

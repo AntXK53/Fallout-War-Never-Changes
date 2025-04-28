@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+	# Base Start Game Resource Crisis 
+		China1_resource_crisis_Base = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+				consumer_goods_factor = 0.5
+			local_resources_factor = -0.30
+			fuel_gain_factor = -0.50
+			production_speed_buildings_factor = -0.5 
+			stability_weekly = -0.01
+			stability_factor = -0.2
+			}
+		}
+	# Band Aid by the Military(Conscription of unemployed reduces commodities bought in civilian sector)
+	# Only addresses Consumer goods slightly, Local Resources Slightly, Fuel Slightly
+		China1_resource_crisis_MIL = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+			consumer_goods_factor = 0.4
+			local_resources_factor = -0.20
+			fuel_gain_factor = -0.40
+			production_speed_buildings_factor = -0.5 
+			stability_weekly = -0.01
+			stability_factor = -0.2
+			}
+		}
+		# Band Aid by capitalist that reduces Consumer goods slighty, Local Resources a decent amount and fuel slightly but at the cost of Weekly Stability
+		China1_resource_crisis_Reform1 = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+			consumer_goods_factor = 0.35
+			local_resources_factor = -0.10
+			fuel_gain_factor = -0.35
+			production_speed_buildings_factor = -0.5 
+			stability_weekly = -0.02
+			stability_factor = -0.2
+			}
+		}
+		# Second Reform that brings back stability and further reduces 
+		China1_resource_crisis_Reform2 = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+			consumer_goods_factor = 0.30
+			local_resources_factor = -0.10
+			fuel_gain_factor = -0.35
+			production_speed_buildings_factor = -0.35
+			stability_weekly = -0.01
+			stability_factor = -0.15
+			}
+		}
+		# Idea for Horses if u Invested in Winner 
+		China1_resource_crisis_Reform3 = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+			consumer_goods_factor = 0.20
+			local_resources_factor = -0.10
+			fuel_gain_factor = -0.35
+			production_speed_buildings_factor = -0.35
+			stability_weekly = -0.01
+			stability_factor = -0.15
+			}
+		}
+			China1_bandaidconscript1 = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+				recruitable_population_factor = 0.0250
+			}
+		}
+			China1_bandaidconscript2 = {
+			picture = China1_resource_crisis-771849
+			ledger = army
+			modifier = {
+				recruitable_population_factor = 0.0500
+			}
+		}
+
+		# End Of Ideas 
+	}
+}

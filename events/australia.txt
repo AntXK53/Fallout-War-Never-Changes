@@ -1,0 +1,62 @@
+add_namespace = australia_news
+
+# australian bushfire event trigger
+news_event = {
+	id = australia_news.1
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 2056.1.26
+		date < 2056.3.26
+	}
+	
+	immediate = {
+		random_list = {
+			50 = { AST = { news_event = { id = australia_news.2 } } }
+		}
+	}
+	
+	option = {
+		name = australia_news.1.a
+	}
+}
+
+# 7 Years of Bushfires End
+news_event = {
+	id = australia_news.2
+	title = australia_news.2.t
+	desc = australia_news.2.desc
+	picture = GFX_news_event_australian_bushfire1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = AUSTRALIA_BEGINNING
+	}
+	
+	option = {
+		name = australia_news.2.a
+	}
+}
+news_event = {
+	id = australia_news.3
+	title = australia_news.3.t
+	desc = australia_news.3.desc
+	picture = GFX_news_event_australian_bushfire1
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = AUSTRALIA_BEGINNING
+	}
+	
+	option = {
+		name = australia_news.3.a
+	}
+}

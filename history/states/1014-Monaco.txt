@@ -1,0 +1,26 @@
+state={
+	id=1014
+	name="STATE_1014"
+
+	history={
+		owner = EUC
+		add_core_of = EUC
+		add_core_of = MCO
+		victory_points = {
+			13440 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		13440 
+	}
+	manpower=9000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

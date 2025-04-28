@@ -1,3 +1,5 @@
-EAF = "countries/EAF.txt"
-MAG = "countries/Maghreb.txt"
-NKR = "countries/North Korea.txt"
+KOS	= "countries/Kosovo.txt"
+ASB	= "countries/al-Shabaab.txt"
+SYB	= "countries/Syndisomalia.txt"
+SYP	= "countries/Puntland.txt"
+SMR	= "countries/Somaliland.txt"

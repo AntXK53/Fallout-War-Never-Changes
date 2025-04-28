@@ -1,0 +1,33 @@
+state={
+	id=973
+	name="STATE_973"
+
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			6488 20.0 
+		}
+		add_core_of = EUC
+		add_core_of = GER
+
+		set_demilitarized_zone = yes
+		1936.3.7 = {
+			set_demilitarized_zone = no
+
+		}
+
+	}
+
+	provinces={
+		589 3574 6444 6488 9486 
+	}
+	manpower=2200235
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

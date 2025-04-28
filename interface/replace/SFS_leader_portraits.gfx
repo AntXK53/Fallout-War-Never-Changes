@@ -1,0 +1,184 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+	
+	spriteType = {
+		name = GFX_portrait_INS_sutan_sjahrir
+		texturefile = "gfx/leaders/INS/Portrait_Sutan_Sjahrir.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_INS_suharto
+		texturefile = "gfx/leaders/INS/portrait_INS_suharto.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_INS_amir_sjarifuddin_harahap
+		texturefile = "gfx/leaders/INS/portrait_INS_amir_sjarifuddin_harahap.dds"
+	}
+	
+	spriteType = {
+		name = GFX_AUS_odilo_globocnik
+		texturefile = "gfx/leaders/AUS/portrait_AUS_odilo_globocnik.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_INS_sukarno
+		texturefile = "gfx/leaders/INS/portrait_INS_sukarno.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Plaek_Phibunsongkhram
+		texturefile = "gfx/leaders/SIA/Pportrait_Thai_Plaek_Phibunsongkhram.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Ho_Chi_Minh
+		texturefile = gfx/leaders/VIN/portrait_Vietnam_Ho_chi_minh.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Stepan_Bandera
+		texturefile = gfx/leaders/UKR/portrait_stephan_bandera.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Kost_Levytsky
+		texturefile = gfx/leaders/UKR/portrait_kost_levystsky.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_SOV_aleksandr_kerensky
+		texturefile = "gfx/leaders/SOV/Portrait_Alexander_Kerensky.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Vasil_Zacharka
+		texturefile = gfx/leaders/BLR/portrait_vasil_zacharka.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Radasłau_Astrouski
+		texturefile = gfx/leaders/BLR/portrait_radalsau_astrouski.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Adam_Stankievic
+		texturefile = gfx/leaders/BLR/portrait_adam_stankievic.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Milan_Nedic
+		texturefile = gfx/leaders/SER/portrait_millan_nedic.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Itzhak_Gaster
+		texturefile = gfx/leaders/ISR/portrait_Israel_itzhak_gaster.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Eoin_ODuffy
+		texturefile = "gfx/leaders/IRE/portrait_eoin_oduffy.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Amin_al_Husseini
+		texturefile = gfx/leaders/PAL/portrait_Amin_al_husseini.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Ahmed_Husayn
+		texturefile = gfx/leaders/EGY/portrait_EGY_ahmed_hussein.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Qazi_Muhammad
+		texturefile = gfx/leaders/PAK/portrait_PAK_qazi_Muhammad_Essa.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_AUS_karl_renner
+		texturefile = "gfx/leaders/AUS/portrait_AUS_Karl_Renner.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_AUS_alfred_klahr
+		texturefile = "gfx/leaders/AUS/portrait_AUS_alfred_klahr.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_BEL_leon_degrelle
+		texturefile = "gfx/leaders/BEL/portrait_BEL_leon_degrelle.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_James_Larkin
+		texturefile = "gfx/leaders/IRE/portrait_IRE_James_Larkin.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Phan_Boi_Chau
+		texturefile = gfx/leaders/VIN/portrait_phan_boi_chau.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Ngo_Đinh_Diem
+		texturefile = gfx/leaders/VIN/portrait_ngo_dinh_diem.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Syngman_Rhee
+		texturefile = gfx/leaders/KOR/Portrait_KOR_syngman_rhee.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Yi_Kang
+		texturefile = gfx/leaders/KOR/Portrait_KOR_Yi_Kang.dds
+	}
+
+	spriteType = {
+		name = GFX_portrait_Kim_Il_sung
+		texturefile = gfx/leaders/KOR/portrait_KOR_kim_il_sung.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Amin_al_Husseini
+		texturefile = gfx/leaders/PAL/portrait_Amin_al_husseini.dds
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Marcelo_T_de_Alvear
+		texturefile = "gfx/leaders/ARG/Portrait_Marcelo_Alvear.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Nimo_de_Anquin
+		texturefile = "gfx/leaders/ARG/Portrait_Nimo_de_Anquin.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_AUS_karl_eglseer
+		texturefile = "gfx/leaders/AUS/Portrait_Karl_Eglseer.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Arthur_Seyss_Inquart
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Arthur_Seyss_Inquart.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Hinrich_Lohse
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hinrich_Lohse.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Josef_Grohe
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Josef_Grohe.dds"
+	}
+	
+	spriteType = {
+		name = GFX_portrait_Josef_Terboven
+		texturefile = gfx/leaders/GER/Portrait_Germany_Josef_Terboven.dds
+	}
+}

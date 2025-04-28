@@ -2,18 +2,17 @@
 state={
 	id=411
 	name="STATE_411" # Isfahan
-	manpower = 663954
+	manpower = 885272
 	resources={
 		oil=12 # was: 14
 	}
-	state_category = town
+	state_category = rural
 	
 
 	history={
-		owner = SAU
-		add_core_of = SAU
+		owner = PER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		victory_points = {
 			2026 1 
@@ -21,11 +20,14 @@ state={
 		victory_points = {
 			4928 1 
 		}
+		victory_points = {
+			8031 1 
+		}
 		add_core_of = PER
 	}
 
 	provinces={
-		2026 4928 4983 5067 8074 12756 
+		1963 2026 4928 4983 5067 8031 8074 10828 12756 
 	}
 
 	local_supplies=0.0 

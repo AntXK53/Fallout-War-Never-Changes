@@ -1,0 +1,59 @@
+characters={
+	DJI_Gerald_Green={
+		name="Gerald Green"
+		portraits={
+			civilian={
+				large="GFX_DJI_Gerald_Green"
+			}
+		}
+		country_leader={
+			ideology=Military_Dictatorship
+			expire="2090.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+		}
+	DJI_tyler_burton={
+		name="Tyler Burton"
+		portraits={
+			civilian={
+				large="GFX_DJI_tyler_burton"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	DJI_james_donald={
+		name="James Donald"
+		portraits={
+			civilian={
+				large="GFX_DJI_james_donald"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+}

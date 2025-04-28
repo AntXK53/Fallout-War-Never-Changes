@@ -10,8 +10,8 @@ state= {
 
 	history=
 	{
-		owner = SAU
-		add_core_of = SAU
+		owner = UAR
+		add_core_of = UAR
 		add_core_of = CYP
 		victory_points = {
 			11984 5

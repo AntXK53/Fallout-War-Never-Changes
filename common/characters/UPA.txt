@@ -1,0 +1,16 @@
+characters = {
+	UPA_oleksandr_hryhorovych = {
+		name="Oleksandr Hryhorovych"
+		portraits={
+			civilian={
+				large="gfx/leaders/UPA/UPA_oleksandr_hryhorovych.png"
+			}
+		}
+		country_leader={
+			ideology = Neo_Nazism
+			traits={ }
+			expire="2121.1.1.1"
+			id=-1
+		}
+	}
+}

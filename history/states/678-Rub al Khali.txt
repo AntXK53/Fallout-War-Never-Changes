@@ -1,9 +1,10 @@
+
 state={
 	id=678
 	name="STATE_678"
 
 	history={
-		owner = SAU
+		owner = RAD
 		buildings = {
 			infrastructure = 0
 
@@ -13,7 +14,7 @@ state={
 	}
 
 	provinces={
-		4932 5081 8118 12740 
+		5081 8118 12740 12768 
 	}
 	manpower=42
 	buildings_max_level_factor=1.000

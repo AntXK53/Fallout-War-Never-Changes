@@ -1,0 +1,16 @@
+characters = {
+	UKR_andriy_paskevich = {
+		name="Andriy Paskevich"
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/UKR_andriy_paskevich.png"
+			}
+		}
+		country_leader={
+			ideology = Neo_Liberalism
+			traits={ }
+			expire="2121.1.1.1"
+			id=-1
+		}
+	}
+}

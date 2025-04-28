@@ -1,0 +1,30 @@
+state={
+	id=1154
+	name="STATE_1154"
+
+	history={
+		victory_points = {
+			9821 1 
+		}
+		owner = YUG
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+			9821 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = YUG
+
+	}
+
+	provinces={
+		9821 
+	}
+	manpower=123000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

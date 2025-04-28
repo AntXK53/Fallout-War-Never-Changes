@@ -1,0 +1,31 @@
+state={
+	id=987
+	name="STATE_987"
+
+	history={
+		owner = EUC
+		victory_points = {
+			9418 1
+		}
+		victory_points = {
+			11407 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = EUC
+		add_core_of = BEL
+		add_core_of = WLL
+
+	}
+
+	provinces={
+		9418 11407 
+	}
+	manpower=1000300
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

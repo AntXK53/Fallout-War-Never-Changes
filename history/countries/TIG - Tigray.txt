@@ -1,0 +1,26 @@
+﻿capital = 842
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 10
+
+recruit_character = TIG_Silas_Gebregziabher
+
+set_politics = {
+	ruling_party = communism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	communism = 65
+	neutrality = 10
+}
+add_ideas = {
+	TIG_the_real_ones
+	TIG_the_deal
+}

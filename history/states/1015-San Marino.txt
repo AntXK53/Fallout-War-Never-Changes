@@ -1,0 +1,25 @@
+state={
+	id=1015
+	name="STATE_1015"
+
+	history={
+		owner = EUC
+		victory_points = {
+			13390 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = EUC
+		add_core_of = SMR
+
+	}
+
+	provinces={
+		13390 
+	}
+	manpower=9500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

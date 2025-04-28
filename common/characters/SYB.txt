@@ -1,0 +1,55 @@
+characters = {
+
+	SYB_Asad_Omar = { 
+		name = "Asad Omar"
+		portraits = {
+			civilian = {
+				large = "GFX_SYB_Asad_Omar"
+				small = "GFX_SYB_Asad_Omar"
+			}
+			
+		}
+		country_leader = {
+			ideology = Rev_Syndicalism
+			traits = {  }
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+			}
+		}
+	SYB_Digaale = {
+		name = "Digaale"
+		portraits = {
+			civilian = {
+				large = "GFX_SYB_Digaale"
+				small = "GFX_SYB_Digaale"
+			}
+			army = {
+				large = "GFX_SYB_Digaale"
+				small = "GFX_SYB_Digaale"
+			}
+		}
+
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+	
+}

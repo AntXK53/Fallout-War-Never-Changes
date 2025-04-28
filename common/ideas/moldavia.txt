@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		MOL_legacy_of_lenins_revolution = {
+			removal_cost = -1
+			available = {
+				has_government = communism
+			}
+		
+			allowed = {
+				original_tag = MOL
+			}
+
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = -0.08
+				breakthrough_factor = 0.4
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_start_efficiency_factor = 0.4
+				local_building_slots = 2
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+		}
+	}
+}

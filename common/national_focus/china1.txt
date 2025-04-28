@@ -1,0 +1,289 @@
+focus_tree = {
+	id = china1
+	continuous_focus_position = { x = -40 y = 2090 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRC
+		}
+	}
+	#Allow Businesses to Fail
+
+	focus = {
+		id = PRC_allowbusinessestofail
+		icon = GFX_goal_unknown
+		x = 8
+		y = 5
+		cost = 3
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		completion_reward = {
+			
+			
+						swap_ideas = {
+			    				remove_idea = China1_resource_crisis_Base
+			    				add_idea = China1_resource_crisis_Reform1
+								}
+				random_owned_state = {
+					prioritize = { 608 613 }
+				add_extra_state_shared_building_slots = 1
+				remove_building = {
+			    type = industrial_complex
+			    level = 1
+			}
+				}
+				random_owned_state = {
+					prioritize = { 608 613 }
+				add_extra_state_shared_building_slots = 1
+				remove_building = {
+			    type = industrial_complex
+			    level = 1
+			}
+				} 
+			
+		}
+		prerequisite = { focus = PRC_bandaidsforthecrisis  }
+		mutually_exclusive = { focus = PRC_conscripttheunemployed  focus = PRC_seeksovietbailouts  }
+	}
+
+	#Seek Soviet Bailouts
+
+	focus = {
+		id = PRC_seeksovietbailouts
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		prerequisite = { focus = PRC_bandaidsforthecrisis  }
+		mutually_exclusive = { focus = PRC_conscripttheunemployed  focus = PRC_allowbusinessestofail  }
+	}
+
+	#The Homeless will serve
+	focus = {
+		id = PRC_the_homeless_will_serve
+		icon = GFX_goal_unknown
+		x = 5
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = China1_bandaidconscript1
+				add_idea = China1_bandaidconscript2
+			}
+		}
+		prerequisite = { focus = PRC_soldiersinfactories  }
+	}
+
+	#Band-Aids for the Crisis
+
+	focus = {
+		id = PRC_bandaidsforthecrisis
+		icon = GFX_goal_unknown
+		x = 8
+		y = 4
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+	}
+
+	#Conscript the Unemployed
+
+	focus = {
+		id = PRC_conscripttheunemployed
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 1
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		completion_reward = { 
+			add_ideas = { China1_bandaidconscript1 }
+		}
+		prerequisite = { focus = PRC_bandaidsforthecrisis  }
+		mutually_exclusive = { focus = PRC_allowbusinessestofail  focus = PRC_seeksovietbailouts  }
+	}
+
+	#Allow Soviet Businesses
+
+	focus = {
+		id = PRC_allowsovietbusinesses
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 3
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		prerequisite = { focus = PRC_seeksovietbailouts  }
+	}
+
+	#The Chairman Is Dead
+	focus = {
+		id = PRC_the_chairman_is_dead
+		icon = GFX_goal_unknown
+		x = 8
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Invest in the winners
+
+	focus = {
+		id = PRC_investinthewinners
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		completion_reward = {
+			
+						swap_ideas = {
+			    				remove_idea = China1_resource_crisis_Reform1
+			    				add_idea = China1_resource_crisis_Reform2
+								}
+						
+		}
+		prerequisite = { focus = PRC_allowbusinessestofail  }
+	}
+
+	#The Second Great Leap Forward
+	focus = {
+		id = PRC_the_second_great_leap_forward
+		icon = GFX_goal_unknown
+		x = 4
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = PRC_the_chairman_is_dead  }
+		completion_reward = {
+			
+									       	random_owned_state = {
+												add_extra_state_shared_building_slots = 2
+												add_building_construction = {
+									            type = arms_factory
+												level = 2
+									        		}
+									        	}	
+									        random_owned_state = {
+												add_extra_state_shared_building_slots = 2
+												add_building_construction = {
+									            type = arms_factory
+												level = 2
+									        		}	
+									        	}
+					
+		}
+	}
+
+	#Soldiers in factories
+
+	focus = {
+		id = PRC_soldiersinfactories
+		icon = GFX_goal_unknown
+		x = 6
+		y = 6
+		cost = 3
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		prerequisite = { focus = PRC_conscripttheunemployed  }
+		completion_reward = {
+			
+						swap_ideas = {
+			    				remove_idea = China1_resource_crisis_Base
+			    				add_idea = China1_resource_crisis_MIL
+						}
+			
+		}
+	}
+
+	#Control Last of Vietnam's Resources
+
+	focus = {
+		id = PRC_controllastofvietnamsresources
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 3
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+		prerequisite = { focus = PRC_soldiersinfactories  } prerequisite = { focus = PRC_investinthewinners  }
+		completion_reward = {
+			
+							give_resource_rights = { 
+									receiver = PRC
+									state = 671 }
+			
+		}
+	}
+
+	#Invest in Horses
+	focus = {
+		id = PRC_invest_in_horses
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = PRC_investinthewinners  focus = PRC_allowsovietbusinesses }
+		completion_reward = {
+			if = {
+				limit = { has_completed_focus = PRC_investinthewinners}
+
+				swap_ideas = {
+				remove_idea = { China1_resource_crisis_Reform2 }
+				add_idea = { China1_resource_crisis_Reform3 }
+				}
+			}
+			if = {
+				limit = 
+			}
+		}
+	}
+
+	#Import from Soviet Market
+	focus = {
+		id = PRC_import_from_soviet_market
+		icon = GFX_goal_unknown
+		x = 11
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_allowsovietbusinesses  }
+	}
+
+}

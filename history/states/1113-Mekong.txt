@@ -1,0 +1,22 @@
+state={
+	id=1113
+	name="STATE_1113"
+
+	history={
+		owner = IND
+		add_core_of = LAO
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		10330 10356 10456 
+	}
+	manpower=24000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

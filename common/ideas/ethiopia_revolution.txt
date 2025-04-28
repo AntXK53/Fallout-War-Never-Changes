@@ -1,0 +1,68 @@
+ideas = {
+	country = {
+
+		ETH_aftermath = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.50
+				war_support_factor = -0.15
+				military_leader_cost_factor = 1
+			}
+		}
+	}	
+	country = {
+
+		ETH_shattered = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.50
+			}
+		}
+	}
+	country = {
+
+		ETH_outrage = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_weekly = -0.01
+				resistance_target = 0.25
+				communism_drift = -0.05
+				democratic_drift = 0.05
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+				
+			}
+		}
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

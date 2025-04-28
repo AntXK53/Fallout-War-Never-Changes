@@ -1,0 +1,14 @@
+﻿l_english:
+ ###RAD###
+ RAD_neutrality:0 ""
+ RAD_fascism:0 ""
+ RAD_democratic:0 ""
+ RAD_communism:0 ""
+ radiation_zone:0 "Irradiated Wasteland"
+ RAD_radiations:0 "Irradiated Wasteland"
+ wasteland_colonization:0 "Colonization Of the Irradiated Lands"
+ RAD_radiations:0 "Irradiated Wasteland"
+ RAD_radiations_desc:0 "The wolves have come to eat."
+ RAD_sahara:0 "Inhospitable"
+ RAD_sahara_desc:0 "Most of the Sahara and The Middle East has been rendered an irradiated wasteland due to the onslaught of the beginning of the Resource Wars, with a limited nuclear exchange happening between the two nuclear powers."
+ radiations:0 "Wasteland"

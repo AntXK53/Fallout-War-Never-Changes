@@ -1,0 +1,80 @@
+﻿capital = 1160
+
+oob = "EST_2056"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "EST_1936_air_bba"
+	else = {
+		set_air_oob = "EST_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+
+		}
+	}
+}
+
+set_research_slots = 3
+
+add_ideas = {
+	all_adults_serve
+	war_economy
+	EST_defend_our_independence_idea
+	EST_proud_small_nation
+}
+
+recruit_character = EST_kalju_kirsipuu
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_support = 1
+	basic_train = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
+}
+
+set_convoys = 5
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 6000
+	producer = EST
+}
+add_manpower = 75000
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2045.3.31"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 28
+	fascism = 22
+	communism = 24
+	neutrality = 26
+}
+
+country_event = {
+	id = estonia.1
+	days = 5
+}
+
+#set_cosmetic_tag = EST_liberation_front_ct

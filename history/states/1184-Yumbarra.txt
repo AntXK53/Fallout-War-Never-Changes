@@ -1,0 +1,31 @@
+
+state={
+	id=1184
+	name="STATE_1184"
+	resources={
+		steel=8.000
+		chromium=4.000
+	}
+
+	history={
+		owner = ASU
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 3
+
+		}
+		add_core_of = AST
+		add_core_of = ASU
+
+	}
+
+	provinces={
+		5183 5197 8165 10927 
+	}
+	manpower=219500
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

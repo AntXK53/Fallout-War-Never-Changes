@@ -1,0 +1,17 @@
+characters={
+	CRO_ivica_markovic = {
+		name = "Ivica Marković"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRO/CRO_ivica_markovic.png"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { dictator }
+			expire = "2099.1.1"
+			id = -1
+		}
+	}
+}
+	

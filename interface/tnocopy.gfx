@@ -1,0 +1,42 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_Diplomacy_Self_Animation"
+		textureFile = "gfx/interface/self_diplo_animation.dds"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+	}
+
+	
+	spriteType = {
+		name = "GFX_diplo_econ_bg"
+		textureFile = "gfx/interface/diplo_econ_bg.dds"
+	}
+	
+	##Anarchy shit
+	spriteType = {
+		name = "GFX_Anarchy_Relations_Block"
+		textureFile = "gfx/interface/anarchy/relations_block.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_scrollbar_block"
+		textureFile = "gfx/interface/anarchy/scrollbar_block.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_RAD_Thermonuclear_War"
+		textureFile = "gfx/interface/anarchy/Anarchy_RAD_Thermonuclear_War.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_RAE"
+		textureFile = "gfx/interface/anarchy/Anarchy_RAE.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Anarchy_diplo_animation"
+		textureFile = "gfx/interface/anarchy/Anarchy_diplo_animation.dds"
+		noOfFrames = 17
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+	}
+}

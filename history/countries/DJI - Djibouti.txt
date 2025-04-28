@@ -1,0 +1,33 @@
+﻿capital = 908
+
+OOB = "AFA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	camelry = 1
+}
+
+add_manpower = 15000
+
+add_ideas = {
+}
+
+set_convoys = 0
+
+recruit_character = DJI_Gerald_Green
+recruit_character = DJI_tyler_burton
+recruit_character = DJI_james_donald
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 20
+	communism = 5
+	neutrality = 75
+}

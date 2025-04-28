@@ -1,0 +1,335 @@
+add_namespace = ASU_events
+add_namespace = AUS_events
+
+# Federal Government Content
+country_event = {
+    id = AUS_events.1
+	title = AUS_events.1.t
+	desc = AUS_events.1_desc
+    hidden = no
+	fire_only_once = yes
+
+	trigger = {
+		date > 2056.7.1
+		tag = AST
+		has_idea = AST_collapse_coming
+	}
+
+	option = {
+		name = AUS_events.1.a
+		ASM = {
+			set_state_owner = 517
+			set_state_controller = 517
+		}
+		ASM = {
+		load_oob = ASM_2056
+		}
+
+	}
+}
+
+country_event = {
+    id = AUS_events.2
+	title = AUS_events.2.t
+	desc = AUS_events.2_desc
+    hidden = no
+	fire_only_once = yes
+
+	trigger = {
+		date > 2056.7.1
+		date < 2056.7.3
+		tag = AST
+		has_idea = AST_collapse_coming
+	}
+
+	option = {
+		name = AUS_events.2.a
+		ASM = {
+			declare_war_on = {
+				target = AST
+				type = annex_everything
+			}
+		}
+
+	}
+}
+
+country_event = {
+    id = AUS_events.3
+	title = AUS_events.3.t
+	desc = AUS_events.3_desc
+    hidden = no
+	fire_only_once = yes
+
+	trigger = {
+		date > 2056.1.20
+		tag = AST
+	}
+
+	option = {
+		name = AUS_events.3.a
+				set_temp_variable = { temp_member = 2 } # Party Number
+				set_temp_variable = { temp_seats = 1 } # Seats gained 
+				modify_parliament_seat = yes
+		AST = {
+		country_event = AUS_events.4
+		}
+	custom_effect_tooltip = 1_AUS_tt
+	}              
+}
+country_event = {
+    id = AUS_events.4
+	title = AUS_events.4.t
+	desc = AUS_events.4_desc
+    hidden = no
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = AST
+	}
+
+	option = {
+		name = AUS_events.4.a
+		AST = { recruit_character = AST_Emma_Cavanaugh }
+	}       
+	option = {
+		name = AUS_events.4.b
+	}    
+	option = {
+		name = AUS_events.4.c
+	}           
+}
+country_event = {
+    id = AUS_events.5
+	title = AUS_events.5.t
+	desc = AUS_events.5_desc
+    hidden = no
+	fire_only_once = yes
+	trigger = {
+	ALL = {
+		tag = AST
+		date > 2025.5.15
+		date < 2056.5.17
+		}
+
+	}
+	immediate = {
+    
+    for_loop_effect = { # Loop through all parties in the parliament_seat_array
+        start = 0
+        end = parliament_seat_array^num # Loop to give All Parties their Party Seats
+
+        if = {
+            limit = {
+                check_variable = { parliament_seat_array^v > 100 } # Check if the current party has more than 100 seats
+            }
+            # If condition is met, store the party ID and seat count
+            set_temp_variable = { winning_party_id = parliament_member_array^v } # Get the party ID from parliament_member_array
+            set_temp_variable = { winning_party_seats = parliament_seat_array^v } # Get the seat count from parliament_seat_array
+
+            # Perform different actions based on the party ID
+            if = {
+                limit = { check_variable = { winning_party_id = 1 } } # Party A wins
+                ROOT = {
+                    country_event = AUS_events.6 # Liberals Win
+                }
+            }
+            else_if = {
+                limit = { check_variable = { winning_party_id = 2 } } # Party B wins
+                ROOT = {
+                    annex_country = { target = USA } # Annex USA
+                }
+            }
+            else_if = {
+                limit = { check_variable = { winning_party_id = 3 } } # Party C wins
+                ROOT = {
+                    annex_country = { target = GER } # Annex Germany
+                }
+            }
+            else_if = {
+                limit = { check_variable = { winning_party_id = 4 } } # Party D wins
+                ROOT = {
+                    annex_country = { target = FRA } # Annex France
+                }
+            }
+            else_if = {
+                limit = { check_variable = { winning_party_id = 5 } } # Party E wins
+                ROOT = {
+                    annex_country = { target = ITA } # Annex Italy
+                }
+            }
+        }
+    }
+
+
+	 }
+	option = {
+		name = AUS_events.5.a	
+	}                
+}
+
+country_event = { # Liberal Victory
+    id = AUS_events.6
+	title = AUS_events.6.t
+	desc = AUS_events.6_desc
+    hidden = no
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = AST
+		date > 2025.5.16
+	}
+
+	option = {
+		name = AUS_events.6.a
+		trigger = {
+		AST = {has_character = AST_Emma_Cavanaugh} 
+        }
+		promote_character = AST_Emma_Cavanaugh
+	}      
+	option = {
+		name = AUS_events.6.b
+		trigger = {
+		AST = {has_character = AST_Emma_Cavanaugh} 
+		set_party_name = {
+		    ideology = democratic
+		    long_name = AST_democratic_party_Liberal_long
+		    name = GER_neutrality_party_kaiserreich
+}
+        }
+		promote_character = AST_Emma_Cavanaugh
+	}              
+}
+## South Australia Content 
+country_event = {
+    id = ASU_events.1
+	title = ASU_events.1.t
+	desc = ASU_events.1_desc
+    hidden = no
+    
+    is_triggered_only = yes
+
+	option = {
+		name = ASU_events.1.a
+		ASU = {
+			complete_national_focus = ASU_No_Confidence_Vote
+		}	
+	}
+	option = {
+		name = ASU_events.1.b
+		ASU = {
+			complete_national_focus = ASU_Shareholders_No_Agreement
+		}	
+	}
+}
+
+country_event = {
+    id = ASU_events.2
+	title = ASU_events.2.t
+	desc = ASU_events.2_desc
+    hidden = no
+    
+    is_triggered_only = yes
+
+	option = {
+		name = ASU_events.2.a
+		ASU = {
+			complete_national_focus = ASU_Push_NAP
+		}
+		ASU = {
+			create_country_leader = {
+				name = "The Companies"
+				desc = ""
+				picture = gfx/leaders/AST/Portrait_Australia_NAP_Leadership.png
+				expire = "1965.1.1"
+				ideology = Anarcho-Capitalism
+				traits = {
+				}
+			}
+			set_cosmetic_tag = ASU_NAP
+		}
+	}
+	option = {
+		name = ASU_events.2.b
+		ASU = {
+			complete_national_focus = ASU_Push_AP
+		}	
+		ASU = {
+			promote_character = AUS_The_Company
+		}
+	}
+}
+
+country_event = {
+    id = ASU_events.3
+	title = ASU_events.3.t
+	desc = ASU_events.3_desc
+    hidden = no
+    
+    is_triggered_only = yes
+
+	option = {
+		name = ASU_events.3.a
+		ASU = {
+			swap_ideas = {
+				remove_idea = ASU_IssuesInWhyallah_Idea
+    			add_idea = ASU_IssuesInWhyallah_Idea1
+    					days = 180
+								}
+							}
+	}
+	option = {
+		name = ASU_events.3.b
+		ASU = {
+			swap_ideas = {
+				remove_idea = ASU_IssuesInWhyallah_Idea
+    			add_idea = ASU_IssuesInWhyallah_Idea2
+    					days = 180
+								}
+							} 
+						}
+	}
+
+country_event = {
+    id = ASU_events.4
+	title = ASU_events.4.t
+	desc = ASU_events.4_desc
+    hidden = no
+    is_triggered_only = no
+
+	trigger = {
+        tag = ASU
+		has_completed_focus = ASU_Push_NAP
+    }
+    mean_time_to_happen = {
+        days = 10
+    }
+	option = {
+		name = ASU_events.4.a
+		ASU = {
+			complete_national_focus = ASU_First_WorkerStrikes
+							}
+		}
+	}
+
+country_event = {
+    id = ASU_events.5
+	title = ASU_events.5.t
+	desc = ASU_events.5_desc
+    hidden = no
+    is_triggered_only = no
+
+	trigger = {
+        tag = ASU
+		has_completed_focus = ASU_Push_NAP
+    }
+    mean_time_to_happen = {
+        days = 10
+    }
+	option = {
+		name = ASU_events.5.a
+		ASU = {
+			complete_national_focus = ASU_First_WorkerStrikes
+							}
+		}
+	}

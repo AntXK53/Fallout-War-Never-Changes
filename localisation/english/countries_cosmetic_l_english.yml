@@ -2944,3 +2944,26 @@
  PER_islamic_republic_democratic: "Islamic Republic of Iran"
  PER_islamic_republic_democratic_DEF: "the Islamic Republic of Iran"
  PER_islamic_republic_democratic_ADJ: "Iranian"
+
+ ### old wnc tags ###
+ fiume_fascism:0 "Free State of Fiume"
+ fiume_fascism_DEF:0 "Free State of Fiume"
+ fiume_democratic:0 "Republic of Fiume"
+ fiume_democratic_DEF:0 "the Republic of Fiume"
+ fiume_neutrality:1 "International Zone of Fiume"
+ fiume_neutrality_DEF:1 "the International Zone"
+ fiume_communism:0 "People's Fiume"
+ fiume_communism_DEF:0 "the People's Republic"
+ fiume_fascism_ADJ:0 "Italian"
+ fiume_democratic_ADJ:0 "Italian"
+ fiume_neutrality_ADJ:0 "Italian"
+ fiume_communism_ADJ:0 "Italian"
+ fiume:0 "Fiume"
+ fiume_DEF:0 "Fiume"
+ fiume_ADJ:0 "Italian"
+
+ BUL_balkan_ssr_ct:0 "Balkan People's Republic"
+ BUL_balkan_ssr_ct_DEF:0 "the Balkan People's Republic"
+ BUL_balkan_ssr_ct_ADJ:0 "Balkan"
+
+ ASU_NAP:0 "Libertas Australis"

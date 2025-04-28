@@ -1,20 +1,87 @@
-﻿capital = 48 # Sofia
+﻿capital = 48
 
-# Starting tech
-set_technology = {
+#TROOPS
+oob = "BUL_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "BUL_1936_air_bba"
+	else = {
+		set_air_oob = "BUL_1936_air_legacy"
+	}
+}
+set_convoys = 5
+
+set_technology = { 
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	basic_train = 1
+	tech_mountaineers = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "By Blood Alone"
+		}
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+set_stability = 0.23
+set_war_support = 0.45
+
+### LEADERS ###
+recruit_character = BUL_nikul_vasilev
+recruit_character = BUL_rayko_svetkov
+recruit_character = BUL_boris_iv
+
+### ARMY LEADERS ###
+recruit_character = BUL_teodor_atanasov
+
+add_ideas = {
+	BUL_BKP_idea
+	BUL_agricultural_crisis_1_idea
+}
+
+set_country_flag = BUL_democratic_rebelions_mechanics_cf
+
+set_variable = {
+	var = BUL_drsg_sofia_region_vv
+	value = 6
+}
+set_variable = {
+	var = BUL_drsg_burgas_region_vv
+	value = 1
+}
+set_variable = {
+	var = BUL_drsg_silistra_region_vv
+	value = 8
+}
+set_variable = {
+	var = BUL_drsg_plovdiv_region_vv
+	value = 7
+}
+set_variable = {
+	var = BUL_drsg_varna_region_vv
+	value = 4
+}
+set_variable = {
+	var = BUL_drsg_vidin_region_vv
+	value = 4
 }
 
 set_politics = {
 	ruling_party = communism
-	last_election = "1936.1.1"
+	last_election = "2023.7.2"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 0
 	communism = 100
-	neutrality = 0
 }
-set_cosmetic_tag = SOV_cosmetic

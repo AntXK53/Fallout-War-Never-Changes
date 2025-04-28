@@ -1,0 +1,31 @@
+state={
+	id=1137
+	name="STATE_1137"
+
+	history={
+		owner = EUC
+		add_core_of = EUC
+		add_core_of = MOR
+		add_core_of = RIF
+		victory_points = {
+			12100 5
+		}
+		buildings = {
+			infrastructure = 2
+			12100 = {
+				naval_base = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		12100 
+	}
+	manpower=41000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

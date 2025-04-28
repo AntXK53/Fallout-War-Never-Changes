@@ -1,0 +1,84 @@
+﻿l_english:
+#FOCUS
+# ASU Focus Tree
+    ASU_Shareholder_Meeting:0 "The Third Shareholder Meeting"
+
+    ASU_No_Confidence_Vote:0 "Vote Of No Confidence"
+
+    ASU_Shareholders_No_Agreement:0 "The Governor Remains"
+
+    ASU_Push_NAP:0 "Push The N.A.P"
+
+    ASU_Push_AP:0 "Push Aggression Policy"
+
+    ASU_Roxby_Refuses:0 "Roxby Refuses N.A.P"
+
+# AST Focus Tree
+    AST_Election_Season_Full:0 "Election In Full Swing"
+#EVENTS
+    australia_news.2.t:0 "The 7 Years Fire ends"
+    australia_news.2.desc:0 "For the past seven years in Australia, there has been bushfires occuring almost every month, with the already collasped nation being at a standstill between the newly independent factions of Australia. With the bushfires over, many are asking if peace between the factions will continue, or if there will be a war to fully reunify Australia once again."
+    australia_news.2.a:0 "What about the animals?"
+    australia_news.3.t:0 "The Second Federal Collapse Of Australia"
+    australia_news.3.desc:0 "Today, shocking reports are emerging from Canberra as the nation grapples with an unprecedented crisis. Heavily armed militias have organized across Victoria, seizing control of the state in a swift and coordinated uprising. The federal government, caught off guard by the rapid turn of events, has declared a state of emergency."
+    AUS_events.3.t:0 "The Man Who Ruined Australia"
+    AUS_events.3_desc:0 "Prime Minister Bennett Daniel, Leader of the Liberal Party was elected in a time of crisis, promising hope, recovery, and leadership to steer Australia through the looming storm. But from day one, his policies have only deepened the country's wounds. The environmental crises were ignored, corporate interests flourished unchecked, and the once-strong national unity fractured. Under his rule, Australia’s economy collapsed, corruption spread through the halls of power, and flames of rebellion grew and collapsed the nation. His government's failure is now undeniable, and with unrest growing, the Prime Minister today announced that he will step down and hold a general election."
+    AUS_events.3.a:0 "Thank god he stood down peacefully"
+    AUS_events.4.t:0 "The Liberal Party in Disarray"
+    AUS_events.4_desc:0 "With the Prime Minister's resignation, the Federalist government is left in chaos. The Liberal Party has no clear direction, as a fractured coalition struggles to hold together. 3 major members of the Liberals are capable of replacing him. 1st is Emma Cavanaugh, who is going against mainstream party beliefs by reducing corporate power and bolstering democratic institutions, she has a large amount of friends in the Trumpets of Patriots party. 2nd is Aidan Price, currently the minister of industry is a advocate of deregulations and free market capitalism. 3rdly is Matthew Byrne, hated by the Freedom Of Patriots party, Matthew advocates working with the Vanguard and putting Unifying the nation above all other issues. "
+    AUS_events.4.a:0 "Emma will reform the Party"
+    AUS_events.4.b:0 "Aidan will make us rich"
+    AUS_events.4.c:0 "Matthew will revive the Nation"
+
+# Australia Election Events
+    AUS_events.6.t:0 "Liberals Declare Victory!"
+    AUS_events.6_desc:0 "Against all odds, the Liberal Party has retained control of Parliament and the position of Prime Minister. However, this is no triumphant return to stability. Still tainted by the disastrous tenure of Bennett Daniel and the humiliating Treaty of Brisbane, the Liberals remain on shaky ground. They have held onto power—let’s hope they do not fail like the last government."
+    AUS_events.6.a:0 "Finally, a Victory for us!"
+    AUS_events.6.b:0 "Lets work to Unify the Nation!"
+    AUS_events.6.c:0 "Now, Lets make some profit"
+
+    ASU_events.1.t:0 "The Second Share Holder Meeting"
+    ASU_events.1_desc:0 "Today the CEO's of the South Australian Monopolies met in the former Parliament Of South Australia to discuss the future of the Anarchist Society. The First topic was a joint motion by Twosteel Mining and Roxby Oil Limited who advocated jointly for the complete dissolving of what was left of government and fully embrace Anarcho-Capitalism. The CEO's were divided as this would throw certain economic agreements of free trade secured by the Governor General. Bluestar Refining would be the bigger opposition to this as well as the Grocery Store Monopolies. Time for the Motion to be voted on came and...."
+    ASU_events.1.a:0 "The Motion Passes"
+    ASU_events.1.b:0 "The Motion Failed"
+    ASU_events.2.t:0 "The Following Motion"
+    ASU_events.2_desc:0 "With the success of the removal of the Attorney General, The next topic came up. Signing a Non-Aggression pact between the Monopolies to ensure a successful transition and lasting peace in the Anarcho-Capitalist State. The two largest monopolies in the groceries as well as Roxby Oil Limited have heavily opposed this, meanwhile Bluestar and Twosteel have already spoken in agreement. The Motion is pushed and...."
+    ASU_events.2.a:0 "The Motion Passes, The N.A.P starts"
+    ASU_events.2.b:0 "The Motion Failed, The Aggression Principle Begins"    
+    ASU_events.3.t:0 "A Phone call between Monopolies"
+    ASU_events.3_desc:0 "The CEO of Twosteel got a call and picked up his phone. On his line was the CEO of Bluestar and the CEO of Roxby Oil. They discussed the Fiancial Decline of Twosteel's Steel sector and wished to help bail them out. They offered for Cheap use of the Twosteel rail lines that they would offer a low interest rate loan for them to invest in whatever the company needed for its steelworks to begin remaking profits. "
+    ASU_events.3.a:0 "Invest the money to fill up Labor Shortage "
+    ASU_events.3.b:0 "Upgrade the blast furnace with the money"
+    ASU_events.4.t:0 "Strikes to expand"
+    ASU_events.4_desc:0 "Since the declaration of separation from the federal government, the Spencer Gulf companies have seen record profits; however, the workers have seen none of the benefits. The first city to begin to show cracks was Port Pirie. Unionists took to the streets, and most companies largely ignored it due to it not affecting them. However, today the mines around Pirie have begun to strike as well. Starting with Iron Knob, the companies are beginning to put pressure on Bluestar to stop this spread before it's too late"
+    ASU_events.4.a:0 "Bluestar Investors, Convene now!"
+    AST_climate_disaster:0 "Complete Climate Disaster"
+    AST_climate_disaster_desc:0 "Around the late 2030s, early 2040s, the climate crisis begun in Australia due to the complete devastation caused by nations sending companies to mine out whatever resources Australia had... These companies completely disregarded the social order of this nation, and was even supported by the government at the time for the money it racked in.. Now a unified Australia is just a dream."
+    ASU_Corporate_Oligarch_Rule_Idea:0 "Corporate Oligarch Rule"
+    ASU_Corporate_Oligarch_Rule_Idea_desc:0 "Since Well before the resource wars, Corporations have been paying off the Murdoch Media machine to cover up their acts meanwhile forming Monopolies across the nation. These Oligarchs during the Dissolving of Federal rule would pay off local politicans to break from the federal government and cement their own domination over south australia"
+    ASU_Shadow_Ruled_Governor_Idea:0 "Shadow Ruled Governor General"
+    ASU_Shadow_Ruled_Governor_Idea_desc:0 "The Governor general is the last remant of the government. So far he has functioned to pass deregulations and convince the people we are on their side. Although the bribes are getting costly these days.."
+    ASU_AnCap_Alliance_Idea:0 "The Anarcho-Capitalist Alliance"
+    ASU_AnCap_Alliance_Idea_desc:0 "Since the declaration of our independence, The Corporation have taken control over the Local government. Forming a National Shareholder council where every company has a representive. This is anywhere from the major 3 Mineral/Drilling Companies to the Coles and Woolies grocery monopoly."
+    ASU_High_Pollution_Idea:0 "High Pollution"
+    ASU_High_Pollution_Idea_desc:0 "The Companies since the breaking away from the federal government has ignored every enviromental regulation in existance. The Flinders has been turned into one massive Enviromental Disaster as acids, trash and other various toxic materials have began to fill up its mountainside."
+    ASU_WhyallahRails_Idea:0 "Twosteel Greater Expansion Plan"
+    ASU_WhyallahRails_Idea_desc:0 "Thanks to the loans from the other companies, Whyallah has begun to expand its rail network across the country. They make a profit from it by forcing a toll for other companies to use it."
+    ASU_IssuesInWhyallah_Idea:0 "Issues In Whyallah"
+    ASU_IssuesInWhyallah_Idea1:0 "Whyallah Recovering"
+    ASU_IssuesInWhyallah_Idea2:0 "Whyallah Recovering"
+    
+#tooltips
+    1_ASU_tt:0 "§G Unlocks Decisions to expand Whyallah"
+    2_ASU_tt:0 "§G Decisions to deal with the strikes begin"
+    1_AUS_tt:0 "§R Liberals will lose 1 seat"
+    2_AUS_TT:0 "[temp_member] is winning"
+
+# Parties
+	AST_democratic_party_Liberal:0 "Liberal/Trumpets Coalition"
+    AST_democratic_party_Liberal_long:0 "The Liberal Trumpets party Coalition"
+    
+
+
+# Debug Decisions
+ ASU_Government_Winner_Debug:0 "The winning party is: [Root.GetVariable('winner_party')]"

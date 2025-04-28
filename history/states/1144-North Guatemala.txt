@@ -1,0 +1,30 @@
+state={
+	id=1144
+	name="STATE_1144"
+
+	history={
+		owner = NIC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			13085 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GUA
+		victory_points = {
+			13085 1 
+		}
+
+	}
+
+	provinces={
+		4991 10842 13085 
+	}
+	manpower=951000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

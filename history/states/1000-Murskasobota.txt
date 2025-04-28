@@ -1,0 +1,23 @@
+state={
+	id=1000
+	name="STATE_1000"
+
+	history={
+		owner = SLV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+
+	}
+
+	provinces={
+		6672 
+	}
+	manpower=100050
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

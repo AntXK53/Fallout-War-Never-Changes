@@ -11,9 +11,6 @@ state={
 		victory_points = {
 			9809 3 
 		}
-		victory_points = {
-			9821 1
-		}
 		owner = YUG
 		add_core_of = MNT
 		buildings = {
@@ -21,21 +18,19 @@ state={
 			industrial_complex = 1
 			9809 = {
 				naval_base = 1
+
 			}
-			9821 = {
-				naval_base = 1
-			}
+
 		}
 		add_core_of = YUG
 
 	}
 
 	provinces={
-		937 6913 9809 9821 11858 
+		937 9809 11858 13500 
 	}
-	manpower=895500
+	manpower=661100
 	buildings_max_level_factor=1.000
 	state_category=rural
-
-	local_supplies=3.0 
+	local_supplies=3.000
 }

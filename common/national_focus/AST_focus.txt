@@ -1,0 +1,29 @@
+focus_tree = {
+	id = AST
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AST
+		}
+	}
+
+	focus = {
+		id = AST_Election_Season_Full
+		icon = GFX_goal_Shareholdermeeting
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+			ASU = {
+			country_event = AST_events.1
+			add_political_power = 50
+			}
+		}
+	}
+
+}

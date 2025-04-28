@@ -1,0 +1,269 @@
+
+GER_reichsprotektorat = {
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		has_government = fascism
+		has_completed_focus = GER_form_the_reichskommissariats
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+
+}
+
+GER_treaty_of_brest_litovsk_category = {
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		has_government = neutrality
+		has_completed_focus = GER_see_to_the_eastern_front
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+
+}
+
+GER_new_order_in_france_category = {
+
+	icon = category_ger_reichskommissariats
+	
+	picture = GFX_decision_sfs_new_order_in_france
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+		
+		GER = { has_government = fascism }
+		GER = { controls_state = 16 }
+		NOT = { country_exists = FRA }
+		
+	}
+
+}
+
+SFS_burgenland_question_category = {
+
+	icon = border_conflicts
+
+	allowed = {
+		tag = HUN
+	}
+
+	visible = {
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	    
+	}
+
+}
+
+SFS_colony_politic_category = {
+
+	icon = eng_concessions_to_the_trade_unions
+
+    picture = GFX_decision_sfs_separate_burma_from_india
+
+	allowed = {
+	    tag = ENG
+	}
+
+	visible = {
+	    any_country = {
+			has_country_flag = sfs_can_colony_politic
+		}
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+
+	}
+
+}
+
+SFS_new_name_of_cities_category = {
+
+	icon = generic_political_actions
+
+	allowed = {
+
+	}
+}
+
+form_north_german_confederation_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_bs_revive_the_ngc
+
+	allowed = {
+
+	}
+}
+
+SFS_invade_monaco_category = {
+
+	icon = usa_intervention_mandate
+
+	allowed = {
+
+	}
+	available = {
+		controls_state = 902
+		MCO = { controls_state = 891 }
+	}
+
+	visible = {
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+		NOT = { has_government = democratic }
+		has_war = yes
+		controls_state = 902
+		MCO = { controls_state = 891 }
+
+	}
+
+}
+
+form_confederate_states_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_bs_glory_of_csa
+
+	allowed = {
+
+	}
+
+	visible = {
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+
+}
+
+GER_mittelafrika_plan_category = {
+	
+	picture = GFX_decision_GER_mittelafrika
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+		}
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}
+
+BS_german_empire_territory_cateogry = {
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		OR = {
+			has_cosmetic_tag = GER_german_empire
+			has_cosmetic_tag = GER_german_monarchy
+		}
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}
+
+BS_demand_old_empire_territory_category = {
+
+	allowed = {
+		tag = GER
+	}
+
+	visible = {
+		OR = {
+			has_cosmetic_tag = GER_german_empire
+			has_cosmetic_tag = GER_german_monarchy
+		}
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}
+
+SFS_golden_gate_bridge_category = {
+
+	picture = GFX_decision_golden_gate_bridge
+
+	allowed = {
+		tag = USA
+	}
+
+	visible = {
+		has_start_date < 1936.01.02
+		NOT = {
+			has_global_flag =  GOLDEN_GATE_BRIDGE_DONE
+		}
+		
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}
+
+reclaim_balhae_states_category = {
+
+	picture = GFX_decision_sfs_balhae
+	
+	visible = {
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}
+
+SFS_unite_the_mongolia_category = {
+
+	visible = {
+		has_game_rule = {
+			rule = allow_sfs_extra
+			option = SFS_EXTRA_ALLOWED
+		}
+	}
+}

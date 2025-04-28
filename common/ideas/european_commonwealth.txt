@@ -1,0 +1,274 @@
+ideas = {
+	country = {
+	
+		euc_energy_crisis_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.30
+				industrial_capacity_factory	= -0.35
+				production_factory_max_efficiency_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				local_resources_factor = -0.40
+				fuel_gain_factor = -0.30
+				research_speed_factor = -0.25
+				stability_factor = -0.20
+			}
+		}
+		
+		euc_energy_crisis_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory	= -0.25
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				local_resources_factor = -0.30
+				fuel_gain_factor = -0.20
+				research_speed_factor = -0.15
+				stability_factor = -0.15
+			}
+		}
+		
+		euc_energy_crisis_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory	= -0.15
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				local_resources_factor = -0.20
+				fuel_gain_factor = -0.15
+				research_speed_factor = -0.10
+				stability_factor = -0.10
+			}
+		}
+		
+		euc_rampant_unrest_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.15
+			war_support_factor = -0.15
+			monthly_population = -0.20
+			}
+		}
+		
+		euc_rampant_unrest_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.10
+			war_support_factor = -0.10
+			monthly_population = -0.10
+			}
+		}
+		
+		euc_rampant_unrest_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			}
+		}
+		
+		euc_economic_recession_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = 0.35
+			production_speed_buildings_factor = -0.30
+			industrial_capacity_factory	= -0.25
+			stability_factor = -0.25
+			}
+		}
+		
+		euc_economic_recession_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = 0.25
+			production_speed_buildings_factor = -0.25
+			industrial_capacity_factory	= -0.20
+			stability_factor = -0.20
+			}
+		}
+		
+		euc_economic_recession_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			consumer_goods_factor = 0.20
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory	= -0.10
+			stability_factor = -0.10
+			}
+		}
+		
+		euc_remembering_nordic_uprising_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.10
+			army_org_factor = -0.10
+			army_attack_factor = -0.05
+			army_defence_factor = -0.05
+			}
+		}
+		
+		euc_remembering_nordic_uprising_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			army_org_factor = -0.05
+			army_attack_factor = -0.025
+			army_defence_factor = -0.025
+			}
+		}
+		
+		euc_breaking_union_1 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.10
+			war_support_factor = -0.10
+			political_power_gain = -0.75
+			}
+		}
+		euc_breaking_union_2 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.10
+			war_support_factor = -0.05
+			political_power_gain = -0.50
+			}
+		}
+		euc_breaking_union_3 = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+			}
+		}
+		euc_restricted_civilian_fuel = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.25
+			}
+		}
+		euc_expanded_civilian_fuel = {
+			picture = 
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.05
+			}
+		}
+		
+	}
+}

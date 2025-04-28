@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		EST_defend_our_independence_idea = {
+			removal_cost = -1
+
+			available = {
+				has_war = yes
+				has_war_with = SOV
+			}
+		
+			allowed = {
+				original_tag = EST
+			}
+		
+			modifier = {
+				stability_weekly_factor = 0.15
+				war_support_factor = 0.15
+				local_manpower = 0.4
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		EST_proud_small_nation = {
+			removal_cost = -1
+
+			available = {
+				original_tag = EST
+			}
+		
+			allowed = {
+				original_tag = EST
+			}
+		
+			modifier = {
+				research_speed_factor = 0.1
+				stability_factor = 0.08
+				war_support_factor = -0.04
+				trade_opinion_factor = 0.1
+				local_manpower = -0.15
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

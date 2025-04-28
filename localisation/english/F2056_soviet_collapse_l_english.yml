@@ -1,0 +1,22 @@
+﻿l_english:
+ # event
+ soviet_collapse.1.t:0 "REPLACE_ME"
+ soviet_collapse.1.desc:0 "REPLACE_ME"
+ soviet_collapse.1.a:0 "REPLACE_ME"
+ soviet_collapse.1.b:0 "REPLACE_ME"
+
+ soviet_collapse.4.t:0 "REPLACE_ME"
+ soviet_collapse.4.desc:0 "REPLACE_ME"
+ soviet_collapse.4.a:0 "REPLACE_ME"
+ soviet_collapse.4.b:0 "REPLACE_ME"
+ soviet_collapse.4.c:0 "REPLACE_ME"
+
+ # fashion
+ soviet_collapse_fashion.1.t:0 "REPLACE_ME"
+ soviet_collapse_fashion.1.desc:0 "REPLACE_ME"
+ soviet_collapse_fashion.1.a:0 "REPLACE_ME"
+
+ # news
+ soviet_collapse_news.1.t:0 "Instability in the USSR"
+ soviet_collapse_news.1.desc:0 "There is a growing political crisis in the Soviet Union, caused by the popularity of democratic ideas. Chernykh Arseny calls on the people to protest against the authoritarian policies of the Right Wing of the CPSU. At the same time, separatist sentiments are growing in the republics, especially in southern Ukraine, where the new UPA, which favors independence, is becoming active. The Central Committee of the CPSU expresses dissatisfaction with Kozlov's actions and the general situation in the country."
+ soviet_collapse_news.1.a:0 "Our hearts demand a change!"

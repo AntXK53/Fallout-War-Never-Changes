@@ -1,0 +1,26 @@
+state={
+	id=1100
+	name="STATE_1100"
+
+	history={
+		owner = EUC
+		victory_points = {
+			11851 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = EUC
+		add_core_of = SPR
+
+	}
+
+	provinces={
+		11851 
+	}
+	manpower=7302
+	buildings_max_level_factor=1.000
+	state_category=enclave
+	local_supplies=0.000
+}

@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+
+		HAR_surrounded = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.15
+			}
+		}
+	}
+	country = {
+
+		HAR_no_industry = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.5
+				industry_free_repair_factor = -1
+				local_resources_factor = -0.5
+			}
+		}
+	}		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

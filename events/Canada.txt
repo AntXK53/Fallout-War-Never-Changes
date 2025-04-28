@@ -1,0 +1,160 @@
+add_namespace = nf_canada
+add_namespace = canadian_news
+
+country_event = { # Starting Event
+	id = nf_canada.1
+	title = nf_canada_1_title
+	desc = nf_canada_1_desc
+	#picture = GFX_report_event_nf_canada_starting
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_canada_1_a
+		
+	}
+}
+
+country_event = { # Reduce, Reuse, Recycle
+	id = nf_canada.2
+	title = nf_canada_2_title
+	desc = nf_canada_2_desc
+	#picture = GFX_report_event_nf_canada_starting
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_canada_2_a
+		custom_effect_tooltip = nf_canada_2_tt
+		set_country_flag = CAN_green_shit
+	}
+}
+
+country_event = { # Real Event
+	id = nf_canada.3
+	title = nf_canada_3_title
+	desc = nf_canada_3_desc
+	#picture = GFX_report_event_nf_canada_starting
+
+	is_triggered_only = yes
+	
+	option = { # Trudeau Loses
+		name = nf_canada_3_a
+		set_country_flag = canada_trudeau_phakked
+		CAN_swap_governments = yes
+		retire_character = CAN_trudeau
+		add_stability = -0.15
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		hidden_effect = {
+			add_country_leader_role = {
+				character = CAN_mcgill
+				promote_leader = yes
+				country_leader = {
+					ideology = interim_Govt
+					expire = "2089.1.1.1"
+					traits = {  }
+				}
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "2056.11.12"
+				election_frequency = 48
+			}
+			remove_country_leader_role = {
+				character = CAN_anderson
+				ideology = interim_Govt
+			}
+			add_country_leader_role = {
+				character = CAN_anderson
+				promote_leader = yes
+				country_leader = {
+					ideology = conservatism
+					expire = "2092.1.1.1"
+					traits = {  }
+				}
+			}
+		}
+		custom_effect_tooltip = nf_canada_3_a_tt
+		hidden_effect = {
+			load_focus_tree = CAN_conservative_2056
+			every_country = {
+				country_event = {
+					id = canadian_news.1
+					days = 3
+				}
+			}
+		}
+	}
+	
+	option = { # Trudeau Wins
+		name = nf_canada_3_b
+		set_country_flag = canada_trudeau_semi_phakked
+		add_stability = -0.15
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		custom_effect_tooltip = nf_canada_3_b_tt
+		hidden_effect = {
+			remove_country_leader_role = {
+				character = CAN_trudeau
+				ideology = Neo_Liberalism
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "2056.11.12"
+				election_frequency = 48
+			}
+			add_country_leader_role = {
+				character = CAN_trudeau2
+				promote_leader = yes
+				country_leader = {
+					ideology = Neo_Liberalism
+					expire = "2099.1.1.1"
+					traits = { CAN_liberal_corporatist }
+				}
+			}
+			load_focus_tree = CAN_liberal_2056
+			every_country = {
+				country_event = {
+					id = canadian_news.2
+					days = 3
+				}
+			}
+		}
+	}
+	
+}
+
+news_event = { # Trudeau Gets Phakked
+	id = canadian_news.1
+	title = canadian_news_1_title
+	desc = canadian_news_1_desc
+	#picture = GFX_report_event_canadian_news_starting
+
+	is_triggered_only = yes
+
+	option = {
+		name = canadian_news_1_a
+		
+	}
+}
+
+news_event = { # Trudeau Survives
+	id = canadian_news.2
+	title = canadian_news_2_title
+	desc = canadian_news_2_desc
+	#picture = GFX_report_event_canadian_news_starting
+	
+	is_triggered_only = yes
+
+	option = {
+		name = canadian_news_2_a
+		
+	}
+}

@@ -1,0 +1,42 @@
+focus_tree = {
+	id = BUL_balkan_union
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+	
+	initial_show_position = {
+		x = 10
+		y = 0
+	}
+
+	focus = {
+		id = BUL_united_and_strong_focus
+		icon = GFX_goal_BUL_united_and_strong_focus
+		x = 10
+		y = 0
+	
+		cost = 1
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			always = no
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			# We triumphed, Bulgaria triumphed!
+			custom_effect_tooltip = BUL_united_and_strong_focus_tt
+		}
+	}
+}

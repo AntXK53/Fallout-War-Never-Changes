@@ -1,0 +1,33 @@
+characters = {
+	#### COUNTRY LEADERS 
+	BEG_Ajayl = {
+		name = "Ajayl"
+		portraits = {
+			civilian = {
+				large = "GFX_BEG_Ajayl"
+				small = "GFX_BEG_Ajayl"
+			}
+			army = {
+				large = "GFX_BEG_Ajayl"
+				small = "GFX_BEG_Ajayl"
+			}
+		}
+		country_leader = {
+			ideology = Left_Nationalism  
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+}

@@ -6,12 +6,12 @@ state={
 	state_category = town
 	
 	resources={
-		oil = 8 # was: 10
+		oil=8 # was: 10
 	}
 
+
 	history={
-		owner = SAU
-		add_core_of = SAU
+		owner = PER
 		buildings = {
 			infrastructure = 2
 		}
@@ -26,7 +26,6 @@ state={
 		}
 		add_core_of = IRQ
 		add_core_of = KUR
-		add_core_of = ASY
 	}
 	
 	provinces={

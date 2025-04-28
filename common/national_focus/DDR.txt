@@ -1,0 +1,445 @@
+﻿focus_tree = {
+	id = DDR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DDR
+		}
+	}
+	
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+	
+	
+	focus = {
+		id = DDR_ottos_actual_plan
+		icon = GFX_DDR_otto_plan
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = DDR_the_old_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		x = -3
+		y = 1
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.1 days = 1 }
+			}
+			add_war_support = 0.1
+			add_stability = 0.03
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = DDR_an_authoritarian_army
+		icon = GFX_DDR_authoritarian_army
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_a_lighter_hand }
+		prerequisite = {
+			focus = DDR_ottos_actual_plan
+		}
+		x = -1
+		y = 1
+		relative_position_id = DDR_ottos_actual_plan
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.2 days = 1 }
+			}
+			add_political_power = 150
+			add_popularity = {
+				ideology = communism
+				popularity = 0.03
+			}
+		}
+	}
+
+	focus = {
+		id = DDR_the_mantle_of_ulbricht
+		icon = GFX_DDR_ulbricht_mantle
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_ottos_own_book }
+		prerequisite = {
+			focus = DDR_a_lighter_hand
+			focus = DDR_an_authoritarian_army
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_an_authoritarian_army
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.3 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = DDR_a_lighter_hand
+		icon = GFX_DDR_lighter_hand
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_an_authoritarian_army }
+		prerequisite = {
+			focus = DDR_ottos_actual_plan
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_ottos_actual_plan
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.4 days = 1 }
+			}
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = DDR_ottos_own_book
+		icon = GFX_DDR_the_book_of_otto
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_the_mantle_of_ulbricht }
+		prerequisite = {
+			focus = DDR_an_authoritarian_army
+			focus = DDR_a_lighter_hand
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_a_lighter_hand
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.5 days = 1 }
+			}
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = DDR_the_old_monarchy
+		icon = GFX_DDR_dealing_with_the_bases
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = DDR_the_new_reformists }
+		mutually_exclusive = { focus = DDR_ottos_actual_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.6 days = 1 }
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+
+	focus = {
+		id = DDR_gorings_ideals
+		icon = GFX_DDR_ideals_of_goring
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_the_old_monarchy
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_the_old_monarchy
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.7 days = 1 }
+			}
+			add_stability = 0.1
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = DDR_a_empty_throne
+		icon = GFX_DDR_a_empty_throne
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_gorings_ideals
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_gorings_ideals
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.8 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = DDR_the_new_reformists
+		icon = GFX_the_new_reformists
+		cost = 2
+		available_if_capitulated = no
+		mutually_exclusive = { focus = DDR_the_old_monarchy }
+		ai_will_do = {
+			factor = 1
+		}
+		x = 3
+		y = 1
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.9 days = 1 }
+			}
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+		}
+		add_stability = 0.5
+		}
+	}
+
+	focus = {
+		id = DDR_a_return_to_old_ideals
+		icon = GFX_DDR_spd_new
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_a_new_face_of_reform }
+		prerequisite = {
+			focus = DDR_the_new_reformists
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_the_new_reformists
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.10 days = 1 }
+			}
+		add_stability = -0.5
+		add_political_power = 150
+		add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = DDR_the_start_of_something_great
+		icon = GFX_DDR_great_reform_era
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_ideas_from_the_sed
+			focus = DDR_begin_the_protests
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_ideas_from_the_sed
+		completion_reward = {
+			DDR = {
+			load_focus_tree = { tree = DDR_PSR_starting}
+				country_event = { id = DDR.11 days = 1 }
+			}
+			add_ideas = DDR_foundationofgreatness
+		}
+	}
+
+
+	focus = {
+		id = DDR_a_new_face_of_reform
+		icon = GFX_DDR_a_new_face_of_reform
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_a_return_to_old_ideals }
+		prerequisite = {
+			focus = DDR_the_new_reformists
+		}
+		x = -1
+		y = 1
+		relative_position_id = DDR_the_new_reformists
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.12 days = 1 }
+			}
+			add_political_power = 100
+			add_stability = 0.2
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+		}
+	}
+
+	focus = {
+		id = DDR_ideas_from_the_sed
+		icon = GFX_DDR_sed_ideas
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_begin_the_protests }
+		prerequisite = {
+			focus = DDR_a_return_to_old_ideals
+			focus = DDR_a_new_face_of_reform
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_a_new_face_of_reform
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.13 days = 1 }
+			}
+			add_political_power= 500
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = DDR_glory_to_the_RKED
+		icon = GFX_DDR_rked_glory
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_the_mantle_of_ulbricht
+		}
+		prerequisite = {
+			focus = DDR_ottos_own_book
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_the_mantle_of_ulbricht
+		completion_reward = {
+			DDR = {
+			load_focus_tree = { tree = DDR_RKED_starting}
+				country_event = { id = DDR.14 days = 1 }
+			}
+			add_stability = 0.03
+		}
+	}
+	
+	focus = {
+		id = DDR_issue_of_the_monarchists
+		icon = GFX_DDR_monarchist_issues
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_a_empty_throne
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_ottos_own_book
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.15 days = 1 }
+			}
+			add_stability = -0.03
+		}
+	}
+	
+	focus = {
+		id = DDR_gaining_a_stand_in_the_volkskammer
+		icon = GFX_DDR_monarchist_volkskammer
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_a_empty_throne
+		}
+		x = 1
+		y = 1
+		relative_position_id = DDR_a_empty_throne
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.16 days = 1 }
+			}
+			add_political_power = -50
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {
+		id = DDR_begin_the_protests
+		icon = GFX_DDR_protesting_ddr1
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = DDR_ideas_from_the_sed }
+		prerequisite = {
+			focus = DDR_a_new_face_of_reform
+			focus = DDR_a_return_to_old_ideals
+		}
+		x = 0
+		y = 1
+		relative_position_id = DDR_a_return_to_old_ideals
+		completion_reward = {
+			DDR = {
+				country_event = { id = DDR.17 days = 1 }
+			}
+			add_ideas = DDR_protests1
+		}
+	}
+	
+	focus = {
+		id = DDR_a_new_era
+		icon = GFX_DDR_a_new_era
+		cost = 2
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = DDR_issue_of_the_monarchists
+			focus = DDR_gaining_a_stand_in_the_volkskammer
+		}
+		x = 3
+		y = 1
+		relative_position_id = DDR_glory_to_the_RKED
+		completion_reward = {
+			load_focus_tree = { tree = DDR_monarchist_starting}
+			set_rule = { can_send_volunteers = yes }
+			DDR = {
+				country_event = { id = DDR.18 days = 1 }
+			}
+		 	}
+		}
+	}

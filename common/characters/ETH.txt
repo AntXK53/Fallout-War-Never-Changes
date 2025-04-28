@@ -1,0 +1,33 @@
+characters = {
+	#### COUNTRY LEADERS 
+	ETH_Derartu_Tesfaye = {
+		name = "Derartu Tesfaye"
+		portraits = {
+			civilian = {
+				large = "GFX_ETH_Derartu_Tesfaye"
+				small = "GFX_ETH_Derartu_Tesfaye"
+			}
+			army = {
+				large = "GFX_ETH_Derartu_Tesfaye"
+				small = "GFX_ETH_Derartu_Tesfaye"
+			}
+		}
+		country_leader = {
+			ideology = National_Communism
+			expire = "2090.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				}
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+﻿capital = 525 #South Korea - Seoul or Busan
+
+oob = "KOR_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_trucks = 1
+	mass_assault = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+create_country_leader = {
+	name = "Kim Sung-Ki"
+	desc = ""
+	picture = gfx/leaders/CHI/Kim_jong_Un_old.png
+	expire = "1965.1.1"
+	ideology = neo_juche
+	traits = {
+		#
+	}
+}
+

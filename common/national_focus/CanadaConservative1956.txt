@@ -1,0 +1,45 @@
+focus_tree = {
+	id = CAN_conservative56
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = CAN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 25 }
+	
+	focus = {
+		id = CAN_reorganizing_canada
+		icon = GFX_goal_CAN_leaf
+		x = 15
+		y = 1
+	
+		cost = 3
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		complete_tooltip = {
+	
+		}
+	
+		completion_reward = {
+			
+		}
+	}
+	
+}

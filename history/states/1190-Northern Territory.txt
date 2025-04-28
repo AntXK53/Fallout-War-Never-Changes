@@ -1,0 +1,19 @@
+state={
+	id=1190
+	name="STATE_1190"
+	provinces={
+		12915 8237 13132 8237 11013 12992 2223 12936 10979
+	}
+	history={
+		owner = CTA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AST
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

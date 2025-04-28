@@ -1,0 +1,1417 @@
+focus_tree = {
+    id = usa_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 20
+            original_tag = USA
+        }
+    }
+
+    default = no
+    continuous_focus_position = { x = 4000 y = 500 }
+
+    focus = {
+        id = the_armed_forces
+        icon = GFX_focus_generic_army
+        x = 10
+        y = 0
+        cost = 10
+        available = {
+            has_government = democratic
+        }
+        completion_reward = {
+            add_political_power = 150
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = us_army
+        icon = GFX_focus_generic_army
+        x = -10
+        y = 2
+        cost = 10
+        prerequisite = { focus = the_armed_forces }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = expand_recruitment_drives
+        icon = GFX_focus_generic_recruitment
+        x = -13
+        y = 3
+        cost = 10
+        prerequisite = { focus = us_army }
+        completion_reward = {
+            add_manpower = 500000
+        }
+    }
+
+    focus = {
+        id = enforce_the_anchorage_line
+        icon = GFX_focus_generic_recruitment
+        x = -15
+        y = 4
+        cost = 10
+        prerequisite = { focus = expand_recruitment_drives }
+        completion_reward = {
+            add_manpower = 500000
+        }
+    }
+
+    focus = {
+        id = enact_the_draft
+        icon = GFX_focus_generic_recruitment
+        x = -15
+        y = 5
+        cost = 10
+        prerequisite = { focus = enforce_the_anchorage_line }
+        completion_reward = {
+            add_manpower = 500000
+        }
+    }
+
+    focus = {
+        id = mechanized_force_initiative
+        icon = GFX_focus_generic_mechanized
+        x = -9
+        y = 3
+        cost = 10
+        prerequisite = { focus = us_army }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = armor
+            }
+        }
+    }
+
+    focus = {
+        id = modernize_infantry_kits
+        icon = GFX_focus_generic_infantry
+        x = -13
+        y = 4
+        cost = 10
+        prerequisite = { focus = expand_recruitment_drives }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = infantry_weapons
+            }
+        }
+    }
+
+    focus = {
+        id = automated_logistics
+        icon = GFX_focus_generic_industry
+        x = -13
+        y = 5
+        cost = 10
+        prerequisite = { focus = modernize_infantry_kits }
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = integrated_exoskeleton_support
+        icon = GFX_focus_generic_industry
+        x = -13
+        y = 6
+        cost = 10
+        prerequisite = { focus = automated_logistics }
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = adaptive_combat_armor
+        icon = GFX_focus_generic_industry
+        x = -15
+        y = 6
+        cost = 10
+        prerequisite = { focus = automated_logistics }
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = advanced_weapon_prototyping
+        icon = GFX_goal_unknown
+        x = -13
+        y = 8
+        cost = 10
+        prerequisite = { focus = adaptive_combat_armor }
+        prerequisite = { focus = integrated_exoskeleton_support }
+        prerequisite = { focus = bolster_the_army_engineer_corps }
+    }
+
+    focus = {
+        id = next_generation_armor
+        icon = GFX_focus_generic_tank
+        x = -4
+        y = 4
+        cost = 10
+        prerequisite = { focus = mechanized_force_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = tanks
+            }
+        }
+    }
+
+    focus = {
+        id = composite_armor_research
+        icon = GFX_focus_generic_tank
+        x = -4
+        y = 5
+        cost = 10
+        prerequisite = { focus = mechanized_force_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = tanks
+            }
+        }
+    }
+
+    focus = {
+        id = mobile_logistics_corps
+        icon = GFX_focus_generic_mechanized
+        relative_position_id = us_army
+        x = 1
+        y = 2
+        cost = 10
+        prerequisite = { focus = mechanized_force_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = logistics
+            }
+        }
+    }
+
+    focus = {
+        id = armored_military_police
+        icon = GFX_focus_generic_tank
+        relative_position_id = us_army
+        x = 1
+        y = 3
+        cost = 10
+        prerequisite = { focus = mobile_logistics_corps }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = military_police
+            }
+        }
+    }
+
+    focus = {
+        id = bolster_the_army_engineer_corps
+        icon = GFX_focus_generic_industry
+        relative_position_id = us_army
+        x = -1
+        y = 4
+        cost = 10
+        prerequisite = { focus = automated_logistics }
+        completion_reward = {
+            add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = heavy_recon_focus
+        icon = GFX_focus_generic_recon
+        relative_position_id = us_army
+        x = 3
+        y = 2
+        cost = 10
+        prerequisite = { focus = mechanized_force_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = recon
+            }
+        }
+    }
+
+    focus = {
+        id = main_battle_tanks
+        icon = GFX_focus_generic_tank
+        relative_position_id = us_army
+        x = 3
+        y = 4
+        cost = 10
+        prerequisite = { focus = heavy_recon_focus }
+        prerequisite = { focus = composite_armor_research }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = tanks
+            }
+        }
+    }
+
+    focus = {
+        id = advanced_gunnery
+        icon = GFX_focus_generic_artillery
+        relative_position_id = us_army
+        x = 2
+        y = 5
+        cost = 10
+        prerequisite = { focus = main_battle_tanks }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = artillery
+            }
+        }
+    }
+
+    focus = {
+        id = reactive_armor_systems
+        icon = GFX_focus_generic_artillery
+        relative_position_id = us_army
+        x = 4
+        y = 5
+        cost = 10
+        prerequisite = { focus = main_battle_tanks }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = artillery
+            }
+        }
+    }
+
+    focus = {
+        id = streamlined_tank_production
+        icon = GFX_focus_generic_industry
+        relative_position_id = us_army
+        x = 3
+        y = 6
+        cost = 10
+        prerequisite = { focus = reactive_armor_systems }
+        prerequisite = { focus = advanced_gunnery }
+        completion_reward = {
+            add_building_construction = {
+                type = military_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = the_army_of_tomorrow
+        icon = GFX_focus_generic_army
+        relative_position_id = us_army
+        x = 0
+        y = 7
+        cost = 10
+        prerequisite = { focus = advanced_weapon_prototyping }
+        prerequisite = { focus = streamlined_tank_production }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = land_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = us_navy
+        icon = GFX_focus_generic_navy
+        x = 25
+        y = 2
+        cost = 10
+        prerequisite = { focus = the_armed_forces }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = invigorate_shipbuilding_infrastructure
+        icon = GFX_focus_generic_industry
+        relative_position_id = us_navy
+        x = 0
+        y = 2
+        cost = 10
+        prerequisite = { focus = us_navy }
+        completion_reward = {
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = modern_naval_engineering
+        icon = GFX_focus_generic_industry
+        relative_position_id = us_navy
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = us_navy }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_engineering
+            }
+        }
+    }
+
+    focus = {
+        id = modernize_naval_training_protocols
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = -2
+        y = 2
+        cost = 10
+        prerequisite = { focus = us_navy }
+        completion_reward = {
+            add_experience = {
+                navy_experience = 50
+            }
+        }
+    }
+
+    focus = {
+        id = capital_ship_doctrine
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 6
+        y = 3
+        cost = 10
+        prerequisite = { focus = us_navy }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+        mutually_exclusive = {
+            focus = carrier_strike_doctrine
+        }
+    }
+
+    focus = {
+        id = carrier_strike_doctrine
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = -6
+        y = 3
+        cost = 10
+        prerequisite = { focus = us_navy }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = carrier_doctrine
+            }
+        }
+        mutually_exclusive = {
+            focus = capital_ship_doctrine
+        }
+    }
+
+    focus = {
+        id = naval_technological_superiority
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 0
+        y = 4
+        cost = 10
+        prerequisite = { focus = invigorate_shipbuilding_infrastructure }
+        prerequisite = { focus = modern_naval_engineering }
+        prerequisite = { focus = modernize_naval_training_protocols }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_technology
+            }
+        }
+    }
+
+    focus = {
+        id = fleet_command_protocols
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 7
+        y = 5
+        cost = 10
+        prerequisite = { focus = capital_ship_doctrine }
+        completion_reward = {
+            add_experience = {
+                navy_experience = 50
+            }
+        }
+    }
+
+    focus = {
+        id = strike_group_organization
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = -7
+        y = 5
+        cost = 10
+        prerequisite = { focus = carrier_strike_doctrine }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = deck_side_logistics
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = -5
+        y = 5
+        cost = 10
+        prerequisite = { focus = carrier_strike_doctrine }
+        completion_reward = {
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = floating_airfields 
+        icon = GFX_goal_unknown
+        relative_position_id = us_navy
+        x = -6
+        y = 7
+        cost = 10
+        prerequisite = {
+            focus = deck_side_logistics
+        }
+        prerequisite = {
+            focus = strike_group_organization
+        }
+    }
+
+    focus = {
+        id = missile_system_experiments
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = -2
+        y = 5
+        cost = 10
+        prerequisite = { focus = naval_technological_superiority }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = missile_technology
+            }
+        }
+    }
+
+    focus = {
+        id = stealth_tech_development
+        icon = GFX_goal_unknown
+        relative_position_id = us_navy
+        x = -3
+        y = 6
+        cost = 10
+        prerequisite = {
+            focus = naval_technological_superiority
+        }
+    }
+
+    focus = {
+        id = composite_hull_construction
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 2
+        y = 5
+        cost = 10
+        prerequisite = { focus = naval_technological_superiority }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_engineering
+            }
+        }
+    }
+
+    focus = {
+        id = command_the_waves
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 5
+        y = 5
+        cost = 10
+        prerequisite = { focus = capital_ship_doctrine }
+        completion_reward = {
+            add_experience = {
+                navy_experience = 100
+            }
+        }
+    }
+
+    focus = {
+        id = experimental_propulsion_methods
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 3
+        y = 6
+        cost = 10
+        prerequisite = { focus = naval_technological_superiority }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = propulsion_technology
+            }
+        }
+    }
+
+    focus = {
+        id = kinetic_battery_systems
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = { focus = naval_technological_superiority }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = naval_technology
+            }
+        }
+    }
+
+    focus = {
+        id = battlefleet_strategems
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 6
+        y = 7
+        cost = 10
+        prerequisite = { focus = command_the_waves }
+        prerequisite = { focus = fleet_command_protocols }
+        completion_reward = {
+            add_experience = {
+                navy_experience = 100
+            }
+        }
+    }
+
+    focus = {
+        id = global_naval_presence
+        icon = GFX_focus_generic_navy
+        relative_position_id = us_navy
+        x = 0
+        y = 8
+        cost = 10
+        prerequisite = { focus = battlefleet_strategems }
+        prerequisite = { focus = floating_airfields }
+        completion_reward = {
+            add_building_construction = {
+                type = naval_base
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = us_air_force
+        icon = GFX_focus_generic_air
+        x = 10
+        y = 2
+        cost = 10
+        prerequisite = { focus = the_armed_forces }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = air_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = aerial_dominance_initiative
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = 0
+        y = 2
+        cost = 10
+        prerequisite = { focus = us_air_force }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = air_doctrine
+            }
+        }
+    }
+
+    focus = {
+        id = ace_pilot_programs
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -1
+        y = 3
+        cost = 10
+        prerequisite = { focus = aerial_dominance_initiative }
+        completion_reward = {
+            add_experience = {
+                air_experience = 50
+            }
+        }
+    }
+
+    focus = {
+        id = airbase_expansion
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = 1
+        y = 3
+        cost = 10
+        prerequisite = { focus = aerial_dominance_initiative }
+        completion_reward = {
+            add_building_construction = {
+                type = air_base
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = standardize_aircraft_production
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = 0
+        y = 4
+        cost = 10
+        prerequisite = { focus = aerial_dominance_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = aircraft_production
+            }
+        }
+    }
+
+    focus = {
+        id = aviation_fuel_optimization
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -2
+        y = 4
+        cost = 10
+        prerequisite = { focus = advanced_fighter_jet_program }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = fuel_technology
+            }
+        }
+    }
+
+    focus = {
+        id = radar_development_program
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -2
+        y = 5
+        cost = 10
+        prerequisite = { focus = aviation_fuel_optimization }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = radar_technology
+            }
+        }
+    }
+
+    focus = {
+        id = the_air_superiority_concept
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = 1
+        y = 6
+        cost = 10
+        prerequisite = { focus = standardize_aircraft_production }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = air_superiority
+            }
+        }
+    }
+
+    focus = {
+        id = advanced_fighter_jet_program
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -4
+        y = 3
+        cost = 10
+        prerequisite = { focus = aerial_dominance_initiative }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = jet_technology
+            }
+        }
+    }
+
+    focus = {
+        id = dogfighting_expertise
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -4
+        y = 4
+        cost = 10
+        prerequisite = { focus = advanced_fighter_jet_program }
+        completion_reward = {
+            add_experience = {
+                air_experience = 50
+            }
+        }
+    }
+
+    focus = {
+        id = optimize_jet_engines
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -4
+        y = 5
+        cost = 10
+        prerequisite = { focus = dogfighting_expertise }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = jet_engine_technology
+            }
+        }
+    }
+
+    focus = {
+        id = advanced_air_to_air_combat_training
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -5
+        y = 6
+        cost = 10
+        prerequisite = { focus = optimize_jet_engines }
+        completion_reward = {
+            add_experience = {
+                air_experience = 100
+            }
+        }
+    }
+
+    focus = {
+        id = defensive_aerial_tactics
+        icon = GFX_focus_generic_air
+        relative_position_id = us_air_force
+        x = -3
+        y = 6
+        cost = 10
+        prerequisite = { focus = optimize_jet_engines }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = air_defense
+            }
+        }
+    }
+
+    focus = {
+        id = special_weapons_initiative
+        icon = GFX_focus_generic_nuclear
+        x = 40
+        y = 2
+        cost = 10
+        prerequisite = { focus = the_armed_forces }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = secret_weapons
+            }
+        }
+    }
+
+    focus = {
+        id = special_operations_service
+        icon = GFX_focus_generic_special_forces
+        x = 35
+        y = 2
+        cost = 10
+        prerequisite = { focus = the_armed_forces }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = special_forces
+            }
+        }
+    }
+
+    focus = {
+        id = from_the_sea
+        icon = GFX_focus_generic_marines
+        x = 33
+        y = 3
+        cost = 10
+        prerequisite = { focus = special_operations_service }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = marines
+            }
+        }
+        mutually_exclusive = {
+            focus = from_the_mountains
+            focus = from_the_skies
+        }
+    }
+
+    focus = {
+        id = from_the_mountains
+        icon = GFX_focus_generic_mountaineers
+        x = 35
+        y = 3
+        cost = 10
+        prerequisite = { focus = special_operations_service }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = mountaineers
+            }
+        }
+        mutually_exclusive ={
+            focus = from_the_sea
+            focus = from_the_skies
+        }
+    }
+
+    focus = {
+        id = from_the_skies
+        icon = GFX_focus_generic_paratroopers
+        x = 37
+        y = 3
+        cost = 10
+        prerequisite = { focus = special_operations_service }
+        completion_reward = {
+            add_technology_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = paratroopers
+            }
+        }
+        mutually_exclusive = {
+            focus = from_the_mountains
+            focus = from_the_sea
+        }
+    }
+
+    focus = {
+        id = a_republic_in_crisis
+        icon = GFX_goal_unknown
+        cost = 3
+        x = -70
+        y = 2
+    }
+
+    focus = {
+        id = the_56_election
+        icon = GFX_focus_generic_political
+        relative_position_id = a_republic_in_crisis
+        x = 0
+        y = 1
+        cost = 11
+        prerequisite = { focus = a_republic_in_crisis }
+        completion_reward = {
+            add_political_power = 100
+            custom_effect_tooltip = the_56_election_tt
+        }
+    }
+
+    focus = {
+        id = james_c_wallace
+        icon = GFX_goal_unknown
+        relative_position_id = a_republic_in_crisis
+        x = 20
+        y = 2
+        prerequisite = {
+            focus = the_56_election
+        }
+        
+    }
+
+    focus = {
+        id = reaffirm_national_values
+        icon = GFX_focus_generic_political
+        relative_position_id = a_republic_in_crisis
+        x = 0
+        y = 2
+        cost = 10
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = safeguard_americas_future
+        icon = GFX_focus_generic_political
+        relative_position_id = a_republic_in_crisis
+        x = 0
+        y = 3
+        cost = 10
+        completion_reward = {
+            add_war_support = 0.05
+        }
+    }
+
+    focus = {
+        id = project_safehouse
+        icon = GFX_focus_generic_nuclear
+        relative_position_id = a_republic_in_crisis
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = {
+            focus = safeguard_americas_future
+        }
+        completion_reward = {
+            add_building_construction = {
+                type = vault
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = the_corporations
+        icon = GFX_focus_generic_industry
+        relative_position_id = james_c_wallace
+        x = -10
+        y = 1
+        cost = 10
+        prerequisite = { focus = james_c_wallace }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = root_out_corporatism
+        icon = GFX_focus_generic_political
+        relative_position_id = the_corporations
+        x = -5
+        y = 1
+        cost = 10
+        prerequisite = { focus = the_corporations }
+        completion_reward = {
+            add_stability = 0.05
+        }
+        mutually_exclusive = {
+            focus = appease_the_industrial_giant
+        }
+    }
+
+    focus = {
+        id = appease_the_industrial_giant
+        icon = GFX_focus_generic_industry
+        relative_position_id = the_corporations
+        x = 5
+        y = 1
+        cost = 10
+        prerequisite = { focus = the_corporations }
+        completion_reward = {
+            add_building_construction = {
+                type = civilian_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+        mutually_exclusive = {
+            focus = root_out_corporatism
+        }
+    }
+
+    focus = {
+        id = the_corporate_accountability_act
+        icon = GFX_focus_generic_political
+        relative_position_id = root_out_corporatism
+        x = -3
+        y = 1
+        cost = 10
+        prerequisite = { focus = root_out_corporatism }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = investigate_corruption
+        icon = GFX_focus_generic_political
+        relative_position_id = root_out_corporatism
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = root_out_corporatism }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = balanced_tax_reform
+        icon = GFX_goal_unknown
+        relative_position_id = root_out_corporatism
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = root_out_corporatism
+        }
+    }
+
+    focus = {
+        id = ease_regulatory_burdens
+        icon = GFX_focus_generic_industry
+        relative_position_id = appease_the_industrial_giant
+        x = -3
+        y = 1
+        cost = 10
+        prerequisite = { focus = appease_the_industrial_giant }
+        completion_reward = {
+            add_building_construction = {
+                type = civilian_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = private_sector_partnerships
+        icon = GFX_focus_generic_industry
+        relative_position_id = appease_the_industrial_giant
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = appease_the_industrial_giant }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = privatize_public_assets
+        icon = GFX_goal_unknown
+        relative_position_id = appease_the_industrial_giant
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = { focus = appease_the_industrial_giant }
+    }
+
+    focus = {
+        id = snuff_out_lobbying
+        icon = GFX_focus_generic_political
+        relative_position_id = root_out_corporatism
+        x = -2
+        y = 2 
+        cost = 10
+        prerequisite = { focus = root_out_corporatism }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = fair_labor_standards_reform
+        icon = GFX_focus_generic_political
+        relative_position_id = root_out_corporatism
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = root_out_corporatism }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = corporate_advisory_council
+        icon = GFX_focus_generic_industry
+        relative_position_id = appease_the_industrial_giant
+        x = -2
+        y = 2
+        cost = 10
+        prerequisite = { focus = appease_the_industrial_giant }
+        completion_reward = {
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = corporate_representation_act
+        icon = GFX_focus_generic_political
+        relative_position_id = appease_the_industrial_giant
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = appease_the_industrial_giant }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = the_military
+        icon = GFX_goal_unknown
+        relative_position_id = james_c_wallace
+        x = 10
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = james_c_wallace
+        }
+    }
+
+    focus = {
+        id = rain_in_defense_spending 
+        icon = GFX_goal_unknown
+        relative_position_id = the_military
+        x = -5
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = the_military
+        }
+        mutually_exclusive = {
+            focus = feed_the_military_industrial_complex
+        }
+    }
+
+    focus = {
+        id = streamline_the_armed_forces
+        icon = GFX_goal_unknown
+        relative_position_id = rain_in_defense_spending
+        x = -3
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = rain_in_defense_spending
+        }
+    }
+
+    focus = {
+        id = audit_the_defense_budget 
+        icon = GFX_goal_unknown
+        relative_position_id = rain_in_defense_spending
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = rain_in_defense_spending
+        }
+    }
+
+    focus = {
+        id = reclaim_civilian_industry
+        icon = GFX_goal_unknown
+        relative_position_id = rain_in_defense_spending
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = {
+            focus = rain_in_defense_spending
+        }
+    }
+
+    focus = {
+        id = no_more_shadow_wars
+        icon = GFX_goal_unknown
+        relative_position_id = rain_in_defense_spending
+        x = 1
+        y = 2
+        cost = 10 
+        prerequisite = {
+            focus = rain_in_defense_spending
+        }
+    }
+
+    focus = {
+        id = end_emergency_spending
+        icon = GFX_goal_unknown
+        relative_position_id = rain_in_defense_spending
+        x = -1
+        y = 2
+        cost = 10
+        prerequisite = {
+            focus = rain_in_defense_spending
+        }
+    }
+
+    focus = {
+        id = feed_the_military_industrial_complex
+        icon = GFX_focus_generic_industry
+        relative_position_id = the_military
+        x = 5
+        y = 1
+        cost = 10
+        prerequisite = { focus = the_military }
+        mutually_exclusive = {
+            focus = rain_in_defense_spending
+        }
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+
+    focus = {
+        id = expand_defense_contracts
+        icon = GFX_focus_generic_industry
+        relative_position_id = feed_the_military_industrial_complex
+        x = -3
+        y = 1
+        cost = 10
+        prerequisite = { focus = feed_the_military_industrial_complex }
+        completion_reward = {
+            add_building_construction = {
+                type = military_factory
+                level = 1
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = exceptionalism_as_policy
+        icon = GFX_focus_generic_political
+        relative_position_id = feed_the_military_industrial_complex
+        x = -2
+        y = 2
+        cost = 10
+        prerequisite = { focus = feed_the_military_industrial_complex }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = rebuild_the_arsenal_of_democracy
+        icon = GFX_focus_generic_industry
+        relative_position_id = feed_the_military_industrial_complex
+        x = 0
+        y = 1
+        cost = 10
+        prerequisite = { focus = feed_the_military_industrial_complex }
+        completion_reward = {
+            add_building_construction = {
+                type = military_factory
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+
+    focus = {
+        id = glorify_the_american_way
+        icon = GFX_focus_generic_political
+        relative_position_id = feed_the_military_industrial_complex
+        x = 3
+        y = 1
+        cost = 10
+        prerequisite = { focus = feed_the_military_industrial_complex }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = american_might_global_peace
+        icon = GFX_focus_generic_political
+        relative_position_id = feed_the_military_industrial_complex
+        x = 2
+        y = 2
+        cost = 10
+        prerequisite = { focus = feed_the_military_industrial_complex}
+        completion_reward = {
+            add_war_support = 0.05
+        }
+    }
+}

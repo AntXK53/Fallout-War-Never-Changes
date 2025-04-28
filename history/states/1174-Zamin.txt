@@ -1,0 +1,24 @@
+
+state={
+	id=1174
+	name="STATE_1174"
+
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+		owner = SWR
+		add_core_of = AST
+		add_core_of = SWR
+
+	}
+
+	provinces={
+		1498 1511 1540 4645 5170 7579 7608 10971 12323 
+	}
+	manpower=44234
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

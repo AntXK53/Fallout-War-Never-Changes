@@ -1,0 +1,24 @@
+
+state={
+	id=1178
+	name="STATE_1178"
+
+	history={
+		buildings = {
+			infrastructure = 1
+
+		}
+		owner = NAS
+		add_core_of = AST
+		add_core_of = NAS
+
+	}
+
+	provinces={
+		2139 7481 
+	}
+	manpower=2219500
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,67 @@
+ideas = {
+	country = {
+
+		ERI_the_deal = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = TIG   
+				attack_bonus_against = -0.25
+			}
+		}
+	}
+	country = {
+
+		ERI_the_sea = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				trade_opinion_factor = 0.5
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				
+			}
+		}
+	}
+	country = {
+
+		ERI_independence = {
+			picture = 
+	
+			allowed = {
+				always = yes
+			}
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

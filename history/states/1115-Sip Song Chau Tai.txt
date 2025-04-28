@@ -1,0 +1,21 @@
+state={
+	id=1115
+	name="STATE_1115"
+
+	history={
+		add_core_of = VIN
+		owner = IND
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		4529 10075 10103 12075 12319 
+	}
+	manpower=110000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

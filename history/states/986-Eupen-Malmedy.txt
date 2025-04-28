@@ -1,0 +1,23 @@
+state={
+	id=986
+	name="STATE_986"
+
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = EUC
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		3488 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

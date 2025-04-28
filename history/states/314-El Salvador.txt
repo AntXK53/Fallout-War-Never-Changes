@@ -11,7 +11,7 @@ state=
 	
 	history=
 	{
-		owner = ELS
+		owner = NIC
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

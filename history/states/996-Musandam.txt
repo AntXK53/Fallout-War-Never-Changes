@@ -3,7 +3,8 @@ state={
 	name="STATE_996"
 
 	history={
-		owner = OMA
+		owner = UAR
+		add_core_of = UAR
 		victory_points = {
 			13446 1 
 		}

@@ -3,8 +3,8 @@ state={
 	name="STATE_665"
 
 	history={
-		owner = UAR
-		add_core_of = UAR
+		owner = MAG
+		add_core_of = MAG
 		add_core_of = TUN
 		victory_points = {
 			7005 1 

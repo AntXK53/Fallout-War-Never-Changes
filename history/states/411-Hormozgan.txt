@@ -10,7 +10,8 @@ state={
 	
 
 	history={
-		owner = PER
+		owner = UAR
+		add_core_of = UAR
 		buildings = {
 			infrastructure = 1
 		}

@@ -1,19 +1,21 @@
-﻿capital = 608 # IM JAHRE 1900...
+﻿capital = 459 # algiers
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 }
 
+set_convoys = 0
+
 set_politics = {
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	democratic = 0
-	fascism = 0
-	communism = 100
-	neutrality = 0
+	fascism = 25
+	communism = 0
+	neutrality = 75
 }

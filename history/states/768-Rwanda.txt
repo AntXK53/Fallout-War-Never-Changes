@@ -8,7 +8,8 @@ state={
 	}
 
 	history={
-		owner = KEN
+		owner = EAF
+		add_core_of = EAF
 		add_core_of = RWA
 		victory_points = {
 			9962 1

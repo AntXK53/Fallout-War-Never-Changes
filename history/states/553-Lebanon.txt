@@ -21,6 +21,7 @@ state={
 		}
 
 		add_core_of = UAR
+		add_core_of = LEB
 	}
 
 	provinces={

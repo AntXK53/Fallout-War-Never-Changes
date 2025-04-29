@@ -1,5 +1,14 @@
 music_station = "fallout_music_station"
 music = {
+	song = "IDontWantToSeeTomorrow"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
 	song = "AccentuateThePositive"
 	chance = {
 		factor = 0
@@ -235,15 +244,6 @@ music = {
 }
 music = {
 	song = "HesADemonHesADevilHesADoll"
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 100
-		}
-	}
-}
-music = {
-	song = "IDontWantToSeeTomorrow"
 	chance = {
 		factor = 0
 		modifier = {

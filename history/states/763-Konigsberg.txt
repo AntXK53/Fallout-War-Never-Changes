@@ -26,8 +26,7 @@ state={
 			}
 			air_base = 6
 		}
-		add_core_of = SOV
-		add_core_of = GER
+		add_core_of = SOV 
 		2900.1.1 = {
 			buildings = {
 				anti_air_building = 5

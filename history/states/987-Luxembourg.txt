@@ -16,13 +16,12 @@ state={
 
 		}
 		add_core_of = EUC
-		add_core_of = BEL
-		add_core_of = WLL
+		add_core_of = FRA
 
 	}
 
 	provinces={
-		9418 11407 
+		9418 11407 9444 6537 13435
 	}
 	manpower=1000300
 	buildings_max_level_factor=1.000

@@ -1,0 +1,61 @@
+﻿add_namespace = UAR
+
+country_event = {
+	id = UAR.1
+	title = UAR.1_title
+	desc = UAR.1_desc
+	picture = GFX_report_event_PRC_starting
+	
+	option = {
+		name = UAR.1.a
+		custom_override_tooltip = {
+			800 = {
+				if = {
+					limit = {800 = {is_owned_by = UAR} }
+					transfer_state_to = KUR
+				}
+			}
+			KUR = {
+				set_cosmetic_tag = KUR_WOI
+				declare_war_on = {
+					target = SYR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = IRQ
+					type = civil_war
+				}
+				declare_war_on = {
+					target = PER
+					type = civil_war
+				}
+				declare_war_on = {
+					target = TUR
+					type = civil_war
+				}
+				add_civil_war_target = IRQ
+				add_civil_war_target = SYR
+				add_civil_war_target = PER
+				add_civil_war_target = TUR
+			}
+			release_on_controlled = EGY
+			release_on_controlled = SAU
+			release_on_controlled = TUR
+			release_on_controlled = PER
+			release_on_controlled = OMA
+			release_on_controlled = YEM
+			release_on_controlled = IRQ
+			release_on_controlled = JOR
+			release_on_controlled = PAL
+			release_on_controlled = LEB
+			release_on_controlled = SYR
+			release_on_controlled = SUD
+			release_on_controlled = QAT
+			release_on_controlled = BHR
+			release_on_controlled = KUW
+			release_on_controlled = UAE
+			release_on_controlled = CYP
+			tooltip = aur_collapse_tt
+		}
+	}
+}

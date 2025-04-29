@@ -2967,3 +2967,9 @@
  BUL_balkan_ssr_ct_ADJ:0 "Balkan"
 
  ASU_NAP:0 "Libertas Australis"
+
+ KUR_WOI:0 "Kurdish Military Junta"
+ KUR_WOI_ADJ:0 "the Kurdish Military Junta"
+
+ BEL_rec:0 "Belgian Reclamation Government"
+ BEL_rec_ADJ:0 "the Belgian Reclamation Government"

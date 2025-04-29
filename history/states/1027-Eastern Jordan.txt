@@ -3,7 +3,8 @@ state={
 	name="STATE_1027"
 
 	history={
-		owner = RAD
+		owner = UAR
+		add_core_of = UAR
 		buildings = {
 			infrastructure = 2
 

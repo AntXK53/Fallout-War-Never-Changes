@@ -4,7 +4,8 @@ state={
 	name="STATE_273"
 
 	history={
-		owner = RAD
+		owner = MAG
+		add_core_of = MAG
 		buildings = {
 			infrastructure = 0
 

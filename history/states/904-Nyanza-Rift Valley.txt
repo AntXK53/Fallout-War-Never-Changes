@@ -4,7 +4,8 @@ state={
 	name="STATE_904"
 
 	history={
-		owner = KEN
+		owner = EAF
+		add_core_of = EAF
 		buildings = {
 			infrastructure = 1
 

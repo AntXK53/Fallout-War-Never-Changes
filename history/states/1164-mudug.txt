@@ -5,7 +5,8 @@ state={
 		1964 2020 4909 5065 10818 12840 12991 13525 13526 13521 13523
 	}
 	history={
-		owner = SOM
+		owner = EAF
+		add_core_of = EAF
 		buildings = {
 			infrastructure = 1
 

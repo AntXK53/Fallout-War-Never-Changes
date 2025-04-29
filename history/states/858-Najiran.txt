@@ -7,7 +7,8 @@ state={
 		victory_points = {
 			5006 1 
 		}
-		owner = RAD
+		owner = UAR
+		add_core_of = UAR
 		add_core_of = SAU
 
 	}

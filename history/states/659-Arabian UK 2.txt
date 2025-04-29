@@ -5,7 +5,8 @@ state={
 	manpower=871202
 
 	history={
-		owner = YEM
+		owner = UAR
+		add_core_of = UAR
 		victory_points = {
 			5074 1 
 		}

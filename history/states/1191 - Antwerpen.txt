@@ -1,0 +1,23 @@
+state={
+	id=1191
+	name="STATE_1191"
+	provinces={
+		6598 11419 13068 9574
+	}
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 1
+			6598 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = EUC
+		add_core_of = HOL
+		victory_points = { 6598 30 }
+		victory_points = { 13068 1 }
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

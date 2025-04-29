@@ -290,20 +290,180 @@ country_event = {
 
 country_event = {
 	id = euc.6
-	title = euc_6_title
-	desc = euc_6_desc
+	title = euc.6_title
+	desc = euc.6_desc
 	picture = GFX_report_event_PRC_starting
-
-	fire_only_once = yes
-
-	trigger = {
-	
-	}
 	
 	option = {
-		name = euc_6_a
-		EUC = {
-		
+		name = euc.6.a
+		custom_override_tooltip = {
+			52 = { add_core_of = BAY }
+			53 = { add_core_of = BAY }
+			54 = { add_core_of = BAY }
+			976	 = { add_core_of = BAY }
+			
+			34 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = BEL
+					add_core_of = BEL
+				}
+			}
+			39 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = AUS
+					add_core_of = AUS
+				}
+			}
+			1014 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = OCC
+					add_core_of = OCC
+					add_core_of = FRA
+				}
+			}
+			1015 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = AUS
+					add_core_of = ITA
+				}
+			}
+			1136 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = SPR
+				}
+			}
+			1137 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = SPR
+				}
+			}
+			987 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = BEL
+					add_core_of = BEL
+				}
+			}
+			8 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = BEL
+					add_core_of = BEL
+				}
+			}
+			986 = { add_core_of = BEL }
+			1191 = { add_core_of = BEL }
+			6 = { add_core_of = BEL }
+			1192 = { add_core_of = BEL }
+			BEL = { set_cosmetic_tag = BEL_rec }
+			release_on_controlled = BRI
+			release_on_controlled = OCC
+			release_on_controlled = FRA
+			release_on_controlled = BAY
+			release_on_controlled = GER
+			release_on_controlled = SPR
+			release_on_controlled = POR
+			release_on_controlled = ITA
+			release_on_controlled = HOL
+			GER = { set_capital = { state = 58 } }
+			OCC = {
+				declare_war_on = {
+					target = FRA
+				}
+				declare_war_on = {
+					target = BRI
+				}
+				add_civil_war_target = BRI
+				add_civil_war_target = FRA
+				set_capital = { state = 21 }
+			}
+			BEL = {
+				declare_war_on = {
+					target = FRA
+				}
+				declare_war_on = {
+					target = GER
+				}
+				declare_war_on = {
+					target = HOL
+				}
+				add_civil_war_target = HOL
+				add_civil_war_target = GER
+				add_civil_war_target = FRA
+			}
+			BRI = {
+				declare_war_on = {
+					target = FRA
+				}
+				add_civil_war_target = FRA
+			}
+			806 = {
+				if = {
+					limit = {is_owned_by = FRA}
+					transfer_state_to = OCC
+				}
+			}
+			998 = {
+				if = {
+					limit = {is_owned_by = FRA}
+					transfer_state_to = OCC
+				}
+			}
+			1014 = {
+				if = {
+					limit = {is_owned_by = FRA}
+					transfer_state_to = OCC
+				}
+			}
+			1013 = {
+				if = {
+					limit = {is_owned_by = EUC}
+					transfer_state_to = SPR
+				}
+			}
+			1 = {
+				if = {
+					limit = {is_owned_by = FRA}
+					transfer_state_to = COR
+				}
+			}
+			156 = {
+				if = {
+					limit = {is_owned_by = ITA}
+					transfer_state_to = SIT
+				}
+			}
+			117 = {
+				if = {
+					limit = {is_owned_by = ITA}
+					transfer_state_to = SIT
+				}
+			}
+			849 = {
+				if = {
+					limit = {is_owned_by = ITA}
+					transfer_state_to = SIT
+				}
+			}
+			115 = {
+				if = {
+					limit = {is_owned_by = ITA}
+					transfer_state_to = SIT
+				}
+			}
+			ITA = {
+				every_core_state = {
+					add_core_of = SIT
+				}
+			}
+
+			tooltip = euc_collapse_tt
 		}
 	}
 }

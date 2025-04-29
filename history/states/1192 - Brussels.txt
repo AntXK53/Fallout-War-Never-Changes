@@ -1,0 +1,20 @@
+state={
+	id=1192
+	name="STATE_1192"
+	provinces={
+		516
+	}
+	history={
+		owner = EUC
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = EUC
+
+		victory_points = { 516 30 }
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

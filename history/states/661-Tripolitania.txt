@@ -4,12 +4,12 @@ state={
 	name="STATE_661"
 
 	history={
-		owner = UAR
+		owner = MAG
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = UAR
+		add_core_of = MAG
 		add_core_of = LBA
 
 	}

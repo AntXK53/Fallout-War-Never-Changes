@@ -19,7 +19,6 @@ state={
 
 		}
 		add_core_of = POL
-		add_core_of = GER
 		add_core_of = SIL
 		2900.1.1 = {
 			buildings = {

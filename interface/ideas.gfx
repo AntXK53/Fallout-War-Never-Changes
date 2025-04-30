@@ -156,4 +156,10 @@ spriteTypes = {
 		name = "GFX_idea_LAT_us_military_equipment_idea"
 		texturefile = "gfx/interface/ideas/LAT_us_military_equipment_idea.dds"
 	}
+
+	### LITHUANIA ###
+	spriteType = {
+		name = "GFX_idea_LIT_claims_on_poland_idea"
+		texturefile = "gfx/interface/ideas/LIT_claims_on_poland_idea.dds"
+	}
 }

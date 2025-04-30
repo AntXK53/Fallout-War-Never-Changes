@@ -46,12 +46,12 @@ AUS = {
 	color_ui = rgb { 255 255 255 }
 }
 LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
+	color = rgb { 160 132 89 }
+	color_ui = rgb { 160 132 89 }
 }
 EST = {
-	color = rgb { 50 135 175 }
-	color_ui = rgb { 99 204 254 }
+	color = rgb { 64 107 137 }
+	color_ui = rgb { 64 107 137 }
 }
 LAT = {
 	color = rgb { 147 78 78 }

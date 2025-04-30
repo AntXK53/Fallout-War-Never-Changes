@@ -224,6 +224,12 @@ country_event = {
 				transfer_state = 11
 				transfer_state = 815
 				transfer_state = 784
+
+				add_state_claim = 96
+				add_state_claim = 95
+				add_state_claim = 985
+				add_state_claim = 981
+				add_state_claim = 97
 			}
 			# next
 			country_event = {

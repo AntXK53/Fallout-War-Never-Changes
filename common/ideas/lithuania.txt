@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		LIT_claims_on_poland_idea = {
+			removal_cost = -1
+
+			available = {
+				original_tag = LIT
+				OR = {
+					has_government = neutrality
+					has_government = fascism
+					has_government = military_dictatorship
+				}
+			}
+		
+			allowed = {
+				original_tag = LIT
+			}
+		
+			modifier = {
+				political_power_gain = -0.03
+				stability_factor = -0.08
+				war_support_factor = 0.14
+			}
+
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				breakthrough_bonus_against = 0.14
+			}
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

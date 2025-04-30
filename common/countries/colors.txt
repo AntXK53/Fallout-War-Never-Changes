@@ -129,6 +129,10 @@ AFG = {
 	color = rgb { 64 160 167 }
 	color_ui = rgb { 83 208 217 }
 }
+WST = {
+	color = rgb { 145 157 236 }
+	color_ui = rgb { 189 204 255 }
+}
 ARG = {
 	color = rgb { 145 157 236 }
 	color_ui = rgb { 189 204 255 }
@@ -338,7 +342,7 @@ PRC = {
 }
 
 IND = {
-	color = rgb { 178 34 60 }
+	color = rgb { 245 12 55 }
 	color_ui = rgb { 178 34 60 }
 }
 
@@ -986,26 +990,18 @@ UAR = {
 	color_ui = rgb { 211 141 42 }
 }
 EUC = {
-	color = rgb { 0 51 153 }
-	color_ui = rgb { 0 51 153 }
+	color = rgb { 46 74 198 }
+	color_ui = rgb { 46 74 198 }
 }
 UPA = {
 	color = rgb { 96 31 31 }
 	color_ui = rgb { 96 31 31 }
 }
-EAF = {
-	color = rgb { 57 117 145 }
-	color_ui = rgb { 57 117 145 }
+PDF = {
+	color = rgb { 237 28 36 }
+	color_ui = rgb { 237 28 36 }
 }
-MAG = {
-	color = rgb { 145 101 57 }
-	color_ui = rgb { 145 101 57 }
-}
-WST = {
-	color = rgb { 57 117 145 }
-	color_ui = rgb { 57 117 145 }
-}
-SIT = {
-	color = rgb { 115 31 31 }
-	color_ui = rgb { 115 31 31 }
+TBA = {
+	color = rgb { 203 201 188 }
+	color_ui = rgb { 203 201 188 }
 }

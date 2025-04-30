@@ -1,0 +1,20 @@
+state={
+	id=1193
+	name="STATE_1193"
+	provinces={
+		1082 10386 10486 12335 12464 12492
+	}
+	history={
+		owner = PDF
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = PDF
+
+		victory_points = { 10386 15 }
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

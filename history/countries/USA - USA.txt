@@ -110,19 +110,11 @@ add_ideas = {
 
 # DIPLOMACY
 set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
 	target = MEX
 	autonomous_state =  autonomy_puppet
 }
 set_autonomy = {
 	target = DOM
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = MAL
 	autonomous_state =  autonomy_puppet
 }
 set_autonomy = {
@@ -135,17 +127,5 @@ set_autonomy = {
 }
 set_autonomy = {
 	target = ICE
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = VIN
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = JAP
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = CHI
 	autonomous_state =  autonomy_puppet
 }

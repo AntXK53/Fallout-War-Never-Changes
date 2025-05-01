@@ -53,6 +53,13 @@ if = {
 	}
 }
 
+create_faction = ASEAN
+add_to_faction = MAL
+add_to_faction = VIN
+add_to_faction = PHI
+add_to_faction = PNG
+add_to_faction = BRM
+
 set_convoys = 25
 set_popularities = {
 	democratic = 10

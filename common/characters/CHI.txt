@@ -28,7 +28,22 @@ characters={
 			id=-1
 		}
 	}
-	
+
+	CHI_Lin_Chia-hao={
+		name="Lin_Chia-hao"
+		portraits={
+			civilian={
+				large=gfx/leaders/CHI/CHI_Lin_Chia-hao.png
+			}
+		}
+		country_leader={
+			ideology=National_Conservatism
+			traits={ anti_communist }
+			expire="2065.1.1"
+			id=-1
+		}
+	}
+
 	CHI_wang_jingwei={
 		name=CHI_wang_jingwei
 		portraits={

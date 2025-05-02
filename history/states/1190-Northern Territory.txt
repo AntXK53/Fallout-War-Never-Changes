@@ -1,8 +1,9 @@
 state={
 	id=1190
 	name="STATE_1190"
+	state_category = enclave
 	provinces={
-		12915 8237 13132 8237 11013 12992 2223 12936 10979
+		12915 13132 8237 11013 12992 2223 12936 10979
 	}
 	history={
 		owner = CTA

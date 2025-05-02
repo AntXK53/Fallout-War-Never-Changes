@@ -1,4 +1,4 @@
-﻿capital = 784
+﻿capital = 11
 
 oob = "LIT_1936"
 if = {
@@ -15,7 +15,7 @@ if = {
 set_research_slots = 2
 
 add_ideas = {
-	LIT_claims_on_poland_idea 
+	
 }
 
 set_technology = {
@@ -25,8 +25,6 @@ set_technology = {
 	gw_artillery = 1
 	tech_support = 1
 }
-
-recruit_character = LIT_rimas_opcikas
 
 set_convoys = 10
 

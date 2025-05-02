@@ -1,14 +1,8 @@
-﻿l_english:
- INS_HOL_democratic:0 "Dutch East Indies"
- INS_HOL_democratic_DEF:0 "the Dutch East Indies"
- INS_subject:0 "$OVERLORDADJ$ East Indies"
- INS_subject_DEF:0 "the $OVERLORDADJ$ East Indies"
+﻿l_english:=
  COG_subject:0 "$OVERLORDADJ$ Congo"
  MAL_subject:0 "$OVERLORDADJ$ Malaya"
  LBA_subject:0 "$OVERLORDADJ$ North Africa"
  SAU_subject:0 "$OVERLORDADJ$ Central Arabia"
- MAL_UK_democratic:0 "British Malaya"
- MAL_UK_democratic_DEF:0 "British Malaya"
  BRM_british_democratic:0 "British Burma"
  BRM_british_democratic_DEF:0 "British Burma"
  BRM_british_democratic_ADJ:0 "Burmese"

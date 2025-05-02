@@ -32,7 +32,10 @@ recruit_character = MOL_communist_guy
 recruit_character = MOL_ai2
 recruit_character = MOL_ar
 
-add_ideas = MOL_legacy_of_lenins_revolution
+add_ideas = {
+	MOL_legacy_of_lenins_revolution
+	#MOL_radiocenter_mayak_idea
+}
 
 add_ai_strategy = {
 	type = antagonize

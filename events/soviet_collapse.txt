@@ -95,6 +95,7 @@ country_event = {
 			# MOL
 			MOL = {
 				transfer_state = 78
+				transfer_state = 834
 			}
 			# next country
 			country_event = {

@@ -213,6 +213,9 @@ if = {
 	}
 }
 
+add_ideas = {
+	#MOL_radiocenter_mayak_idea
+}
 
 set_politics = {
 	ruling_party = communism

@@ -7,6 +7,12 @@ on_actions = {
 					days = 558
 				}
 			}
+			# mayak #
+			random_country = {
+				limit = { controls_state = 834 }
+				add_ideas = MOL_radiocenter_mayak_idea
+			}
+			#########
 		}
 	}
 	on_civil_war_end = {
@@ -97,6 +103,22 @@ on_actions = {
 					white_peace = ROM
 				}
 				clr_global_flag = romanian_democratic_now_gf
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = { state = 834 }
+				}
+				if =  {
+					limit = {
+						ROOT = { controls_state = 834 }
+					}
+					FROM = { remove_ideas = MOL_radiocenter_mayak_idea }
+					ROOT = { add_ideas = MOL_radiocenter_mayak_idea }
+				}
 			}
 		}
 	}

@@ -11,4 +11,8 @@ spriteTypes = {
         name = "GFX_ideology_ROM_reformist_communism"
         texturefile = "gfx/interface/ideologies/ROM_communism_group.dds"
     }
+    spriteType = {
+        name = "GFX_ideology_MOL_National_Communism"
+        texturefile = "gfx/interface/ideologies/MOL_National_Communism.dds"
+    }
 }

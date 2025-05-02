@@ -29,5 +29,25 @@ ideas = {
 				defense_bonus_against = 0.25
 			}
 		}
+		MOL_radiocenter_mayak_idea = {
+			removal_cost = -1
+			available = {
+				controls_state = 834
+			}
+		
+			allowed = {
+				always = yes
+				#original_tag = MOL
+			}
+
+			modifier = {
+				custom_modifier_tooltip = MOL_radiocenter_mayak_idea_tt
+				stability_factor = 0.1
+				war_support_factor = 0.02
+				supply_factor = 0.2
+				attrition = -0.3
+				local_building_slots = 1
+			}
+		}
 	}
 }

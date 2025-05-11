@@ -5,6 +5,8 @@ country_event = {
 	title = UAR.1_title
 	desc = UAR.1_desc
 	picture = GFX_report_event_PRC_starting
+    
+    is_triggered_only = yes
 	
 	option = {
 		name = UAR.1.a

@@ -293,6 +293,8 @@ country_event = {
 	title = euc.6_title
 	desc = euc.6_desc
 	picture = GFX_report_event_PRC_starting
+    
+    is_triggered_only = yes
 	
 	option = {
 		name = euc.6.a

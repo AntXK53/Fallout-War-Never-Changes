@@ -1153,16 +1153,22 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 		}
 	}
 }
- DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {
+DIPLOMACY_TAKE_OVER_FACTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_take_over_faction
-				option = BLOCKED
-			}
+			has_global_flag = NJF_no_allow_take_over_faction
 		}
 		custom_trigger_tooltip = {
-			tooltip = RULE_ASSUME_LEADERSHIP_BLOCKED_TOOLTIP
+			tooltip = RULE_ALLOW_TAKE_OVER_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BLOCKED_AI_TOOLTIP
 			always = no
 		}
 	}
@@ -1170,13 +1176,19 @@ DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
 DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {
 	if = {
 		limit = {
-			has_game_rule = {
-				rule = allow_kick_faction
-				option = BLOCKED
-			}
+			has_global_flag = NJF_no_allow_kick_faction
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_KICK_FROM_FACTION_BLOCKED_TOOLTIP
+			always = no
+		}
+	}
+	if = {
+		limit = {
+			is_ai = yes
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_BLOCKED_AI_TOOLTIP
 			always = no
 		}
 	}

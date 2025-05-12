@@ -1,4 +1,4 @@
-﻿capital = 1191 
+﻿capital = 1193
 
 # Starting tech
 set_technology = {
@@ -8,6 +8,7 @@ set_technology = {
 }
 
 set_convoys = 5
+oob = "PDF_2056"
 
 set_politics = {
 	ruling_party = communism

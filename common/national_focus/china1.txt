@@ -8,8 +8,30 @@ focus_tree = {
 			tag = PRC
 		}
 	}
-	#Allow Businesses to Fail
 
+	# Lost ASEAN War
+	focus = {
+		id = PRC_ASEAN_Victory
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		search_filters = {
+			
+						FOCUS_FILTER_INDUSTRY
+					
+		}
+	}
+	# Won ASEAN War
+	focus = {
+		id = PRC_ASEAN_Lost
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+    available = {
+		always = false
+		}
+	}
+	#Allow Businesses to Fail
 	focus = {
 		id = PRC_allowbusinessestofail
 		icon = GFX_goal_unknown
@@ -86,7 +108,6 @@ focus_tree = {
 	}
 
 	#Band-Aids for the Crisis
-
 	focus = {
 		id = PRC_bandaidsforthecrisis
 		icon = GFX_goal_unknown
@@ -135,16 +156,6 @@ focus_tree = {
 		prerequisite = { focus = PRC_seeksovietbailouts  }
 	}
 
-	#The Chairman Is Dead
-	focus = {
-		id = PRC_the_chairman_is_dead
-		icon = GFX_goal_unknown
-		x = 8
-		y = 9
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
 
 	#Invest in the winners
 
@@ -167,37 +178,6 @@ focus_tree = {
 						
 		}
 		prerequisite = { focus = PRC_allowbusinessestofail  }
-	}
-
-	#The Second Great Leap Forward
-	focus = {
-		id = PRC_the_second_great_leap_forward
-		icon = GFX_goal_unknown
-		x = 4
-		y = 10
-		cost = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = PRC_the_chairman_is_dead  }
-		completion_reward = {
-			
-									       	random_owned_state = {
-												add_extra_state_shared_building_slots = 2
-												add_building_construction = {
-									            type = arms_factory
-												level = 2
-									        		}
-									        	}	
-									        random_owned_state = {
-												add_extra_state_shared_building_slots = 2
-												add_building_construction = {
-									            type = arms_factory
-												level = 2
-									        		}	
-									        	}
-					
-		}
 	}
 
 	#Soldiers in factories
@@ -267,13 +247,10 @@ focus_tree = {
 				add_idea = { China1_resource_crisis_Reform3 }
 				}
 			}
-			if = {
-				limit = 
-			}
 		}
 	}
 
-	#Import from Soviet Market
+	# Import from Soviet Market
 	focus = {
 		id = PRC_import_from_soviet_market
 		icon = GFX_goal_unknown
@@ -285,5 +262,427 @@ focus_tree = {
 		}
 		prerequisite = { focus = PRC_allowsovietbusinesses  }
 	}
+	# ASEAN Has Gone TO Far
+	focus = {
+		id = PRC_ASEAN_Gone_To_Far
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = {  }
+	}
+	# Prepare Economy For War
+	focus = {
+		id = PRC_ASEAN_Prepare_Economy
+		icon = GFX_goal_unknown
+		x = 18
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Gone_To_Far }
+	}
+	# Short Term Tax Increase
+	focus = {
+		id = PRC_ASEAN_Tax_Increase
+		icon = GFX_goal_unknown
+		x = 18
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Prepare_Economy }
+	}
+	# Prepare for war Against ASEAN
+	focus = {
+		id = PRC_ASEAN_Prepare_For_War
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Gone_To_Far }
+	}
+	# Free Mili
+	focus = {
+		id = PRC_ASEAN_Mil_Fac
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Prepare_For_War }
+	}
+	# Prepare To Secure The Straight
+	focus = {
+		id = PRC_ASEAN_Secure_The_Straight
+		icon = GFX_goal_unknown
+		x = 20
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Gone_To_Far }
+	}
+	# Research Into Carriers
+	focus = {
+		id = PRC_ASEAN_Carrier_Adv
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Secure_The_Straight }
+	}
+	# Free Dockyards
+	focus = {
+		id = PRC_ASEAN_More_Docks
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Carrier_Adv }
+	}
+	# Expand Import Tarrifs On Asean
+	focus = {
+		id = PRC_ASEAN_Import_Tarrifs
+		icon = GFX_goal_unknown
+		x = 20
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Secure_The_Straight }
+	}
+	# Prepare Naval Blocade
+	focus = {
+		id = PRC_ASEAN_Prepare_Naval_Blocade
+		icon = GFX_goal_unknown
+		x = 20
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Import_Tarrifs }
+	}
+	# Military Execise Around Taiwan
+	focus = {
+		id = PRC_ASEAN_Execise_Around_Taiwan
+		icon = GFX_goal_unknown
+		x = 19
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Prepare_Naval_Blocade }
+	}
+	# prepare Costal Infrastructure
+	focus = {
+		id = PRC_ASEAN_Costal_Infrastructure
+		icon = GFX_goal_unknown
+		x = 21
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Prepare_Naval_Blocade }
+	}
+	# Use Our Southern Contact
+	focus = {
+		id = PRC_ASEAN_Southern_Contacts
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Prepare_For_War }
+	}
+	# Coup Timor
+	focus = {
+		id = PRC_ASEAN_Timor_Coup
+		icon = GFX_goal_unknown
+		x = 17
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		mutually_exclusive = { focus = PRC_ASEAN_Vietnam_Raids }
+		prerequisite = { focus = PRC_ASEAN_Southern_Contacts }
+	}
+	# Prepare the Interm
+	focus = {
+		id = PRC_ASEAN_Prepare_Interm
+		icon = GFX_goal_unknown
+		x = 17
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Timor_Coup }
+	}
+	# Intensify Raids Against Vietnam
+	focus = {
+		id = PRC_ASEAN_Vietnam_Raids
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		mutually_exclusive = { focus = PRC_ASEAN_Timor_Coup  }
+		prerequisite = { focus = PRC_ASEAN_Southern_Contacts }
+	}
+	# Second Malay Emergency
+	focus = {
+		id = PRC_ASEAN_Second_Emergency
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_ASEAN_Vietnam_Raids }
+	}
+	# The Sick Socialist Economy
+	focus = {
+		id = PRC_Sick_Economy
+		icon = GFX_goal_unknown
+		x = 30
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = {  }
+	}
+	# Talks with Peoples Republic Of Australia
+	focus = {
+		id = PRC_Talk_With_PRA
+		icon = GFX_goal_unknown
+		x = 30
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Sick_Economy  }
+	}
+	# Uranium Focused Trade
+	focus = {
+		id = PRC_Uranium_First
+		icon = GFX_goal_unknown
+		x = 29
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		mutually_exclusive { focus = PRC_Pine_Gap_Reownership }
+		prerequisite = { focus = PRC_Talk_With_PRA }
+	}
+	# Renegotiate Resource Agreements
+	focus = {
+		id = PRC_Renegotiate_Resource
+		icon = GFX_goal_unknown
+		x = 29
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Uranium_First }
+	}
+	# Renegotiate Resource Agreements
+	focus = {
+		id = PRC_More_Then_Uranium
+		icon = GFX_goal_unknown
+		x = 29
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Renegotiate_Resource }
+	}
+	# Intelligence Based 
+	focus = {
+		id = PRC_Pine_Gap_Reownership
+		icon = GFX_goal_unknown
+		x = 31
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		mutually_exclusive { focus = PRC_Uranium_First }
+		prerequisite = { focus = PRC_Talk_With_PRA }
+	}
+	# Develop Alice Springs
+	focus = {
+		id = PRC_Develop_Alice_Springs
+		icon = GFX_goal_unknown
+		x = 31
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Talk_With_PRA }
+	}
+	# Develop Alice Springs
+	focus = {
+		id = PRC_Steal_American_Intelligence
+		icon = GFX_goal_unknown
+		x = 31
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Develop_Alice_Springs }
+	}
+	# The Peoples New Duty
+	focus = {
+		id = PRC_Peoples_New_Duty
+		icon = GFX_goal_unknown
+		x = 35
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Sick_Economy  }
+	}
+	# New Electric Programs
+	focus = {
+		id = PRC_Electric_Public
+		icon = GFX_goal_unknown
+		x = 34
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Peoples_New_Duty }
+	}
+	# New Electric Ships
+	focus = {
+		id = PRC_Develop_Nuclear_Frat
+		icon = GFX_goal_unknown
+		x = 34
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Electric_Public }
+	}
+	# Reduce Fuel In Mining
+	focus = {
+		id = PRC_Fuelless_Mining
+		icon = GFX_goal_unknown
+		x = 34
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Develop_Nuclear_Frat }
+	}
+	# Oil Taxes
+	focus = {
+		id = PRC_Oil_Tax
+		icon = GFX_goal_unknown
+		x = 37
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Peoples_New_Duty }
+	}
+	focus = {
+		id = PRC_Civilian_Quota
+		icon = GFX_goal_unknown
+		x = 38
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Oil_Tax }
+		mutually_exclusive { focus = PRC_Military_Quota }
 
+	}
+	focus = {
+		id = PRC_New_Age_Eff_Campaign
+		icon = GFX_goal_unknown
+		x = 38
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Civilian_Quota }
+	}
+	# Military Quota
+	focus = {
+		id = PRC_Military_Quota
+		icon = GFX_goal_unknown
+		x = 36
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Oil_Tax }
+		mutually_exclusive { focus = PRC_Civilian_Quota }
+	}
+	focus = {
+		id = PRC_Fuelless_Army_Initative
+		icon = GFX_goal_unknown
+		x = 36
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Military_Quota }
+	}
+	focus = {
+		id = PRC_Peoples_Army_Ready
+		icon = GFX_goal_unknown
+		x = 35
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Fuelless_Mining }
+	}
 }

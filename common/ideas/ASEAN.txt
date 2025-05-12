@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		AST_climate_disaster = {
+			
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+
+			picture = AST_climate_disaster
+			
+			modifier = {
+			}
+		}
+	}
+}

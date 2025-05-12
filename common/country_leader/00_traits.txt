@@ -14,6 +14,23 @@
 
 leader_traits = {
 
+	anti_enclave = {
+		random = no
+		political_power_gain = -1
+		USA_enclave_balance = {
+			power_balance_weekly = -0.02
+		}
+	}
+
+	enclave_supporter = {
+		random = no
+		political_power_gain = 1
+		USA_enclave_balance = {
+			power_balance_weekly = 0.02
+		}
+	}
+
+
 	dictator = {
 		random = no
 		political_power_factor = 0.25

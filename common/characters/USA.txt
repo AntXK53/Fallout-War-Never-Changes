@@ -1,4 +1,32 @@
 characters={
+	USA_james_c_wallace = {
+		name = "James C Wallace"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/portrait_james_c_wallace.png
+			}
+		}
+		country_leader = {
+			ideology = Neo_Liberalism
+			traits = { anti_enclave }
+			id = -1
+		}
+	}
+
+	USA_john_granite = {
+		name = "John Granite"
+		portraits = {
+			civilian = {
+				large = gfx/leaders/USA/portrait_john_granite.png
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { enclave_supporter }
+			id = -1
+		}
+	}
+
 	USA_franklin_delano_roosevelt={
 		name="Richard Garfield"
 		portraits={

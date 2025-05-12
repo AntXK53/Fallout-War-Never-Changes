@@ -130,7 +130,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				fuel_gain_factor = -0.9 #just what the file says cant blame me
+				fuel_gain_factor = -0.9 ##just what the file says cant blame me
 			}
 		}
 
@@ -152,6 +152,19 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.02
 				consumer_goods_factor = 0.15
+			}
+		}
+
+		state_commonwealths = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_stability = -0.02
+				war_support_weekly = -0.05
+				communism_drift = -0.1
+				party_popularity_stability_factor = 0.05
 			}
 		}
 	}

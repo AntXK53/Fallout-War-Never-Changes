@@ -1,6 +1,10 @@
 focus_tree = {
     id = usa_focus
 
+    @cabinet_time_tier_3 = 20
+    @cabinet_time_tier_4 = 40
+
+
     country = {
         factor = 0
         modifier = {
@@ -10,10 +14,15 @@ focus_tree = {
     }
 
     default = no
-    continuous_focus_position = { x = 4000 y = 500 }
+    continuous_focus_position = { x = 1670 y = 3000 }
+    inlay_window = {
+    id = usa_presidents_cabinet_inlay_window
+    position = { x = 6000 y = 1500 }
+    }
+
 
     focus = {
-        id = the_armed_forces
+        id = USA_the_armed_forces
         icon = GFX_focus_generic_army
         x = 10
         y = 0
@@ -30,64 +39,88 @@ focus_tree = {
     }
 
     focus = {
-        id = us_army
-        icon = GFX_focus_generic_army
+        id = USA_us_army
+        icon = GFX_usa_army
         x = -10
         y = 2
         cost = 10
-        prerequisite = { focus = the_armed_forces }
+        prerequisite = { focus = USA_the_armed_forces }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = land_doctrine
+            army_experience = 100
+        }
+    }
+
+    focus = {
+        id = USA_expand_recruitment_drives
+        icon = GFX_focus_generic_recruitment
+        x = -13
+        y = 3
+        cost = 10
+        prerequisite = { focus = USA_us_army }
+        completion_reward = {
+            add_manpower = 500000
+            monthly_population = -0.05
+            stability_weekly = -0.1
+        }
+    }
+
+    focus = {
+        id = USA_enforce_the_anchorage_line
+        icon = GFX_focus_generic_recruitment
+        x = -15
+        y = 4
+        cost = 10
+        prerequisite = { focus = USA_expand_recruitment_drives }
+        completion_reward = {
+            army_core_defence_factor = 0.35
+            max_dig_in_factor = 0.2
+            acclimatization_cold_climate_gain_factor = 0.1
+
+            1158 = {
+	            add_building_construction = {
+    		        type = bunker
+        	        province = 13504
+		            level = 1
+	                } 
+                }
+            1158 = {
+                add_building_construction = {
+                    type = bunker
+                    province = 13091
+                    level = 1
+                    } 
+                }
+            1158 = {
+                add_building_construction = {
+                    type = bunker
+                    province = 13503
+                    level = 1
+                }
             }
         }
     }
 
     focus = {
-        id = expand_recruitment_drives
-        icon = GFX_focus_generic_recruitment
-        x = -13
-        y = 3
-        cost = 10
-        prerequisite = { focus = us_army }
-        completion_reward = {
-            add_manpower = 500000
-        }
-    }
-
-    focus = {
-        id = enforce_the_anchorage_line
-        icon = GFX_focus_generic_recruitment
-        x = -15
-        y = 4
-        cost = 10
-        prerequisite = { focus = expand_recruitment_drives }
-        completion_reward = {
-            add_manpower = 500000
-        }
-    }
-
-    focus = {
-        id = enact_the_draft
+        id = USA_enact_the_draft
         icon = GFX_focus_generic_recruitment
         x = -15
         y = 5
         cost = 10
-        prerequisite = { focus = enforce_the_anchorage_line }
+        prerequisite = { focus = USA_enforce_the_anchorage_line }
         completion_reward = {
-            add_manpower = 500000
+            weekly_manpower = 5000
+            add_war_support = -0.05
+            add_stability = -0.1
         }
     }
 
     focus = {
-        id = mechanized_force_initiative
+        id = USA_mechanized_force_initiative
         icon = GFX_focus_generic_mechanized
         x = -9
         y = 3
         cost = 10
-        prerequisite = { focus = us_army }
+        prerequisite = { focus = USA_us_army }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -98,12 +131,12 @@ focus_tree = {
     }
 
     focus = {
-        id = modernize_infantry_kits
+        id = USA_modernize_infantry_kits
         icon = GFX_focus_generic_infantry
         x = -13
         y = 4
         cost = 10
-        prerequisite = { focus = expand_recruitment_drives }
+        prerequisite = { focus = USA_expand_recruitment_drives }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -114,71 +147,63 @@ focus_tree = {
     }
 
     focus = {
-        id = automated_logistics
+        id = USA_automated_logistics
         icon = GFX_focus_generic_industry
         x = -13
         y = 5
         cost = 10
-        prerequisite = { focus = modernize_infantry_kits }
+        prerequisite = { focus = USA_modernize_infantry_kits }
         completion_reward = {
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes
-            }
+            supply_factor = 0.1
+            out_of_supply_factor = -0.1
+            add_war_support = -0.05
         }
     }
 
     focus = {
-        id = integrated_exoskeleton_support
+        id = USA_integrated_exoskeleton_support
         icon = GFX_focus_generic_industry
         x = -13
         y = 6
         cost = 10
-        prerequisite = { focus = automated_logistics }
+        prerequisite = { focus = USA_automated_logistics }
         completion_reward = {
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes
-            }
+            army_defence_factor = 0.1
+            army_attack_factor = 0.15
         }
     }
 
     focus = {
-        id = adaptive_combat_armor
+        id = USA_adaptive_combat_armor
         icon = GFX_focus_generic_industry
         x = -15
         y = 6
         cost = 10
-        prerequisite = { focus = automated_logistics }
+        prerequisite = { focus = USA_automated_logistics }
         completion_reward = {
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes
-            }
+            army_armor_defence_factor = 0.1
+            army_armor_attack_factor = 0.1
         }
     }
 
     focus = {
-        id = advanced_weapon_prototyping
+        id = USA_advanced_weapon_prototyping
         icon = GFX_goal_unknown
         x = -13
         y = 8
         cost = 10
-        prerequisite = { focus = adaptive_combat_armor }
-        prerequisite = { focus = integrated_exoskeleton_support }
-        prerequisite = { focus = bolster_the_army_engineer_corps }
+        prerequisite = { focus = USA_adaptive_combat_armor }
+        prerequisite = { focus = USA_integrated_exoskeleton_support }
+        prerequisite = { focus = USA_bolster_the_army_engineer_corps }
     }
 
     focus = {
-        id = next_generation_armor
+        id = USA_next_generation_armor
         icon = GFX_focus_generic_tank
         x = -4
         y = 4
         cost = 10
-        prerequisite = { focus = mechanized_force_initiative }
+        prerequisite = { focus = USA_mechanized_force_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -189,12 +214,12 @@ focus_tree = {
     }
 
     focus = {
-        id = composite_armor_research
+        id = USA_composite_armor_research
         icon = GFX_focus_generic_tank
         x = -4
         y = 5
         cost = 10
-        prerequisite = { focus = mechanized_force_initiative }
+        prerequisite = { focus = USA_mechanized_force_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -205,13 +230,13 @@ focus_tree = {
     }
 
     focus = {
-        id = mobile_logistics_corps
+        id = USA_mobile_logistics_corps
         icon = GFX_focus_generic_mechanized
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 1
         y = 2
         cost = 10
-        prerequisite = { focus = mechanized_force_initiative }
+        prerequisite = { focus = USA_mechanized_force_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -222,13 +247,13 @@ focus_tree = {
     }
 
     focus = {
-        id = armored_military_police
+        id = USA_armored_military_police
         icon = GFX_focus_generic_tank
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 1
         y = 3
         cost = 10
-        prerequisite = { focus = mobile_logistics_corps }
+        prerequisite = { focus = USA_mobile_logistics_corps }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -239,30 +264,26 @@ focus_tree = {
     }
 
     focus = {
-        id = bolster_the_army_engineer_corps
+        id = USA_bolster_the_army_engineer_corps
         icon = GFX_focus_generic_industry
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = -1
         y = 4
         cost = 10
-        prerequisite = { focus = automated_logistics }
+        prerequisite = { focus = USA_automated_logistics }
         completion_reward = {
-            add_building_construction = {
-                type = infrastructure
-                level = 1
-                instant_build = yes
-            }
+
         }
     }
 
     focus = {
-        id = heavy_recon_focus
+        id = USA_heavy_recon_focus
         icon = GFX_focus_generic_recon
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 3
         y = 2
         cost = 10
-        prerequisite = { focus = mechanized_force_initiative }
+        prerequisite = { focus = USA_mechanized_force_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -273,14 +294,14 @@ focus_tree = {
     }
 
     focus = {
-        id = main_battle_tanks
+        id = USA_main_battle_tanks
         icon = GFX_focus_generic_tank
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 3
         y = 4
         cost = 10
-        prerequisite = { focus = heavy_recon_focus }
-        prerequisite = { focus = composite_armor_research }
+        prerequisite = { focus = USA_heavy_recon_focus }
+        prerequisite = { focus = USA_composite_armor_research }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -291,13 +312,13 @@ focus_tree = {
     }
 
     focus = {
-        id = advanced_gunnery
+        id = USA_advanced_gunnery
         icon = GFX_focus_generic_artillery
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 2
         y = 5
         cost = 10
-        prerequisite = { focus = main_battle_tanks }
+        prerequisite = { focus = USA_main_battle_tanks }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -308,13 +329,13 @@ focus_tree = {
     }
 
     focus = {
-        id = reactive_armor_systems
+        id = USA_reactive_armor_systems
         icon = GFX_focus_generic_artillery
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 4
         y = 5
         cost = 10
-        prerequisite = { focus = main_battle_tanks }
+        prerequisite = { focus = USA_main_battle_tanks }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -325,14 +346,14 @@ focus_tree = {
     }
 
     focus = {
-        id = streamlined_tank_production
+        id = USA_streamlined_tank_production
         icon = GFX_focus_generic_industry
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 3
         y = 6
         cost = 10
-        prerequisite = { focus = reactive_armor_systems }
-        prerequisite = { focus = advanced_gunnery }
+        prerequisite = { focus = USA_reactive_armor_systems }
+        prerequisite = { focus = USA_advanced_gunnery }
         completion_reward = {
             add_building_construction = {
                 type = military_factory
@@ -343,64 +364,65 @@ focus_tree = {
     }
 
     focus = {
-        id = the_army_of_tomorrow
+        id = USA_the_army_of_tomorrow
         icon = GFX_focus_generic_army
-        relative_position_id = us_army
+        relative_position_id = USA_us_army
         x = 0
         y = 7
         cost = 10
-        prerequisite = { focus = advanced_weapon_prototyping }
-        prerequisite = { focus = streamlined_tank_production }
+        prerequisite = { focus = USA_advanced_weapon_prototyping }
+        prerequisite = { focus = USA_streamlined_tank_production }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = land_doctrine
-            }
+            army_experience = 70
         }
     }
 
     focus = {
-        id = us_navy
-        icon = GFX_focus_generic_navy
+        id = USA_us_navy
+        icon = GFX_usa_navy
         x = 25
         y = 2
         cost = 10
-        prerequisite = { focus = the_armed_forces }
+        prerequisite = { focus = USA_the_armed_forces }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = naval_doctrine
-            }
+            navy_experience = 100
         }
     }
 
     focus = {
-        id = invigorate_shipbuilding_infrastructure
+        id = USA_invigorate_shipbuilding_infrastructure
         icon = GFX_focus_generic_industry
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 0
         y = 2
         cost = 10
-        prerequisite = { focus = us_navy }
+        prerequisite = { focus = USA_us_navy }
         completion_reward = {
-            add_building_construction = {
-                type = dockyard
-                level = 2
-                instant_build = yes
+            385 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            1118 = {
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+                }
             }
         }
     }
 
     focus = {
-        id = modern_naval_engineering
+        id = USA_modern_naval_engineering
         icon = GFX_focus_generic_industry
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 2
         y = 2
         cost = 10
-        prerequisite = { focus = us_navy }
+        prerequisite = { focus = USA_us_navy }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -411,13 +433,13 @@ focus_tree = {
     }
 
     focus = {
-        id = modernize_naval_training_protocols
+        id = USA_modernize_naval_training_protocols
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -2
         y = 2
         cost = 10
-        prerequisite = { focus = us_navy }
+        prerequisite = { focus = USA_us_navy }
         completion_reward = {
             add_experience = {
                 navy_experience = 50
@@ -426,13 +448,13 @@ focus_tree = {
     }
 
     focus = {
-        id = capital_ship_doctrine
+        id = USA_capital_ship_doctrine
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 6
         y = 3
         cost = 10
-        prerequisite = { focus = us_navy }
+        prerequisite = { focus = USA_us_navy }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -441,40 +463,40 @@ focus_tree = {
             }
         }
         mutually_exclusive = {
-            focus = carrier_strike_doctrine
+            focus = USA_carrier_strike_doctrine
         }
     }
 
     focus = {
-        id = carrier_strike_doctrine
+        id = USA_carrier_strike_doctrine
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -6
         y = 3
         cost = 10
-        prerequisite = { focus = us_navy }
+        prerequisite = { focus = USA_us_navy }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
                 uses = 1
-                category = carrier_doctrine
+                category = USA_carrier_doctrine
             }
         }
         mutually_exclusive = {
-            focus = capital_ship_doctrine
+            focus = USA_capital_ship_doctrine
         }
     }
 
     focus = {
-        id = naval_technological_superiority
+        id = USA_naval_technological_superiority
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 0
         y = 4
         cost = 10
-        prerequisite = { focus = invigorate_shipbuilding_infrastructure }
-        prerequisite = { focus = modern_naval_engineering }
-        prerequisite = { focus = modernize_naval_training_protocols }
+        prerequisite = { focus = USA_invigorate_shipbuilding_infrastructure }
+        prerequisite = { focus = USA_modern_naval_engineering }
+        prerequisite = { focus = USA_modernize_naval_training_protocols }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -485,13 +507,13 @@ focus_tree = {
     }
 
     focus = {
-        id = fleet_command_protocols
+        id = USA_fleet_command_protocols
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 7
         y = 5
         cost = 10
-        prerequisite = { focus = capital_ship_doctrine }
+        prerequisite = { focus = USA_capital_ship_doctrine }
         completion_reward = {
             add_experience = {
                 navy_experience = 50
@@ -500,13 +522,13 @@ focus_tree = {
     }
 
     focus = {
-        id = strike_group_organization
+        id = USA_strike_group_organization
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -7
         y = 5
         cost = 10
-        prerequisite = { focus = carrier_strike_doctrine }
+        prerequisite = { focus = USA_carrier_strike_doctrine }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -517,45 +539,41 @@ focus_tree = {
     }
 
     focus = {
-        id = deck_side_logistics
+        id = USA_deck_side_logistics
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -5
         y = 5
         cost = 10
-        prerequisite = { focus = carrier_strike_doctrine }
+        prerequisite = { focus = USA_carrier_strike_doctrine }
         completion_reward = {
-            add_building_construction = {
-                type = dockyard
-                level = 1
-                instant_build = yes
-            }
+            naval_attrition = -0.1
         }
     }
 
     focus = {
-        id = floating_airfields 
+        id = USA_floating_airfields 
         icon = GFX_goal_unknown
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -6
         y = 7
         cost = 10
         prerequisite = {
-            focus = deck_side_logistics
+            focus = USA_deck_side_logistics
         }
         prerequisite = {
-            focus = strike_group_organization
+            focus = USA_strike_group_organization
         }
     }
 
     focus = {
-        id = missile_system_experiments
-        icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        id = USA_missile_system_experiments
+        icon = missile_system_experiments
+        relative_position_id = USA_us_navy
         x = -2
         y = 5
         cost = 10
-        prerequisite = { focus = naval_technological_superiority }
+        prerequisite = { focus = USA_naval_technological_superiority }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -566,25 +584,25 @@ focus_tree = {
     }
 
     focus = {
-        id = stealth_tech_development
+        id = USA_stealth_tech_development
         icon = GFX_goal_unknown
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = -3
         y = 6
         cost = 10
         prerequisite = {
-            focus = naval_technological_superiority
+            focus = USA_naval_technological_superiority
         }
     }
 
     focus = {
-        id = composite_hull_construction
+        id = USA_composite_hull_construction
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 2
         y = 5
         cost = 10
-        prerequisite = { focus = naval_technological_superiority }
+        prerequisite = { focus = USA_naval_technological_superiority }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -595,13 +613,13 @@ focus_tree = {
     }
 
     focus = {
-        id = command_the_waves
+        id = USA_command_the_waves
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 5
         y = 5
         cost = 10
-        prerequisite = { focus = capital_ship_doctrine }
+        prerequisite = { focus = USA_capital_ship_doctrine }
         completion_reward = {
             add_experience = {
                 navy_experience = 100
@@ -610,13 +628,13 @@ focus_tree = {
     }
 
     focus = {
-        id = experimental_propulsion_methods
+        id = USA_experimental_propulsion_methods
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 3
         y = 6
         cost = 10
-        prerequisite = { focus = naval_technological_superiority }
+        prerequisite = { focus = USA_naval_technological_superiority }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -627,13 +645,13 @@ focus_tree = {
     }
 
     focus = {
-        id = kinetic_battery_systems
+        id = USA_kinetic_battery_systems
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 0
         y = 6
         cost = 10
-        prerequisite = { focus = naval_technological_superiority }
+        prerequisite = { focus = USA_naval_technological_superiority }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -644,14 +662,14 @@ focus_tree = {
     }
 
     focus = {
-        id = battlefleet_strategems
+        id = USA_battlefleet_strategems
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 6
         y = 7
         cost = 10
-        prerequisite = { focus = command_the_waves }
-        prerequisite = { focus = fleet_command_protocols }
+        prerequisite = { focus = USA_command_the_waves }
+        prerequisite = { focus = USA_fleet_command_protocols }
         completion_reward = {
             add_experience = {
                 navy_experience = 100
@@ -660,47 +678,40 @@ focus_tree = {
     }
 
     focus = {
-        id = global_naval_presence
+        id = USA_global_naval_presence
         icon = GFX_focus_generic_navy
-        relative_position_id = us_navy
+        relative_position_id = USA_us_navy
         x = 0
         y = 8
         cost = 10
-        prerequisite = { focus = battlefleet_strategems }
-        prerequisite = { focus = floating_airfields }
+        prerequisite = { focus = USA_battlefleet_strategems }
+        prerequisite = { focus = USA_floating_airfields }
         completion_reward = {
-            add_building_construction = {
-                type = naval_base
-                level = 2
-                instant_build = yes
-            }
+            naval_attrition = -0.2
         }
     }
 
     focus = {
-        id = us_air_force
-        icon = GFX_focus_generic_air
+        id = USA_us_air_force
+        icon = GFX_usa_usaf
         x = 10
         y = 2
         cost = 10
-        prerequisite = { focus = the_armed_forces }
+        prerequisite = { focus = USA_the_armed_forces }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = air_doctrine
-            }
+            air_experience = 100
+            air_superiority_bonus_in_combat = 0.1
         }
     }
 
     focus = {
-        id = aerial_dominance_initiative
+        id = USA_aerial_dominance_initiative
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = 0
         y = 2
         cost = 10
-        prerequisite = { focus = us_air_force }
+        prerequisite = { focus = USA_us_air_force }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -711,13 +722,13 @@ focus_tree = {
     }
 
     focus = {
-        id = ace_pilot_programs
+        id = USA_ace_pilot_programs
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -1
         y = 3
         cost = 10
-        prerequisite = { focus = aerial_dominance_initiative }
+        prerequisite = { focus = USA_aerial_dominance_initiative }
         completion_reward = {
             add_experience = {
                 air_experience = 50
@@ -726,13 +737,13 @@ focus_tree = {
     }
 
     focus = {
-        id = airbase_expansion
+        id = USA_airbase_expansion
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = 1
         y = 3
         cost = 10
-        prerequisite = { focus = aerial_dominance_initiative }
+        prerequisite = { focus = USA_aerial_dominance_initiative }
         completion_reward = {
             add_building_construction = {
                 type = air_base
@@ -743,13 +754,13 @@ focus_tree = {
     }
 
     focus = {
-        id = standardize_aircraft_production
+        id = USA_standardize_aircraft_production
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = 0
         y = 4
         cost = 10
-        prerequisite = { focus = aerial_dominance_initiative }
+        prerequisite = { focus = USA_aerial_dominance_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -760,13 +771,13 @@ focus_tree = {
     }
 
     focus = {
-        id = aviation_fuel_optimization
+        id = USA_aviation_fuel_optimization
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -2
         y = 4
         cost = 10
-        prerequisite = { focus = advanced_fighter_jet_program }
+        prerequisite = { focus = USA_advanced_fighter_jet_program }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -777,13 +788,13 @@ focus_tree = {
     }
 
     focus = {
-        id = radar_development_program
+        id = USA_radar_development_program
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -2
         y = 5
         cost = 10
-        prerequisite = { focus = aviation_fuel_optimization }
+        prerequisite = { focus = USA_aviation_fuel_optimization }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -794,13 +805,13 @@ focus_tree = {
     }
 
     focus = {
-        id = the_air_superiority_concept
+        id = USA_the_air_superiority_concept
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = 1
         y = 6
         cost = 10
-        prerequisite = { focus = standardize_aircraft_production }
+        prerequisite = { focus = USA_standardize_aircraft_production }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -811,13 +822,13 @@ focus_tree = {
     }
 
     focus = {
-        id = advanced_fighter_jet_program
+        id = USA_advanced_fighter_jet_program
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -4
         y = 3
         cost = 10
-        prerequisite = { focus = aerial_dominance_initiative }
+        prerequisite = { focus = USA_aerial_dominance_initiative }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -828,13 +839,13 @@ focus_tree = {
     }
 
     focus = {
-        id = dogfighting_expertise
+        id = USA_dogfighting_expertise
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -4
         y = 4
         cost = 10
-        prerequisite = { focus = advanced_fighter_jet_program }
+        prerequisite = { focus = USA_advanced_fighter_jet_program }
         completion_reward = {
             add_experience = {
                 air_experience = 50
@@ -843,13 +854,13 @@ focus_tree = {
     }
 
     focus = {
-        id = optimize_jet_engines
+        id = USA_optimize_jet_engines
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -4
         y = 5
         cost = 10
-        prerequisite = { focus = dogfighting_expertise }
+        prerequisite = { focus = USA_dogfighting_expertise }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -860,13 +871,13 @@ focus_tree = {
     }
 
     focus = {
-        id = advanced_air_to_air_combat_training
+        id = USA_advanced_air_to_air_combat_training
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -5
         y = 6
         cost = 10
-        prerequisite = { focus = optimize_jet_engines }
+        prerequisite = { focus = USA_optimize_jet_engines }
         completion_reward = {
             add_experience = {
                 air_experience = 100
@@ -875,13 +886,13 @@ focus_tree = {
     }
 
     focus = {
-        id = defensive_aerial_tactics
+        id = USA_defensive_aerial_tactics
         icon = GFX_focus_generic_air
-        relative_position_id = us_air_force
+        relative_position_id = USA_us_air_force
         x = -3
         y = 6
         cost = 10
-        prerequisite = { focus = optimize_jet_engines }
+        prerequisite = { focus = USA_optimize_jet_engines }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -892,12 +903,12 @@ focus_tree = {
     }
 
     focus = {
-        id = special_weapons_initiative
+        id = USA_special_weapons_initiative
         icon = GFX_focus_generic_nuclear
         x = 40
         y = 2
         cost = 10
-        prerequisite = { focus = the_armed_forces }
+        prerequisite = { focus = USA_the_armed_forces }
         completion_reward = {
             add_technology_bonus = {
                 bonus = 0.5
@@ -908,83 +919,77 @@ focus_tree = {
     }
 
     focus = {
-        id = special_operations_service
+        id = USA_special_operations_service
         icon = GFX_focus_generic_special_forces
         x = 35
         y = 2
         cost = 10
-        prerequisite = { focus = the_armed_forces }
+        prerequisite = { focus = USA_the_armed_forces }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = special_forces
-            }
+            army_experience = 50
+            navy_experience = 50
+            air_experience = 50
+            special_forces_cap = 5
+            special_forces_no_supply_grace = 55
+
         }
     }
 
     focus = {
-        id = from_the_sea
+        id = USA_from_the_sea
         icon = GFX_focus_generic_marines
         x = 33
         y = 3
         cost = 10
-        prerequisite = { focus = special_operations_service }
+        prerequisite = { focus = USA_special_operations_service }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = marines
-            }
+            marines_special_forces_contribution_factor = -0.2
+            naval_invasion_prep_speed = 0.35
+            transport_capacity = -0.3
+            extra_marine_supply_grace = 30
         }
         mutually_exclusive = {
-            focus = from_the_mountains
-            focus = from_the_skies
+            focus = USA_from_the_mountains
+            focus = USA_from_the_skies
         }
     }
 
     focus = {
-        id = from_the_mountains
+        id = USA_from_the_mountains
         icon = GFX_focus_generic_mountaineers
         x = 35
         y = 3
         cost = 10
-        prerequisite = { focus = special_operations_service }
+        prerequisite = { focus = USA_special_operations_service }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = mountaineers
-            }
+            mountaineers_special_forces_contribution_factor = -0.2
         }
         mutually_exclusive ={
-            focus = from_the_sea
-            focus = from_the_skies
+            focus = USA_from_the_sea
+            focus = USA_from_the_skies
         }
     }
 
     focus = {
-        id = from_the_skies
+        id = USA_from_the_skies
         icon = GFX_focus_generic_paratroopers
         x = 37
         y = 3
         cost = 10
-        prerequisite = { focus = special_operations_service }
+        prerequisite = { focus = USA_special_operations_service }
         completion_reward = {
-            add_technology_bonus = {
-                bonus = 0.5
-                uses = 1
-                category = paratroopers
-            }
+            paradrop_organization_factor = 0.4
+            paratroopers_special_forces_contribution_factor = -0.2
+
         }
         mutually_exclusive = {
-            focus = from_the_mountains
-            focus = from_the_sea
+            focus = USA_from_the_mountains
+            focus = USA_from_the_sea
         }
     }
 
     focus = {
-        id = a_republic_in_crisis
+        id = USA_a_republic_in_crisis
         icon = GFX_goal_unknown
         cost = 3
         x = -70
@@ -992,426 +997,612 @@ focus_tree = {
     }
 
     focus = {
-        id = the_56_election
+        id = USA_the_56_election
         icon = GFX_focus_generic_political
-        relative_position_id = a_republic_in_crisis
+        relative_position_id = USA_a_republic_in_crisis
         x = 0
         y = 1
-        cost = 11
-        prerequisite = { focus = a_republic_in_crisis }
+        cost = 10.9
+        prerequisite = { focus = USA_a_republic_in_crisis }
         completion_reward = {
             add_political_power = 100
-            custom_effect_tooltip = the_56_election_tt
+            custom_effect_tooltip = USA_the_56_election_tt
         }
     }
 
     focus = {
-        id = james_c_wallace
+        id = USA_james_c_wallace
         icon = GFX_goal_unknown
-        relative_position_id = a_republic_in_crisis
+        relative_position_id = USA_a_republic_in_crisis
+        cost = 4
         x = 20
         y = 2
         prerequisite = {
-            focus = the_56_election
+            focus = USA_the_56_election
         }
-        
-    }
-
-    focus = {
-        id = reaffirm_national_values
-        icon = GFX_focus_generic_political
-        relative_position_id = a_republic_in_crisis
-        x = 0
-        y = 2
-        cost = 10
-        completion_reward = {
-            add_stability = 0.05
+        mutually_exclusive = {
+            focus = USA_john_granite
         }
     }
 
     focus = {
-        id = safeguard_americas_future
+        id = USA_reaffirm_national_values
         icon = GFX_focus_generic_political
-        relative_position_id = a_republic_in_crisis
+        relative_position_id = USA_a_republic_in_crisis
         x = 0
         y = 3
         cost = 10
         completion_reward = {
+            add_stability = 0.05
+            weekly_manpower = 5000 
+        }
+    }
+
+    focus = {
+        id = USA_safeguard_americas_future
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_a_republic_in_crisis
+        x = 0
+        y = 4
+        cost = 2
+        completion_reward = {
             add_war_support = 0.05
         }
     }
 
     focus = {
-        id = project_safehouse
+        id = USA_project_safehouse
         icon = GFX_focus_generic_nuclear
-        relative_position_id = a_republic_in_crisis
+        relative_position_id = USA_a_republic_in_crisis
         x = 0
-        y = 6
-        cost = 10
+        y = 7
+        cost = 4
         prerequisite = {
-            focus = safeguard_americas_future
+            focus = USA_safeguard_americas_future
         }
         completion_reward = {
-            add_building_construction = {
-                type = vault
-                level = 1
-                instant_build = yes
-            }
+            add_stability = 0.05
+            custom_effect_tooltip = USA_project_safehouse_tt
         }
     }
 
     focus = {
-        id = the_corporations
+        id = USA_the_presidents_cabinet
+        icon = GFX_goal_unknown
+        relative_position_id = USA_project_safehouse
+        x = 0
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = USA_project_safehouse
+        }
+    }
+
+    focus = {
+        id = USA_johnson_fox
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = -8
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_senator_blackwell
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = -6
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_senator_calvert
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = -3
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_chief_callahan
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = 3
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_thomas_eckhart
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = 6
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_anderson_burk
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = 8
+        y = 2
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_vault_tec
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_presidents_cabinet
+        x = 0
+        y = 1
+        cost = 6
+        prerequisite = {
+            focus = USA_the_presidents_cabinet
+        }
+    }
+
+    focus = {
+        id = USA_the_corporations
         icon = GFX_focus_generic_industry
-        relative_position_id = james_c_wallace
+        relative_position_id = USA_james_c_wallace
         x = -10
         y = 1
         cost = 10
-        prerequisite = { focus = james_c_wallace }
+        prerequisite = { focus = USA_james_c_wallace }
         completion_reward = {
             add_political_power = 100
+            378 = {
+                add_building_construction = {
+                    type = civilian_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            358 = {
+                add_building_construction = {
+                    type = civilian_factory
+                    level = 4
+                    instant_build = yes
+                }
+            }
         }
     }
 
     focus = {
-        id = root_out_corporatism
+        id = USA_root_out_corporatism ## FOR IIRACA TODO ADD DECISIONS 
         icon = GFX_focus_generic_political
-        relative_position_id = the_corporations
+        relative_position_id = USA_the_corporations
         x = -5
         y = 1
         cost = 10
-        prerequisite = { focus = the_corporations }
+        prerequisite = { focus = USA_the_corporations }
         completion_reward = {
-            add_stability = 0.05
+            add_war_support = -0.1
+            custom_effect_tooltip = USA_root_out_corporatism_tt
         }
         mutually_exclusive = {
-            focus = appease_the_industrial_giant
+            focus = USA_appease_the_industrial_giant
         }
     }
 
     focus = {
-        id = appease_the_industrial_giant
+        id = USA_appease_the_industrial_giant
         icon = GFX_focus_generic_industry
-        relative_position_id = the_corporations
+        relative_position_id = USA_the_corporations
         x = 5
         y = 1
         cost = 10
-        prerequisite = { focus = the_corporations }
+        prerequisite = { focus = USA_the_corporations }
         completion_reward = {
-            add_building_construction = {
-                type = civilian_factory
-                level = 1
-                instant_build = yes
-            }
+                consumer_goods_expected_value = -0.1
+                custom_effect_tooltip = USA_appease_the_industrial_giant_tt
         }
         mutually_exclusive = {
-            focus = root_out_corporatism
+            focus = USA_root_out_corporatism
         }
     }
 
     focus = {
-        id = the_corporate_accountability_act
+        id = USA_the_corporate_accountability_act
         icon = GFX_focus_generic_political
-        relative_position_id = root_out_corporatism
+        relative_position_id = USA_root_out_corporatism
         x = -3
         y = 1
         cost = 10
-        prerequisite = { focus = root_out_corporatism }
+        prerequisite = { focus = USA_root_out_corporatism }
         completion_reward = {
             add_stability = 0.05
+            consumer_goods_expected_value = 0.1
+            custom_effect_tooltip = USA_the_corporate_accountability_act_tt
         }
     }
 
     focus = {
-        id = investigate_corruption
+        id = USA_investigate_corruption
         icon = GFX_focus_generic_political
-        relative_position_id = root_out_corporatism
+        relative_position_id = USA_root_out_corporatism
         x = 0
         y = 1
         cost = 10
-        prerequisite = { focus = root_out_corporatism }
+        prerequisite = { focus = USA_root_out_corporatism }
         completion_reward = {
-            add_political_power = 50
+            add_political_power = -50
+            add_war_support = -0.1
+            add_stability = 0.07
+            custom_effect_tooltip = USA_investigate_corruption_tt
         }
     }
 
     focus = {
-        id = balanced_tax_reform
+        id = USA_balanced_tax_reform
         icon = GFX_goal_unknown
-        relative_position_id = root_out_corporatism
+        relative_position_id = USA_root_out_corporatism
         x = 3
         y = 1
         cost = 10
+        completion_reward = {
+            consumer_goods_expected_value = 0.1
+            custom_effect_tooltip = USA_balanced_tax_reform_tt
+        }
         prerequisite = {
-            focus = root_out_corporatism
+            focus = USA_root_out_corporatism
         }
     }
 
     focus = {
-        id = ease_regulatory_burdens
+        id = USA_ease_regulatory_burdens
         icon = GFX_focus_generic_industry
-        relative_position_id = appease_the_industrial_giant
+        relative_position_id = USA_appease_the_industrial_giant
         x = -3
         y = 1
         cost = 10
-        prerequisite = { focus = appease_the_industrial_giant }
+        prerequisite = { focus = USA_appease_the_industrial_giant }
         completion_reward = {
-            add_building_construction = {
-                type = civilian_factory
-                level = 1
-                instant_build = yes
-            }
+                add_stability = 0.05
+                consumer_goods_expected_value = -0.1
+
         }
     }
 
     focus = {
-        id = private_sector_partnerships
+        id = USA_private_sector_partnerships
         icon = GFX_focus_generic_industry
-        relative_position_id = appease_the_industrial_giant
+        relative_position_id = USA_appease_the_industrial_giant
         x = 0
         y = 1
         cost = 10
-        prerequisite = { focus = appease_the_industrial_giant }
+        prerequisite = { focus = USA_appease_the_industrial_giant }
         completion_reward = {
             add_political_power = 50
         }
     }
 
     focus = {
-        id = privatize_public_assets
+        id = USA_privatize_public_assets
         icon = GFX_goal_unknown
-        relative_position_id = appease_the_industrial_giant
+        relative_position_id = USA_appease_the_industrial_giant
         x = 3
         y = 1
         cost = 10
-        prerequisite = { focus = appease_the_industrial_giant }
+        prerequisite = { focus = USA_appease_the_industrial_giant }
     }
 
     focus = {
-        id = snuff_out_lobbying
+        id = USA_snuff_out_lobbying
         icon = GFX_focus_generic_political
-        relative_position_id = root_out_corporatism
+        relative_position_id = USA_root_out_corporatism
         x = -2
         y = 2 
         cost = 10
-        prerequisite = { focus = root_out_corporatism }
+        prerequisite = { focus = USA_root_out_corporatism }
         completion_reward = {
             add_stability = 0.05
+            add_political_power = -25
+            custom_effect_tooltip = USA_snuff_out_lobbying_tt
         }
     }
 
     focus = {
-        id = fair_labor_standards_reform
+        id = USA_fair_labor_standards_reform
         icon = GFX_focus_generic_political
-        relative_position_id = root_out_corporatism
+        relative_position_id = USA_root_out_corporatism
         x = 2
         y = 2
         cost = 10
-        prerequisite = { focus = root_out_corporatism }
+        prerequisite = { focus = USA_root_out_corporatism }
         completion_reward = {
-            add_stability = 0.05
+            add_stability = 0.05 
+            consumer_goods_expected_value = 0.09
+            custom_effect_tooltip = USA_fair_labor_standards_reform_tt 
         }
     }
 
     focus = {
-        id = corporate_advisory_council
+        id = USA_corporate_advisory_council
         icon = GFX_focus_generic_industry
-        relative_position_id = appease_the_industrial_giant
+        relative_position_id = USA_appease_the_industrial_giant
         x = -2
         y = 2
         cost = 10
-        prerequisite = { focus = appease_the_industrial_giant }
+        prerequisite = { focus = USA_appease_the_industrial_giant }
         completion_reward = {
             add_political_power = 50
         }
     }
 
     focus = {
-        id = corporate_representation_act
+        id = USA_corporate_representation_act
         icon = GFX_focus_generic_political
-        relative_position_id = appease_the_industrial_giant
+        relative_position_id = USA_appease_the_industrial_giant
         x = 2
         y = 2
         cost = 10
-        prerequisite = { focus = appease_the_industrial_giant }
+        prerequisite = { focus = USA_appease_the_industrial_giant }
         completion_reward = {
-            add_stability = 0.05
+            add_political_power = 50
         }
     }
 
     focus = {
-        id = the_military
+        id = USA_the_military ## ADD DECISIONS FOR EXPANDING / RETIRING MILITARY FACTORIES
         icon = GFX_goal_unknown
-        relative_position_id = james_c_wallace
+        relative_position_id = USA_james_c_wallace
         x = 10
         y = 1
         cost = 10
+        completion_reward = {
+            army_experience = 50
+        }
         prerequisite = {
-            focus = james_c_wallace
+            focus = USA_james_c_wallace
         }
     }
 
     focus = {
-        id = rain_in_defense_spending 
+        id = USA_rain_in_defense_spending 
         icon = GFX_goal_unknown
-        relative_position_id = the_military
+        relative_position_id = USA_the_military
         x = -5
         y = 1
         cost = 10
+        completion_reward = {
+            army_defence_factor = -0.1
+            army_attack_factor = -0.1
+        }
         prerequisite = {
-            focus = the_military
+            focus = USA_the_military
         }
         mutually_exclusive = {
-            focus = feed_the_military_industrial_complex
+            focus = USA_feed_the_military_industrial_complex
+        }
+        completion_reward = {
+            custom_effect_tooltip = USA_rain_in_defense_spending_tt
         }
     }
 
     focus = {
-        id = streamline_the_armed_forces
+        id = USA_streamline_the_armed_forces
         icon = GFX_goal_unknown
-        relative_position_id = rain_in_defense_spending
+        relative_position_id = USA_rain_in_defense_spending
         x = -3
         y = 1
         cost = 10
         prerequisite = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
         }
     }
 
     focus = {
-        id = audit_the_defense_budget 
+        id = USA_audit_the_defense_budget 
         icon = GFX_goal_unknown
-        relative_position_id = rain_in_defense_spending
+        relative_position_id = USA_rain_in_defense_spending
         x = 0
         y = 1
         cost = 10
         prerequisite = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
         }
     }
 
     focus = {
-        id = reclaim_civilian_industry
+        id = USA_reclaim_civilian_industry
         icon = GFX_goal_unknown
-        relative_position_id = rain_in_defense_spending
+        relative_position_id = USA_rain_in_defense_spending
         x = 3
         y = 1
         cost = 10
         prerequisite = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
+        }
+        completion_reward = {
+            
         }
     }
 
     focus = {
-        id = no_more_shadow_wars
+        id = USA_no_more_shadow_wars
         icon = GFX_goal_unknown
-        relative_position_id = rain_in_defense_spending
+        relative_position_id = USA_rain_in_defense_spending
         x = 1
         y = 2
         cost = 10 
         prerequisite = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
         }
     }
 
     focus = {
-        id = end_emergency_spending
+        id = USA_end_emergency_spending
         icon = GFX_goal_unknown
-        relative_position_id = rain_in_defense_spending
+        relative_position_id = USA_rain_in_defense_spending
         x = -1
         y = 2
         cost = 10
         prerequisite = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
         }
     }
 
     focus = {
-        id = feed_the_military_industrial_complex
+        id = USA_feed_the_military_industrial_complex ## This will unlock decisions for expanding military factories
         icon = GFX_focus_generic_industry
-        relative_position_id = the_military
+        relative_position_id = USA_the_military
         x = 5
         y = 1
         cost = 10
-        prerequisite = { focus = the_military }
+        prerequisite = { focus = USA_the_military }
         mutually_exclusive = {
-            focus = rain_in_defense_spending
+            focus = USA_rain_in_defense_spending
         }
         completion_reward = {
             add_political_power = 100
+            378 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            375 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 4
+                    instant_build = yes
+                }
+            }
+            362 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
     }
 
     focus = {
-        id = expand_defense_contracts
+        id = USA_expand_defense_contracts
         icon = GFX_focus_generic_industry
-        relative_position_id = feed_the_military_industrial_complex
+        relative_position_id = USA_feed_the_military_industrial_complex
         x = -3
         y = 1
         cost = 10
-        prerequisite = { focus = feed_the_military_industrial_complex }
+        prerequisite = { focus = USA_feed_the_military_industrial_complex }
         completion_reward = {
-            add_building_construction = {
-                type = military_factory
-                level = 1
-                instant_build = yes
+            389 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            359 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            396 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
             }
         }
     }
 
     focus = {
-        id = exceptionalism_as_policy
+        id = USA_exceptionalism_as_policy
         icon = GFX_focus_generic_political
-        relative_position_id = feed_the_military_industrial_complex
+        relative_position_id = USA_feed_the_military_industrial_complex
         x = -2
         y = 2
         cost = 10
-        prerequisite = { focus = feed_the_military_industrial_complex }
+        prerequisite = { focus = USA_feed_the_military_industrial_complex }
         completion_reward = {
             add_stability = 0.05
         }
     }
 
     focus = {
-        id = rebuild_the_arsenal_of_democracy
+        id = USA_rebuild_the_arsenal_of_democracy
         icon = GFX_focus_generic_industry
-        relative_position_id = feed_the_military_industrial_complex
+        relative_position_id = USA_feed_the_military_industrial_complex
         x = 0
         y = 1
         cost = 10
-        prerequisite = { focus = feed_the_military_industrial_complex }
+        prerequisite = { focus = USA_feed_the_military_industrial_complex }
         completion_reward = {
-            add_building_construction = {
-                type = military_factory
-                level = 2
-                instant_build = yes
-            }
+            production_factory_efficiency_gain_factor = 0.2
+            production_speed_arms_factory_factor = 0.15
         }
     }
 
     focus = {
-        id = glorify_the_american_way
+        id = USA_glorify_the_american_way
         icon = GFX_focus_generic_political
-        relative_position_id = feed_the_military_industrial_complex
+        relative_position_id = USA_feed_the_military_industrial_complex
         x = 3
         y = 1
         cost = 10
-        prerequisite = { focus = feed_the_military_industrial_complex }
+        prerequisite = { focus = USA_feed_the_military_industrial_complex }
         completion_reward = {
-            add_stability = 0.05
+            add_stability = 0.1
+
         }
     }
 
     focus = {
-        id = american_might_global_peace
+        id = USA_american_might_global_peace
         icon = GFX_focus_generic_political
-        relative_position_id = feed_the_military_industrial_complex
+        relative_position_id = USA_feed_the_military_industrial_complex
         x = 2
         y = 2
         cost = 10
-        prerequisite = { focus = feed_the_military_industrial_complex}
+        prerequisite = { focus = USA_feed_the_military_industrial_complex}
         completion_reward = {
-            add_war_support = 0.05
+            add_war_support = 0.1
+        }
+    }
+
+    focus = {
+        id = USA_john_granite
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_the_56_election
+        x = -20
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_56_election
+        }
+        completion_reward = {
+            add_war_support = 0.1
+        }
+        mutually_exclusive = {
+            focus = USA_james_c_wallace
         }
     }
 }

@@ -1,0 +1,268 @@
+usa_presidents_cabinet_inlay_window = {
+
+    window_name = usa_presidents_cabinet_ui_window
+
+    internal = yes
+    visible = {
+        //////NOT = { has_completed_focus = // anti enclave path (?)}
+        has_completed_focus = {
+            focus = john_granite
+        }
+        has_government = democratic
+    }
+
+    scripted_images = {
+        #FUHRER
+        fuhrer_portrait = {
+            ##GFX_inner_circle_leader_anderson_burk = { USE THESE ONLY WHEN THE US PRESIDENT CHANGES 
+            ##    has_country_leader = {
+    		##		ruling_only = yes
+	    	##		character = USA_anderson_burk
+			##    }
+            ##}
+            ##GFX_inner_circle_leader_thomas_eckhart = { 
+            ##    has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_thomas_eckhart
+            ##    }
+            ##}
+            ##GFX_inner_circle_leader_chief_callahan = { 
+            ##   has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_chief_callahan
+            ##    }
+            ##}
+            ##GFX_inner_circle_leader_senator_calvert = { 
+            ##    has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_senator_calvert
+            ##    }
+            ##}
+            ##GFX_inner_circle_leader_senator_blackwell = {  
+            ##    has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_johnson_fox
+            ##    }
+            ##}
+            ##GFX_inner_circle_leader_johnson_fox = { 
+            ##    has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_johnson_fox
+            ##    }
+            ##}
+            ##GFX_inner_circle_leader_vault_tec = { 
+            ##    has_country_leader = {
+            ##        ruling_only = yes
+            ##        character = USA_
+            ##    }
+            ##}
+            GFX_inner_circle_leader_john_granite = yes
+        }
+
+        #ASCENDED
+        ascended_advisor_1_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { USA_ascended_advisor_1 = 0 }
+            }
+            GFX_portrait_USA_johnson_fox = {
+       			check_variable = { USA_ascended_advisor_1 = 1 }
+		    }
+            GFX_portrait_USA_anderson_burk = {
+                check_variable = { USA_ascended_advisor_1 = 2 }
+            }
+            GFX_portrait_USA_thomas_eckhart = {
+                check_variable = { USA_ascended_advisor_1 = 3 }
+            }
+            GFX_portrait_USA_chief_callahan = {
+                check_variable = { USA_ascended_advisor_1 = 4 }
+            }
+            GFX_portrait_USA_senator_calvert = {
+                check_variable = { USA_ascended_advisor_1 = 5 }
+            }
+            GFX_portrait_USA_senator_blackwell = {
+                check_variable = { USA_ascended_advisor_1 = 6 }
+            }
+            GFX_portrait_USA_vault_tec= {
+                check_variable = { USA_ascended_advisor_1 = 7 }
+            }
+        }
+        ascended_advisor_2_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { USA_ascended_advisor_2 = 0 }
+            }
+            GFX_portrait_USA_anderson_burk = {
+       			check_variable = { USA_ascended_advisor_2 = 1 }
+		    }
+            GFX_portrait_USA_thomas_eckhart = {
+                check_variable = { GER_ascended_advisor_2 = 2 }
+            }
+            GFX_portrait_USA_chief_callahan = {
+                check_variable = { GER_ascended_advisor_2 = 3 }
+            }
+            GFX_portrait_USA_senator_calvert = {
+                check_variable = { GER_ascended_advisor_2 = 4 }
+            }
+            GFX_portrait_USA_senator_blackwell = {
+                check_variable = { GER_ascended_advisor_2 = 5 }
+            }
+            GFX_portrait_USA_johnson_fox = {
+                check_variable = { GER_ascended_advisor_2 = 6 }
+            }
+            GFX_portrait_USA_vault_tec = {
+                check_variable = { GER_ascended_advisor_2 = 7 }
+            }
+        }
+        ascended_advisor_3_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { USA_ascended_advisor_3 = 0 }
+            }
+            GFX_portrait_USA_anderson_burk = {
+       			check_variable = { USA_ascended_advisor_3 = 1 }
+		    }
+            GFX_portrait_USA_thomas_eckhart = {
+                check_variable = { USA_ascended_advisor_3 = 2 }
+            }
+            GFX_portrait_USA_chief_callahan = {
+                check_variable = { USA_ascended_advisor_3 = 3 }
+            }
+            GFX_portrait_USA_senator_calvert = {
+                check_variable = { USA_ascended_advisor_3 = 4 }
+            }
+            GFX_portrait_USA_senator_blackwell = {
+                check_variable = { USA_ascended_advisor_3 = 5 }
+            }
+            GFX_portrait_USA_johnson_fox = {
+                check_variable = { USA_ascended_advisor_3 = 6 }
+            }
+            GFX_portrait_USA_vault_tec = {
+                check_variable = { USA_ascended_advisor_3 = 7 }
+            }
+        }
+
+        ascended_advisor_1_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+        ascended_advisor_2_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+        ascended_advisor_3_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+
+        #ADVISOR
+        advisor_anderson_burk_portrait = {
+            GFX_anderson_burk_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 1 }
+                    check_variable = { USA_ascended_advisor_2 = 1 }
+                    check_variable = { USA_ascended_advisor_3 = 1 }
+                }
+            }
+            GFX_anderson_burk_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_anderson_burk_available_small = yes
+        }
+        advisor_thomas_eckhart_portrait = {
+            GFX_thomas_eckhart_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 2 }
+                    check_variable = { USA_ascended_advisor_2 = 2 }
+                    check_variable = { USA_ascended_advisor_3 = 2 }
+                }
+            }
+            GFX_thomas_echkart_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_thomas_eckhart_available_small = yes
+        }
+        advisor_chief_callahan_portrait = {
+            GFX_chief_callahan_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 3 }
+                    check_variable = { USA_ascended_advisor_2 = 3 }
+                    check_variable = { USA_ascended_advisor_3 = 3 }
+                }
+            }
+            GFX_chief_callahan_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_chief_callahan_available_small = yes
+        }
+        advisor_senator_calvert_portrait = {
+            GFX_senator_calvert_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 4 }
+                    check_variable = { USA_ascended_advisor_2 = 4 }
+                    check_variable = { USA_ascended_advisor_3 = 4 }
+                }
+            }
+            GFX_senator_calvert_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_senator_calvert_available_small = yes
+        }
+        advisor_senator_blackwell_portrait = {
+            GFX_senator_blackwell_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 5 }
+                    check_variable = { USA_ascended_advisor_2 = 5 }
+                    check_variable = { USA_ascended_advisor_3 = 5 }
+                }
+            }
+            GFX_senator_blackwell_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_senator_blackwell_available_small = yes
+        }
+        advisor_johnson_fox_portrait = {
+            GFX_johnson_fox_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 6 }
+                    check_variable = { USA_ascended_advisor_2 = 6 }
+                    check_variable = { USA_ascended_advisor_3 = 6 }
+                }
+            }
+            GFX_johnson_fox_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_johnson_fox_available_small = yes
+        }
+        advisor_vault_tec_portrait = {
+            GFX_vault_tec_selected_small = {
+                OR = {
+                    check_variable = { USA_ascended_advisor_1 = 7 }
+                    check_variable = { USA_ascended_advisor_2 = 7 }
+                    check_variable = { USA_ascended_advisor_3 = 7 }
+                }
+            }
+            GFX_vault_tec_unavailable_small = {
+                check_variable = { USA_ascended_advisor_1 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_2 = 0 compare = not_equals }
+                check_variable = { USA_ascended_advisor_3 = 0 compare = not_equals }
+            }
+            GFX_vault_tec_available_small = yes
+        }
+    }
+}

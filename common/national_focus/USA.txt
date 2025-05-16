@@ -994,6 +994,10 @@ focus_tree = {
         cost = 3
         x = -70
         y = 2
+        completion_reward = {
+            add_stability = -0.5
+            add_war_support = -0.2
+        }
     }
 
     focus = {

@@ -1610,3 +1610,7 @@ focus_tree = {
         }
     }
 }
+
+    focus = {
+        id = USA_the_press
+        icon

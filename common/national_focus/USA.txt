@@ -1621,4 +1621,304 @@ focus_tree = {
             focus = USA_john_granite
         }
     }
+ 
+    focus = {
+        id = USA_civil_propoganda
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_the_press
+        x = -1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_press
+        }
+        completion_reward = {
+            stability_weekly = 0.05
+            add_war_support = 0.1
+        }
+    }
+
+    focus = {
+        id = USA_outward_propoganda
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_the_press
+        x = 1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_press
+        }
+    }
+
+    focus = {
+        id = USA_covering_up_the_enclave
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_the_press
+        x = 0
+        y = 2
+        cost = 3
+        prerequisite = {
+            focus = USA_outward_propoganda
+            focus = USA_civil_propoganda
+        }
+    } 
+
+    focus = {
+        id = USA_the_cia
+        icon = GFX_focus_generic_special_forces
+        relative_position_id = USA_john_granite
+        x = 4
+        y = 1
+        cost = 3
+        prerequisite = {
+            focus = USA_john_granite
+        }
+    }
+
+    focus = {
+        id = USA_keep_a_watchful_eye
+        icon = GFX_focus_generic_recon
+        relative_position_id = USA_the_cia
+        x = -1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_cia
+        }
+        completion_reward = {
+            inteligence_agency_defense = 0.5
+        }
+    }
+
+    focus = {
+        id = USA_establish_international_security
+        icon = GFX_focus_generic_recon
+        relative_position_id = USA_the_cia
+        x = 1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_cia
+        }
+        completion_reward = {
+            intel_network_gain_factor = 0.4
+        }
+    }
+
+    focus = {
+        id = USA_expand_cia_activites
+        icon = GFX_focus_generic_special_forces
+        relative_position_id = USA_the_cia
+        x = 0
+        y = 2
+        cost = 3
+        prerequisite = {
+            focus = USA_establish_international_security
+            focus = USA_keep_a_watchful_eye
+        }
+    }
+
+    focus = {
+        id = USA_the_us_military
+        icon = GFX_focus_generic_army
+        relative_position_id = USA_john_granite
+        x = -4
+        y = 1
+        cost = 3
+        prerequisite = {
+            focus = USA_john_granite
+        }
+    }
+
+    focus = {
+        id = USA_budgeting
+        icon = GFX_focus_generic_industry
+        relative_position_id = USA_the_us_military
+        x = -1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_us_military
+        }
+    }
+
+    focus = {
+        id = USA_military_goals
+        icon = GFX_focus_generic_recon
+        relative_position_id = USA_the_us_military
+        x = 1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_the_us_military
+        }
+    }
+
+    focus = {
+        id = USA_a_loyal_military
+        icon = GFX_focus_generic_army
+        relative_position_id = USA_the_us_military
+        x = 0
+        y = 2
+        cost = 3
+        prerequisite = {
+            focus = USA_budgeting
+            focus = USA_military_goals
+        }
+    }
+
+    focus = {
+        id = USA_congress?
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_john_granite
+        x = -10
+        y = 1
+        cost = 3
+        prerequisite = {
+            focus = USA_john_granite
+        }
+    }
+
+    focus = {
+        id = USA_a_preview_session_of_congress
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress?
+        x = -3
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_congress?
+        }
+        mutually_exclusive = {
+            focus = USA_only_the_worst_of_the_worst
+            focus = USA_keep_them_out_of_this
+        }
+        completion_reward = {
+            add_war_support = 0.7
+            add_stability = -0.4
+        }
+    }
+
+    focus = {
+        id = USA_only_the_worst_of_the_worst
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress?
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_congress?
+        }
+        mutually_exclusive = {
+            focus = USA_keep_them_out_of_this
+            focus = USA_a_preview_session_of_congress
+        }
+        completion_reward = {
+            add_war_support = 0.3
+            add_stability = -0.2
+        }
+    }
+
+    focus = {
+        id = USA_keep_them_out_of_this
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress?
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = USA_congress?
+        }
+        mutually_exclusive = {
+            focus = USA_a_preview_session_of_congress
+            focus = USA_only_the_worst_of_the_worst
+        }
+    }
+
+    focus = {
+        id = USA_the_fate_of_congress
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress?
+        x = 0
+        y = 2
+        prerequisite = {
+            focus = USA_a_preview_session_of_congress
+            focus = USA_keep_them_out_of_this
+            focus = USA_only_the_worst_of_the_worst
+        }
+    }
+
+    focus = {
+        id = USA_our_corporate_friends
+        icon = GFX_focus_generic_industry
+        relative_position_id = USA_john_granite
+        x = 10
+        y = 1
+        prerequisite = {
+            focus = USA_john_granite
+        }
+    }
+
+    focus = {
+        id = USA_deal_with_the_resource_wars
+        icon = GFX_focus_generic_industry
+        relative_position_id = USA_our_corporate_friends
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = USA_our_corporate_friends
+        }
+    }
+
+    focus = {
+        id = USA_build_factories
+        icon = GFX_focus_generic_industry
+        relative_position_id = USA_our_corporate_friends
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = USA_our_corporate_friends
+        completion_reward = {
+            add_building_construction = {
+                arms_factory
+                level 1
+                instant_build = yes
+            } 
+        }
+        }
+    }
+
+    focus = {
+        id = USA_corporate_influence
+        icon = GFX_focus_generic_industry
+        relative_position_id = USA_our_corporate_friends
+        x = 0
+        y = 2
+        prerequisite = {
+            focus = USA_deal_with_the_resource_wars
+            focus = USA_build_factories
+        }
+    }
+
+    focus = {
+        id = USA_farewell_mr_president
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_john_granite
+        x = 0
+        y = 4
+        prerequisite = {
+            focus = USA_covering_up_the_enclave
+        }
+        prerequisite = {
+            focus = USA_expand_cia_activites
+        }
+        prerequisite = {
+            focus = USA_corporate_influence
+        }
+        prerequisite = {
+            focus = USA_a_loyal_military
+        }
+        prerequisite = {
+            focus = USA_the_fate_of_congress
+        }
+    }
 }

@@ -214,5 +214,17 @@ spriteTypes = {
 		name = "GFX_goal_temporary_solution"
 		textureFile = "gfx/interface/goals/ENG/temporary_solution.dds"
 	}
+
+	#### UNITED STATES 
+
+	spriteType = {
+		name = "GFX_goal_USA_missile_system_experiments"
+		textureFile =  "gfx/interface/goals/USA/GFX_missile_system_expirements.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_USA_usa_usaf"
+		textureFile = "GFX/interface/goals/USA/GFX_usa_usaf.dds"
+	}
 	
 }

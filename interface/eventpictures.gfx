@@ -3596,6 +3596,15 @@ spriteTypes = {
 		name = "GFX_news_event_soviet_collapse_news_1"
 		texturefile = "gfx/event_pictures/GFX_news_event_soviet_collapse_news_1.dds"
 	}
+
+	###############
+	##### USA ##### 
+	###############
+
+	spriteType = {
+		name = "GFX_USA_congress_image"
+		textureFile = "gfx/event_pictures/GFX_USA_congress_image.dds"
+	}
 }
 
 

@@ -7,12 +7,12 @@ country_event = {
     id = congress_summons_doa.1
     title = congress_summons_doa.t
     desc = congress_summons_doa.d
-    picture = GFX_report_event_generic_read_write
+    picture = GFX_USA_congress_image
 
     trigger = {
         is_power_balance_in_range = {
             id = USA_enclave_balance
-            range = hearings_held
+            range = USA_hearings_held
         }
     }
 
@@ -37,7 +37,7 @@ country_event = {
     id = finanical_honor_committee.1
     title = finanical_honor_committee.t
     desc = finanical_honor_committee.d
-    picture = GFX_report_event_generic_read_write
+    picture = GFX_USA_congress_image
 
     mean_time_to_happen = {
         days = 3
@@ -59,7 +59,7 @@ country_event = {
     trigger = {
         is_power_balance_in_range = {
             id = USA_enclave_balance
-            range = enclave_exposed
+            range = USA_enclave_exposed
         }
     }
 
@@ -70,7 +70,7 @@ country_event = {
     fire_only_once = yes
 
     option = {
-        name = officials_involved_in_conspiracy.1.a
+        name = officials_involved_in_conspiracy.1.a ## PRESIDENT PARDONS ENCLAVE MEMBERS
         add_stability = 0.01
         add_war_support = 0.02
     
@@ -79,6 +79,11 @@ country_event = {
                 id = president_pardons_enclave_members.1
             }
         }
+    }
+    option = {
+        name = officials_involved_in_conspiracy.1.b ## PRESIDENT DOESNT PARDON ENCLAVE MEMBERS
+        add_stability = 0.05
+        add_war_support = -0.05
     }
 }
 country_event = {
@@ -95,14 +100,20 @@ country_event = {
 
     option = {
         name = president_pardons_enclave_members.1.a
-        add_popularity = 0.1
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.05
+        }
         add_political_power = -50
         add_war_support = 0.05
         add_stability = -0.05
     }
     option = {
         name = president_pardons_enclave_members.1.b
-        add_popularity = -0.05
+        add_popularity = {
+            ideology = democratic
+            popularity = -0.05
+        }
         add_political_power = -75
         add_stability = 0.05
     }

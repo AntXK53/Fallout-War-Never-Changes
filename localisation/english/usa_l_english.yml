@@ -102,4 +102,32 @@ USA_special_weapons_initiative: "Special Weapons Initiative"
 USA_john_granite: "John Granite"
 
 USA_the_56_election_tt: "The long awaited 2056 election will decide who will replace §GPhillip E. Oswald§!, whos presidency has been less than ideal."
+USA_rain_in_defense_spending_tt: "§YUnlocks decisions§! to convert military factories to civilian factories."
+
+USA_project_safehouse_desc: "It is clear that tensions are rising and we must ensure government continuity at all costs..."
+
+anti_enclave: "Anti Enclave"
+enclave_supporter: "Pro Enclave"
+
+state_commonwealths: "State Commonwealths"
+fusion_technology_funding: "Fusion Technology Funding"
+oil_shortages: "Oil Shortages"
+effects_of_the_new_plague: "Effects Of The New Plague"
+industrial_union_strikes: "Industrial Union Strikes"
+
+## EVENTS
+
+congress_summons_doa.t: "Congress Summons Department Of Agriculture"
+congress_summons_doa.d: "In a rare show of bipartisan unity, the U.S. Congress has formally summoned the Department of Agriculture to testify regarding an alarming series of classified budgetary discrepancies. Reports indicate that the department’s black-budget expenditures have nearly tripled in the last fiscal year — with no clear explanation as to where the funding has gone. Whispers on Capitol Hill suggest these funds may be part of a larger covert operation — possibly tied to corporate entities or private military contractors. The hearings are set to be televised, but much of the documentation remains sealed under national security protocols. Members of the Reformist Movement argue that this is a “tipping point” in unraveling systemic corruption. Tensions rise as the first hearings begin behind closed doors."
+congress_summons_doa.1.a: "Some expensive cattle..."
+
+finanical_honor_committee.t: "Congressional Financial Committee"
+finanical_honor_committee.d: "Following intense pressure from both public watchdogs and reformist lawmakers, Congress has established a bipartisan Financial Honor Committee — a special investigatory body tasked with auditing federal departments suspected of misusing classified funds. While officially non-partisan, the committee is seen as a symbolic rebuke to decades of unchecked executive authority and corporate influence over national infrastructure and security spending. The Department of Agriculture has been named the committee’s first target, with other bureaucracies — including Energy, Defense, and Interior — likely to follow. Early probes have uncovered alarming inconsistencies in budget trails, subcontractor payments, and off-the-books projects across multiple states."
+finanical_honor_committee.1.a: "Let's hope things don't get worse..."
+
+officials_involved_in_conspiracy.t: "Officials Involved in Conspiracy"
+officials_involved_in_conspiracy.d: "A seismic political scandal has rocked the nation. Leaked documents from the Financial Honor Committee — corroborated by whistleblower testimony and intercepted communications — have revealed the unthinkable: a network of high-ranking government officials, corporate executives, and retired military leaders have been secretly collaborating with the so called 'Enclave', a shadowy continuity-of-government project long thought to be defunct or conspiratorial fiction. The documents lay bare a vast conspiracy to hollow out the democratic institutions of the United States — diverting funding, manipulating appointments, and suppressing opposition — all in preparation for an authoritarian reclamation of the Republic under Enclave leadership. Civilian agencies are in chaos. Protests erupt nationwide. Media outlets are split between full-blown outrage and cautious silence. Some officials implicated in the scandal have vanished entirely. Others deny involvement and call the leaks “fabricated.”"
+officials_involved_in_conspiracy.1.a: "Things got worse..."
+
+president_pardons_enclave_members.t: "[USA.GetLeader] Has Pardoned Enclave Members!"
 

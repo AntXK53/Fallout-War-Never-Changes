@@ -1,4 +1,17 @@
 characters={
+		BRM_Council={
+		name="Military Council"
+		portraits={
+			civilian={
+				large=gfx/leaders/BRM/Portrait_Myanmar_MyanmarMilitaryCouncil.png
+			}
+		}
+		country_leader={
+			ideology= Stratocracy
+			expire="2077.1.1.1"
+			id=-1
+		}
+	}
 	BRM_acgs={
 		advisor={
 			slot = air_chief

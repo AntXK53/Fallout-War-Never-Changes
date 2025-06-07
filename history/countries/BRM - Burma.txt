@@ -86,6 +86,10 @@ set_popularities = {
 	communism = 14
 	neutrality = 12
 }
+add_ideas = {
+	ASEAN_Resource_Scarcity
+	ASEAN_CommunistTerrorCells
+}
 	declare_war_on = {
 		target = PDF
 		type = annex_everything #cb
@@ -95,10 +99,6 @@ set_popularities = {
 		type = annex_everything #cb
 	}
 
-recruit_character = BRM_archibald_cochrane
-recruit_character = BRM_ne_win
-recruit_character = BRM_ba_maw
-recruit_character = BRM_u_nu
-recruit_character = BRM_myat_phaya_lat
+recruit_character = BRM_Council
 
 

@@ -19,5 +19,60 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+
+		prc_One_Child = { #this will never be lost only increased!!!
+			picture = prc_golden_era_image
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		prc_State_Corruption = { #this will never be lost only increased!!!
+			picture = prc_golden_era_image
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+		prc_Incompetent_Army = { #this will never be lost only increased!!!
+			picture = prc_golden_era_image
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
 	}
 }

@@ -1,0 +1,6 @@
+Fight_New_plague_category = {
+    icon = generic_political_actions
+        allowed = {
+            always = yes
+            }
+    }

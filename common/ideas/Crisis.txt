@@ -1,0 +1,404 @@
+ideas = {
+
+	Resource_Crisis = { 
+	
+		law = yes
+		
+		Shortages_out_of_control = {
+		    available = {
+			    OR = {
+					has_government = communism
+				}
+			}
+	
+			modifier = {
+			    production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+	
+			cost = 50
+			
+			cancel_if_invalid = yes
+			
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+				    OR = {
+					has_government = communism
+					}
+					factor = 1
+					
+				}
+			}		
+			
+		}
+		
+		Severe_Resource_Shortage = {
+
+			available = {
+		        OR = {
+					has_government = democratic
+				}
+			}
+			
+			modifier = {
+			    stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+			
+			cost = 50
+
+			cancel_if_invalid = yes
+
+			ai_will_do = {
+   				factor = 1
+
+				modifier = {
+				    OR = {
+					has_government = democratic
+					}
+					factor = 1
+					
+				}
+   			}
+		}
+		
+		Moderate_Resource_Shortage = {
+
+		    available = {
+		        OR = {
+					has_government = neutrality
+				}
+		    }
+			
+			modifier = {
+				army_defence_factor = 0.05
+				max_command_power = 25
+
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = neutrality
+					}
+					factor = 1
+				}  
+   			}
+		}
+		
+		Small_Resource_Shortage = {
+
+		    available = {
+		        OR = {
+					has_government = fascism
+				}
+		    }
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = fascism
+					}
+					factor = 1
+				}  
+   			}
+		}
+	}
+
+	Energy_Crisis = { 
+	
+		law = yes
+		
+		Complete_Blackouts = {
+		    available = {
+			    OR = {
+					has_government = communism
+				}
+			}
+	
+			modifier = {
+			    production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+	
+			cost = 50
+			
+			cancel_if_invalid = yes
+			
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+				    OR = {
+					has_government = communism
+					}
+					factor = 1
+					
+				}
+			}		
+			
+		}
+		
+		Near_Complete_Blackouts = {
+
+			available = {
+		        OR = {
+					has_government = democratic
+				}
+			}
+			
+			modifier = {
+			    stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+			
+			cost = 50
+
+			cancel_if_invalid = yes
+
+			ai_will_do = {
+   				factor = 1
+
+				modifier = {
+				    OR = {
+					has_government = democratic
+					}
+					factor = 1
+					
+				}
+   			}
+		}
+		
+		Major_Blackouts = {
+
+		    available = {
+		        OR = {
+					has_government = neutrality
+				}
+		    }
+			
+			modifier = {
+				army_defence_factor = 0.05
+				max_command_power = 25
+
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = neutrality
+					}
+					factor = 1
+				}  
+   			}
+		}
+		
+		Minor_Blackouts = {
+
+		    available = {
+		        OR = {
+					has_government = fascism
+				}
+		    }
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = fascism
+					}
+					factor = 1
+				}  
+   			}
+		}
+
+		Rolling_Blackouts = {
+
+		    available = {
+		        OR = {
+					has_government = fascism
+				}
+		    }
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = fascism
+					}
+					factor = 1
+				}  
+   			}
+		}
+	}
+
+	Food_Crisis = { 
+	
+		law = yes
+		
+		Famines_Rampant = {
+		    available = {
+			    OR = {
+					has_government = communism
+				}
+			}
+	
+			modifier = {
+			    production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+	
+			cost = 50
+			
+			cancel_if_invalid = yes
+			
+			ai_will_do = {
+   				factor = 1
+				
+				modifier = {
+				    OR = {
+					has_government = communism
+					}
+					factor = 1
+					
+				}
+			}		
+			
+		}
+		
+		Severe_Food_Shortage = {
+
+			available = {
+		        OR = {
+					has_government = democratic
+				}
+			}
+			
+			modifier = {
+			    stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+			
+			cost = 50
+
+			cancel_if_invalid = yes
+
+			ai_will_do = {
+   				factor = 1
+
+				modifier = {
+				    OR = {
+					has_government = democratic
+					}
+					factor = 1
+					
+				}
+   			}
+		}
+		
+		Moderate_Food_Shortage = {
+
+		    available = {
+		        OR = {
+					has_government = neutrality
+				}
+		    }
+			
+			modifier = {
+				army_defence_factor = 0.05
+				max_command_power = 25
+
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = neutrality
+					}
+					factor = 1
+				}  
+   			}
+		}
+		
+		Minor_Food_Shortage = {
+
+		    available = {
+		        OR = {
+					has_government = fascism
+				}
+		    }
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				war_support_factor = 0.1
+			}
+			
+			cancel_if_invalid = yes
+			
+			cost = 50
+			
+			ai_will_do = {
+   				factor = 1
+
+   			    modifier = {
+			        OR = {
+					has_government = fascism
+					}
+					factor = 1
+				}  
+   			}
+		}
+	}
+
+}

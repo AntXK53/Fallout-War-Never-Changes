@@ -20,6 +20,9 @@ focus_tree = {
 						FOCUS_FILTER_INDUSTRY
 					
 		}
+    available = {
+		always = false
+		}
 	}
 	# Won ASEAN War
 	focus = {
@@ -266,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = PRC_ASEAN_Gone_To_Far
 		icon = GFX_goal_unknown
-		x = 19
+		x = 18
 		y = 4
 		cost = 3
 		search_filters = {
@@ -480,11 +483,100 @@ focus_tree = {
 		}
 		prerequisite = {  }
 	}
+	# Talks with Arabic
+	focus = {
+		id = PRC_Talk_With_Arabia
+		icon = GFX_goal_unknown
+		x = 26
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Sick_Economy  }
+	}
+	focus = {
+		id = PRC_Men_For_Oil
+		icon = GFX_goal_unknown
+		x = 25
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Talk_With_Arabia }
+	}
+	focus = {
+		id = PRC_Protect_Oil_Sites
+		icon = GFX_goal_unknown
+		x = 25
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Talk_With_Arabia }
+	}
+	focus = {
+		id = PRC_Expand_Volunteers
+		icon = GFX_goal_unknown
+		x = 25
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Protect_Oil_Sites }
+	}
+	focus = {
+		id = PRC_Use_To_Test
+		icon = GFX_goal_unknown
+		x = 27
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Talk_With_Arabia }
+	}
+	focus = {
+		id = PRC_Biological_Testing
+		icon = GFX_goal_unknown
+		x = 27
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Guns_For_Oil }
+	}
+	focus = {
+		id = PRC_Victor_Goes_Success
+		icon = GFX_goal_unknown
+		x = 26
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Expand_Volunteers focus = PRC_Biological_Testing }
+	}
+	focus = {
+		id = PRC_Guns_For_Oil
+		icon = GFX_goal_unknown
+		x = 27
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_Use_To_Test }
+	}
 	# Talks with Peoples Republic Of Australia
 	focus = {
 		id = PRC_Talk_With_PRA
 		icon = GFX_goal_unknown
-		x = 30
+		x = 31
 		y = 5
 		cost = 3
 		search_filters = {
@@ -496,7 +588,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Uranium_First
 		icon = GFX_goal_unknown
-		x = 29
+		x = 30
 		y = 6
 		cost = 3
 		search_filters = {
@@ -509,7 +601,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Renegotiate_Resource
 		icon = GFX_goal_unknown
-		x = 29
+		x = 30
 		y = 7
 		cost = 3
 		search_filters = {
@@ -521,7 +613,7 @@ focus_tree = {
 	focus = {
 		id = PRC_More_Then_Uranium
 		icon = GFX_goal_unknown
-		x = 29
+		x = 30
 		y = 8
 		cost = 3
 		search_filters = {
@@ -533,7 +625,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Pine_Gap_Reownership
 		icon = GFX_goal_unknown
-		x = 31
+		x = 32
 		y = 6
 		cost = 3
 		search_filters = {
@@ -546,7 +638,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Develop_Alice_Springs
 		icon = GFX_goal_unknown
-		x = 31
+		x = 32
 		y = 7
 		cost = 3
 		search_filters = {
@@ -558,7 +650,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Steal_American_Intelligence
 		icon = GFX_goal_unknown
-		x = 31
+		x = 32
 		y = 8
 		cost = 3
 		search_filters = {
@@ -570,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Peoples_New_Duty
 		icon = GFX_goal_unknown
-		x = 35
+		x = 36
 		y = 5
 		cost = 3
 		search_filters = {
@@ -582,7 +674,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Electric_Public
 		icon = GFX_goal_unknown
-		x = 34
+		x = 35
 		y = 6
 		cost = 3
 		search_filters = {
@@ -594,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Develop_Nuclear_Frat
 		icon = GFX_goal_unknown
-		x = 34
+		x = 35
 		y = 7
 		cost = 3
 		search_filters = {
@@ -606,7 +698,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Fuelless_Mining
 		icon = GFX_goal_unknown
-		x = 34
+		x = 35
 		y = 8
 		cost = 3
 		search_filters = {
@@ -618,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Oil_Tax
 		icon = GFX_goal_unknown
-		x = 37
+		x = 38
 		y = 6
 		cost = 3
 		search_filters = {
@@ -629,7 +721,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Civilian_Quota
 		icon = GFX_goal_unknown
-		x = 38
+		x = 39
 		y = 7
 		cost = 3
 		search_filters = {
@@ -642,7 +734,7 @@ focus_tree = {
 	focus = {
 		id = PRC_New_Age_Eff_Campaign
 		icon = GFX_goal_unknown
-		x = 38
+		x = 39
 		y = 8
 		cost = 3
 		search_filters = {
@@ -654,7 +746,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Military_Quota
 		icon = GFX_goal_unknown
-		x = 36
+		x = 37
 		y = 7
 		cost = 3
 		search_filters = {
@@ -666,7 +758,7 @@ focus_tree = {
 	focus = {
 		id = PRC_Fuelless_Army_Initative
 		icon = GFX_goal_unknown
-		x = 36
+		x = 37
 		y = 8
 		cost = 3
 		search_filters = {
@@ -677,12 +769,26 @@ focus_tree = {
 	focus = {
 		id = PRC_Peoples_Army_Ready
 		icon = GFX_goal_unknown
-		x = 35
+		x = 36
 		y = 9
 		cost = 3
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
-		prerequisite = { focus = PRC_Fuelless_Mining }
-	}
+		prerequisite = { focus = PRC_Fuelless_Army_Initative}
+		prerequisite = { focus = PRC_Fuelless_Mining }	
+		}
+	focus = {
+		id = PRC_Green_Workers_Future
+		icon = GFX_goal_unknown
+		x = 38
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = PRC_New_Age_Eff_Campaign }
+		prerequisite = { focus = PRC_Fuelless_Mining }	
+
+}
 }

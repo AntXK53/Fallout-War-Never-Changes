@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_state = {
+                add_dynamic_modifier = { modifier = New_Plague_Spreading }
+            }
+        }
+    }
+}

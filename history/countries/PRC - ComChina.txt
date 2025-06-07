@@ -73,7 +73,6 @@ set_politics = {
 set_popularities = {
 	communism = 100
 }
-
 MON = {
     add_popularity = { ideology = communism popularity = 0.8 }
     set_politics = {
@@ -89,12 +88,21 @@ add_to_faction = PRC
 add_to_faction = MON
 add_to_faction = IND
 add_to_faction = KOR
+add_to_faction = CAM
 
 add_ideas = {
 	closed_economy
 	service_by_requirement
 	partial_economic_mobilisation
-	prc_golden_era
+	prc_One_Child
+	prc_State_Corruption
+	prc_Incompetent_Army
+	Minor_Blackouts_idea
+	Moderate_Resource_Shortage
+	Rolling_Blackouts
+	Minor_Food_Shortage
+
+	
 }
 
 if = {

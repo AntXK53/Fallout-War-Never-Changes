@@ -166,4 +166,11 @@ spriteTypes = {
 		name = "GFX_idea_LIT_claims_on_poland_idea"
 		texturefile = "gfx/interface/ideas/LIT_claims_on_poland_idea.dds"
 	}
+
+	### New Plague ###
+	spriteType = {
+		name = "GFX_idea_NewPlague"
+		texturefile = "gfx/interface/state_modifiers/NewPlague.dds"
+	}	
+
 }

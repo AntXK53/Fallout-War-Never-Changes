@@ -1,0 +1,9 @@
+New_Plague_Spreading = {
+    icon = GFX_idea_NewPlague
+    # Example effects, adjust as needed:
+    local_manpower = -0.05
+    local_supply_impact_factor = 0.1
+    resistance_growth = 0.05
+    army_speed_factor_for_controller = -0.1
+    local_org_regain = -0.05
+}

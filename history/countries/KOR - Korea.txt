@@ -20,6 +20,11 @@ set_politics = {
 set_popularities = {
 	communism = 100
 }
+add_ideas = {
+	Near_Blackouts_idea
+	Resource_OutOfHand_idea
+	Severe_Food_Shortage_idea
+}
 
 create_country_leader = {
 	name = "Kim Sung-Ki"

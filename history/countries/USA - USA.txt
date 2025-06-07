@@ -231,6 +231,7 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
+
 recruit_character = USA_phillip_e_oswald
 recruit_character = USA_james_c_wallace
 recruit_character = USA_john_granite

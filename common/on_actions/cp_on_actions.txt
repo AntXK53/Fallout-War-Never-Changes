@@ -5,6 +5,17 @@ on_actions = {
 				limit = { is_ai = no }
 				country_event = cp.1
 			}
+		# Student Protests
+		PRC = {
+			country_event = {
+			id = ASEAN.5
+			days = 24
+			}
+		}
+
+
+
+
 		}
 	}
 }

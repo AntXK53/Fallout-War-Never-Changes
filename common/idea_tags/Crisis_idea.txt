@@ -1,0 +1,13 @@
+idea_categories = {
+
+	Crisis_policies = {
+		slot = Resource_Crisis
+		slot = Energy_Crisis
+		slot = Food_Crisis
+		
+		cost = 0
+		removal_cost = 0
+	
+	}
+	
+}

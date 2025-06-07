@@ -1,0 +1,24 @@
+Fight_New_plague_category = {
+
+Quarantine_The_Region_decision = {
+    state_target = yes
+    icon = my_icon
+	on_map_mode = map_only
+    cost = 20
+    target_trigger = {
+        FROM = {	
+            is_owned_by = ROOT	
+			has_dynamic_modifier = {
+ 			   modifier = New_Plague_Spreading
+}	
+			}
+    }
+    complete_effect = {
+        FROM = {
+            remove_dynamic_modifier = { modifier = New_Plague_Spreading }
+        }
+    }
+}
+
+
+}

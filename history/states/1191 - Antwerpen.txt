@@ -1,6 +1,7 @@
 state={
 	id=1191
 	name="STATE_1191"
+	state_category = metropolis
 	provinces={
 		6598 11419 13068 9574
 	}
@@ -17,7 +18,7 @@ state={
 		victory_points = { 6598 30 }
 		victory_points = { 13068 1 }
 	}
-	manpower=0
+	manpower=2150000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

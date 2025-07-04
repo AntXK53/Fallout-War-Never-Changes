@@ -1,0 +1,12 @@
+defined_text = {
+	name = USA_congress_doa_loc
+	text = {
+		trigger = {
+			has_country_leader = USA_john_granite
+		}
+		localization_key = USA_congress_summons_doa_enclave
+	}
+	text = {
+		localization_key = USA_congress_summons_doa
+	}
+}

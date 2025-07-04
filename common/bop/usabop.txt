@@ -1,8 +1,8 @@
 USA_enclave_balance = {
-    initial_value = 0.05
+    initial_value = 0
     left_side = USA_coalition_side
     right_side = USA_enclave_side
-    decision_category = USA_enclave_category
+    decision_category = USA_bop_enclave_cat
     range = {
         id = USA_mid_range
         min = -0.35
@@ -34,11 +34,11 @@ USA_enclave_balance = {
                 war_support_weekly = -0.03
                 consumer_goods_factor = 0.05
                 political_power_gain = -1
-                power_balance_weekly = -0.05
             }
             on_activate = {
                 add_stability = -0.1
                 add_war_support = -0.07
+                country_event = congress_summons_doa.1
             }
         }
         range = {
@@ -57,15 +57,18 @@ USA_enclave_balance = {
                 hidden_effect = {
                     if = {
                         limit = {
-                            country_leader = USA_john_granite ##Placeholder, IIRACA will update this in the future. TODO make this a or for each pro enclave president
+                            USA = {
+                                has_country_leader_with_trait = enclave_supporter
+                            }
                         }
                         start_civil_war = {
                             ruling_party = Militarism
-                            ideology = fascism
+                            ideology = democratic
                             size = 0.6
                             capital = 378
+                            add_civil_war_target = ENC
                             states = { 
-                                395 1142 1143 378
+                                395 378 375 384 1118 382 
                             }
                             ##keep_unit_leaders = {
                             ##    750 751 752
@@ -83,7 +86,7 @@ USA_enclave_balance = {
                 stability_weekly = 0.05
                 war_support_weekly = 0.05
                 political_power_gain = 5
-                power_balance_weekly = -0.025
+                power_balance_weekly = -0.05
                 consumer_goods_factor = -0.15
             }
             on_activate = {

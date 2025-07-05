@@ -7,7 +7,7 @@ state={
 		victory_points = {
 			2096 1 
 		}
-		owner = UAR
+		owner = SUD
 		add_core_of = UAR
 		add_core_of = SUD
 		buildings = {

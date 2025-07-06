@@ -14,7 +14,7 @@ USA_enclave_balance = {
 
     side = {
         id = USA_coalition_side
-        icon = GFX_idea_generic_agrarian_society #someone please make the coalition icons
+        icon = GFX_coalition_star #someone please make the coalition icons
         range = {
             id = USA_resistance_to_corruption
             min = -0.35
@@ -98,7 +98,7 @@ USA_enclave_balance = {
     
     side = {
         id = USA_enclave_side
-        icon = GFX_idea_generic_degauss_ship_hulls #someone please make the enclave icons
+        icon = GFX_enclave_e #someone please make the enclave icons
         range = {
             id = USA_secret_corruption
             min = 0.1

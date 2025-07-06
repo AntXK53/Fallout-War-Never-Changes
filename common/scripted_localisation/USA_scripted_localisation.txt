@@ -2,11 +2,23 @@ defined_text = {
 	name = USA_congress_doa_loc
 	text = {
 		trigger = {
-			has_country_leader = USA_john_granite
+			has_country_leader_with_trait = enclave_supporter
 		}
-		localization_key = USA_congress_summons_doa_enclave
+		localization_key = congress_summons_doa_enclave.d
 	}
 	text = {
-		localization_key = USA_congress_summons_doa
+		localization_key = congress_summons_doa_coalition.d
+	}
+}
+defined_text = {
+	name = USA_revelations_loc
+	text = {
+		trigger = {
+			has_country_leader_with_trait = enclave_supporter
+		}
+		localization_key = revelations_enclave.d
+	}
+	text = {
+		localization_key = revelations_coalition.d
 	}
 }

@@ -242,4 +242,13 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_coalition_star"
+		textureFile = "gfx/interface/bop/GFX_coalition_star.dds"
+	}
+
+	spriteType = {
+		name = "GFX_enclave_e"
+		textureFile = "gfx/interface/bop/GFX_enclave_e.dds"
+	}
 }

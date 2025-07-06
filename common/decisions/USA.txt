@@ -802,6 +802,7 @@ USA_project_safehouse_cat = {
 				value = 7
 				compare = less_than
 			}
+			date > 2065.02.01
 			custom_override_tooltip = {
 				tooltip = USA_decision_vault_counter_tt
 			}
@@ -813,7 +814,7 @@ USA_project_safehouse_cat = {
 			}
 		}
 
-		days_remove = 2920
+		days_remove = 1703
 
 		fire_only_once = yes
 

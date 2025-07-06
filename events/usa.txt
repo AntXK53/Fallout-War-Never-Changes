@@ -4,6 +4,7 @@ add_namespace = mr_secretary
 add_namespace = revelationstwo
 add_namespace = officials_involved_in_conspiracy
 add_namespace = president_pardons_enclave_members
+add_namespace = vault_tec_growth_check
 
 country_event = {
     id = congress_summons_doa.1
@@ -156,5 +157,43 @@ country_event = {
         }
         add_political_power = -75
         add_stability = 0.05
+    }
+}
+
+country_event = {
+    id = vault_tec_growth_check.1
+
+    days = 365
+
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                check_variable = {
+                    var = USA_vault_created
+                    value = 2
+                    compare = greater_than
+                }
+            }
+            country_event = {
+                id = vault_tec_growth_check.1
+                days = 365
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = USA_vault_created
+                    value = 2
+                    compare = less_than_or_equals
+                }
+            }
+            set_variable = {
+                var = USA_vault_created_check
+                value = 1
+            }
+        }
     }
 }

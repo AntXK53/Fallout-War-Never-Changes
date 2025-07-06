@@ -25,3 +25,14 @@ USA_bop_enclave_cat = {
         }
     }
 }
+
+USA_project_safehouse_cat = {
+
+    icon = GFX_vault_cat_icon
+
+    scripted_gui = project_safehouse_gui
+
+    allowed = {
+        tag = USA
+    }
+}

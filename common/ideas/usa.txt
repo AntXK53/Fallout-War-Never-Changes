@@ -65,5 +65,15 @@ ideas = {
 				party_popularity_stability_factor = 0.05
 			}
 		}
+
+		USA_vault_tec_good_quarter = {
+			picture = GFX_vault_tec_icon
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.35
+			}
+		}
 	}
 }

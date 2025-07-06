@@ -22,6 +22,7 @@ country_event = {
     days = 3
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = congress_summons_doa.1.a
@@ -33,6 +34,7 @@ country_event = {
         country_event = {
             id = revelations.1
             days = 2
+            is_triggered_only = yes
         }
     }
 }
@@ -47,6 +49,7 @@ country_event = {
     }
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = revelations.1.a
@@ -58,6 +61,7 @@ country_event = {
         country_event = {
             id = mr_secretary.1
             days = 11
+            is_triggered_only = yes
         }
     }
 }
@@ -68,6 +72,7 @@ country_event = {
     picture = GFX_USA_congress_image
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = mr_secretary.1.a
@@ -79,6 +84,7 @@ country_event = {
         country_event = {
             id = revelationstwo.1
             days = 14
+            is_triggered_only = yes
         }
     }
 }
@@ -89,6 +95,7 @@ country_event = {
     picture = GFX_USA_congress_image
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = revelationstwo.1.a
@@ -99,6 +106,7 @@ country_event = {
         country_event = {
             id = officials_involved_in_conspiracy.1
             days = 4
+            is_triggered_only = yes
         }
     }
 }
@@ -111,6 +119,7 @@ country_event = {
     days = 3
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = officials_involved_in_conspiracy.1.a ## PRESIDENT PARDONS ENCLAVE MEMBERS
@@ -120,6 +129,7 @@ country_event = {
         hidden_effect = {
             country_event = {
                 id = president_pardons_enclave_members.1
+                is_triggered_only = yes
             }
         }
     }
@@ -138,6 +148,7 @@ country_event = {
     days = 3
 
     fire_only_once = yes
+    is_triggered_only = yes
 
     option = {
         name = president_pardons_enclave_members.1.a
@@ -163,7 +174,7 @@ country_event = {
 country_event = {
     id = vault_tec_growth_check.1
 
-    days = 365
+    days = 360
 
     hidden = yes
     is_triggered_only = yes
@@ -172,27 +183,31 @@ country_event = {
         if = {
             limit = {
                 check_variable = {
-                    var = USA_vault_created
+                    var = USA_decision_vault_counter
                     value = 2
-                    compare = greater_than
-                }
-            }
-            country_event = {
-                id = vault_tec_growth_check.1
-                days = 365
-            }
-        }
-        else_if = {
-            limit = {
-                check_variable = {
-                    var = USA_vault_created
-                    value = 2
-                    compare = less_than_or_equals
+                    compare = greater_than_or_equals
                 }
             }
             set_variable = {
                 var = USA_vault_created_check
                 value = 1
+            }
+            country_event = {
+                id = vault_tec_growth_check.1
+                days = 360
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = USA_decision_vault_counter
+                    value = 2
+                    compare = less_than
+                }
+            }
+            set_variable = {
+                var = USA_vault_created_check
+                value = 0
             }
         }
     }

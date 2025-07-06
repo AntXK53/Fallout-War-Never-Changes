@@ -775,7 +775,7 @@ USA_project_safehouse_cat = {
 
 		complete_effect = {
 			add_to_variable = {
-				variable = USA_decision_vault_counter
+				var = USA_decision_vault_counter
 				value = 1
 			}
 			add_to_variable = {

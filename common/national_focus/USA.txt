@@ -40,7 +40,7 @@ focus_tree = {
 
     focus = {
         id = USA_us_army
-        icon = GFX_usa_army
+        icon = GFX_goal_USA_us_army
         x = -10
         y = 2
         cost = 10
@@ -379,7 +379,7 @@ focus_tree = {
 
     focus = {
         id = USA_us_navy
-        icon = GFX_usa_navy
+        icon = GFX_goal_USA_us_navy
         x = 25
         y = 2
         cost = 10
@@ -568,7 +568,7 @@ focus_tree = {
 
     focus = {
         id = USA_missile_system_experiments
-        icon = missile_system_experiments
+        icon = GFX_goal_USA_missile_system_experiments
         relative_position_id = USA_us_navy
         x = -2
         y = 5
@@ -693,7 +693,7 @@ focus_tree = {
 
     focus = {
         id = USA_us_air_force
-        icon = GFX_usa_usaf
+        icon = GFX_goal_USA_usa_usaf
         x = 10
         y = 2
         cost = 10
@@ -990,13 +990,12 @@ focus_tree = {
 
     focus = {
         id = USA_a_republic_in_crisis
-        icon = GFX_goal_unknown
+        icon = GFX_goal_USA_republic_in_crisis
         cost = 3
         x = -70
         y = 2
         completion_reward = {
-            add_stability = -0.5
-            add_war_support = -0.2
+            add_stability = -0.05
         }
     }
 
@@ -1007,6 +1006,12 @@ focus_tree = {
         x = 0
         y = 1
         cost = 10.9
+        available = {
+            date > 2056.11.4
+        }
+        bypass = {
+            date > 2057.1.20
+        }
         prerequisite = { focus = USA_a_republic_in_crisis }
         completion_reward = {
             add_political_power = 100
@@ -1019,13 +1024,26 @@ focus_tree = {
         icon = GFX_goal_unknown
         relative_position_id = USA_a_republic_in_crisis
         cost = 4
-        x = 20
+        x = 25
         y = 2
         prerequisite = {
             focus = USA_the_56_election
         }
         mutually_exclusive = {
             focus = USA_john_granite
+        }
+        bypass = {
+            date > 2057.1.20
+        }
+        completion_reward = {
+            promote_character = {
+                character = USA_james_c_wallace
+                ideology = Neo_Liberalism
+            }
+            add_power_balance_value = {
+                id = USA_enclave_balance
+                value = -0.05
+            }
         }
     }
 
@@ -1066,7 +1084,6 @@ focus_tree = {
         }
         completion_reward = {
             add_stability = 0.05
-            custom_effect_tooltip = USA_project_safehouse_tt
         }
     }
 
@@ -1074,6 +1091,12 @@ focus_tree = {
         id = USA_the_presidents_cabinet
         icon = GFX_goal_unknown
         relative_position_id = USA_project_safehouse
+        available = {
+            OR = {
+                has_completed_focus = USA_james_c_wallace
+                has_completed_focus = USA_john_granite
+            }
+        }
         x = 0
         y = 2
         cost = 6
@@ -1283,9 +1306,8 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = USA_appease_the_industrial_giant }
         completion_reward = {
-                add_stability = 0.05
-                consumer_goods_expected_value = -0.1
-
+            add_stability = 0.05
+            consumer_goods_expected_value = -0.1
         }
     }
 
@@ -1480,27 +1502,30 @@ focus_tree = {
             focus = USA_rain_in_defense_spending
         }
         completion_reward = {
-            add_political_power = 100
+            add_political_power = 50
             378 = {    
-                add_building_construction = {
-                    type = arms_factory
-                    level = 3
-                    instant_build = yes
-                }
-            }
-            375 = {    
-                add_building_construction = {
-                    type = arms_factory
-                    level = 4
-                    instant_build = yes
-                }
-            }
-            362 = {    
                 add_building_construction = {
                     type = arms_factory
                     level = 2
                     instant_build = yes
                 }
+                add_extra_state_shared_building_slots = 3
+            }
+            375 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 3
+            }
+            362 = {    
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_extra_state_shared_building_slots = 2
             }
         }
     }
@@ -1514,26 +1539,29 @@ focus_tree = {
         cost = 10
         prerequisite = { focus = USA_feed_the_military_industrial_complex }
         completion_reward = {
-            389 = {    
+            378 = {    
                 add_building_construction = {
                     type = arms_factory
                     level = 3
                     instant_build = yes
                 }
+                add_extra_state_shared_building_slots = 4
             }
-            359 = {    
+            362 = {    
                 add_building_construction = {
                     type = arms_factory
                     level = 2
                     instant_build = yes
                 }
+                add_extra_state_shared_building_slots = 3
             }
-            396 = {    
+            395 = {    
                 add_building_construction = {
                     type = arms_factory
-                    level = 3
+                    level = 2
                     instant_build = yes
                 }
+                add_extra_state_shared_building_slots = 3
             }
         }
     }
@@ -1562,6 +1590,17 @@ focus_tree = {
         completion_reward = {
             production_factory_efficiency_gain_factor = 0.2
             production_speed_arms_factory_factor = 0.15
+            add_war_support = 0.1
+            add_political_power = 100
+            consumer_goods_factor = -0.03
+            add_offsite_building = {
+                type =  arms_factory
+                level = 1
+            }
+            add_offsite_building = {
+                type = industrial_complex
+                level = 1
+            }
         }
     }
 
@@ -1596,14 +1635,24 @@ focus_tree = {
         id = USA_john_granite
         icon = GFX_focus_generic_political
         relative_position_id = USA_the_56_election
-        x = -20
+        x = -25
         y = 1
         cost = 4
         prerequisite = {
             focus = USA_the_56_election
         }
+        bypass = {
+            date > 2057.1.20
+        }
         completion_reward = {
-            add_war_support = 0.1
+            promote_character = {
+                character = USA_john_granite
+                ideology = conservatism
+            }
+            add_power_balance_value = {
+                id = USA_enclave_balance
+                value = 0.05
+            }
         }
         mutually_exclusive = {
             focus = USA_james_c_wallace
@@ -1612,18 +1661,21 @@ focus_tree = {
 
     focus = {
         id = USA_the_press
-        icon = GFX_focus_generic_political
+        icon = GFX_goal_unknown
         relative_position_id = USA_john_granite
-        x = -20
-        y = -1
-        cost = 3
+        x = 0
+        y = 1
+        cost = 4
         prerequisite = {
             focus = USA_john_granite
         }
+        completion_reward = {
+            add_stability = 0.05
+        }
     }
- 
+     
     focus = {
-        id = USA_civil_propoganda
+        id = USA_civil_propaganda
         icon = GFX_focus_generic_political
         relative_position_id = USA_the_press
         x = -1
@@ -1639,7 +1691,35 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_outward_propoganda
+        id = USA_tarnish_the_reds
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_the_press
+        x = -1
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_civil_propaganda
+        }
+        completion_reward = {
+            stability_weekly = 0.05
+            add_war_support = 0.1
+        }
+    }
+
+    focus = {
+        id = USA_blackmail_the_press
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_press
+        x = -1
+        y = 3
+        cost = 4
+        prerequisite = {
+            focus = USA_tarnish_the_reds
+        }
+    }
+
+    focus = {
+        id = USA_outward_propaganda
         icon = GFX_focus_generic_political
         relative_position_id = USA_the_press
         x = 1
@@ -1651,15 +1731,27 @@ focus_tree = {
     }
 
     focus = {
+        id = USA_glorify_america
+        icon = GFX_goal_unknown
+        relative_position_id = USA_the_press
+        x = 1
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_outward_propaganda
+        }
+    }
+
+    focus = {
         id = USA_covering_up_the_enclave
         icon = GFX_focus_generic_political
         relative_position_id = USA_the_press
         x = 0
-        y = 2
+        y = 4
         cost = 3
         prerequisite = {
-            focus = USA_outward_propoganda
-            focus = USA_civil_propoganda
+            focus = USA_glorify_america
+            focus = USA_blackmail_the_press
         }
     } 
 
@@ -1667,7 +1759,7 @@ focus_tree = {
         id = USA_the_cia
         icon = GFX_focus_generic_special_forces
         relative_position_id = USA_john_granite
-        x = 4
+        x = 7
         y = 1
         cost = 3
         prerequisite = {
@@ -1706,11 +1798,11 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_expand_cia_activites
+        id = USA_expand_cia_activities
         icon = GFX_focus_generic_special_forces
         relative_position_id = USA_the_cia
         x = 0
-        y = 2
+        y = 4
         cost = 3
         prerequisite = {
             focus = USA_establish_international_security
@@ -1722,7 +1814,7 @@ focus_tree = {
         id = USA_the_us_military
         icon = GFX_focus_generic_army
         relative_position_id = USA_john_granite
-        x = -4
+        x = -7
         y = 1
         cost = 3
         prerequisite = {
@@ -1734,7 +1826,7 @@ focus_tree = {
         id = USA_budgeting
         icon = GFX_focus_generic_industry
         relative_position_id = USA_the_us_military
-        x = -1
+        x = -2
         y = 1
         cost = 4
         prerequisite = {
@@ -1743,14 +1835,62 @@ focus_tree = {
     }
 
     focus = {
+        id = USA_direct_the_budgeting
+        icon = GFX_goal_unknown
+        relative_position_id = USA_budgeting
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_budgeting
+        }
+    }
+
+    focus = {
+        id = USA_bribes_n_raises
+        icon = GFX_goal_unknown
+        relative_position_id = USA_budgeting
+        x = 0
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_direct_the_budgeting
+        }
+    }
+
+    focus = {
         id = USA_military_goals
         icon = GFX_focus_generic_recon
         relative_position_id = USA_the_us_military
-        x = 1
+        x = 2
         y = 1
         cost = 4
         prerequisite = {
             focus = USA_the_us_military
+        }
+    }
+
+    focus = {
+        id = USA_our_friends
+        icon = GFX_goal_unknown
+        relative_position_id = USA_military_goals
+        x = -1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_military_goals
+        }
+    }
+
+    focus = {
+        id = USA_the_american_century
+        icon = GFX_goal_unknown
+        relative_position_id = USA_military_goals
+        x = 1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_military_goals
         }
     }
 
@@ -1759,19 +1899,24 @@ focus_tree = {
         icon = GFX_focus_generic_army
         relative_position_id = USA_the_us_military
         x = 0
-        y = 2
+        y = 4
         cost = 3
         prerequisite = {
-            focus = USA_budgeting
-            focus = USA_military_goals
+            focus = USA_bribes_n_raises
+        }
+        prerequisite = {
+            focus = USA_our_friends
+        }
+        prerequisite = {
+            focus = USA_the_american_century
         }
     }
 
     focus = {
-        id = USA_congress?
+        id = USA_congress
         icon = GFX_focus_generic_political
         relative_position_id = USA_john_granite
-        x = -10
+        x = -15
         y = 1
         cost = 3
         prerequisite = {
@@ -1780,14 +1925,14 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_a_preview_session_of_congress
+        id = USA_a_private_session_of_congress
         icon = GFX_focus_generic_political
-        relative_position_id = USA_congress?
+        relative_position_id = USA_congress
         x = -3
         y = 1
         cost = 4
         prerequisite = {
-            focus = USA_congress?
+            focus = USA_congress
         }
         mutually_exclusive = {
             focus = USA_only_the_worst_of_the_worst
@@ -1800,14 +1945,38 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_only_the_worst_of_the_worst
-        icon = GFX_focus_generic_political
-        relative_position_id = USA_congress?
+        id = USA_no_more_bureaucratic_delays
+        icon = GFX_goal_unknown
+        relative_position_id = USA_a_private_session_of_congress
         x = 0
         y = 1
         cost = 4
         prerequisite = {
-            focus = USA_congress?
+            focus = USA_a_private_session_of_congress
+        }
+    }
+
+    focus = {
+        id = USA_keep_a_close_eye_on_congress
+        icon = GFX_goal_unknown
+        relative_position_id = USA_a_private_session_of_congress
+        x = 0
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_no_more_bureaucratic_delays
+        }
+    }
+
+    focus = {
+        id = USA_only_the_worst_of_the_worst
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_congress
         }
         mutually_exclusive = {
             focus = USA_keep_them_out_of_this
@@ -1820,13 +1989,37 @@ focus_tree = {
     }
 
     focus = {
+        id = USA_buddy_up
+        icon = GFX_goal_unknown
+        relative_position_id = USA_only_the_worst_of_the_worst
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_only_the_worst_of_the_worst
+        }
+    }
+
+    focus = {
+        id = USA_keep_your_friends_close
+        icon = GFX_goal_unknown
+        relative_position_id = USA_only_the_worst_of_the_worst
+        x = 0
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_buddy_up
+        }
+    }
+
+    focus = {
         id = USA_keep_them_out_of_this
         icon = GFX_focus_generic_political
-        relative_position_id = USA_congress?
+        relative_position_id = USA_congress
         x = 3
         y = 1
         prerequisite = {
-            focus = USA_congress?
+            focus = USA_congress
         }
         mutually_exclusive = {
             focus = USA_a_preview_session_of_congress
@@ -1835,15 +2028,39 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_the_fate_of_congress
-        icon = GFX_focus_generic_political
-        relative_position_id = USA_congress?
+        id = USA_on_our_own
+        icon = GFX_goal_unknown
+        relative_position_id = USA_keep_them_out_of_this
+        x = 0
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_keep_them_out_of_this
+        }
+    }
+
+    focus = {
+        id = USA_no_one_to_weigh_us_down
+        icon = GFX_goal_unknown
+        relative_position_id = USA_keep_them_out_of_this
         x = 0
         y = 2
+        cost = 4
         prerequisite = {
-            focus = USA_a_preview_session_of_congress
-            focus = USA_keep_them_out_of_this
-            focus = USA_only_the_worst_of_the_worst
+            focus = USA_on_our_own
+        }
+    }
+
+    focus = {
+        id = USA_the_fate_of_congress
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_congress
+        x = 0
+        y = 4
+        prerequisite = {
+            focus = USA_keep_a_close_eye_on_congress
+            focus = USA_no_one_to_weigh_us_down
+            focus = USA_keep_your_friends_close
         }
     }
 
@@ -1851,7 +2068,7 @@ focus_tree = {
         id = USA_our_corporate_friends
         icon = GFX_focus_generic_industry
         relative_position_id = USA_john_granite
-        x = 10
+        x = 15
         y = 1
         prerequisite = {
             focus = USA_john_granite
@@ -1879,8 +2096,8 @@ focus_tree = {
             focus = USA_our_corporate_friends
         completion_reward = {
             add_building_construction = {
-                arms_factory
-                level 1
+                type = arms_factory
+                level = 1
                 instant_build = yes
             } 
         }
@@ -1892,7 +2109,7 @@ focus_tree = {
         icon = GFX_focus_generic_industry
         relative_position_id = USA_our_corporate_friends
         x = 0
-        y = 2
+        y = 4
         prerequisite = {
             focus = USA_deal_with_the_resource_wars
             focus = USA_build_factories
@@ -1900,16 +2117,16 @@ focus_tree = {
     }
 
     focus = {
-        id = USA_farewell_mr_president
-        icon = GFX_focus_generic_political
+        id = USA_establish_enclave_goals
+        icon = GFX_goal_unknown
         relative_position_id = USA_john_granite
         x = 0
-        y = 4
+        y = 6
         prerequisite = {
             focus = USA_covering_up_the_enclave
         }
         prerequisite = {
-            focus = USA_expand_cia_activites
+            focus = USA_expand_cia_activities
         }
         prerequisite = {
             focus = USA_corporate_influence
@@ -1919,6 +2136,17 @@ focus_tree = {
         }
         prerequisite = {
             focus = USA_the_fate_of_congress
+        }
+    }
+
+    focus = {
+        id = USA_farewell_mr_president
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_john_granite
+        x = 0
+        y = 7
+        prerequisite = {
+            focus = USA_establish_enclave_goals
         }
     }
 }

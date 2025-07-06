@@ -1,108 +1,6 @@
 ideas = {
 	country = {
-	
-		incoming_crisis = {
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_cost = 1
-				consumer_goods_factor = 0.60
-				conscription_factor = -0.5
-				join_faction_tension = 0.20
-			}
-		}
 		
-		usa_corrupt_democracy = {
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				drift_defence_factor = 0.25
-				democracy_drift = 0.4
-				fascism_drift = 0.2
-				neutrality_drift = 0.2
-				communism_drift = -0.4
-			}
-		}
-		
-		usa_inflation_1 = { #this will never be lost only lessened
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = -0.35
-				industrial_capacity_factory = -0.15
-				local_resources_factor = -0.35
-			}
-		}
-		
-		usa_inflation_2 = { #this will never be lost only lessened
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = -0.15
-				local_resources_factor = -0.2
-				industrial_capacity_factory = -0.15
-			}
-		}
-		
-		usa_inflation_3 = { #this will never be lost only lessened
-			picture = usa_great_depression_3
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				production_speed_buildings_factor = -0.05
-				industrial_capacity_factory = -0.05
-			}
-		}
-
 		industrial_union_strikes = {
 			picture = GFX_goal_unknown
 
@@ -165,6 +63,16 @@ ideas = {
 				war_support_weekly = -0.05
 				communism_drift = -0.1
 				party_popularity_stability_factor = 0.05
+			}
+		}
+
+		USA_vault_tec_good_quarter = {
+			picture = GFX_vault_tec_icon
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.35
 			}
 		}
 	}

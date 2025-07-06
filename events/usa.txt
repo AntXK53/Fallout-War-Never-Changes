@@ -1,7 +1,10 @@
 add_namespace = congress_summons_doa
-add_namespace = finanical_honor_committee
+add_namespace = revelations
+add_namespace = mr_secretary
+add_namespace = revelationstwo
 add_namespace = officials_involved_in_conspiracy
 add_namespace = president_pardons_enclave_members
+add_namespace = vault_tec_growth_check
 
 country_event = {
     id = congress_summons_doa.1
@@ -16,38 +19,87 @@ country_event = {
         }
     }
 
-    mean_time_to_happen = {
-        days = 3
-    }
+    days = 3
 
     fire_only_once = yes
 
     option = {
         name = congress_summons_doa.1.a
         add_stability = -0.02
-    
-        hidden_effect = {
-            country_event = {
-                id = finanical_honor_committee.1
-            }
+        add_power_balance_value = {
+            id = USA_enclave_balance
+            value = -0.01
+        }
+        country_event = {
+            id = revelations.1
+            days = 2
         }
     }
 }
 country_event = {
-    id = finanical_honor_committee.1
-    title = finanical_honor_committee.t
-    desc = finanical_honor_committee.d
+    id = revelations.1
+    title = revelations.t
+    desc = revelations.d
     picture = GFX_USA_congress_image
 
     mean_time_to_happen = {
-        days = 3
+        days = 2
     }
 
     fire_only_once = yes
 
     option = {
-        name = finanical_honor_committee.1.a
+        name = revelations.1.a
         add_stability = 0.03
+        add_power_balance_value = {
+            id = USA_enclave_balance
+            value = -0.09
+        }
+        country_event = {
+            id = mr_secretary.1
+            days = 11
+        }
+    }
+}
+country_event = {
+    id = mr_secretary.1
+    title = mr_secretary.t
+    desc = mr_secretary.d
+    picture = GFX_USA_congress_image
+
+    fire_only_once = yes
+
+    option = {
+        name = mr_secretary.1.a
+        add_stability = -0.04
+        add_power_balance_value = {
+            id = USA_enclave_balance
+            value = -0.09
+        }
+        country_event = {
+            id = revelationstwo.1
+            days = 14
+        }
+    }
+}
+country_event = {
+    id = revelationstwo.1
+    title = revelationstwo.t
+    desc = revelationstwo.d
+    picture = GFX_USA_congress_image
+
+    fire_only_once = yes
+
+    option = {
+        name = revelationstwo.1.a
+        add_power_balance_value = {
+            id = USA_enclave_balance
+            value = -0.09
+        }
+        country_event = {
+            id = officials_involved_in_conspiracy.1
+            days = 4
+        }
     }
 }
 country_event = {
@@ -56,16 +108,7 @@ country_event = {
     desc = officials_involved_in_conspiracy.d
     picture = GFX_report_event_generic_read_write
 
-    trigger = {
-        is_power_balance_in_range = {
-            id = USA_enclave_balance
-            range = USA_enclave_exposed
-        }
-    }
-
-    mean_time_to_happen = {
-        days = 3
-    }
+    days = 3
 
     fire_only_once = yes
 
@@ -92,9 +135,7 @@ country_event = {
     desc = president_pardons_enclave_members.d
     picture = GFX_report_event_generic_read_write
 
-    mean_time_to_happen = {
-        days = 3
-    }
+    days = 3
 
     fire_only_once = yes
 
@@ -116,5 +157,43 @@ country_event = {
         }
         add_political_power = -75
         add_stability = 0.05
+    }
+}
+
+country_event = {
+    id = vault_tec_growth_check.1
+
+    days = 365
+
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                check_variable = {
+                    var = USA_vault_created
+                    value = 2
+                    compare = greater_than
+                }
+            }
+            country_event = {
+                id = vault_tec_growth_check.1
+                days = 365
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    var = USA_vault_created
+                    value = 2
+                    compare = less_than_or_equals
+                }
+            }
+            set_variable = {
+                var = USA_vault_created_check
+                value = 1
+            }
+        }
     }
 }

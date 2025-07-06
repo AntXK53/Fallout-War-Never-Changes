@@ -226,5 +226,20 @@ spriteTypes = {
 		name = "GFX_goal_USA_usa_usaf"
 		textureFile = "GFX/interface/goals/USA/GFX_usa_usaf.dds"
 	}
+
+	spriteType = {
+		name = "GFX_goal_USA_us_navy"
+		textureFile = "GFX/interface/goals/USA/GFX_USA_usa_us_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_USA_us_army"
+		textureFile = "GFX/interface/goals/USA/GFX_USA_usa_us_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_goal_USA_republic_in_crisis"
+		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"
+	}
 	
 }

@@ -241,6 +241,16 @@ spriteTypes = {
 		name = "GFX_goal_USA_republic_in_crisis"
 		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"
 	}
+
+	spriteType = {
+		name = "GFX_john_granite_election"
+		textureFile = "gfx/interface/goals/USA/GFX_john_granite_election.dds"
+	}
+
+	spriteType = {
+		name = "GFX_james_c_wallace_election"
+		textureFile = "gfx/interface/goals/USA/GFX_james_c_wallace_election.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_coalition_star"

@@ -2,8 +2,8 @@ add_namespace = congress_summons_doa
 add_namespace = revelations
 add_namespace = mr_secretary
 add_namespace = revelationstwo
-add_namespace = officials_involved_in_conspiracy
-add_namespace = president_pardons_enclave_members
+add_namespace = the_crossing_of_the_rubicon
+add_namespace = and_the_veil_comes_down
 add_namespace = vault_tec_growth_check
 
 country_event = {
@@ -103,46 +103,32 @@ country_event = {
             id = USA_enclave_balance
             value = -0.09
         }
-        country_event = {
-            id = officials_involved_in_conspiracy.1
-            days = 4
-            is_triggered_only = yes
-        }
-    }
-}
-country_event = {
-    id = officials_involved_in_conspiracy.1
-    title = officials_involved_in_conspiracy.t
-    desc = officials_involved_in_conspiracy.d
-    picture = GFX_report_event_generic_read_write
-
-    days = 3
-
-    fire_only_once = yes
-    is_triggered_only = yes
-
-    option = {
-        name = officials_involved_in_conspiracy.1.a ## PRESIDENT PARDONS ENCLAVE MEMBERS
-        add_stability = 0.01
-        add_war_support = 0.02
-    
-        hidden_effect = {
+        if = {
+            limit = {
+                has_country_leader_with_trait = enclave_supporter
+            }
             country_event = {
-                id = president_pardons_enclave_members.1
+                id = the_crossing_of_the_rubicon.1
+                days = 3
+                is_triggered_only = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_leader_with_trait = anti_enclave
+            }
+            country_event = {
+                id = and_the_veil_comes_down.1
+                days = 3
                 is_triggered_only = yes
             }
         }
     }
-    option = {
-        name = officials_involved_in_conspiracy.1.b ## PRESIDENT DOESNT PARDON ENCLAVE MEMBERS
-        add_stability = 0.05
-        add_war_support = -0.05
-    }
 }
 country_event = {
-    id = president_pardons_enclave_members.1
-    title = president_pardons_enclave_members.t
-    desc = president_pardons_enclave_members.d
+    id = the_crossing_of_the_rubicon.1
+    title = the_crossing_of_the_rubicon.t
+    desc = the_crossing_of_the_rubicon.d
     picture = GFX_report_event_generic_read_write
 
     days = 3
@@ -151,7 +137,22 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = president_pardons_enclave_members.1.a
+        name = the_crossing_of_the_rubicon.1.a
+    }
+}
+country_event = {
+    id = and_the_veil_comes_down.1
+    title = and_the_veil_comes_down.t
+    desc = and_the_veil_comes_down.d
+    picture = GFX_report_event_generic_read_write
+
+    days = 3
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    option = {
+        name = and_the_veil_comes_down.1.a
         add_popularity = {
             ideology = democratic
             popularity = -0.05
@@ -159,15 +160,6 @@ country_event = {
         add_political_power = -50
         add_war_support = 0.05
         add_stability = -0.05
-    }
-    option = {
-        name = president_pardons_enclave_members.1.b
-        add_popularity = {
-            ideology = democratic
-            popularity = -0.05
-        }
-        add_political_power = -75
-        add_stability = 0.05
     }
 }
 

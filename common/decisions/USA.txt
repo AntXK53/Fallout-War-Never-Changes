@@ -73,7 +73,7 @@ USA_rain_in_defense_spending_cat = {
 		cost = 100
 
 		highlight_states = {
-		    highlight_state_targets = { state = 385 state = 386 state = 1127 state = 387 state = 1120 state = 1119 state = 463 state = 1102 }
+		    highlight_state_targets = { state = 385 state = 386 state = 1120 state = 1119 state = 463 state = 1102 }
 		}
 
 		fire_only_once = yes
@@ -140,7 +140,7 @@ USA_rain_in_defense_spending_cat = {
 		cost = 100
 
 		highlight_states = {
-		    highlight_state_targets = { state = 1128 state = 388 state = 381 state = 1064 state = 390 state = 389 }
+		    highlight_state_targets = { state = 1128 state = 388 state = 381 state = 1064 state = 390 state = 389 state = 387 state = 1127 }
 		}
 
 		fire_only_once = yes
@@ -265,7 +265,7 @@ USA_rain_in_defense_spending_cat = {
 		cost = 100
 		
 		highlight_states = {
-		    highlight_state_targets = { state = 384 state = 383 state = 1087 state = 374 state = 1065 state = 1063 state = 373 state = 392 }
+		    highlight_state_targets = { state = 384 state = 383 state = 1087 state = 373 state = 392 state = 372 }
 		}
 
 		fire_only_once = yes
@@ -312,7 +312,7 @@ USA_rain_in_defense_spending_cat = {
 		cost = 100
 
 		highlight_states = {
-		    highlight_state_targets = { state = 1121 state = 375 state = 1122 state = 372 }
+		    highlight_state_targets = { state = 1121 state = 375 state = 1122 state = 1063 state = 1065 state = 374 }
 		}
 
 		fire_only_once = yes
@@ -579,7 +579,10 @@ USA_bop_enclave_cat = {
 USA_project_safehouse_cat = {
 
 	USA_vault_tec_mission = {
-		icon = GFX_vault_tec_icon
+
+		icon = GFX_vault_icon
+
+		cost = 25
 
 		priority = 15
 
@@ -615,6 +618,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_13 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {
@@ -676,6 +681,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -736,6 +743,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -795,6 +804,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_76 = {
 
 		icon = GFX_vault_icon
+
+		cost = 20
 
 		available = {
 			check_variable = {
@@ -857,6 +868,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -916,6 +929,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_87 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {
@@ -977,6 +992,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -1035,6 +1052,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_112 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {
@@ -1096,6 +1115,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -1155,6 +1176,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_95 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {
@@ -1216,6 +1239,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -1275,6 +1300,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_15 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {
@@ -1336,6 +1363,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -1396,6 +1425,8 @@ USA_project_safehouse_cat = {
 
 		icon = GFX_vault_icon
 
+		cost = 25
+
 		available = {
 			check_variable = {
 				var = USA_decision_vault_counter
@@ -1455,6 +1486,8 @@ USA_project_safehouse_cat = {
 	USA_construct_vault_88 = {
 
 		icon = GFX_vault_icon
+
+		cost = 25
 
 		available = {
 			check_variable = {

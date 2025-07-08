@@ -1,5 +1,5 @@
 defined_text = {
-	name = USA_congress_doa_loc
+	name = congress_doa_loc
 	text = {
 		trigger = {
 			has_country_leader_with_trait = enclave_supporter
@@ -11,14 +11,38 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = USA_revelations_loc
+	name = mr_secretary_loc
 	text = {
 		trigger = {
 			has_country_leader_with_trait = enclave_supporter
 		}
-		localization_key = revelations_enclave.d
+		localization_key = mr_secretary_enclave.d
 	}
 	text = {
-		localization_key = revelations_coalition.d
+		localization_key = mr_secretary_coalition.d
+	}
+}
+defined_text = {
+	name = revelationstwo_loc
+	text = {
+		trigger = {
+			has_country_leader_with_trait = enclave_supporter
+		}
+		localization_key = revelationstwo_enclave.d
+	}
+	text = {
+		localization_key = revelationstwo_coalition.d
+	}
+}
+defined_text = {
+	name = revelationstwo_option_loc
+	text = {
+		trigger = {
+			has_country_leader_with_trait = enclave_supporter
+		}
+		localization_key = revelationstwo_enclave.1.a
+	}
+	text = {
+		localization_key = revelationstwo_coaltion.1.a
 	}
 }

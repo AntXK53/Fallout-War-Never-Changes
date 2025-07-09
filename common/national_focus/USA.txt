@@ -23,7 +23,7 @@ focus_tree = {
 
     focus = {
         id = USA_the_armed_forces
-        icon = GFX_focus_generic_army
+        icon = GFX_goal_USA_armed_forces
         x = 10
         y = 0
         cost = 10
@@ -920,7 +920,7 @@ focus_tree = {
 
     focus = {
         id = USA_special_operations_service
-        icon = GFX_focus_generic_special_forces
+        icon = GFX_goal_USA_marine_corps
         x = 35
         y = 2
         cost = 10
@@ -1001,7 +1001,7 @@ focus_tree = {
 
     focus = {
         id = USA_the_56_election
-        icon = GFX_focus_generic_political
+        icon = GFX_goal_USA_election
         relative_position_id = USA_a_republic_in_crisis
         x = 0
         y = 1

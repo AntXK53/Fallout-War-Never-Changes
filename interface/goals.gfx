@@ -223,9 +223,71 @@ spriteTypes = {
 	}
 
 	spriteType = {
+        name = GFX_goal_USA_missile_system_experiments_shine
+        texturefile = gfx/interface/goals/USA/GFX_missile_system_expirements.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_missile_system_expirements.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_missile_system_expirements.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
 		name = "GFX_goal_USA_usa_usaf"
 		textureFile = "GFX/interface/goals/USA/GFX_usa_usaf.dds"
 	}
+
+	spriteType = {
+        name = GFX_goal_USA_usa_usaf_shine
+        texturefile = GFX/interface/goals/USA/GFX_usa_usaf.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_usa_usaf.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_usa_usaf.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 
 	spriteType = {
 		name = "GFX_goal_USA_us_navy"
@@ -233,9 +295,71 @@ spriteTypes = {
 	}
 
 	spriteType = {
+        name = GFX_goal_USA_us_navy_shine
+        texturefile = GFX/interface/goals/USA/GFX_USA_usa_us_navy.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_usa_us_navy.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_usa_us_navy.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
 		name = "GFX_goal_USA_us_army"
 		textureFile = "GFX/interface/goals/USA/GFX_USA_usa_us_army.dds"
 	}
+
+	spriteType = {
+        name = GFX_goal_USA_us_army_shine
+        texturefile = GFX/interface/goals/USA/GFX_USA_usa_us_army.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_usa_us_army.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_usa_us_army.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 
 	spriteType = {
 		name = "GFX_goal_USA_republic_in_crisis"
@@ -243,14 +367,215 @@ spriteTypes = {
 	}
 
 	spriteType = {
+        name = GFX_goal_USA_republic_in_crisis_shine
+        texturefile = gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
 		name = "GFX_john_granite_election"
 		textureFile = "gfx/interface/goals/USA/GFX_john_granite_election.dds"
 	}
 
 	spriteType = {
+        name = GFX_john_granite_election_shine
+        texturefile = gfx/interface/goals/USA/GFX_john_granite_election.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_john_granite_election.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_john_granite_election.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_goal_USA_marine_corps"
+		textureFile = "gfx/interface/goals/USA/GFX_USA_us_marine_corps.dds"
+	}
+
+	spriteType = {
+        name = GFX_goal_USA_marine_corps_shine
+        texturefile = gfx/interface/goals/USA/GFX_USA_us_marine_corps.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_us_marine_corps.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_us_marine_corps.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_goal_USA_election"
+		textureFile = "gfx/interface/goals/USA/GFX_USA_election.dds"
+	}
+
+	spriteType = {
+        name = GFX_goal_USA_election_shine
+        texturefile = gfx/interface/goals/USA/GFX_USA_election.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_election.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_election.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
 		name = "GFX_james_c_wallace_election"
 		textureFile = "gfx/interface/goals/USA/GFX_james_c_wallace_election.dds"
 	}
+
+	spriteType = {
+        name = GFX_james_c_wallace_election_shine
+        texturefile = gfx/interface/goals/USA/GFX_james_c_wallace_election.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_james_c_wallace_election.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_james_c_wallace_election.dds 
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+	spriteType = {
+		name = "GFX_goal_USA_armed_forces"
+		textureFile = "gfx/interface/goals/USA/GFX_USA_armed_forces.dds"
+	}
+
+	spriteType = {
+        name = GFX_goal_USA_armed_forces_shine
+        texturefile = gfx/interface/goals/USA/GFX_USA_armed_forces.dds 
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_armed_forces.dds 
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/GFX_USA_armed_forces.dds 
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 	
 	spriteType = {
 		name = "GFX_coalition_star"

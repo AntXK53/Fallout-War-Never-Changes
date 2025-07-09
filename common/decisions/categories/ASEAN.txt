@@ -1,0 +1,6 @@
+ASEAN_War_category = {
+    icon = generic_political_actions
+        allowed = {
+            tag = PRC
+            }
+    }

@@ -53,9 +53,6 @@ if = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	add_ideas = {
-		CHI_communist_uprisings
-	}
 }
 
 
@@ -64,10 +61,7 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}		
 	add_ideas = {
-		CHI_nine_power_treaty
-		CHI_army_corruption_1
-		CHI_ineffective_bureaucracy
-		CHI_incompetent_officers
+		CHI_communist_uprisings
 		free_trade
 		CHI_hyper_inflation_1
 		Severe_Food_Shortage_idea
@@ -84,10 +78,6 @@ set_politics = {
 	last_election = "2052.1.1"
 	election_frequency = 48
 	elections_allowed = yes
-}
-add_ideas = {
-	ASEAN_Resource_Scarcity
-	ASEAN_CommunistTerrorCells
 }
 set_popularities = {
 	democratic = 75

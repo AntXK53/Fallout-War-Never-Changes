@@ -1,5 +1,9 @@
 ﻿l_english:
 
+# Localization
+ ASEAN_WAR:0 "You will go to war with ASEAN"
+
+
 #News
 
  ASEAN_news.1.t:0 "Beijing Issues Warning Over Taiwan Interference"
@@ -13,10 +17,10 @@
  ASEAN.1.a:0 ""
  ASEAN.1.b:0 ""
 
- ASEAN.2.t:0 ""
- ASEAN.2.d:0 ""
- ASEAN.2.a:0 ""
- ASEAN.2.b:0 ""
+ ASEAN.2.t:0 "Last Drops From Java"
+ ASEAN.2.d:0 "President, Our Minister of Energy and Mineral Resources has alerted us to serious news. The Oil in Java has diminished, the oil companies are beginning to close down due to lack of oil to grab. The press is outside and waiting for us to comment."
+ ASEAN.2.a:0 "Scapegoat pressures onto companies"
+ ASEAN.2.b:0 "We should of been ready"
 
  ASEAN.3.t:0 ""
  ASEAN.3.d:0 ""
@@ -27,19 +31,6 @@
  ASEAN.4.d:0 ""
  ASEAN.4.a:0 ""
  ASEAN.4.b:0 ""
-
- ASEAN.5.t:0 "Student Protests Across China"
- ASEAN.5.d:0 "This week Protests have broken out around the country as the elderly and students protest the mass defunding of welfare and price hikes. Some of the protests have turned violent and Chairmen Cheng of the CMC has given Whang to option to use force, citing the violence as a justification to send in the military, However Chairman Zhang Min of the CPPCC proposes it is to excessive and authoritarian and that we should listen and compromise on some issues to appease them."
- ASEAN.5.a:0 "Side with Cheng"
- ASEAN.5.b:0 "Side with Zhang"
-
- ASEAN.6.t:0 "Bloody April"
- ASEAN.6.d:0 "Nanjing, Beijing, Wuhan, and other cities turned into bloody battlegrounds as tanks, soldiers, and military trucks moved in to break up protests. University walls and streets were stained with blood, a grim testament to the violence. Military vehicles’ bumpers were smeared with the remains of those caught in the crackdown. Witnesses spoke to foreign journalist about terrified students and elderly protestors struck down while trying to escape. The air was thick with smoke and fear, and the cities are left scarred by the brutal suppression."
- ASEAN.6.a:0 "It needs to be done"
-
- ASEAN.7.t:0 "The January Humilations"
- ASEAN.7.d:0 "As protests spread across major cities like Nanjing, Beijing, and Wuhan, Whang chose to appease the growing public outrage over welfare cuts and price hikes by announcing concessions and promising reforms. Crowds celebrated in the streets, emboldened by the government’s retreat. However, hardliners condemned the decision as a national embarrassment and a dangerous sign of weakness that could encourage future dissent. The leadership’s authority was publicly challenged, leaving their image battered and their resolve questioned both domestically and internationally."
- ASEAN.7.a:0 "The People Prevail Again"
 
 #National Spirits
  

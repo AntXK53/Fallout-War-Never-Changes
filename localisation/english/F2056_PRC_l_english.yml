@@ -1,10 +1,44 @@
 ﻿l_english:
 
+#BOP
+ PRC_Violence_Balance:0 "Legacy of Whang"
+ PRC_right_half:0 "Violent tendencies"
+ PRC_left_half:0 "Compromising actor"
+ PRC_right_full:0 "A lover of mother tyranny"
+ PRC_left_full:0 "A benevolent man"
+ PRC_centre_range:0 "A neutral acting statesman"
+
 #EVENTS
  prc.1.t:0 "ANOTHER DAY IN SHANGHAI"
  prc.1.d:0 "Li Jongpin has always been an early starter. A straight-forward man, a hard worker who owned a slice of life in Shanghai. China was under the CCP, this is true, but the Chinese weren't, atleast in Shanghai. Li Jongpin, a great officeman, atleast his supervisor said. Li worked for the Ministry of Water Resources, specifically the Office of State Flood Control and Drought Relief Headquarters. He was relatively well known in this circle for his actions during the flooding of Wuxi County in the Spring of 51. In all, Li was basic. Truthfully, he had nothing interesting. He read basic weather reports, consulted with those in the region, followed upon warnings and, quite frankly, did his job. He was a true citizen, through and through. No vices for Li, for he could both not afford or nor succumb to it. He lived in his apartment and office, rarely he went to dinner for departmental issues. The News say otherwise, though. A great revolutionary who saved thousands, targeted by American saboteurs. Fairly, they weren't entirely off. The United States did, afterall, have major sway in the Chinese Smuggler sphere. The truth? Li wondered too far off the Golden Brick road. After a late night of drinking and eating with his superiors at Xilao's Corner Food Dispensary, a restuarant by western terms. Too much Bao Bao Pork Buns and Qingdao Beer, he told himself. Not drunk by any means, but neither sober, he stumbled through the streets of Shanghai. Cityblock F42, his state mandated apartment building, was on the coast. He considered himself lucky, afterall, he had such a great view of the sea! But sadly, one too many steps too far left, a few steps too few to the road, and Li found himself in a sort of conundrum. Shanghai was a great City! And every great City had its many sins. And for Li, he has found the center of it. Smugglers have always plagued Shanghai for its life time. Now is no different. In Shanghai, Western Media, Drugs such as Amphetamines for the Office Drones Shanghai is full of, and Weaponry for those who could afford it were rampant. For Li? He had found himself in the worst of them all, the smuggling of Western Media. China and the West, oh so close yet so far. For afficionado's, Western media such as, well, Westerns, as well as Comics, various media, and other Western oriented goods were the most sought after, and dangerous, of Shanghai. Here? The Man from Deadhorse was being ransomed to several rich benefactors, ranging from polticians, to managers, to Military Officials, to CCP Officials! And sadly, Li was not on the list. A string of insults and accusations, accusing Li of being an agent from the Ministry of State Security, led to a brutal shootout. And sadly for Li Jongping, he was its only casualty. A stray round struck his chest, causing his collapse in the alley. Unluckily for those who participated, he was brought to a hospital. An even more unluckily, Li's wound was fatal. But his words were echoed throughout all of China. Able to report of the events of said meeting, albeitly only partially, the true details of the Shanghai smuggling scene were finally brought to Chinese Media. Despite this all, Li would only be able to utter a few more words: 'Smugglers lay at our doorstep... West... Lays at our doorstep' And so were those, the final words of Li Jongping, another recipient of Shanghai's underworld."
  prc.1.a:0 "And hopefully their last!"
  prc.1.b:0 "And if not, who cares?"
+
+ prc.2.t:0 "Taiwan has gone to far"
+ prc.2.d:0 "Taiwan for the last time has violated our borders and is attempting to work with ASEAN. The Government is behind Whang and if taiwan continues to try to join ASEAN, we will invade them." 
+ prc.2.a:0 ""
+ prc.2.b:0 ""
+
+ prc.3.t:0 "Oil ration protests start for a second time"
+ prc.3.d:0 "From 2052 to 2054, China experienced mass unrest due to the Resource Crisis and the government's response. The Whang government initially attempted appeasement; however, since oil imports have almost ground to a halt, the government can no longer simply compromise with the majority. Unrest has reached an all-time high, and protests have begun in every city from Beijing to Hong Kong." 
+ prc.3.a:0 "What can we do about it?"
+
+ prc.4.t:0 "Strikes throughout Beijing"
+ prc.4.d:0 "The Resource Crisis has destroyed the Chinese economy. The government was no longer able to afford subsidizing the economy and what resulted was factories shutting down, mass layoffs and a spike of crime. Now, Those that remain somewhat profitable in Beijing are beginning to strike, demanding better conditions and higher wages."
+ prc.4.a:0 "We don't have enough money!"
+
+ prc.5.t:0 "Student Protests Across China"
+ prc.5.d:0 "This week Protests have broken out around the country as the elderly and students protest the mass defunding of welfare and price hikes. Some of the protests have turned violent and Chairmen Cheng of the CMC has given Whang to option to use force, citing the violence as a justification to send in the military, However Chairman Zhang Min of the CPPCC proposes it is to excessive and authoritarian and that we should listen and compromise on some issues to appease them."
+ prc.5.a:0 "Side with Cheng"
+ prc.5.b:0 "Side with Zhang"
+
+ prc.6.t:0 "Bloody April"
+ prc.6.d:0 "Nanjing, Beijing, Wuhan, and other cities turned into bloody battlegrounds as tanks, soldiers, and military trucks moved in to break up protests. University walls and streets were stained with blood, a grim testament to the violence. Military vehicles’ bumpers were smeared with the remains of those caught in the crackdown. Witnesses spoke to foreign journalist about terrified students and elderly protestors struck down while trying to escape. The air was thick with smoke and fear, and the cities are left scarred by the brutal suppression."
+ prc.6.a:0 "It needs to be done"
+
+ prc.7.t:0 "The January Humilations"
+ prc.7.d:0 "As protests spread across major cities like Nanjing, Beijing, and Wuhan, Whang chose to appease the growing public outrage over welfare cuts and price hikes by announcing concessions and promising reforms. Crowds celebrated in the streets, emboldened by the government’s retreat. However, hardliners condemned the decision as a national embarrassment and a dangerous sign of weakness that could encourage future dissent. The leadership’s authority was publicly challenged, leaving their image battered and their resolve questioned both domestically and internationally."
+ prc.7.a:0 "The People Prevail Again"
 
 #National Spirits
  

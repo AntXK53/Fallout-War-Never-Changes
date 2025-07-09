@@ -105,6 +105,10 @@ add_ideas = {
 	
 }
 
+set_power_balance = {
+	id = PRC_Violence_Balance
+}
+
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"

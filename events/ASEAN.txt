@@ -3,22 +3,15 @@ add_namespace = ASEAN
 add_namespace = ASEAN_news
 
 # News 
-# 
-news_event = {
+news_event = { # Beijing Stern Warning over Taiwan
 	id = ASEAN_news.1
 	title = ASEAN_news.1.t
 	desc = ASEAN_news.1.d
-	hidden = yes
+	hidden = no
 	fire_only_once = yes
-	
+	is_triggered_only = yes
 	trigger = {
-
 	}
-	
-	immediate = {
-
-	}
-	
 	option = {
 		name = ASEAN_news.1.a
 			trigger = { NOT = { has_government = communism } }
@@ -29,17 +22,15 @@ news_event = {
 		}
 }
 
+
 # Events
-country_event = {
-	id = ASEAN.1 #Food Riots Break Out In Taiwan
+country_event = { #Food Riots Break Out In Taiwan
+	id = ASEAN.1
 	title = ASEAN.1.t
 	desc = ASEAN.1.d
 	picture = GFX_report_event_PRC_starting
     is_triggered_only = yes
 	fire_only_once = yes
-
-	trigger = {
-	}
 	
 	option = {
 		name = ASEAN.1.a
@@ -48,11 +39,11 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = ASEAN.2 #Java Oil Fields begin to dry up. 
+country_event = { #Java Oil Fields begin to dry up.  127 days after start
+	id = ASEAN.2 
 	title = ASEAN.2.t
 	desc = ASEAN.2.d
-	picture = GFX_report_event_PRC_starting
+	picture = GFX_report_event_AUS_vaterlandische_front_rally
     is_triggered_only = yes
 	fire_only_once = yes
 
@@ -63,6 +54,34 @@ country_event = {
 		name = ASEAN.2.a
 		ai_chance = {
 			factor = 50
+		}
+		INS = {
+			add_political_power = -50
+			add_popularity = {
+ 			   ideology = communism
+ 			   popularity = 0.03
+				}
+		}
+		335 = {
+			add_resource = {
+    			type = oil
+    			amount = -16
+				}
+		}
+	}
+	option = {
+		name = ASEAN.2.b
+		ai_chance = {
+			factor = 50
+		}
+		INS = {
+			add_stability = -0.05
+		}
+		335 = {
+			add_resource = {
+    			type = oil
+    			amount = -16
+				}
 		}
 	}
 }
@@ -112,6 +131,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		always = no
 	}
 	
 	option = {

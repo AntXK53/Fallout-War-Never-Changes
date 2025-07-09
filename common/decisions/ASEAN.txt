@@ -1,0 +1,91 @@
+ASEAN_War_category = { # For War
+Heat_up_To_War_mission = { # Countdown to war beginning
+    icon = my_icon
+    days_mission_timeout = 142
+    selectable_mission = yes
+    is_good = yes
+
+    activation = {
+        always = no
+    }
+    available = {
+        always = no
+    }
+    timeout_effect = {
+    custom_effect_tooltip = ASEAN_WAR
+        hidden_effect = {
+         PRC = {
+            declare_war_on = {
+                target = BRM
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = SIA
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = VIN
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = CHI
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = PHI
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = MAL
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = INS
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = PNG
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = AST
+                type = annex_everything
+            }
+
+            declare_war_on = {
+                target = NZL
+                type = annex_everything
+            }
+            
+         } 
+     KOR = {
+        add_to_war = {
+        targeted_alliance = PRC
+     enemy = INS
+            }
+        }
+     IND = {
+        add_to_war = {
+        targeted_alliance = PRC
+        enemy = INS
+            }
+        }
+     CAM = {
+        add_to_war = {
+        targeted_alliance = PRC
+        enemy = INS
+            }
+        }
+        }
+    }
+}
+} # End Of War Part
+

@@ -1,0 +1,40 @@
+PRC_Violence_Balance = {
+    initial_value = 0 
+    left_side = PRC_left_side # Peaceful Regime
+    right_side = PRC_right_side # Violent Regime
+    decision_Category = PRC_bop_decision_cat
+
+    range = {
+        id = PRC_centre_range
+        min = -0.25
+        max = 0.25
+    }
+
+    side = {
+        id = PRC_left_side
+        range = {
+            id = PRC_left_half
+            min = -0.75
+            max = -0.25
+        }
+        range = {
+            id = PRC_left_full
+            min = -1
+            max = -0.75
+        }
+    }
+
+    side = {
+        id = PRC_right_side
+        range = {
+            id = PRC_right_half
+            min = 0.75
+            max = 0.25
+        }
+        range = {
+            id = PRC_right_full
+            min = 1
+            max = 0.75
+        }
+    }
+}

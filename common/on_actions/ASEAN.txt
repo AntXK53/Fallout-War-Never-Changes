@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			INS = {
+				country_event = { 
+					id = ASEAN.2
+					days = 127
+				}
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		#If Italy is a German puppet (due to CW) and Germany capitulates, then make Italy free so that they can take over the Axis, tack.
+		effect = {
+			if = {
+				limit = {
+					ALL = {
+						country_exists = BRM
+						NOT = {
+    					country_exists = PDF
+    					country_exists = TBH
+						}
+					}
+				}
+			}
+		}
+	}
+}

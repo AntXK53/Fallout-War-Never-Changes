@@ -5,7 +5,6 @@ country_event = {
 	title = prc.1.t
 	desc = prc.1.d
 	picture = GFX_report_event_PRC_starting
-
 	fire_only_once = yes
 
 	trigger = {
@@ -42,6 +41,145 @@ country_event = {
 			add_stability = -0.02
 			add_political_power = 20
 			}
+		}
+	}
+}
+
+country_event = { 
+	id = prc.2
+	title = prc.2.t
+	desc = prc.2.d
+	picture = GFX_report_event_PRC_starting # Needs GFX
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = prc.2.a
+		ai_chance = {
+			factor = 50
+		}
+		news_event = { id = ASEAN_news.1 hours = 12 }
+	  	PRC = {
+			activate_mission = Heat_up_To_War_mission
+		}
+	}
+}
+
+country_event = { 
+	id = prc.3 # Protests Across China over Oil Rationing
+	title = prc.3.t
+	desc = prc.3.d
+	picture = GFX_report_event_PRC_starting # Needs GFX
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = prc.3.a #Concerning 
+		ai_chance = {
+			factor = 50
+		}
+	PRC = {
+		add_stability = -0.1
+	}
+	613 = {
+		damage_building = {
+		  type = infrastructure
+		  damage = 1
+				}
+		}
+	608 = {
+		damage_building = {
+		  type = infrastructure
+		  damage = 1
+				}
+		}
+	326 = {
+		damage_building = {
+		  type = infrastructure
+		  damage = 1
+				}
+		}
+	}
+}
+
+country_event = { 
+	id = prc.4 # Beijing Protests
+	title = prc.4.t
+	desc = prc.4.d
+	picture = GFX_report_event_PRC_starting # Needs GFX
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = prc.4.a 
+		ai_chance = {
+			factor = 50
+		}
+	  	PRC = {
+			add_stability = -0.05
+		}
+	}
+}
+country_event = { 
+	id = prc.5 # Student Protest
+	title = prc.5.t
+	desc = prc.5.d
+	picture = GFX_report_event_PRC_starting # Needs GFX
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = prc.5.a
+		ai_chance = {
+			factor = 50
+		}
+	  	PRC = {
+			add_stability = -0.03
+			news_event = prc.6
+		}
+	}
+	option = {
+		name = prc.5.b
+		ai_chance = {
+			factor = 50
+		}
+	  	PRC = {
+			add_stability = -0.03
+			news_event = prc.7
+		}
+	}
+}
+country_event = { 
+	id = prc.6 # Student Protest
+	title = prc.6.t
+	desc = prc.6.d
+	picture = GFX_report_event_PRC_starting # Needs GFX
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+	}
+	
+	option = {
+		name = prc.6.a
+		ai_chance = {
+			factor = 50
+		}
+	  	PRC = {
+			add_stability = -0.03
+			news_event = prc.6
 		}
 	}
 }

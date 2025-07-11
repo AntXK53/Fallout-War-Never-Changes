@@ -937,7 +937,7 @@ focus_tree = {
 
     focus = {
         id = USA_from_the_sea
-        icon = GFX_focus_generic_marines
+        icon = GFX_USA_from_the_sea
         x = 33
         y = 3
         cost = 10
@@ -956,7 +956,7 @@ focus_tree = {
 
     focus = {
         id = USA_from_the_mountains
-        icon = GFX_focus_generic_mountaineers
+        icon = GFX_USA_from_the_mountains
         x = 35
         y = 3
         cost = 10
@@ -972,7 +972,7 @@ focus_tree = {
 
     focus = {
         id = USA_from_the_skies
-        icon = GFX_focus_generic_paratroopers
+        icon = GFX_USA_from_the_skies
         x = 37
         y = 3
         cost = 10

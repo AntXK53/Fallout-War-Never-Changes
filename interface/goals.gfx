@@ -361,6 +361,114 @@ spriteTypes = {
         legacy_lazy_load = no
     }
 
+    spriteType = {
+        name = "GFX_USA_from_the_mountains"
+        textureFile = "gfx/interface/goals/USA/GFX_USA_from_the_mountains.dds"
+    }
+
+    spriteType = {
+        name = GFX_USA_from_the_mountains_shine
+        textureFile = gfx/interface/goals/USA/GFX_USA_from_the_mountains.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_mountains.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_mountains.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_USA_from_the_sea"
+        textureFile = "gfx/interface/goals/USA/GFX_USA_from_the_sea.dds"
+    }
+
+    spriteType = {
+        name = GFX_USA_from_the_sea_shine
+        textureFile = gfx/interface/goals/USA/GFX_USA_from_the_sea.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_sea.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_sea.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
+    spriteType = {
+        name = "GFX_USA_from_the_skies"
+        textureFile = "gfx/interface/goals/USA/GFX_USA_from_the_skies.dds"
+    }
+
+    spriteType = {
+        name = GFX_USA_from_the_skies_shine
+        textureFile = gfx/interface/goals/USA/GFX_USA_from_the_skies.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_skies.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_from_the_skies.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
 	spriteType = {
 		name = "GFX_goal_USA_republic_in_crisis"
 		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"

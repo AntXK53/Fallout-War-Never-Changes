@@ -449,7 +449,7 @@ focus_tree = {
 
     focus = {
         id = USA_capital_ship_doctrine
-        icon = GFX_focus_generic_navy
+        icon = GFX_goal_USA_us_navy
         relative_position_id = USA_us_navy
         x = 6
         y = 3
@@ -663,7 +663,7 @@ focus_tree = {
 
     focus = {
         id = USA_battlefleet_strategems
-        icon = GFX_focus_generic_navy
+        icon = GFX_goal_USA_us_navy
         relative_position_id = USA_us_navy
         x = 6
         y = 7
@@ -904,7 +904,7 @@ focus_tree = {
 
     focus = {
         id = USA_special_weapons_initiative
-        icon = GFX_focus_generic_nuclear
+        icon = GFX_USA_special_weapons_initiative
         x = 40
         y = 2
         cost = 10
@@ -1196,6 +1196,14 @@ focus_tree = {
         x = -10
         y = 1
         cost = 10
+
+        allow_branch = {
+            has_completed_focus = USA_james_c_wallace
+
+            NOT = {
+                has_completed_focus = USA_john_granite
+            }
+        }
         prerequisite = { focus = USA_james_c_wallace }
         completion_reward = {
             add_political_power = 100
@@ -1397,6 +1405,14 @@ focus_tree = {
         x = 10
         y = 1
         cost = 10
+
+        allow_branch = {
+            has_completed_focus = USA_james_c_wallace
+
+            NOT = {
+                has_completed_focus = USA_john_granite
+            }
+        }
         completion_reward = {
             army_experience = 50
         }
@@ -1666,6 +1682,15 @@ focus_tree = {
         x = 0
         y = 1
         cost = 4
+
+        allow_branch = {
+            has_completed_focus = USA_john_granite
+
+            NOT = {
+                has_completed_focus = USA_james_c_wallace
+            }
+        }
+
         prerequisite = {
             focus = USA_john_granite
         }
@@ -1762,6 +1787,15 @@ focus_tree = {
         x = 7
         y = 1
         cost = 3
+        
+        allow_branch = {
+            has_completed_focus = USA_john_granite
+
+            NOT = {
+                has_completed_focus = USA_james_c_wallace
+            }
+        }
+
         prerequisite = {
             focus = USA_john_granite
         }
@@ -1817,6 +1851,16 @@ focus_tree = {
         x = -7
         y = 1
         cost = 3
+
+        
+        allow_branch = {
+            has_completed_focus = USA_john_granite
+
+            NOT = {
+                has_completed_focus = USA_james_c_wallace
+            }
+        }
+
         prerequisite = {
             focus = USA_john_granite
         }
@@ -1919,6 +1963,15 @@ focus_tree = {
         x = -15
         y = 1
         cost = 3
+
+        allow_branch = {
+            has_completed_focus = USA_john_granite
+
+            NOT = {
+                has_completed_focus = USA_james_c_wallace
+            }
+        }
+
         prerequisite = {
             focus = USA_john_granite
         }
@@ -2070,6 +2123,16 @@ focus_tree = {
         relative_position_id = USA_john_granite
         x = 15
         y = 1
+        cost = 5
+        
+        allow_branch = {
+            has_completed_focus = USA_john_granite
+
+            NOT = {
+                has_completed_focus = USA_james_c_wallace
+            }
+        }
+
         prerequisite = {
             focus = USA_john_granite
         }

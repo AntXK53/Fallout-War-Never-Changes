@@ -469,6 +469,42 @@ spriteTypes = {
         legacy_lazy_load = no
     }
 
+    spriteType = {
+        name = "GFX_USA_special_weapons_initiative"
+        textureFile = "gfx/interface/goals/USA/GFX_USA_special_weapons_initiative.dds"
+    }
+
+    spriteType = {
+        name = GFX_USA_special_weapons_initiatve_shine
+        textureFile = gfx/interface/goals/USA/GFX_USA_special_weapons_initiatve.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_special_weapons_initiatve.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = GFX/interface/goals/USA/GFX_USA_special_weapons_initiatve.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
 	spriteType = {
 		name = "GFX_goal_USA_republic_in_crisis"
 		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"

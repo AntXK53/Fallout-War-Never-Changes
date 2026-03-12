@@ -11,8 +11,6 @@ set_technology = {
 
 set_convoys = 5
 
-set_cosmetic_tag = BRM_british # Gets them the correct starting flag
-
 recruit_character = BRM_acgs
 recruit_character = BRM_acr
 recruit_character = BRM_stc

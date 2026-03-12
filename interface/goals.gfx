@@ -8,6 +8,26 @@ spriteTypes = {
     ##ESTONIA##
 
 SpriteType = {
+		name = "GFX_limit_serfdome_laws"
+		texturefile = "gfx/interface/goals/EST/limit_serfdome_laws.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_enc_radio_civilian"
+		texturefile = "gfx/interface/goals/EST/enc_radio_civilian.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_goal_generic_attack_allies"
+		texturefile = "gfx/interface/goals/EST/goal_generic_attack_allies.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_generic_surrender"
+		texturefile = "gfx/interface/goals/EST/focus_generic_surrender.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
 		name = "GFX_focus_BEL_legacy_of_the_great_war"
 		texturefile = "gfx/interface/goals/EST/focus_BEL_legacy_of_the_great_war.dds"
 		legacy_lazy_load = no

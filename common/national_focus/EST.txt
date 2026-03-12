@@ -504,7 +504,7 @@ focus_tree = {
     }
 	  focus = {
         id = EST_Baltic_resist
-        icon = GFX_goal_generic_oil
+        icon = GFX_goal_generic_attack_allies
         prerequisite = { focus = EST_Soviet_exiles}
         x = 17
         y = 8
@@ -527,7 +527,7 @@ focus_tree = {
     }
 	 focus = {
         id = EST_spread_Metsavagi
-        icon = GFX_goal_generic_oil
+        icon = GFX_enc_radio_civilian
         prerequisite = { focus =  EST_Baltic_resist}
         x = 17
         y = 9
@@ -559,7 +559,7 @@ focus_tree = {
     }
 		 focus = {
         id = EST_unify_Metsavagi
-        icon = GFX_goal_generic_oil
+        icon = GFX_limit_serfdome_laws
         prerequisite = { focus =  EST_rally_to_the_cause }
         x = 18
         y = 11
@@ -570,7 +570,7 @@ focus_tree = {
     }
 		  focus = {
         id = EST_Rally_european
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_generic_surrender
         prerequisite = { focus = EST_restore_contact}
         x = 19
         y = 7

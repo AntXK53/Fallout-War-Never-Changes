@@ -122,9 +122,6 @@ set_popularities = {
 	neutrality = 34
 }
 
-
-set_cosmetic_tag = MAL_UK # British Malaya
-
 1939.1.1 = {
 	add_political_power = 1198
 	add_command_power = 100

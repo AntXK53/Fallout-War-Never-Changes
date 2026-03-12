@@ -158,8 +158,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 40 40 140 }
+	color_ui = rgb { 40 40 140 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -198,8 +198,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
-	color_ui = hsv { 0.05 0.25 1.2 }
+	color = rgb { 252 208 208 }
+	color_ui = rgb { 252 208 208 }
 }
 LIB = {
 	color = rgb { 152 130 191 }

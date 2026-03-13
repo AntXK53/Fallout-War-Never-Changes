@@ -472,7 +472,9 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-            
+            recruit_character = EST_Rasmus_von_traj
+            recruit_character = EST_Martin_Rubbin
+            recruit_character = EST_Artjom_von_kettler
    
         }
     }
@@ -485,10 +487,17 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-            
+          add_manpower = 1550
+
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1000
+        }
+        add_stability = 0.05
+        }
    
         }
-    }
+    
 	  focus = {
         id = EST_Soviet_exiles
         icon = GFX_focus_generic_spur_communist_revolutions
@@ -534,6 +543,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
+            add_war_support = 0.10
         }
     }
 	 focus = {
@@ -577,7 +587,8 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+        add_manpower = 1000
+        recruit_character = EST_jean_le_grand
         }
     }
 		  focus = {
@@ -596,7 +607,7 @@ focus_tree = {
     }
 				  focus = {
         id = EST_enlist_air
-        icon = GFX_enc_goal_air_industry
+        icon = GFX_enc_goal_air_procurement
         prerequisite = { focus = EST_where_were_u}
         x = 17
         y = 2
@@ -727,7 +738,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+        add_manpower = 2500
         }
     }
 				  focus = {
@@ -751,7 +762,7 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+         add_ideas = EST_blood_of_patriots
         }
     }
 		  focus = {
@@ -830,8 +841,19 @@ focus_tree = {
 
         completion_reward = {
 
-        set_conscription_law = all_adults_serve
-
+     812 = {
+        add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+        }
+    }
+        add_ideas = all_adults_serve
       
         }
     }
@@ -907,12 +929,27 @@ focus_tree = {
     mutually_exclusive = {
         focus =EST_treaty_of_pskov
     }
+       available = {
+        tag = EST
+        SOV = { exists = yes }
+    }
         x = 30
         y = 0
-        cost = 10
+        cost = 5
 
         completion_reward = {
         
+        SOV = {
+            white_peace = EST
+        }
+
+        SOV = {
+            puppet = EST
+        }
+
+        EST = {
+            join_faction = SOV
+        }
         }
     }
 	focus = {
@@ -922,12 +959,31 @@ focus_tree = {
     mutually_exclusive = {
         focus = EST_minks_compromise
     }
+     available = {
+        tag = EST
+        SOV = { exists = yes }
+        controls_state = 812
+        controls_state = 13
+        controls_state = 191
+        controls_state = 808
+    }
+
         x = 32
         y = 0
-        cost = 10
+        cost = 5
 
         completion_reward = {
-        
+          SOV = {
+            white_peace = EST
+        }
+
+        if = {
+            limit = { SOV = { is_in_faction = yes } }
+            every_country = {
+                limit = { is_in_faction_with = SOV }
+                white_peace = EST
+            }
+        }
         }
     }
 }

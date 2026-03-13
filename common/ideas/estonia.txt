@@ -116,5 +116,21 @@ ideas = {
 			}
 			
 		}
+
+    EST_blood_of_patriots = {
+        picture = generic_war_spirit
+        allowed = {
+            original_tag = EST
+        }
+
+        modifier = {
+            surrender_limit = 0.10          
+            war_support_factor = 0.10       
+            reinforce_rate = 0.10           
+            core_defence_factor = 0.15      
+        }
+    }
+
+        
 	}
 }

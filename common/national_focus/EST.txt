@@ -589,84 +589,126 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+        army_experience = 10
+        navy_experience = 10
+        air_experience = 10
         }
     }
 				  focus = {
         id = EST_enlist_air
-        icon = GFX_goal_generic_oil
+        icon = GFX_enc_goal_air_industry
         prerequisite = { focus = EST_where_were_u}
         x = 17
         y = 2
         cost = 10
 
         completion_reward = {
-        
+         add_equipment_to_stockpile = {
+            type = fighter_equipment_1
+            amount = 100
+        }
+
+        air_experience = 25
         }
     }
 		 focus = {
         id = EST_soviet_air
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_SOV_socialism_in_one_country
         prerequisite = { focus = EST_enlist_air}
         x = 17
         y = 3
         cost = 10
 
         completion_reward = {
-        
+         add_tech_bonus = {
+            name = air_doctrine_bonus
+            bonus = 0.5
+            uses = 2
+            category = air_doctrine
+        }
+
+        air_experience = 25
         }
     }
 			  focus = {
         id = EST_absorb_ESR
-        icon = GFX_goal_generic_oil
+        icon = GFX_goal_CAN_c7a2_gun
         prerequisite = { focus = EST_where_were_u}
         x = 19
         y = 2
         cost = 10
 
         completion_reward = {
-        
+               add_manpower = 1550
+
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1000
+        }
         }
     }
 		  focus = {
         id = EST_soviet_army_doc
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_SOV_organization_centralization_discipline
         prerequisite = { focus = EST_absorb_ESR }
         x = 19
         y = 3
         cost = 10
 
         completion_reward = {
-        
+          add_tech_bonus = {
+            name = army_doctrine_bonus
+            bonus = 0.5
+            uses = 2
+            category = land_doctrine
+        }
+
+        army_experience = 25
         }
     }
 		  focus = {
         id = EST_enlist_naval
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_generic_merchant_fleet
         prerequisite = { focus = EST_where_were_u}
         x = 15
         y = 2
         cost = 10
 
         completion_reward = {
-        
+        add_equipment_to_stockpile = {
+            type = convoy
+            amount = 20
         }
+
+        add_equipment_to_stockpile = {
+            type = destroyer
+            amount = 5
+        }
+        
     }
+}
 		  focus = {
         id = EST_soviet_naval_doc
-        icon = GFX_goal_generic_oil
+        icon =GFX_focus_SMB_blue_water_fleet
         prerequisite = { focus = EST_enlist_naval}
         x = 15
         y = 3
         cost = 10
 
         completion_reward = {
-        
+          add_tech_bonus = {
+            name = naval_doctrine_bonus
+            bonus = 0.5
+            uses = 2
+            category = naval_doctrine
+        }
+
+        navy_experience = 25
         }
     }
 		  focus = {
         id = EST_commando_resist
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_NORDIC_com_capstone_army
         prerequisite = { focus = EST_restore_talinn_bunk }
         x = 21
         y = 1
@@ -678,7 +720,7 @@ focus_tree = {
     }
 			  focus = {
         id = EST_we_lived_for_est
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_generic_support_the_left_right
         prerequisite = { focus = EST_commando_resist }
         x = 21
         y = 2
@@ -690,7 +732,7 @@ focus_tree = {
     }
 				  focus = {
         id = EST_we_died_for_est
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_RAJ_i_am_death
         prerequisite = { focus = EST_we_lived_for_est}
         x = 21
         y = 3
@@ -702,7 +744,7 @@ focus_tree = {
     }
 					  focus = {
         id = EST_a_land_watered
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_RAJ_red_in_the_shadows
         prerequisite = { focus = EST_we_died_for_est}
         x = 21
         y = 4
@@ -714,31 +756,49 @@ focus_tree = {
     }
 		  focus = {
         id = EST_legacy_of_sign
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_generic_support_the_left_right
         prerequisite = { focus = EST_restore_talinn_bunk }
         x = 23
         y = 1
         cost = 10
 
         completion_reward = {
-        
+                add_tech_bonus = {
+            name = signal_recon_bonus
+            bonus = 1.0
+            uses = 2
+            category = land_doctrine
+        }
+
+        add_research_bonus = {
+            name = support_bonus
+            bonus = 0.5
+            uses = 2
+            category = support_tech
+        }
         }
     }
 			  focus = {
         id = EST_they_shall_know
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_BEL_legacy_of_the_great_war
         prerequisite = { focus =  EST_legacy_of_sign }
         x = 23
         y = 2
         cost = 10
 
         completion_reward = {
-        
+            add_research_bonus = {
+            name = engineer_bonus
+            bonus = 1.0
+            uses = 1
+            category = support_tech
+        }
+
         }
     }
 				  focus = {
         id = EST_if_you_need_a_gun
-        icon = GFX_goal_generic_oil
+        icon =GFX_goal_CAN_grabbing_rifle
         prerequisite = { focus =  EST_they_shall_know }
         x = 23
         y = 3
@@ -750,7 +810,7 @@ focus_tree = {
     }
 					  focus = {
         id = EST_survival_kit
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_generic_bad_medical
         prerequisite = { focus =  EST_if_you_need_a_gun}
         x = 23
         y = 4
@@ -762,19 +822,22 @@ focus_tree = {
     }
 		  focus = {
         id = EST_if_you_cant_fight_build
-        icon = GFX_goal_generic_oil
+        icon =GFX_focus_PRC_bolshevik_urbanization_completed
         prerequisite = { focus = EST_restore_talinn_bunk }
         x = 25
         y = 1
         cost = 10
 
         completion_reward = {
-        
+
+        set_conscription_law = all_adults_serve
+
+      
         }
     }
 			  focus = {
         id = EST_bunker_blues
-        icon = GFX_goal_generic_oil
+        icon =GFX_focus_BEL_koningshooikt_wavre_line
         prerequisite = { focus =  EST_if_you_cant_fight_build}
         x = 25
         y = 2
@@ -782,11 +845,17 @@ focus_tree = {
 
         completion_reward = {
         
+        add_offsite_building = {
+            type = industrial_complex
+            level = 4
+        }
+
+     
         }
     }
 				  focus = {
         id = EST_pillbug_machine
-        icon = GFX_goal_generic_oil
+        icon =GFX_focus_generic_mechanized
         prerequisite = { focus =  EST_if_you_need_a_gun }
         x = 25
         y = 4
@@ -794,11 +863,22 @@ focus_tree = {
 
         completion_reward = {
         
+        add_research_bonus = {
+            name = armor_bonus
+            bonus = 1.0
+            uses = 2
+            category = armor
+        }
+
+        add_equipment_to_stockpile = {
+            type = armored_car_equipment_1
+            amount = 50
+        }
         }
     }
 			  focus = {
         id = EST_urban_jungles
-        icon = GFX_goal_generic_oil
+        icon = GFX_focus_JAP_further_urban_investments
         prerequisite = { focus = EST_restore_talinn_bunk }
         x = 27
         y = 1
@@ -810,7 +890,7 @@ focus_tree = {
     }
 				  focus = {
         id = EST_HOLD_HOLD_HOLD
-        icon = GFX_goal_generic_oil
+        icon = GFX_rally_plp_war
         prerequisite = { focus = EST_urban_jungles }
         x = 27
         y = 2
@@ -822,7 +902,7 @@ focus_tree = {
     }
 					  focus = {
         id = EST_minks_compromise
-        icon = GFX_goal_generic_oil
+        icon = GFX_goal_generic_dangerous_deal
     
     mutually_exclusive = {
         focus =EST_treaty_of_pskov
@@ -837,7 +917,7 @@ focus_tree = {
     }
 	focus = {
         id = EST_treaty_of_pskov
-        icon = GFX_goal_generic_oil
+        icon = GFX_limit_serfdome_laws
             
     mutually_exclusive = {
         focus = EST_minks_compromise

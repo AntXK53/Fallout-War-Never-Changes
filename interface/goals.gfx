@@ -8,6 +8,61 @@ spriteTypes = {
     ##ESTONIA##
 
 SpriteType = {
+		name = "GFX_focus_NORDIC_com_capstone_army"
+		texturefile = "gfx/interface/goals/EST/focus_NORDIC_com_capstone_army.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_PRC_bolshevik_urbanization_completed"
+		texturefile = "gfx/interface/goals/EST/focus_PRC_bolshevik_urbanization_completed.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_generic_bad_medical"
+		texturefile = "gfx/interface/goals/EST/focus_generic_bad_medical.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_generic_mechanized"
+		texturefile = "gfx/interface/goals/EST/focus_generic_mechanized.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_RAJ_red_in_the_shadows"
+		texturefile = "gfx/interface/goals/EST/focus_RAJ_red_in_the_shadows.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_goal_generic_dangerous_deal"
+		texturefile = "gfx/interface/goals/EST/goal_generic_dangerous_deal.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_RAJ_i_am_death"
+		texturefile = "gfx/interface/goals/EST/focus_RAJ_i_am_death.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_BEL_koningshooikt_wavre_line"
+		texturefile = "gfx/interface/goals/EST/focus_BEL_koningshooikt_wavre_line.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_JAP_further_urban_investments"
+		texturefile = "gfx/interface/goals/EST/focus_JAP_further_urban_investments.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_SOV_socialism_in_one_country"
+		texturefile = "gfx/interface/goals/EST/focus_SOV_socialism_in_one_country.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
+		name = "GFX_focus_SOV_organization_centralization_discipline"
+		texturefile = "gfx/interface/goals/EST/focus_SOV_organization_centralization_discipline.dds"
+		legacy_lazy_load = no
+	}
+SpriteType = {
 		name = "GFX_limit_serfdome_laws"
 		texturefile = "gfx/interface/goals/EST/limit_serfdome_laws.dds"
 		legacy_lazy_load = no

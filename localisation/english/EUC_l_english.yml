@@ -1,3 +1,8 @@
 ﻿l_english:
     # EVENTS
     euc_collapse_tt:0 "§RThe Commonwealth Dissolves.§!"
+    ##IDEAS##
+  euc_rampant_unrest_1: "Rampant Unrest"
+  euc_energy_crisis_1: "Energy Crisis"
+  euc_economic_recession_1: "Economic Recession"
+ euc_breaking_union_1: "A Union Breaking Apart"

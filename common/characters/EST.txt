@@ -107,4 +107,25 @@ characters={
 			}
 		}
 	}
+		EST_robin={
+			name=" Robin  "
+		advisor={
+			slot = army_chief
+
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
+		}
+	}
 }

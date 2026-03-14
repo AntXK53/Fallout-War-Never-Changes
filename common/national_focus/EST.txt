@@ -495,7 +495,19 @@ focus_tree = {
         }
         add_stability = 0.05
         }
-   
+        EST = {
+				add_opinion_modifier = {
+					target = SWE
+					modifier = large_increase
+				}
+            }
+			SWE = {
+				add_opinion_modifier = {
+					target = EST
+					modifier = large_increase
+				}
+
+		}
         }
     
 	  focus = {
@@ -576,6 +588,8 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
+            add_war_support = 0.3
+            add_manpower = 300
         }
     }
 		  focus = {
@@ -726,7 +740,9 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+        recruit_character = EST_robin
+        add_war_support = 0.1
+        add_stability = 0.05
         }
     }
 			  focus = {
@@ -750,7 +766,8 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+              army_experience = 10
+              add_command_power = 10
         }
     }
 					  focus = {
@@ -798,11 +815,12 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-            add_research_bonus = {
-            name = engineer_bonus
+            add_tech_bonus = {
+            name = EST_engineer_bonus
             bonus = 1.0
             uses = 1
-            category = support_tech
+            category = land_doctrine
+            technology = engineer_company
         }
 
         }
@@ -816,8 +834,14 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+            add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 200
         }
+    }
+   
+
+        
     }
 					  focus = {
         id = EST_survival_kit
@@ -829,6 +853,17 @@ focus_tree = {
 
         completion_reward = {
         
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 500
+        }
+
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1000
+        }
+
+        army_experience = 5
         }
     }
 		  focus = {
@@ -884,18 +919,20 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
-        add_research_bonus = {
-            name = armor_bonus
-            bonus = 1.0
+
+        add_tech_bonus = {
+            name = EST_tank_research
+            bonus = 0.5
             uses = 2
             category = armor
         }
 
         add_equipment_to_stockpile = {
             type = armored_car_equipment_1
-            amount = 50
+            amount = 120
         }
+
+        army_experience = 10
         }
     }
 			  focus = {
@@ -908,6 +945,18 @@ focus_tree = {
 
         completion_reward = {
         
+     812 = {
+        add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+        }
+        add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+        }
+    }
         }
     }
 				  focus = {
@@ -919,7 +968,11 @@ focus_tree = {
         cost = 10
 
         completion_reward = {
-        
+        add_manpower = 250
+              add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 200
+        }
         }
     }
 					  focus = {

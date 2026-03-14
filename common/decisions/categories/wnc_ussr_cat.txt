@@ -21,7 +21,7 @@ sov_union_of_sovereigh_state_cat = {
         original_tag = SOV
     }
     visible = {
-        original_tag = SOV
+        has_country_flag = ussr_uss_ct
     }
 }
 sov_debug_decisions_cat = {

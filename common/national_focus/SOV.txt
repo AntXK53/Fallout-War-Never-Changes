@@ -293,6 +293,7 @@ focus_tree = {
 		x = 6
 		y = 4
 		completion_reward = {
+			set_country_flag = ussr_uss_ct
 			unlock_decision_category_tooltip = sov_union_of_sovereigh_state_cat
 		}
 	}

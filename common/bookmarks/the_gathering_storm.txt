@@ -18,23 +18,32 @@ bookmarks = {
 				
 			}
 		}
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+		CAN_the_avro_project
+		CAN_prime_minister_rip
+		CAN_east_west_split
+
+			}
+			focuses = {
+				CAN_continue_the_dynasty
+				CAN_trudeau_stability
+				CAN_helping_family
+			}
+		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-				fusion_technology_funding
-				robot_factory_workers
-				oil_shortages
-				effects_of_the_new_plague
-				industrial_union_strikes
+		
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
+		USA_a_republic_in_crisis
+		USA_the_armed_forces
+		USA_from_the_mountains
 			}
 		}
 			"EST"={
@@ -65,21 +74,6 @@ bookmarks = {
 				ENG_imperial_federation
 				ENG_the_kings_party
 				ENG_organize_the_blackshirts
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				tizard_mission_focus
-				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
 		"DDR"={
@@ -173,20 +167,6 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"CAN"={
-			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CAN_american_free_trade_treaty
-				CAN_the_yanks
-				CAN_the_betrayal
-				CAN_trudeau_third_mandate
-			}
-			focuses = {
-				CAN_identity_crisis
-			}
-		}
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
@@ -906,20 +886,6 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"CAN"={
-			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CAN_american_free_trade_treaty
-				CAN_the_yanks
-				CAN_the_betrayal
-				CAN_trudeau_third_mandate
-			}
-			focuses = {
-				CAN_identity_crisis
-			}
-		}
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"
@@ -1571,17 +1537,7 @@ bookmarks = {
 				
 			}
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "By Blood Alone" }
-			ideas = {
 
-			}	
-			focuses = {
-
-			}		
-		}
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -1618,21 +1574,6 @@ bookmarks = {
 				SOV_reconvene_the_zemsky_sobor
 			}	
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			available = { NOT = { has_dlc = "No Step Back" } }
-			ideas = {
-				trotskyite_plot_nsb
-				SOV_second_five_year_plan_fake_1936_ns
-				SOV_politicized_military
-			}
-			focuses = {
-				SOV_behead_the_snake
-				SOV_father_of_nations
-				SOV_the_supreme_soviet
-			}	
-		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -1640,20 +1581,7 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"CAN"={
-			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				CAN_american_free_trade_treaty
-				CAN_the_yanks
-				CAN_the_betrayal
-				CAN_trudeau_third_mandate
-			}
-			focuses = {
-				CAN_identity_crisis
-			}
-		}
+
 		"AST"={
 			minor = yes
 			history = "AST_GATHERING_STORM_DESC"

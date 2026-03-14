@@ -13,7 +13,7 @@
 	
 	
 	focus = {
-		id = DDR_ottos_actual_plan
+		id = DDR_ottos_actual_plan 
 		icon = GFX_DDR_otto_plan
 		cost = 2
 		available_if_capitulated = no

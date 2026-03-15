@@ -12,7 +12,9 @@ bookmarks = {
 			ideology = democratic
 	
 			ideas = {
-				
+				euc_rampant_unrest_1
+				euc_economic_recession_1
+				euc_breaking_union_1
 			}
 			focuses = {
 				

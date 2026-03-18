@@ -31,7 +31,26 @@ ideas = {
 				fuel_gain_factor = -0.9 ##just what the file says cant blame me
 			}
 		}
+	    fuel_optimization = {
+			picture = GFX_goal_unknown
 
+			removal_cost = -1
+
+			modifier = {
+				fuel_gain_factor = 0.1
+			}
+		}
+		    air_defense_doctrine = {
+			picture = GFX_goal_unknown
+
+			removal_cost = -1
+
+			modifier = {
+			air_defence_factor = 0.3
+            air_agility_factor = 0.1
+			army_defence_factor = -0.1
+			}
+		}
 		robot_factory_workers = {
 			picture = GFX_goal_unknown
 

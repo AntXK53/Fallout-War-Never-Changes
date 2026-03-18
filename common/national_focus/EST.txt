@@ -621,7 +621,7 @@ focus_tree = {
     }
 				  focus = {
         id = EST_enlist_air
-        icon = GFX_enc_goal_air_procurement
+        icon = GFX_goal_generic_air_fighter
         prerequisite = { focus = EST_where_were_u}
         x = 17
         y = 2

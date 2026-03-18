@@ -329,7 +329,7 @@ focus_tree = {
 
     focus = {
         id = USA_composite_armor_research
-        icon = GFX_focus_generic_tank
+        icon = GFX_enc_integrate_scientists
         relative_position_id = USA_mechanized_force_initiative
         x = 2
         y = 2
@@ -508,7 +508,7 @@ focus_tree = {
 
     focus = {
         id = USA_invigorate_shipbuilding_infrastructure
-        icon = GFX_focus_generic_industry
+        icon = GFX_enc_goal_enc_navy_dockyards
         relative_position_id = USA_us_navy
         x = 0
         y = 2
@@ -534,7 +534,7 @@ focus_tree = {
 
     focus = {
         id = USA_modern_naval_engineering
-        icon = GFX_focus_generic_industry
+        icon = GFX_goal_continuous_naval_production
         relative_position_id = USA_us_navy
         x = 2
         y = 2
@@ -584,7 +584,7 @@ focus_tree = {
 
     focus = {
         id = USA_carrier_strike_doctrine
-        icon = GFX_focus_generic_navy
+        icon = GFX_focus_generic_air_carrier
         relative_position_id = USA_us_navy
         x = -6
         y = 3
@@ -604,7 +604,7 @@ focus_tree = {
 
     focus = {
         id = USA_naval_technological_superiority
-        icon = GFX_focus_generic_navy
+        icon = GFX_enc_goal_us_navy
         relative_position_id = USA_us_navy
         x = 0
         y = 4
@@ -623,7 +623,7 @@ focus_tree = {
 
     focus = {
         id = USA_fleet_command_protocols
-        icon = GFX_focus_generic_navy
+        icon =  GFX_focus_SMB_blue_water_fleet
         relative_position_id = USA_us_navy
         x = 7
         y = 5
@@ -636,7 +636,7 @@ focus_tree = {
 
     focus = {
         id = USA_strike_group_organization
-        icon = GFX_focus_generic_navy
+        icon = GFX_goal_generic_navy_battleship
         relative_position_id = USA_us_navy
         x = -7
         y = 5
@@ -700,7 +700,7 @@ focus_tree = {
 
     focus = {
         id = USA_stealth_tech_development
-        icon = GFX_goal_unknown
+        icon = GFX_enc_integrate_scientists
         relative_position_id = USA_us_navy
         x = -3
         y = 6
@@ -712,7 +712,7 @@ focus_tree = {
 
     focus = {
         id = USA_composite_hull_construction
-        icon = GFX_focus_generic_navy
+        icon = GFX_enc_goal_enc_freedom_yards
         relative_position_id = USA_us_navy
         x = 2
         y = 5
@@ -729,7 +729,7 @@ focus_tree = {
 
     focus = {
         id = USA_command_the_waves
-        icon = GFX_focus_generic_navy
+        icon =  GFX_focus_NOR_the_glucksburg_sea_wall
         relative_position_id = USA_us_navy
         x = 5
         y = 5
@@ -776,7 +776,7 @@ focus_tree = {
 
     focus = {
         id = USA_battlefleet_strategems
-        icon = GFX_goal_USA_us_navy
+        icon =  GFX_focus_ARG_study_the_battle_of_the_river_plate
         relative_position_id = USA_us_navy
         x = 6
         y = 7
@@ -821,7 +821,7 @@ focus_tree = {
 
     focus = {
         id = USA_aerial_dominance_initiative
-        icon = GFX_focus_generic_air
+        icon =  GFX_enc_goal_air_industry
         relative_position_id = USA_us_air_force
         x = 0
         y = 2
@@ -838,7 +838,7 @@ focus_tree = {
 
     focus = {
         id = USA_ace_pilot_programs
-        icon = GFX_focus_generic_air
+        icon = GFX_enc_goal_air_SAC
         relative_position_id = USA_us_air_force
         x = -1
         y = 3
@@ -851,7 +851,7 @@ focus_tree = {
 
     focus = {
         id = USA_airbase_expansion
-        icon = GFX_focus_generic_air
+        icon =  GFX_focus_generic_air_bases
         relative_position_id = USA_us_air_force
         x = 1
         y = 3
@@ -864,13 +864,18 @@ focus_tree = {
                     level = 2
                     instant_build = yes
                 }
+                      add_building_construction = {
+                    type = air_base
+                    level = 2
+                    instant_build = yes
+                }
             }
         }
     }
 
     focus = {
         id = USA_standardize_aircraft_production
-        icon = GFX_focus_generic_air
+        icon =  GFX_enc_goal_air_school
         relative_position_id = USA_us_air_force
         x = 0
         y = 4
@@ -882,12 +887,16 @@ focus_tree = {
                 uses = 1
                 category = cat_production
             }
+             add_equipment_to_stockpile = {
+            type = fighter_equipment_1
+            amount = 75
+        }
         }
     }
 
     focus = {
         id = USA_aviation_fuel_optimization
-        icon = GFX_focus_generic_air
+        icon = GFX_focus_PER_increase_oil_sales
         relative_position_id = USA_us_air_force
         x = -2
         y = 4
@@ -899,12 +908,16 @@ focus_tree = {
                 uses = 1
                 category = cat_synth_oil
             }
+             add_timed_idea = {
+        idea = fuel_optimization
+        days = 365
+               }
         }
     }
 
     focus = {
         id = USA_radar_development_program
-        icon = GFX_focus_generic_air
+        icon = GFX_goal_generic_radar
         relative_position_id = USA_us_air_force
         x = -2
         y = 5
@@ -916,12 +929,20 @@ focus_tree = {
                 uses = 1
                 category = radar_tech
             }
+
+
+            add_building_construction = {
+                type = radar_station
+                level = 1
+                province = 11892
+                instant_build = yes
+            }
         }
     }
 
     focus = {
         id = USA_the_air_superiority_concept
-        icon = GFX_focus_generic_air
+        icon = GFX_enc_industrial_air
         relative_position_id = USA_us_air_force
         x = 1
         y = 6
@@ -938,7 +959,7 @@ focus_tree = {
 
     focus = {
         id = USA_advanced_fighter_jet_program
-        icon = GFX_focus_generic_air
+        icon = GFX_enc_goal_air_futures
         relative_position_id = USA_us_air_force
         x = -4
         y = 3
@@ -950,12 +971,14 @@ focus_tree = {
                 uses = 1
                 category = jet_technology
             }
+            air_experience = 25
+
         }
     }
 
     focus = {
         id = USA_dogfighting_expertise
-        icon = GFX_focus_generic_air
+        icon =GFX_enc_goal_air_elephant
         relative_position_id = USA_us_air_force
         x = -4
         y = 4
@@ -968,7 +991,7 @@ focus_tree = {
 
     focus = {
         id = USA_optimize_jet_engines
-        icon = GFX_focus_generic_air
+        icon = GFX_enc_goal_air_procurement
         relative_position_id = USA_us_air_force
         x = -4
         y = 5
@@ -985,7 +1008,7 @@ focus_tree = {
 
     focus = {
         id = USA_advanced_air_to_air_combat_training
-        icon = GFX_focus_generic_air
+        icon = GFX_goal_generic_air_fighter
         relative_position_id = USA_us_air_force
         x = -5
         y = 6
@@ -998,7 +1021,7 @@ focus_tree = {
 
     focus = {
         id = USA_defensive_aerial_tactics
-        icon = GFX_focus_generic_air
+        icon = GFX_focus_generic_home_defense
         relative_position_id = USA_us_air_force
         x = -3
         y = 6
@@ -1010,6 +1033,7 @@ focus_tree = {
                 uses = 1
                 category = cat_air_guns
             }
+            add_ideas = air_defense_doctrine
         }
     }
 
@@ -1489,7 +1513,7 @@ focus_tree = {
 
     focus = {
         id = USA_senator_blackwell
-        icon = GFX_goal_unknown
+        icon = GFX_blackwell
         relative_position_id = USA_the_presidents_cabinet
         x = 1
         y = 2
@@ -1525,7 +1549,7 @@ focus_tree = {
 
     focus = {
         id = USA_thomas_eckhart
-        icon = GFX_goal_unknown
+        icon = GFX_exchart
         relative_position_id = USA_the_presidents_cabinet
         x = 3
         y = 1
@@ -1549,7 +1573,7 @@ focus_tree = {
 
     focus = {
         id = USA_vault_tec
-        icon = GFX_goal_unknown
+        icon =  GFX_vault_tec
         relative_position_id = USA_the_presidents_cabinet
         x = -1
         y = 1
@@ -1965,7 +1989,7 @@ focus_tree = {
 
     focus = {
         id = USA_operation_trumpet
-        icon = GFX_focus_generic_army
+        icon = GFX_USA_Operation_Trumpet
         relative_position_id = USA_dear_old_friends
         x = -.5
         y = 1

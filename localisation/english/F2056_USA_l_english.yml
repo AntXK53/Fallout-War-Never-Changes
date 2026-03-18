@@ -67,7 +67,7 @@ USA_streamlined_tank_production: "Streamlined Tank Production"
 USA_the_army_of_tomorrow: "The Army Of Tomorrow"
 USA_next_generation_armor: "Next Generation Armor"
 USA_composite_armor_research: "Composite Armor Research"
-
+USA_the_armed_forces_desc:0 "Strengthening the United States Armed Forces is vital to ensure our national security. This focus emphasizes modernizing and expanding our military capabilities, preparing the Army, Navy, and Air Force for potential future conflicts."
 USA_aerial_dominance_initiative: "Aerial Dominance Initiative"
 USA_advanced_fighter_jet_program: "Advanced Fighter Jet Program"
 USA_dogfighting_expertise: "Dogfighting Expertise"
@@ -105,3 +105,90 @@ USA_from_the_mountains: "From The Mountains"
 USA_from_the_skies: "From The Skies"
 USA_special_weapons_initiative: "Special Weapons Initiative"
  
+ # Great Northern Commonwealth
+ USA_great_northern_commonwealth: "The Great Northern Commonwealth"
+ USA_great_northern_commonwealth_agricultural_expansion: "Agricultural Expansion"
+ USA_great_northern_commonwealth_development_of_missile_silos: "Missile Silo Development"
+ USA_great_northern_commonwealth_department_of_agriculture_deals: "Department of Agriculture Deals"
+
+ # California Commonwealth
+ USA_california_commonwealth: "The California Commonwealth"
+ USA_california_las_vegas: "Las Vegas Expansion"
+ USA_california_pacific_fighting_grounds: "Pacific Training Grounds"
+ USA_california_hawaii_mobilized: "Mobilize Hawaii"
+
+ # Cascadian Commonwealth
+ USA_cascadian_commonwealth: "The Cascadian Commonwealth"
+ USA_cascadian_pacific_fighting_grounds: "Cascadian Training Grounds"
+ USA_cascadian_oregon_shipbuilding_initiative: "Oregon Shipbuilding Initiative"
+
+ # Great Plains Commonwealth
+ USA_great_plains_commonwealth: "The Great Plains Commonwealth"
+ USA_great_plains_commonwealth_texlahoma_challenges_our_agriculture: "Texlahoma Agricultural Challenges"
+
+ # Texlahoma Commonwealth
+ USA_texlahoma_commonwealth: "The Texlahoma Commonwealth"
+ USA_texlahoma_commonwealth_attract_agriculture_and_corporations: "Attract Agriculture and Corporations"
+ USA_texlahoma_commonwealth_subsidize_the_oil_industry: "Subsidize the Oil Industry"
+USA_appalachian_commonwealth: "The Appalachian Commonwealth"
+ USA_appalachia_attract_resource_mining_industry: "Attract Mining Industry"
+ USA_appalachia_take_down_the_corporation: "Take Down the Corporations"
+
+ USA_gulf_commonwealth: "The Gulf Commonwealth"
+ USA_gulf_commonwealth_cuban_scare: "The Cuban Scare"
+ USA_gulf_commonwealth_secure_the_gulf: "Secure the Gulf"
+
+ USA_south_east_commonwealth: "The Southeastern Commonwealth"
+ USA_south_east_commonwealth_atlantic_fighting_grounds: "Atlantic Training Grounds"
+ USA_south_east_commonwealth_revive_dockyards: "Revive the Dockyards"
+
+ USA_columbian_commonwealth: "The Columbian Commonwealth"
+ USA_columbian_commonwealth_unique_cocktail_of_military_corporation_and_government: "Military-Corporate Government"
+ USA_columbian_commonwealth_dc_martial_law: "Martial Law in D.C."
+
+ USA_four_corners_commonwealth: "The Four Corners Commonwealth"
+ USA_four_corners_joint_development_of_the_border_with_mexico: "Joint Border Development"
+ USA_four_corners_commonwealth_vaultzero: "Vault Zero"
+ USA_four_corners_commonwealth_invite_vaulttec_and_military: "Invite Vault-Tec and the Military"
+
+ USA_the_commonwealth: "The Commonwealth"
+ USA_the_commonwealth_left_behind: "Left Behind"
+ USA_the_commonwealth_still_the_cultural_hub_of_america: "Still the Cultural Hub"
+ USA_the_commonwealth_invasion_base_from_canada: "Invasion Base from Canada"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## EVENTS ##
+
+ USA_military_focus_event_title: "Military Priorities"
+ USA_military_focus_event_desc: "Our military leadership is debating where to focus our efforts. Each branch demands attention and resources."
+USA_military_focus_army:0 "Prioritize the Army"
+USA_military_focus_air:0 "Prioritize the Air Force"
+USA_military_focus_navy:0 "Prioritize the Navy"
+
+
+
+USA_navy_focus_event_title:0 "Rising as a Global Naval Power"
+USA_navy_focus_event_desc:0 "With the completion of our focus on expanding the navy, the United States now commands a fleet capable of projecting power across the oceans. Our ships, sailors, and naval infrastructure have reached unprecedented strength, ensuring our influence on the world stage."
+
+global_navy:0 "WE ARE THE NAVY "
+

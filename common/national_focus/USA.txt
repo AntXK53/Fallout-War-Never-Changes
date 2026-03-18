@@ -26,6 +26,7 @@ focus_tree = {
             has_government = democratic
         }
         completion_reward = {
+            country_event = { id = USA.military_focus_event }
             add_political_power = 150
         }
         ai_will_do = {
@@ -795,12 +796,13 @@ focus_tree = {
         x = 0
         y = 8
         cost = 10
-        prerequisite = { focus = USA_battlefleet_strategems }
-        prerequisite = { focus = USA_floating_airfields }
+        prerequisite = { focus = USA_battlefleet_strategems   focus = USA_floating_airfields}
         completion_reward = {
             add_dynamic_modifier = {
                 modifier = USA_increased_global_naval_presence
             }
+             country_event = { id = USA.navy_focus_event }
+    
         }
     }
 
@@ -1129,7 +1131,7 @@ focus_tree = {
         icon = GFX_goal_USA_republic_in_crisis
         cost = 3
         x = -75
-        y = 2
+        y = 1
         completion_reward = {
             add_stability = -0.05
         }
@@ -1732,9 +1734,10 @@ focus_tree = {
 			}
 		}
         completion_reward = {
-            add_ideas = {
-                idea = USA_a_new_president_in_office ##Adds one year of +10% party pop stability and one year of extra pp gain
-            }
+             add_timed_idea = {
+            idea = USA_a_new_president_in_office ## Adds one year of +10% party pop stability and one year of extra pp gain
+            days = 365
+        }
         }
     }
 

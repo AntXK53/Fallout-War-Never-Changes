@@ -1,0 +1,60 @@
+add_namespace = usa
+
+country_event = {
+    id = USA.military_focus_event
+    title = USA_military_focus_event_title
+    desc = USA_military_focus_event_desc
+    picture = GFX_event_usa_army
+  
+
+    trigger = {
+        tag = USA
+          has_completed_focus = USA_the_armed_forces
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = USA_military_focus_army
+        army_experience = 25
+         complete_national_focus = USA_us_army
+    }
+
+    option = {
+        name = USA_military_focus_air
+       air_experience = 25
+        complete_national_focus = USA_us_air_force
+    }
+
+    option = {
+        name = USA_military_focus_navy
+        navy_experience = 25
+         complete_national_focus = USA_us_navy
+    }
+}
+
+country_event = {
+    id = USA.navy_focus_event
+    title = USA_navy_focus_event_title
+    desc = USA_navy_focus_event_desc
+    picture = GFX_event_usa_navy_army
+  
+
+    trigger = {
+        tag = USA
+        has_completed_focus = USA_global_naval_presence
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = global_navy
+      navy_experience = 45
+        add_political_power = 25
+        add_war_support = 15
+    }
+}

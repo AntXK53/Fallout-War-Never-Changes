@@ -822,7 +822,18 @@ SpriteType = {
 		name = "GFX_goal_USA_republic_in_crisis"
 		textureFile = "gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds"
 	}
+    ### EVENTS ## 
+spriteType = {
+    name = "GFX_event_usa_army"
+    texturefile = "gfx/interface/goals/USA/GFX_event_usa_army.dds"
 
+}
+spriteType = {
+    name = "GFX_event_usa_navy_army"
+    texturefile = "gfx/interface/goals/USA/GFX_event_usa_navy_army.dds"
+
+}
+ ##### 
 	spriteType = {
         name = GFX_goal_USA_republic_in_crisis_shine
         texturefile = gfx/interface/goals/USA/GFX_USA_republic_in_crisis.dds

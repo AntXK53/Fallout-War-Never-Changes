@@ -55,6 +55,6 @@ country_event = {
         name = global_navy
       navy_experience = 45
         add_political_power = 25
-        add_war_support = 15
+        add_war_support = 0.15
     }
 }

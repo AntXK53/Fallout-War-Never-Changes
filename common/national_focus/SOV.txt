@@ -770,7 +770,7 @@ focus_tree = {
 	###########################
 	focus = {
 		id = SOV_soviet_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_spur_communist_revolutions
 		cost = 0
 		x = 60
 		y = 0
@@ -788,7 +788,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_army_militarisation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_organization_centralization_discipline
 		relative_position_id = SOV_soviet_army
 		prerequisite = {
 			focus = SOV_second_plan_of_militarisation
@@ -816,7 +816,7 @@ focus_tree = {
 	###########################
 	focus = {
 		id = SOV_foreigh_politic
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SOV_socialism_in_one_country
 		available = {
 			NOT = {
 				country_exists = EST

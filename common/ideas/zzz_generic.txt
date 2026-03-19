@@ -1960,7 +1960,7 @@ ideas = {
 		}
 		
 		resource_shortage_fix = {
-			picture = generic_economic_idea
+			picture = generic_usa_conflict
 			
 			modifier = {
 				local_resources_factor = 0.1

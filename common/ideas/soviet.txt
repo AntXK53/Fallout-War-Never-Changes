@@ -45,6 +45,7 @@ ideas = {
 			}
 		}
 		SOV_militarist_policy_idea = {
+			picture = sov_military_pol
 			removal_cost = -1
 			available = {
 				original_tag = SOV
@@ -65,6 +66,7 @@ ideas = {
 			}
 		}
 		SOV_normally_robototechnic_idea = {
+			picture = sov_robotic
 			removal_cost = -1
 			available = {
 				original_tag = SOV

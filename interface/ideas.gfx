@@ -1,6 +1,15 @@
 spriteTypes = {	
 
+##SOV##
 
+	SpriteType = {
+		name = "GFX_idea_sov_military_pol"
+		texturefile = "gfx/interface/ideas/SOV/sov_military_pol.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sov_robotic"
+		texturefile = "gfx/interface/ideas/SOV/sov_robotic.dds"
+	}
 ## EUC ##
 	SpriteType = {
 		name = "GFX_idea_Collapsing_Homefront"

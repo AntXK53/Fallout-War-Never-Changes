@@ -31,7 +31,7 @@ state = {
 		}
 
 		victory_points = {
-			7315 30 # Seattle
+			7315 20 # Seattle
 		}
 
 		1939.1.1 = {

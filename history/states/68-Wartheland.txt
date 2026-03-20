@@ -12,7 +12,6 @@ state = {
 
 		owner = POL
 		add_core_of = POL
-		add_core_of = PRE
 
 		victory_points = {
 			3473 1 # Küstrin

@@ -223,6 +223,14 @@ NEP = {
 	color = rgb { 59 190 233 }
 	color_ui = rgb { 59 190 233 }
 }
+BAH = {
+	color = rgb { 184 227 231 }
+	color_ui = rgb { 184 227 231 }
+}
+BLZ = {
+	color = rgb { 98 120 144 }
+	color_ui = rgb { 98 120 144 }
+}
 NIC = {
 	color = rgb { 77 138 205 }
 	color_ui = rgb { 77 138 205 }
@@ -347,12 +355,18 @@ RAJ = {
 	color = rgb { 214 121 33 }
 	color_ui = rgb { 214 121 33 }
 }
-
+SRL = {
+	color = rgb { 107 12 12 }
+	color_ui = rgb { 107 12 12 }
+}
+MLD = {
+	color = rgb { 189 231 178 }
+	color_ui = rgb { 189 231 178 }
+}
 BAN = {
 	color = rgb { 17 129 19 }
 	color_ui = rgb { 17 129 19 }
 }
-
 CRO = {
 	color = rgb { 230  70  180 }
 	color_ui = rgb { 230 255 122 }

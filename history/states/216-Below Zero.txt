@@ -16,7 +16,7 @@ state = {
 		}
 
 		victory_points = {
-			11159 1 # Petrozavodsk/Äänislinna
+			11159 5 # Petrozavodsk/Äänislinna
 		}
 
 		buildings = {

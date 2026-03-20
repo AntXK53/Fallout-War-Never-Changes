@@ -367,6 +367,11 @@ ideologies = {
                 color = { 102 45 45 }  
             }
 
+            Soviet_Nationalism = {  
+                can_be_randomly_selected = yes
+                color = { 102 65 65 }  
+            }
+
             totalitarianism = {  
                 can_be_randomly_selected = yes
                 color = { 91 33 40 }  

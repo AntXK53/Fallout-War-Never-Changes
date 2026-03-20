@@ -19,7 +19,7 @@ focus_tree = {
 		id = SOV_congress_2056
 		icon = GFX_goal_unknown
 		cost = 8
-		x = 15
+		x = 12
 		y = 0
 		completion_reward = {
 			country_event = sovietunion.1
@@ -201,6 +201,176 @@ focus_tree = {
         }
 		x = -5
 		y = 8
+	}
+	focus = {
+        id = SOV_plan_of_defence_ussr
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_militarist_in_power
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = -1
+		y = 9
+	}
+	focus = {
+        id = SOV_defence_eastern_bloc
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_plan_of_defence_ussr
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = -1
+		y = 10
+	}
+	focus = {
+        id = SOV_militarisation_ussr
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_defence_eastern_bloc
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = -1
+		y = 11
+	}
+	focus = {
+        id = SOV_ban_natbol
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_militarist_in_power
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 4
+		y = 9
+	}
+	focus = {
+        id = SOV_ideology_question_mil
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_ban_natbol
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 4
+		y = 10
+	}
+	focus = {
+        id = SOV_soviet_nationalism
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_ideology_question_mil
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+			focus = SOV_internationalism
+        }
+		x = 3
+		y = 11
+		completion_reward = {
+			hidden_effect = {
+				remove_country_leader_role = {
+                    ideology = communism
+                }
+				add_country_leader_role = {
+                    character = SOV_vasily_kozlov
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = Soviet_Nationalism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+			}
+		}
+	}
+	focus = {
+        id = SOV_internationalism
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_ideology_question_mil
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 5
+		y = 11
+	}
+	focus = {
+        id = SOV_konovalov_idea
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_internationalism
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 7
+		y = 12
+	}
+	focus = {
+        id = SOV_hell_march_start
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_konovalov_idea
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 7
+		y = 13
+	}
+	focus = {
+        id = SOV_agitprop
+		icon = GFX_goal_unknown
+		relative_position_id = SOV_congress_2056
+		cost = 8
+		prerequisite = {
+			focus = SOV_soviet_nationalism
+		}
+		prerequisite = {
+			focus = SOV_internationalism
+		}
+		availalbe = {
+		}
+		mutually_exclusive = {
+        }
+		x = 4
+		y = 12
 	}
 	###########################
 	######RAZVAL OF USSSR######
@@ -823,7 +993,7 @@ focus_tree = {
 			}
 		}
 		cost = 5
-		x = 40
+		x = 45
 		y = 10
 	}
 	focus = {

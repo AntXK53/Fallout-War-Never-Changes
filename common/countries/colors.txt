@@ -252,6 +252,10 @@ ZAM = {
 	color = rgb { 25 100 9 }
 	color_ui = rgb { 25 100 9 }
 }
+BOT = {
+	color = rgb { 197 153 218 }
+	color_ui = rgb { 197 153 218 }
+}
 NMB = {
 	color = rgb { 228 134 59 }
 	color_ui = rgb { 228 134 59 }
@@ -277,8 +281,8 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 80 115 45}
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 201 105 32}
+	color_ui = rgb { 201 105 32 }
 }
 URG = {
 	color = rgb { 57 168 213 }
@@ -483,7 +487,7 @@ ANG = {
 	color_ui = rgb { 43 147 84 }
 }
 MZB = {
-	color = rgb { 74 123 40 }
+	color = rgb { 118 178 76 }
 	color_ui = rgb { 74 123 40 }
 }
 ZIM = {
@@ -1277,7 +1281,7 @@ ISW = {
 	color_ui = rgb { 50 50 50 }
 }
 UAW = {
-	color = rgb { 0 150 57 }
+	color = rgb { 196 174 87 }
 	color_ui = rgb { 0 150 57 }
 }
 WAU = {
@@ -1288,7 +1292,6 @@ FSP = {
 	color = rgb { 219 48 74 }
 	color_ui = rgb { 219 48 74 }
 }
-
 ITS = {
 	color = rgb { 128 128 128 }
 	color_ui = rgb { 128 128 128 }

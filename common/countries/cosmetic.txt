@@ -1,18 +1,3 @@
-MAL_UK = {
-    color = rgb { 201 56 93 }
-    color_ui = rgb { 255 73 121 }
-}
-
-RAJ_FREE = {
-	color = rgb { 80  165  10 }
-	color_ui = rgb { 80  165  10 }
-}
-
-INS_HOL = {
-    color = rgb { 203 138 74 }
-    color_ui = rgb { 255 179 96 }
-}
-
 HUN_EMPIRE = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
@@ -326,11 +311,6 @@ SPC_global_defense_council = {
 SPC_poum = {
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 35 35 35 }
-}
-
-FRA_VICHY = {
-	color = rgb { 80 168 181 }
-	color_ui = rgb {115 185 196 }
 }
 
 united_polynesia = {

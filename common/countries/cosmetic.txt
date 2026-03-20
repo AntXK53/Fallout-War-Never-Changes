@@ -1132,12 +1132,6 @@ ARG_military_union_south_america = {
 	color = rgb { 0 56 55 }
 	color_ui = rgb { 0 56 55 }
 }
-
-URG_german = {
-	color = rgb { 102 102 153 }
-	color_ui = rgb { 71 71 107 }
-}
-
 ARG_soviet_aligned_communism = {
 	color = rgb { 99 00 00 }
 	color_ui = rgb { 99 00 00 }
@@ -1164,19 +1158,9 @@ PAR_anti_imperialism = {
 	
 }
 
-URG_anti_imperialism = {
-	color = rgb { 255 255 0 }
-	color_ui = rgb { 255 255 0 }
-}
-
 PAR_greater_paraguay = {
 	color = rgb { 174 11 53 }
 	color_ui = rgb { 174 11 53  }
-}
-
-URG_greater_uruguay = {
-	color = rgb { 46 96 115 }
-	color_ui = rgb { 46 96 115  }
 }
 
 BRA_america_do_sul = {

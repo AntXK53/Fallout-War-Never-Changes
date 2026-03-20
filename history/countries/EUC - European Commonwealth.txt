@@ -1,4 +1,4 @@
-﻿capital = 1
+﻿capital = 6 #Brussels
 # Recruit Characters
 	recruit_character = EUC_lottie_fevre
 	recruit_character = EUC_Antonio_Leclerc

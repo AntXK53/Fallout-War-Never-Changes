@@ -1,8 +1,8 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
-	color_ui = rgb { 138 155 116 }
+	color = rgb { 88 98 102 }
+	color_ui = rgb {88 98 102 }
 }
 ENG = {
 	color = rgb { 212 84 84 }
@@ -281,7 +281,7 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 201 105 32}
+	color = rgb { 201 105 32 }
 	color_ui = rgb { 201 105 32 }
 }
 URG = {
@@ -1263,9 +1263,6 @@ AZR = {
 	color = rgb { 110 35 45 }
 	color_ui = rgb { 110 35 45 }
 }
-
-
-
 
 #Custom colours start here
 EUC = {

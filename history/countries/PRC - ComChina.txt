@@ -47,13 +47,6 @@ set_politics = {
     }
 }
 
-# create_faction = Internationale
-# add_to_faction = PRC
-# add_to_faction = MON
-# add_to_faction = IND
-# add_to_faction = KOR
-# add_to_faction = CAM
-
 add_ideas = {
 	closed_economy
 	limited_conscription

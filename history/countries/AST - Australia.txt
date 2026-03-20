@@ -469,3 +469,8 @@ if = {
 		}
 	}
 }
+
+#DIPLOMACY
+
+give_guarantee = NZL
+give_guarantee = PNG

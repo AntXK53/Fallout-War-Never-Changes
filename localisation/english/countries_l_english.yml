@@ -4612,13 +4612,13 @@
  TAJ_communism_DEF:0 "Tajik Soviet Socialist Republic"
  TAJ_communism_ADJ:0 "Tajikian"
 
- TMS_communism:0 "Turkmenian Soviet Socialistic Republic"
- TMS_communism_DEF:0 "Turkmenian Soviet Socialistic Republic"
+ TMS_communism:0 "Turkmenian Soviet Socialist Republic"
+ TMS_communism_DEF:0 "Turkmenian Soviet Socialist Republic"
  TMS_communism_ADJ:0 "Turkmenian"
 
- RKZ:0 "North-Kazakhian People's Republic"
- RKZ_DEF:0 "North-Kazakhian People's Republic"
- RKZ_ADJ:0 "Russian"
+ RKZ:0 "North Kazakhi People's Republic"
+ RKZ_DEF:0 "North Kazakh People's Republic"
+ RKZ_ADJ:0 "North Kazakh"
 
  KAZ_neutrality:0 "Republic of Kazakhstan"
  KAZ_neutrality_DEF:0 "Republic of Kazakhstan"
@@ -4647,15 +4647,15 @@
  GEO_democratic_DEF:0 "The Republic of Georgia"
  GEO_democratic_ADJ:0 "Georgian"
 
- AZR_communism:0 "Azerbaijanian Soviet Socialistic Republic"
- AZR_communism_DEF:0 "The Azerbaijanian Soviet Socialistic Republic"
+ AZR_communism:0 "Azerbaijanian Soviet Socialist Republic"
+ AZR_communism_DEF:0 "The Azerbaijanian Soviet Socialist Republic"
  AZR_communism_ADJ:0 "Azerbaijani"
  AZR_neutrality:0 "Republic of Azerbaijan"
  AZR_neutrality_DEF:0 "The Republic of Azerbaijan"
  AZR_neutrality_ADJ:0 "Azerbaijani"
 
- ARM_communism:0 "Armenian Soviet Socialistic Republic"
- ARM_communism_DEF:0 "The Armenian Soviet Socialistic Republic"
+ ARM_communism:0 "Armenian Soviet Socialist Republic"
+ ARM_communism_DEF:0 "The Armenian Soviet Socialist Republic"
  ARM_communism_ADJ:0 "Armenian"
 
  ARM_neutrality:0 "Republic of Armenia"

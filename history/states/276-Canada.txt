@@ -22,11 +22,11 @@ state = {
 		}
 		
 		victory_points = {
-			3778 20 # Ottawa
+			3778 30 # Ottawa
 		}
 
 		victory_points = {
-			3775 10 # Toronto
+			3775 20 # Toronto
 		}
 
 	}

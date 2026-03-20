@@ -1187,12 +1187,6 @@ CHL_amerindian_federation = {
 	color = rgb { 51 102 204 }
 	color_ui = rgb { 0 0 102 }
 }
-
-URG_is_unaligned_URG_but_has_normal_URG_flag = {
-	color = rgb { 171  190  153 }
-	color_ui = rgb { 171  190  153 }
-}
-
 LGF_UNIFIED = {
 	color = rgb { 205 69 69 }
 	color_ui = rgb { 205 69 69 }

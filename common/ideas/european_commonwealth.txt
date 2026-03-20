@@ -2,7 +2,7 @@ ideas = {
 	country = {
 	
 		euc_energy_crisis_1 = {
-			# picture = 
+			 picture = ASU_HighPollution_Idea
 			
 			allowed = {
 				always = no

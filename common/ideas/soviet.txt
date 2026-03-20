@@ -1,6 +1,7 @@
 ideas = {
 	country = {
 		SOV_foreigh_policy_idea = {
+			picture = foreing_politics
 			removal_cost = -1
 			available = {
 				original_tag = SOV
@@ -21,6 +22,7 @@ ideas = {
 			}
 		}
 		SOV_full_war_ready_idea = {
+			picture = full_war_sov
 			removal_cost = -1
 			available = {
 				original_tag = SOV

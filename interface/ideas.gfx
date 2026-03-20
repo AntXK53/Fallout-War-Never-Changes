@@ -3,6 +3,14 @@ spriteTypes = {
 ##SOV##
 
 	SpriteType = {
+		name = "GFX_idea_full_war_sov"
+		texturefile = "gfx/interface/ideas/SOV/full_war_sov.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_foreing_politics"
+		texturefile = "gfx/interface/ideas/SOV/foreing_politics.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_sov_military_pol"
 		texturefile = "gfx/interface/ideas/SOV/sov_military_pol.dds"
 	}
@@ -11,6 +19,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SOV/sov_robotic.dds"
 	}
 ## EUC ##
+	SpriteType = {
+		name = "GFX_idea_ASU_HighPollution_Idea"
+		texturefile = "gfx\interface\ideas\EUC\ASU_HighPollution_Idea.dds"
+	}
 	SpriteType = {
 		name = "GFX_idea_Collapsing_Homefront"
 		texturefile = "gfx\interface\ideas\EUC\Collapsing_Homefront.tga"

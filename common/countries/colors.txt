@@ -1282,8 +1282,8 @@ UAW = {
 	color_ui = rgb { 0 150 57 }
 }
 WAU = {
-	color = rgb { 232 192 31 }
-	color_ui = rgb { 232 192 31 }
+	color = rgb { 14 129 59 }
+	color_ui = rgb { 14 129 59 }
 }
 FSP = {
 	color = rgb { 219 48 74 }

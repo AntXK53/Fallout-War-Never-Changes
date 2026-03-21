@@ -11,7 +11,7 @@ state = {
 
 	history = {
 		
-		owner = EUC
+		owner = CRC
 		add_core_of = CRC
 
 		victory_points = {

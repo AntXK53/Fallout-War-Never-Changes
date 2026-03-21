@@ -11,8 +11,10 @@ state = {
 	history = {
 
 		owner = EUC
-		add_core_of = EUC
 		add_core_of = BAY
+		add_core_of = WGR
+		add_core_of = GER
+		add_core_of = EUC
 
 		victory_points = {
 			692 20 # Munich

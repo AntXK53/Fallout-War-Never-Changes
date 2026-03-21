@@ -13,8 +13,8 @@ state={
 		owner = EUC
 		add_core_of = EUC
 		add_core_of = DDR
-	}
 		victory_points = {
 			20003 10
 		}
+	}
 }

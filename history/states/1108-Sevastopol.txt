@@ -8,8 +8,8 @@ state={
 
 		owner = SOV
 		add_core_of = SOV
-		add_core_of = DON
 		add_core_of = CRI
+		add_core_of = DON
 
 		victory_points = {
 			3686 20 # Sevastopol

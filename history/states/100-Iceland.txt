@@ -17,8 +17,8 @@ state = {
 			}
 			industrial_complex = 1
 		}
-		# add_core_of = EUC
 		add_core_of = ICE
+		add_core_of = EUC
 	}
 	provinces = {
 		4861 12674 12689 13266 13267 13268 13271 

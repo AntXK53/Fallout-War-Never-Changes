@@ -7,6 +7,8 @@ state={
 	history = {
 		owner = DDR
 		add_core_of = DDR
+		add_core_of = WGR
+		add_core_of = GER
 
 		victory_points = {
 			6521 50 # Berlin

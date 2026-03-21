@@ -96,7 +96,7 @@ set_politics = {
 	ruling_party = communism
 	last_election = "2045.3.31"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 25
@@ -116,9 +116,6 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-}
-	give_guarantee = YUG
-	give_guarantee = ROM
 }
 
 if = {

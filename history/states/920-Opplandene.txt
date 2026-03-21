@@ -11,6 +11,7 @@ state = {
 			3136 3
 		}
 		owner = EUC
+		add_core_of = NOR
 		add_core_of = EUC
 		buildings = {
 			infrastructure = 2

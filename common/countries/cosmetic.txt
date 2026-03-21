@@ -550,42 +550,6 @@ KUR_FRA = {
 	color = rgb { 57 113 228 }
 	color_ui = rgb { 57 113 228 }
 }
-
-YUG_puppet_1 = {
-	color = rgb { 61  50  147 }
-	color_ui = rgb { 61  50  147 }
-}
-
-YUG_puppet_2 = {
-	color = rgb { 65  60  100 }
-	color_ui = rgb { 65  60  100 }
-}
-
-YUG_puppet_3 = {
-	color = rgb { 100  95  162 }
-	color_ui = rgb { 100  95  162 }
-}
-
-YUG_puppet_4 = {
-	color = rgb { 50  57  147 }
-	color_ui = rgb { 50  57  147 }
-}
-
-YUG_puppet_5 = {
-	color = rgb { 68  67  96 }
-	color_ui = rgb { 68  67  96 }
-}
-
-YUG_puppet_6 = {
-	color = rgb { 85  85  145 }
-	color_ui = rgb { 85  85  145 }
-}
-
-dalmatia = {
-	color = rgb { 46  128  188 }
-	color_ui = rgb { 46  128  188 }
-}
-
 BUL_zveno_bulgaria = {
 	color = rgb { 215  210  204 }
 	color_ui = rgb { 215  210  204 }
@@ -858,52 +822,6 @@ ITA_rds = {
 	color = rgb { 10 150 90 }
 	color_ui = rgb { 10 150 90 }
 }
-
-SWI_GER_puppet_fascism ={
-	color = rgb{ 125 0 0 }
-	color_ui = rgb { 255 255 255 } 
-}
-
-SWI_FRA_puppet_fascism = {
-	color = rgb { 100 0 100 }
-	color_ui = rgb { 255 255 255 }
-}
-
-SWI_ITA_puppet_fascism = {
-	color = rgb { 0 100 0 }
-	color_ui = rgb { 255 255 255 }
-}
-
-SWI_ENG_puppet_fascism = {
-	color = rgb { 60 60 100 }
-	color_ui = rgb { 255 255 255 }
-}
-
-SWI_GER_puppet_democratic = {
-	color = rgb { 140 140 140 }
-	color_ui = rgb { 255 255 255 }  
-}
-
-SWI_FRA_puppet_democratic = {
-	color = rgb { 247 200 15}
-	color_ui = rgb {247 200 15 }
-}
-
-SWI_ITA_puppet_democratic = {
-	color = rgb { 129 163 0 }
-	color_ui = rgb { 255 255 255 }
-}
-
-SWI_ENG_puppet_democratic = {
-	color = rgb { 5 5 249 }
-	color_ui = rgb { 255 255 255 }
-}
-
-SWI_SOV_puppet_communism = {
-	color = rgb { 192 50 50 }
-	color_ui = rgb { 255 255 255 } 
-}
-
 SWI_alpine_democratic = {
 	color = rgb{ 220 220 255 }
 	color_ui = rgb { 255 255 255 }
@@ -927,22 +845,6 @@ SWI_alpine_neutrality = {
 SWI_helvetic_republic = {
 	color = rgb { 0 54 163 }
 	color_ui = rgb { 140 140 140 }
-}
-
-ICE_personal_union = {
-	color = rgb { 153 116 93 }
-	color_ui = rgb { 199 151 121 }
-}
-
-SWE_reichs_protectorate = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 122 145 93 }
-}
-
-SWE_nordic_defense_council = {
- color = rgb { 152 223 241 }
- color_ui = rgb { 255 73 121 }
-
 }
 
 FIN_greater_finland = {
@@ -1022,25 +924,6 @@ NOR_neutrality_purple_flag = {
 	color = rgb { 92 6 67 }
 	color_ui = rgb { 92 6 67 }
 
-}
-NOR_GER_fascism = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 122 145 93 }
-}
-
-NOR_fascism = {	
-	color = rgb { 134 120 66 }
-	color_ui = rgb { 178 172 0 }
-}
-
-NOR_norgesveldet_fascism = {
-	color = rgb { 178 172 0 }
-	color_ui = rgb { 178 172 0 }
-}
-
-NOR_alt_democratic = {
-	color = rgb { 0 0 105 }
-	color_ui = rgb { 0 0 105 }
 }
 
 NSE_UNIFIED = {

@@ -109,8 +109,8 @@ ALB = {
 	color_ui = rgb { 127 0 0 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 120 200 237 }
+	color_ui = rgb { 120 200 237 }
 }
 DEN = {
 	color = rgb { 239 101 72 }
@@ -1266,6 +1266,7 @@ AZR = {
 }
 
 #Custom colours start here
+
 EUC = {
 	color = rgb { 0 51 153 }
 	color_ui = rgb { 0 51 153 }
@@ -1381,4 +1382,20 @@ COR = {
 BAY = {
 	color = rgb { 50 169 232 }
 	color_ui = rgb { 50 169 232 }
+}
+BRN = {
+	color = rgb { 158 157 39 }
+	color_ui = rgb { 158 157 39 }
+}
+SNG = {
+	color = rgb { 192 134 134 }
+	color_ui = rgb { 192 134 134 }
+}
+TBA = {
+	color = rgb { 118 118 118 }
+	color_ui = rgb { 118 118 118 }
+}
+CBV = {
+	color = rgb { 12 78 179 }
+	color_ui = rgb { 12 78 179 }
 }

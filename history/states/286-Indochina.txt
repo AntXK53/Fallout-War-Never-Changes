@@ -12,8 +12,9 @@ state={
 	history={
 
 		owner = VIN
-		add_core_of = VIN
 		add_core_of = CHM
+		add_core_of = VIN
+		add_core_of = IND
 
 		victory_points = {
 			4401 3 # Saigon

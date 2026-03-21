@@ -28,8 +28,8 @@ state= {
 				naval_base = 3
 			}
 		}
-		add_core_of = ENG
 		add_core_of = WLS
+		add_core_of = ENG
 	}
 
 	provinces = {

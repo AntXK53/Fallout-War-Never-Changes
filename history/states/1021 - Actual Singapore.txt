@@ -13,12 +13,11 @@ state = {
 
 	history = {
 
-		owner = ENG
-		add_core_of = MAL
+		owner = SNG
 		add_core_of = SNG
 
 		victory_points = {
-			12299 10 # Singapore
+			12299 30 # Singapore
 		}
 
 		buildings = {

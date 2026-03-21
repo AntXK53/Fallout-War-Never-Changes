@@ -357,15 +357,16 @@ set_stability = 0.5
 		complete_national_focus = production_effort
 
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = democratic
 			last_election = "1934.3.26"
 			election_frequency = 60
-			elections_allowed = no
+			elections_allowed = yes
 		}
 		set_popularities = {
-			democratic = 22
-			fascism = 76
-			communism = 2
+			democratic = 76
+			fascism = 5
+			neutrality = 6
+			communism = 13
 		}
 	}
 

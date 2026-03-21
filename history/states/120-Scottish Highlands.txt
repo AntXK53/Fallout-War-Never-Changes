@@ -12,7 +12,6 @@ state = {
 	}
 
 	history= {
-		add_core_of = SCO
 		owner = ENG
 		victory_points = {
 			6062 1 #Skye/Stornoway
@@ -34,6 +33,7 @@ state = {
 				naval_supply_hub = 1	
 			}
 		}
+		add_core_of = SCO
 		add_core_of = ENG
 	}
 

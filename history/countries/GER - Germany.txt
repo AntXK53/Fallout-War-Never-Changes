@@ -828,11 +828,6 @@ set_popularities = {
 	neutrality = 6
 }
 
-
-# Wowow nice faction
-create_faction_from_template = faction_template_axis
-add_to_faction = GER
-
 # Setup of National Spirits
 add_ideas = {
 	sour_loser

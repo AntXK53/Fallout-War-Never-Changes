@@ -384,7 +384,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "2045.11.14"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 97

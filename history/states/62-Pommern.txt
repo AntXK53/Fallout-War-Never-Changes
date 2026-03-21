@@ -10,7 +10,6 @@ state = {
 
 		owner = DDR
 		add_core_of = DDR
-		add_core_of = PRE
 
 		victory_points = {
 			3522 5 # Magdeburg

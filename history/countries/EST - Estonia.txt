@@ -3,7 +3,7 @@
 oob = "EST_2056"
 
 declare_war_on = {
-	target = EST
+	target = SOV
 	type = annex_everything
 }
 

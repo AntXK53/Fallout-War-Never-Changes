@@ -2,16 +2,15 @@
 
  ### IDEAS ###
 
- SOV_zastoy_idea: "Stagnation in foreign policy."
- SOV_zastoy_idea_tt: "The Union of Soviet Socialist Republics ceased to participate in the Cold War in the 2000s, when the USSR “accepted” NATO's victory in the Cold War against it. Left with only its sphere of influence in Eastern Europe, the USSR stopped helping other countries in any way, finally abandoning the ideas of Marxism-Leninism. Now the USSR is just watching the new Cold War between the US and China, remaining in the shadows."
- SOV_war_economic_idea: "Market Socialism in a War Economy."
- SOV_war_economic_idea_tt: "The economy of the Union of Soviet Socialist Republics has long since ceased to resemble that of a socialist state. During the times of Khrushchev, Brezhnev, and Kosygin, reforms were carried out, which resulted in the introduction of capitalism. When Gorbachev, Yakovlev, and Yavlinsky were in power, the construction of market socialism was completed, but now... Kozlov's policies towards the economy have led to its militarization. To put it mildly, the civilian sector has been neglected, and preparations for “war” with the European Community and the US have been a priority. Everything is going into the military industry and technology, while ordinary people have been experiencing a shortage of goods since the 2040s."
- SOV_soviet_army_supreme_idea: "Stagnation in the army."
- SOV_soviet_army_supreme_idea_tt: ""
- SOV_fake_socialism_idea: "Fake Socialism"
- SOV_fake_socialism_idea_tt: ""
  SOV_normally_robototechnic_idea: "Quite advanced Soviet robotics."
  SOV_normally_robototechnic_idea_tt: ""
+ ######################################################
+ SOV_foreigh_policy_idea: "Soviet foreigh policy"
+ SOV_foreigh_policy_idea_desc: "Since the 2000s, the Union of Soviet Socialist Republics has pursued a unique “neutral” foreign policy, prioritizing global collective security and friendly relations with the United States in exchange for the cessation of anti-American propaganda and a shift toward China. The USSR began cooperating with the U.S. and jointly participating in conflicts on the world stage. By 2056, this policy had failed due to the outbreak of the European-Middle Eastern War in 2052 and the subsequent collapse of the UN, leading to the development of a policy of isolationism by the USSR and the Eastern Bloc, and support for states hostile to Europe and China, such as the United Arab Republic and the Republic of India"
+ SOV_full_war_ready_idea: "Full combat readiness"
+ SOV_full_war_ready_idea_desc: "As of 2056, the USSR is in a state of military mobilization and preparing its army for a defensive war. Following a nuclear strike on Tel Aviv, it becomes clear that even possessing nuclear weapons will not save the country from a major conflict, as demonstrated by the European-Middle Eastern War. The Soviet Union is bracing for war with China, the United States, or Europe, which may attack it in order to seize the USSR’s oil"
+ SOV_militarist_policy_idea: "Domestic military policy"
+ SOV_militarist_policy_idea_desc: "Following the National Bolshevik attempts on Artem Zaitsev’s life in 2030 and the ensuing domestic instability in the USSR and around the world, Soviet generals began to play a more active role in politics. Ultimately, in 2045, Vasily Kozlov, the USSR’s Minister of Defense, came to power after winning the election to the Supreme Soviet of the USSR. His policies continued Ivan Ushakov’s ideas of strengthening control over Eastern Europe, increasing state ownership in the economy, and promoting Soviet patriotism. Reformers seeking to restore the USSR of the 2000s are dissatisfied with him, but under his leadership, the people of the USSR do not fear being destroyed as a result of global instability"
 
  ### PARTIES ###
 

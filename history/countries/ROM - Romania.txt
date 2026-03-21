@@ -298,6 +298,12 @@ set_popularities = {
 	neutrality = 22
 }
 
+add_ideas = {
+	ROM_petrikovshchina_idea
+	ROM_iron_guard_idea
+	ROM_generatia_egalitatii
+}
+
 ### VARIANTS ###
 # 1936 Start #
 if = {

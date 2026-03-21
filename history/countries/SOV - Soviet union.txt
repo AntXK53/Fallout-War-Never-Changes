@@ -3,11 +3,6 @@
 #### NO STEP BACK
 ####
 
-declare_war_on = {
-	target = EST
-	type = annex_everything
-}
-
 create_faction_from_template = faction_template_ecto
 
 #COUNTRY LEADERS

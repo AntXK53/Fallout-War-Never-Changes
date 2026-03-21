@@ -36,6 +36,23 @@ sov_outer_politics_cat = {
             }
         }
     }
+    SOV_loyality_regime_in_bulgaria = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            has_completed_focus = SOV_no_bulgarian_totalit
+        }
+        available = {
+            original_tag = SOV
+        }
+        cost = 10
+        complete_effect = {
+            BUL = {
+                kill_ideology_leader = communism
+            }
+        }
+    }
 }
 sov_unstability_union_cat = {
     ussr_ssr_exit_1 = {

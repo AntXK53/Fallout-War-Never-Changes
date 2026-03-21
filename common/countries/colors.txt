@@ -129,8 +129,8 @@ FIN = {
 	color_ui = rgb { 217 245 248 }
 }
 IRE = {
-	color = rgb { 80 159 90 }
-	color_ui = rgb { 104 207 117 }
+	color = rgb { 92 175 63 }
+	color_ui = rgb { 92 175 63 }
 }
 HUN = {
 	color = rgb { 0 109 44 }
@@ -1373,4 +1373,12 @@ OCC = {
 PDF = {
 	color = rgb { 190 95 95 }
 	color_ui = rgb { 190 95 95 }
+}
+COR = {
+	color = rgb { 153 153 153 }
+	color_ui = rgb { 153 153 153 }
+}
+BAY = {
+	color = rgb { 50 169 232 }
+	color_ui = rgb { 50 169 232 }
 }

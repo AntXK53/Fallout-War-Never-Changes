@@ -14,6 +14,15 @@ create_faction_from_template = faction_template_ecto
 recruit_character = SOV_vasily_kozlov
 recruit_character = SOV_ivan_yanov
 recruit_character = SOV_matvey_anisimov
+recruit_character = SOV_leader_socialist
+recruit_character = SOV_leader_anarchist
+recruit_character = SOV_leader_demoratic
+recruit_character = SOV_leader_conservatism
+recruit_character = SOV_leader_authori
+recruit_character = SOV_leader_neutrality
+recruit_character = SOV_leader_theocracy
+recruit_character = SOV_leader_fascism
+recruit_character = SOV_leader_ultranat
 recruit_character = SOV_supreme_soviet #This is a fake character! Proper country leader role is added via focus
 recruit_character = SOV_nikolay_petrov
 recruit_character = SOV_georgy_chervov
@@ -245,9 +254,12 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 10
-	fascism = 2
-	communism = 88
+	communism = 56
+	socialism = 33
+	democratic = 2
+	conservatism = 2
+	authoritarian_democracy = 2
+	ultranationalism = 5
 }
 
 #add_to_faction = SOV

@@ -865,10 +865,16 @@ add_mastery = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 78
+	neutrality = 15
+	communism = 5
+	fascism = 2
 }
 
 

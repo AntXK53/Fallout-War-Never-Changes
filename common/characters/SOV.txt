@@ -68,6 +68,146 @@ characters = {
 			id = -1
 		}
 	}
+	SOV_leader_socialist = {
+		name = "Soviet socialist leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = left_wing_populism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_anarchist = {
+		name = "Soviet anarchist leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = anarcho_communism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_anarchist = {
+		name = "Soviet anarchist leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = anarcho_communism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_demoratic = {
+		name = "Soviet democratic leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = Neo_Liberalism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_conservatism = {
+		name = "Soviet conservatism leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = reactionary
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_authori = {
+		name = "Soviet uthori leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = right_wing_populism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_neutrality = {
+		name = "Soviet neutrality leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = Civilian_Dictatorship
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_theocracy = {
+		name = "Soviet theocracy leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = crusader_state
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_fascism = {
+		name = "Soviet fascism leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
+	SOV_leader_ultranat = {
+		name = "Soviet ultranat leader"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/SOV_vasily_kozlov.png"
+			}
+		}
+		country_leader = {
+			ideology = national_bolshevism
+			traits = { }
+			expire = "5000.3.1.1"
+			id = -1
+		}
+	}
 
 	### GENERALS ###
 

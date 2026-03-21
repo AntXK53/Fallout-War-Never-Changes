@@ -12,6 +12,7 @@ state = {
 	history = {
 
 		owner = EUC
+		add_core_of = BEL
 		add_core_of = EUC
 
 		victory_points = {

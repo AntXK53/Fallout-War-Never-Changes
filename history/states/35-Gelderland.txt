@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = EUC
+		add_core_of = HOL
 		add_core_of = EUC
 		buildings = {
 			infrastructure = 3

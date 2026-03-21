@@ -6,6 +6,7 @@ state = {
 
 	history = {
 		owner = EUC
+		add_core_of = FRA
 		add_core_of = EUC
 		buildings = {
 			infrastructure = 2

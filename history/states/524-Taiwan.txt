@@ -30,10 +30,10 @@ state = {
 		}
 
 		victory_points = {
-			7186 5 # Taipei
+			7186 20 # Taipei
 		}
 		victory_points = {
-			12068 1 # Gaoxiong
+			12068 10 # Gaoxiong
 		}
 
 	}

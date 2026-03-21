@@ -9,7 +9,6 @@ state = {
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
 
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -24,7 +23,7 @@ state = {
 		}
 		
 		victory_points = {
-			7014 5 # Shanghai
+			7014 20 # Shanghai
 		}
 
 		1938.10.25 = {

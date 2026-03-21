@@ -8,8 +8,8 @@ state = {
 
 		owner = EUC
 		add_core_of = SHL
-		add_core_of = GER
 		add_core_of = WGR
+		add_core_of = GER
 		add_core_of = EUC
 
 		victory_points = {

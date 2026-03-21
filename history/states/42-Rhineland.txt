@@ -13,9 +13,10 @@ state = {
 	history = {
 
 		owner = EUC
-		add_core_of = EUC
 		add_core_of = RHI
-		add_core_of = PRE
+		add_core_of = WGR
+		add_core_of = GER
+		add_core_of = EUC
 
 		victory_points = { 
 			11435 1 # Bitburg

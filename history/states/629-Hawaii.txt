@@ -6,6 +6,7 @@ state={
 	state_category = town
 	history={
 		owner = USA
+		add_core_of = HAW
 		add_core_of = USA
 		buildings = {
 			infrastructure = 2
@@ -22,10 +23,10 @@ state={
 			}
 		}
 		victory_points = {
-			4180 15
+			4180 20
 		 }
 		victory_points = {
-			12021 3
+			12021 5
 		 }
 	}
 

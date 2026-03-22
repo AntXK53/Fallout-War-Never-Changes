@@ -8,7 +8,6 @@ state = {
 
 		owner = WAU
 		add_core_of = NGA
-		add_core_of = SOK
 		add_core_of = WAU
 
 		buildings = {

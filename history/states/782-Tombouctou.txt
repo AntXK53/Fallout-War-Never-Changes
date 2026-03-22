@@ -11,6 +11,7 @@ state = {
 
 		owner = UAW
 		add_core_of = MLI
+		add_core_of = UAW
 
 		buildings = {
 			infrastructure = 0

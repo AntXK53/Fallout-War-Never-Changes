@@ -10,6 +10,7 @@ state={
 	}
 	history={
 		owner = WAU
+		add_core_of = GNB
 		add_core_of = WAU
 		victory_points = {
 			12891 1

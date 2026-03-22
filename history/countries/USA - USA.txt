@@ -473,36 +473,6 @@ recruit_character = USA_andrew_mckee
 recruit_character = USA_john_walter_christie
 recruit_character = USA_vannevar_bush
 
-	puppet = MEX
-if = {
-	limit = { not = { has_dlc = "No Compromise, No Surrender" } }
-	recruit_character = USA_jonathan_wainwright
-}
-
-if = {
-	limit = { has_dlc = "La Resistance" }
-	create_operative_leader = {
-		name = "Josephine Baker"
-		GFX = GFX_portrait_josephine_baker
-		traits = { operative_well_groomed }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
-
-	create_operative_leader = {
-		name = "Virginia Hall"
-		GFX = GFX_portrait_virginia_hall
-		traits = { operative_demolition_expert }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = yes
-		nationalities = { USA }
-	}
-}
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -1362,3 +1332,10 @@ if = {
 		}
 	}
 }
+
+#DIPLOMACY
+
+set_autonomy = {
+		target = MEX
+		autonomous_state = autonomy_occupation_zone
+	}

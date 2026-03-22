@@ -12,8 +12,8 @@ state = {
 	history = {
 
 		owner = EUC
-		add_core_of = LUX
 		add_core_of = EUC
+		add_core_of = LUX
 
 		buildings = {
 			infrastructure = 3

@@ -610,15 +610,16 @@ set_grand_doctrine = new_operational_integrity
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = democratic
 	last_election = "1931.3.2" #Represents Presidential elections (Country leader is President of the Republic, not Prime Minister)
 	election_frequency = 72
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	fascism = 10
-	communism = 80
+	democratic = 80
+	neutrality = 7
+	fascism = 3
+	communism = 10
 }
 add_stability = -0.1
 

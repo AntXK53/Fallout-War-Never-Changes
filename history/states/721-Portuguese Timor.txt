@@ -8,8 +8,8 @@ state = {
 	history = {
 
 		owner = INS
-		add_core_of = TML
 		add_core_of = INS
+		add_core_of = TML
 
 		victory_points = {
 			12190 2 # Dili

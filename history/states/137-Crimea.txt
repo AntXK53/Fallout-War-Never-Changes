@@ -41,9 +41,9 @@ state = {
 			
 		}
 
-		add_core_of = SOV
-		add_core_of = CRI
 		add_core_of = DON
+		add_core_of = CRI
+		add_core_of = SOV
 
 	}
 

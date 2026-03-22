@@ -8,6 +8,7 @@ state={
 	history={
 		owner = UAW
 		add_core_of = MLI
+		add_core_of = UAW
 		victory_points = {
 			4927 1 
 		}

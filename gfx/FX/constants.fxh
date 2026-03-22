@@ -184,7 +184,7 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 
 
 
-// CAMERA_MIN_HEIGHT = 50.0,					defines.lua   (reload defines)
+// CAMERA_MIN_HEIGHT = 0.0,					defines.lua   (reload defines)
 // CAMERA_MAX_HEIGHT = 3000.0,					defines.lua   (reload defines)
 
 // --------------------------------------------------------------

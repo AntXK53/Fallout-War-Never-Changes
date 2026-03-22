@@ -51,8 +51,11 @@ sov_debug_decisions_cat = {
         complete_effect = {
             every_state = {
                 limit = {
-                    is_core_of = UKR
                     is_controlled_by = SOV
+                    is_core_of = UKR
+                    NOT = {
+                        is_core_of = DON
+                    }
                 }
                 transfer_state_to = UKR
             }

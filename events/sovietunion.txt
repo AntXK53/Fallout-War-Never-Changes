@@ -45,6 +45,36 @@ country_event = {
 	}
 }
 country_event = {
+	id = sovietunion_foreigh.4
+	title = sovietunion_foreigh.4.t
+	desc = sovietunion_foreigh.4.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovietunion_foreigh.4.a
+	}
+}
+country_event = {
+	id = sovietunion_foreigh.5
+	title = sovietunion_foreigh.5.t
+	desc = sovietunion_foreigh.5.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovietunion_foreigh.5.a
+	}
+}
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+country_event = {
 	id = sovietunion.1
 	title = sovietunion.1.t
 	desc = sovietunion.1.desc

@@ -2,6 +2,11 @@
 
 oob = "EST_2056"
 
+declare_war_on = {
+	target = SOV
+	type = annex_everything
+}
+
 add_ideas = EST_defend_our_independence_idea
 add_ideas = EST_proud_small_nation
 add_ideas = EST_forest_brothers

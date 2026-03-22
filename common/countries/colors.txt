@@ -8,6 +8,18 @@ ENG = {
 	color = rgb { 177 28 28 }
 	color_ui = rgb { 177 28 28 }
 }
+WLS = {
+	color = rgb { 69 147 57 }
+	color_ui = rgb { 69 147 57 }
+}
+SCO = {
+	color = rgb { 32 116 216 }
+	color_ui = rgb { 32 116 216 }
+}
+NIR = {
+	color = rgb { 173 182 209 }
+	color_ui = rgb { 173 182 209 }
+}
 SOV = {
 	color = rgb { 107 31 45 }
 	color_ui = rgb { 107 31 45 }

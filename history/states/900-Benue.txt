@@ -11,9 +11,9 @@ state = {
 	history = {
 
 		owner = WAU
-		add_core_of = BIA
-		add_core_of = NGA
 		add_core_of = WAU
+		add_core_of = NGA
+		add_core_of = BIA
 
 		victory_points = {
 			8034 2 # Enugu

@@ -7,7 +7,6 @@ state={
 		4949 5020 5064 10789 14757 15974 18623 18631 
 	}
 	history={
-	set_demilitarized_zone = yes
 		owner = AFG
 		buildings = {
 			infrastructure = 1 

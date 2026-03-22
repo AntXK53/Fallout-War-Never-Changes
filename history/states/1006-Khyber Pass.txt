@@ -7,7 +7,6 @@ state={
 		5082 8090 12831 15971 15972 18628 18658 18693 
 	}
 	history={
-	set_demilitarized_zone = yes
 		owner = AFG
 		buildings = {
 			infrastructure = 1 
@@ -20,7 +19,7 @@ state={
 			12831 1
 		}
 	}
-	
+
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

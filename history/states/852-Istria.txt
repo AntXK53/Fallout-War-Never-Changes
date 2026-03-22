@@ -22,10 +22,8 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = EUC
 		add_core_of = YUG
 		add_core_of = CRO
-		set_demilitarized_zone = yes
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

@@ -16,3 +16,40 @@ SOV_computer_academy_new = {
 	icon = GFX_modifiers_SOV_civilian_labor_in_defense
 
 }
+
+SOV_atomic_energy_dm = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	consumer_goods_expected_value = SOV_consumer_goods_factor_value_var
+	consumer_goods_factor = SOV_consumer_goods_factor_var
+	production_speed_buildings_factor = SOV_production_atomgpp_var
+	research_speed_factor = SOV_research_speed_factor_var
+}
+
+SOV_nationalisation_dm = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	consumer_goods_expected_value = SOV_consumer_goods_nat_value_var
+	production_speed_buildings_factor = SOV_production_nat_var
+	industrial_capacity_factory = SOV_capacity_nat_var
+	production_factory_start_efficiency_factor = SOV_start_ef_nat_var
+}
+
+SOV_privatisation_dm = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	consumer_goods_expected_value = SOV_consumer_goods_pri_value_var
+	production_speed_buildings_factor = SOV_production_pri_var
+	industrial_capacity_factory = SOV_capacity_pri_var
+	production_factory_start_efficiency_factor = SOV_start_ef_pri_var
+}
+
+SOV_biden_dm = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	stability_factor = SOV_biden_var
+}

@@ -567,7 +567,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			add_ideas = SOV_development_sovindustry
+			add_dynamic_modifier = {
+				modifier = SOV_privatisation_dm
+			}
 		}
 	}
 	focus = {
@@ -581,7 +583,9 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			add_ideas = SOV_development_sovindustry
+			add_dynamic_modifier = {
+				modifier = SOV_nationalisation_dm
+			}
 		}
 	}
 	focus = {
@@ -596,7 +600,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		completion_reward = {
-			add_ideas = SOV_development_of_nuclear_industry
+			add_dynamic_modifier = {
+				modifier = SOV_atomic_energy_dm
+			}
 		}
 	}
 	focus = {
@@ -698,6 +704,9 @@ focus_tree = {
 		cost = 0
 		x = 1
 		y = 6
+		completion_reward = {
+			increase_SOV_production_atomgpp_var = yes
+		}
 	}
 	focus = {
 		id = SOV_soviet_pc

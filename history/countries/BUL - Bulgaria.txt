@@ -13,6 +13,11 @@ set_convoys = 5 #VANILLA & DLC
 
 recruit_character = BUL_nikul_vasilev
 
+add_ideas = {
+	BUL_BKP_idea
+	BUL_agricultural_crisis_1_idea
+}
+
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.2.16"

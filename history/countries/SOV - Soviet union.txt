@@ -233,6 +233,19 @@ if = {
 	}
 }
 
+set_variable = { SOV_consumer_goods_factor_value_var = -0.10 }
+set_variable = { SOV_consumer_goods_factor_var = -0.10 }
+set_variable = { SOV_production_speed_buildings_factor_var = 0.05 }
+set_variable = { SOV_research_speed_factor_var = 0.10 }
+set_variable = { SOV_consumer_goods_nat_value_var = -0.05}
+set_variable = { SOV_production_nat_var = 0.05}
+set_variable = { SOV_capacity_nat_var = 0.10}
+set_variable = { SOV_start_ef_nat_var = -0.05}
+set_variable = { SOV_consumer_goods_pri_value_var = 0.05}
+set_variable = { SOV_production_pri_var = 0.05}
+set_variable = { SOV_capacity_pri_var = -0.05}
+set_variable = { SOV_start_ef_pri_var = 0.05}
+
 add_ideas = {
 	SOV_foreigh_policy_idea
 	SOV_full_war_ready_idea

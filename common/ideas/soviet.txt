@@ -142,7 +142,7 @@ ideas = {
 			}
 
 			modifier = {
-				custom_modifier_tooltip = SOV_reformists_zagovor_tt
+				
 			}
 		}
 		SOV_no_liberals = {

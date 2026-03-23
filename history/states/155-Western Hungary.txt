@@ -20,7 +20,7 @@ state = {
 		} 
 
 		victory_points = {
-			686 1 # Sopron
+			686 5 # Sopron
 		} 
 
 		buildings = {

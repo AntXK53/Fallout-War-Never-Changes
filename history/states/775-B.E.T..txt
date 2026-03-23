@@ -4,8 +4,6 @@ state = {
 	manpower = 18744
 	
 	state_category = wasteland
-	impassable = yes
-	force_link_ownership_to = 774 # Chad
 
 	history = {
 

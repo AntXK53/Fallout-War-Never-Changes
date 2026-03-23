@@ -23,7 +23,7 @@ state = {
 		}
 		
 		victory_points = {
-			7014 20 # Shanghai
+			7014 30 # Shanghai
 		}
 
 		1938.10.25 = {

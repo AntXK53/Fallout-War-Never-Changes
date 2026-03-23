@@ -4,8 +4,6 @@ state = {
 	manpower = 124200
 	
 	state_category = wasteland
-	impassable = yes
-	force_link_ownership_to = 557 # Mauritania
 
 	history = {
 

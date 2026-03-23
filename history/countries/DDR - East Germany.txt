@@ -105,13 +105,13 @@ set_politics = {
 	ruling_party = communism
 	last_election = "2045.3.31"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 25
-	fascism = 11
-	communism = 44
-	neutrality = 20
+	democratic = 11
+	fascism = 3
+	communism = 78
+	neutrality = 8
 }
 
 add_ideas = {

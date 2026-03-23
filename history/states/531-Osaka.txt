@@ -28,7 +28,7 @@ state = {
 		}
 
 		victory_points = {
-			7072 40 # Osaka
+			7072 30 # Osaka
 		}
 
 		victory_points = {

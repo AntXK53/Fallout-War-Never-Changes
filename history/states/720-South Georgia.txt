@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = ENG
+		owner = EUC
 		buildings = {
 			infrastructure = 1
 			10995 = {
@@ -20,7 +20,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_claim_by = ARG
 	}
 	
 	provinces={

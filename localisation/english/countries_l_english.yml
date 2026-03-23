@@ -25,9 +25,9 @@
  GER:0 "Germany"
  GER_DEF:0 "Germany"
  GER_ADJ:0 "German"
- ENG_fascism:0 "British State"
- ENG_fascism_DEF:0 "the British State"
- ENG_democratic:0 "United Kingdom of Great Britain and Northern Ireland"
+ ENG_fascism:0 "British Realm"
+ ENG_fascism_DEF:0 "the British Realm"
+ ENG_democratic:0 "United Kingdom of Great Britain"
  ENG_democratic_DEF:0 "the United Kingdom"
  ENG_neutrality:0 "Kingdom of Great Britain"
  ENG_neutrality_DEF:0 "the Kingdom of Great Britain"
@@ -4612,8 +4612,8 @@
  TAJ_communism_DEF:0 "Tajik Soviet Socialist Republic"
  TAJ_communism_ADJ:0 "Tajikian"
 
- TMS_communism:0 "Turkmenian Soviet Socialist Republic"
- TMS_communism_DEF:0 "Turkmenian Soviet Socialist Republic"
+ TMS_communism:0 "Turkmen Soviet Socialist Republic"
+ TMS_communism_DEF:0 "Turkmen Soviet Socialist Republic"
  TMS_communism_ADJ:0 "Turkmenian"
 
  RKZ:0 "North Kazakhi People's Republic"

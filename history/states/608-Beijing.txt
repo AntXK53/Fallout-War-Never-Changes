@@ -42,15 +42,15 @@ state={
 		}
 
 		victory_points = {
-			9843 20 # Beijing 
+			9843 40 # Beijing 
 		}
 
 		victory_points = {
-			10068 2 # Tianjin
+			10068 20 # Tianjin
 		}
 
 		victory_points = {
-			12026 1 # Baoding
+			12026 10 # Baoding
 		}
 
 		1938.10.25 = {

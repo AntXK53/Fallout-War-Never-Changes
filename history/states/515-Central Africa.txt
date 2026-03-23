@@ -4,14 +4,12 @@ state = {
 	manpower = 1456356
 	
 	state_category = wasteland
-	impassable = yes
-	force_link_ownership_to = 781 # Niger
 
 	history = {
 
 		owner = UAW
-		add_core_of = NGR
 		add_core_of = UAW
+		add_core_of = NGR
 
 	}
 

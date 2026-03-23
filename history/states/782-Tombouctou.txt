@@ -4,14 +4,12 @@ state = {
 	manpower = 79243
 	
 	state_category = wasteland
-	impassable = yes
-	force_link_ownership_to = 898 # Gao
 
 	history = {
 
 		owner = UAW
+		add_core_of = UAR
 		add_core_of = MLI
-		add_core_of = UAW
 
 		buildings = {
 			infrastructure = 0

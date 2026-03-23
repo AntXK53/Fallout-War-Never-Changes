@@ -11,6 +11,7 @@ state = {
 	history = {
 		owner = EUC
 		add_core_of = EUC
+		add_core_of = ENG
 		add_core_of = SCO
 
 		buildings = {

@@ -11,7 +11,7 @@ state = {
 		add_core_of = QAT
 
 		victory_points = {
-			8051 1 # Doha
+			8051 20 # Doha
 		}
 
 		buildings = {

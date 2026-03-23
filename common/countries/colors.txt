@@ -29,8 +29,8 @@ SWE = {
 	color_ui = rgb { 76 143 221 }
 }
 FRA = {
-	color = rgb { 43 140 190 }
-	color_ui = rgb { 43 140 190 }
+	color = rgb { 0 38 84 }
+	color_ui = rgb { 0 38 84 }
 }
 LUX = {
 	color = rgb { 98 198 250 }
@@ -85,8 +85,8 @@ ING = {
 	color_ui = rgb { 110 35 45 }
 }
 SPR = {
-	color = rgb { 255 149 39 }
-	color_ui = rgb { 255 255 122 }
+	color = rgb { 219 140 57 }
+	color_ui = rgb { 219 140 57 }
 }
 ITA = {
 	color = rgb { 35 139 69 }
@@ -509,8 +509,8 @@ BOT = {
 	color_ui = rgb { 162 103 190 }
 }
 MLW = {
-	color = rgb { 206 129 210 }
-	color_ui = rgb { 206 129 210 }
+	color = rgb { 172 104 176 }
+	color_ui = rgb { 172 104 176 }
 }
 MAD = {
 	color = rgb { 171 230 142 }

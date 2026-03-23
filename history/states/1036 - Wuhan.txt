@@ -16,7 +16,7 @@ state = {
 		}
 
 		victory_points = {
-			4619 10 # Wuhan
+			4619 20 # Wuhan
 		}
 
 		victory_points = {

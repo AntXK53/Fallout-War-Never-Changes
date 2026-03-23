@@ -19,7 +19,7 @@ state = {
 		}
 
 		victory_points = {
-			10000 15 # Qingdao
+			10000 20 # Qingdao
 		}
 
 		buildings = {

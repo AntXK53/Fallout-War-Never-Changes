@@ -9,7 +9,7 @@ state={
 		owner = PRC
 		add_core_of = PRC
 		victory_points = {
-			4189 1 
+			4189 30
 		}
 		buildings = {
 			infrastructure = 2

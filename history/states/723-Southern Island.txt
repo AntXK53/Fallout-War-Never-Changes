@@ -30,10 +30,10 @@ state={
 			}
 		}
 		victory_points = {
-			2197 1 
+			2197 10
 		}
 		victory_points = {
-			2211 1 
+			2211 10
 		}
 		add_core_of = NZL
 	}

@@ -2,7 +2,7 @@
 state = {
 	id = 192
 	name = "STATE_192"
-	manpower = 2010502 #1 8th removed due to Balta-Tiraspol
+	manpower = 2010502
 	
 	state_category = large_city
 

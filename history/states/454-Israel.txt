@@ -9,8 +9,8 @@ state = {
 
 		owner = UAR
 		add_core_of = UAR
-		add_core_of = PAL
 		add_core_of = ISR
+		add_core_of = PAL
 
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -21,13 +21,13 @@ state = {
 			}
 		}
 		victory_points = {
-			1086 3 # Jerusalem
+			1086 20 # Jerusalem
 		}
 		victory_points = {
-			4206 1 # Tel Aviv
+			4206 10 # Tel Aviv
 		}
 		victory_points = {
-			1065 1 # Nazareth
+			1065 10 # Nazareth
 		}
 		
 	}

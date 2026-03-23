@@ -160,6 +160,9 @@ sov_unstability_union_cat = {
                 limit = {
                     is_controlled_by = SOV
                     is_core_of = UKR
+                    NOT = {
+                        is_core_of = DON
+                    }
                 }
                 transfer_state_to = UKR
             }

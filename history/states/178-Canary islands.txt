@@ -20,8 +20,8 @@ state={
 		strategic_province_location = {
 			natural_harbor = 13071
 		}
-		add_core_of = SPR
 		add_core_of = EUC
+		add_core_of = SPR
 	}
 
 	provinces={

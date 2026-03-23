@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = ENG
+		owner = EUC
 		victory_points = {
 			200 5 #Aberdeen
 		}
@@ -22,8 +22,8 @@ state={
 			infrastructure = 3 #was: 6
 			dockyard = 2
 		}
+		add_core_of = EUC
 		add_core_of = SCO
-		add_core_of = ENG
 	}
 
 	provinces={

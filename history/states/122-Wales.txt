@@ -13,7 +13,7 @@ state= {
 
 	history=
 	{
-		owner = ENG
+		owner = EUC
 		victory_points = {
 			407 3 #Swansea
 		}
@@ -28,8 +28,8 @@ state= {
 				naval_base = 3
 			}
 		}
+		add_core_of = EUC
 		add_core_of = WLS
-		add_core_of = ENG
 	}
 
 	provinces = {

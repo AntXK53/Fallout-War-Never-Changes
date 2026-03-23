@@ -6,8 +6,7 @@ state={
 	state_category = small_island
 
 	history={
-		owner = EUC
-		add_core_of = MAD
+		owner = MAD
 		buildings = {
 			infrastructure = 2
 			13072 = {

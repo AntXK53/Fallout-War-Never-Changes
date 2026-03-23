@@ -18,8 +18,8 @@ state=
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
-		add_core_of = IRE
 		add_core_of = EUC
+		add_core_of = IRE
 	}
 
 	provinces = {

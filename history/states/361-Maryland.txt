@@ -1,4 +1,3 @@
-
 state={
 	id=361
 	name="STATE_361"
@@ -9,10 +8,7 @@ state={
 	history={
 		owner = USA
 		victory_points = {
-			3957 40 
-		}
-		victory_points = {
-			6984 5 
+			6984 15 
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
@@ -33,7 +29,7 @@ state={
 	}
 
 	provinces={
-		3957 6823 6892 6929 6984 9758 9786 11892 13577 15740 15741
+		6823 6892 6929 6984 9758 9786 11892 13577 15740 15741
 	}
 
 	local_supplies=0.0 

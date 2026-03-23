@@ -6,8 +6,8 @@ state = {
 
 	history = {
 		owner = EUC
-		add_core_of = FRA
 		add_core_of = EUC
+		add_core_of = DEN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

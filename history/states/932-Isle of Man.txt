@@ -4,7 +4,8 @@ state = {
 	name = "STATE_932"
 	state_category = small_island
 	history = {
-		owner = ENG
+		owner = EUC
+		add_core_of = EUC
 		add_core_of = ENG
 		
 		victory_points = {

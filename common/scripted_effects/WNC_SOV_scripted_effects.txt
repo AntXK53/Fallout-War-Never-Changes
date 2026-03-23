@@ -1,0 +1,9 @@
+increase_SOV_production_atomgpp_var = {
+	custom_effect_tooltip = SOV_production_atomgpp_var_increase_tt
+	SOV = {
+		add_to_variable = {
+			var = SOV_production_atomgpp_var
+			value = 0.02
+		}
+	}
+}

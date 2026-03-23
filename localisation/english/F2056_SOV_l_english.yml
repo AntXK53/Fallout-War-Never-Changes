@@ -61,6 +61,10 @@
  ussr_ssr_exit_6: "SSR's declarated sovereigh..."
  ussr_ssr_exit_7: "ASSR's declarated sovereigh..."
 
+ ################## TOOLTIPS ######################
+
+ SOV_production_atomgpp_var_increase_tt: "§GOur production speed increase!"
+
  ### FOCUSES ###
 
  SOV_everything_is_fine: "Defeat the new union"

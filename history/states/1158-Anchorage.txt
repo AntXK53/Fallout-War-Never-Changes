@@ -1,0 +1,31 @@
+state={
+	id=1158
+	name="STATE_1158"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+			13091 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = USA
+		victory_points = {
+			13091 3 
+		}
+
+	}
+
+	provinces={
+		13091 
+	}
+	manpower=32302
+	buildings_max_level_factor=1
+	state_category= city
+
+	local_supplies=0.0 
+}

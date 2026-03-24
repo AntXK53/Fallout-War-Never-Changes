@@ -1,0 +1,32 @@
+
+state={
+	id=1132
+	name="STATE_1132"
+	manpower = 1932838
+	
+	state_category = city
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			airbase = 10
+			9450 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			9450 30
+		}
+	}
+
+	provinces={
+		9450
+	}
+
+	local_supplies=0.0 
+}

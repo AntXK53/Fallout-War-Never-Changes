@@ -1,8 +1,8 @@
 #reload countrycolors
 
 GER = {
-	color = rgb { 88 98 102 }
-	color_ui = rgb {88 98 102 }
+	color = rgb { 48 57 69 }
+	color_ui = rgb { 48 57 69  }
 }
 ENG = {
 	color = rgb { 177 28 28 }
@@ -25,8 +25,8 @@ SOV = {
 	color_ui = rgb { 107 31 45 }
 }
 SWE = {
-	color = rgb { 112 167 230 }
-	color_ui = rgb { 112 167 230 }
+	color = rgb { 26 120 196 }
+	color_ui = rgb { 26 120 196 }
 }
 FRA = {
 	color = rgb { 0 38 84 }

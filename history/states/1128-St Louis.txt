@@ -1,7 +1,7 @@
 state={
-	id=1140
-	name="STATE_1140"
-	manpower = 12425
+	id=1128
+	name="STATE_1128"
+	manpower = 402302
 	
 	state_category = rural
 
@@ -15,7 +15,7 @@ state={
 	}
 
 	provinces={
-		5044 10914 17300
+		1719 1734 6767 6827 7896 12550 15730
 	}
 
 	local_supplies=0.0 

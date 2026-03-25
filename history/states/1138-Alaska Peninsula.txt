@@ -1,21 +1,21 @@
 state={
-	id=1134
-	name="STATE_1134"
-	manpower = 23010
+	id=1138
+	name="STATE_1138"
+	manpower = 2390
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = USA
 		add_core_of = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
 		}
 	}
 
 	provinces={
-		706 3806 3894 6911 9673 9774 11660 15744
+		10694 12661 17205 17249
 	}
 
 	local_supplies=0.0 

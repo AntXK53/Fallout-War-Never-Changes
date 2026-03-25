@@ -1,6 +1,6 @@
 state={
-	id=1136
-	name="STATE_1136"
+	id=1134
+	name="STATE_1134"
 	manpower = 21000
 	
 	state_category = rural
@@ -9,13 +9,13 @@ state={
 		owner = USA
 		add_core_of = USA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 		}
 	}
 
 	provinces={
-		10352
+		865 873 951 3823 3917 6846 11873 
 	}
 
 	local_supplies=0.0 

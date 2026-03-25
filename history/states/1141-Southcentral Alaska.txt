@@ -1,9 +1,9 @@
 state={
-	id=1155
-	name="STATE_1155"
-	manpower = 1201
+	id=1141
+	name="STATE_1141"
+	manpower = 3131
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = USA
@@ -15,7 +15,7 @@ state={
 	}
 
 	provinces={
-		1503 7485 7543 10355 12458 15581
+		4848 10679 4833 17173 17225 17226 17228 17229 17243
 	}
 
 	local_supplies=0.0 

@@ -30,10 +30,6 @@ state = {
 			1690 1 # Spokane
 		}
 
-		victory_points = {
-			7315 20 # Seattle
-		}
-
 		1939.1.1 = {
 			buildings = {
 				7315 = {

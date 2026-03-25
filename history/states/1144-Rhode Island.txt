@@ -1,9 +1,9 @@
 state={
-	id=1129
-	name="STATE_1129"
-	manpower = 402302
+	id=1144
+	name="STATE_1144"
+	manpower = 25636
 	
-	state_category = rural
+	state_category = city
 
 	history={
 		owner = USA
@@ -15,7 +15,7 @@ state={
 	}
 
 	provinces={
-		1719 1734 6767 6827 7896 12550 15730
+		9832  
 	}
 
 	local_supplies=0.0 

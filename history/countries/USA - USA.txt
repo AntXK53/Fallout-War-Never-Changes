@@ -1337,5 +1337,5 @@ if = {
 
 set_autonomy = {
 		target = MEX
-		autonomous_state = autonomy_occupation_zone
-	}
+		autonomous_state = autonomy_integrated_puppet
+	       }

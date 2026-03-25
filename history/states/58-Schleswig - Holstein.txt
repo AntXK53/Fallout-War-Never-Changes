@@ -7,10 +7,9 @@ state = {
 	history = {
 
 		owner = EUC
-		add_core_of = SHL
-		add_core_of = WGR
-		add_core_of = GER
 		add_core_of = EUC
+		add_core_of = GER
+		add_core_of = SHL
 
 		victory_points = {
 			6389 10 # Kiel

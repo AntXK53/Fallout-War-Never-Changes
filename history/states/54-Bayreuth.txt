@@ -15,7 +15,6 @@ state = {
 		owner = EUC
 		add_core_of = EUC
 		add_core_of = GER
-		add_core_of = WGR
 		add_core_of = BAY
 
 		victory_points = {

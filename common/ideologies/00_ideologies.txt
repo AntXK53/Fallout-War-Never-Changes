@@ -67,7 +67,7 @@ ideologies = {
 	
 		types = {
 		
-			nazism = {
+			national_socialism = {
                 can_be_randomly_selected = yes
 			}
 

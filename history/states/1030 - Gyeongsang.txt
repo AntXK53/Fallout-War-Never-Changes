@@ -24,7 +24,7 @@ state = {
 		}
 
 		victory_points = {
-			4056 5 # Pusan/Busan
+			4056 5 # Busan
 		}
 
 		victory_points = {

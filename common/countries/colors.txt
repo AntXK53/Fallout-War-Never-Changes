@@ -177,8 +177,8 @@ CAN = {
 	color_ui = rgb { 225 71 55 }
 }
 CHI = {
-	color = rgb { 10 84 148 }
-	color_ui = rgb { 10 84 148 }
+	color = rgb { 1 128 2 }
+	color_ui = rgb { 1 128 2 }
 }
 CHL = {
 	color = rgb { 142 209 216 }
@@ -377,8 +377,8 @@ BAN = {
 	color_ui = rgb { 17 129 19 }
 }
 CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
+	color = rgb { 173 45 169 }
+	color_ui = rgb { 173 45 169 }
 }
 
 PRC = {
@@ -421,8 +421,8 @@ ALG = {
 	color_ui = rgb { 95 156 86 }
 }
 TUN = {
-	color = rgb { 196 109 109 }
-	color_ui = rgb { 196 109 109 }
+	color = rgb { 140 70 70 }
+	color_ui = rgb { 140 70 70 }
 }
 EGY = {
 	color = rgb { 230 230 70 }

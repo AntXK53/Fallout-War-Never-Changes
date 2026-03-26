@@ -35,7 +35,6 @@ state = {
 			buildings = {
 				arms_factory = 10
 				industrial_complex = 2
-				dockyard = 3
 			}
 		}
 	}

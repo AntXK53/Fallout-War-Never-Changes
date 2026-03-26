@@ -24,15 +24,15 @@ state = {
 		}
 		
 		victory_points = {
-			4052 3 # Pyongyang
+			4052 30 # Pyongyang
 		}	
 
 		victory_points = {
-			11835 1 # Shingishū
+			11835 5 # Sinuiju
 		}	
 
 		victory_points = {
-			1003 1 # Kaishū
+			19914 5 # Kaesong
 		}	
 		
 	}

@@ -43,6 +43,10 @@ state={
 		}
 
 		victory_points = {
+			8802 10 # Jiangmen
+		}
+
+                victory_points = {
 			12077 1 # Maoming
 		}
 

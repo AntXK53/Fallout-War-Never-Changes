@@ -252,3 +252,11 @@ if = {
 		}
 	}
 }
+
+#DIPLOMACY
+
+create_faction = "Southeast Asia Treaty Organization"
+add_to_faction = PHI
+add_to_faction = MAL
+add_to_faction = VIN
+add_to_faction = NZL

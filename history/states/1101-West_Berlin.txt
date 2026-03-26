@@ -13,6 +13,7 @@ state={
 		owner = EUC
 		add_core_of = EUC
 		add_core_of = GER
+		add_claim_by = WSB
 		add_claim_by = DDR
 		victory_points = {
 			20003 10

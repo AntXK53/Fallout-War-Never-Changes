@@ -19,8 +19,9 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 73
-	communism = 17
+	communism = 2
 	neutrality = 10
+	fascism = 10
 }
 
 # Government/National Spirits

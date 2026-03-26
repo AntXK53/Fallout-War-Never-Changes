@@ -1,0 +1,15 @@
+﻿l_russian:
+ #options
+ coloredp.1.t:0 "Добро пожаловать в "Colored Puppets""
+ coloredp.1.d:0 "Данный мод даст вам возможность менять цвет ваших марионеток. Помните, что если вы измените цвет страны, которая изменила название или цвет в результате какого-то действия в игре с другим модом, то она может потерять это изменение навсегда. Прежде чем начать игру, выберите, будет ли ИИ менять цвет своих марионеток или же нет."
+ coloredp.1.a:0 "Разрешить ИИ менять цвета"
+ coloredp.1.b:0 "Запретить ИИ менять цвета"
+ #decisions
+ colored_puppets:0 "Colored Puppets"
+ colour_puppet:0 "Изменить цвет - [From.GetName]"
+ no_color:0 "Удалить цвет"
+ coloredp_start:0 "Мод начал работу"
+ color_changed:0 "Цвет Изменился"
+ remove_color:0 "Удалить цвет - [From.GetName]"
+ #Country name fix
+ RAJ_subject:0 "$OVERLORDADJ$ Raj

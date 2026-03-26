@@ -12,6 +12,7 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
+                set_demilitarized_zone = yes
 
 		buildings = {
 			infrastructure = 1
@@ -34,5 +35,3 @@ state = {
 	local_supplies = 0.000
 	buildings_max_level_factor = 1.000
 }
-
-set_demilitarized_zone = yes

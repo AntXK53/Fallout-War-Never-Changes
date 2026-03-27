@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = CAN
+		add_core_of = CAN
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -15,8 +16,6 @@ state={
 		victory points = {
 			14614 15 
 		}
-		add_core_of = CAN
-
 	}
 
 	provinces={

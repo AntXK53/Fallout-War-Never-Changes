@@ -11,9 +11,9 @@ state = {
 	}
 	
 	history = {
-		owner = BRM
+		owner = TBA
+		add_core_of = TBA
 		add_core_of = BRM
-                set_demilitarized_zone = yes
 
 		buildings = {
 			infrastructure = 1

@@ -19,6 +19,9 @@ focus_tree = {
 		id = SOV_congress_2056
 		icon = GFX_goal_unknown
 		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
 		x = 12
 		y = 0
 		completion_reward = {
@@ -58,6 +61,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SOV_kozlov_left
 		}
+		ai_will_do = {
+			factor = 90
+		}
 		x = 0
 		y = 2
 		completion_reward = {
@@ -80,6 +86,12 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_timed_reforms
+				days = 180
+			}
+		}
 	}
 	focus = {
 		id = SOV_kill_novorossia
@@ -306,6 +318,10 @@ focus_tree = {
         }
 		x = -1
 		y = 13
+		completion_reward = {
+			set_country_flag = sov_intervention_dev_ct
+			unlock_decision_category_tooltip = sov_intervention_dev_cat 
+		}
 	}
 	focus = {
         id = SOV_integration_state
@@ -339,6 +355,17 @@ focus_tree = {
         }
 		x = 4
 		y = 9
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_ban_natbol_idea
+				days = 40
+			}
+			set_party_name = {
+				ideology = ultranationalism
+				name = SOV_BAN_NAHUY
+				long_name = SOV_BAN_NAHUY_long
+			}
+		}
 	}
 	focus = {
         id = SOV_ideology_question_mil
@@ -371,6 +398,7 @@ focus_tree = {
 		x = 3
 		y = 11
 		completion_reward = {
+			custom_effect_tooltip = SOV_soviet_nationalism_tt
 			hidden_effect = {
 				remove_country_leader_role = {
                     ideology = communism
@@ -401,6 +429,23 @@ focus_tree = {
         }
 		x = 5
 		y = 11
+		completion_reward = {
+			custom_effect_tooltip = SOV_internationalism_tt
+			hidden_effect = {
+				remove_country_leader_role = {
+                    ideology = communism
+                }
+				add_country_leader_role = {
+                    character = SOV_vasily_kozlov
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = MarxistLeninism
+                        expire = "1965.1.1.1"
+                        traits = { }
+                    }
+                }
+			}
+		}
 	}
 	focus = {
         id = SOV_konovalov_idea
@@ -476,6 +521,7 @@ focus_tree = {
 		availalbe = {
 		}
 		mutually_exclusive = {
+			focus = SOV_deficit_ah
         }
 		x = 2
 		y = 14
@@ -554,6 +600,10 @@ focus_tree = {
 		}
 		availalbe = {
 
+		}
+
+		ai_will_do = {
+			factor = 10
 		}
 		x = 4
 		y = 2

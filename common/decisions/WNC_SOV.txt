@@ -53,6 +53,31 @@ sov_outer_politics_cat = {
             }
         }
     }
+    SOV_democratic_romania_invasion_mission = {
+        icon = mission_icon    
+        is_good = no
+        days_mission_timeout = 35
+        selectable_mission = no
+        activation = {
+            ROM = {
+                has_ideology_group = democratic
+            }
+        }
+        available = {
+            ROM = {
+                has_war = no
+            }   
+            SOV = {
+                has_war = no
+            }
+        }
+        timeout_effect = {
+            declare_war_on = {
+                target = ROM
+                type = annex_everything
+            }
+        }
+    }
 }
 sov_unstability_union_cat = {
     ussr_ssr_exit_1 = {
@@ -979,6 +1004,52 @@ sov_gidro_energy_dev_cat = {
                 add_dynamic_modifier = {
                     modifier = SOV_atomic_electrostation_new
                 }
+            }
+        }
+    }
+}
+sov_intervention_dev_cat = {
+    SOV_intervention_on_greece = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            GRE = {
+                NOT = {
+                    is_puppet_of = SOV
+                }
+            }
+        }
+        cost = 10
+        complete_effect = {
+            declare_war_on = {
+                target = GRE
+                type = annex_everything
+            }
+        }
+    }
+    SOV_intervention_on_turkey = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            TUR = {
+                NOT = {
+                    is_puppet_of = SOV
+                }
+            }
+        }
+        cost = 10
+        complete_effect = {
+            declare_war_on = {
+                target = TUR
+                type = annex_everything
             }
         }
     }

@@ -10,7 +10,10 @@ state={
 
 		}
 		victory_points = {
-			3010 3 
+			3010 10 
+		}
+		victory points = {
+			14614 15 
 		}
 		add_core_of = CAN
 

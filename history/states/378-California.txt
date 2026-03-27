@@ -20,12 +20,18 @@ state={
 			dockyard = 2
 			air_base = 10
 			1562 = {
-				naval_base = 10
+				naval_base = 8
+			}
+                        11859 = {
+				naval_base = 5
 			}
 		}
 		add_core_of = USA
 		victory_points = {
 			1562 20 
+		}
+                victory_points = {
+			11859 20 
 		}
 		victory_points = {
 			9713 20

@@ -1,4 +1,5 @@
 add_namespace = sovietunion
+add_namespace = sovietunion_peace_deal
 add_namespace = sovietunion_unstability
 add_namespace = sovietunion_foreigh
 add_namespace = sovietunion_economy
@@ -366,6 +367,47 @@ country_event = {
 		swap_ideas = {
 			remove_idea = SOV_development_sovindustry_nation
 			add_idea = SOV_development_sovindustry
+		}
+	}
+}
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+#############################################################
+country_event = {
+	id = sovietunion_peace_deal.1
+	title = ovietunion_peace_deal.1.t
+	desc = ovietunion_peace_deal.1.desc
+	picture = x
+	#is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		EST = {
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.80
+			}
+		}
+	
+		EST = {
+			has_war_with = SOV
+		}
+	}
+
+	immediate = {
+		every_state = {
+			limit = {
+				is_owned_by = EST
+			}
+			transfer_state_to = SOV
+		}
+		SOV = {
+			annex_country = {
+				target = EST
+			}
 		}
 	}
 }

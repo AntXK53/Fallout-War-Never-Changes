@@ -39,6 +39,48 @@ set_technology = {
 	synth_oil_experiments = 1
 }
 
+# DIPLOMACY
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = DDR
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = ROM
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = CZE
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = BUL
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = HUN
+		autonomous_state = autonomy_puppet
+	}
+	set_autonomy = {
+		target = AFG
+		autonomous_state = autonomy_puppet
+	}
+}
+
 ####
 #### VANILLA ####
 ####

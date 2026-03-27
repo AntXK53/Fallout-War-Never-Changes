@@ -257,10 +257,5 @@ if = {
 
 create_faction = "Southeast Asia Treaty Organization"
 add_to_faction = PHI
-add_to_faction = MAL
 add_to_faction = VIN
 add_to_faction = NZL
-add_to_faction = MAL
-add_to_faction = BRN
-add_to_faction = AST
-give_guarantee = CHI

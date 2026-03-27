@@ -1339,3 +1339,6 @@ set_autonomy = {
 		target = MEX
 		autonomous_state = autonomy_integrated_puppet
 	       }
+                target = PAN
+		autonomous_state = autonomy_integrated_puppet
+	       }

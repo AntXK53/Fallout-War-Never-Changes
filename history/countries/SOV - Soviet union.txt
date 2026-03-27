@@ -209,10 +209,6 @@ if = {
 		autonomous_state = autonomy_puppet
 	}
 	set_autonomy = {
-		target = FIN
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
 		target = HUN
 		autonomous_state = autonomy_puppet
 	}
@@ -220,18 +216,6 @@ if = {
 		target = AFG
 		autonomous_state = autonomy_puppet
 	}
-	else = {
-		puppet = DDR
-		puppet = POL
-		puppet = ROM
-		puppet = CZE
-		puppet = SLO
-		puppet = BUL
-		puppet = FIN
-		puppet = HUN
-		puppet = AFG 
-	}
-}
 
 set_variable = { SOV_consumer_goods_factor_value_var = -0.10 }
 set_variable = { SOV_consumer_goods_factor_var = -0.10 }

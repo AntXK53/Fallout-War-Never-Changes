@@ -68,4 +68,11 @@ set_power_balance = {
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 #DIPLOMACY
-give_guarantee = DPK
+
+set_autonomy = {
+		target = DPK
+		autonomous_state = autonomy_protectorate
+	       }
+                target = MON
+		autonomous_state = autonomy_integrated_puppet
+	       }

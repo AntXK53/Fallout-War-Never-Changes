@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = AST
+		owner = PNG
 		add_core_of = PNG
 
 		buildings = {

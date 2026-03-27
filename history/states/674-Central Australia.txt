@@ -10,7 +10,8 @@ state = {
 
 	history = {
 
-		owner = AST
+		owner = CTA
+		add_core_of = CTA
 		add_core_of = AST
 
 		buildings = {

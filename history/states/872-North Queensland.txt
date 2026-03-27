@@ -8,7 +8,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = AST
+		owner = QEN
+		add_core_of = QEN
 		add_core_of = AST
 	}
 	manpower=100000

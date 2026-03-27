@@ -8,7 +8,8 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = AST
+		owner = WST
+		add_core_of = WST
 		add_core_of = AST
 	}
 	state_category = wasteland

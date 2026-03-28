@@ -2,9 +2,9 @@
 state={
 	id=986
 	name="STATE_986" #
-	manpower = 16959758 
+	manpower = 20870201
 	
-	state_category = town
+	state_category = large_town
 	
 	resources={
 
@@ -13,9 +13,11 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
-		add_core_of = KHL 
+		add_core_of = KHL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			10729 3
@@ -24,7 +26,7 @@ state={
 	}
 
 	provinces={
-		1129 2076 5968 7106 10729 12005 12708 12822 14435 16022 16024 16033 16034 16035 16036 16041 16042 18855 18877 18886 18913 18915 18927 18944 18952 19009 
+		5968 10729 12005 12822 14435 16024 16033 16034 16035 16036 18913 18915 18927 18944 18952 
 	}
 
 	local_supplies=0.0 

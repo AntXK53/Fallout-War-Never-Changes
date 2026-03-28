@@ -2,22 +2,19 @@ state={
 	id=444
 	name="STATE_444"
 	provinces={
-		1179 5043 7272 7917 12774 13594 15988 15989 15990 18883 
+		2002 2032 12868 16037 16038 16039 16040 18895 19006 
 	}
-	resources={
-		oil=3
-	}
-	manpower=364000
+	manpower=21500402
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 	history={
-		add_core_of = PAK
-		add_core_of = BLC
-		owner = PAK
+		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = KHL
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 2
 		}
 
 	}

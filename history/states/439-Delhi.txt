@@ -2,18 +2,19 @@ state={
 	id=439
 	name="STATE_439"
 	provinces={
-		2002 2032 2086 11955 12868 16037 16038 16039 16040 16043 18892 18895 18904 18929 18936 19006 
+		2086 
 	}
-	manpower=636246
+	manpower=1020103
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=metropolis
 	local_supplies=1.000
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			air_base = 4
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 10
 		}
 		add_core_of = RAJ
 		victory_points = {

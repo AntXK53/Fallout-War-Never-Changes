@@ -2,15 +2,17 @@ state={
 	id=990
 	name="STATE_990"
 	provinces={
-		1525 1553 16123 16124 16127 16128 18843 18856 18857 18858 18862 
+		1553 16127 16128 18858 18862
 	}
-	state_category = rural
-	manpower = 445606
+	state_category = large_town
+	manpower = 1768002
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		add_core_of = MPU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 1
 		}
 
 		victory_points = {

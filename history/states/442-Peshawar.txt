@@ -2,11 +2,11 @@
 state={
 	id=442
 	name="STATE_442"
-	manpower = 4684400
+	manpower = 13480400
 	resources={
 		steel=3
 	}
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		victory_points = {
@@ -17,13 +17,12 @@ state={
 			infrastructure = 1
 			air_base = 1
 		}
-		add_core_of = NWF
 		add_core_of = PAK
-		add_core_of = KHL
+		add_core_of = NWF
 	}
 
 	provinces={
-		4558 12717 12763 15999 16000 16004 16006 18853 18884 
+		1978 4558 4998 12717 12763 14232 15997 15998 15999 16000 16001 16002 16003 16004 16005 16006 18853 18868 18870 18884 
 	}
 
 	local_supplies=5.0 

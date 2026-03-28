@@ -6,17 +6,19 @@ state={
 		coal = 1 #initial distribution
 	}
 	provinces={
-		997 1075 1116 1497 7455 10090 10349 10514 12322 12366 12395 16119 16120 16121 16122 16125 16129 16130 16135 16136 16139 18848 18849 18869 18900 18901 18953 
+		1116 7455 10349 10514 12322 12366 16120 16121 16122 16125 16130 16136 16139 18848 18869 18900 18901 18953  
 	}
-	manpower=8977100
+	manpower=2098902
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000
 	history={
 
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 2
 		}
 		victory_points = {
 			12366 1

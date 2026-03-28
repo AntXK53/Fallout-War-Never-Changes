@@ -2,7 +2,7 @@
 state={
 	id=441
 	name="STATE_441"
-	manpower = 2598027
+	manpower = 8720050
 	
 	state_category = rural
 
@@ -10,11 +10,11 @@ state={
 		owner = RAJ
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 		}
-		add_claim_by = RAJ
-		add_claim_by = PAK
+		add_core_of = RAJ
+		add_core_of = PAK
 		add_core_of = KAS
-		add_core_of = KHL 
 
 		victory_points = {
 			12754 1
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		7273 7316 8005 10905 12754 12884 16007 16010 16011 16013 16157 18851 18876 18881 19010 19012 
+		10905 12754 16010 16011 16013 18851 18876 18881 19010 19012 
 	}
 
 	local_supplies=0.0 

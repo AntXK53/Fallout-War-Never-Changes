@@ -2,9 +2,9 @@
 state={
 	id=983
 	name="STATE_983" #
-	manpower = 1697161 
+	manpower = 639899
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 
@@ -12,19 +12,15 @@ state={
 
 	history={
 		owner = RAJ
-		add_core_of = KOL
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1 #was: 5
-		}
-
-		victory_points = {
-			12295 2 # Kolhapur
+			infrastructure = 2 #was: 5
 		}
 
 	}
 
 	provinces={
-		4278 4291 4395 5032 7250 12105 12208 12295 16086 16092 19001 
+		997 10090 16129 
 	}
 
 	local_supplies=0.0 

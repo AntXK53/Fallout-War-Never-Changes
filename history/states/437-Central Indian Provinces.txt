@@ -2,21 +2,18 @@ state={
 	id=437
 	name="STATE_437"
 	provinces={
-		1199 2092 2105 4106 4971 7205 8076 10816 10872 12080 12743 16055 16056 16075 16076 18898 18971 18987 18995 19000 
+		1075 16119 18849 
 	}
-	manpower=9628198
+	manpower=2540032
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
 
 	history={
 		owner = RAJ
-		add_core_of = CIP
-		victory_points = {
-			4106 5
-		}
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 }

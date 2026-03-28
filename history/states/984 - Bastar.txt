@@ -2,7 +2,7 @@
 state={
 	id=984
 	name="STATE_984" #
-	manpower = 30650 
+	manpower = 15034053
 	
 	state_category = rural
 	
@@ -12,14 +12,15 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1 #was: 5
+			infrastructure = 2 #was: 5
 		}
 
 	}
 
 	provinces={
-		1622 7428 7465 12490 16082 
+		1510 1622 7428 7465 7497 7574 10401 12375 12420 12490 16081 16082 16083 16098 16099 18979 18984 
 	}
 
 	local_supplies=0.0 

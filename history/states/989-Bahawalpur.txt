@@ -2,19 +2,19 @@ state={
 	id=989
 	name="STATE_989"
 	provinces={
-		8007 10066 10772 10843 10898 12792 16025 16026 18917 18931 18954 19002 
+		1637 7593 10358 10471 12035 12307 12452 16104 16105 16106 16107 18834 18840
 	}
 
 	history={
-		owner = PAK
-		add_core_of = PAK
-		add_core_of = RJP
+		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
 		}
 
 	}
-	manpower=984612
+	manpower=19050323
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

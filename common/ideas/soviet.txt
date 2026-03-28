@@ -114,6 +114,34 @@ ideas = {
 				industrial_capacity_factory = 0.05
 			}
 		}
+		SOV_timed_reforms = {
+			removal_cost = -1
+			available = {
+				original_tag = SOV
+			}
+		
+			allowed = {
+				original_tag = SOV
+			}
+
+			modifier = {
+				political_power_factor = -0.02
+			}
+		}
+		SOV_ban_natbol_idea = {
+			removal_cost = -1
+			available = {
+				original_tag = SOV
+			}
+		
+			allowed = {
+				original_tag = SOV
+			}
+
+			modifier = {
+				ultranationalism_drift = -0.05
+			}
+		}
 		SOV_development_of_nuclear_industry = { 
 			removal_cost = -1
 			available = {
@@ -170,49 +198,8 @@ ideas = {
 			}
 
 			modifier = {
-
-			}
-		}
-		SOV_development_sovindustry = {
-			removal_cost = -1
-			available = {
-				original_tag = SOV
-			}
-		
-			allowed = {
-				original_tag = SOV
-			}
-
-			modifier = {
-
-			}
-		}
-		SOV_development_sovindustry_privat = {
-			removal_cost = -1
-			available = {
-				original_tag = SOV
-			}
-		
-			allowed = {
-				original_tag = SOV
-			}
-
-			modifier = {
-
-			}
-		}
-		SOV_development_sovindustry_nation = {
-			removal_cost = -1
-			available = {
-				original_tag = SOV
-			}
-		
-			allowed = {
-				original_tag = SOV
-			}
-
-			modifier = {
-
+				political_power_factor = -0.05
+				stability_factor = 0.05
 			}
 		}
     }

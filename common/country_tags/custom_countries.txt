@@ -33,4 +33,5 @@ MRD = "countries/Morvodia.txt"
 ADG = "countries/Adygea.txt"
 KRC = "countries/Karachaevo-Cherkessia.txt"
 ING = "countries/Ingushetia.txt"
+RAD = "countries/Radiations.txt"
 

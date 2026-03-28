@@ -8,9 +8,9 @@ state={
 
 	history={
 		owner = EUC
-		add_core_of = CAY
-		add_core_of = FRA
 		add_core_of = EUC
+		add_core_of = FRA
+		add_core_of = CAY
 		buildings = {
 			infrastructure = 1
 			12885 = {

@@ -317,7 +317,7 @@ USA = {
 	color_ui = rgb { 11 92 150 }
 }
 MON = {
-	color = rgb { 102 153 189 }
+	color = rgb { 118 140 102 }
 	color_ui = rgb { 102 153 189 }
 }
 MEN = {
@@ -473,12 +473,12 @@ VIN = {
 	color_ui = rgb { 209 195 48 }
 }
 CAM = {
-	color = rgb { 50 136 194 }
-	color_ui = rgb { 50 136 194 }
+	color = rgb { 201 93 93 }
+	color_ui = rgb { 201 93 93 }
 }
 MAL = {
-	color = rgb { 94 145 181 }
-	color_ui = rgb { 94 145 181 }
+	color = rgb { 163 136 109 }
+	color_ui = rgb { 163 136 109 }
 }
 MNT = {
 	color = rgb { 59 80 105 }
@@ -1391,7 +1391,7 @@ PNG = {
 	color = rgb { 133 65 57 }
 	color_ui = rgb { 133 65 57 }
 }
-PNG = {
+SOL = {
 	color = rgb { 59 190 233 }
 	color_ui = rgb { 59 190 233 }
 }

@@ -2,31 +2,27 @@
 state={
 	id=987
 	name="STATE_987" #
-	manpower = 217974 
+	manpower = 890435
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 
 	}
 
 	history={
-		owner = PAK
+		owner = RAJ
 		buildings = {
+			infrastructure = 1
 		}
-		add_core_of = NWF
-		add_core_of = PAK
-		add_core_of = KHL
-		set_compliance = 0
-		start_resistance = yes
-		set_resistance =  70
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 1
 		}
 	}
 
 	provinces={
-		1978 4998 15997 15998 16001 16002 16003 18868 
+		1525 16124 
 	}
 
 	local_supplies=0.0 

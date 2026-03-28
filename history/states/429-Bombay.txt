@@ -2,8 +2,8 @@
 state={
 	id=429
 	name="STATE_429" #Bombay
-	manpower = 18928000
-	state_category = town 
+	manpower = 74000502
+	state_category = metropolis
 	
 	resources={
 		tungsten=26
@@ -12,22 +12,30 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
+		add_core_of = KOL
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			air_base = 10
 			1349 = {
 				naval_base = 6
 			}
 		}
-		add_claim_by = KHL
 		victory_points = {
 			1349 25
+		}
+		victory_points = { 10311 1 }
+		victory_points = {
+			4950 5
+		}
+		victory_points = {
+			12295 2 # Kolhapur
 		}
 	}
 
 	provinces={
-		1349 1405 4072 4353 7013 7119 7177 7232 10019 10210 10270 11993 12142 12182 12269 16085 16090 16091 19011 
+		1349 1405 4072 4353 4395 4557 4950 5019 5063 7013 7060 7119 7177 7232 7430 7619 10019 10171 10210 10270 10311 11993 12142 12182 12226 12269 12295 12781 16074 16085 16086 16087 16088 16089 16090 16091 18974 18975 18999 19011 
 	}
 
 	local_supplies=0.0 

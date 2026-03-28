@@ -5,17 +5,19 @@ state={
 		rubber=2
 	}
 	provinces={
-		1238 1321 7447 18824 
+		1238 1321 7391 7447 10190  
 	}
-	manpower = 7600000
+	manpower = 24305021
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		add_core_of = RAS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			1321 3 

@@ -2,24 +2,23 @@ state={
 	id=440
 	name="STATE_440"
 	provinces={
-		1107 4979 7903 8022 8106 9084 10139 10173 10887 14232 14262 16005 16023 16027 16028 16029 16030 16031 16032 18830 18870 18887 18899 18910 18925 18928 18941 18946 18989 18993 18998 
+		1107 4979 7903 8007 8022 8106 9084 10066 10139 10772 10843 10887 10898 12792 14262 16023 16025 16026 16027 16028 16029 16030 16031 16032 18830 18887 18899 18910 18917 18925 18928 18931 18941 18946 18954 18989 18993 18998 19002 
 	}
 	history={
 		owner = PAK
 		add_core_of = PAK
 		add_core_of = KHL
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 3
 		}
 		victory_points = { 	10772 15 }
 		victory_points = { 	10898 1 }
-		victory_points = { 10173 3 }
 
 	}
-	state_category = town
-	manpower=16024000
+	state_category = city
+	manpower=57292441
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.500
 }

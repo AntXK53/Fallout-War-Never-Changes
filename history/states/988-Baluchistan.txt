@@ -2,20 +2,28 @@ state={
 	id=988
 	name="STATE_988"
 	provinces={
-		5075 5105 8013 8044 8066 12761 15993 15994 15996 
+		1179 4990 5043 5075 5105 7272 7847 7917 7975 8013 8044 8066 8098 10813 12761 12774 13483 13484 13594 15988 15989 15990 15991 15992 15993 15994 15995 15996 18883 
 	}
 	state_category = rural
-	manpower = 512000
+	manpower = 	5332376
+	resources={
+		oil=3
+	}
 	history={
 		owner = PAK
 		add_core_of = PAK
 		add_core_of = BLC
+		add_core_of = KLT
 		buildings = {
 			infrastructure = 1
 		}
 
 		victory_points = {
 			5105 3 # Quetta
+		}
+
+		victory_points = {
+			8098 1 # Kalat
 		}
 
 	}

@@ -2,16 +2,15 @@ state={
 	id=445
 	name="STATE_445"
 	provinces={
-		4990 7847 7975 10813 13483 13484 15992 15995 
+		1898 3989 5157 10021 13485 18861 18872 
 	}
-	manpower=405100
+	manpower=7000203
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
 	history = {
-		owner = PAK
-		add_core_of = PAK
-		add_core_of = KHL
+		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 1
 		}

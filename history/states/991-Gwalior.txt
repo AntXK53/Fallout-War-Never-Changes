@@ -2,15 +2,15 @@ state={
 	id=991
 	name="STATE_991"
 	provinces={
-		1949 2036 7080 10807 16084 18828 18907 18911 18912 
+		1497 12395 16135 
 	}
 	state_category = rural
-	manpower = 3523000
+	manpower = 1700050
 	history={
 		owner = RAJ
-		add_core_of = CIP
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 	}
 	buildings_max_level_factor=1.000

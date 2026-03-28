@@ -8,9 +8,11 @@ state={
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 4 #was: 5
+			industrial_complex = 3
+			arms_factory = 1
 			dockyard = 1
 			air_base = 2
 			1159 = {
@@ -26,11 +28,11 @@ state={
 	}
 
 	provinces={
-		1159 1609 4062 4204 4245 4644 7124 7220 10077 10389 14234 16114 16116 16118 18850 18890 18947 18962 18977 18980 18982 18986 
+		1159 1444 1609 4062 4204 4245 4644 7124 7220 10077 10389 14234 16114 16116 16118 18850 18890 18947 18962 18977 18980 18982 18986 
 	}
-	manpower=18778100
+	manpower=65890025
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category=large_city
 
 	local_supplies=0.0 
 }

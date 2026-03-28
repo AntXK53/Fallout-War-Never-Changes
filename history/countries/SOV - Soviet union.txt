@@ -426,6 +426,7 @@ if = {
 			tank_nsb_armor_upgrade = 0
 		}
 		icon = "GFX_SOV_modern_tank_chassis"
+		model = "SOV_modern_armor_entity"
 	}
 
 	create_equipment_variant = {

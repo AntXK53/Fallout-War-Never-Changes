@@ -2,13 +2,14 @@ state={
 	id=433
 	name="STATE_433"
 	provinces={
-		1908 2054 4149 4984 7905 7998 10847 10866 12041 12718 12829 12844 12876 12886 13481 13482 16057 16058 16059 16060 16061 16062 16063 16064 16065 18822 18948 18991 18994 
+		1908 2054 2092 4149 4971 4984 7905 7998 10847 10866 12041 12718 12829 12844 12876 12886 13481 13482 16055 16056 16057 16058 16059 16060 16061 16062 16063 16064 16065 18822 18898 18948 18991 18994 18995 19000 
 	}
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		add_core_of = RJP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		victory_points = {
 			1908 5
@@ -16,7 +17,7 @@ state={
 
 	}
 	state_category = rural
-	manpower=11786000
+	manpower=42586000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=9.000

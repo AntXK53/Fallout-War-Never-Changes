@@ -2,25 +2,27 @@
 state={
 	id=424
 	name="STATE_424" # Madras
-	manpower = 15791700
+	manpower = 32050905
 
 	resources = {
 		coal = 3 #initial distribution
 	}
-	state_category = rural
+	state_category = town
 	
 
 	history={
 		owner = RAJ
+		add_core_of = RAJ
+		add_core_of = HYD
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 
 	}
 
 	provinces={
-		1228 1344 1430 4321 4365 4414 7310 7340 10152 10296 10756 10897 12180 12779 16095 16096 18958 18997 19004 
+		1228 1344 1430 4237 4321 4365 4414 7297 7310 7340 10001 10152 10255 10296 10756 10897 12180 12779 16095 16096 18838 18865 18875 18958 18963 18997 19004 
 	}
 
 	local_supplies=0.0 

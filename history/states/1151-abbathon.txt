@@ -1,0 +1,27 @@
+state={
+	id=1151
+	name="STATE_1151"
+
+	state_category = rural
+
+	history = {
+		owner = PAK
+		add_core_of = PAK
+		add_core_of = RAJ
+		add_core_of = KAS
+
+		victory_points = {
+			1910 1
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		1910 16014 18880 
+	}
+	manpower=2900502
+	buildings_max_level_factor=1
+	local_supplies=0
+}

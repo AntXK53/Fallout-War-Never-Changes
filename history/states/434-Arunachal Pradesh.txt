@@ -2,7 +2,7 @@
 state={
 	id=434
 	name="STATE_434"
-	manpower = 200000
+	manpower = 823000
 	
 	state_category = wasteland
 	resources = {
@@ -13,7 +13,7 @@ state={
 
 		owner = RAJ
 		add_core_of = RAJ
-                add_claim_by = PRC
+            add_claim_by = PRC
 
 		buildings = {
 			infrastructure = 1
@@ -22,7 +22,7 @@ state={
 	}
 
 	provinces={
-		1996 10810 12730 16137 16138 16985 17009 18852 19638 19657 19670 19691 19730 19750 
+		1996 10810 12730 16123 16137 16138 16985 17009 18843 18852 18856 18857 19638 19657 19670 19691 19730 19750 
 	}
 
 	local_supplies=0.0 

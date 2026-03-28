@@ -5,16 +5,19 @@ state={
 		rubber=19.000
 	}
 	provinces={
-		1268 1381 1409 4327 4416 4420 7265 7288 7363 7391 7402 7436 8067 10130 10190 10246 10274 10278 10808 12164 12247 12275 12734 16094 16150 18863 18959 18968 18969 18983 
+		1268 1381 1409 4327 4416 4420 7265 7288 7363 7402 7436 8067 10130 10246 10274 10278 10808 12164 12247 12275 12734 16094 16150 18863 18959 18968 18969 18983 
 	}
-	manpower=24993300
+	manpower=50345363
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 	local_supplies=0.000
 	history={
 		owner = RAJ
+		add_core_of = RAJ
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			10246 3 # Madurai

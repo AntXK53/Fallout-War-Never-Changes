@@ -1,0 +1,11 @@
+india_debug_cat = {
+    allowed = {
+        OR = {
+            original_tag = RAJ
+            original_tag = PAK
+        }
+    }
+    visible = {
+        is_debug = yes
+    }
+}

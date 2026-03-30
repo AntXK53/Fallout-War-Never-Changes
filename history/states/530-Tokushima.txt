@@ -15,22 +15,18 @@ state = {
 			air_base = 3
 			arms_factory = 1
 			industrial_complex = 2
-			4179 = {
+			9965 = {
 				naval_base = 1
 			}
 		}
 		
 		victory_points = {
-			7197 8 # Kochi
-		}
-
-		victory_points = {
-			4179 10 # Matsuyama
+			9965 5
 		}
 
 	}
 	provinces = {
-		4094 4179 7046 7197 9965 11997 12028 15865 15866 15867 15868 
+		9965 15866 15867 15868 
 	}
 
 	local_supplies = 0.0 

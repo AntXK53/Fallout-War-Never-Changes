@@ -38,14 +38,6 @@ state = {
 			1092 20 # Hiroshima
 		}
 
-		victory_points = {
-			7212 10 # Okayama
-		}
-
-		victory_points = {
-			11985 2 # Shimonoseki
-		}
-
 		1939.1.1 = {
 			buildings = {
 				dockyard = 3
@@ -57,7 +49,7 @@ state = {
 	}
 
 	provinces = {
-		1092 4197 7212 9968 10052 11946 11985 15869 15870 
+		1092 9968 11946
 	}
 
 	local_supplies = 0.0 

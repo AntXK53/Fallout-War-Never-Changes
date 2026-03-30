@@ -25,13 +25,13 @@ state = {
 		}
 		
 		victory_points = {
-			10032 15 # Kanazawa
+			10128 5
 		}
 
 	}
 
 	provinces = {
-		998 10032 10128 15880 
+		10128 15880 
 	}
 
 	local_supplies = 0.0 

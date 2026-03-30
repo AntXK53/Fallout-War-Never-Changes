@@ -1,9 +1,9 @@
 state={
-	id=533
-	name="STATE_533"
-	manpower = 52000
+	id=1162
+	name="STATE_1162"
+	manpower = 10000001
 	
-	state_category = city
+	state_category = megalopolis
 
 	history={
 		owner = JAP
@@ -11,14 +11,17 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
+			4188 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {
-			15886 5
+			4188 10 
 		}
 	}
 
 	provinces={
-		1063 9865 15886 19794 19717    
+		4188 4184 19900
 	}
 
 	local_supplies=0.0 

@@ -20,14 +20,6 @@ state = {
 
 		}
 		
-		victory_points = {
-			7087 3 # Shizuoka
-		}
-		
-		victory_points = {
-			10125 25 # Nagoya
-		}
-
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
@@ -41,7 +33,7 @@ state = {
 	}
 
 	provinces = {
-		4069 4172 7087 7187 7217 10015 10100 10125 12097 15877 15878 
+		4069 10015 10100 15877 
 	}
 
 	local_supplies = 0.0 

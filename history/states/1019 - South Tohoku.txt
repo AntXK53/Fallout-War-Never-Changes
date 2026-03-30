@@ -22,17 +22,13 @@ state = {
 		}
 		
 		victory_points = {
-			7169 15 # Sendai
-		}
-
-		victory_points = {
-			4118 2 # Fukushima
+			7169 5 # Sendai
 		}
 
 	}
 
 	provinces = {
-		1024 4067 4118 4122 4153 7169 15883 15884 15885 19722 19732 19778 
+		7169 15884 19778 
 	}
 
 	local_supplies = 9.0 

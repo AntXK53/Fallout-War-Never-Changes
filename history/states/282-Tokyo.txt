@@ -1,6 +1,6 @@
 state={
-	id=1162
-	name="STATE_1162"
+	id=282
+	name="STATE_282"
 	manpower = 10000001
 	
 	state_category = megalopolis
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		1182
+		1182 19734
 	}
 
 	local_supplies=0.0 

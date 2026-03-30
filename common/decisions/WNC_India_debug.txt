@@ -1,0 +1,77 @@
+india_debug_cat = {
+    india_indopakistanian_great_battleroyale = {
+        allowed = {
+            OR = {
+                original_tag = RAJ
+                original_tag = PAK
+            }
+        }
+        visible = {
+            OR = {
+                original_tag = RAJ
+                original_tag = PAK
+            }
+        }
+        available = {
+            OR = {
+                original_tag = RAJ
+                original_tag = PAK
+            }
+        }
+        complete_effect = {
+            RAJ = {
+                load_oob = "RAJ_debug_nsb"
+            }  
+            PAK = {
+                load_oob = "PAK_debug_nsb"
+            }
+            RAJ = {
+                declare_war_on = {
+                    target = PAK
+                    type = annex_everything
+                }
+            }
+            RAJ = {
+                activate_mission = india_play_with_nuclear_bombs_mission
+            }
+            news_event = news_india.1
+        }
+    }
+    india_play_with_nuclear_bombs_mission = {
+        icon = mission_icon    
+        is_good = no
+        days_mission_timeout = 45
+        selectable_mission = no
+        activation = {
+            RAJ = {
+                has_war = yes
+            }
+        }
+        available = {
+            PAK = {
+                has_war = no
+            }   
+            RAJ = {
+                has_war = no
+            }
+        }
+        timeout_effect = {
+            launch_nuke = {
+                province = 10173
+                nuke_type = nuclear_bomb
+            }
+            launch_nuke = {
+                province = 2086
+                nuke_type = nuclear_bomb
+            }
+            launch_nuke = {
+                province = 3456
+                nuke_type = nuclear_bomb
+            }
+            launch_nuke = {
+                province = 1349
+                nuke_type = nuclear_bomb
+            }
+        }
+    }
+}

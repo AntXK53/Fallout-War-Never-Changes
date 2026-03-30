@@ -103,10 +103,12 @@ country_event = {
 
 	option = {
 		name = sovietunion.2.a
+		ai_chance = { factor = 98 }
 		add_stability = 0.05
 	}
 	option = {
 		name = sovietunion.2.b
+		ai_chance = { factor = 2 }
 		SOV = {
             promote_character = SOV_nikolay_petrov
         }

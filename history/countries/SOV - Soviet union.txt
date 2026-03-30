@@ -246,7 +246,7 @@ add_ideas = {
 	SOV_militarist_policy_idea
 	SOV_normally_robototechnic_idea
     war_economy
-	SOV_reformists_zagovor_idea 
+	SOV_reformists_zagovor_idea
 }
 
 set_politics = {

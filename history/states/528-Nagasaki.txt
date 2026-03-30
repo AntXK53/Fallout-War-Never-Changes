@@ -29,35 +29,13 @@ state = {
 		}
 
 		victory_points = {
-			1025 10 # Kokura
-		}
-
-		victory_points = {
 			9950 15 # Nagasaki
-		}
-
-		victory_points = {
-			7110 5 # Fukuoka
-		}
-
-		victory_points = {
-			11925 5 # Kumamoto
-		}
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 2
-				7110 = {
-					naval_facility = 1 # Sasebo Naval Arsenal
-				}
-			}
 		}
 
 	}
 
 	provinces = {
-		1025 1158 4027 4164 7110 9950 10011 10020 10092 11925 15861 15862 15863 
+		1158 9950 10011 
 	}
 
 	local_supplies = 10.0 

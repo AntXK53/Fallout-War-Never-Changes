@@ -18,9 +18,12 @@ state={
 			7110 = {
 				naval_base = 2
 			}
+			7110 = {
+				naval_facility = 1 # Sasebo Naval Arsenal
+			}
 		}
 		
-                victory_points = {
+        victory_points = {
 			1025 10
 		}
 

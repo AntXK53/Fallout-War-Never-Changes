@@ -17,10 +17,6 @@ state = {
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
-			1136 = {
-				naval_base = 6
-			}
-
 		}
 
 		1939.1.1 = {

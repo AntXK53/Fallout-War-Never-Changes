@@ -9,9 +9,7 @@ state = {
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
-		add_core_of = PRC
-		add_core_of = KUM
+		add_core_of = SIK
 
 		buildings = {
 			infrastructure = 2

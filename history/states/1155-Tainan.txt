@@ -1,25 +1,24 @@
 state={
-	id=1152
-	name="STATE_1152"
+	id=1155
+	name="STATE_1155"
 	manpower = 23902
 	
-	state_category = large_city
+	state_category = city
 
 	history={
-		owner = PAK
-		add_core_of = PAK
-		add_core_of = KHL
+		owner = CHI
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
                 victory_points = {
-			10173 15 
+			1091 5 
 		}
 	}
 
 	provinces={
-		10173
+		1091 15890 15891 15893 15895
 	}
 
 	local_supplies=0.0 

@@ -10,8 +10,6 @@ state = {
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
-		add_core_of = PRC
 
 		buildings = {
 			infrastructure = 1
@@ -44,23 +42,6 @@ state = {
 				remove_core_of = PRC
 			}
 		}
-
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-				}
-				PRC = {
-					transfer_state = PREV
-
-				}
-			}
-		}
-
-	}
 
 	provinces = {
 		3742 4243 5031 7511 8055 8081 8127 9071 10724 12714 12750 15190 15555 15739 16476 16696 16849 

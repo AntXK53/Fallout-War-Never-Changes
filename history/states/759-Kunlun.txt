@@ -11,8 +11,7 @@ state={
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
-		add_core_of = PRC
+		add_core_of = SIK
 
 		victory_points = {
 			2074 1 # Ruoqiang 

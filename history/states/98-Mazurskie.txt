@@ -1,12 +1,18 @@
 state={
 	id=98
 	name="STATE_98"
-	manpower = 1412100
+	manpower = 2054678
 	
 	state_category = rural
 	history={
 		victory_points = {
 			3230 5
+		}
+		victory_points = {
+			3295 5 # Torun
+		}
+		victory_points = {
+			279 1 # Bydgoszcz
 		}
 		owner = POL
 		buildings = {
@@ -16,7 +22,7 @@ state={
 	}
 
 	provinces={
-		548 3230 6259 6321 6401 6567 9290 9316 11385 11492 15585 
+		243 279 548 3230 3295 3324 6347 6401 15585 15611
 	}
 
 	local_supplies=7.0 

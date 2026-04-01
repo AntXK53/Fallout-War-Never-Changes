@@ -60,6 +60,18 @@ sov_gidro_energy_dev_cat = {
         }
     }
 }
+sov_industry_dev_cat = {
+    icon = generic_propaganda
+
+    allowed = {
+        original_tag = SOV
+    }
+    visible = {
+        SOV = {
+            has_country_flag = SOV_industry_dev_ct
+        }
+    }
+}
 sov_intervention_dev_cat = {
     icon = generic_propaganda
 

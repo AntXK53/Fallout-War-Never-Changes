@@ -1,7 +1,7 @@
 state = {
 	id = 85
 	name = "STATE_85"
-	manpower = 366730
+	manpower = 2201236
 	
 	state_category = city
 
@@ -13,8 +13,14 @@ state = {
 		victory_points = {
 			362 10 # Danzig
 		}
+
+		victory_points = {
+			9263 5 # Gdynia
+		}
 		
-		
+		victory_points = {
+			11372 3 # Köslin
+		}
 		
 		buildings = {
 			infrastructure = 3
@@ -24,11 +30,14 @@ state = {
 			362 = {
 				naval_base = 5
 			}
+			9263 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces = {
-		362 3380 
+		334 362 389 3380 9263 11288 11316 11343 11372 15828 
 	}
 
 	local_supplies = 0.0 

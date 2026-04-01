@@ -6,6 +6,9 @@ state={
 		victory_points = {
 			11399 1 
 		}
+		victory_points = {
+			9494 1
+		}
 		owner = POL
 		buildings = {
 			infrastructure = 3
@@ -25,9 +28,9 @@ state={
 	}
 
 	provinces={
-		3521 3559 6484 6580 9452 9494 9521 9544 9558 11399 11466 11507 19166 19170 19172 19176 19179 
+		3521 3559 6484 6580 9452 9494 9521 9558 11399 11466 11507 19166 19170 19172 19176 19179 
 	}
-	manpower=2464600
+	manpower=2185005
 
 	resources = {
 		coal = 2 # initial distribution

@@ -1,25 +1,32 @@
 state={
 	id=72
 	name="STATE_72"
-	manpower = 152000
+	manpower = 1802303
 	
 	resources = {
 		coal = 7 # initial distribution / 60 total
 	}
 
-	state_category = rural
+	state_category = metropolis
 	
 	history={
-		owner = CZE
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+		owner = POL
+
+		victory_points = {
+			3544 25
 		}
-		add_core_of = CZE
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 3
+			air_base = 10
+		}
+		add_core_of = POL
 	}
 
 	provinces={
-		9567 
+		3544 19183 
 	}
 
 	local_supplies=1.0 

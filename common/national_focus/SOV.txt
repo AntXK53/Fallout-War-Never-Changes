@@ -1087,6 +1087,10 @@ focus_tree = {
 		cost = 6
 		x = -13
 		y = 3
+		completion_reward = {
+			set_country_flag = SOV_industry_dev_ct
+			unlock_decision_category_tooltip = sov_industry_dev_cat
+		}
 	}
 	focus = {
 		id = SOV_development_kazakh_ssr

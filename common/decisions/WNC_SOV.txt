@@ -1008,6 +1008,108 @@ sov_gidro_energy_dev_cat = {
         }
     }
 }
+sov_industry_dev_cat = {
+    SOV_development_industry_1 = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            original_tag = SOV
+        }
+        cost = 10
+        days_remove = 100
+        remove_effect = {
+            random_controlled_state = {
+                prioritize = { 1114 398 }
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    SOV_development_industry_2 = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            original_tag = SOV
+        }
+        cost = 10
+        days_remove = 100
+        remove_effect = {
+            random_controlled_state = {
+                prioritize = { 239 251 }
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            random_controlled_state = {
+                prioritize = { 239 251 }
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    SOV_development_industry_3 = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            original_tag = SOV
+        }
+        cost = 10
+        days_remove = 100
+        remove_effect = {
+            random_controlled_state = {
+                prioritize = { 570 571 }
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    SOV_development_industry_4 = {
+        allowed = {
+            original_tag = SOV
+        }
+        visible = {
+            original_tag = SOV
+        }
+        available = {
+            original_tag = SOV
+        }
+        cost = 10
+        days_remove = 100
+        remove_effect = {
+            random_controlled_state = {
+                prioritize = { 653 228 }
+			    add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+}
 sov_intervention_dev_cat = {
     SOV_intervention_on_greece = {
         allowed = {

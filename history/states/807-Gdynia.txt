@@ -1,7 +1,7 @@
 state = {
 	id = 807
 	name = "STATE_807"
-	manpower = 713370
+	manpower = 2030104
 	
 	state_category = city
 
@@ -10,32 +10,17 @@ state = {
 		owner = POL
 		add_core_of = POL
 
-		victory_points = {
-			9263 5 # Gdynia
-		}
-
-		victory_points = {
-			3295 5 # Torun
-		}
-
-		victory_points = {
-			279 1 # Bydgoszcz
-		}
-
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 1
 			air_base = 2
-			9263 = {
-				naval_base = 1
-			}
 		}
 		
 	}
 
 	provinces = {
-		243 279 334 389 3295 3324 6347 9263 15611 
+		466 536 3410 3434 6499 6522 15811 15812 15814 
 	}
 
 	local_supplies = 0.0 

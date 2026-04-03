@@ -31,17 +31,6 @@ state = {
 		victory_points = {
 			5031 1 # Alxa Right Banner
 		}
-
-		1936.1.1 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender" 
-				}
-				PRC = { transfer_state = PREV }
-				add_core_of = PRC
-				remove_core_of = PRC
-			}
-		}
 	}
 
 	provinces = {

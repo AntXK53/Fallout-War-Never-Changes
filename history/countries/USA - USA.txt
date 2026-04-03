@@ -1334,18 +1334,16 @@ if = {
 }
 
 # DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
+
 	set_autonomy = {
 		target = MEX
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = PAN
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = DJI
 		autonomous_state = autonomy_integrated_puppet
 	}

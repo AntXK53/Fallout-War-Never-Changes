@@ -83,5 +83,7 @@ if = {
 		target = MON
 		autonomous_state = autonomy_puppet
 	}
-
-give_guarantee = IND
+        set_autonomy = {
+		target = IND
+		autonomous_state = autonomy_puppet
+	}

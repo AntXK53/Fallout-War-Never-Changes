@@ -11,7 +11,6 @@ state = {
 	history = {
 
 		owner = COG
-                set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 1
 		}

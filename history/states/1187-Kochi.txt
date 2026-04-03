@@ -2,7 +2,9 @@ state={
 	id=1187
 	name="STATE_1187"
 	manpower = 21300
+	
 	state_category = city
+
 	history={
 		owner = JAP
 		add_core_of = JAP
@@ -14,8 +16,10 @@ state={
 			7197 5
 		}
 	}
+
 	provinces={
-		7197 11997 12028 15866 
+		7197 12028 11997 15866
 	}
+
 	local_supplies=0.0 
 }

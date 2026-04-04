@@ -16,13 +16,16 @@ state = {
 
 		owner = MAL
 		add_core_of = MAL
-
-		victory_points = {
-			7329 1 # Kota Baru
+        victory_points = {
+			7329 5 # Kota Bahru
 		}
 
 		victory_points = {
-			10297 3 # Kuala Lumpur
+			10297 15 # Kuala Lumpur
+		}
+
+		victory_points = {
+			13376 10 # Johor Bahru
 		}
 
 		buildings = {

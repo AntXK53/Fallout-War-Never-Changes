@@ -4,48 +4,9 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 2056.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "EUC"
+		default_country = "USA"
 		default = yes
 		
-		"EUC"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
-	
-			ideas = {
-				euc_rampant_unrest_1
-				euc_economic_recession_1
-				euc_breaking_union_1
-			}
-			focuses = {
-				
-			}
-		}
-		"UAR"={
-			history = "UAR_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"CAN"={
-			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-		CAN_the_avro_project
-		CAN_prime_minister_rip
-		CAN_east_west_split
-
-			}
-			focuses = {
-				CAN_continue_the_dynasty
-				CAN_trudeau_stability
-				CAN_helping_family
-			}
-		}
 		"USA"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -56,36 +17,6 @@ bookmarks = {
 		USA_a_republic_in_crisis
 		USA_the_armed_forces
 		USA_from_the_mountains
-			}
-		}
-			"EST"={
-				minor = yes
-			history = "EST_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				EST_defend_our_independence_idea
-                EST_proud_small_nation
-                EST_forest_brothers
-			}
-			focuses = {
-				EST_restore_talinn_bunk
-				EST_window_to_the_west
-				EST_where_were_u
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
 			}
 		}
 		"JAP"={
@@ -150,9 +81,48 @@ bookmarks = {
 				SOV_congress_cpsu_2060
 			}	
 		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+		"EUC"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+	
+			ideas = {
+				euc_rampant_unrest_1
+				euc_economic_recession_1
+				euc_breaking_union_1
+			}
+			focuses = {
+				
+			}
+		}
+		"UAR"={
+			history = "UAR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"EAF"={
+			history = "EAF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"WAU"={
+			history = "WAU_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
 		}
 
 

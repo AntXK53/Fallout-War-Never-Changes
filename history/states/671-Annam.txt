@@ -19,7 +19,7 @@ state = {
 		add_core_of = IND
 		
 		victory_points = {
-			4075 5 # Hanoi 
+			4075 20 # Hanoi 
 		}
 
 		victory_points = {

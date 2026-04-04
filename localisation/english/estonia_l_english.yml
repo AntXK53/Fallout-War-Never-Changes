@@ -1,9 +1,10 @@
 ﻿l_english:
   
 
-    #NATIONAL FOCUSES#
-    EST_restore_talinn_bunk:0 "Restore the Talinn Bunker"
-    EST_restore_talinn_bunk_desc:0 "Having fought for the Baltics back in the Great Patriotic War, and having to hold it from continued partisan resistance, the Soviets have had to fortify the region with a number of Bunkers meant to cement their control over what they consider rightful Soviet territory. But our brave fighters have since learned the art of fighting within these Soviet Bunkers."
+ #NATIONAL FOCUSES#
+ EST_restore_talinn_bunk:0 "Restore the Talinn Bunker"
+ EST_restore_talinn_bunk_desc:0 "Having fought for the Baltics back in the Great Patriotic War, and having to hold it from continued partisan resistance, the Soviets have had to fortify the region with a number of Bunkers meant to cement their control over what they consider rightful Soviet territory. But our brave fighters have since learned the art of fighting within these Soviet Bunkers."
+ 
  EST_fortify_Parnu:0 "Fortify Parnu"
  EST_fortify_Parnu_desc:0 "If we are to hold Estonia, we must make sure that the Soviets cannot take it. Parnu represents the last possible holdout for our forces, and we must be prepared for the worse case scenario."
 
@@ -65,7 +66,7 @@
  EST_Rally_european_desc:0 "The situation in the European Commonwealth has deteriorated so far past what any could have imagined a few years ago. We stand more isolated than ever. But we may not yet be alone. There's a number of highly skilled soldiers in the European military who would rather be fighting the Communists than each-other, and there are no small number of chances to do just that here."
 
 
- EST_where_were_u:0 "Where were you when Estonia bled ?"
+ EST_where_were_u:0 "Where were you when Estonia Bled?"
  EST_where_were_u_desc:0 "Our uprising was thanks to the brave Metsavagi having spent decades alone in the wilderness standing against the Soviet Occupiers. Other Estonians simply stood to the side and kept their heads down. Others worse became collaborators, at best trying to work within a corrupt system to ease its burden, or at worst eagerly stepping on the necks of their countrymen."
 
 
@@ -102,7 +103,7 @@
  EST_we_died_for_est:0 "We died for Estonia"
  EST_we_died_for_est_desc:0 "Life in eastern europe is much as it's always been. Nasty, brutish, and short. So too for our Metsavagi. Death is not something we fear. It is part of life. We are ready to die for our country. We are eager to die for our country. Now it is our job to make them die for their country."
 
- EST_a_land_watered:0 "A land watered by the blood of Patriots"
+ EST_a_land_watered:0 "A Land Watered by the Blood of Patriots"
  EST_a_land_watered_desc:0 "This has been the culmination of a century of occupation. What will be said after the next century? They will say that Estonia is a land watered by the blood of Patriots. Our enemy- the Red Tide, wants to destroy nationhood itself. If they win there will be no more Estonians. There will be no more Russians. There will be nothing but Communists from here until eternity. What then will they say of Estonia? What will they know of us, our struggle, our land, one hundred years from now? They will say that we lived for Estonia. That we died for Estonia. "
 
  EST_legacy_of_sign:0 "Legacy of the Signal Battalion"

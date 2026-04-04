@@ -51,9 +51,9 @@
  invest_in_the_design_bureaus:0 "Invest in the Design Bureaus"
  a_bigger_gun:0 "A Bigger Gun"
  how_shall_we_fight:0 "How Shall We Fight?"
- focus_on_speed:0 "Focus on Speed"
- focus_on_firepower:0 "Focus on Firepower"
- focus_on_logistics:0 "Focus on Logistics"
+ focus_on_speed:0 "Efficiency"
+ focus_on_firepower:0 "Firepower"
+ focus_on_logistics:0 "Logistics"
  quantity_over_quality:0 "Quantity over Quality"
 
  #NAVY

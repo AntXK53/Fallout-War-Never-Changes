@@ -12,20 +12,21 @@ characters={
 			id=-1
 		}
 	}
+
 	SIA_nangklao_chichalerm={
-		name="Nangklao Chichalerm"
+		name="Suyarut Kittisak"
 		portraits={
 			civilian={
-				large=GFX_portrait_Nangklao_Chichalerm
+				large="gfx/leaders/SIA/portrait_surayut_kittisak.png"
 			}
 		}
 		country_leader={
-			ideology=Social_Liberalism
-			traits={ retired_officer financial_expert }
-			expire="1948.1.1.12"
+			ideology=Neo_Liberalism
+			expire="1989.1.1.1"
 			id=-1
 		}
 	}
+	
 	SIA_chao_phonphayuhasena={
 		name="Chao Phonphayuhasena"
 		portraits={

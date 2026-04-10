@@ -1904,7 +1904,7 @@ focus_tree = {
         prerequisite = {
             focus = USA_annex_canada
         }
-        completion_reward = {
+        completion_reward = {   
             471 = {
                 add_core_of = USA
             }

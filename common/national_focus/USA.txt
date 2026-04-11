@@ -801,8 +801,8 @@ focus_tree = {
             add_dynamic_modifier = {
                 modifier = USA_increased_global_naval_presence
             }
-             country_event = { id = USA.navy_focus_event }
-    
+            country_event = { id = USA.navy_focus_event }
+
         }
     }
 
@@ -1189,9 +1189,15 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = {
-					has_completed_focus = USA_john_granite
-				}
+                AND = {
+		    		NOT = {
+	    				has_completed_focus = USA_john_granite
+    				}
+                    NOT = {
+                        date < 2060
+                    }
+                    date > 2055                    
+                }
 			}
 		}
     }
@@ -1214,7 +1220,7 @@ focus_tree = {
                 AND = {
                     has_completed_focus = USA_james_c_wallace
                     NOT = {
-                        has_country_flag = USA_completed_coalition_constant
+                        has_country_flag = USA_completed_coalition_constant1
                     }
                 }
 			}
@@ -1267,7 +1273,7 @@ focus_tree = {
         }
         completion_reward = {
             hidden_effect = {
-                set_country_flag = USA_completed_coalition_constant
+                set_country_flag = USA_completed_coalition_constant1
             }
         }
     }
@@ -1299,7 +1305,7 @@ focus_tree = {
             x = 0
             y = -3
             trigger = {
-                has_country_flag = USA_completed_coalition_constant
+                has_country_flag = USA_completed_coalition_constant1
             }
         }
         allow_branch = {
@@ -1310,7 +1316,8 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				has_country_flag = USA_completed_coalition_constant
+				has_country_flag = USA_completed_coalition_constant1
+                date < 2060
 			}
 		}
     }
@@ -1617,9 +1624,13 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				NOT = {
-					has_completed_focus = USA_james_c_wallace
-				}
+                AND = {
+		    		NOT = {
+	    				has_completed_focus = USA_james_c_wallace
+    				}
+                    date < 2060
+                    date > 2055                    
+                }
 			}
 		}
     }
@@ -1730,14 +1741,18 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				has_country_flag = USA_completed_enclave_constant1
+				AND = {
+		    		has_country_flag = USA_completed_enclave_constant1
+                    date < 2060
+                    date > 2055                    
+                }
 			}
 		}
         completion_reward = {
              add_timed_idea = {
             idea = USA_a_new_president_in_office ## Adds one year of +10% party pop stability and one year of extra pp gain
             days = 365
-        }
+            }
         }
     }
 
@@ -1904,7 +1919,7 @@ focus_tree = {
         prerequisite = {
             focus = USA_annex_canada
         }
-        completion_reward = {
+        completion_reward = {   
             471 = {
                 add_core_of = USA
             }
@@ -1985,6 +2000,7 @@ focus_tree = {
                         has_completed_focus = USA_operation_trumpet
                     }
                     has_country_flag = USA_completed_enclave_constant1
+                    date < 2060
                 }
 			}
 		}
@@ -2013,6 +2029,7 @@ focus_tree = {
                         has_completed_focus = USA_operation_sunset
                     }
                     has_country_flag = USA_completed_enclave_constant1
+                    date < 2060
                 }
 			}
 		}
@@ -3257,17 +3274,35 @@ focus_tree = {
             focus = USA_the_commonwealth_still_the_cultural_hub_of_america
         }
     }
+
     focus = {
-        id = USA_president_granite
+        id = USA_2060enclave
         icon = GFX_john_granite_election
         x = -90
-        y = 15
+        y = 4
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+                AND = {
+		    		NOT = {
+	    				has_completed_focus = USA_2060coalition
+    				}
+                    date < 2065
+                    date > 2060                    
+                }
+			}
+		}
     }
 
     focus = {
         id = USA_deciding_our_futurea
         icon = GFX_USA_enclave_generic
-        relative_position_id = USA_president_granite
+        relative_position_id = USA_2060enclave
         x = 0
         y = 1
         cost = 4
@@ -3280,7 +3315,10 @@ focus_tree = {
 					}
 				}
                 AND = {
-                    has_completed_focus = USA_president_granite
+                    has_completed_focus = USA_2060enclave
+                    NOT = {
+                        has_country_flag = USA_completed_enclave_constant2
+                    }
                     NOT = {
                         has_country_flag = USA_completed_enclave_constant1
                     }
@@ -3344,21 +3382,24 @@ focus_tree = {
         }
         completion_reward = {
             mark_focus_tree_layout_dirty = yes
-            set_country_flag = USA_completed_enclave_constant1
+            set_country_flag = USA_completed_enclave_constant2
         }
     }
 
     focus = {
         id = USA_state_of_the_enclave
         icon = GFX_enc_a_nation_remade
-        relative_position_id = USA_president_granite
+        relative_position_id = USA_2060enclave
         x = 0 
         y = 5
         offset = {
             x = 0
             y = -4
             trigger = {
-                has_country_flag = USA_completed_enclave_constant1
+                OR = {
+                    has_country_flag = USA_completed_enclave_constant1
+                    has_country_flag = USA_completed_enclave_constant2
+                }
             }
         }
         allow_branch = {
@@ -3369,7 +3410,10 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				has_country_flag = USA_completed_enclave_constant1
+				OR = {
+                    has_country_flag = USA_completed_enclave_constant1
+                    has_country_flag = USA_completed_enclave_constant2
+                }
 			}
 		}
      }
@@ -3480,7 +3524,7 @@ focus_tree = {
           }
       }
       focus = {
-          id = USA_protests_across_the_country
+          id = USA_protests_across_the_country_e
           icon = GFX_focus_generic_political
           relative_position_id = USA_the_corporations
           x = -1
@@ -3490,23 +3534,23 @@ focus_tree = {
           }
       }
       focus = {
-          id = USA_riot_control
+          id = USA_riot_control_e
           icon = GFX_focus_generic_political
           relative_position_id = USA_protests_across_the_country
           x = 0
           y = 1
           prerequisite = {
-              focus = USA_protests_across_the_country
+              focus = USA_protests_across_the_country_e
           }
       }
       focus = {
-          id = USA_first_enclave_congress
+          id = USA_fifth_enclave_congress
           icon = GFX_focus_generic_political
           relative_position_id = USA_state_of_the_enclave
           x = 0
           y = 4
           prerequisite = {
-              focus = USA_riot_control
+              focus = USA_riot_control_e
           }
           prerequisite = {
               focus = USA_weaponize_the_american_dream
@@ -3521,21 +3565,306 @@ focus_tree = {
       focus = {
           id = USA_and_to_build_a_bridge_to_span_the_tides
           icon = GFX_focus_generic_political
-          relative_position_id = USA_first_enclave_congress
+          relative_position_id = USA_fifth_enclave_congress
           x = -1
           y = 1
           prerequisite = {
-              focus = USA_first_enclave_congress
+              focus = USA_fifth_enclave_congress
           }
       }
       focus = {
           id = USA_men_may_come_and_men_may_go
           icon = GFX_focus_generic_political
-          relative_position_id = USA_first_enclave_congress
+          relative_position_id = USA_fifth_enclave_congress
           x = 1
           y = 1
           prerequisite = {
-              focus = USA_first_enclave_congress
+              focus = USA_fifth_enclave_congress
           }
       }
+
+    focus = {
+        id = USA_2060coalition
+        icon = GFX_focus_generic_political
+        x = -60
+        y = 4
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+                AND = {
+		    		NOT = {
+	    				has_completed_focus = USA_2060enclave
+    				}
+                    date < 2065
+                    date > 2060                    
+                }
+			}
+		}
+    }
+
+    focus = {
+        id = USA_a_coalition_fora
+        icon = GFX_focus_generic_political
+        x = -60
+        y = 5
+        cost = 4
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+                AND = {
+                    has_completed_focus = USA_2060coalition
+                    NOT = {
+                        OR = {
+                            has_country_flag = USA_completed_coalition_constant1
+                            has_country_flag = USA_completed_coalition_constant2
+                        }
+                    }
+                }
+			}
+		}
+    }
+
+    focus = {
+        id = USA_democracy_will_not_comea
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_a_coalition_fora
+        x = -1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_a_coalition_fora
+        }
+        mutually_exclusive = {
+            focus = USA_through_compromise_and_feara
+        }
+    }
+
+    focus = {
+        id = USA_without_contraries_is_no_progressiona
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_a_coalition_fora
+        x = -1
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_democracy_will_not_comea
+        }
+        completion_reward = {
+            mark_focus_tree_layout_dirty = yes
+            set_country_flag = USA_completed_coalition_constant2
+        }
+    }
+
+    focus = {
+        id = USA_through_compromise_and_feara
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_a_coalition_fora
+        x = 1
+        y = 1
+        cost = 4
+        prerequisite = {
+            focus = USA_a_coalition_fora
+        }
+        mutually_exclusive = {
+            focus = USA_democracy_will_not_comea
+        }
+        completion_reward = {
+            hidden_effect = {
+                set_country_flag = USA_completed_coalition_constant1
+            }
+        }
+    }
+
+    focus = {
+        id = USA_tell_all_the_truth_but_tell_it_slanta
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_a_coalition_fora
+        x = 1
+        y = 2
+        cost = 4
+        prerequisite = {
+            focus = USA_through_compromise_and_feara
+        }
+        completion_reward = {
+            set_country_flag = USA_completed_coalition_constant2
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    focus = {
+        id = USA_state_of_the_union
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_2060coalition
+        x = 0
+        y = 1
+        allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+                AND = {
+                    OR = {
+                        has_country_flag = USA_completed_coalition_constant1
+                        has_country_flag = USA_completed_coalition_constant2
+                    }
+                    date > 2060 
+                    date < 2065
+                }
+			}
+		}
+    }
+
+    focus = {
+        id = USA_crisis_abroad
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_state_of_the_union
+        x = -4
+        y = 1
+        prerequisite = {
+            focus = USA_state_of_the_union
+        }
+    }
+
+    focus = {
+        id = USA_meet_with_the_soviets
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_abroad
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = USA_crisis_abroad
+        }
+    }
+
+    focus = {
+        id = USA_growing_tensions_with_the_chinese
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_abroad
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = USA_crisis_abroad
+        }
+    }
+
+    focus = {
+        id = USA_seek_closer_ties_in_europe
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_abroad
+        x = -1 
+        y = 2
+        prerequisite = {
+            focus = USA_meet_with_the_soviets
+        }
+    }
+
+    focus = {
+        id = USA_seek_closer_ties_with_asean
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_abroad
+        x = 1
+        y = 2
+        prerequisite = {
+            focus = USA_growing_tensions_with_the_chinese
+        }
+    }
+
+    focus = {
+        id = USA_friends_across_the_world 
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_abroad
+        x = 0
+        y = 3
+        prerequisite = {
+            focus = USA_seek_closer_ties_in_europe
+        }
+        prerequisite = {
+            focus = USA_seek_closer_ties_with_asean
+        }
+    }
+
+    focus = {
+        id = USA_crisis_at_home
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_state_of_the_union
+        x = 0 
+        y = 1
+        prerequisite = {
+            focus = USA_state_of_the_union
+        }
+    }
+
+    focus = {
+        id = USA_automation_crisis 
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_at_home
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = USA_crisis_at_home
+        } 
+    }
+
+    focus = {
+        id = USA_protests_across_the_country
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_crisis_at_home
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = USA_crisis_at_home
+        }
+    }
+
+    focus = {
+        id = USA_the_second_resource_treaties #depends on whether you were in charge last election cycle and did the resource treaties
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_state_of_the_union
+        x = 3
+        y = 1
+        prerequisite = {
+            focus = USA_state_of_the_union
+        }
+    }
+
+    focus = {
+        id = USA_alaskan_oil_and_fishing_treaty
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_state_of_the_union
+        x = 4
+        y = 2
+        prerequisite = {
+            focus = USA_the_second_resource_treaties
+        }
+    }
+
+    focus = {
+        id = USA_crisis_not_averted #depends on whether you actually succeeded in negotiations
+        icon = GFX_focus_generic_political
+        relative_position_id = USA_state_of_the_union
+        x = 0
+        y = 3
+        prerequisite = {
+            focus = USA_protests_across_the_country
+        }
+        prerequisite = {
+            focus = USA_automation_crisis
+        }
+        prerequisite = {
+            focus = USA_alaskan_oil_and_fishing_treaty
+        }
+    }
 }

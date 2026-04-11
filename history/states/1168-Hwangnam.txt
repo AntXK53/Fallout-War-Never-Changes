@@ -1,0 +1,29 @@
+state = {
+	id = 1168
+	name = "STATE_1168"
+	manpower = 21010
+	state_category = rural
+	history = {
+
+		owner = DPK
+		add_core_of = DPK
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure = 2
+			898 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			19914 5 # Kaesong
+		}	
+		
+	}
+
+	provinces = {
+		1003 4107 7070 7155 11915 15860 19914 
+	}
+
+	local_supplies = 0.0 
+}

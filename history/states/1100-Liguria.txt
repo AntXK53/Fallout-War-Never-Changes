@@ -4,14 +4,14 @@ state={
 	provinces={
 		17990 13587 15619 6788 14641 771 14637 11723 13586 11891 14636 14476
 	}
-	manpower=0
+	manpower=21010
 	buildings_max_level_factor=1
 	state_category = metropolis
 	local_supplies=0
 
 	history = {
 		owner = EUC
-		add_core_of = ITA
 		add_core_of = EUC
+		add_core_of = ITA
 	}
 }

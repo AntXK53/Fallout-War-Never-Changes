@@ -5,15 +5,13 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = SOM
+		owner = EAF
 		buildings = {
 			infrastructure = 1
 
 		}
 		
 		add_core_of = EAF
-		add_core_of = SOM
-
 	}
 
 	provinces={

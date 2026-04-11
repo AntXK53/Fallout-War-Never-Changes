@@ -54,13 +54,20 @@ if = {
 }
 
 set_convoys = 25
-set_popularities = {
-	democratic = 50
-	fascism = 10
-	communism = 20
-	neutrality = 20
-}
 
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 50
+		neutrality = 20
+		communism = 20
+		fascism = 10
+	}
 
 recruit_character = INS_a_t_van_starkenborgh_stachouwer
 recruit_character = INS_sukarno

@@ -1,0 +1,28 @@
+state={
+	id=1174
+	name="STATE_1174"
+	manpower = 13100
+	
+	state_category = rural
+
+	history={
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			12224 = {
+				naval_base = 3
+			}
+		}   
+        victory_points = {
+			4433 5
+		}
+	}
+
+	provinces={
+		1244 4433 7225 7292 10293 12224 19029 19030 19126
+	}
+
+	local_supplies=0.0 
+}

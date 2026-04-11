@@ -1,0 +1,26 @@
+state={
+	id=1187
+	name="STATE_1187"
+	manpower = 21300
+	
+	state_category = city
+
+	history={
+		owner = DPK
+		add_core_of = DPK
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+		}
+		victory_points = {
+			11835 5
+		}
+	}
+
+	provinces={
+		912 3912 6963 9795 9918 11775 11828 11835 11896
+	}
+
+	local_supplies=0.0 
+}

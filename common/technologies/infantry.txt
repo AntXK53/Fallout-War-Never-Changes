@@ -622,17 +622,21 @@ technologies = {
 		}
 	}
 
-	marines3 = {
+    marines3 = {
 
 		marine = {
 			max_organisation = 5
 		}
+		path = {
+			leads_to_tech = marines4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.0
-		start_year = 2068
+		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @2068 }
+			position = { x = 3 y = @1941 }
 		}
 
 		categories = {
@@ -654,6 +658,44 @@ technologies = {
 			}
 		}
 	}
+
+	marines4 = {
+    marine = {
+        max_organisation = 8
+        soft_attack = 0.08
+        hard_attack = 0.05
+        defense = 0.05
+    }
+
+    research_cost = 2.5
+
+    start_year = 1943
+    folder = {
+        name = infantry_folder
+        position = { x = 3 y = @1943 }
+    }
+
+    categories = {
+        marine_tech
+        cat_special_forces_generic
+    }
+
+    ai_will_do = {
+        factor = 0.6
+        modifier = {
+            factor = 3
+            tag = USA
+        }
+        modifier = {
+            factor = 3
+            tag = JAP
+        }
+        modifier = {
+            factor = 4
+            tag = ENG
+			}
+        }
+    }
 
 	tech_mountaineers = {
 
@@ -729,12 +771,16 @@ technologies = {
 		mountaineers = {
 			max_organisation = 5
 		}
+        path = {
+			leads_to_tech = tech_mountaineers4
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2.0
-		start_year = 2068
+		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @2068 }
+			position = { x = 5 y = @1941 }
 		}
 
 		categories = {
@@ -747,7 +793,36 @@ technologies = {
 			factor = 0.7
 		}
 	}
+	
+	tech_mountaineers4 = {
+        mountaineers = {
+           max_organisation = 8
+           soft_attack = 0.08
+           defense = 0.10
+        }
+        path = {
+        leads_to_tech = 0   # end of chain
+        research_cost_coeff = 1
+        }
 
+        research_cost = 2.5
+        start_year = 1943
+        folder = {
+        name = infantry_folder
+        position = { x = 5 y = @1943 }
+        }
+
+    categories = {
+        infantry_tech
+        mountaineers_tech
+        cat_special_forces_generic
+        }
+
+    ai_will_do = {
+        factor = 0.6
+        }
+    }
+	
 	rangers_tech = {
 
 		allow_branch = {

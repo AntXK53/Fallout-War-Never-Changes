@@ -1,0 +1,30 @@
+state = {
+	id = 1020
+	name = "STATE_1020"
+	manpower = 3201309
+	state_category = rural
+
+	history = { 
+
+		owner = SIA
+		add_core_of = SIA
+
+		buildings = {
+
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+		victory_points = {
+			7408 20 # Bangkok
+		}
+
+	}
+
+	provinces = {
+		1427 7408 19090 19111 19136 19153 19154
+	}
+
+	local_supplies = 0.0 
+}

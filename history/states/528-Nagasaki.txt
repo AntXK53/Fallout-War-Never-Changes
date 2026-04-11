@@ -31,11 +31,14 @@ state = {
 		victory_points = {
 			9950 15 # Nagasaki
 		}
+		victory_points = {
+			15861 3 # Saga
+		}
 
 	}
 
 	provinces = {
-		1158 9950 10011 
+		1158 9950 10011 15861 15862 
 	}
 
 	local_supplies = 10.0 

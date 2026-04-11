@@ -4,7 +4,7 @@ state = {
 	name = "STATE_867"
 
 	provinces = {
-		5239 6728 7185 7782 9615 10585 10605 13182 17254 17280
+		5239 7185 10585 13182 17254 17280
 	}
 
 	history = {
@@ -14,11 +14,15 @@ state = {
 
 		buildings = {
 			infrastructure = 1
+			dockyard = 1
+			5239 = {
+				naval_base = 2
+			}
 		}
 
 	}
 
-	manpower = 10000
+	manpower = 12012
 
 	state_category = pastoral
 	buildings_max_level_factor = 1.000

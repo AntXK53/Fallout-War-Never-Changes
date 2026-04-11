@@ -1,0 +1,34 @@
+state = {
+	id = 535
+	name = "STATE_535"
+	manpower = 3871000
+	state_category = rural
+	
+	history = {
+
+		owner = NAS
+		add_core_of = NAS
+		add_core_of = arms_factory
+
+		buildings = {
+
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 2
+			dockyard = 1
+			fuel_silo = 1
+
+		}
+		
+		victory_points = {
+			10128 5
+		}
+
+	}
+
+	provinces = {
+		1454 1478 2139 4441 4462 4487 7481 12311 12326 19935
+	}
+
+	local_supplies = 0.0 
+}

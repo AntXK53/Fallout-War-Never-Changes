@@ -1,0 +1,28 @@
+state={
+	id=1186
+	name="STATE_1186"
+	manpower = 52000
+	
+	state_category = city
+
+	history={
+		owner = KOR
+		add_core_of = KOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+		}
+	    victory_points = {
+			10110 1 # Kōshū
+	    }
+	    victory_points = {
+			11977 1 # Taiden
+	    }
+    }
+
+	provinces={
+		4126 10110 11948 11977 12085 15857       
+	}
+
+	local_supplies=0.0 
+}

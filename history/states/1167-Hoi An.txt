@@ -1,0 +1,25 @@
+state={
+	id=1167
+	name="STATE_1167"
+	manpower = 5020
+	
+	state_category = rural
+
+	history={
+		owner = IND
+		add_core_of = IND
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			victory_points = {
+			10309 2 # Hué
+		    }
+		}
+	}
+
+	provinces={
+		1302 4379 7229 10137 10309
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,23 @@
+state={
+	id=1172
+	name="STATE_1172"
+	manpower = 5020
+	
+	state_category = rural
+
+	history={
+		owner = ASU
+		add_core_of = ASU
+		add_core_of = AST
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		5183 5197 8165
+	}
+
+	local_supplies=0.0 
+}

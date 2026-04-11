@@ -755,7 +755,7 @@
  VICTORY_POINTS_11313:0 "Salihorsk"
  VICTORY_POINTS_9304:0 "Baranavichy"
  VICTORY_POINTS_6593:0 "Zhytomyr"
- VICTORY_POINTS_3457:1 "Khmelnytskyi"
+ VICTORY_POINTS_3457:1 "Proskuriv" #Should not be called Khmelnytskyi until 1954
  VICTORY_POINTS_476:0 "Vinnytsia"
  VICTORY_POINTS_488:0 "Cherkasy"
  VICTORY_POINTS_11683:0 "Mykolaiv"
@@ -1336,3 +1336,5 @@
  VICTORY_POINTS_4027:0 "Oita"
  VICTORY_POINTS_15861:0 "Saga"
  VICTORY_POINTS_12103:0 "Ngerulmud"
+ VICTORY_POINTS_4433:0 "Pattaya"
+ VICTORY_POINTS_5125:0 "Point Samson"

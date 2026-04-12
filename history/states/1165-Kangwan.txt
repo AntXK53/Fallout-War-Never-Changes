@@ -8,6 +8,7 @@ state={
 	history={
 		owner = DPK
 		add_core_of = DPK
+		add_core_of = KOR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5

@@ -1,13 +1,13 @@
 state={
-	id=1178
-	name="STATE_1178"
-	manpower = 10210
+	id=1177
+	name="STATE_1177"
+	manpower = 21200
 	
 	state_category = rural
 
 	history={
-		owner = CAN
-		add_core_of = CAN
+		owner = JAP
+		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -15,7 +15,7 @@ state={
 	}
 
 	provinces={
-		7348 7766 7858 8713 12534 13192 17284
+		993 1113 4100 7016 		         
 	}
 
 	local_supplies=0.0 

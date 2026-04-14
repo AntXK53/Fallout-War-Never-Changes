@@ -1343,11 +1343,3 @@ if = {
 		target = PAN
 		autonomous_state = autonomy_integrated_puppet
 	}
-	set_autonomy = {
-		target = DJI
-		autonomous_state = autonomy_integrated_puppet
-	}
-
-give_guarantee = CHI
-give_guarantee = KOR
-give_guarantee = JAP

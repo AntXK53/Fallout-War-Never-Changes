@@ -111,14 +111,14 @@ USA_special_weapons_initiative: "Special Weapons Initiative"
  USA_great_northern_commonwealth_development_of_missile_silos: "Missile Silo Development"
  USA_great_northern_commonwealth_department_of_agriculture_deals: "Department of Agriculture Deals"
 
- # California Commonwealth
- USA_california_commonwealth: "The California Commonwealth"
+ # Southwest Commonwealth
+ USA_california_commonwealth: "The Southwest Commonwealth"
  USA_california_las_vegas: "Las Vegas Expansion"
  USA_california_pacific_fighting_grounds: "Pacific Training Grounds"
  USA_california_hawaii_mobilized: "Mobilize Hawaii"
 
- # Cascadian Commonwealth
- USA_cascadian_commonwealth: "The Cascadian Commonwealth"
+ # Northwest Commonwealth
+ USA_cascadian_commonwealth: "The Northwest Commonwealth"
  USA_cascadian_pacific_fighting_grounds: "Cascadian Training Grounds"
  USA_cascadian_oregon_shipbuilding_initiative: "Oregon Shipbuilding Initiative"
 
@@ -126,27 +126,31 @@ USA_special_weapons_initiative: "Special Weapons Initiative"
  USA_great_plains_commonwealth: "The Great Plains Commonwealth"
  USA_great_plains_commonwealth_texlahoma_challenges_our_agriculture: "Texlahoma Agricultural Challenges"
 
- # Texlahoma Commonwealth
- USA_texlahoma_commonwealth: "The Texlahoma Commonwealth"
+ # Texas Commonwealth
+ USA_texlahoma_commonwealth: "The Texas Commonwealth"
  USA_texlahoma_commonwealth_attract_agriculture_and_corporations: "Attract Agriculture and Corporations"
  USA_texlahoma_commonwealth_subsidize_the_oil_industry: "Subsidize the Oil Industry"
-USA_appalachian_commonwealth: "The Appalachian Commonwealth"
+ USA_appalachian_commonwealth: "The East Central Commonwealth"
  USA_appalachia_attract_resource_mining_industry: "Attract Mining Industry"
  USA_appalachia_take_down_the_corporation: "Take Down the Corporations"
 
+# Gulf Commonwealth
  USA_gulf_commonwealth: "The Gulf Commonwealth"
  USA_gulf_commonwealth_cuban_scare: "The Cuban Scare"
  USA_gulf_commonwealth_secure_the_gulf: "Secure the Gulf"
 
- USA_south_east_commonwealth: "The Southeastern Commonwealth"
+# Southeast Commonwealth
+ USA_south_east_commonwealth: "The Southeast Commonwealth"
  USA_south_east_commonwealth_atlantic_fighting_grounds: "Atlantic Training Grounds"
  USA_south_east_commonwealth_revive_dockyards: "Revive the Dockyards"
 
- USA_columbian_commonwealth: "The Columbian Commonwealth"
+# Columbia Commonwealth
+ USA_columbian_commonwealth: "The Columbia Commonwealth"
  USA_columbian_commonwealth_unique_cocktail_of_military_corporation_and_government: "Military-Corporate Government"
  USA_columbian_commonwealth_dc_martial_law: "Martial Law in D.C."
 
- USA_four_corners_commonwealth: "The Four Corners Commonwealth"
+# Four States Commonwealth
+ USA_four_corners_commonwealth: "The Four States Commonwealth"
  USA_four_corners_joint_development_of_the_border_with_mexico: "Joint Border Development"
  USA_four_corners_commonwealth_vaultzero: "Vault Zero"
  USA_four_corners_commonwealth_invite_vaulttec_and_military: "Invite Vault-Tec and the Military"

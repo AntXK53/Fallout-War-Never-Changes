@@ -2,23 +2,22 @@ state={
 	id=757
 	name="STATE_757"
 	provinces={
-		1991 2010 2014 2093 2098 4900 5033 5094 8121 12784 12807 15524 17014 17029 17034 19439 19440 19623 19627 19688 19711 19712 
+		684 956 6716 9660 15978 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = PRC
+		owner = HUN
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 1
 		}
 		victory_points = {
-			5033 5 
+			9660 20 
 		}
-		add_core_of = PRC
-		add_core_of = TIB
+		add_core_of = HUN
 	}
 
 	local_supplies=0.0 

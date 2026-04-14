@@ -145,8 +145,8 @@ IRE = {
 	color_ui = rgb { 92 175 63 }
 }
 HUN = {
-	color = rgb { 0 109 44 }
-	color_ui = rgb { 0 109 44 }
+	color = rgb { 5 130 56 }
+	color_ui = rgb { 5 130 56 }
 }
 AFG = {
 	color = rgb { 128 109 108 }
@@ -177,8 +177,8 @@ CAN = {
 	color_ui = rgb { 145 76 67 }
 }
 CHI = {
-	color = rgb { 14 82 150 }
-	color_ui = rgb { 14 82 150 }
+	color = rgb { 24 63 186 }
+	color_ui = rgb { 24 63 186 }
 }
 CHL = {
 	color = rgb { 24 63 186 }
@@ -221,8 +221,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = rgb { 224 178 178 }
-	color_ui = rgb { 224 178 178 }
+	color = rgb { 255 214 201 }
+	color_ui = rgb { 255 214 201 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -389,8 +389,8 @@ CRO = {
 	color_ui = rgb { 173 45 169 }
 }
 PRC = {
-	color = rgb { 156 3 3 }
-	color_ui = rgb { 156 3 3 }
+	color = rgb { 179 16 16 }
+	color_ui = rgb { 179 16 16 }
 }
 GXC = {
 	color = rgb { 71 113 97 }
@@ -564,16 +564,16 @@ WGR = {
         color_ui = rgb { 225 255 255 }
 }
 DDR = {
-        color = rgb { 112 48 48 }
-        color_ui = rgb { 112 48 48 }
+        color = rgb { 150 62 62 }
+        color_ui = rgb { 150 62 62 }
 }
 DPK = {
-	color = rgb { 145 44 5 }
-	color_ui = rgb { 145 44 5 }	
+	color = rgb { 173 51 10 }
+	color_ui = rgb { 173 51 10 }	
 }
 KOR = {
-	color = rgb { 55 129 153 }
-	color_ui = rgb { 55 129 153 }	
+	color = rgb { 78 164 191 }
+	color_ui = rgb { 78 164 191 }	
 }
 ISR = {
 	color = rgb { 152 130 191 }

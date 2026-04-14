@@ -10,21 +10,9 @@ state={
 	}
 
 	history={
-		owner = PRC
-		add_core_of = PRC
-		1936.1.1 = {
-			IF = {
-				limit = {
-					 has_dlc = "No Compromise, No Surrender" 
-				}
-				GDC = { transfer_state = PREV }
-				add_core_of = GDC
-				remove_core_of = PRC
-			}
-		}	
-		add_core_of = PRC
-		add_core_of = PRC
-		
+		owner = IND
+		add_core_of = IND
+		add_core_of = LAO		
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -38,34 +26,10 @@ state={
 
 		}
 
-		victory_points = {
-			1047 20 # Guangzhou
-		}
-
-		victory_points = {
-			8802 10 # Jiangmen
-		}
-
-                victory_points = {
-			12077 1 # Maoming
-		}
-
-		1938.10.25 = {
-			
-			remove_core_of = PRC
-			owner = PRC
-			
-			JAP = {
-				# set_province_controller = 1047
-				# set_province_controller = 7152
-				# set_province_controller = 11938
-				# set_province_controller = 11941
-			} 			
-		}
 	}
 
 	provinces={
-		1047 1087 1131 1187 4092 5783 7039 7152 8802 9963 10105 11938 11941 12077 
+		1362 1390 1520 4260 4339 4539 7218 9961 10195 10238 10326 12332 19017 
 	}
 
 	local_supplies=1.0 

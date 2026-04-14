@@ -68,22 +68,16 @@ set_power_balance = {
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 # DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
+
 	set_autonomy = {
 		target = DPK
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
 		target = MON
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 	}
         set_autonomy = {
 		target = IND
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_integrated_puppet
 	}

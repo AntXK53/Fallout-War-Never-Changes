@@ -1,2 +1,13 @@
 NDefines.NGame.START_DATE = "2056.1.1.12"
 NDefines.NGame.END_DATE = "2080.1.1.12"
+
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_STATE_R = 255
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_STATE_G = 255
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_STATE_B = 255
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_PROVINCE_R = 1.58
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_PROVINCE_G = 0.5
+	NDefines_Graphics.NGraphics.BORDER_COLOR_SELECTION_PROVINCE_B = 0.5
+	
+	NDefines_Graphics.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.85
+	NDefines_Graphics.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.6
+	NDefines_Graphics.NGraphics.COUNTRY_COLOR_HUE_MODIFIER = 0.0 -- 0.0

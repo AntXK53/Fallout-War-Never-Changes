@@ -35,3 +35,12 @@ KRC = "countries/Karachaevo-Cherkessia.txt"
 ING = "countries/Ingushetia.txt"
 RAD = "countries/Radiations.txt"
 
+#CHINA
+
+CHN = "countries/Revanchist China.txt"
+TBT = "countries/CCP Tibet.txt"
+XIN = "countries/CCP Xinjiang.txt"
+KUN = "countries/Kunlun.txt"
+GZH = "countries/Guizhou.txt"
+QIN = "countries/Restorationist China.txt"
+INM = "countries/Inner Mongolia.txt"

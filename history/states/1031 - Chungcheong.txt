@@ -1,0 +1,49 @@
+state = {
+
+	id = 1031
+	name = "STATE_1031"
+	manpower = 3761368
+	
+	state_category = rural
+
+	resources = {
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+		add_core_of = DPK
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 
+			7175 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			10115 1 # Seishū
+		}
+
+		victory_points = {
+			11977 1 # Taiden
+		}
+
+		victory_points = {
+			4126 1 # Zenshū
+		}
+
+		victory_points = {
+			10110 1 # Kōshū
+		}
+
+	}
+
+	provinces = {
+		1100 7175 7204 10115 11992 15858 15859 19552 19879 19904 
+	}
+
+	local_supplies = 0.0 
+}

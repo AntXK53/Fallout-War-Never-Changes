@@ -12,7 +12,7 @@ state={
 	}
 
 	history={
-		owner = EUC
+		owner = NOR
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -34,7 +34,6 @@ state={
 			122 5
 		}
 		add_core_of = NOR
-		add_core_of = EUC
 	}
 
 	provinces={

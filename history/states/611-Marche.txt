@@ -1,0 +1,35 @@
+state = {
+	id = 611
+	name = "STATE_611" # South Chahar
+	manpower = 1470000
+	
+	state_category = pastoral
+
+	history = {
+
+		owner = EUC
+		add_core_of = EUC
+		add_core_of = ITA
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				add_core_of = HBC
+			}
+		}
+
+		buildings = {
+			infrastructure = 2 #was 3
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces = {
+		967 6926 11861 
+	}
+
+	local_supplies = 0.0 
+}

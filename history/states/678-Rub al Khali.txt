@@ -17,7 +17,6 @@ state={
 		2064 12768 14366 14389 17963 17971 17975 
 	}
 	manpower=42
-	impassable = yes
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

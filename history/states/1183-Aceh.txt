@@ -8,6 +8,7 @@ state={
 	history={
 		owner = INS
 		add_core_of = INS
+		set_demilitarized_zone = yes
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 5

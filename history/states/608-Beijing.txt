@@ -35,22 +35,10 @@ state={
                     }
                 }
 			}
-
-			10068 = {
-				naval_base = 2
-			}
 		}
 
 		victory_points = {
 			9843 40 # Beijing 
-		}
-
-		victory_points = {
-			10068 20 # Tianjin
-		}
-
-		victory_points = {
-			12026 10 # Baoding
 		}
 
 		1938.10.25 = {
@@ -60,7 +48,7 @@ state={
 	}
 
 	provinces={
-		1134 4137 4140 6828 9843 9969 10068 11761 12026 16908 16916 19772 19808 
+		4140 9843 11761 19772 19808 
 	}
 
 	local_supplies=0.0 

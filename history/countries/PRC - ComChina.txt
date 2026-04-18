@@ -15,38 +15,6 @@ recruit_character = PRC_mao_zedong
 recruit_character = PRC_Cheng
 recruit_character = PRC_Li_Ming
 
-# DIPLOMACY
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-
-	recruit_character = PRC_dr._min_
-set_politics = {
-		ruling_party = communism
-		last_election = "2051.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		socialism = 15
-		communism = 55
-		ultranationalism = 30
-	}
-MON = {
-    add_popularity = { ideology = communism popularity = 0.8 }
-    recruit_character = PRC_dr._min_
-set_politics = {
-		ruling_party = communism
-		last_election = "2052.3.5"
-		election_frequency = 48
-		elections_allowed = no
-    }
-}
-
 add_ideas = {
 	closed_economy
 	limited_conscription
@@ -71,10 +39,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 	set_autonomy = {
 		target = DPK
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = MON
 		autonomous_state = autonomy_integrated_puppet
 	}
         set_autonomy = {

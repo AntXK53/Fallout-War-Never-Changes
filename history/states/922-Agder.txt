@@ -13,9 +13,8 @@ state = {
 			9296 3 
 		}
 		
-		owner = EUC
+		owner = NOR
 		add_core_of = NOR
-		add_core_of = EUC
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

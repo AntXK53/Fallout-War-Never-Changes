@@ -1,0 +1,55 @@
+state = {
+	id = 1044
+	name = "STATE_1044"
+	manpower = 1010300
+	state_category = pastoral
+
+	history = {
+
+		owner = VIN
+		add_core_of = IND
+		add_core_of = VIN
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			4401 15 # Saigon
+		}
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				PRC = { transfer_state = PREV }
+				add_core_of = PRC
+				remove_core_of = PRC
+			}
+		}
+
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+				}
+				PRC = {
+					transfer_state = PREV
+				}
+			}
+		}
+
+	}
+
+	provinces = {
+		4401 7238 7347 10261 12232 19067 19091 19097 19140 
+	}
+	
+	buildings_max_level_factor = 1.000
+	
+
+	local_supplies = 0.0 
+}

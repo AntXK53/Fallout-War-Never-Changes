@@ -180,9 +180,13 @@ CHI = {
 	color = rgb { 24 63 186 }
 	color_ui = rgb { 24 63 186 }
 }
+FOR = {
+	color = rgb { 11 156 11 }
+	color_ui = rgb { 11 156 11 }
+}
 CHL = {
-	color = rgb { 24 63 186 }
-	color_ui = rgb { 24 63 186 }
+	color = rgb { 179 123 64 }
+	color_ui = rgb { 179 123 64 }
 }
 COL = {
 	color = rgb { 203 197 81 }
@@ -291,14 +295,6 @@ SIA = {
 BRM = {
 	color = rgb { 138 150 86 }
 	color_ui = rgb { 138 150 86 }
-}
-SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
-TIB = {
-	color = rgb { 201 105 32 }
-	color_ui = rgb { 201 105 32 }
 }
 URG = {
 	color = rgb { 57 168 213 }
@@ -1409,4 +1405,43 @@ FSM = {
 RAD = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
+}
+
+#CHINA
+
+CHN = {
+	color = rgb { 120 41 41 }
+	color_ui = rgb { 120 41 41 }
+}
+TBT = {
+	color = rgb { 166 31 31 }
+	color_ui = rgb { 166 31 31 }
+}
+XIN = {
+	color = rgb { 145 16 16 }
+	color_ui = rgb { 145 16 16 }
+}
+KUN = {
+	color = rgb { 125 15 15 }
+	color_ui = rgb { 125 15 15 }
+}
+GZH = {
+	color = rgb { 184 81 81 }
+	color_ui = rgb { 184 81 81 }
+}
+QIN = {
+	color = rgb { 153 124 55 }
+	color_ui = rgb { 153 124 55 }
+}
+INM = {
+	color = rgb { 148 71 71 }
+	color_ui = rgb { 148 71 71 }
+}
+SIK = {
+	color = rgb { 61 170 191 }
+	color_ui = rgb { 61 170 191 }
+}
+TIB = {
+	color = rgb { 201 105 32 }
+	color_ui = rgb { 201 105 32 }
 }

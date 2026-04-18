@@ -5,9 +5,8 @@ state={
 	state_category = tiny_island
 	
 	history= {
-		owner = EUC
+		owner = NOR
 		add_core_of = NOR
-		add_core_of = EUC
 		buildings = {
 			16826 = {
 				naval_base = 1

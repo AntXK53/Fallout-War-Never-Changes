@@ -1,0 +1,24 @@
+state = {
+	id = 1039
+	name = "STATE_1039" # South Chahar
+	manpower = 367500
+	
+	state_category = pastoral
+
+	history = {
+
+		owner = UAR
+		add_core_of = UAR
+		add_core_of = SYR
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces = {
+		1606 2013 6883 14443 16273 16274 16278 16279 16280 
+	}
+
+	local_supplies = 0.0 
+}

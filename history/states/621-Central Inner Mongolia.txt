@@ -1,0 +1,49 @@
+state = {
+	id = 621
+	name = "STATE_621"
+	manpower = 1582100
+	state_category = pastoral
+
+	resources = {
+		coal = 7 #initial distribution
+	}
+
+	history = {
+
+		owner = PRC
+		add_core_of = PRC
+
+		victory_points = {
+			7158 1 # Ulanqab 
+		}
+
+		victory_points = {
+			7631 1 # Kweisui/Hohhot 
+		}
+
+		victory_points = {
+			12331 1 # Pailingmiao
+		}
+
+		victory_points = {
+			3427 1 # Ordos
+		}
+
+		victory_points = {
+			10854 1 # Wuhai
+		}
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces = {
+		1959 2087 3427 4525 4960 6447 7048 7631 8976 10424 10451 10629 10854 12331 12403 12609 12706 12880 14670 14948 15196 16664 16848 16863 17214 19415 19502 19541 19563 19586 19595 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 4.0 
+}

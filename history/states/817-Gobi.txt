@@ -6,13 +6,14 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = PRC
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12612 1 #Sainshand
 		}
+	    add_core_of = PRC
 		add_core_of = MON
 	}
 	manpower=11000

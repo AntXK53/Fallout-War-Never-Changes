@@ -1,0 +1,30 @@
+state = {
+	id = 751
+	name = "STATE_751"
+	
+	manpower = 300000
+	buildings_max_level_factor = 1.000
+	state_category = pastoral
+
+	history = {
+
+		owner = UAR
+		add_core_of = UAR
+		add_core_of = PAL
+		add_core_of = ISR
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			4206 10 # Tel Aviv
+		}
+
+	}
+
+	provinces = {
+		294 1201 4088 4206 7107 15803 18585 
+	}
+	local_supplies = 1.0 
+}

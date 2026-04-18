@@ -1,0 +1,31 @@
+state = {
+	id = 807
+	name = "STATE_807"
+	manpower = 2030104
+	
+	state_category = city
+
+	history = {
+
+		owner = SOV
+		add_core_of = SOV
+
+		victory_points = {
+			6332 10 # Kaliningrad
+		}
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 2
+		}
+		
+	}
+
+	provinces = {
+		6332 
+	}
+
+	local_supplies = 0.0 
+}

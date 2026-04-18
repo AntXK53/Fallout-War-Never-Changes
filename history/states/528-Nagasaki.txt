@@ -1,7 +1,7 @@
 state = {
 	id = 528
-	name = "STATE_528" # North Kyushu
-	manpower = 6046000 # was 9069000
+	name = "STATE_528"
+	manpower = 2920300
 
 	state_category = city # was large_city
 
@@ -27,18 +27,35 @@ state = {
 			}
 
 		}
-
-		victory_points = {
-			9950 15 # Nagasaki
+	    victory_points = {
+			1020 5
+		}
+        victory_points = {
+			1025 10
 		}
 		victory_points = {
-			15861 3 # Saga
+			4027 3
+		}
+		victory_points = {
+			4102 15
+		}
+		victory_points = {
+			7110 10
+		}
+		victory_points = {
+			9950 15
+		}
+		victory_points = {
+			11925 5
+		}
+		victory_points = {
+			15861 3
 		}
 
 	}
 
 	provinces = {
-		1158 9950 10011 15861 15862 
+		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 9950 10011 10020 10092 11925 11949 12006 12032 15861 15862 15863 15864 
 	}
 
 	local_supplies = 10.0 

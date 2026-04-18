@@ -1,0 +1,30 @@
+state = {
+	id = 1043
+	name = "STATE_1043"
+	manpower = 3500
+	state_category = pastoral
+
+	resources = {
+		coal = 1 #initial distribution
+	}
+
+	history = {
+
+		owner = EUC
+		add_core_of = EUC
+		add_core_of = ITA
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces = {
+		3885 14653 14654 14655 
+	}
+
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0
+}

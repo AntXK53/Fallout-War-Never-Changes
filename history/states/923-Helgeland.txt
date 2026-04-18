@@ -11,10 +11,9 @@ state = {
 	}
 
 	history = {
-		owner = EUC
-		add_core_of = SMI
+		owner = NOR
 		add_core_of = NOR
-		add_core_of = EUC
+		add_core_of = SMI
 		
 		victory_points = {
 			3048 1

@@ -22,22 +22,29 @@ state = {
 		victory_points = {
 			11519 10 # Liege
 		}
-
+		
+		victory_points = {
+			9418 1 # Arlons
+		}
 		victory_points = {
 			9536 3 # Charleroi
 		}
+		
 
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 4
 			air_base = 1
+
+			# Gileppe Dam
+			3488 = { dam = 1 }
 		}
 		
 	}
 
 	provinces = {
-		3516 9536 11519 13081 18114
+		3488 3516 6537 9418 9444 9536 11407 11519 13081 18114 
 	}
 
 	local_supplies = 14.0 

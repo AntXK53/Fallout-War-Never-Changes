@@ -15,12 +15,8 @@ state = {
 		add_core_of = BEL
 		add_core_of = EUC
 
-		victory_points = { 
-			6598 30 
-		}
-
-		victory_points = { 
-			13068 1 
+	    victory_points = { 
+			516 30 
 		}
 
 		buildings = {
@@ -36,7 +32,7 @@ state = {
 	}
 
 	provinces = {
-		6560 6598 9574 11419 13068 18118 
+		516 
 	}
 
 	local_supplies = 0.0 

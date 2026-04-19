@@ -2,7 +2,7 @@ state={
 	id=1099
 	name="STATE_1099"
 	provinces={
-		14690 16192 16193 19369 
+		1714 1805 4810 4881 5826 5838 7088 7772 10572 10598 11607 12518 12650 13398 13402 13403 13405 13406 13411 
 	}
 	manpower=0
 	buildings_max_level_factor=1
@@ -12,7 +12,8 @@ state={
 
 	history=
 		{
-		owner = TUR
-		add_core_of = CYP
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = FER
 	}
 }

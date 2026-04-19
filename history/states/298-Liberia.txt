@@ -11,7 +11,7 @@ state=
 	
 
 	history= {
-		owner = WAU
+		owner = LIB
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -24,7 +24,6 @@ state=
 			7959 3
 		}
 		add_core_of = LIB
-		add_core_of = WAU
 	}
 	provinces={
 		4580 6759 7959 8006 13397 13400 13401 13404 13407 15289 15290 15291 

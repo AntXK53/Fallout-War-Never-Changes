@@ -27,9 +27,7 @@ state={
 			}
 		}
 		add_core_of = YUG
-		#add_claim_by = EUC #added by focus
 		add_core_of = CRO
-		set_demilitarized_zone = yes
 	}
 
 	provinces={

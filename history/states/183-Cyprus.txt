@@ -10,7 +10,7 @@ state= {
 
 	history=
 	{
-		owner = CYP
+		owner = TUR
 		add_core_of = CYP
 		victory_points = {
 			11984 5
@@ -28,7 +28,7 @@ state= {
 
 	}
 	provinces = {
-		7193 11984 14688 14689 16191 14691
+		7193 11984 14688 14689 14690 14691 16191 16192 16193 19369 
 	}
 
 	local_supplies=0.0 

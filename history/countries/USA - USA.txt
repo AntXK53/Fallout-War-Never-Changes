@@ -1339,7 +1339,3 @@ if = {
 		target = MEX
 		autonomous_state = autonomy_integrated_puppet
 	}
-	set_autonomy = {
-		target = PAN
-		autonomous_state = autonomy_integrated_puppet
-	}

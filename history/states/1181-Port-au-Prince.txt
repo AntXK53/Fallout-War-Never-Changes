@@ -6,19 +6,19 @@ state={
 	state_category = rural
 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = HAI
+		add_core_of = HAI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
 		}
 		victory_points = {
-			9807 5
+			4641 5 
 		}
 	}
 
 	provinces={
-		1165 3848 6870 9807 11847 12056    
+		1635 4641 15641 15642 15644 
 	}
 
 	local_supplies=0.0 

@@ -17,14 +17,37 @@ state = {
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
-			}
 			victory_points = {
 			10128 5
 		    }
 			victory_points = {
 			10032 5
+			}
+			victory_points = {
+			7187 5
+			}
+			victory_points = {
+			15881 5    
+			}
+			victory_points = {
+			10125 20
+		    }
+		    victory_points = {
+			7087 10
+		    }
+            victory_points = {
+			12097 5
+		    }
+			victory_points = {
+			1117 10 # Niigata
+		    }
+            victory_points = {
+			10128 1 # Toyama
+		    }
+            victory_points = {
+			10015 10 # Nagano
+		    }
 		}
-
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3
@@ -35,7 +58,7 @@ state = {
 	}
 
 	provinces = {
-		998 7102 10128 10032 15879 15880	 
+		998 4069 4172 7087 7102 7157 7187 7217 10015 10032 10100 10125 10128 12007 12072 12097 15877 15878 15879 15880 15881 
 	}
 
 	local_supplies = 9.0 

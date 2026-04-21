@@ -1,0 +1,24 @@
+state = {
+	id = 1019
+	name = "STATE_1019"
+	manpower = 10000
+	state_category = town
+
+	history = {
+
+		owner = CUB
+		add_core_of = CUB
+
+		buildings = {
+		
+			arms_factory = 1
+			industrial_complex = 1
+			infrastructure = 2
+		}
+	}
+	provinces = {
+		4476 7451 10374 
+	}
+
+	local_supplies = 9.0 
+}

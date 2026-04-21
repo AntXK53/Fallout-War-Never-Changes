@@ -9,7 +9,6 @@ state = {
 	state_category = rural
 	history = {
 		owner = VIN
-		add_core_of = IND
 		add_core_of = VIN
 
 		buildings = {

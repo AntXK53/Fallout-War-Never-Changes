@@ -8,6 +8,7 @@ state = {
 
 		owner = NAS
 		add_core_of = NAS
+		add_core_of = AST
 		add_core_of = arms_factory
 
 		buildings = {

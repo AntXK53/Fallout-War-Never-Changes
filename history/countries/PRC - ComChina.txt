@@ -35,6 +35,19 @@ set_power_balance = {
 
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
+set_politics = {
+	ruling_party = communism
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 22
+	neutrality = 13
+	communism = 63
+	fascism = 2
+}
+
 # DIPLOMACY
 
 	set_autonomy = {

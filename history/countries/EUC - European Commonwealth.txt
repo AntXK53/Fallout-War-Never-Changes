@@ -38,3 +38,14 @@ add_ideas = {
 	euc_breaking_union_1
 
 }
+
+# DIPLOMACY
+
+	set_autonomy = {
+		target = GRN
+		autonomous_state = autonomy_colony
+	}
+        set_autonomy = {
+		target = ICE
+		autonomous_state = autonomy_protectorate
+	}

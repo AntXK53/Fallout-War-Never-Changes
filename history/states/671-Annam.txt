@@ -16,7 +16,6 @@ state = {
 
 		owner = IND
 		add_core_of = VIN
-		add_core_of = IND
 		
 		victory_points = {
 			4075 20 # Hanoi 

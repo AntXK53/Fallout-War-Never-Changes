@@ -14,7 +14,6 @@ state = {
 	history = {
 
 		owner = IND
-		add_core_of = IND
 		add_core_of = VIN
 
 		buildings = {

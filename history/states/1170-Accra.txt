@@ -6,25 +6,26 @@ state = {
 
 	history = {
 
-		owner = JAP
-		add_core_of = JAP
+		owner = WAU
+		add_core_of = WAU
+		add_core_of = GHA
 
 		buildings = {
 			infrastructure = 4 #was: 7
+			10862 = {
+				naval_base = 2
+			}
 			arms_factory = 1
 			dockyard = 1
 			industrial_complex = 2
 			victory_points = {
-			7187 5
+			10862 2 # Accra 	
 			}
-			victory_points = {
-			15881 5    
-			}		
 		}
 	}
 
 	provinces = {
-		4069 4172 7217 7187 10015 10100 12072 15877 15881
+		10862 12742 13412 15281 15423 
 	}
 
 	local_supplies = 0.0 

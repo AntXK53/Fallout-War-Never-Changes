@@ -10,8 +10,9 @@ state = {
 
 	history = {
 
-		owner = JAP
-		add_core_of = JAP
+		owner = UAR
+		add_core_of = UAR
+		add_core_of = IRQ
 
 		buildings = {
 			infrastructure = 2
@@ -19,23 +20,10 @@ state = {
 			industrial_complex = 2
 			fuel_silo = 1
 		}
-		
-		victory_points = {
-			1117 10 # Niigata
-		}
-
-		victory_points = {
-			10128 1 # Toyama
-		}
-
-		victory_points = {
-			10015 10 # Nagano
-		}
-
 	}
 
 	provinces = {
-		1117 9952 11930 11989 12007 
+		1600 1938 10804 12372 16284 16285 16289 16308 18478 
 	}
 
 	local_supplies = 0.0 

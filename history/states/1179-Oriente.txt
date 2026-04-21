@@ -3,22 +3,22 @@ state={
 	name="STATE_1179"
 	manpower = 52000
 	
-	state_category = city
+	state_category = rural
 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = CUB
+		add_core_of = CUB
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
 		}
 		victory_points = {
-			4118 5
+			7590 1
 		}
 	}
 
 	provinces={
-		1024 4118 4122 15883    
+		1550 7546 7590 12347 
 	}
 
 	local_supplies=0.0 

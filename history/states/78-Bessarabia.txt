@@ -2,7 +2,7 @@ state=
 {
 	id=78
 	name="STATE_78"
-	manpower = 3900950
+	manpower = 1849823
 	
 	state_category = town
 	
@@ -19,9 +19,7 @@ state=
 		add_core_of = SOV
 		add_core_of = MOL
 	}
-	provinces=
-	{
-414 565 3577 3707 3724 6600 11686 11705 14295 14346 15984	}
+	provinces= { 565 3707 14346 15984 }
 
 	local_supplies=4.0 
 }

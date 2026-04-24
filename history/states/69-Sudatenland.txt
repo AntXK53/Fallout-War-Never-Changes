@@ -1,7 +1,7 @@
 state = {
 	id = 69
 	name = "STATE_69"
-	manpower = 2476250 # was 2830000
+	manpower = 1450020 # was 2830000
 	
 	state_category = town
 	
@@ -10,10 +10,6 @@ state = {
 	}
 	
 	history = {
-
-		victory_points = {
-			3585 3
-		}
 
 		victory_points = {
 			11432 1
@@ -28,8 +24,8 @@ state = {
 
 		buildings = {
 
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 1
 			anti_air_building = 1
 
 		}
@@ -37,7 +33,7 @@ state = {
 	}
 
 	provinces = {
-		424 469 3418 3585 6470 9555 11401 11414 11432 	
+		469 3418 11401 11432 
 	}
 	local_supplies = 0.0 
 

@@ -1,29 +1,22 @@
 state={
 	id=1128
 	name="STATE_1128"
-	manpower = 402302
+	manpower = 1200504
 	
 	state_category = rural
 
 	history={
 		owner = SOV
 		add_core_of = SOV
-		victory_points = {
-			957 15
-		}
+		add_core_of = MOL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			957 = {
-				naval_base = 8
-				coastal_bunker = 3
-				naval_supply_hub = 1
-			}
 		}
 	}
 
 	provinces={
-		957
+		414 3577 6600 11705 14295 
 	}
 
 	local_supplies=0.0 

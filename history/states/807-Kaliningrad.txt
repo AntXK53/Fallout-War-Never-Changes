@@ -1,30 +1,24 @@
 state = {
 	id = 807
 	name = "STATE_807"
-	manpower = 2030104
+	manpower = 850623
 	
-	state_category = city
+	state_category = rural
 
 	history = {
 
 		owner = SOV
 		add_core_of = SOV
-
-		victory_points = {
-			6332 10 # Kaliningrad
-		}
+		add_core_of = MOL
 
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 1
-			air_base = 2
+			infrastructure = 2 #was: 6
 		}
 		
 	}
 
 	provinces = {
-		6332 
+		3724 11686 
 	}
 
 	local_supplies = 0.0 

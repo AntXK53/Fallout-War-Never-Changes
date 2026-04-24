@@ -1,27 +1,23 @@
 state = {
 	id = 980
 	name = "STATE_980"
-	manpower = 338130
-	resources={
-		steel=9 # was: 0
-		coal = 7 # initial distribution / 84 total
-	}
+	manpower = 810010
 	
-	state_category = rural
+	state_category = town
 
 	history = {
 
-		owner = SOV
-		add_core_of = SOV
-		add_core_of = FER
+		owner = CZE
+		add_core_of = CZE
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 1
 	    }
 	}
 
 	provinces = {
-		675 1724 1772 1807 3664 4246 4290 4701 4805 4844 7616 7672 7748 7871 9659 10577 10590 10722 12192 12261 12263 12559 12569 12638 12678 15502 19485 19748 
+		445 494 583 11414 
 	}
 
 	local_supplies = 14.0 

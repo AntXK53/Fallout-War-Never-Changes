@@ -1,13 +1,13 @@
 state = {
 	id = 74
 	name = "STATE_74"
-	manpower = 820000
+	manpower = 1280020
 	
 	resources = {
 		coal = 12 # initial distribution / 60 total
 	}
 
-	state_category = rural
+	state_category = town
 	
 	history = {
 		
@@ -15,7 +15,7 @@ state = {
 		add_core_of = CZE
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			arms_factory = 1
 		}
 
@@ -30,7 +30,7 @@ state = {
 	}
 
 	provinces = {
-		421 3414 6485 15838 
+		421 3414 3583 6485 9567 15838 
  	}
 
 	local_supplies = 2.0 

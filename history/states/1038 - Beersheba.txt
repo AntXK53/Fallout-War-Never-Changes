@@ -16,16 +16,6 @@ state = {
 		add_core_of = ISR
 		add_core_of = PAL
 
-		1936.1.1 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				transfer_state_to = SND
-				add_core_of = SND
-			}
-		}
-
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

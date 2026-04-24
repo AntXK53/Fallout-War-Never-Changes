@@ -6,7 +6,7 @@ state = {
 
 	manpower = 1230500
 	
-	state_category = city
+	state_category = large_town
 	
 	resources = {
 		tungsten = 1 # was: 2
@@ -18,17 +18,7 @@ state = {
 		
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 2
-			air_base = 3
-		}
-
-		victory_points = {
-			9692 10 # Bratislava
-		}
-
-		victory_points = {
-			11539 5 # Zilina
+			industrial_complex = 2
 		}
 
 		victory_points = {
@@ -41,7 +31,7 @@ state = {
 	}
 
 	provinces = {
-		541 3484 3537 9539 9551 9692 11522 11539 13129 15669 18151 
+		541 3484 3716 9539 11522 11679 13129 18151 
 	}
 
 	local_supplies = 3.0 

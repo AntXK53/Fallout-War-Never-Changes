@@ -2,18 +2,23 @@ state={
 	id=1099
 	name="STATE_1099"
 	provinces={
-		1714 1805 4810 4881 5826 5838 7088 7772 10572 10598 11607 12518 12650 13398 13402 13403 13405 13406 13411 
+		424 3585 6470 6592 7857 9555 15597 
 	}
-	manpower=0
+	manpower=1502500
 	buildings_max_level_factor=1
 	local_supplies=0
-	manpower = 347959
-	state_category = rural
+	state_category = large_town
 
 	history=
 		{
-		owner = SOV
-		add_core_of = SOV
-		add_core_of = FER
+		owner = CZE
+		add_core_of = CZE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			3585 3
+		}
 	}
 }

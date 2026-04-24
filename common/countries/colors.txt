@@ -61,8 +61,8 @@ LIT = {
 	color_ui = rgb { 107 31 45 }
 }
 EST = {
-	color = rgb { 64 142 206 }
-	color_ui = rgb { 64 142 206 }
+	color = rgb { 37 83 184 }
+	color_ui = rgb { 37 83 184 }
 }
 LAT = {
 	color = rgb { 107 31 45 }
@@ -93,12 +93,12 @@ ITA = {
 	color_ui = rgb { 35 139 69 }
 }
 ROM = {
-	color = rgb { 152 163 91 }
-	color_ui = rgb { 152 163 91 }
+	color = rgb { 165 173 116 }
+	color_ui = rgb { 165 173 116 }
 }
 YUG = {
-	color = rgb { 159 99 93 }
-	color_ui = rgb { 159 99 93 }
+	color = rgb { 150 62 62 }
+	color_ui = rgb { 150 62 62 }
 }
 SWI = {
 	color = rgb { 224 5 5 }
@@ -121,8 +121,8 @@ ALB = {
 	color_ui = rgb { 127 0 0 }
 }
 NOR = {
-	color = rgb { 120 200 237 }
-	color_ui = rgb { 120 200 237 }
+	color = rgb { 93 167 201 }
+	color_ui = rgb { 93 167 201 }
 }
 DEN = {
 	color = rgb { 239 101 72 }
@@ -189,8 +189,8 @@ CHL = {
 	color_ui = rgb { 137 205 214 }
 }
 COL = {
-	color = rgb { 75 108 173 }
-	color_ui = rgb { 75 108 173 }
+	color = rgb { 43 103 181 }
+	color_ui = rgb { 43 103 181 }
 }
 COS = {
 	color = rgb { 91 126 166 }
@@ -309,8 +309,8 @@ YUN = {
 	color_ui = rgb { 166 63 63 }
 }
 USA = {
-	color = rgb { 53 129 184 }
-	color_ui = rgb { 53 129 184 }
+	color = rgb { 54 101 163 }
+	color_ui = rgb { 54 101 163 }
 }
 MON = {
 	color = rgb { 118 140 102 }
@@ -564,8 +564,8 @@ WGR = {
         color_ui = rgb { 225 255 255 }
 }
 DDR = {
-        color = rgb { 150 62 62 }
-        color_ui = rgb { 150 62 62 }
+        color = rgb { 159 99 93 }
+        color_ui = rgb { 159 99 93 }
 }
 DPK = {
 	color = rgb { 184 82 15 }
@@ -980,8 +980,8 @@ TTS = {
 	color_ui = rgb { 179 179 0 }
 }
 GRN = {
-	color = rgb { 115 141 209 }
-	color_ui = rgb { 115 141 209 }
+	color = rgb { 75 107 191 }
+	color_ui = rgb { 75 107 191 }
 }
 RAP = {
 	color = rgb { 204 0 0 }
@@ -1411,8 +1411,8 @@ FSM = {
 	color_ui = rgb { 171 202 233 }
 }
 RAD = {
-	color = rgb { 0 0 0 }
-	color_ui = rgb { 0 0 0 }
+	color = rgb { 10 23 7 }
+	color_ui = rgb { 10 23 7 }
 }
 
 #CHINA

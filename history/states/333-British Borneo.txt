@@ -15,7 +15,8 @@ state = {
 
 	history = {
 
-		owner = MAL
+		owner = INS
+		add_core_of = INS
 		add_core_of = MAL
 		add_core_of = SAR
 

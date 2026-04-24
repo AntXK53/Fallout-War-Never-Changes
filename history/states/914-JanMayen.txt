@@ -14,7 +14,6 @@ state = { # Jan Mayen
 		}	
 	}
 
-
 	provinces = {
 		13272 
 	}

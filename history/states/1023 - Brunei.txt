@@ -13,7 +13,8 @@ state = {
 
 	history = {
 
-		owner = BRN
+		owner = INS
+		add_core_of = INS
 		add_core_of = BRN
 
 		victory_points = {

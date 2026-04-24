@@ -13,7 +13,8 @@ state = {
 
 	history = {
 
-		owner = AUS
+		owner = EUC
+		add_core_of = EUC
 		add_core_of = AUS
 
 		buildings = {

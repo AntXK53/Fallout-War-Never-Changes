@@ -8,7 +8,8 @@ state = {
 	}
 
 	history = {
-		owner = SWI
+		owner = EUC
+	    add_core_of = EUC
 		add_core_of = SWI
 		buildings = {
 			infrastructure = 2	
@@ -29,7 +30,7 @@ state = {
 	}
 
 	provinces = {
-		6666 11590 
+		6666 11590 13124
 	}
 
 	local_supplies = 0.0 

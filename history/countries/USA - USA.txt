@@ -219,12 +219,6 @@ if = {
 			add_ideas = USA_neutrality_act
 		}
 	}
-	complete_national_focus = USA_intervention_in_asia	
-	complete_national_focus = USA_war_plan_orange
-	complete_national_focus = USA_intervention_in_europe		
-	complete_national_focus = USA_war_plan_black
-	complete_national_focus = USA_strategic_bombing
- 	complete_national_focus = USA_fair_labour_standards_act
 
 	set_global_flag = earhart_disappeared
 	oob = "USA_1939"
@@ -372,108 +366,56 @@ add_mastery = {
 
 set_convoys = 700
 
-
 set_politics = {
 	ruling_party = democratic
-	last_election = "1932.11.8"
+	last_election = "2052.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 74
-	neutrality = 15
-	communism = 8
-	fascism = 3
+	democratic = 99
+	communism = 1
 }
 
 add_ideas = {
-	undisturbed_isolation
-	great_depression
+	incoming_crisis
+	usa_corrupt_democracy
+	usa_inflation_1
 	disarmed_nation
 	free_trade
-	home_of_the_free
+	state_commonwealths
+	fusion_technology_funding
+	oil_shortages
+	effects_of_the_new_plague
+	industrial_union_strikes
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+
+# DIPLOMACY
+set_autonomy = {
+	target = MEX
+	autonomous_state =  autonomy_puppet
+}
+set_autonomy = {
+	target = DOM
+	autonomous_state =  autonomy_puppet
+}
+set_autonomy = {
+	target = NIC
+	autonomous_state =  autonomy_puppet
+}
+set_autonomy = {
+	target = GRN
+	autonomous_state =  autonomy_puppet
+}
+set_autonomy = {
+	target = ICE
+	autonomous_state =  autonomy_puppet
 }
 
-recruit_character = USA_earl_browder
-recruit_character = USA_william_dudley_pelley
-recruit_character = USA_franklin_delano_roosevelt
-recruit_character = USA_george_s_patton
-recruit_character = USA_omar_bradley
-recruit_character = USA_dwight_d_eisenhower
-recruit_character = USA_geoffrey_keyes
-recruit_character = USA_lucian_truscott
-recruit_character = USA_mark_clark
-recruit_character = USA_douglas_macarthur
-recruit_character = USA_walter_krueger
-recruit_character = USA_lloyd_fredendall
-recruit_character = USA_leslie_mcnair
-recruit_character = USA_russell_hartle
-recruit_character = USA_leonard_gerow
-recruit_character = USA_edward_brooks
-recruit_character = USA_clarence_huebner
-recruit_character = USA_alexander_patch
-recruit_character = USA_william_simpson
-recruit_character = USA_j_lawton_collins
-recruit_character = USA_courtney_hodges
-recruit_character = USA_joseph_stilwell
-recruit_character = USA_oscar_griswold
-recruit_character = USA_maurice_rose
-recruit_character = USA_alexander_vandegrift
-recruit_character = USA_ernest_king
-recruit_character = USA_chester_w_nimitz
-recruit_character = USA_william_halsey_jr
-recruit_character = USA_frank_jack_fletcher
-recruit_character = USA_raymond_a_spruance
-recruit_character = USA_harold_rainsford_stark
-recruit_character = USA_arleigh_burke
-recruit_character = USA_charles_m_cooke_jr
-recruit_character = USA_carnot_wheeler
-recruit_character = USA_robert_goddard
-recruit_character = USA_robert_oppenheimer
-recruit_character = USA_curtis_lemay
-recruit_character = USA_thomas_kinkaid
-recruit_character = USA_henry_arnold
-recruit_character = USA_dewitt_clinton_ramsey
-recruit_character = USA_harold_mcclelland
-recruit_character = USA_charles_lindbergh
-recruit_character = USA_george_kenney
-recruit_character = USA_john_cannon
-recruit_character = USA_george_marshall
-recruit_character = USA_carl_spaatz
-recruit_character = USA_marc_mitscher
-recruit_character = USA_jimmy_doolittle
-recruit_character = USA_claire_lee_chennault
-recruit_character = USA_john_winant
-recruit_character = USA_henry_morgenthau
-recruit_character = USA_william_donovan
-recruit_character = USA_whittaker_chambers
-recruit_character = USA_robert_taft
-recruit_character = USA_donald_nelson
-recruit_character = USA_joseph_mccarthy
-recruit_character = USA_cordell_hull
-recruit_character = USA_harold_ickes
-recruit_character = USA_william_regnery
-recruit_character = USA_joseph_patterson
-recruit_character = USA_henry_stimson
-recruit_character = USA_victor_perlo
-recruit_character = USA_charles_coughlin
-recruit_character = USA_harry_white
-recruit_character = USA_native_american_council
-recruit_character = USA_leslie_skinner
-recruit_character = USA_edward_curtis_wells
-recruit_character = USA_william_francis_gibbs
-recruit_character = USA_andrew_mckee
-recruit_character = USA_john_walter_christie
-recruit_character = USA_vannevar_bush
+recruit_character = USA_phillip_e_oswald
+recruit_character = USA_james_c_wallace
+recruit_character = USA_john_granite
 
 ### VARIANTS ###
 # 1936 Start #

@@ -6,18 +6,21 @@ state = {
 
 	history = {
 
-		owner = CUB
-		add_core_of = CUB
+		owner = JAP
+		add_core_of = JAP
 
 		buildings = {
 		
 			arms_factory = 1
 			industrial_complex = 1
 			infrastructure = 2
+			victory_points = {
+			1182 40 
+			}
 		}
 	}
 	provinces = {
-		4476 7451 10374 
+		1182 
 	}
 
 	local_supplies = 9.0 

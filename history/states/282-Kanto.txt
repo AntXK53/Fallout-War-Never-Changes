@@ -11,17 +11,11 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
-			1182 = {
-				naval_base = 3
-			}
-		}
-		victory_points = {
-			1182 40 
 		}
 	}
 
 	provinces={
-		1182 19734
+		993 1097 1113 4000 4100 4184 4188 7016 9998 11908 15882 16956 19734 19769 19771 19900 
 	}
 
 	local_supplies=0.0 

@@ -10,7 +10,7 @@ state = {
 	state_category = wasteland
 	
 	history = {
-		owner = GRN
+		owner = EUC
 		buildings = {
 			infrastructure = 1
 			12512 ={
@@ -19,8 +19,6 @@ state = {
 		}
 		add_core_of = EUC
 		add_core_of = GRN
-		add_claim_by = USA
-
 		victory_points = { #Nuuk
 			12512 1
 		}

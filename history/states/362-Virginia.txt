@@ -13,12 +13,7 @@ state={
 			fuel_silo = 1
 			788 = {
 				naval_base = 10
-				naval_headquarters = {
-					level = 1
-					allowed = {
-						has_dlc = "No Compromise, No Surrender"
-					}
-				}
+
 			}
 
 		}
@@ -41,7 +36,7 @@ state={
 	}
 
 	provinces={
-		788 1506 3925 7558 9779 9931 10343 10412 10439 11738 11841 
+		788 865 873 951 1506 3823 3917 3925 6846 7558 9779 9931 10343 10412 10439 11738 11841 11873 
 	}
 
 	local_supplies=11.0

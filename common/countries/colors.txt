@@ -102,7 +102,7 @@ YUG = {
 }
 SWI = {
 	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
+	color_ui = rgb { 224 5 5 }
 }
 TUR = {
 	color = rgb { 201 44 47 }
@@ -544,8 +544,8 @@ RCG = {
 	color_ui = rgb { 171 5 43 }
 }
 COG = {
-	color = rgb {0 72 173}
-	color_ui = rgb {0 72 173}
+	color = rgb { 0 72 173 }
+    color_ui = rgb { 0 72 173 }
 }
 KEN = {
 	color = rgb { 145 103 14 }

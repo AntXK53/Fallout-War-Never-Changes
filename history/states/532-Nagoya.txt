@@ -1,6 +1,6 @@
 state = {
-	id = 531
-	name = "STATE_531" # Kansai
+	id = 532
+	name = "STATE_532" # Chubu
 	manpower = 12015000 # was 11015000
 	state_category = metropolis
 	resources = {

@@ -24,6 +24,10 @@ state = {
 		victory_points = {
 			541 2 # Nitra
 		}
+
+		victory_points = {
+			9692 10 # Bratislava
+		}
 		
 		add_core_of = CZE
 		add_core_of = SLO
@@ -31,7 +35,7 @@ state = {
 	}
 
 	provinces = {
-		541 3484 3716 9539 11522 11679 13129 18151 
+		541 3484 3716 9539 9692 11522 11679 13129 18151 
 	}
 
 	local_supplies = 3.0 

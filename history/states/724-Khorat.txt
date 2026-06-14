@@ -3,7 +3,7 @@ state={
 	name="STATE_724"
 	manpower = 2041700
 	
-	state_category = town
+	state_category = rural
 	
 	resources={
 		rubber=40 # was: 70
@@ -14,9 +14,6 @@ state={
 		owner = SIA
 		buildings = {
 			infrastructure = 2
-			12230 = {
-				naval_base = 1
-			}
 		}
 		victory_points = {
 			7236 1 
@@ -25,8 +22,8 @@ state={
 	}
 	
 	provinces={
-		1279 1281 1337 1366 1394 4297 4312 4371 7236 10156 10158 12131 12201 12230 12286 19033 19061 19082 19122 19147 
+		1279 1281 1308 1337 1366 1394 4297 4312 4371 4388 4392 7236 10156 10158 12122 12131 12201 12220 12230 12286 19019 19033 19061 19122 19147 
 	}
 
-	local_supplies=1 
+	local_supplies=0.0 
 }

@@ -1,4 +1,4 @@
-﻿capital = 282
+﻿capital = 1019
 
 
 
@@ -1212,7 +1212,3 @@ if = {
 			}
 		}	
 	}
-	
-#DIPLOMACY
-
-give_guarantee = CHI

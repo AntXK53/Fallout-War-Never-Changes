@@ -1,0 +1,28 @@
+state={
+	id=1122
+	name="STATE_1122"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+	    victory_points = {
+            9671 20
+		}
+        victory_points = {
+			14635 10
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+    610 677 710 766 768 781 1601 3588 3644 3677 3678 4331 6482 6665 6681 6699 6745 6757 6772 9671 9697 9713 9730 10159 11658 11698 14399 14635 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -204,7 +204,7 @@ ELS = {
 	color = rgb { 148 185 224 }
 	color_ui = rgb { 148 185 224 }
 }
-ERI  = {
+ERI = {
 	color = rgb { 110 81 53 }
 	color_ui = rgb { 110 81 53 }
 }
@@ -395,14 +395,6 @@ PRC = {
 GXC = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 71 113 97 }
-}
-SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
-}
-XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
 }
 LBA = {
 	color = rgb { 66 133 66 }
@@ -1417,34 +1409,6 @@ RAD = {
 
 #CHINA
 
-CHN = {
-	color = rgb { 120 41 41 }
-	color_ui = rgb { 120 41 41 }
-}
-TBT = {
-	color = rgb { 166 31 31 }
-	color_ui = rgb { 166 31 31 }
-}
-XIN = {
-	color = rgb { 145 16 16 }
-	color_ui = rgb { 145 16 16 }
-}
-KUN = {
-	color = rgb { 125 15 15 }
-	color_ui = rgb { 125 15 15 }
-}
-GZH = {
-	color = rgb { 184 81 81 }
-	color_ui = rgb { 184 81 81 }
-}
-QIN = {
-	color = rgb { 153 124 55 }
-	color_ui = rgb { 153 124 55 }
-}
-INM = {
-	color = rgb { 148 71 71 }
-	color_ui = rgb { 148 71 71 }
-}
 SIK = {
 	color = rgb { 61 170 191 }
 	color_ui = rgb { 61 170 191 }

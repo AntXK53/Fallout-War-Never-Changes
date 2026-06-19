@@ -1,0 +1,22 @@
+state={
+	id=1129
+	name="STATE_1129"
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		7348 7858 8713 12534 13192 17256 17284
+	}
+	manpower=690800
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

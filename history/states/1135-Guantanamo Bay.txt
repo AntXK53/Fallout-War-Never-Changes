@@ -1,18 +1,17 @@
 state={
-	id=1133
-	name="STATE_1133"
+	id=1135
+	name="STATE_1135"
 
 	history={
-		owner = PRC
+		owner = USA
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = PRC
 	}
 
 	provinces={
-		18878 19779 
+		13618 
 	}
 	manpower=200
 	buildings_max_level_factor=1.000

@@ -3,16 +3,16 @@ state={
 	name="STATE_1132"
 
 	history={
-		owner = PRC
+		owner = RAJ
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		add_core_of = PRC
+		add_core_of = RAJ
 	}
 
 	provinces={
-		5042 16158
+		18824
 	}
 	manpower=200
 	buildings_max_level_factor=1.000

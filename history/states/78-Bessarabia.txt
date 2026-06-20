@@ -19,7 +19,7 @@ state=
 		add_core_of = SOV
 		add_core_of = MOL
 	}
-	provinces= { 414 565 3577 3707 6600 11705 14295 14346 15984 }
+	provinces= { 565 3707 14346 15984 }
 
 	local_supplies=4.0 
 }

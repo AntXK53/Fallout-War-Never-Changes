@@ -8,7 +8,6 @@ state = {
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
 
 		buildings = {
 			infrastructure = 2 #was 3

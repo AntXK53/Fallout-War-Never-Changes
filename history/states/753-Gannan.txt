@@ -1,0 +1,53 @@
+state = {
+	id = 753
+	name = "STATE_753"
+	
+	manpower = 3000000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	history = {
+
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = PRC
+		add_core_of = PRC
+
+		victory_points = {
+			5193 1 # Minsien
+		}
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				transfer_state_to = PRC
+				add_core_of = PRC
+				remove_core_of = PRC
+			}
+		}
+
+		1938.10.25 = {
+		IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				remove_core_of = PRC
+			}		
+			owner = PRC
+			controller = PRC
+		}
+
+	}
+
+	provinces = {
+		1257 4375 4403 9966 14676 15522 19636 19682 19742 
+	}
+	local_supplies = 1.0
+ 
+}

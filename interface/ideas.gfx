@@ -21,21 +21,21 @@ spriteTypes = {
 ## EUC ##
 	SpriteType = {
 		name = "GFX_idea_ASU_HighPollution_Idea"
-		texturefile = "gfx\interface\ideas\EUC\ASU_HighPollution_Idea.dds"
+		texturefile = "gfx/interface/ideas/EUC/ASU_HighPollution_Idea.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_Collapsing_Homefront"
-		texturefile = "gfx\interface\ideas\EUC\Collapsing_Homefront.tga"
+		texturefile = "gfx/interface/ideas/EUC/Collapsing_Homefront.tga"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_EuropeanDepression"
-		texturefile = "gfx\interface\ideas\EUC\EuropeanDression.tga"
+		texturefile = "gfx/interface/ideas/EUC/EuropeanDression.tga"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_EUC_Breaking_Union"
-		texturefile = "gfx\interface\ideas\EUC\EUC_Breaking_Union.tga"
+		texturefile = "gfx/interface/ideas/EUC/EUC_Breaking_Union.tga"
 	}
 
 

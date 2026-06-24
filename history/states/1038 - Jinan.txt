@@ -1,0 +1,58 @@
+state = {
+
+	id = 1038
+	name = "STATE_1038"
+	manpower = 25582133
+	state_category = rural
+	
+	resources = {
+		
+	}
+	
+	history = {
+
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = PRC
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				transfer_state_to = SND
+				add_core_of = SND
+			}
+		}
+
+		victory_points = {
+			1069 5 # Jinan
+		}
+
+		victory_points = {
+			4181 1 # Linyi
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+		}
+
+		1938.10.25 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+			}	
+			owner = PRC
+			controller = PRC		
+		}
+	}
+
+	provinces = {
+		1069 1084 1124 4010 4037 4071 4181 7055 7129 7160 7189 9956 9987 10043 10072 10102 11962 12015 12045 12069 12093 15707 17959 19559 19608 19797 19798 19812 19818 19852 19867 19927 19929 
+	}
+
+	local_supplies = 4.0 
+}

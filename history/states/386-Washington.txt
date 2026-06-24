@@ -20,6 +20,9 @@ state = {
 		victory_points = {
 			1690 10 # Spokane
 		}
+		victory_points = {
+		    7315 15 # Spokane
+		}
 	}
 
 	provinces = {

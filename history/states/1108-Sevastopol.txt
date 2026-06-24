@@ -7,15 +7,25 @@ state={
 	history = {
 
 		owner = SOV
+		add_core_of = DON
+		add_core_of = CRI
 		add_core_of = SOV
-		add_core_of = MOL
+
+		victory_points = {
+			3686 20 # Sevastopol
+		}
+
 		buildings = {
 			infrastructure = 3
+			dockyard = 2
+				3686 = {
+					naval_facility = 1 # Sevastopol Naval Facilties
+				}
 			air_base = 3
 		}
 	}
 	provinces={
-		414 3577 6600 11705 14295 
+		3686 
 	}
 	manpower= 400174
 	buildings_max_level_factor=1

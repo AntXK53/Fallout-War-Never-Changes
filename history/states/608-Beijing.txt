@@ -10,18 +10,6 @@ state={
 
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = PRC
-
-		1936.1.1 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				transfer_state_to = HBC
-				add_core_of = HBC
-			}
-		}
-
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -35,20 +23,27 @@ state={
                     }
                 }
 			}
+
+			10068 = {
+				naval_base = 2
+			}
 		}
 
 		victory_points = {
 			9843 40 # Beijing 
 		}
 
-		1938.10.25 = {
-			owner = PRC
-			controller = PRC
+		victory_points = {
+			10068 20 # Tianjin
+		}
+
+		victory_points = {
+			12026 10 # Baoding
 		}
 	}
 
 	provinces={
-		4140 9843 11761 19772 19808 
+		1134 4137 4140 6828 9843 9969 10068 11761 12026 16908 16916 19772 19808 
 	}
 
 	local_supplies=0.0 

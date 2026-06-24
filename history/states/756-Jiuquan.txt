@@ -1,0 +1,61 @@
+state={
+	id=756
+	name="STATE_756"
+	provinces={
+		2028 5076 7971 8102 12596 12820 14383 19411 
+	}
+	manpower=550000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = PRC
+		add_core_of = PRC
+
+		victory_points = {
+			7971 1 # Jiuquan 
+		}
+
+		buildings = {
+			infrastructure = 1
+			2028 = {
+				landmark_great_wall_section = {
+				    level = 1
+				    allowed = {
+				        has_dlc = "No Compromise, No Surrender"
+				    }
+				}
+			}
+		}
+
+		1936.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				PRC = { transfer_state = PREV }
+				add_core_of = PRC
+				remove_core_of = PRC
+			}
+		}
+
+		1938.10.25 = {
+			IF = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+				}
+				PRC = {
+					transfer_state = PREV
+
+				}
+			}
+		}
+	}
+
+	local_supplies = 0.0 
+}
+

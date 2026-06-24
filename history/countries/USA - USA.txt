@@ -390,29 +390,6 @@ add_ideas = {
 	industrial_union_strikes
 }
 
-
-# DIPLOMACY
-set_autonomy = {
-	target = MEX
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = DOM
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = NIC
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = GRN
-	autonomous_state =  autonomy_puppet
-}
-set_autonomy = {
-	target = ICE
-	autonomous_state =  autonomy_puppet
-}
-
 recruit_character = USA_phillip_e_oswald
 recruit_character = USA_james_c_wallace
 recruit_character = USA_john_granite
@@ -1283,3 +1260,12 @@ if = {
 		target = MEX
 		autonomous_state = autonomy_integrated_puppet
 	}
+
+give_guarantee = AST
+give_guarantee = CHI
+give_guarantee = KOR
+give_guarantee = JAP
+give_guarantee = NZL
+give_guarantee = PHI
+give_guarantee = PLU
+give_guarantee = SIA

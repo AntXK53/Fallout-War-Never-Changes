@@ -1164,15 +1164,3 @@ BUL_balkan_sfsr = {
 	color = rgb { 94 33 41 }
 	color_ui = rgb { 94 33 41 }
 }
-PRC_PUPPET = {	
-	color = rgb { 172 32 32 }
-	color_ui = rgb { 172 32 32 }
-}
-USA_PUPPET = {
-	color = rgb { 11 92 150 }
-	color_ui = rgb { 11 92 150 }
-}
-SOV_PUPPET = {
-	color = rgb { 107 31 45 }
-	color_ui = rgb { 107 31 45 }
-}

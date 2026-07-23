@@ -931,7 +931,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		prerequisite = {
-			focus = USA_aerial_dominance_initiative
+			focus = USA_ace_pilot_programs
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -995,8 +995,8 @@ focus_tree = {
 		id = USA_the_air_superiority_concept
 		icon = GFX_enc_industrial_air
 		relative_position_id = USA_us_air_force
-		x = 1
-		y = 6
+		x = 0
+		y = 5
 		cost = 10
 		prerequisite = {
 			focus = USA_standardize_aircraft_production
@@ -2151,23 +2151,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_cascadian_commonwealth
+		id = USA_northern_states
 		icon = GFX_focus_generic_political
-		x = -52
+		x = -50
 		y = 4
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
 	}
-	focus = {
-		id = USA_northern_commonwealth
-		icon = GFX_focus_generic_political
-		x = -49
-		y = 4
-		prerequisite = {
-			focus = usa_focus_commonwealth_review
-		}
-	}
+
 	focus = {
 		id = USA_four_corners_commonwealth
 		icon = GFX_focus_generic_political
@@ -2782,23 +2774,117 @@ focus_tree = {
 	focus = {
 		id = usa_focus_pacific_rim
 		icon = GFX_goal_unknown
-		x = -52
+		x = -51
 		y = 5
 		cost = 10
-		completion_reward = {}
-		prerequisite = {
-			focus = USA_cascadian_commonwealth
+completion_reward = {
+	386 = {
+		add_building_construction = {
+			type = naval_base
+			level = 1
+			instant_build = yes
+		}
+				add_building_construction = {
+			type = naval_base
+			level = 1
+			instant_build = yes
 		}
 	}
+	385 = {
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+	}
+387 = {
+	add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+	}
+	add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+	}
+}
+	463 = {
+		add_building_construction = {
+			type = coastal_bunker
+			level = 1
+			instant_build = yes
+		}
+			add_building_construction = {
+			type = coastal_bunker
+			level = 1
+			instant_build = yes
+		}
+	}
+	1122 = {
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+			add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+		}
+	}
+
+	add_political_power = 20
+}
+		prerequisite = {
+			focus = USA_northern_states
+		}
+		}
+	
+	
 	focus = {
 		id = usa_focus_northern_frontier
 		icon = GFX_goal_unknown
 		x = -49
 		y = 5
 		cost = 10
-		completion_reward = {}
+	completion_reward = {
+	388 = {
+		add_building_construction = {
+			type = radar_station
+			level = 2
+			instant_build = yes
+		}
+	}
+	387 = {
+		add_building_construction = {
+			type = anti_air_building
+			level = 3
+			instant_build = yes
+		}
+	}
+	390 = {
+		add_building_construction = {
+			type = air_base
+			level = 1
+			instant_build = yes
+		}
+	}
+	389 = {
+		add_building_construction = {
+			type = radar_station
+			level = 1
+			instant_build = yes
+		}
+	}
+}
 		prerequisite = {
-			focus = USA_northern_commonwealth
+			focus = USA_northern_states
 		}
 	}
 	focus = {

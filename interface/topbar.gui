@@ -663,7 +663,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "achievements_button"
-			position = { x = -160 y = 60 }
+			position = { x = -160 y = 50 }
 			quadTextureSprite ="GFX_achievements_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -674,7 +674,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "playlist_button"
-			position = { x = -311 y = 46 }
+			position = { x = -307 y = 50 }
 			quadTextureSprite ="GFX_playlist_button"
 			buttonText = ""
 			buttonFont = "Main_14_black"
@@ -1008,7 +1008,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "army_button"
-				position = { x = -275 y = 15 }
+				position = { x = -275 y = 12 }
 				quadTextureSprite ="GFX_armyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "o"
@@ -1018,7 +1018,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "navy_button"
-				position = { x = -238 y = 15 }
+				position = { x = -238 y = 12 }
 				quadTextureSprite ="GFX_navyoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "p"
@@ -1028,7 +1028,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "air_button"
-				position = { x = -200 y = 15 }
+				position = { x = -200 y = 12 }
 				quadTextureSprite ="GFX_airoverview_button"
 				Orientation = "UPPER_right"
 				shortcut = "l"

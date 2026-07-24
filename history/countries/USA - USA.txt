@@ -393,6 +393,9 @@ add_ideas = {
 recruit_character = USA_phillip_e_oswald
 recruit_character = USA_james_c_wallace
 recruit_character = USA_john_granite
+recruit_character =  USA_robert_house
+recruit_character =  USA_robert_house
+recruit_character = USA_ceo_red_rocket
 
 ### VARIANTS ###
 # 1936 Start #

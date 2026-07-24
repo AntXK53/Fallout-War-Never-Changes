@@ -1,5 +1,12 @@
 spriteTypes = {
-
+     spriteType = {
+        name = "GFX_portraite_red_small"
+        texturefile = "gfx/leaders/USA/portraite_red_rocket_ceo.png"
+    }
+   spriteType = {
+        name = "GFX_portraite_House_small"
+        texturefile = "gfx/leaders/USA/portrait_House.png"
+    }
     # Iran Leaders
     spriteType = {
         name = "GFX_PER_Zafar_Kordestani"

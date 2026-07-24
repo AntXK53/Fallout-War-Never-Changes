@@ -2586,7 +2586,7 @@ focus_tree = {
 	}
 	focus = {
 		id = usa_focus_commonwealth_hq
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_auld_lang_syne
 		x = -35
 		y = 1
 		cost = 10

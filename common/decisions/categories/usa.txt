@@ -1,0 +1,8 @@
+USA_project_safehouse_cat = {
+
+    icon = GFX_vault_cat_icon
+
+    allowed = {
+        tag = USA
+    }
+}

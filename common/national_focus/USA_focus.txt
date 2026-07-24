@@ -2143,7 +2143,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_california_commonwealth
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_rebuilding_california
 		x = -40
 		y = 4
 		prerequisite = {
@@ -2152,17 +2152,19 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_northern_states
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_generic_northern_states
 		x = -50
 		y = 4
+			completion_reward = {
+		      country_event = { id = USA.northern_states }
+		}
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
 	}
-
 	focus = {
 		id = USA_four_corners_commonwealth
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_safehaven_arizona 
 		x = -37
 		y = 4
 		prerequisite = {
@@ -2171,7 +2173,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_texas_commonwealth
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_texas_commonwealth
 		x = -33
 		y = 4
 		prerequisite = {
@@ -2180,7 +2182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_great_plains_commonwealth
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_safehaven_oklahoma
 		x = -43
 		y = 4
 		prerequisite = {
@@ -2189,7 +2191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_midwest_commonwealth
-		icon = GFX_focus_generic_political
+		icon = GFX_goal_generic_usa_repair
 		x = -46
 		y = 4
 		prerequisite = {
@@ -2771,9 +2773,10 @@ focus_tree = {
 			focus = usa_focus_commonwealth_review
 		}
 	}
+	 
 	focus = {
 		id = usa_focus_pacific_rim
-		icon = GFX_goal_unknown
+		icon = GFX_goal_safehaven_washington
 		x = -51
 		y = 5
 		cost = 10
@@ -2849,7 +2852,7 @@ completion_reward = {
 	
 	focus = {
 		id = usa_focus_northern_frontier
-		icon = GFX_goal_unknown
+		icon = GFX_goal_safehaven_montana
 		x = -49
 		y = 5
 		cost = 10
@@ -2889,55 +2892,158 @@ completion_reward = {
 	}
 	focus = {
 		id = usa_focus_heartland_reindustrialization
-		icon = GFX_goal_unknown
+		icon = GFX_goal_reform_industry_3
 		x = -46
 		y = 5
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			393 = {
+    add_building_construction = {
+        type = infrastructure
+        level = 1
+        instant_build = yes
+    }
+}
+396 = {
+    add_building_construction = {
+        type = infrastructure
+        level = 1
+        instant_build = yes
+    }
+}
+391 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+    }
+}
+394 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+    }
+}
+395 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+    }
+}
+		}
 		prerequisite = {
 			focus = USA_midwest_commonwealth
 		}
 	}
 	focus = {
-		id = usa_focus_agricultural_belt
-		icon = GFX_goal_unknown
+		id = usa_focus_rails
+		icon =GFX_goal_reform_rail
 		x = -43
 		y = 5
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+									add_building_construction = {
+    type = supply_node
+    level = 1
+    province = 10666
+    instant_build = yes
+}
+						add_building_construction = {
+    type = supply_node
+    level = 1
+    province = 3613
+    instant_build = yes
+}
+						add_building_construction = {
+    type = supply_node
+    level = 1
+    province = 10370
+    instant_build = yes
+}
+			add_building_construction = {
+    type = supply_node
+    level = 1
+    province = 11802
+    instant_build = yes
+}
+		}
 		prerequisite = {
 			focus = USA_great_plains_commonwealth
 		}
 	}
 	focus = {
 		id = usa_focus_desert_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_construction_nev
 		x = -40
 		y = 5
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			378 = {
+    add_resource = {
+        type = aluminium
+        amount = 10
+    }
+}
+		}
 		prerequisite = {
 			focus = USA_california_commonwealth
 		}
 	}
 	focus = {
 		id = usa_focus_border_reinforcement
-		icon = GFX_goal_unknown
+		icon = GFX_goal_bunker_usa
 		x = -37
 		y = 5
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			380 = {
+    add_building_construction = {
+        type = bunker
+        level = 3
+        instant_build = yes
+    }
+}
+377 = {
+    add_building_construction = {
+        type = bunker
+        level = 2
+        instant_build = yes
+    }
+}
+382 = {
+    add_building_construction = {
+        type = bunker
+        level = 2
+        instant_build = yes
+    }
+}
+376 = {
+    add_building_construction = {
+        type = bunker
+        level = 2
+        instant_build = yes
+    }
+}
+		}
 		prerequisite = {
 			focus = USA_four_corners_commonwealth
 		}
 	}
 	focus = {
 		id = usa_focus_energy_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		x = -33
 		y = 5
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_resource = {
+    type = oil
+    amount = 10
+    state = 375
+          }
+		}
 		prerequisite = {
 			focus = USA_texas_commonwealth
 		}

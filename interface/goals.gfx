@@ -1,5 +1,53 @@
 spriteTypes = {
+        spriteType = {
+        name = "GFX_goal_safehaven_oklahoma"
+        texturefile = "gfx/interface/goals/USA/enc_goal_safehaven_oklahoma.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_reform_rail"
+        texturefile = "gfx/interface/goals/USA/enc_goal_reform_rail.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_rebuilding_california"
+        texturefile = "gfx/interface/goals/USA/enc_goal_rebuilding_california.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_construction_nev"
+        texturefile = "gfx/interface/goals/USA/enc_construction_nev.dds"
+    }
 
+        spriteType = {
+        name = "GFX_goal_safehaven_arizona"
+        texturefile = "gfx/interface/goals/USA/enc_goal_safehaven_arizona.tga"
+    }
+    spriteType = {
+        name = "GFX_goal_bunker_usa"
+        texturefile = "gfx/interface/goals/USA/bunker_usa.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_reform_industry_3"
+        texturefile = "gfx/interface/goals/USA/enc_reform_industry_3.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_usa_repair"
+        texturefile = "gfx/interface/goals/USA/goal_generic_usa_repair.tga"
+    }
+        spriteType = {
+        name = "GFX_goal_texas_commonwealth"
+        texturefile = "gfx/interface/goals/USA/texas2.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_generic_northern_states"
+       texturefile = "gfx/interface/goals/USA/goal_generic_usa_building.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_safehaven_montana"
+        texturefile = "gfx/interface/goals/USA/enc_goal_safehaven_montana.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_safehaven_washington"
+        texturefile= "gfx/interface/goals/USA/enc_goal_safehaven_washington.dds"
+    }
 	SpriteType = {
 		name = "GFX_goal_unknown"
 		texturefile = "gfx/interface/goals/goal_unknown.dds"

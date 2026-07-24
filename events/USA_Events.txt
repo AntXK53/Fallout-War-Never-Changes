@@ -58,3 +58,28 @@ country_event = {
         add_war_support = 0.15
     }
 }
+
+country_event = {
+    id = USA.northern_states
+    title = USA_northern_states_event_title
+    desc = USA_northern_states_event_desc
+    picture = GFX_event_build_radars
+  
+
+    trigger = {
+        tag = USA
+        has_completed_focus = USA_northern_states
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = opportunities
+    add_popularity = {
+    ideology = ruling_party
+    popularity = 0.05
+        }
+    }
+}

@@ -172,8 +172,8 @@ if = {
 
 1939.1.1 = {
 
-	add_political_power = 1199
-	add_command_power = 100
+	add_political_power = 100
+	add_command_power = 50
 	
 	#adding ministers
 	add_ideas = {

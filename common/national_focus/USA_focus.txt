@@ -2732,36 +2732,21 @@ focus_tree = {
 			date > 2057.1.20
 		}
 	}
-	focus = {
-		id = usa_focus_commonwealth_hq
-		icon = GFX_goal_support_democracy
-		x = -35
-		y = 1
-		cost = 10
-		completion_reward = {}
-	}
+
 	focus = {
 		id = usa_focus_commonwealth_review
-		icon = GFX_goal_unknown
+		icon = GFX_goal_auld_lang_syne
 		x = -35
 		y = 3
 		cost = 10
-		completion_reward = {}
+		completion_reward = {
+			add_political_power = 100 
+		}
 		prerequisite = {
 			focus = usa_focus_commonwealth_affairs
 		}
 	}
-	focus = {
-		id = usa_focus_commonwealth_affairs
-		icon = GFX_goal_unknown
-		x = -35
-		y = 2
-		cost = 10
-		completion_reward = {}
-		prerequisite = {
-			focus = usa_focus_commonwealth_hq
-		}
-	}
+	
 	focus = {
 		id = usa_new_england_commonwealth
 		icon = GFX_goal_unknown

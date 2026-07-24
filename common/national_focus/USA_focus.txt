@@ -98,7 +98,7 @@ focus_tree = {
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_us_army
 		x = 2
-		y = 2
+		y = 3
 		cost = 10
 		prerequisite = {
 			focus = USA_the_chinese_wage_war_in_the_pacific
@@ -122,8 +122,8 @@ focus_tree = {
 		id = USA_democracy_must_prevail_across_the_world
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_us_army
-		x = 3
-		y = 3
+		x = 5
+		y = 4
 		cost = 10
 		prerequisite = {
 			focus = USA_reports_of_chinese_landings_in_alaska
@@ -150,7 +150,7 @@ focus_tree = {
 		icon = GFX_focus_generic_recruitment
 		relative_position_id = USA_us_army
 		x = 1
-		y = 3
+		y = 4
 		cost = 10
 		prerequisite = {
 			focus = USA_reports_of_chinese_landings_in_alaska
@@ -201,7 +201,7 @@ focus_tree = {
 		icon = GFX_focus_generic_recruitment
 		relative_position_id = USA_us_army
 		x = 1
-		y = 4
+		y = 5
 		cost = 10
 		prerequisite = {
 			focus = USA_enforce_the_anchorage_line
@@ -1408,31 +1408,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_you_cannot_achieve_peace
-		relative_position_id = USA_secure_the_suez_for_trade
-		icon = GFX_focus_generic_political
-		cost = 2
-		x = 1
-		y = 2
-		prerequisite = {
-			focus = USA_secure_the_suez_for_trade
-		}
-		prerequisite = {
-			focus = USA_resource_treaties
-		}
-	}
-	focus = {
-		id = USA_make_a_deal_with_protestors
-		relative_position_id = USA_you_cannot_achieve_peace
-		icon = GFX_focus_generic_political
-		cost = 2
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = USA_you_cannot_achieve_peace
-		}
-	}
-	focus = {
 		id = USA_the_budget_crisis
 		icon = GFX_focus_generic_political
 		cost = 3
@@ -1742,64 +1717,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_thanking_our_backers
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_our_patriotic_victory
-		x = -2.5
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_our_patriotic_victory
-		}
-	}
-	focus = {
-		id = USA_urgent_problems
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_thanking_our_backers
-		x = -1
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_thanking_our_backers
-		}
-	}
-	focus = {
-		id = USA_supercede_needs
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_thanking_our_backers
-		x = 1
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_thanking_our_backers
-		}
-		mutually_exclusive = {
-			focus = USA_urgent_problems
-		}
-	}
-	focus = {
-		id = USA_the_resource_treaties
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_urgent_problems
-		x = 0
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_urgent_problems
-		}
-	}
-	focus = {
-		id = USA_mitigate_the_problem
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_supercede_needs
-		x = 0
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_supercede_needs
-		}
-	}
-	focus = {
 		id = USA_expanding_our_influence
 		icon = USA_expanding_our_influence
 		relative_position_id = USA_our_patriotic_victory
@@ -1825,18 +1742,6 @@ focus_tree = {
 			army_experience = 15
 			add_war_support = 0.05
 		}
-	}
-	focus = {
-		id = USA_proxy_wars
-		icon = USA_proxy_wars
-		relative_position_id = USA_2056_military_evaluation
-		x = 2
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_2056_military_evaluation
-		}
-		completion_reward = {}
 	}
 	focus = {
 		id = USA_fortify_the_anchorage_line
@@ -1920,7 +1825,7 @@ focus_tree = {
 		id = USA_dear_old_friends
 		icon = USA_Dear_old_Friends
 		relative_position_id = USA_resource_crisis_in_europe
-		x = -1
+		x = 0
 		y = 1
 		cost = 3
 		prerequisite = {
@@ -2075,28 +1980,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_return_to_france
-		icon = GFX_focus_generic_army
-		relative_position_id = USA_operation_sunset
-		x = 1
-		y = 1
-		cost = 3
-		prerequisite = {
-			focus = USA_operation_sunset
-		}
-		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				has_completed_focus = USA_operation_sunset
-			}
-		}
-	}
-	focus = {
 		id = USA_taking_germany
 		icon = GFX_focus_generic_army
 		relative_position_id = USA_operation_sunset
@@ -2114,9 +1997,6 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 3
-		prerequisite = {
-			focus = USA_return_to_france
-		}
 	}
 	focus = {
 		id = USA_partitioning_europe
@@ -2145,7 +2025,7 @@ focus_tree = {
 		id = USA_california_commonwealth
 		icon = GFX_goal_rebuilding_california
 		x = -40
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2154,9 +2034,11 @@ focus_tree = {
 		id = USA_northern_states
 		icon = GFX_goal_generic_northern_states
 		x = -50
-		y = 4
-			completion_reward = {
-		      country_event = { id = USA.northern_states }
+		y = 3
+		completion_reward = {
+			country_event = {
+				id = USA.northern_states
+			}
 		}
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
@@ -2164,9 +2046,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_four_corners_commonwealth
-		icon = GFX_goal_safehaven_arizona 
+		icon = GFX_goal_safehaven_arizona
 		x = -37
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2175,7 +2057,7 @@ focus_tree = {
 		id = USA_texas_commonwealth
 		icon = GFX_goal_texas_commonwealth
 		x = -33
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2184,7 +2066,7 @@ focus_tree = {
 		id = USA_great_plains_commonwealth
 		icon = GFX_goal_safehaven_oklahoma
 		x = -43
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2193,7 +2075,7 @@ focus_tree = {
 		id = USA_midwest_commonwealth
 		icon = GFX_goal_generic_usa_repair
 		x = -46
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2202,7 +2084,7 @@ focus_tree = {
 		id = USA_appalachian_commonwealth
 		icon = GFX_focus_generic_political
 		x = -24
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2211,7 +2093,7 @@ focus_tree = {
 		id = USA_gulf_commonwealth
 		icon = GFX_focus_generic_political
 		x = -30
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2220,7 +2102,7 @@ focus_tree = {
 		id = USA_south_east_commonwealth
 		icon = GFX_focus_generic_political
 		x = -27
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2229,7 +2111,7 @@ focus_tree = {
 		id = USA_columbian_commonwealth
 		icon = GFX_focus_generic_political
 		x = -21
-		y = 4
+		y = 3
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
@@ -2411,13 +2293,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_the_second_resource_treaties
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_the_resource_crisis
-		x = -1
-		y = 1
-	}
-	focus = {
 		id = USA_exploit_africa
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_the_resource_crisis
@@ -2434,13 +2309,10 @@ focus_tree = {
 		id = USA_patchwork
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_the_resource_crisis
-		x = 0
+		x = 5
 		y = 2
 		prerequisite = {
 			focus = USA_exploit_africa
-		}
-		prerequisite = {
-			focus = USA_the_second_resource_treaties
 		}
 	}
 	focus = {
@@ -2497,7 +2369,7 @@ focus_tree = {
 		id = USA_fifth_enclave_congress
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_state_of_the_enclave
-		x = 0
+		x = 5
 		y = 4
 		prerequisite = {
 			focus = USA_riot_control_e
@@ -2655,23 +2527,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_the_second_resource_treaties
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_state_of_the_union
-		x = 3
-		y = 1
-		prerequisite = {
-			focus = USA_state_of_the_union
-		}
-	}
-	focus = {
-		id = USA_alaskan_oil_and_fishing_treaty
-		icon = GFX_focus_generic_political
-		relative_position_id = USA_state_of_the_union
-		x = 5
-		y = 3
-	}
-	focus = {
 		id = USA_crisis_not_averted
 		icon = GFX_focus_generic_political
 		relative_position_id = USA_state_of_the_union
@@ -2682,9 +2537,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = USA_automation_crisis
-		}
-		prerequisite = {
-			focus = USA_alaskan_oil_and_fishing_treaty
 		}
 	}
 	focus = {
@@ -2732,145 +2584,145 @@ focus_tree = {
 			date > 2057.1.20
 		}
 	}
-
+	focus = {
+		id = usa_focus_commonwealth_hq
+		icon = GFX_goal_support_democracy
+		x = -35
+		y = 1
+		cost = 10
+		completion_reward = {}
+	}
 	focus = {
 		id = usa_focus_commonwealth_review
-		icon = GFX_goal_auld_lang_syne
+		icon = GFX_goal_unknown
 		x = -35
-		y = 3
+		y = 2
 		cost = 10
-		completion_reward = {
-			add_political_power = 100 
-		}
+		completion_reward = {}
 		prerequisite = {
-			focus = usa_focus_commonwealth_affairs
+			focus = usa_focus_commonwealth_hq
 		}
 	}
-	
 	focus = {
 		id = usa_new_england_commonwealth
 		icon = GFX_goal_unknown
 		x = -15
-		y = 4
+		y = 3
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
 			focus = usa_focus_commonwealth_review
 		}
 	}
-	 
 	focus = {
 		id = usa_focus_pacific_rim
 		icon = GFX_goal_safehaven_washington
 		x = -51
-		y = 5
+		y = 4
 		cost = 10
-completion_reward = {
-	386 = {
-		add_building_construction = {
-			type = naval_base
-			level = 1
-			instant_build = yes
-		}
+		completion_reward = {
+			386 = {
 				add_building_construction = {
-			type = naval_base
-			level = 1
-			instant_build = yes
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			385 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			387 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			463 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+			1122 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_political_power = 20
 		}
-	}
-	385 = {
-		add_building_construction = {
-			type = dockyard
-			level = 1
-			instant_build = yes
-		}
-	}
-387 = {
-	add_building_construction = {
-		type = infrastructure
-		level = 1
-		instant_build = yes
-	}
-	add_building_construction = {
-		type = infrastructure
-		level = 1
-		instant_build = yes
-	}
-	add_building_construction = {
-		type = infrastructure
-		level = 1
-		instant_build = yes
-	}
-}
-	463 = {
-		add_building_construction = {
-			type = coastal_bunker
-			level = 1
-			instant_build = yes
-		}
-			add_building_construction = {
-			type = coastal_bunker
-			level = 1
-			instant_build = yes
-		}
-	}
-	1122 = {
-		add_building_construction = {
-			type = dockyard
-			level = 1
-			instant_build = yes
-		}
-			add_building_construction = {
-			type = dockyard
-			level = 1
-			instant_build = yes
-		}
-	}
-
-	add_political_power = 20
-}
 		prerequisite = {
 			focus = USA_northern_states
 		}
-		}
-	
-	
+	}
 	focus = {
 		id = usa_focus_northern_frontier
 		icon = GFX_goal_safehaven_montana
 		x = -49
-		y = 5
+		y = 4
 		cost = 10
-	completion_reward = {
-	388 = {
-		add_building_construction = {
-			type = radar_station
-			level = 2
-			instant_build = yes
+		completion_reward = {
+			388 = {
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+			387 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			390 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			389 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
-	}
-	387 = {
-		add_building_construction = {
-			type = anti_air_building
-			level = 3
-			instant_build = yes
-		}
-	}
-	390 = {
-		add_building_construction = {
-			type = air_base
-			level = 1
-			instant_build = yes
-		}
-	}
-	389 = {
-		add_building_construction = {
-			type = radar_station
-			level = 1
-			instant_build = yes
-		}
-	}
-}
 		prerequisite = {
 			focus = USA_northern_states
 		}
@@ -2879,44 +2731,44 @@ completion_reward = {
 		id = usa_focus_heartland_reindustrialization
 		icon = GFX_goal_reform_industry_3
 		x = -46
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			393 = {
-    add_building_construction = {
-        type = infrastructure
-        level = 1
-        instant_build = yes
-    }
-}
-396 = {
-    add_building_construction = {
-        type = infrastructure
-        level = 1
-        instant_build = yes
-    }
-}
-391 = {
-    add_building_construction = {
-        type = industrial_complex
-        level = 1
-        instant_build = yes
-    }
-}
-394 = {
-    add_building_construction = {
-        type = industrial_complex
-        level = 1
-        instant_build = yes
-    }
-}
-395 = {
-    add_building_construction = {
-        type = industrial_complex
-        level = 2
-        instant_build = yes
-    }
-}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			396 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			391 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			394 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			395 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		prerequisite = {
 			focus = USA_midwest_commonwealth
@@ -2924,35 +2776,35 @@ completion_reward = {
 	}
 	focus = {
 		id = usa_focus_rails
-		icon =GFX_goal_reform_rail
+		icon = GFX_goal_reform_rail
 		x = -43
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
-									add_building_construction = {
-    type = supply_node
-    level = 1
-    province = 10666
-    instant_build = yes
-}
-						add_building_construction = {
-    type = supply_node
-    level = 1
-    province = 3613
-    instant_build = yes
-}
-						add_building_construction = {
-    type = supply_node
-    level = 1
-    province = 10370
-    instant_build = yes
-}
 			add_building_construction = {
-    type = supply_node
-    level = 1
-    province = 11802
-    instant_build = yes
-}
+				type = supply_node
+				level = 1
+				province = 10666
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				province = 3613
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				province = 10370
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = supply_node
+				level = 1
+				province = 11802
+				instant_build = yes
+			}
 		}
 		prerequisite = {
 			focus = USA_great_plains_commonwealth
@@ -2962,15 +2814,15 @@ completion_reward = {
 		id = usa_focus_desert_expansion
 		icon = GFX_goal_construction_nev
 		x = -40
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			378 = {
-    add_resource = {
-        type = aluminium
-        amount = 10
-    }
-}
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
 		}
 		prerequisite = {
 			focus = USA_california_commonwealth
@@ -2980,37 +2832,37 @@ completion_reward = {
 		id = usa_focus_border_reinforcement
 		icon = GFX_goal_bunker_usa
 		x = -37
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			380 = {
-    add_building_construction = {
-        type = bunker
-        level = 3
-        instant_build = yes
-    }
-}
-377 = {
-    add_building_construction = {
-        type = bunker
-        level = 2
-        instant_build = yes
-    }
-}
-382 = {
-    add_building_construction = {
-        type = bunker
-        level = 2
-        instant_build = yes
-    }
-}
-376 = {
-    add_building_construction = {
-        type = bunker
-        level = 2
-        instant_build = yes
-    }
-}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+				}
+			}
+			377 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+			382 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
+			376 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		prerequisite = {
 			focus = USA_four_corners_commonwealth
@@ -3020,14 +2872,14 @@ completion_reward = {
 		id = usa_focus_energy_expansion
 		icon = GFX_goal_generic_oil_refinery
 		x = -33
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_resource = {
-    type = oil
-    amount = 10
-    state = 375
-          }
+				type = oil
+				amount = 10
+				state = 375
+			}
 		}
 		prerequisite = {
 			focus = USA_texas_commonwealth
@@ -3037,7 +2889,7 @@ completion_reward = {
 		id = usa_focus_gulf_coast_revitalization
 		icon = GFX_goal_unknown
 		x = -30
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3048,7 +2900,7 @@ completion_reward = {
 		id = usa_focus_southeast_economic_revival
 		icon = GFX_goal_unknown
 		x = -27
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3059,7 +2911,7 @@ completion_reward = {
 		id = usa_focus_appalachian_renewal
 		icon = GFX_goal_unknown
 		x = -24
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3070,7 +2922,7 @@ completion_reward = {
 		id = usa_focus_capital_consolidation
 		icon = GFX_goal_unknown
 		x = -21
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3081,7 +2933,7 @@ completion_reward = {
 		id = usa_focus_megalopolis_rejuvenation
 		icon = GFX_goal_unknown
 		x = -18
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3092,7 +2944,7 @@ completion_reward = {
 		id = usa_focus_new_england_development
 		icon = GFX_goal_unknown
 		x = -15
-		y = 5
+		y = 4
 		cost = 10
 		completion_reward = {}
 		prerequisite = {
@@ -3103,9 +2955,12 @@ completion_reward = {
 		id = usa_eastern_commonwealth
 		icon = GFX_goal_unknown
 		x = -18
-		y = 4
+		y = 3
 		cost = 10
 		completion_reward = {}
+		prerequisite = {
+			focus = usa_focus_commonwealth_review
+		}
 	}
 }
 focus = {

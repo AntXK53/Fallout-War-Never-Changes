@@ -25,7 +25,10 @@ state = {
 		}
 
 		victory_points = {
-			4799 5 # Las Vegas
+			4607 5 # Reno
+		}
+		victory_points = {
+			4799 10 # Las Vegas
 		}
 		
 	}

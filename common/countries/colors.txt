@@ -1,4 +1,4 @@
-﻿#reload countrycolors
+#reload countrycolors
 
 GER = {
     color = rgb { 72 95 125 }

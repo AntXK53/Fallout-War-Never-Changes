@@ -21,7 +21,10 @@ state = {
 			1690 10 # Spokane
 		}
 		victory_points = {
-		    7315 15 # Spokane
+			7386 10 # Olympia
+		}
+		victory_points = {
+		    7315 15 # Seattle
 		}
 	}
 

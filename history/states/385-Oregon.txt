@@ -18,9 +18,11 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			3513 20 
+			3513 20 #Portland 
 		}
-
+		victory_points = {
+			4328 10 #Salem 
+		}
 	}
 
 	provinces={

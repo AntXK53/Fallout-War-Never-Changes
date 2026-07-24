@@ -17,9 +17,11 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			12357 15
+			12357 15 #Milwaukee
 		}
-
+		victory_points = {
+			12456 5 #Madison
+		}
 	}
 
 	provinces={

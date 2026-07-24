@@ -17,9 +17,14 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		
 		victory_points = {
-			4860 1 # Great Falls
+			1851 10 # Billings
+		}
+		victory_points = {
+			4860 10 # Great Falls
+		}
+		victory_points = {
+			7779 10 # Helena
 		}
 	}
 

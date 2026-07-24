@@ -21,6 +21,9 @@ state={
 		victory_points = {
 			6710 20 # Detriot
 		}
+		victory_points = {
+			11685 10 # Grand Rapids
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7

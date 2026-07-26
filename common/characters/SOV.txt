@@ -1,17 +1,4 @@
-# Aleksandra Kollontay has an unsed portrait
-# Viktor Baydalakov has an unused portrait
-
 characters = {
-
-
-  ####    ####   #    #  #    #  #####  #####   #   #      #       ######    ##    #####   ######  #####    ####  
- #    #  #    #  #    #  ##   #    #    #    #   # #       #       #        #  #   #    #  #       #    #  #      
- #       #    #  #    #  # #  #    #    #    #    #        #       #####   #    #  #    #  #####   #    #   ####  
- #       #    #  #    #  #  # #    #    #####     #        #       #       ######  #    #  #       #####        # 
- #    #  #    #  #    #  #   ##    #    #   #     #        #       #       #    #  #    #  #       #   #   #    # 
-  ####    ####    ####   #    #    #    #    #    #        ######  ######  #    #  #####   ######  #    #   ####  
-                                                                                                                  
-
 	SOV_vasily_kozlov = {
 		name = "Vasily Kozlov"
 		portraits = {
@@ -21,9 +8,18 @@ characters = {
 		}
 		country_leader = {
 			ideology = National_Communism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_vasily_kozlov
+			can_be_fired = no
+			traits = { military_theorist }
+			available = {
+				NOT = { is_country_leader = no }
+			}
 		}
 	}
 	SOV_ivan_yanov = {
@@ -34,8 +30,8 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = National_Communism 
-			traits = { }
+			ideology = National_Communism
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -49,7 +45,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = reformist_communism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -63,7 +59,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = reformist_communism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -77,7 +73,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = left_wing_populism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -91,7 +87,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = anarcho_communism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -105,7 +101,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = anarcho_communism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -119,7 +115,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = Neo_Liberalism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -133,7 +129,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = reactionary
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -147,7 +143,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = right_wing_populism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -161,7 +157,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = Civilian_Dictatorship
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -175,7 +171,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = crusader_state
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -189,7 +185,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = fascism_ideology
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
@@ -203,14 +199,11 @@ characters = {
 		}
 		country_leader = {
 			ideology = national_bolshevism
-			traits = { }
+			traits = {}
 			expire = "5000.3.1.1"
 			id = -1
 		}
 	}
-
-	### GENERALS ###
-
 	SOV_georgy_chervov = {
 		name = SOV_georgy_chervov
 		portraits = {
@@ -219,7 +212,7 @@ characters = {
 				large = GFX_portrait_SOV_georgy_zhukov
 			}
 		}
-		advisor =  {
+		advisor = {
 			slot = army_chief
 			idea_token = SOV_georgy_chervov_hg
 			ledger = army
@@ -242,7 +235,7 @@ characters = {
 				large = GFX_portrait_SOV_georgy_zhukov
 			}
 		}
-		advisor =  {
+		advisor = {
 			slot = army_chief
 			idea_token = SOV_vasiliy_kuznezov_hg
 			ledger = army
@@ -289,6 +282,24 @@ characters = {
 			defence_skill = 2
 			planning_skill = 2
 			logistics_skill = 4
+		}
+	}
+	SOV_andrey_pogozin = {
+		name = SOV_andrey_pogozin
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_andrey_pogozin
+			cost = 100
+			traits = { communist_theorist }
+		}
+	}
+	SOV_nikita_nefedorov = {
+		name = SOV_nikita_nefedorov
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_nikita_nefedorov
+			cost = 100
+			traits = { soviet_economist }
 		}
 	}
 }

@@ -128,6 +128,23 @@ ideas = {
 				political_power_factor = -0.02
 			}
 		}
+		SOV_timed_reforms_economy = {
+			removal_cost = -1
+			available = {
+				original_tag = SOV
+			}
+		
+			allowed = {
+				original_tag = SOV
+			}
+
+			modifier = {
+				political_power_factor = -0.02
+				production_speed_arms_factory_factor = 0.05
+				consumer_goods_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
 		SOV_ban_natbol_idea = {
 			removal_cost = -1
 			available = {

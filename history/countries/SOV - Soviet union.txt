@@ -32,6 +32,8 @@ recruit_character = SOV_georgy_chervov
 recruit_character = SOV_maksim_petrichenko
 recruit_character = SOV_matvey_vasilyev
 recruit_character = SOV_vasiliy_kuznezov
+recruit_character = SOV_andrey_pogozin
+recruit_character = SOV_nikita_nefedorov
 
 #Add synthetic refineries tech
 set_technology = {
@@ -246,6 +248,8 @@ add_ideas = {
 	SOV_normally_robototechnic_idea
     war_economy
 	SOV_reformists_zagovor_idea
+
+	SOV_vasily_kozlov
 }
 
 set_politics = {

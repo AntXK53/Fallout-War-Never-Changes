@@ -1,6 +1,5 @@
 focus_tree = {
 	id = SOV_focuses
-	
 	country = {
 		factor = 0
 		modifier = {
@@ -8,169 +7,35 @@ focus_tree = {
 			tag = SOV
 		}
 	}
-	
 	default = yes
+	continuous_focus_position = {
+		x = 50
+		y = 4000
+	}
 
-    continuous_focus_position = { x = 50 y = 4000 }
-	###########################
-	#####POLITICAL FOCUSES#####
-	###########################
-    focus = {
-		id = SOV_congress_2056
-		icon = GFX_goal_unknown
-		cost = 8
-		ai_will_do = {
-			factor = 100
-		}
-		x = 12
-		y = 0
-		completion_reward = {
-			country_event = sovietunion.1
-		}
-	}
-    focus = {
-		id = SOV_proverki_v_partii
-		icon = GFX_goal_unknown
-		cost = 6
-		relative_position_id = SOV_congress_2056
-		prerequisite = {
-			focus = SOV_congress_2056
-		}
-		availalbe = {
-		}
-		x = 0
-		y = 1
-		completion_reward = {
-			country_event = {
-				id = sovietunion.2
-			    days = 10
-		    }
-		}
-	}
-    focus = {
-		id = SOV_deal_for_liberal_politics
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_proverki_v_partii
-		}
-		availalbe = {
-
-		}
-		mutually_exclusive = {
-			focus = SOV_kozlov_left
-		}
-		ai_will_do = {
-			factor = 90
-		}
-		x = 0
-		y = 2
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_no_liberals
-				days = 200
-			}
-		}
-	}
-    focus = {
-		id = SOV_random_works
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_deal_for_liberal_politics
-		}
-		availalbe = {
-
-		}
-		x = 0
-		y = 3
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_timed_reforms
-				days = 180
-			}
-		}
-	}
 	focus = {
-		id = SOV_kill_novorossia
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_random_works
-		}
-		availalbe = {
-
-		}
-		x = -1
-		y = 4
-		completion_reward = {
-			country_event = sovietunion.5
-		}
-	}
-    focus = {
-		id = SOV_political_reforms_m
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_random_works
-		}
-		availalbe = {
-
-		}
-		x = 0
-		y = 5
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_political_reforms_m_1
-				years = 1
-			}
-		}
-	}
-	focus = {
-		id = SOV_karabax_question
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_kill_novorossia
-		}
-		availalbe = {
-
-		}
-		x = -1
-		y = 6
-		completion_reward = {
-			country_event = sovietunion.6
-		}
-	}
-    focus = {
 		id = SOV_congress_cpsu_2060
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
 		prerequisite = {
 			focus = SOV_political_reforms_m
 		}
 		prerequisite = {
-			focus = SOV_karabax_question
+			focus = SOV_change_economy
 		}
-		availalbe = {
-
+		prerequisite = {
+			focus = SOV_ssrs_question
 		}
-		x = 0
-		y = 7
+		availalbe = {}
+		x = 11
+		y = 4
 		completion_reward = {
 			country_event = sovietunion.4
 		}
 	}
-    focus = {
+	focus = {
 		id = SOV_militarist_in_power
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
 		prerequisite = {
 			focus = SOV_congress_cpsu_2060
@@ -179,22 +44,21 @@ focus_tree = {
 			always = no
 			OR = {
 				has_country_leader = {
-	                character = SOV_vasily_kozlov
-	                ruling_only = yes
-                }
+					character = SOV_vasily_kozlov
+					ruling_only = yes
+				}
 				has_country_leader = {
-	                character = SOV_ivan_yanov
-	                ruling_only = yes
-                }
+					character = SOV_ivan_yanov
+					ruling_only = yes
+				}
 			}
 		}
-		x = 1
-		y = 8
+		x = 14
+		y = 5
 	}
-    focus = {
-        id = SOV_reformists_power
+	focus = {
+		id = SOV_reformists_power
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
 		prerequisite = {
 			focus = SOV_congress_cpsu_2060
@@ -203,158 +67,100 @@ focus_tree = {
 			always = no
 			SOV = {
 				has_country_leader = {
-	                character = SOV_matvey_anisimov
-	                ruling_only = yes
-                }
+					character = SOV_matvey_anisimov
+					ruling_only = yes
+				}
 			}
 		}
 		mutually_exclusive = {
-            focus = SOV_militarist_in_power
-        }
-		x = -5
-		y = 8
+			focus = SOV_militarist_in_power
+		}
+		x = 6
+		y = 5
 	}
 	focus = {
-        id = SOV_plan_of_defence_ussr
+		id = SOV_plan_of_defence_ussr
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 6
 		prerequisite = {
 			focus = SOV_militarist_in_power
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -1
-		y = 9
+		availalbe = {}
+		x = 11
+		y = 6
 	}
 	focus = {
-        id = SOV_defence_eastern_bloc
+		id = SOV_nuclear_disaster
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
+		availalbe = {}
+		x = 9
+		y = 7
 		prerequisite = {
 			focus = SOV_plan_of_defence_ussr
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -1
-		y = 10
 	}
 	focus = {
-        id = SOV_nuclear_disaster
+		id = SOV_new_mbr
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_defence_eastern_bloc
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -3
-		y = 11
-	}
-	focus = {
-        id = SOV_new_mbr
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
 		prerequisite = {
 			focus = SOV_nuclear_disaster
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -3
-		y = 12
+		availalbe = {}
+		x = 9
+		y = 8
 	}
 	focus = {
-        id = SOV_nuclear_prioritet
+		id = SOV_no_tallin_rodnichok
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 6
-		prerequisite = {
-			focus = SOV_new_mbr
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -3
-		y = 13
-	}
-	focus = {
-        id = SOV_no_tallin_rodnichok
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
+		availalbe = {}
+		x = 11
+		y = 8
 		prerequisite = {
-			focus = SOV_defence_eastern_bloc
+			focus = SOV_plan_of_defence_ussr
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -1
-		y = 11
 	}
 	focus = {
-        id = SOV_intervention_in_south_states
+		id = SOV_intervention_in_south_states
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
 		prerequisite = {
 			focus = SOV_no_tallin_rodnichok
 		}
-		availalbe = {
+		prerequisite = {
+			focus = SOV_new_mbr
 		}
-		mutually_exclusive = {
-        }
-		x = -1
-		y = 13
+		availalbe = {}
+		x = 10
+		y = 9
 		completion_reward = {
 			set_country_flag = sov_intervention_dev_ct
-			unlock_decision_category_tooltip = sov_intervention_dev_cat 
+			unlock_decision_category_tooltip = sov_intervention_dev_cat
 		}
 	}
 	focus = {
-        id = SOV_integration_state
+		id = SOV_integration_state
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 6
-		prerequisite = {
-			focus = SOV_nuclear_prioritet
-		}
 		prerequisite = {
 			focus = SOV_intervention_in_south_states
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = -2
-		y = 14
+		availalbe = {}
+		x = 10
+		y = 10
 	}
 	focus = {
-        id = SOV_ban_natbol
+		id = SOV_ban_natbol
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
 		prerequisite = {
 			focus = SOV_militarist_in_power
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 9
+		availalbe = {}
+		x = 14
+		y = 6
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_ban_natbol_idea
@@ -368,385 +174,105 @@ focus_tree = {
 		}
 	}
 	focus = {
-        id = SOV_ideology_question_mil
+		id = SOV_ideology_question_mil
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 6
 		prerequisite = {
 			focus = SOV_ban_natbol
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 10
+		availalbe = {}
+		x = 14
+		y = 7
 	}
 	focus = {
-        id = SOV_soviet_nationalism
+		id = SOV_konovalov_idea
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_ideology_question_mil
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-			focus = SOV_internationalism
-        }
-		x = 3
-		y = 11
-		completion_reward = {
-			custom_effect_tooltip = SOV_soviet_nationalism_tt
-			hidden_effect = {
-				remove_country_leader_role = {
-                    ideology = communism
-                }
-				add_country_leader_role = {
-                    character = SOV_vasily_kozlov
-                    promote_leader = yes
-                    country_leader = {
-                        ideology = Soviet_Nationalism
-                        expire = "1965.1.1.1"
-                        traits = { }
-                    }
-                }
-			}
-		}
-	}
-	focus = {
-        id = SOV_internationalism
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_ideology_question_mil
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 5
-		y = 11
-		completion_reward = {
-			custom_effect_tooltip = SOV_internationalism_tt
-			hidden_effect = {
-				remove_country_leader_role = {
-                    ideology = communism
-                }
-				add_country_leader_role = {
-                    character = SOV_vasily_kozlov
-                    promote_leader = yes
-                    country_leader = {
-                        ideology = MarxistLeninism
-                        expire = "1965.1.1.1"
-                        traits = { }
-                    }
-                }
-			}
-		}
-	}
-	focus = {
-        id = SOV_konovalov_idea
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
-		prerequisite = {
-			focus = SOV_internationalism
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 7
-		y = 12
+		availalbe = {}
+		x = 19
+		y = 8
 	}
 	focus = {
-        id = SOV_hell_march_start
+		id = SOV_hell_march_start
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
 		prerequisite = {
 			focus = SOV_konovalov_idea
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 7
-		y = 13
+		availalbe = {}
+		x = 19
+		y = 9
 	}
 	focus = {
-        id = SOV_agitprop
+		id = SOV_agitprop
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
+		availalbe = {}
+		x = 13
+		y = 8
 		prerequisite = {
-			focus = SOV_soviet_nationalism
+			focus = SOV_ideology_question_mil
 		}
-		prerequisite = {
-			focus = SOV_internationalism
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 12
 	}
 	focus = {
-        id = SOV_militarisation_ussr
+		id = SOV_return_of_artel
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 5
-		prerequisite = {
-			focus = SOV_agitprop
-		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 13
-	}
-	focus = {
-        id = SOV_return_of_artel
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
-		prerequisite = {
-			focus = SOV_militarisation_ussr
-		}
-		availalbe = {
-		}
+		availalbe = {}
 		mutually_exclusive = {
 			focus = SOV_deficit_ah
-        }
-		x = 2
-		y = 14
+		}
+		x = 16
+		y = 6
+		prerequisite = {
+			focus = SOV_militarist_in_power
+		}
 	}
 	focus = {
-        id = SOV_stulinisation
+		id = SOV_stulinisation
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
 		prerequisite = {
 			focus = SOV_return_of_artel
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 2
-		y = 15
+		availalbe = {}
+		x = 16
+		y = 7
 	}
 	focus = {
-        id = SOV_deficit_ah
+		id = SOV_deficit_ah
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 8
+		availalbe = {}
+		x = 18
+		y = 6
 		prerequisite = {
-			focus = SOV_militarisation_ussr
+			focus = SOV_militarist_in_power
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 14
 	}
 	focus = {
-        id = SOV_prioritet_military
+		id = SOV_prioritet_military
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 5
 		prerequisite = {
 			focus = SOV_deficit_ah
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 15
+		availalbe = {}
+		x = 18
+		y = 7
 	}
 	focus = {
-        id = SOV_tensionity_time
+		id = SOV_tensionity_time
 		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
 		cost = 6
 		prerequisite = {
 			focus = SOV_stulinisation
 			focus = SOV_prioritet_military
 		}
-		availalbe = {
-		}
-		mutually_exclusive = {
-        }
-		x = 4
-		y = 16
+		availalbe = {}
+		x = 17
+		y = 8
 	}
-	###########################
-	######RAZVAL OF USSSR######
-	###########################
-	focus = {
-		id = SOV_kozlov_left
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_proverki_v_partii
-		}
-		allow_branch = {
-			has_country_flag = SOV_reformist_branch_cf
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-		x = 4
-		y = 2
-	}
-	focus = {
-		id = SOV_srochno_congress_cpsu
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_kozlov_left
-		}
-		availalbe = {
-
-		}
-		x = 3
-		y = 3
-	}
-	focus = {
-		id = SOV_political_reforms_razval
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_srochno_congress_cpsu
-		}
-		availalbe = {
-
-		}
-		x = 3
-		y = 4
-	}
-	focus = {
-		id = SOV_civilian_economy_uss
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_political_reforms_razval
-		}
-		availalbe = {
-
-		}
-		x = 3
-		y = 5
-	}
-	focus = {
-		id = SOV_doclad_o_reform_union
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_kozlov_left
-		}
-		availalbe = {
-
-		}
-		x = 6
-		y = 3
-		completion_reward = {
-			activate_mission = ussr_ssr_exit_1
-			country_event = sovietunion_unstability.1
-		}
-	}
-	focus = {
-		id = SOV_project_of_new_union
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_doclad_o_reform_union
-		}
-		availalbe = {
-
-		}
-		x = 6
-		y = 4
-		completion_reward = {
-			set_country_flag = ussr_uss_ct
-			unlock_decision_category_tooltip = sov_union_of_sovereigh_state_cat
-		}
-	}
-	focus = {
-		id = sov_union_of_sovereigh_state_foc
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_project_of_new_union
-		}
-		availalbe = {
-
-		}
-		mutually_exclusive = {
-			focus = SOV_everything_is_fine
-		}
-		x = 6
-		y = 5
-		completion_reward = {
-			SOV = {
-				set_cosmetic_tag = SOV_uss
-			}
-		}
-	}
-	focus = {
-		id = SOV_everything_is_fine
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = SOV_project_of_new_union
-		}
-		availalbe = {
-
-		}
-		x = 8
-		y = 5
-		completion_reward = {
-			SOV = {
-				set_cosmetic_tag = SOV_rsfsr
-			}
-		}
-	}
-	focus = {
-		id = SOV_economic_of_new_union
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_congress_2056
-		cost = 8
-		prerequisite = {
-			focus = sov_union_of_sovereigh_state_foc
-		}
-		prerequisite = {
-			focus = SOV_civilian_economy_uss
-		}
-		availalbe = {
-
-		}
-		x = 4
-		y = 6
-	}
-	###########################
-	######ECONOMICFOCUSES######
-	###########################
 	focus = {
 		id = SOV_update_gosplan
 		icon = GFX_goal_unknown
@@ -837,13 +363,13 @@ focus_tree = {
 		completion_reward = {
 			572 = {
 				add_dynamic_modifier = {
-                    modifier = SOV_uranium_ext
-                }
+					modifier = SOV_uranium_ext
+				}
 			}
 			262 = {
 				add_dynamic_modifier = {
-                    modifier = SOV_uranium_ext
-                }
+					modifier = SOV_uranium_ext
+				}
 			}
 		}
 	}
@@ -859,10 +385,10 @@ focus_tree = {
 		y = 4
 		completion_reward = {
 			add_tech_bonus = {
-                bonus = 0.5
-                uses = 2
-                category = industry
-            }
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
 		}
 	}
 	focus = {
@@ -904,8 +430,8 @@ focus_tree = {
 		completion_reward = {
 			244 = {
 				add_dynamic_modifier = {
-                    modifier = SOV_atomic_electrostation_new
-                }
+					modifier = SOV_atomic_electrostation_new
+				}
 			}
 		}
 	}
@@ -974,8 +500,8 @@ focus_tree = {
 		completion_reward = {
 			244 = {
 				add_dynamic_modifier = {
-                    modifier = SOV_computer_academy_new
-                }
+					modifier = SOV_computer_academy_new
+				}
 			}
 		}
 	}
@@ -1028,8 +554,8 @@ focus_tree = {
 		completion_reward = {
 			568 = {
 				add_dynamic_modifier = {
-                    modifier = SOV_atomic_electrostation_new
-                }
+					modifier = SOV_atomic_electrostation_new
+				}
 			}
 		}
 	}
@@ -1148,45 +674,45 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			random_controlled_state = {
-                prioritize = { 219 252 195 653 570 }
+				prioritize = { 219 252 195 653 570 }
 				add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_controlled_state = {
-                prioritize = { 219 252 195 653 570 }
+				prioritize = { 219 252 195 653 570 }
 				add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_controlled_state = {
-                prioritize = { 219 252 195 653 570 }
+				prioritize = { 219 252 195 653 570 }
 				add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_controlled_state = {
-                prioritize = { 219 252 195 653 570 }
+				prioritize = { 219 252 195 653 570 }
 				add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			random_controlled_state = {
-                prioritize = { 219 252 195 653 570 }
+				prioritize = { 219 252 195 653 570 }
 				add_building_construction = {
-                    type = infrastructure
-                    level = 1
-                    instant_build = yes
-                }
-            }
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1233,9 +759,6 @@ focus_tree = {
 		x = -8
 		y = 6
 	}
-	###########################
-	######MILITARYFOCUSES######
-	###########################
 	focus = {
 		id = SOV_soviet_army
 		icon = GFX_focus_generic_spur_communist_revolutions
@@ -1329,9 +852,6 @@ focus_tree = {
 		x = 2
 		y = 4
 	}
-	###########################
-	######FOREIGH FOCUSES######
-	###########################
 	focus = {
 		id = SOV_foreigh_politic
 		icon = GFX_focus_SOV_socialism_in_one_country
@@ -1354,9 +874,9 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_opinion_modifier = {
-                target = PRC
-                modifier = unholy_alliance_trade
-            }
+				target = PRC
+				modifier = unholy_alliance_trade
+			}
 		}
 	}
 	focus = {
@@ -1385,10 +905,10 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			diplomatic_relation = {
-                country = PRC
-                relation = non_aggression_pact
-                active = yes
-            }
+				country = PRC
+				relation = non_aggression_pact
+				active = yes
+			}
 		}
 	}
 	focus = {
@@ -1421,9 +941,9 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_opinion_modifier = {
-                target = USA
-                modifier = unholy_alliance_trade
-            }
+				target = USA
+				modifier = unholy_alliance_trade
+			}
 		}
 	}
 	focus = {
@@ -1452,10 +972,10 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			diplomatic_relation = {
-                country = USA
-                relation = non_aggression_pact
-                active = yes
-            }
+				country = USA
+				relation = non_aggression_pact
+				active = yes
+			}
 		}
 	}
 	focus = {
@@ -1879,5 +1399,106 @@ focus_tree = {
 		cost = 5
 		x = 16
 		y = 4
+	}
+	focus = {
+		id = SOV_congress_2056
+		icon = GFX_goal_unknown
+		x = 14
+		y = 0
+		cost = 10
+		completion_reward = {
+			country_event = sovietunion.1
+		}
+	}
+	focus = {
+		id = SOV_against_government
+		icon = GFX_goal_unknown
+		x = 17
+		y = 1
+		cost = 10
+		completion_reward = {
+			country_event = {
+				id = sovietunion.2
+				days = 10
+			}
+		}
+		prerequisite = {
+			focus = SOV_congress_2056
+		}
+		mutually_exclusive = {
+			focus = SOV_everything_is_fine
+		}
+	}
+	focus = {
+		id = SOV_everything_is_fine
+		icon = GFX_goal_unknown
+		x = 11
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+		prerequisite = {
+			focus = SOV_congress_2056
+		}
+		mutually_exclusive = {
+			focus = SOV_against_government
+		}
+	}
+	focus = {
+		id = SOV_update_ministers
+		icon = GFX_goal_unknown
+		x = 11
+		y = 2
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_everything_is_fine
+		}
+	}
+	focus = {
+		id = SOV_political_reforms_m
+		icon = GFX_goal_unknown
+		cost = 5
+		availalbe = {}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_political_reforms_m_1
+				years = 1
+			}
+		}
+		prerequisite = {
+			focus = SOV_update_ministers
+		}
+	}
+	focus = {
+		id = SOV_change_economy
+		icon = GFX_goal_unknown
+		x = 13
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_political_power = -50
+			country_event = sovietunion.7
+		}
+		prerequisite = {
+			focus = SOV_update_ministers
+		}
+	}
+	focus = {
+		id = SOV_ssrs_question
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		completion_reward = {
+			country_event = sovietunion.5
+		}
+		prerequisite = {
+			focus = SOV_update_ministers
+		}
 	}
 }

@@ -173,9 +173,17 @@ country_event = {
             remove_core_of = DON
 			add_core_of = UKR
         }
+		country_event = {
+			id = sovietunion.6
+			days = 30
+		}
 	}
 	option = {
-		name = sovietunion.5.bs
+		name = sovietunion.5.b
+		country_event = {
+			id = sovietunion.6
+			days = 30
+		}
 	}
 }
 country_event = {
@@ -196,6 +204,22 @@ country_event = {
 		name = sovietunion.6.b
 		1107 = {
 			remove_core_of = AZR
+		}
+	}
+}
+country_event = {
+	id = sovietunion.7
+	title = sovietunion.7.t
+	desc = sovietunion.7.desc
+	picture = x
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovietunion.7.a
+		add_timed_idea = {
+			idea = SOV_timed_reforms_economy
+			days = 180
 		}
 	}
 }

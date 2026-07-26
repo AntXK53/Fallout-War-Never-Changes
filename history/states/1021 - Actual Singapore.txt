@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1021"
 	manpower = 557745
 	
-	state_category = large_town
+	state_category = city
 	
 	resources = {
 		steel = 10
@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = SNG
-		add_core_of = SNG
+		owner = MAL
+		add_core_of = MAL
 
 		victory_points = {
 			12299 30 # Singapore

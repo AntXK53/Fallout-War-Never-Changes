@@ -25,4 +25,30 @@ leader_traits = {
 			factor = 1
 		}
 	}
+
+
+	Ceo_of_red_rocket = {
+		random = no
+  
+		consumer_goods_factor = -0.10
+		local_resources_factor = 0.5
+
+
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		Ceo_of_Robco = {
+		random = no
+        production_speed_industrial_complex_factor = 0.10
+		consumer_goods_factor = -0.05
+		local_resources_factor = 0.15
+		political_power_gain = 0.15
+
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

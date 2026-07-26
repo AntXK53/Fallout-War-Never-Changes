@@ -40,4 +40,36 @@ characters={
 			id=-1
 		}
 	}
+
+
+
+ USA_robert_house = { 
+        name = "Robert  House"
+        portraits = {
+            civilian = {
+                small = "GFX_portraite_House_small"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = robert_house_advisor
+            traits = { 	Ceo_of_Robco }
+			cost = 125
+        }
+    }
+	 USA_ceo_red_rocket = { 
+        name = "Michael Winter"
+        portraits = {
+            civilian = {
+                small = "GFX_portraite_red_small"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = robert_house_advisor
+            traits = { 	Ceo_of_red_rocket }
+			cost = 100
+        }
+    }
+
 }

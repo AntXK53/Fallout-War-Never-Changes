@@ -16,6 +16,12 @@ state={
 			infrastructure = 3 #was: 7
 			arms_factory = 1
 			industrial_complex = 1
+			18225 = {
+				nuclear_facility = 1
+			}
+		}
+		victory_points = {
+			18225 2 #Chernobyl
 		}
 		add_core_of = SOV
 		add_core_of = UKR

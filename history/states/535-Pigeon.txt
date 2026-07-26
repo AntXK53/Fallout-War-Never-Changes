@@ -6,8 +6,7 @@ state = {
 	
 	history = {
 
-		owner = NAS
-		add_core_of = NAS
+		owner = AST
 		add_core_of = AST
 		add_core_of = arms_factory
 

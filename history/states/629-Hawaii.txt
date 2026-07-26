@@ -5,7 +5,6 @@ state={
 	state_category = town
 	history={
 		owner = USA
-		add_core_of = HAW
 		add_core_of = USA
 		buildings = {
 			infrastructure = 2

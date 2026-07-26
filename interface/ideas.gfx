@@ -1,7 +1,15 @@
 spriteTypes = {	
 
 ##SOV##
+	SpriteType = {
+		name = "GFX_idea_vault_tec"
+		texturefile = "gfx/interface/ideas/vault_tec.png"
+	}
 
+	SpriteType = {
+		name = "GFX_vaults"
+		texturefile = "gfx/interface/decisionview/vaults.png"
+	}
 	SpriteType = {
 		name = "GFX_idea_full_war_sov"
 		texturefile = "gfx/interface/ideas/SOV/full_war_sov.png"

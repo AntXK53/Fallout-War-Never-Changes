@@ -8,8 +8,7 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		owner = TAR
-		add_core_of = TAR
+		owner = AST
 		add_core_of = AST
 	}
 	state_category = pastoral

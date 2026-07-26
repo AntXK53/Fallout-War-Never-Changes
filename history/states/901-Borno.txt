@@ -6,9 +6,8 @@ state = {
 
 	history = {
 
-		owner = WAU
+		owner = NGA
 		add_core_of = NGA
-		add_core_of = WAU
 
 		buildings = {
 			infrastructure = 1

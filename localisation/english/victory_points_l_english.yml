@@ -1346,6 +1346,7 @@
  VICTORY_POINTS_13376:0 "Johor Bahru"
  VICTORY_POINTS_11925:0 "Kumamoto"
  VICTORY_POINTS_823:0 "Palm Springs"
+ VICTORY_POINTS_831:0 "Dayton"
  VICTORY_POINTS_908:0 "Pittsfield"
  VICTORY_POINTS_941:0 "Bakersfield"
  VICTORY_POINTS_1453:0 "Baton Rouge"
@@ -1362,8 +1363,9 @@
  VICTORY_POINTS_1972:0 "Gallup"
  VICTORY_POINTS_3677:0 "Livermore"
  VICTORY_POINTS_3678:0 "Oakland"
+ VICTORY_POINTS_3685:0 "Bowling Green"
  VICTORY_POINTS_3687:0 "Erie"
- VICTORY_POINTS_3712:0 "Concord"
+ VICTORY_POINTS_3712:0 "Manchester"
  VICTORY_POINTS_3733:0 "Rochester"
  VICTORY_POINTS_3824:0 "Lancaster"
  VICTORY_POINTS_3834:0 "Tucson"
@@ -1373,6 +1375,7 @@
  VICTORY_POINTS_3906:0 "Quincy"
  VICTORY_POINTS_3972:0 "Amarillo"
  VICTORY_POINTS_4328:0 "Salem"
+ VICTORY_POINTS_4442:0 "Youngstown"
  VICTORY_POINTS_4445:0 "Montpelier"
  VICTORY_POINTS_4507:0 "Lafayette"
  VICTORY_POINTS_4518:0 "Fresno"
@@ -1388,6 +1391,7 @@
  VICTORY_POINTS_6798:0 "San Angelo"
  VICTORY_POINTS_6869:0 "Reading"
  VICTORY_POINTS_6872:0 "State College"
+ VICTORY_POINTS_6874:0 "Canton"
  VICTORY_POINTS_6876:0 "Merced"
  VICTORY_POINTS_6887:0 "Grand Junction"
  VICTORY_POINTS_6909:0 "New Haven"
@@ -1395,6 +1399,7 @@
  VICTORY_POINTS_7386:0 "Olympia"
  VICTORY_POINTS_7388:0 "Tampa"
  VICTORY_POINTS_7517:0 "Oceanside"
+ VICTORY_POINTS_7528:0 "Athens"
  VICTORY_POINTS_7543:0 "Pine Bluff"
  VICTORY_POINTS_7643:0 "Asheville"
  VICTORY_POINTS_7779:0 "Helena"
@@ -1406,7 +1411,9 @@
  VICTORY_POINTS_9693:0 "Albany"
  VICTORY_POINTS_9708:0 "Syracuse"
  VICTORY_POINTS_9801:0 "Long Branch"
+ VICTORY_POINTS_9808:0 "Akron"
  VICTORY_POINTS_9820:0 "Wilkes-Barre"
+ VICTORY_POINTS_9825:0 "Sandusky"
  VICTORY_POINTS_9832:0 "New London"
  VICTORY_POINTS_9834:0 "West Palm Beach"
  VICTORY_POINTS_9850:0 "Hartford"
@@ -1457,3 +1464,69 @@
  VICTORY_POINTS_15740:0 "Dover"
  VICTORY_POINTS_17299:0 "Daytona Beach"
  VICTORY_POINTS_17301:0 "Cape Canaveral"
+ VICTORY_POINTS_12667:0 "Brookings"
+ VICTORY_POINTS_7862:0 "Aberdeen"
+ VICTORY_POINTS_12620:0 "Pierre"
+ VICTORY_POINTS_9695:0 "Twin Falls"
+ VICTORY_POINTS_10672:0 "Rexburg"
+ VICTORY_POINTS_9616:0 "Nampa"
+ VICTORY_POINTS_4778:0 "Moscow"
+ VICTORY_POINTS_12124:0 "Coeur d'Alene"
+ VICTORY_POINTS_11495:0 "Coos Bay"
+ VICTORY_POINTS_3471:0 "Medford"
+ VICTORY_POINTS_385:0 "Eugene"
+ VICTORY_POINTS_4347:0 "Klamath Falls"
+ VICTORY_POINTS_1414:0 "Bend"
+ VICTORY_POINTS_7865:0 "Pendleton"
+ VICTORY_POINTS_12281:0 "Corvallis"
+ VICTORY_POINTS_1587:0 "Tuscaloosa"
+ VICTORY_POINTS_492:0 "Montgomery" #Alabama
+ VICTORY_POINTS_5059:0 "Huntsville" #Alabama
+ VICTORY_POINTS_10192:0 "Florence" #Alabama
+ VICTORY_POINTS_11509:0 "Auburn" #Alabama
+ VICTORY_POINTS_3715:0 "Concord" #New Hampshire
+ VICTORY_POINTS_10481:0 "Berlin" #New Hampshire
+ VICTORY_POINTS_7629:0 "Burlington" #Vermont
+ VICTORY_POINTS_9675:0 "Rutland" #Vermont
+ VICTORY_POINTS_17305:0 "Augusta" #Maine
+ VICTORY_POINTS_7462:0 "Lewiston" #Maine
+ VICTORY_POINTS_3732:0 "Portland" #Maine
+ VICTORY_POINTS_4287:0 "Presque Isle" #Maine
+ VICTORY_POINTS_10709:0 "Minot" #North Dakota
+ VICTORY_POINTS_6722:0 "Dickinson" #North Dakota
+ VICTORY_POINTS_4759:0 "Williston" #North Dakota
+ VICTORY_POINTS_3719:0 "Grand Forks" #North Dakota
+ VICTORY_POINTS_10685:0 "Fargo" #North Dakota
+ VICTORY_POINTS_4610:0 "Sheridan" #Wyoming
+ VICTORY_POINTS_4820:0 "Gilette" #Wyoming
+ VICTORY_POINTS_10640:0 "Laramie" #Wyoming
+ VICTORY_POINTS_12651:0 "Jackson" #Wyoming
+ VICTORY_POINTS_4749:0 "Scottsbluff" #Nebraska
+ VICTORY_POINTS_4760:0 "North Platte" #Nebraska
+ VICTORY_POINTS_7852:0 "Grand Island" #Nebraska
+ VICTORY_POINTS_10676:0 "Lincoln" #Nebraska
+ VICTORY_POINTS_4296:0 "Port Angeles" #Washington
+ VICTORY_POINTS_10157:0 "Bellingham" #Washington
+ VICTORY_POINTS_10271:0 "Vancouver" #Washington
+ VICTORY_POINTS_10690:0 "Kennewick" #Washington
+ VICTORY_POINTS_10155:0 "Yakima" #Washington
+ VICTORY_POINTS_12214:0 "Wenatchee" #Washington
+ VICTORY_POINTS_12673:0 "Pullman" # Washington
+ VICTORY_POINTS_4736:0 "Winnemucca" #Nevada
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+

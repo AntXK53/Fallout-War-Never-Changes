@@ -21,10 +21,22 @@ state={
 			4723 5 #Cheyenne
         }
 		victory_points = {
+			4820 3 #Gilette
+        }
+		victory_points = {
+			4610 3 #Sheridan
+        }
+		victory_points = {
+			10640 3 #Laramie
+        }
+		victory_points = {
 			10711 5 #Casper
         }
 		victory_points = {
 			12633 5 #Rock Springs
+        }
+		victory_points = {
+			12651 3 #Jackson
         }
 	}
 

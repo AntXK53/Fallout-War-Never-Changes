@@ -7,9 +7,9 @@ state={
 	state_category = city
 	
 	resources={
-		steel=35 # was: 40
-		oil=5 # was: 10
-		aluminium=10 # was: 16
+		steel=35
+		oil=5
+		aluminium=10
 	}
 	history={
 		owner = USA
@@ -20,22 +20,22 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			853 20
+			853 15 #Phoenix
 		}
 		victory_points = {
-			1793 3
+			1793 3 #Prescott
 		}
         victory_points = {
-			3834 10
+			3834 10 #Tucson
 		}
         victory_points = {
-			10783 5
+			10783 3 #Yuma
 		}
         victory_points = {
-			11814 5
+			11814 1 #Bullhead City
 		}
         victory_points = {
-			12765 5
+			12765 3 #Flagstaff
 		}
 	}
 

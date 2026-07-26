@@ -2,12 +2,12 @@
 state={
 	id=389
 	name="STATE_389"
-	manpower = 680844
-	state_category = rural
+	manpower = 628830
+	state_category = town
 	resources={
-		steel=17 # was: 24
-		oil=7 # was: 10
-		coal = 12 # initial distribution = with infra 25.2 / 1280 total
+		steel=20 # was: 24
+		oil=8 # was: 10
+		coal = 15 # initial distribution = with infra 25.2 / 1280 total
 	}
 
 	history={
@@ -18,7 +18,22 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			1836 5
+			1836 3 #Bismarck
+		}
+		victory_points = {
+			3719 1 #Grand Forks
+		}
+		victory_points = {
+			4759 1 #Williston
+		}
+		victory_points = {
+			6722 1 #Dickinson
+		}
+		victory_points = {
+			10685 3 #Fargo
+		}
+		victory_points = {
+			10708 3 #Minot
 		}
 
 	}

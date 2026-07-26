@@ -5,19 +5,25 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = USA
 		victory_points = {
-			4445 5
+			4445 5 #Montpelier
+		}
+		victory_points = {
+			7629 5 #Burlington
+		}
+		victory_points = {
+			9675 5 #Rutland
 		}
 	}
 
 	provinces={
-    4445 7629 9675
+    4445 7629 9675 13158
 	}
-	manpower=10000
+	manpower=393000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

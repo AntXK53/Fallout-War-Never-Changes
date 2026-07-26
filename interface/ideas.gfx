@@ -2,8 +2,8 @@ spriteTypes = {
 
 ##SOV##
 	SpriteType = {
-		name = "GFX_idea_vault_tec_idea"
-		texturefile = "gfx/interface/ideas/vault_tec_idea.png"
+		name = "GFX_idea_vault_tec"
+		texturefile = "gfx/interface/ideas/vault_tec.png"
 	}
 
 	SpriteType = {

@@ -18,8 +18,14 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			4723 5
-                }
+			4723 5 #Cheyenne
+        }
+		victory_points = {
+			10711 5 #Casper
+        }
+		victory_points = {
+			12633 5 #Rock Springs
+        }
 	}
 
 	provinces={

@@ -2,13 +2,13 @@
 state={
 	id=376
 	name="STATE_376"
-	manpower = 423316
+	manpower = 974653
 	
 	state_category = rural
 	
 	resources={
 		oil=14 # was: 20
-		aluminium=30 # was: 52
+		aluminium=52 # was: 52
 		coal = 5 # initial distribution = with infra 8.4 / 1280 total
 	}
 
@@ -16,16 +16,35 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
+			air_base = 3
 		}
 		add_core_of = USA
 		victory_points = {
-			4975 10
+			1972 5 #Gallup
 		}
 		victory_points = {
-			12684 10
-                }
+			3867 10
+		}
+		victory_points = {
+			4975 15
+		}
+		victory_points = {
+			8070 10
+		}
+		victory_points = {
+			10645 5
+        }
+		victory_points = {
+			10867 5 #Clovis
+        }
+		victory_points = {
+			12684 5 #Santa Fe
+        }
+		victory_points = {
+			12791 5 #Las Cruces
+        }
 	}
 
 	provinces={

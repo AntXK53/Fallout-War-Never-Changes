@@ -4,18 +4,24 @@ state={
 
 	history={
 		owner = USA
+		add_core_of = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = USA
+		victory_points = {
+			13577 5
+		}
+		victory_points = {
+			15740 5
+		}
 	}
 
 	provinces={
     13577 15740 15741 
 	}
-	manpower=10000
+	manpower=469000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 	local_supplies=0.000
 }

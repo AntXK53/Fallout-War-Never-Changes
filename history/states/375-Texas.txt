@@ -2,14 +2,14 @@
 state={
 	id=375
 	name="STATE_375"
-	manpower = 5824712
+	manpower = 9436142
 	
 	
 	state_category = metropolis
 	
 	resources={
-		oil=320 # was: 580
-		aluminium=50 # was: 96
+		oil=183 # was: 580
+		aluminium=76 # was: 96
 		coal = 11 # initial distribution = with infra 35.2 / 1280 total
 	}
 
@@ -17,9 +17,9 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 5 #was: 6
 			industrial_complex = 9
-			air_base = 3
+			air_base = 4
 			10337 = {
 				naval_base = 3
 			}
@@ -29,13 +29,31 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			1927 10
+			1500 5
+		}
+		victory_points = {
+			5022 10
+		}
+		victory_points = {
+			5085 5
 		}
 		victory_points = {
 			3960 30 
 		}
+		victory_points = {
+			3972 5
+		}
+		victory_points = {
+			4955 5
+		}
         victory_points = {
 			6785 10
+		}
+        victory_points = {
+			6798 5
+		}
+		victory_points = {
+			9920 10
 		}
 		victory_points = {
 			10337 15

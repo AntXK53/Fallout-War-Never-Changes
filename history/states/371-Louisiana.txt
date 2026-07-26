@@ -2,9 +2,9 @@
 state={
 	id=371
 	name="STATE_371"
-	manpower = 2101592
+	manpower = 4412363
 	
-	state_category = city
+	state_category = large_city
 	
 	resources={
 		oil=44 # was: 66
@@ -13,7 +13,7 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 2
 			air_base = 5
 			7552 = {
@@ -26,7 +26,22 @@ state={
 			1453 10
 		}
 		victory_points = {
+			1559 3
+		}
+		victory_points = {
+			1643 5
+		}
+		victory_points = {
+			4507 10
+		}
+		victory_points = {
 			7552 10 
+		}
+		victory_points = {
+			12313 3
+		}
+		victory_points = {
+			12401 10
 		}
 	}
 

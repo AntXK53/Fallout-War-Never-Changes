@@ -25,10 +25,16 @@ state = {
 		}
 
 		victory_points = {
-			4607 5 # Reno
+			4607 5 # Carson City
 		}
 		victory_points = {
 			4799 10 # Las Vegas
+		}
+		victory_points = {
+			10422 5 #Reno
+		}
+		victory_points = {
+			10591 3 #Ely
 		}
 		
 	}

@@ -10,7 +10,7 @@ state={
 
 		}
 		victory_points = {
-			9832 1 
+			11830 10
 		}
 		add_core_of = USA
 	}
@@ -18,7 +18,7 @@ state={
 	provinces={
     9832  
 	}
-	manpower=30000
+	manpower=871000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

@@ -2,20 +2,20 @@
 state={
 	id=360
 	name="STATE_360"
-	manpower = 9631346
+	manpower = 11517800
 	
 	state_category = megalopolis
 	
 	resources={
-		steel = 44 # was: 80
-		coal = 160 # initial distribution = with infra 432 / 1280 total
+		steel = 80
+		coal = 160
 	}
 
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 4 #was: 8
+			infrastructure = 6 #was: 8
 			industrial_complex = 5
 			dockyard = 7
 			air_base = 2
@@ -26,13 +26,46 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
+			3687 5
+		}
+		victory_points = {
+			3824 5
+		}
+		victory_points = {
+			3847 5
+		}
+		victory_points = {
+			3850 5
+		}
+		victory_points = {
+			3897 5
+		}
+		victory_points = {
 			6845 20
+		}
+		victory_points = {
+			6869 5
+		}
+		victory_points = {
+			6872 5
+		}
+		victory_points = {
+			9820 5
 		}
 		victory_points = {
 			11800 20
 		}
+	    victory_points = {
+			11785 5
+		}
 		victory_points = {
-			11799 10
+			11799 5
+		}
+		victory_points = {
+			11817 5
+		}
+		victory_points = {
+			12405 5
 		}
 		1939.1.1 = {
 			buildings = {

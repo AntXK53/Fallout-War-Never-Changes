@@ -24,11 +24,16 @@ state={
 				naval_base = 3
 
 			}
-
 		}
 		add_core_of = USA
 		victory_points = {
+			908 5 
+		}
+		victory_points = {
 			6732 20 
+		}
+		victory_points = {
+			3906 5 
 		}
 		victory_points = {
 			12459 1 

@@ -34,13 +34,34 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
+			823 5 #Palm Springs
+		}
+		victory_points = {
 			941 5 #Bakersfield
 		}
 		victory_points = {
 			1562 15
 		}
+		victory_points = {
+			3677 5
+		}
+		victory_points = {
+			3678 5
+		}
+		victory_points = {
+			4518 5
+		}
 	    victory_points = {
-			6876 10
+			6694 10
+		}
+	    victory_points = {
+			6876 5
+		}
+	    victory_points = {
+			7517 5
+		}
+		victory_points = {
+			9637 5 
 		}
 		victory_points = {
 			9671 25 
@@ -51,8 +72,17 @@ state={
 		victory_points = {
 			9814 20 
 		}
+		victory_points = {
+			9855 3 
+		}
+        victory_points = {
+			10387 3
+		}
         victory_points = {
 			11859 20 
+		}
+        victory_points = {
+			11795 10
 		}
 		1939.1.1 = {
 			buildings = {

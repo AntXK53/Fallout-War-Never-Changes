@@ -2,31 +2,41 @@
 state={
 	id=377
 	name="STATE_377"
-	manpower = 435572
+	manpower = 1363904
 	
-	state_category = rural
+	state_category = city
 	
 	resources={
-		steel=20 # was: 40
+		steel=35 # was: 40
 		oil=5 # was: 10
-		aluminium=8 # was: 16
+		aluminium=10 # was: 16
 	}
-
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 2
+			air_base = 4
 		}
 		add_core_of = USA
 		victory_points = {
 			853 20
 		}
+		victory_points = {
+			1793 3
+		}
         victory_points = {
 			3834 10
 		}
-
+        victory_points = {
+			10783 5
+		}
+        victory_points = {
+			11814 5
+		}
+        victory_points = {
+			12765 5
+		}
 	}
 
 	provinces={

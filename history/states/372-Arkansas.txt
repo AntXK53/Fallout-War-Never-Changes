@@ -2,12 +2,12 @@
 state={
 	id=372
 	name="STATE_372"
-	manpower = 1023022
+	manpower = 1851063
 	
 	state_category = town
 	
 	resources={
-		aluminium=14 # was: 20
+		aluminium=20
 	}
 
 
@@ -19,7 +19,22 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
+			4567 3
+		}
+		victory_points = {
+			4625 3
+		}
+		victory_points = {
+			7543 3
+		}
+		victory_points = {
 			12489 10
+		}
+		victory_points = {
+			12778 5
+		}
+		victory_points = {
+			15581 3
 		}
 
 	}

@@ -2,25 +2,36 @@
 state={
 	id=359
 	name="STATE_359"
-	manpower = 4041332
+	manpower = 6219957
 	
 	state_category = large_city
 
 	history={
 		owner = USA
+		add_core_of = USA
 		victory_points = {
-			6882 10 
+			6882 15 #Newark
 		}
 		victory_points = {
-			9864 10 
+			9864 5
+		}
+		victory_points = {
+			9801 3
+		}
+		victory_points = {
+			11900 5
+		}
+		victory_points = {
+			11782 5
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
 			industrial_complex = 7
 			air_base = 4
-
+			6882 = {
+				naval_base = 2
+			}
 		}
-		add_core_of = USA
 	}
 
 	provinces={

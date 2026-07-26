@@ -231,14 +231,13 @@ USA_bop_enclave_cat = {
 		}
 	}
 }
-
 USA_project_safehouse_cat = {
 
 	USA_vault_tec_mission = {
 
 		priority = 15
 		
-		icon = GFX_vault_icon
+		icon = GFX_vaults
 
 		available = {
 			check_variable = {
@@ -283,7 +282,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_3 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -342,7 +341,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_4 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -401,7 +400,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_8 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -460,7 +459,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_12 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -519,7 +518,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_13 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -578,7 +577,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_15 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -637,7 +636,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_19 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -696,7 +695,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_21 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -755,7 +754,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_22 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -814,7 +813,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_24 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -873,7 +872,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_31 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -932,7 +931,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_32 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -991,7 +990,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_33 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1050,7 +1049,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_34 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1109,7 +1108,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_51 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1168,7 +1167,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_63 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1227,7 +1226,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_75 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1286,7 +1285,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_76 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 20
 
@@ -1346,7 +1345,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_81 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1405,7 +1404,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_87 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1464,7 +1463,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_88 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1524,7 +1523,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_95 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1583,7 +1582,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_101 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1641,7 +1640,7 @@ USA_project_safehouse_cat = {
 	
 	USA_construct_vault_111 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1700,7 +1699,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_112 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 
@@ -1759,7 +1758,7 @@ USA_project_safehouse_cat = {
 
 	USA_construct_vault_114 = {
 
-		icon = GFX_decision_vault_icon
+		icon = GFX_vaults
 
 		cost = 25
 

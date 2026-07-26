@@ -1,3 +1,237 @@
+USA_bop_enclave_cat = {
+	USA_leak_doa_memos_to_the_press = { ## COALITION DECISIONS
+
+		icon = GFX_focus_generic_political
+
+		days_re_enable = 150
+
+		days_remove = 42
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value < 0.2
+			}
+		}
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range > USA_hearings_held
+			}
+		}
+
+		modifier = {
+			stability_weekly = -0.01
+			power_balance_weekly = -0.02
+		}
+	}
+
+	USA_fund_free_journalism_programs = {
+		
+		icon = GFX_focus_generic_political
+
+		days_re_enable = 150
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value < 0.2
+			}
+		}
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range > USA_hearings_held
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = USA_enclave_balance
+				value = -0.07
+			}
+		}
+	}
+
+	USA_public_congressional_address = {
+
+		icon = GFX_focus_generic_political 
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value < 0.2
+			}
+		}
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range > USA_hearings_held
+			}
+		}
+
+		days_re_enable = 95
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = USA_enclave_balance
+				value = -0.05
+			}
+			add_war_support = -0.1
+		}
+	}
+
+	USA_demand_arrest_of_enclave_officials = {
+
+		icon = GFX_focus_generic_political 
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value < -0.1
+			}
+		}
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range > USA_hearings_held
+			}
+		}
+
+		days_remove = 15
+		days_re_enable = 130
+
+		complete_effect = {
+			add_power_balance_value = {
+    			id = USA_enclave_balance
+    			value = -0.05
+			}
+			add_stability = -0.05
+		}
+	}
+
+	USA_reform_the_us_army = {
+		
+		icon = GFX_focus_generic_political 
+
+		fire_only_once = yes
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value < 0.1
+			}
+		}
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range > USA_hearings_held
+			}
+		}
+
+		complete_effect = {
+			army_experience = 100
+		}
+	}
+	## SPECIAL COALITION DECISIONS
+
+	USA_who_still_fights_for_democracy = {
+
+		icon = GFX_focus_generic_political
+
+		fire_only_once = yes
+
+		visible = {
+			is_power_balance_in_range = {
+				id = USA_enclave_balance
+				range = USA_enclave_exposed
+			}
+		}
+
+		complete_effect = {
+			#PLACE HOLDER ASK PUPPETS TO SIDE WITH US 60-30-10 SPLIT 10 PERCENT THEY WILL REVOLT 30 PERCENT THEY WILL SIDE WITH THE ENCLAVE AND 60 THEY SAY YES
+		}
+	}
+
+
+	## ENCLAVE DECISIONS 
+	USA_discredit_congressional_investigations = {
+
+		icon = GFX_focus_generic_political
+
+		days_re_enable = 150
+
+		visible = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value > -0.3
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = USA_enclave_balance
+				value = 0.02
+			}
+			add_stability = 0.02
+		}
+	}
+
+	USA_suppress_leaks = {
+
+		icon = GFX_focus_generic_political
+
+		days_re_enable = 125
+
+		visible = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value > -0.3
+			}
+		}
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = USA_enclave_balance
+				value = 0.01
+			}
+		}
+	}
+
+	USA_fund_black_budget_operations = {
+
+		icon = GFX_focus_generic_political
+
+		cost = 75
+
+		available = {
+			power_balance_value = {
+				id = USA_enclave_balance
+				value > -0.3
+			}
+		}
+
+		days_re_enable = 250
+		days_remove = 120
+
+		modifier = {
+			army_experience_gain_factor = 0.05
+			encryption_factor = 0.05
+			army_attack_factor = 0.07
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			army_experience = 50
+		}
+	}
+}
+
 USA_project_safehouse_cat = {
 
 	USA_vault_tec_mission = {

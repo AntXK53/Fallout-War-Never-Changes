@@ -86,7 +86,7 @@ ideas = {
 		}
 
 		USA_vault_tec_good_quarter = {
-			picture = GFX_vault_tec_icon
+			picture = GFX_idea_vault_tec_idea
 
 			removal_cost = -1
 

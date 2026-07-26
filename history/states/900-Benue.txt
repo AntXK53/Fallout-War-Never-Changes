@@ -10,8 +10,7 @@ state = {
 
 	history = {
 
-		owner = WAU
-		add_core_of = WAU
+		owner = NGA
 		add_core_of = NGA
 		add_core_of = BIA
 

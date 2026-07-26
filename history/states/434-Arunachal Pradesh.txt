@@ -13,6 +13,7 @@ state={
 
 		owner = RAJ
 		add_core_of = RAJ
+		set_demilitarized_zone = yes
         add_claim_by = PRC
 		buildings = {
 			infrastructure = 1

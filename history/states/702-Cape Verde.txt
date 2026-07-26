@@ -7,8 +7,7 @@ state = {
 
 	history = { 
 
-		owner = CBV
-		add_core_of = CBV
+		owner = EUC
 
 		victory_points = {
 			13014 1 # Praia

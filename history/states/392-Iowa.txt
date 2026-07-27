@@ -2,19 +2,38 @@
 state={
 	id=392
 	name="STATE_392"
-	manpower = 2470938
+	manpower = 2759284
 	
 	state_category = city
 
 	history={
 		owner = USA
-		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 4
-		}
 		add_core_of = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			air_base = 1
+		}
 		victory_points = {
-			1770 15
+			7306 3 #Iowa City
+		}
+		victory_points = {
+			7458 15 #Des Moines
+		}
+		victory_points = {
+			9892 3 #Council Bluffs
+		}
+		victory_points = {
+			9910 3 #Cedar Rapids
+		}
+		victory_points = {
+			10478 3 #Davenport
+		}
+		victory_points = {
+			12418 1 #Ames
+		}
+		victory_points = {
+			12646 1 #Sioux City
 		}
 
 		1939.1.1 = {

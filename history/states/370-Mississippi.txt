@@ -2,24 +2,54 @@
 state={
 	id=370
 	name="STATE_370"
-	manpower = 2009820
+	manpower = 2221700
 	
 	state_category = city
 
 	history={
 		owner = USA
-		victory_points = {
-			4464 1 
-		}
-		buildings = {
-			infrastructure = 2
+		add_core_of = USA
+        buildings = {
+			infrastructure = 4
 			industrial_complex = 1
 			air_base = 3
-			4464 = {
+			7668 = {
 				naval_base = 4
 			}
 		}
-		add_core_of = USA
+		victory_points = {
+			1615 1 #Hattiesburg
+		}
+		victory_points = {
+			4510 1 #Greenville
+		}
+		victory_points = {
+			4464 1 #Gulfport
+		}
+		victory_points = {
+			4565 10 #Jackson
+		}
+		victory_points = {
+			7464 1 #Oxford
+		}
+		victory_points = {
+			7668 3 #Biloxi
+		}
+		victory_points = {
+			10410 1 #Vicksburg
+		}
+		victory_points = {
+			10449 1 #Natchez
+		}
+		victory_points = {
+			10753 3 #Tupelo
+		}
+		victory_points = {
+			11717 1 #Starkville
+		}
+		victory_points = {
+			12429 3 #Meridian
+		}
 	}
 
 	provinces={

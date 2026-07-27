@@ -2,7 +2,7 @@
 state={
 	id=369
 	name="STATE_369"
-	manpower = 2614588
+	manpower = 3098908
 	
 	resources = {
 		coal = 56 # initial distribution = with infra 99.2 / 1280 total
@@ -13,13 +13,32 @@ state={
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 3
+			radar_station = 2
 			air_base = 4
 		}
 		add_core_of = USA
 		victory_points = {
-			6696 10
+			1445 3 #Covington
+		}
+		victory_points = {
+			6696 10 #Louisville
+		}
+		victory_points = {
+			6974 3 #Bowling Green
+		}
+		victory_points = {
+			9727 5 #Lexington
+		}
+		victory_points = {
+			10586 1 #Paducah
+		}
+		victory_points = {
+			10727 1 #Owensboro
+		}
+		victory_points = {
+			12709 3 #Frankfort
 		}
 
 	}

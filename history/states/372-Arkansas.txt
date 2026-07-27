@@ -19,24 +19,23 @@ state={
 		}
 		add_core_of = USA
 		victory_points = {
-			4567 3
+			4567 3 #Fayetteville
 		}
 		victory_points = {
-			4625 3
+			4625 1 #Jonesboro
 		}
 		victory_points = {
-			7543 3
+			7543 3 #Pine Bluff
 		}
 		victory_points = {
-			12489 10
+			12489 10 #Little Rock
 		}
 		victory_points = {
-			12778 5
+			12778 1 #Fort Smith
 		}
 		victory_points = {
-			15581 3
+			15581 1 #Texarkana
 		}
-
 	}
 
 	provinces={

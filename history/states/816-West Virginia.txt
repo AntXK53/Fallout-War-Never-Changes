@@ -9,15 +9,31 @@ state={
 			industrial_complex = 2
 			infrastructure = 3
 			air_base = 3
+			radar_station = 3
 		}
 		victory_points = {
-			7588 3
+			3975 1 #Parkersburg
+		}
+		victory_points = {
+			6850 3 #Wheeling
+		}
+		victory_points = {
+			6971 3 #Huntington
+		}
+		victory_points = {
+			9923 1 #Morgantown
+		}
+		victory_points = {
+			7588 3 #Charleston
+		}
+		victory_points = {
+			11888 1 #Martinsburg
 		}
 	}
 	provinces={
 		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
 	}
-	manpower=1901974
+	manpower=1897600
 
 	resources = {
 		coal = 88 #initial distribution = with infra 248 / 1280 total

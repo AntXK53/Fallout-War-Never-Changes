@@ -1,14 +1,14 @@
 state = {
 	id = 379
 	name = "STATE_379"
-	manpower = 91057
+	manpower = 290352
 	
-	state_category = rural
+	state_category = town
 	
 	resources = {
-		steel = 70 # was: 136
-		tungsten = 32 # was: 62
-		aluminium = 25 # was: 44
+		steel = 100
+		tungsten = 50
+		aluminium = 60
 	}
 
 	history = {
@@ -25,16 +25,22 @@ state = {
 		}
 
 		victory_points = {
-			4607 5 # Carson City
+			1862 1 #Elko
 		}
 		victory_points = {
-			4799 10 # Las Vegas
+			4607 3 #Carson City
+		}
+		victory_points = {
+			4736 1 #Winnemucca
+		}
+		victory_points = {
+			4799 10 #Las Vegas
 		}
 		victory_points = {
 			10422 5 #Reno
 		}
 		victory_points = {
-			10591 3 #Ely
+			10591 1 #Ely
 		}
 		
 	}

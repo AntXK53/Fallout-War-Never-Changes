@@ -7,41 +7,40 @@ state={
 	state_category = large_city
 	
 	resources={
-		oil=44 # was: 66
+		oil=38
 	}
 
 	history={
 		owner = USA
+		add_core_of = USA
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 5
 			7552 = {
 				naval_base = 5
-
 			}
 		}
-		add_core_of = USA
 		victory_points = {
-			1453 10
+			1453 10 #Baton Rouge
 		}
 		victory_points = {
-			1559 3
+			1559 1 #Monroe
 		}
 		victory_points = {
-			1643 5
+			1643 5 #Alexandria
 		}
 		victory_points = {
-			4507 10
+			4507 1 #Lafayette
 		}
 		victory_points = {
-			7552 10 
+			7552 15 #New Orleans
 		}
 		victory_points = {
-			12313 3
+			12313 3 #Lake Charles
 		}
 		victory_points = {
-			12401 10
+			12401 10 #Shreveport
 		}
 	}
 

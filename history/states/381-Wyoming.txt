@@ -2,41 +2,43 @@
 state={
 	id=381
 	name="STATE_381"
-	manpower = 225564
+	manpower = 331048
 
 	resources = {
 		coal = 7 #initial distributionn = with infra 12.6 / 1280 total
 	}
 
-	state_category = rural
+	state_category = town
 	
 	history={
 		owner = USA
-                add_core_of = USA
+        add_core_of = USA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+			radar_station = 3
+			air_base = 3
 		}
 		victory_points = {
-			4723 5 #Cheyenne
+			4723 3 #Cheyenne
         }
 		victory_points = {
-			4820 3 #Gilette
+			4820 1 #Gilette
         }
 		victory_points = {
-			4610 3 #Sheridan
+			4610 1 #Sheridan
         }
 		victory_points = {
-			10640 3 #Laramie
+			10640 1 #Laramie
         }
 		victory_points = {
-			10711 5 #Casper
+			10711 1 #Casper
         }
 		victory_points = {
-			12633 5 #Rock Springs
+			12633 1 #Rock Springs
         }
 		victory_points = {
-			12651 3 #Jackson
+			12651 1 #Jackson
         }
 	}
 

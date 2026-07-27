@@ -1,27 +1,39 @@
 state= {
 	id=380
 	name="STATE_380"
-	manpower = 507846
+	manpower = 933394
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
-		tungsten=76 # was: 106
-		coal = 4 #initial distribution = with infra 5.6 / 1280 total
+		tungsten=106
+		coal = 4
 	}
 
 	history={
 		owner = USA
+		add_core_of = USA
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = USA
 		victory_points = {
-			4865 15
+			4865 15 #Salt Lake City
 		}
 		victory_points = {
-			10582 10
+			7764 1 #Moab
+		}
+		victory_points = {
+			10582 3 #Ogden
+		}
+		victory_points = {
+			10662 1 #Richfield
+		}
+		victory_points = {
+			12699 1 #St George
+		}
+		victory_points = {
+			15347 3 #Provo
 		}
 	}
 	provinces={

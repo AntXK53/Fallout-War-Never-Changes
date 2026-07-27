@@ -14,34 +14,34 @@ state={
 
 	history={
 		owner = USA
+		add_core_of = USA
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 		}
-		add_core_of = USA
 		victory_points = {
-			1789 10 #Idaho Falls
+			1789 1 #Idaho Falls
 		}
 		victory_points = {
-			4778 5 #Moscow
+			4778 1 #Moscow
 		}
 		victory_points = {
-			9616 5 #Nampa
+			9616 1 #Nampa
 		}
 		victory_points = {
-			10556 10 #Boise
+			10556 5 #Boise
 		}
 		victory_points = {
-			9695 5 #Twin Falls
+			9695 1 #Twin Falls
 		}
 		victory_points = {
-			10672 5 #Rexburg
+			10672 1 #Rexburg
 		}
 		victory_points = {
-			12124 5 #Coeur d'Alene
+			12124 1 #Coeur d'Alene
 		}
 		victory_points = {
-			12535 5 #Idaho Falls
+			12535 3 #Pocatello
 		}
 	}
 

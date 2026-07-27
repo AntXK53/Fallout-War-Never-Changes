@@ -83,3 +83,24 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = USA.dying_systeme_focus_event
+    title = USA_dying_systeme_focus_event_title
+    desc = USA_dying_systeme_focus_event_desc
+    picture = GFX_event_usa_dying_systeme
+  
+
+    trigger = {
+        tag = USA
+        has_completed_focus = usa_focus_commonwealth_review
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name =  option_die_event_usa
+        add_stability = -0.1
+    }
+}

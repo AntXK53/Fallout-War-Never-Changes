@@ -1,11 +1,14 @@
 ﻿l_english:
 
-
+ USA_dying_systeme_focus_event_title:0 "A Dying System"
+ USA_dying_systeme_focus_event_desc:0 "The paperwork lands on the President's desk without ceremony - a routine budget request from the Commonwealth Administration Office, the kind that used to be rubber-stamped without a second glance. This time, someone actually reads it.\n\nThe numbers tell an uncomfortable story. Duplicate bureaucracies in every region, governors who answer to no one but themselves, and a federal government that has spent so long working around the system it forgot it was ever meant to be temporary. Reforming it now means a fight with every entrenched interest in the country. Leaving it alone means the rot spreads a little further, every single day.\n\nSomeone has to decide which cost is worse."
+ option_die_event_usa:0 "Let It Run Its Course"
  USA_northern_states_event_title:0 "The Northern Mobilization"
  USA_northern_states_event_desc:0 "Tensions with the People's Republic of China continue to escalate with no end in sight, and the resource wars abroad grow bloodier by the year. Washington fears it is only a matter of time before the Cold War turns hot — and our northern territories are dangerously unprepared.\n\nWashington and Oregon sit exposed along the Pacific coast, vulnerable to Chinese naval power should war ever break out. Meanwhile, our northern border states have no early-warning network to speak of, leaving us blind to anything approaching from across the Pole.\n\nThe Pentagon has drawn up two initiatives to correct this: a fortification of our Pacific ports to secure the Northwest, and a chain of radar stations across the northern frontier to give us eyes on the north before it's too late.\n\nCongress is eager to authorize the spending. Better to build now, while we still have the luxury of time."
  USA_northern_states.opportunities:0 "A Chance to Fortify America"
 
-
+ usa_focus_commonwealth_review:0 "A Dying System"
+ usa_focus_commonwealth_review_desc:0 "The Commonwealth system was never meant to last this long. What began as an emergency measure to keep the regions functioning has calcified into the way the country actually runs - and Washington can no longer pretend otherwise. If the Union is to mean anything more than a name on a map, it has to be built, region by region, starting now."
  MINIMIZE_EVENT:0 "§GClick§! to Minimize. Event will be placed in the Event Queue under §HEvents and Decisions§!."
  germany.4.t:0 "Anschluss"
  germany.4.d:0 "Repeated uprisings in Austria clearly show that the people there long to be united with our Reich. It is now time to take action and allow the will of the people to be made manifest."

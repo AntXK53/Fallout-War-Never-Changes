@@ -2592,6 +2592,8 @@ focus_tree = {
 			date > 2057.1.20
 		}
 	}
+
+	
 	focus = {
 		id = usa_focus_commonwealth_review
 		icon = GFX_goal_auld_lang_syne
@@ -2931,6 +2933,7 @@ focus_tree = {
 			focus = USA_columbian_commonwealth
 		}
 	}
+
 	focus = {
 		id = usa_focus_megalopolis_rejuvenation
 		icon = GFX_goal_unknown

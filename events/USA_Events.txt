@@ -100,6 +100,7 @@ country_event = {
     }
 
     option = {
+        custom_effect_tooltip = USA_project_commonwealthh
         name =  option_die_event_usa
         add_stability = -0.1
     }

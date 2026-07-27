@@ -1,3 +1,21 @@
+USA_project_commonwealth = {
+	USA_commonwealth_start_the_project = { 
+
+		icon = GFX_focus_generic_political
+
+		available = {
+	    has_completed_focus = usa_focus_commonwealth_review
+		}
+
+		visible = {
+		has_completed_focus = usa_focus_commonwealth_review
+		}
+
+		complete_effect = {
+			add_political_power = 50
+		}
+	}
+}
 USA_bop_enclave_cat = {
 	USA_leak_doa_memos_to_the_press = { ## COALITION DECISIONS
 

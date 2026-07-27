@@ -6,3 +6,11 @@ USA_project_safehouse_cat = {
         tag = USA
     }
 }
+USA_project_commonwealth = {
+
+    icon = GFX_vaults
+
+    allowed = {
+        tag = USA
+    }
+}

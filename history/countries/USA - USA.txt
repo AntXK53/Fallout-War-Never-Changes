@@ -1253,15 +1253,17 @@ if = {
 set_autonomy = {
 	target = MEX
 	autonomous_state = autonomy_integrated_puppet
-}
+}	
 set_autonomy = {
 	target = PHI
 	autonomous_state = autonomy_integrated_puppet
 }
+set_autonomy = {
+	target = RIO
+	autonomous_state = autonomy_integrated_puppet
+}
 
 give_guarantee = AST
-give_guarantee = CHI
-give_guarantee = KOR
 give_guarantee = JAP
 give_guarantee = NZL
 give_guarantee = SIA

@@ -54,7 +54,3 @@ set_popularities = {
 		target = DPK
 		autonomous_state = autonomy_integrated_puppet
 	}
-        set_autonomy = {
-		target = IND
-		autonomous_state = autonomy_integrated_puppet
-	}

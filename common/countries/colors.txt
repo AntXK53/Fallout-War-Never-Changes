@@ -1412,3 +1412,7 @@ NGA = {
 	color = rgb { 14 129 59 }
 	color_ui = rgb { 14 129 59 }
 }
+RIO = {
+	color = rgb { 58 121 201 }
+	color_ui = rgb { 58 121 201 }
+}

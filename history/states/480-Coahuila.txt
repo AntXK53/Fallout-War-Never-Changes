@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = RIO
-		add_core_of = RIO
+		owner = RIG
+		add_core_of = RIG
 		add_core_of = MEX
 
 		buildings = {

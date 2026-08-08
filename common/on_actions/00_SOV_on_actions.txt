@@ -1,0 +1,38 @@
+on_actions = {
+    on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = SOV
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = ROM
+						}
+					}
+				}
+				ROM = {
+					set_politics = {
+                        ruling_party = communism
+					}
+				}
+				SOV = {
+					add_to_faction = ROM
+				}
+				SOV = {
+					country_event = {
+					    id = romania_revolt.5
+					    days = 7
+					}
+				}
+				news_event = {
+					id = romania_news.3
+					days = 1
+				}
+			}
+		}
+	}
+}

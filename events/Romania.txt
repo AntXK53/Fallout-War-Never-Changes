@@ -129,6 +129,77 @@ country_event = {
 		name = romania_revolt.4.a
 	}
 }
+# Hungary annex North Transilvania
+country_event = {
+	id = romania_revolt.5
+	title = romania_revolt.5.t
+	desc = romania_revolt.5.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		76 = {
+			transfer_state_to = HUN
+		}
+	}
+
+	option = {
+		name = romania_revolt.5.a
+	}
+	option = {
+		name = romania_revolt.5.b
+		76 = {
+			transfer_state_to = ROM
+		}
+	}
+}
+# CAPITULATE, ROMANIA!
+country_event = {
+	id = romania_revolt.6
+	title = romania_revolt.6.t
+	desc = romania_revolt.6.desc
+	picture = x
+	#is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		ROM = {
+			OR = {
+				has_capitulated = yes
+				surrender_progress > 0.80
+			}
+		}
+	
+		SOV = {
+			has_war_with = ROM
+		}
+	}
+
+	immediate = {
+		ROM = {
+			white_peace = SOV
+		}
+		ROM = {
+			set_politics = {
+                ruling_party = communism
+			}
+		}
+		SOV = {
+			add_to_faction = ROM
+		}
+		SOV = {
+			country_event = {
+				id = romania_revolt.5
+				days = 7
+			}
+		}
+		news_event = {
+			id = romania_news.3
+			days = 1
+		}
+	}
+}
 # Romania democratic now
 news_event = {
 	id = romania_news.1
@@ -167,5 +238,18 @@ news_event = {
 
 	option = {
 		name = romania_news.2.a
+	}
+}
+# Romanian democrats going to hospital
+news_event = {
+	id = romania_news.3
+	title = romania_news.3.t
+	desc = romania_news.3.d
+	picture = x
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = romania_news.3.a
 	}
 }

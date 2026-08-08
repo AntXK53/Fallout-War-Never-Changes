@@ -12,7 +12,6 @@ focus_tree = {
 		x = 50
 		y = 4000
 	}
-
 	focus = {
 		id = SOV_congress_cpsu_2060
 		icon = GFX_goal_unknown
@@ -121,6 +120,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_plan_of_defence_ussr
 		}
+		completion_reward = {
+			812 = {
+				add_manpower = -500
+			}
+			13 = {
+				add_manpower = -500
+			}
+			191 = {
+				add_manpower = -500
+			}
+		}
 	}
 	focus = {
 		id = SOV_intervention_in_south_states
@@ -189,7 +199,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 8
 		availalbe = {}
-		x = 19
+		x = 24
 		y = 8
 	}
 	focus = {
@@ -200,7 +210,7 @@ focus_tree = {
 			focus = SOV_konovalov_idea
 		}
 		availalbe = {}
-		x = 19
+		x = 24
 		y = 9
 	}
 	focus = {
@@ -226,6 +236,9 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = SOV_militarist_in_power
+		}
+		completion_reward = {
+			add_ideas = SOV_artel_idea
 		}
 	}
 	focus = {
@@ -863,34 +876,20 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_povorot_to_east
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_foreigh_politic
-		}
-		cost = 6
-		x = -12
-		y = 1
-		completion_reward = {
-			add_opinion_modifier = {
-				target = PRC
-				modifier = unholy_alliance_trade
-			}
-		}
-	}
-	focus = {
 		id = SOV_friendship_with_prc
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_povorot_to_east
-		}
 		cost = 5
-		x = -11
-		y = 2
+		x = -12
+		y = 1
 		completion_reward = {
 			country_event = sovietunion_foreigh.5
+		}
+		prerequisite = {
+			focus = SOV_foreigh_politic
+		}
+		mutually_exclusive = {
+			focus = SOV_meeting_in_usa
 		}
 	}
 	focus = {
@@ -901,8 +900,8 @@ focus_tree = {
 			focus = SOV_friendship_with_prc
 		}
 		cost = 5
-		x = -11
-		y = 3
+		x = -12
+		y = 2
 		completion_reward = {
 			diplomatic_relation = {
 				country = PRC
@@ -915,49 +914,31 @@ focus_tree = {
 		id = SOV_no_bulgarian_totalit
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_our_american_friends
-			focus = SOV_povorot_to_east
-		}
 		cost = 5
-		x = -13
+		x = -9
 		y = 3
 		completion_reward = {
 			unlock_decision_tooltip = SOV_loyality_regime_in_bulgaria
 		}
-	}
-	focus = {
-		id = SOV_our_american_friends
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
 		prerequisite = {
-			focus = SOV_foreigh_politic
-		}
-		mutually_exclusive = {
-			focus = SOV_povorot_to_east
-		}
-		cost = 6
-		x = -14
-		y = 1
-		completion_reward = {
-			add_opinion_modifier = {
-				target = USA
-				modifier = unholy_alliance_trade
-			}
+			focus = SOV_yugoslav_wars
 		}
 	}
 	focus = {
 		id = SOV_meeting_in_usa
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_our_american_friends
-		}
 		cost = 5
 		x = -15
-		y = 2
+		y = 1
 		completion_reward = {
 			country_event = sovietunion_foreigh.4
+		}
+		mutually_exclusive = {
+			focus = SOV_friendship_with_prc
+		}
+		prerequisite = {
+			focus = SOV_foreigh_politic
 		}
 	}
 	focus = {
@@ -969,7 +950,7 @@ focus_tree = {
 		}
 		cost = 5
 		x = -15
-		y = 3
+		y = 2
 		completion_reward = {
 			diplomatic_relation = {
 				country = USA
@@ -977,34 +958,6 @@ focus_tree = {
 				active = yes
 			}
 		}
-	}
-	focus = {
-		id = SOV_usa_friend
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_treaty_with_eastasia
-		}
-		prerequisite = {
-			focus = SOV_no_bulgarian_totalit
-		}
-		cost = 5
-		x = -14
-		y = 4
-	}
-	focus = {
-		id = SOV_china_friend
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_non_agression_pact_prc
-		}
-		prerequisite = {
-			focus = SOV_no_bulgarian_totalit
-		}
-		cost = 5
-		x = -12
-		y = 4
 	}
 	focus = {
 		id = SOV_european_middleeast_war
@@ -1025,7 +978,7 @@ focus_tree = {
 			focus = SOV_european_middleeast_war
 		}
 		cost = 5
-		x = -3
+		x = -2
 		y = 2
 	}
 	focus = {
@@ -1036,7 +989,7 @@ focus_tree = {
 			focus = SOV_send_rifles_to_uar
 		}
 		cost = 5
-		x = -3
+		x = -2
 		y = 3
 	}
 	focus = {
@@ -1050,7 +1003,7 @@ focus_tree = {
 			focus = SOV_help_prosoviet_states
 		}
 		cost = 6
-		x = -4
+		x = -3
 		y = 4
 	}
 	focus = {
@@ -1061,22 +1014,8 @@ focus_tree = {
 			focus = SOV_situation_in_arabia
 		}
 		cost = 6
-		x = -2
+		x = -1
 		y = 4
-	}
-	focus = {
-		id = SOV_military_advisors_to_uar
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_help_uar
-		}
-		prerequisite = {
-			focus = SOV_soviet_medics_to_jerusalem
-		}
-		cost = 5
-		x = -6
-		y = 5
 	}
 	focus = {
 		id = SOV_united_front_me
@@ -1093,76 +1032,34 @@ focus_tree = {
 		id = SOV_soviet_arab_friendship
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_military_advisors_to_uar
-		}
 		cost = 5
-		x = -6
+		x = -4
 		y = 6
-	}
-	focus = {
-		id = SOV_soviet_military_base_in_syria
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_soviet_arab_friendship
-		}
 		prerequisite = {
 			focus = SOV_united_front_me
 		}
-		cost = 5
-		x = -4
-		y = 7
-	}
-	focus = {
-		id = SOV_send_fabrics
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_help_prosoviet_states
-		}
-		prerequisite = {
-			focus = SOV_soviet_medics_to_jerusalem
-		}
-		cost = 5
-		x = -2
-		y = 5
-	}
-	focus = {
-		id = SOV_soviet_advisors_in_arab
-		icon = GFX_goal_unknown
-		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_help_prosoviet_states
-		}
-		cost = 5
-		x = 0
-		y = 5
 	}
 	focus = {
 		id = SOV_friendship_with_arabs
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_soviet_advisors_in_arab
-		}
 		cost = 5
 		x = 0
-		y = 6
+		y = 5
+		prerequisite = {
+			focus = SOV_help_prosoviet_states
+		}
 	}
 	focus = {
 		id = SOV_influence_middle_east
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_send_fabrics
-		}
+		cost = 5
+		x = 0
+		y = 6
 		prerequisite = {
 			focus = SOV_friendship_with_arabs
 		}
-		cost = 5
-		x = -2
-		y = 7
 	}
 	focus = {
 		id = SOV_sanctions_from_ec
@@ -1201,12 +1098,12 @@ focus_tree = {
 		id = SOV_yugoslav_wars
 		icon = GFX_goal_unknown
 		relative_position_id = SOV_foreigh_politic
-		prerequisite = {
-			focus = SOV_anti_european_strategy
-		}
 		cost = 5
-		x = 5
-		y = 5
+		x = -9
+		y = 2
+		prerequisite = {
+			focus = SOV_warsaw_pact_focus
+		}
 	}
 	focus = {
 		id = SOV_close_borders_with_ec
@@ -1499,6 +1396,101 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_update_ministers
+		}
+	}
+	focus = {
+		id = SOV_warsaw_pact_focus
+		icon = GFX_goal_unknown
+		x = 38
+		y = 11
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_foreigh_politic
+		}
+	}
+	focus = {
+		id = SOV_western_border
+		icon = GFX_goal_unknown
+		x = 40
+		y = 12
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_warsaw_pact_focus
+		}
+	}
+	focus = {
+		id = SOV_ddr_accept
+		icon = GFX_goal_unknown
+		x = 39
+		y = 13
+		cost = 10
+		mutually_exclusive = {
+			focus = SOV_ddr_no
+		}
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_western_border
+		}
+	}
+	focus = {
+		id = SOV_ddr_no
+		icon = GFX_goal_unknown
+		x = 41
+		y = 13
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_western_border
+		}
+	}
+	focus = {
+		id = SOV_mobilisation
+		icon = GFX_goal_unknown
+		x = 25
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_hell_march_start
+		}
+	}
+	focus = {
+		id = SOV_prepare_army
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 10
+		completion_reward = {}
+		prerequisite = {
+			focus = SOV_hell_march_start
+		}
+	}
+	focus = {
+		id = SOV_operation_zhukov
+		icon = GFX_goal_unknown
+		x = 24
+		y = 11
+		cost = 10
+		prerequisite = {
+			focus = SOV_prepare_army
+		}
+		prerequisite = {
+			focus = SOV_mobilisation
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_ally_with = SOV
+					NOT = {
+						tag = SOV
+					}
+				}
+				set_autonomy = {
+                    autonomous_state = autonomy_integrated_puppet
+                }
+			}
 		}
 	}
 }

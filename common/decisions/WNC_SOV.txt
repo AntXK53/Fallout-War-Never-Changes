@@ -65,10 +65,7 @@ sov_outer_politics_cat = {
         }
         available = {
             ROM = {
-                has_war = no
-            }   
-            SOV = {
-                has_war = no
+                has_ideology_group = democratic
             }
         }
         timeout_effect = {

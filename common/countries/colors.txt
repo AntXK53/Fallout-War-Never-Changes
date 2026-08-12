@@ -149,8 +149,8 @@ HUN = {
 	color_ui = rgb { 8 158 68 }
 }
 AFG = {
-	color = rgb { 115 85 85 }
-	color_ui = rgb { 115 85 85 }
+	color = rgb { 77 99 77 }
+	color_ui = rgb { 77 99 77 }
 }
 ARG = {
 	color = rgb { 82 163 191 }

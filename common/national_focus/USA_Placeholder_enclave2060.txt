@@ -1,0 +1,35 @@
+focus_tree = {
+	id = USA_Placeholder_e2060
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+	focus = {
+		id = USA_Placeholder_focus_1
+		icon = GFX_goal_BUL_freebul_free_bulgaria_focus
+		x = 5
+		y = 0
+	
+		cost = 1
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = yes
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

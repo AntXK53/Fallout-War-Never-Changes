@@ -59,6 +59,7 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 			set_country_flag = USA_completed_coalition_constant1
+			set_country_flag = USA_completed_enclave_constant1
 		}
 	}
 	focus = {
@@ -92,6 +93,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_country_flag = USA_completed_coalition_constant1
+			set_country_flag = USA_completed_enclave_constant1
 			mark_focus_tree_layout_dirty = yes
 		}
 	}

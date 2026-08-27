@@ -9,9 +9,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 2500 }
 	focus = {
-		id = USA_Placeholder_focus_1
-		icon = GFX_goal_BUL_freebul_free_bulgaria_focus
-		x = 5
+		id = USA_state_of_the_union
+		icon = GFX_focus_generic_political
+		x = 0
 		y = 0
 	
 		cost = 1
@@ -23,13 +23,134 @@ focus_tree = {
 		available = {
 			always = yes
 		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-	
 		completion_reward = {
 			add_political_power = 100
+		}
+	}
+	focus = {
+		id = USA_crisis_abroad
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_state_of_the_union
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = USA_state_of_the_union
+		}
+	}
+	focus = {
+		id = USA_meet_with_the_soviets
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_abroad
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = USA_crisis_abroad
+		}
+	}
+	focus = {
+		id = USA_seek_closer_ties_with_europe
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_abroad
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = USA_meet_with_the_soviets
+		}
+	}
+	focus = {
+		id = USA_growing_tensions_with_china
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_abroad
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = USA_crisis_abroad
+		}
+	}
+	focus = {
+		id = USA_seek_closer_ties_with_asia
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_abroad
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = USA_growing_tensions_with_china
+		}
+	}
+	focus = {
+		id = USA_friends_across_the_world
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_abroad
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = USA_seek_closer_ties_with_asia
+		}
+		prerequisite = {
+			focus = USA_seek_closer_ties_with_europe
+		}
+	}
+	focus = {
+		id = USA_crisis_at_home
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_state_of_the_union
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_state_of_the_union
+		}
+	}
+	focus = {
+		id = USA_automation_crisis
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_at_home
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = USA_crisis_at_home
+		}
+	}
+	focus = {
+		id = USA_protests_across_the_country
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_at_home
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = USA_crisis_at_home
+		}
+	}
+	focus = {
+		id = USA_crisis_not_averted
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_crisis_at_home
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = USA_automation_crisis
+		}
+		prerequisite = {
+			focus = USA_protests_across_the_country
+		}
+	}
+	focus = {
+		id = USA_second_resource_treaties
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_state_of_the_union
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = USA_state_of_the_union
+		}
+	}
+	focus = {
+		id = USA_alaskan_oil_and_fishing_treaty
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_second_resource_treaties
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_second_resource_treaties
 		}
 	}
 }

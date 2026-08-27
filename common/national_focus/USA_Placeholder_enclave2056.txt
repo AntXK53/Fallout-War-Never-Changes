@@ -24,7 +24,7 @@ focus_tree = {
 					}
 				}
 				AND = {
-					#has_completed_focus = USA_john_granite
+					has_completed_focus = USA_john_granite
 					NOT = {
 						has_country_flag = USA_completed_enclave_constant1
 					}
@@ -34,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_what_is_vault_tec
-		icon = GFX_USA_what_is_vault_tec
+		icon = GFX_focus_generic_political
 		relative_position_id = USA_deciding_our_future
 		x = 0
 		y = 1
@@ -45,7 +45,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_alls_right_with_the_world
-		icon = GFX_USA_alls_right_with_the_world
+		icon = GFX_focus_generic_political
 		relative_position_id = USA_deciding_our_future
 		x = -1
 		y = 2
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_gods_in_his_heaven
-		icon = GFX_USA_gods_in_his_heaven
+		icon = GFX_focus_generic_political
 		relative_position_id = USA_deciding_our_future
 		x = 1
 		y = 2
@@ -73,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_above_the_starry_canopy
-		icon = GFX_USA_above_the_starry_canopy
+		icon = GFX_focus_generic_political
 		relative_position_id = USA_deciding_our_future
 		x = 0
 		y = 3
@@ -85,6 +85,7 @@ focus_tree = {
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 			set_country_flag = USA_completed_enclave_constant1
+			set_country_flag = USA_completed_coalition_constant1
 		}
 	}
 		focus = {
@@ -113,6 +114,7 @@ focus_tree = {
 					has_country_flag = USA_completed_enclave_constant1
 					NOT = {
 						has_completed_focus = USA_james_c_wallace
+						date>2061
 					}
 				}
 			}

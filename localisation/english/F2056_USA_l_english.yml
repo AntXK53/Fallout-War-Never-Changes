@@ -1,7 +1,12 @@
 ﻿l_english:
+
+ #National Spirits
  usa_corrupt_democracy:0 "The American facade"
  usa_corrupt_democracy_desc:0 "placeholder"
  usa_inflation_1:0 "Chronic Inflation"
+
+ ### Focuses ###
+ 
  USA_a_republic_in_crisis:0 "Lame-Duck Oswald"
  USA_the_56_election:0 "Contested Succession"
  USA_reaffirm_national_values:0 "Reaffirm National Values"

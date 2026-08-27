@@ -1,7 +1,12 @@
 ﻿l_english:
+
+ #National Spirits
  usa_corrupt_democracy:0 "The American facade"
  usa_corrupt_democracy_desc:0 "placeholder"
  usa_inflation_1:0 "Chronic Inflation"
+
+ ### Focuses ###
+ 
  USA_a_republic_in_crisis:0 "Lame-Duck Oswald"
  USA_the_56_election:0 "Contested Succession"
  USA_reaffirm_national_values:0 "Reaffirm National Values"
@@ -128,14 +133,9 @@
  usa_focus_megalopolis_rejuvenation:0 "Grow a Bigger Apple"
  usa_new_england_commonwealth:0 "The Pine Tree Commonwealth"
  usa_focus_new_england_development:0 "Green Mountain Development"
- USA_military_focus_event_title:0 "Military Priorities"
- USA_military_focus_event_desc:0 "Our military leadership is debating where to focus our efforts. Each branch demands attention and resources."
  USA_military_focus_army:0 "Prioritize the Army"
  USA_military_focus_air:0 "Prioritize the Air Force"
  USA_military_focus_navy:0 "Prioritize the Navy"
- USA_navy_focus_event_title:0 "Rising as a Global Naval Power"
- USA_navy_focus_event_desc:0 "With the completion of our focus on expanding the navy, the United States now commands a fleet capable of projecting power across the oceans. Our ships, sailors, and naval infrastructure have reached unprecedented strength, ensuring our influence on the world stage."
- global_navy:0 "WE ARE THE NAVY "
  usa_focus_commonwealth_hq:0 "A Dying System"
  usa_focus_commonwealth_hq_desc:0 "The Commonwealth system was never meant to last this long. What began as an emergency measure to keep the regions functioning has calcified into the way the country actually runs - and Washington can no longer pretend otherwise. If the Union is to mean anything more than a name on a map, it has to be built, region by region, starting now."
  usa_focus_commonwealth_affairs:0 "Department of Commonwealth Affairs"
@@ -193,3 +193,13 @@
  usa_focus_asean_upgrade_pact_desc:0 "With the Chinese looming over Indochina, it is best if we now upgrade our existing treaty with the Kingdom of Thailand to ensure our mutual securities and the stability of the Southeast Asia region."
  usa_focus_east_asian_relationship:0 "Sunrise in Tokyo"
  usa_focus_east_asian_relationship_desc:0 "Referred to the unsinkable carrier, Japan has been one of our important allies after WW2, now it is time that we upgrade a new pact to ensure the security of our interests in the Pacific region."
+
+#Events
+
+ USA_military_focus_event_title:0 "Military Priorities"
+ USA_military_focus_event_desc:0 "Our military leadership is debating where to focus our efforts. Each branch demands attention and resources."
+ USA_navy_focus_event_title:0 "Rising as a Global Naval Power"
+ USA_navy_focus_event_desc:0 "With the completion of our focus on expanding the navy, the United States now commands a fleet capable of projecting power across the oceans. Our ships, sailors, and naval infrastructure have reached unprecedented strength, ensuring our influence on the world stage."
+ global_navy:0 "WE ARE THE NAVY "
+
+ 

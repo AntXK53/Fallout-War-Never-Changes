@@ -9,27 +9,274 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 2500 }
 	focus = {
-		id = USA_Placeholder_focus_1
-		icon = GFX_goal_BUL_freebul_free_bulgaria_focus
-		x = 5
-		y = 0
-	
-		cost = 1
-	
-		ai_will_do = {
-			factor = 1
+		id = USA_a_coalition_for
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_the_56_election
+		x = 15
+		y = 2
+		cost = 4
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				AND = {
+					has_completed_focus = USA_james_c_wallace
+					NOT = {
+						has_country_flag = USA_completed_coalition_constant1
+					}
+				}
+			}
 		}
-
-		available = {
-			always = yes
+	}
+	focus = {
+		id = USA_democracy_will_not_come
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_coalition_for
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = USA_a_coalition_for
 		}
-	
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-	
+		mutually_exclusive = {
+			focus = USA_through_compromise_and_fear
+		}
+	}
+	focus = {
+		id = USA_without_contraries_is_no_progression
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_coalition_for
+		x = -1
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = USA_democracy_will_not_come
+		}
 		completion_reward = {
-			add_political_power = 100
+			mark_focus_tree_layout_dirty = yes
+			set_country_flag = USA_completed_coalition_constant1
+		}
+	}
+	focus = {
+		id = USA_through_compromise_and_fear
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_coalition_for
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = USA_a_coalition_for
+		}
+		mutually_exclusive = {
+			focus = USA_democracy_will_not_come
+		}
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = USA_completed_coalition_constant1
+			}
+		}
+	}
+	focus = {
+		id = USA_tell_all_the_truth_but_tell_it_slant
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_coalition_for
+		x = 1
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = USA_through_compromise_and_fear
+		}
+		completion_reward = {
+			set_country_flag = USA_completed_coalition_constant1
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+		focus = {
+		id = USA_a_very_needed_victory
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_tell_all_the_truth_but_tell_it_slant
+		cost = 3
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = -3
+			trigger = {
+				has_country_flag = USA_completed_coalition_constant1
+			}
+		}
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				has_country_flag = USA_completed_coalition_constant1
+				date < 2060
+			}
+		}
+	}
+	focus = {
+		id = USA_let_the_economy_fix_itself
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_very_needed_victory
+		cost = 3
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = USA_a_very_needed_victory
+		}
+	}
+	focus = {
+		id = USA_peace_negotiations_in_europe
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_a_very_needed_victory
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_a_very_needed_victory
+		}
+	}
+	focus = {
+		id = USA_secure_the_suez_for_trade
+		relative_position_id = USA_peace_negotiations_in_europe
+		icon = GFX_focus_generic_political
+		cost = 3
+		x = 0
+		y = 1.5
+		prerequisite = {
+			focus = USA_peace_negotiations_in_europe
+		}
+	}
+	focus = {
+		id = USA_the_energy_crisis
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_many_a_crisis
+		cost = 3
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = USA_many_a_crisis
+		}
+	}
+	focus = {
+		id = USA_resource_treaties
+		relative_position_id = USA_the_energy_crisis
+		icon = GFX_focus_generic_political
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_energy_crisis
+		}
+	}
+	focus = {
+		id = USA_the_budget_crisis
+		icon = GFX_focus_generic_political
+		relative_position_id = USA_many_a_crisis
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_many_a_crisis
+		}
+	}
+	focus = {
+		id = USA_rein_in_defense_spending
+		relative_position_id = USA_the_budget_crisis
+		icon = GFX_focus_generic_army
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_budget_crisis
+		}
+	}
+	focus = {
+		id = USA_many_a_crisis
+		relative_position_id = USA_a_very_needed_victory
+		icon = GFX_focus_generic_political
+		x = -4
+		y = 1
+		prerequisite = {
+			focus = USA_a_very_needed_victory
+		}
+	}
+	focus = {
+		id = USA_the_ASEAN_war
+		icon = GFX_focus_generic_army
+		relative_position_id = USA_many_a_crisis
+		cost = 3
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = USA_many_a_crisis
+		}
+	}
+	focus = {
+		id = USA_push_for_a_peaceful_resolve
+		relative_position_id = USA_the_ASEAN_war
+		icon = GFX_focus_generic_political
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_the_ASEAN_war
+		}
+	}
+	focus = {
+		id = USA_send_in_the_peacekeepers
+		relative_position_id = USA_push_for_a_peaceful_resolve
+		icon = GFX_focus_generic_army
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = USA_push_for_a_peaceful_resolve
+		}
+	}
+	focus = {
+		id = USA_peacekeeping_in_Kashmir
+		relative_position_id = USA_the_ASEAN_war
+		icon = GFX_focus_generic_army
+		cost = 3
+		x = -1.5
+		y = 1
+		prerequisite = {
+			focus = USA_the_ASEAN_war
+		}
+	}
+	focus = {
+		id = USA_you_cannot_achieve_peace
+		relative_position_id = USA_a_very_needed_victory
+		icon = GFX_focus_generic_political
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = USA_resource_treaties
+		}
+		prerequisite = {
+			focus = USA_secure_the_suez_for_trade
+		}
+		prerequisite = {
+			focus = USA_let_the_economy_fix_itself
+		}
+	}
+	focus = {
+		id = USA_make_a_deal_with_the_protesters
+		relative_position_id = USA_a_very_needed_victory
+		icon = GFX_focus_generic_political
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = USA_you_cannot_achieve_peace
 		}
 	}
 }

@@ -989,6 +989,42 @@ spriteType = {
         legacy_lazy_load = no
     }
 
+    spriteType = {
+        name = "USA_thanking_our_backers"
+        textureFile = "gfx/interface/goals/USA/USA_thank_our_backers.dds"
+    }
+
+	spriteType = {
+        name = USA_thanking_our_backers_shine
+        texturefile = gfx/interface/goals/USA/USA_thank_our_backers.dds
+        effectFile = gfx/FX/buttonstate.lua
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/USA_thank_our_backers.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = gfx/interface/goals/USA/USA_thank_our_backers.dds
+            animationtexturefile = gfx/interface/goals/shine_overlay.dds
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
+
 	spriteType = {
 		name = "USA_expanding_our_influence"
 		textureFile = "gfx/interface/goals/USA/USA_expanding_our_influence.dds"
@@ -1099,15 +1135,15 @@ spriteType = {
 
     	spriteType = {
 		name = "USA_enforce_alaska"
-		textureFile = "gfx/interface/goals/USA/USA_enforce_alaska.dds"
+		textureFile = "gfx/interface/goals/USA/USA_enforce_alaska_gfx.dds"
 	}
 
 	spriteType = {
         name = USA_enforce_alaska_shine
-        texturefile = gfx/interface/goals/USA/USA_enforce_alaska.dds
+        texturefile = gfx/interface/goals/USA/USA_enforce_alaska_gfx.dds
         effectFile = gfx/FX/buttonstate.lua
         animation = {
-            animationmaskfile = gfx/interface/goals/USA/USA_enforce_alaska.dds
+            animationmaskfile = gfx/interface/goals/USA/USA_enforce_alaska_gfx.dds
             animationtexturefile = gfx/interface/goals/shine_overlay.dds
             animationrotation = -90.0
             animationlooping = no
@@ -1119,7 +1155,7 @@ spriteType = {
             animationtexturescale = { x = 1.0 y = 1.0 }
         }
         animation = {
-            animationmaskfile = gfx/interface/goals/USA/USA_enforce_alaska.dds
+            animationmaskfile = gfx/interface/goals/USA/USA_enforce_alaska_gfx.dds
             animationtexturefile = gfx/interface/goals/shine_overlay.dds
             animationrotation = 90.0
             animationlooping = no
